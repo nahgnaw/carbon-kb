@@ -1,0 +1,3 @@
+To start the parser server:
+source activate stanford
+corenlp -S ~/Workspace/stanford-corenlp
