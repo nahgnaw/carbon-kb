@@ -1,0 +1,1051 @@
+﻿Carbonate melts and carbonatites
+INTRODUCTION
+Carbonatites are familiar to students of petrology as rare igneous rocks formed
+predominantly of carbonate, whose only modern expression is a single active volcano that
+erupts strongly alkaline carbonate lavas with no direct match in Earth’s geological record.
+Based on their Sr-Nd-Pb isotopic data, stable isotopic compositions, noble gases, and
+experimental phase equilibria, they are derived from the mantle, showing almost no sign of
+contamination by the crust.
+As liquids, carbonate melts have remarkable physical properties, which set them apart
+from the alkaline silicate melts with which they are often temporally associated.
+They show
+very high solubilities of many elements considered rare in silicate magmas, and they have
+the highest known melt capacities for dissolving water and other volatile species like
+halogens at crustal pressures.
+They are highly efficient transport agents of carbon from the
+mantle to the crust, remaining mobile over extraordinary ranges of temperature, and their
+very low viscosity should enhance connectivity along grain boundaries in the mantle where
+they are implicated in geochemical enrichment processes related to metasomatism.
+2
+Most carbonatites have unambiguous origins in the mantle and the limit to their depth is
+not known, but the likelihood that they may exist in the lower mantle (Kaminsky et al.
+2009,
+2012; Stoppa et al.
+2009) needs to be appraised since they may exert a fundamental control
+on the mobility and long-term storage of deep carbon in Earth.
+Ultimately the stability of
+carbonate melt is an extension of the stability of carbonate minerals (Hazen et al.
+2013a,
+2013b) subject critically to the mantle oxidation state (Luth 1993; Frost and McCammon
+2008); carbonate-melts have also been predicted in the oceanic low-velocity zone and deep
+mantle (Hauri et al.
+1993; Presnall and Gudfinnsson 2005) by laboratory petrology
+experiments (Wyllie 1995).
+Much remains to be discovered about carbonate melts at very
+high-pressures.
+Beyond the current solid media experiments with piston cylinder, multi-anvil press, and
+diamond-anvil cell (e.g.
+calcite-dolomite-aragonite; Kraft et al.
+1991), we may look to
+carbonate inclusions in diamonds ( Kaminsky et al.
+2001, 2009; Brenker et al.
+2007;
+Kaminsky 2012) and high-pressure shock wave environments for clues, including shocked
+carbonate from impact craters, which can show isotopic shifts (δ13C vary 5 per mil; Martinez
+et al.
+1994, 1995; Jones et al.
+2000a).
+Another unique property of carbonate melts is their
+high electrical conductivity—up to three orders of magnitude greater than silicate melts and
+five orders of magnitude higher than hydrated mantle material (see carbonatite
+occurrences).
+Consequently, carbonate melts have been invoked to explain deep regions of
+the mantle asthenosphere characterised by anomalous conductivity.
+The presence of low
+volume (0.1 %) carbonate melts are contenders to explain electrically conductive mantle
+regions, previously thought to be caused by silicate melts or water-bearing olivine (Gaillard
+et al.
+2008).
+3
+Several books and reviews have been written about the systematic geochemistry and
+mineralogy and origin of carbonatites (Tuttle and Gittins 1966; Bell 1989; Bell et al.
+1998;
+Jones 2000; Mitchell 2005; Woolley and Church 2005; Woolley and Kjarsgaard 2009;
+Downes et al.
+2012).
+Fundamental understanding of carbonatites was largely achieved in the
+last century when engineering developments in technology enabled experimental petrology
+to unlock the secrets of how carbonatites actually form, including their important
+connections with water, enabling early formative predictions about the stability of carbonate
+minerals in the upper mantle; the significance of free CO2 and H2O in the mantle transition
+zone; the derivation of kimberlitic and carbonatitic melts; and mantle metasomatism (Wyllie
+and Tuttle 1960, 1962; Wyllie and Huang 1976).
+The purpose of this review is to provide a
+framework for understanding carbonate melts, to highlight their potential role in providing
+vertical connectivity and pathways for deep carbon to be transferred from the mantle to
+Earth’s surface, and to illustrate how further technological advances are still required to
+answer even the most basic questions about the abundance and mobility of carbon in Earth’s
+deep interior.
+CARBONATE MELTS
+Physical properties
+Very low magmatic temperatures and very low viscosity are striking features of alkalicarbonatite
+lavas at low pressure, for example at the sole active volcano Oldoinyo Lengai in
+Tanzania (Treiman and Schedl 1983; Krafft and Keller 1989; Dawson et al.
+1990;
+Oppenheimer 1998).
+The low carbonate melt viscosity was first measured accurately in
+experiments using in-situ synchrotron radiation to track rapidly falling spheres (Dobson et al.
+4
+1996) and is compared with other data (Wolff 1994; Jones et al.
+1995a) in Table 1.
+We note
+that only natural high PT iron-rich melts in Earth’s core may approach such extremely low
+viscosities (Dobson et al.
+2000).
+Calculated physical properties by Genge et al.
+(1995b) predict that CaCO3 melt densities
+increase from 2000 kg m-3 at P = 0.1 GPa to 2900 kg m-3 at P = 10.0 GPa, suggesting
+carbonate melts are significantly more compressible than silicate melts.
+Estimates of the
+constant pressure heat capacity of 1.65-1.90 J g-1 K-1, isothermal compressibilities of 0.012-
+0.01 x 10-10 Pa-1 and thermal expansivities of 1.886-0.589 x 10-4 K-1 were also calculated
+(Genge et al.
+1995b).
+Self-diffusion coefficients qualitatively suggest that CaCO3 melts have
+very low viscosities at high-pressures to 11 GPa.
+Although no other atomic simulations of carbonate melts have been performed, quantum
+mechanical ab initio evolutionary models, which allow the most energetically stable atomic
+structures to be predicted, suggest that radical transformation of carbonate mineral structures
+occur at lower mantle pressures (Oganov et al.
+2008, 2013).
+Simulations predict that the
+stable MgCO3 and CaCO3 phases at pressures >82 GPa and >19 GPa respectively are
+dominated by corner-sharing CO4 tetrahedra networks, with those of CaCO3 adopting a β-
+cristobalite structure, and MgCO3 adopting a pyroxene-like structure at pressures >110 GPa.
+Such predictions are supported experimentally by recovered Mg-Fe carbonates with
+polymerized structures (Boulard et al.
+2011).
+The formation of CO4
+4- at high-pressure was
+predicted (Genge 1994) because it is compatible with the similar electronic configurations of
+C and Si, which satisfy the requirements of both sp2 (trigonal) and sp3 (tetrahedral)
+hybridization.
+Transformation from carbonate structures to tetrahedral CO4 groups, however,
+requires the breaking of pp bonds and the formation of antibonding orbitals and is likely to
+5
+be associated with significant activation energy.
+Metastable carbonate phases, therefore, are
+likely to be present across the transition region of the mantle at which such transformations
+occur.
+Indeed ab initio models predict that numerous energetically similar metastable phases
+exist for MgCO3 (Oganov et al.
+2013).
+Atomic structure of carbonate melts
+The atomic structures of carbonate melts have been little studied in comparison to the
+structure of silicate melts, but are fundamental in controlling their physical and chemical
+behavior in natural systems.
+Carbonate melts are ionic liquids consisting of carbonate CO3
+2-
+molecular anions and metal cations that interact principally due to coulombic interactions
+and are thus very different from silicate melts, which have network structures characterized
+by polymerization (Mysen 1983).
+Ionic carbonate melts have been considered to be
+structureless with no definite association between metal cations and carbonate molecules
+(Treiman and Schedl 1983).
+However the combined evidence from phase relations of
+carbonates, the solubility of metals in carbonate liquids, and the spectroscopy of carbonate
+glasses and atomic simulations, suggests that carbonate liquids have structure at scales larger
+than their component molecular groups.
+Carbonate melts as ionic liquids
+The ionic nature of carbonate melts and their inability to polymerize to form network
+structures is their most fundamental property and is a consequence of the electronic structure
+and intra-molecular bonding of the carbonate ion.
+Consideration of the electronic structure of
+Si4+ and C4+ demonstrates that the outer shells of both atoms have identical electron
+6
+occupation, that is, Si4+ (3s23p2) and C4+ (2s22p2), and hence similar bonding characteristics
+might be expected.
+However, the differing electronegativities of Si and C, 1.9 and 2.6
+respectively (Pauling 1960), result in Si-O bonds that are less polarized than C-O bonds,
+with a 50% ionic character and localized charge distribution on oxygen atoms.
+The small
+ionic radius Si4+ of 0.34 dictates tetrahedral coordination with oxygen, Si4+ readily adopts
+sp3 hybrid covalent bonds, whereas C4+ is less restricted by the requirements of close
+packing and adopts an sp2 hybridization in order to reduce columbic interaction of the
+oxygen atoms.
+In both C4+ and Si4+ the adoption of hybrid bonding orbitals is facilitated by
+excitation of an electron from an s orbital to occupy an empty p orbital.
+A consequence of
+the sp2 hybridization of the carbonate ion is the formation of sp2s bonds between C and O
+and the formation of two pp bonds (Figure 1) above and below the plane of the molecule by
+interaction of C and O p-orbitals.
+Not only does the presence of a pp bond result in a double
+bond, shared over the three C-O bonds, but it also leaves only lone pair p orbital per oxygen
+orientated in the plane of the molecule.
+Hence, unlike SiO4
+4- tetrahedra, the CO3
+2- trigonal
+group has no unpaired orbitals available for covalent bonding, and is hence, unable to
+polymerize.
+Cation electronegativity (χ)
+The dissociation temperatures of crystalline unary carbonates indicate that metal cations
+exert an important control on carbonate melt structure since they control the stability of the
+carbonate ion.
+Carbonate dissociation temperatures decrease with increasing
+electronegativity (χ) of the metal cation for any particular polytype (Figure 2; Weast 1972).
+Since χ relates to the ability of an atom to attract electrons, the variation in dissociation
+7
+temperatures of crystalline carbonates with χ suggests that intra-molecular bond strengths
+are moderated by charge delocalization on CO3
+2- molecules due to the influence of nearby
+metal cations.
+Similar control by metal composition on CO3
+2- intra-molecular bond strengths
+within carbonate melts will be an important control on dissociation reactions that determine
+the abundance of carbonate ions available for complexation with metal cations (Genge
+1994).
+Different dissociation temperature-χ trends are observed for carbonates with different
+structures.
+Aragonite structure carbonates with 8-fold coordinated metal cations have higher
+dissociation temperatures than 6-fold coordinated calcite structure carbonates.
+The
+dependence of C-O bond strength on metal cation site coordination suggests that carbonate
+melt structure is likely to be as important in the dissociation of carbonate ions as
+composition.
+Transition metal carbonates have higher dissociation temperatures than
+predicted by χ of their metal cations, indicating that delocalization of intra-molecular
+bonding electrons is not the only control on carbonate dissociation (Figure 2).
+Transition
+metals, however, are capable of coordinate bonding with carbonate ions, utilizing the lone
+pair orbitals of the carbonate ion to donate electrons to empty metal ligands.
+Coordinate
+bonding results in charge redistribution that will reduce delocalization of electrons from
+carbonate ion molecular orbitals, resulting in increased bond strengths and greater carbonate
+stability.
+Carbonate ion dissociation is thus very important in the nature of speciation of
+components within carbonate melts.
+Speciation
+8
+The solubility of metal oxides in carbonate melts can provide constraints on carbonate
+melt structure, and several studies have been performed on alkali carbonates at atmospheric
+pressure for use in molten carbonate fuel cells (MCFCs) focused on transition
+elements/oxides like NiO (Orfield and Shores 1988, 1989) and alkaline earth metal ceramics
+(Lessing et al.
+1988).
+Solubility experiments for transition and alkaline earths in alkaline
+carbonate melts show solution as basic oxides or acid carbonate complexes (Figure 3).
+Basic
+dissolution occurs at low abundances of the added metal oxide whilst carbonate dissolution
+is dominant at higher abundances.
+Illustrative reaction mechanisms for dissolution of NiO
+are shown below:
+Basic
+NiO + O2- = NiO2
+2-
+NiO + CO3
+2- = NiO2
+2- + CO2
+Acid
+NiO + CO3
+2- = NiCO3 + O2-
+NiO + 2CO3
+2- = Ni(CO3)2- + O2-
+Further details of speciation related to dissolution mechanisms in alkaline carbonate melts
+like Na2CO3 are provided by Orfield and Shores (1988), while Doyon et al.
+(1987) show that
+dependence on carbonate activity within the melt, oxygen fugacity, and partial pressure of
+CO2 will also be important factors in controlling the speciation of metals.
+Orfield and Shore
+(1989) report experimentally derived NiO solubility in binary Na2CO3-K2CO3 melts, which
+exhibits significant divergences from ideal mixing behavior, and they provide additional data
+for Rb2CO3 and K2CO3 melts (Figure.
+3).
+9
+Studies of MCFCs show that water can influence carbonate melt structure through
+coupled reactions with carbonate ions (Lu and Selman 1989) with a wide range of possible
+reactions prevalent under different oxygen fugacity and partial pressure of CO2:
+CO3
+2- + H2O = CO2 + 2OHOH-
++ CO2 = CO3
+2- + H+
+3H2 + CO = CH4 + H2O
+The solubility of species in competition with CO3
+2- for metal cations, for example P, which
+in silicate melts is stabilized by divalent cations (Mysen et al.
+1981) or OH- are likely to
+decrease with increasing metal-carbonate complexation.
+Experimental studies on P solubility
+in CaCO3 melts (Baker and Wyllie 1992) demonstrate that solubility is reduced with
+increasing partial pressure of CO2 and decreasing temperature, consistent with increased
+formation of metal-carbonate associations in the melt (Genge et al.
+1995b).
+The solubility of
+cations and molecular species within carbonate melts imply that these are present either as
+complexes with carbonate ions or as oxide and hydrate complexes, but the solubility data do
+not provide constraints on the sites or degree of order of these structural components.
+Carbonate glasses
+Two carbonate melt systems are known to quench to glasses at 0.1 GPa under laboratory
+conditions: (1) MgCO3-K2CO3 (Faile et al.
+1963; Ragone et al.
+1966) and (2) La(OH)3-
+Ca(OH)2-CaCO3-CaF2-BaSO4 (Jones and Wyllie 1983) and provide a means of investigating
+melt structure directly by spectroscopy.
+The phase relations of both systems are shown in
+(Figure 4).
+Glass is a supercooled liquid and forms by cooling through the glass transition, a
+second order phase transition during which the translational and vibrational motions of
+10
+molecular groups become restricted.
+Crucial in the formation of glasses is their failure to
+crystallize during cooling below the liquidus/solidus; thus high viscosity melts and those
+with low melting temperatures are most likely to form glasses due to the dependence of both
+crystallization and nucleation on diffusion (Turnbull 1956).
+The majority of glasses,
+therefore, form from melts with network structures, such as silicate melts, in which
+covalently bonded polymers resist rearrangement.
+Although both carbonate systems that
+form glass have low eutectic temperatures, they are likely to have low melt viscosities
+(Dobson et al.
+1996).
+Glass formation in these systems is also not restricted only to low
+temperature melts.
+The formation of these carbonate glasses from ionic liquids is, therefore,
+anomalous and implies that an extended structural association occurs between molecular
+component groups.
+Infrared and Raman spectra of carbonate glasses (Genge et al.
+1995a)
+indicate at least two structural populations of CO3
+2- (Figure 5, Table 2); one vibrational
+frequency like common 6-fold coordinated carbonate, and a highly asymmetric site with
+large vibrational splitting of its v3 mode.
+The existence of two general structural populations
+of carbonate ion in the glasses may correspond to a flexible pseudo-network structure where
+alkaline earth elements (Ca and Mg) act as bridging cations linking carbonate groups by
+ionic bonds and having similar coordination to equivalent crystalline carbonates, whilst other
+components, such as K, act as network modifiers that support ring-structures within the
+flexible network (Genge et al.
+1995b).
+The structure of carbonate melts is, therefore,
+envisaged as a network of metal-carbonate complexes held open by modifying species.
+In
+this context asymmetric carbonate sites were suggested to represent carbonate ions with nonbridging
+oxygen atoms without first neighbor bridging cations.
+11
+The spectral activity of the O-H stretching region within hydrous La-bearing glasses
+furthermore suggests that water exists both as molecular H2O and OH, interacting variably
+with carbonate ions and as metal complexes occupying relatively high symmetry sites in
+these glasses.
+The presence of bicarbonate groups, however, is prohibited by the absence of
+their characteristic O-H stretching frequencies.
+The absence of a molecular CO2 v3 stretching
+mode from the infrared spectra of both carbonate glasses suggests, by comparison with IR
+spectra for silicate melts (Fine and Stolper 1986) very low concentrations of CO2 in
+carbonate melts.
+In summary, IR and Raman spectroscopy of carbonate glasses, implies that
+for these restricted compositions, the carbonate melt structure comprises metal-carbonate
+complexes where a transient pseudo-network of ring structures with interstitial spaces
+occupied by modifying species and molecular groups (Genge et al.
+1995b).
+Atomic simulation of carbonates
+Molecular dynamics simulations (MDS) of CaCO3 from atmospheric pressure to 11.5
+GPa (Genge et al.
+1995b) suggest that CaCO3 melts have the closest similarity to calcite
+structures, rather than aragonite, with similar bond lengths (Table 3) and broadly 6-fold Ca
+coordination (Table 4).
+The presence of second-nearest neighbor peaks, however, in
+particular for Ca-O and C-C suggest a degree of medium-range order consistent with
+associative metal-carbonate complexes (Figure 6).
+Snap-shots of melt structure (Figure 7)
+indicate the occurrence of local density fluctuations, relating to spatial associations of
+carbonate groups and metal cations.
+The results of atomic simulations of CaCO3 liquids are,
+therefore, broadly compatible with the implications of infra-red studies of carbonate glasses
+12
+since they exhibit carbonate ions linked into a flexible network by ionic bonding to metal
+cations.
+CARBONATITES
+Understanding the geological context of carbonatites observed as volcanic products and
+magmatic rocks now at Earth’s surface should not only consider their connections with other
+families of carbon-bearing igneous rocks like nephelinites, melilitites, and kimberlites, but
+also the direct evidence provided by experiments on their synthetic counterparts as carbonate
+melts.
+This section summarizes the current status of carbonatites.
+Carbonatites are commonly defined as magmatic rocks with high modal abundance of
+carbonate minerals (>50 wt.%) and geochemistry typified by high abundances of Sr, Ba, P
+and the light rare-earth elements (LREE) (Nelson et al.
+1988).
+They have been subdivided
+(Figure 8) on the basis of their dominant modal carbonate mineral, such as calcite-, or
+dolomite-carbonatites and on their corresponding major element geochemistry with Mg-, Ca-
+, Fe- and REE-carbonatites (Woolley 1982; Le Bas 1987; Woolley and Kempe 1989).
+In
+parallel, a process-related classification would divide them into two groups: primary
+carbonatites and carbothermal residua (Mitchell 2005).
+In this scheme, primary carbonatites
+can be further divided into groups of magmatic carbonatites associated with nephelinite,
+melilitite, kimberlite, and specific mantle-derived silicate magmas, formed by partial
+melting, whereas carbothermal residua carbonatites form as low-temperature fluids rich in
+CO2, H2O, and fluorine.
+Occurrence of carbonatites
+13
+Tectonic setting of carbonatites: Primarily, carbonatites are located within stable, intraplate
+settings, over half of which are in Africa, often occurring in peripheral regions to
+orogenic belts showing an apparent link to orogenic events or plate separation (Garson et al.
+1984; Le Bas 1987; Bell 1989; Veizer et al.
+1992).
+Carbonatite concentrations are also
+associated with topographic swells up to 1000 km across (Le Bas 1971; Srivastava et al.
+1995).
+The occurrence of carbonatites in continental crust has perpetuated interpretation of
+their geochemistry in terms of a genetic connection (Bell and Blenkinsop 1987) and they
+have also been variously related to mantle plumes and large igneous provinces (LIPs); for
+thematic reviews see Gwalani et al (2010).
+A recent survey of the most complete world
+database shows striking lithological control with repeated activation of old carbonatites in
+Archaean-aged crust.
+This distribution precludes a direct link with mantle plumes and favors
+a fundamental link to the same underlying mantle source of carbon, which manifests in
+kimberlites (Woolley and Bailey 2012).
+The surface manifestation of carbonatites may belie
+their distribution in the underlying mantle, where some of their extreme physical properties,
+such as very high conductivity (Figure 9) make them sensitive to remote geophysical testing
+(Gaillard et al.
+2008).
+Understanding their deep origins must explain the growing number of
+carbonatites reported from unconventional tectonic associations, i.e.
+not continental rifts, but
+including oceanic islands, ophiolites, shear zones, deep subduction zones (Woolley 1991;
+Coltorti et al.
+1999; Moine et al.
+2004a; Rajesh and Arai 2006; Walter et al.
+2008; Nasir
+2011) and even connections to ultra-high pressure (UHP) metamorphic terranes (Attoh and
+Nude 2008).
+Carbonatites overlying oceanic lithosphere are rare (Silva et al.
+1981; Kogarko 1993a,
+1993b; Hoernle et al.
+2002; Jørgensen and Holm 2002), but discovery of carbonatite melt as
+14
+interstitial pockets within dunite xenoliths from the Kerguelen Archipelago (Moine et al.
+2004b) indicates that oceanic carbonatites may be more widespread.
+Geographical areas of
+carbonatitic activity are often very long-lived and, where unrelated to the migration of
+mantle plumes, a direct relationship with underlying lithosphere is likely (Genge 1994;
+Woolley and Bailey 2012), yet others are thought to be related to deep mantle plumes, for
+example Kola Peninsula (Marty et al.
+1998), Canary Islands (Widom et al.
+1999), Cape
+Verde Islands (Holm et al.
+2006), Brazil (Toyoda et al.
+1994), Deccan Traps (Simonetti et al.
+1998), and Greenland (Larsen and Rex 1992).
+New regions with carbonatites are still being
+discovered, for example in the Middle East including Saudi Arabia, United Arab Emirates,
+and ophiolite-related carbonatite in Oman (Woolley 1991).
+A remarkable series of books
+dedicated to reviewing the systematic geographical distribution with individual maps of all
+carbonatites sourced from thousands of references, is provided by Woolley and has been
+used to publish a comprehensive global map and database of all known carbonatites
+(Woolley and Kjarsgaard 2009).
+Temporal distribution of carbonatites.
+Globally from just 56 known in 1987 (Figure 10),
+there are now ~527 carbonatite occurrences, of which 49 are extrusive, ranging in age from
+Archaean to present (Woolley and Church 2005; Woolley and Kjarsgaard 2008a).
+The most
+commonly reported oldest dated carbonatite and associated silicate rocks are from
+Phalaborwa carbonatite in South Africa at 2063 to 2013 Ma (Masaki et al.
+2005) and
+Siilinjarvi, Finland circa 2047 million years old (Puustinen 1972; Woolley and Kempe
+1989).
+The Siilinjarvi age is typical, and based upon K-Ar dates of 1790±30 to 2030±30 Ma
+on phlogopite, 2530±45 Ma on richterite, and 2260±42 Ma on actinolite (Puustinen 1972),
+15
+as well as 1850±40 Ma and 2280±40 Ma on phlogopite and richterite respectively from the
+main carbonatite.
+However, older ages are also discussed for Siilinjarvi, with reports of U-Pb
+dating of zircon from sövite indicating an age of 2580±200 Ma (Patchett et al.
+1982) along
+with unpublished Sm-Nd data supporting an age of 2600 Ma (Basu et al.
+1984).
+Of the known extrusive carbonatites, 41 are calcio-carbonatites, 7 are dolomitic
+carbonatites, and only one extrusive carbonatite is alkaline natrocarbonatite (Woolley and
+Church 2005).
+Carbonatites tend not to occur as single rock units but rather as a suite in
+association with alkaline silicate rocks, including a wide variety of ultramafic to felsic
+silicate igneous rocks from dunites to syenites, as in the Siberian Massif (Egorov 1970;
+Kogarko and Zartman 2007; Vladykin 2009), with only ~20% of carbonatites occurring
+without associated silicate rocks (Woolley and Kjarsgaard 2009).
+Despite the occurrence of carbonatites throughout the majority of geological periods since
+the Archean, their increase in frequency with decreasing age, and episodic clustering of
+activity, has lead to the suggestion that conditions required for carbonatite formation are
+becoming more widespread (Woolley 1989).
+Alternatively Veizer et al (1992) argue that the
+apparent increase is a preservation artefact, with crustal erosion and preferential recycling of
+orogenic-related carbonatites, with a geodynamic half-life of carbonatite bodies close to
+~445 Myr.
+Carbonatite rocks (orogenic and anorogenic) are relatively easily weathered in
+comparison to silicate rocks, so bias towards young ages in the geological record might be
+expected.
+However the argument for carbonatite age bias due to preservation presented by
+Viezer et al (1992) has been further debated through the consideration that cratonic material
+in which carbonatites are concentrated and not readily subducted; therefore, the backward
+projection through Precambrian time of the modern pace of recycling by subduction is not
+16
+valid.
+Instead, Woolley and Bailey (2012) argue that the concentration of carbonatite
+material in late Archean cratonic regions is the result of re-opening and use of pre-existing
+lesions during plate movements.
+This activity is thought to occur in episodes, with some
+areas showing up to five events, with gaps of millions of years between episodes.
+Geochemistry of carbonatites
+Carbonatites occur as intrusive, extrusive and hydrothermal or replacement bodies that
+contain more than 50 volume percent primary igneous carbonate minerals derived from
+carbonate magma (Streckeisen 1980) and with less than 20% SiO2 (Le Maitre 2002).
+A
+summary classification is provided in Table 5 (Woolley and Kempe 1989; Le Maitre 2002).
+The category of REE-carbonatites have no formal definition, and they can be associated with
+variable Ca:Mg:Fe carbonatites and widely varying grain sizes and textures from finegrained
+(Bayan Obo, Inner Mongolia, China), to pegmatitic (Kangankunde, Malawi), and
+porphyritic (Mountain Pass, California).
+Their modal REE-minerals may contribute notable
+colors in hand specimen either yellow, caused by bastnasite, synchisite, and REEfluocarbonates,
+or vivid green, caused by monazite and REE phosphates (Wall and Mariano
+1996).
+We suggest a whole-rock value of >1% RE2O3 as a working definition of REE
+carbonatite.
+Higher values (>5%) have been used by some mining geologists (Castor 2008);
+however, these deposits are often also rich in iron and thus have been termed
+ferrocarbonatite.
+The field relations of REE carbonatites and their association with elevated
+Th and U suggest primary mechanisms of crystal fractionation of carbonatite magma
+associated with secondary enrichment by volatile-rich metasomatic fluids (Le Bas et al.
+2007; Yang et al.
+2011), although relationships with alkaline silicate rocks may need further
+17
+study as in the case of Mountain Pass (Castor 2008).
+Their residual magmatic nature is
+supported by experiments in mixed Ca-Ba-Sr-REE carbonate systems, which show the
+persistence of melts at low crustal pressures to very low-temperatures (Jones and Wyllie
+1983, 1986; Wyllie et al.
+1996).
+Major element signatures: Carbonatites have high abundances of Sr, Ba, P, and light rare
+earth elements (LREEs), often > 3 orders of magnitude higher than those of chondritic
+meteorites or bulk Earth, and show a negative Zr and Hf anomaly (Nelson et al.
+1988).
+Their
+chemical composition makes them powerful chemical probes for understanding the mantle,
+because the effects of crustal contamination are minimized.
+The average chemical
+compositions for carbonatite (Bell 1989) show that concentrations of Si, Ti, Mn, Ba, Fe, and
+F increase through the series calciocarbonatites – magnesiocarbonatites – ferrocarbonatites,
+but this sequence is unlikely to represent a simple crystal fractionation series (Gaspar and
+Wyllie 1984; Le Bas 1987).
+Al, Na, K, Sr, and P are variable throughout the carbonatite
+divisions (Table 6), with the exception of natrocarbonatite, which is dominated by Na2O and
+K2O.
+Natrocarbonatite contains up to ~40 weight percent (Na2O+K2O) with very low SiO2,
+TiO2, and Al2O3, high amounts of CaO and CO2, and considerable BaO, SrO, P2O5, SO3, Cl,
+F, and MnO in comparison to silicate igneous rocks (Ridley and Dawson 1975).
+Natrocarbonatite lavas erupted during the last ~50 years (especially in 1960-1966, 1988-
+1993, and 2006-2008) have similar compositions and their detailed geology and regional
+context are comprehensively reviewed in a monograph by Dawson (2008).
+18
+Trace elements: Several “trace” elements achieve major levels in carbonatites.
+Steep light
+rare-earth element (LREE)-enriched patterns are typical (Figure 11) and can occur as modal
+REE-minerals attractive for economic mining.
+Through the series of carbonatites from
+magnesiocarbonatites and calciocarbonatites to ferrocarbonatites, trace elements such as Co,
+Cr, Ni, and V decrease whereas the REE are most abundant in ferrocarbonatites and REEcarbonatites,
+often accompanied by U and Th.
+Few experiments have determined
+quantitative element partitioning in carbonate melts, but data exist for Zr, REE, and P (Jones
+and Wyllie 1983, 1986; Woolley and Kempe 1989; Jones et al.
+1995b; Klemme and Meyer
+2003; Wall and Zaitsev 2004; Ruberti et al.
+2008; Xu et al.
+2010).
+Natrocarbonatite lava
+contains high concentrations of LREEs with La/Yb and U/Th ratios being amongst the
+highest of all terrestrial lavas (Dawson 2008, and references therein).
+Local chemical variations occur within the natrocarbonatites, with aphyric, phenocrystpoor
+lavas having a more fractionated pattern with enrichments in Mn, Mg, Fe, V, Ba, Rb,
+Nb, Y, and several volatile species in comparison to phenocryst-rich lavas and water
+contents are low (Keller and Krafft 1990).
+The 1993 natrocarbonatite lavas of Oldoinyo
+Lengai in Tanzania are particularly enriched in Ba, Cs, K, Mo, U, and LREEs relative to
+primitive mantle with slight variation between the lava types, i.e.
+spheroid-free or spheroidbearing
+(Simonetti et al.
+1997).
+Natrocarbonatite lava can have Ba/Sr > 0.7, which is the
+inverse to most primary calcite carbonatites, and Au contents are anomalously higher than
+continental crust.
+Natrocarbonatite also occurs as quenched melt in pyroclastic eruptions
+typified by proximal lapilli beds and tuffs (Church and Jones 1994) and natrocarbonatite
+tephra may have occurred at other volcanoes in the East African Rift, although there is
+19
+controversy about whether such ash extends to the area of early hominid footprints at Laetoli
+(Hasy 1983; Barker and Milliken 2008).
+Carbonatite mineral deposits
+Carbonatites contain minerals enriched in several key elements of immense economic
+interest, which include the REE (“strategic metals”) niobium, uranium, and tantalum, and to
+a lesser extent, iron, copper, phosphorus, fluorite, barite, platinum group elements, silver,
+and gold (Richardson and Birkett 1996; Hornig-Kjarsgaard 1998).
+Political and economic
+aspects of their sustainability as producers of REE have recently been re-evaluated (Franks
+2011) and currently hinge on large-scale REE carbonatite mineralization of the large Bayan
+Obo deposit in China (Le Bas et al.
+1992, 2007; Smith and Henderson 2000; Yang et al.
+2011), with high prices driving resource exploration in some countries such as Malawai (e.g.
+Kangankunde, AR Woolley, personal communication 2012).
+Carbonatites have been
+considered to host the majority of the world’s niobium, with up to 10% of the western
+world’s niobium once sourced from Niobec mine in the Oka carbonatite, Quebec (Scales
+1989), where extreme compositional variation of pyrochlore group minerals may have been
+caused by magma mixing (Zurevinski and Mitchell 2004).
+Table 7 shows data for significant carbonatite mineral deposits showing their potential,
+including estimated reserves and grades, chemical affinity and mineralogy, for both primary
+magmatic and secondary metasomatic deposits (Richardson and Birkett 1996).
+Secondary
+enrichment is often a result of remobilization of Nb and REEs by hydrothermal or
+carbothermal fluids enriched in F and CO2 (Le Bas 1987; Smith and Henderson 2000; Fan et
+al.
+2005).
+The REE-enriched nature of carbonatites has been linked to the preferential
+20
+transport of REE by molecular CO3 complexes in the melt during immiscible separation
+between coexisting silicate and carbonate melts, resulting in an increased La/Lu ratio in the
+carbonatite relative to silicate melt (Cullers and Medaris 1977).
+Isotopic signatures of carbonatites
+Radiogenic isotope ratios: Although carbonatites are volumetrically insignificant
+compared with silicate igneous rocks, their widespread distribution on most continents
+coupled with their variation in age provides constraints on the evolution of the subcontinental
+mantle through time.
+Young carbonatites share significant isotopic similarities
+with young oceanic island basalts (OIB; Bell and Tilton 2001).
+Thus, alkaline silicate
+magmas and carbonatites in the important East African Rift, including the active carbonatite
+volcano Oldoinyo Lengai, lie close to the mixing line HIMU-EM1 (Figure 12) identified in
+OIB.
+This mixing may represent either a lithospheric or a deeper mantle sub-lithospheric
+signature related to a mantle plume (Bell et al.
+1998; Bell and Tilton 2001).
+In general
+carbonatites contain very low concentrations of Pb, far below crustal levels, offering a clear
+distinction from crustal carbonates.
+Their Pb isotopic compositions are not contaminated by
+crust, and can be used to probe the isotope geochemical signature of unseen deep carbon
+mantle reservoirs.
+A linear array for covariation of Nd-Sr isotope data (Table 8) lies on the East African
+Carbonatite Line (EACL) and has often been thought to show binary mixing between the
+mantle reservoirs of HIMU (high 238U/204Pb thought to be the results of recycled ancient,
+altered oceanic crust) and EM1 (“enriched mantle 1”, caused by the recycling of continental
+crust or lithosphere; Kalt et al.
+1997).
+However, young carbonatites from the central Italian
+21
+rift (Stoppa and Principe 1998; Stoppa et al.
+2005, 2009) and Mesozoic carbonatites from
+Shandong China (Figure 13) have much higher 87Sr/86Sr interpreted to reflect the controlling
+influence of metasomatized lithospheric mantle (Ying et al.
+2004; Woolley and Bailey
+2012).
+Stable isotope ratios: Early studies of carbon and oxygen isotope ratios of carbonatites
+focused on coarse-grained intrusive carbonatites associated with alkaline silicate rocks in
+western Germany; Alnö, Sweden; and Colorado, USA, to define primary igneous
+carbonatite (Taylor et al.
+1967) reproduced in Figure 14.
+By observing the origins of
+divergent trends in oxygen isotopes affected by secondary fluid/hydrothermal alteration, a
+common origin could be defined.
+Thus, the co-variation of carbon and oxygen isotopes were
+used to define the “box” in the range δ13C -3.1 to -7.7 and δ18O +5.3 to +8.4 for primary
+igneous carbonatite.
+Subsequent studies of carbonatites show these features to be global in
+nature (Pineau et al.
+1973; Suwa et al.
+1975; Horstmann and Verwoerd 1997) including a
+more restricted range for fresh natrocarbonatite: δ13C -6.3 to -7.1 and δ18O +5.8 to +6.7
+(Keller and Hoefs 1995; Zaitsev and Keller 2006).
+Natrocarbonatite undergoes atmospheric
+alteration towards heavier isotopes (Deines 1989) with δ18O rapidly increasing to ~ +24‰
+and δ13C values changing less to -1.5‰ (Keller and Zaitsev 2006; Zaitsev and Keller 2006).
+Scarce representatives of apparent “oceanic” carbonatites from La Palma and Fuerteventura
+(Canary Islands, Spain), have δ18O of +13‰ and appear to have been overprinted by fluid
+alteration (Hoernle et al.
+2002; Demény et al.
+2008).
+The role of isotope fractionation has
+often been neglected, but this can have a major influence on deep-carbon systems in general,
+including carbonate melts and carbonatites.
+Isotope fractionation has been considered to be a
+22
+significant process in (mantle) carbonate systems (Deines 1968, 1970, 2004) and early
+experiments to 3 GPa showed C isotope fractionation between CO2 vapor and carbonate melt
+(Mattey et al.
+1990).
+Mass-independent fractionation of oxygen isotopes is also known from
+thermal decomposition of carbonates (Miller et al.
+2002) and there is a measurable effect of
+thermal decarbonation on stable isotope composition of carbonates (Sharp et al.
+2003).
+The mantle range for oxygen isotopes, as determined from the study of chondrites, mantle
+xenoliths and basalts, is relatively restricted to between 5 and 6‰, slightly offset from bulk
+peridotite silicate minerals such as olivine, orthopyroxene, clinopyroxene, and garnet, which
+average 7 to 8‰ δ18O (Deines 1989).
+The carbon isotope signature of the mantle is more
+difficult to determine due to the apparent previous under-estimation of high-temperature
+isotope fractionation for carbon in the mantle (Mikhail et al.
+2011), and also because there is
+large uncertainty over the average concentration of carbon in the mantle (Marty et al.
+2013;
+Shirey et al.
+2013; Wood et al.
+2013).
+A large variability is observed in the isotopic
+compositions of meteorites, xenoliths, and basalts with respect to carbon, but carbonatites
+seem to have a relatively restricted range with a mode around -5‰.
+This value is more
+positive than average mantle diamond and chondritic meteorite isotope signatures, and may
+result from an unknown enrichment mechanism during melt formation from an isotopically
+averaged source region (Deines 2002).
+GENESIS OF CARBONATITE MAGMAS
+The three main theories for the origin of carbonatites are essentially:
+1.
+Residual melts of fractionated carbonated nephelinite or melilitite (Gittins 1989;
+Gittins and Jago 1998).
+23
+2.
+Immiscible melt fractions of CO2-saturated silicate melts (Freestone and Hamilton
+1980; Amundsen 1987; Kjarsgaard and Hamilton 1988, 1989; Brooker and Hamilton 1990;
+Kjarsgaard and Peterson 1991; Church and Jones 1995; Lee and Wyllie 1997; Dawson 1998;
+Halama et al.
+2005; Brooker and Kjarsgaard 2011).
+3.
+Primary mantle melts generated through partial melting of CO2-bearing peridotite
+(Wallace and Green 1988; Sweeney 1994; Harmer and Gittins 1998; Harmer et al.
+1998;
+Ying et al.
+2004).
+Combinations of these three theories are also popular; for example carbonatite liquids
+generated by deep melting of carbonated eclogite in the upper mantle infiltrate overlying
+peridotite to produce silica under-saturated carbonate-bearing melts, which then penetrate
+the crust and evolve or un-mix (Yaxley and Brey 2004).
+Carbonatites have also been
+considered to be generated in the lithospheric mantle as partial melts rising rapidly above a
+hot ascending mantle plume.
+If these mantle carbonate melts stall, for example owing to
+thermal death, they generate carbonate-melt metasomatism in the mantle (Wyllie 1995).
+As
+the much hotter center of the plume approaches, melting is induced in the metasomatic
+horizon and results in generation of the carbonatite melts that are observed on the surface
+(Bizimis et al.
+2003).
+Although the plume model is quite attractive, recent recognition of
+strong and repeated lithospheric controls in the compilation of global carbonatite ages are
+thought to argue against a direct connection to mantle plumes (Woolley and Bailey 2012).
+Alternative models for natrocarbonatite petrogenesis have included anatexis of
+metasomatised basement (Morogan and Martin 1985), incorporation of trona sediments
+[Na3(CO3)(HCO3).2H2O], remobilization of carbonate material already present on the
+24
+volcano (Church and Jones 1995, and references therein), and condensation from a comagmatic
+fluid (Nielsen and Veksler 2001, 2002).
+Recently discovered provinces of Neogene- to Quaternary-aged carbonatite-silicate
+volcanism in Europe (Italy, France, and Spain) are providing important new lines of research
+for the mantle origins of extrusive carbonatite volcanism (Stoppa and Principe 1998; Stoppa
+et al.
+2005).
+These new studies are exciting because, unlike carbonatites in general, the
+young volcanoes have transported mantle xenoliths, which can help constrain their source
+regions or wallrocks.
+Derived geotherms can also constrain transport pathways for deep
+carbon (Jones et al.
+2000b; Downes et al.
+2002; Bailey and Kearns 2012).
+These silicocarbonatite
+volcanic rocks also preserve high-pressure carbonate minerals like aragonite
+(CaCO3; Hazen et al.
+2013a) as early high-pressure inclusions in olivine (Fo87) considered to
+have crystallized in the mantle at depths of >100 km (Humphreys et al.
+2010, 2012).
+Carbonate melt metasomatism
+The low viscosity and chemical composition of carbonatites and carbonate melts (Table
+1) makes them excellent metasomatic agents, and there are both experimental and natural
+examples.
+High P2O5/TiO2 or variable solubility in synthetic carbonate melts was used to
+suggest metasomatised harzburgite by carbonatite melts (Ryabchikov et al.
+1989; Baker and
+Wyllie 1992) and carbonate metasomatism has been inferred to occur in the lower mantle
+from experiments at 20-24.5 GPa and 1600-2000 °C (Gasparik and Litvin 2002).
+Thus,
+while transfer of mobile silicate (basaltic) melts may adequately account for the chemistry of
+many spinel peridotites and pyroxenites, highly mobile carbonate melts are believed to have
+played a pivotal role in the formation of apatite pyroxenites/wehrlites (converted
+25
+peridotites), carbonate-bearing peridotites (reacted wallrock) and metasomatised mantle
+xenoliths in continental terrains (O'Reilly and Griffin 2000).
+Carbonate-metasomatism is
+observed in some eclogitic xenoliths (Pyle and Haggerty 1994, 1997) and massive eclogite
+terrains, implying an active role for metasomatic carbonate fluids in subduction zones
+(Selverstone et al.
+1992).
+“Subduction” experiments with carbonated eclogite at 5-10 GPa,
+corresponding to approximately 150-300 km depth in the mantle show, that the carbonatitic
+solidus in eclogite is located at 4 GPa higher in pressure than in the peridotitic system; first
+carbonate partial melts can be calcium-rich [Ca/(Ca+Fe+Mg) ~ 0.80] in contrast to those
+produced by melting of carbonated peridotite [Ca/(Ca+Fe+Mg) ~ 0.50] (Hammouda 2003)
+possibly also influenced by the role of garnet in carbonated eclogite (Knoche et al.
+1999).
+The Th/U ratio may be sensitive to mantle metasomatism related to carbonate or silicate
+melts where clinopyroxene is stable (Foley et al.
+2001) and ultrapotassic mantle
+metasomatism in East Africa can be notably rich in fluorine (Edgar et al.
+1994; Rosatelli et
+al.
+2003) and may result during emplacement of immiscible silicate-carbonatitie magmas
+(Rosatelli et al., 2003).
+Melt inclusions in deep volcanic minerals and xenoliths from continental rift systems
+commonly demonstrate the effects of metasomatism caused by carbonate melts (Seifert and
+Thomas 1995; Jones et al.
+2000b; Downes et al.
+2002; Woolley and Bailey 2012).
+Carbonate
+melt metasomatism in lherzolite has also been related to derivation from kimberlite transport
+in the mantle (Bodinier et al.
+2004).
+Sometimes direct evidence for high-pressure carbonatemelts
+occurs trapped as inclusions in minerals, such as in ultramafic xenoliths from
+Kerguelen related to oceanic upper mantle domains (Schiano et al.
+1994), and globally as
+carbonatitic alkaline hydrous fluid inclusions in diamond (Navon et al.
+1988; Guthrie et al.
+26
+1991; Schrauder and Navon 1993, 1994; Izraeli et al.
+2001; Tomlinson et al.
+2005), which in
+addition to common inorganic carbon-species C-O-H volatiles also may contain
+hydrocarbons and nitrogen (Tomilenko et al.
+1997).
+The percolation of carbonatitic material through olivine-rock matrix (i.e.
+mantle
+peridotite) has been proposed to occur at a rate of several millimeters per hour by a process
+of dissolution-precipitation (Hammouda and Laporte 2000).
+These infiltration rates are
+orders of magnitude higher than those previously found for basalt infiltration in mantle
+lithologies.
+However, it could be argued that such quick percolation may result in short
+residence times, which may inhibit chemical interaction and metasomatism to take place
+(Dalou et al.
+2009).
+Transient mineral reactions to armor veins may greatly extend
+metasomatic pathways while depleting fluids in silicate-compatible and hydrous components
+(Jones et al.
+1983; Menzies et al.
+1987; Rudnick et al.
+1993; Menzies and Chazot 1995;
+Dawson 2002).
+Evidence for carbonatite-related metasomatism has been repeatedly
+recognized in the East African rift region, as manifest in fenitized rocks and glimmerites
+with abundant phlogopite, pyroxene, and amphibole (Rhodes and Dawson 1975; Dawson
+and Smith 1988, 1992; Rudnick et al.
+1993; Dawson et al.
+1995), as well as across the globe
+in Italy (Rosatelli et al.
+2007; Stoppa et al.
+2008, 2009; Stoppa and Woolley, 1997),
+Australia (Andersen et al.
+1984), Canary Islands (Frezzotti et al.
+2002), Grande Comore in
+the Indian Ocean (Coltorti et al.
+1999), and Greenland (Ionov et al.
+1993).
+Carbonate melt crystallization of diamond.
+Natural diamondiferous carbonatites are very rare but are known to occur at Chagatai,
+Uzbekistan, and a few other diamond-bearing carbonatites are likely related to the
+27
+crystallization of carbonate-kimberlite (Litvin et al.
+2001, 2003; Bobrov et al.
+2004), where
+it is thought that the diamond is syngenetic (Palyanov et al.
+1994).
+In principle, carbonate
+melts, which are over-saturated with respect to dissolved carbon and sometimes visibly bear
+graphite, are highly efficient diamond-forming systems under the thermodynamic conditions
+of diamond stability (Borzdov et al.
+1999; Bobrov et al.
+2004; Kogarko et al.
+2010).
+Several
+observations of carbonate as inclusions in mantle diamond (Guthrie et al.
+1991) lead to
+models of diamond formation involving carbonated melts in the mantle (Hammouda 2003).
+Carbonate melt inclusions have also been identified associated with diamond in continental
+crust from high pressure metamorphic rocks (De Corte et al.
+2000; Korsakov et al.
+2005),
+interpreted as very deep subduction (Korsakov and Hermann 2006) with unknown
+significance of recently recognized lonsdaleite (hexagonal diamond) in crustal rocks
+(Godard et al.
+2011).
+Diamond is readily synthesized experimentally from simple carbonates
+(Pal'yanov et al.
+1999a, 1999b, 2002a, 2002b), from alkali potassic carbonate (Shatskii et al.
+2002), from hydrous-carbonate (Sokol et al.
+2000), from carbonate with sulphide (Spivak et
+al.
+2008), from mixed carbonate-alkali-halide systems (Tomlinson et al.
+2004), and from
+mixed carbonate-silicate (kimberlitic) melts (Litvin 2003) to produce artificial diamond rock
+or “diamondite” with polycrystalline diamond (Litvin and Spivack 2003).
+Experiments show
+that “superdeep” diamond can crystallize rapidly from simple Mg-carbonate at pressures up
+to 20 GPa (Tomlinson et al.
+2011).
+Thus, carbonate melts have been suggested as a medium
+for the efficient crystallization of diamonds in Earth’s mantle, broadly consistent with global
+distribution of carbonatitic fluids trapped during the growth of natural “coated stone” type
+mantle diamond (Navon et al.
+1988; Tomlinson et al.
+2005; Klein-BenDavid et al.
+2007)
+28
+although quantitative details of a genetic connection between carbonate melts and fluids in
+the mantle are virtually unknown.
+Magmas related to carbonate melts
+For at least half a century field observations of alkaline silicate-carbonatite systems have
+suggested a variety of petrogenetic pathways between carbonatites and alkaline silicate
+magmas are preserved in surface volcanic products at least from the Proterozoic (Harmer
+1999; Andersen 2008) through to Recent volcanism (Le Bas 1987).
+The associations have
+been tested with increasing sophistication as experimental technology has advanced.
+Pioneering phase equilibria studies delineated the important role of water (Wyllie and Tuttle
+1962).
+More recent experiments quantified partial melting of mantle lherzolite using major
+components CaO-MgO-Al2O3-SiO2-CO2 with a CO2 content of 0.15 wt %, which showed a
+continuous change in melt composition approximating to carbonatitic through to kimberlitic
+melts over the minor melting range 0-1%, initially to a few GPa pressure (Dalton and
+Presnall 1998), to 3-8 GPa (Gudfinsson and Presnall 2005), and to 6-10 GPa pressure (Brey
+et al.
+2008), where additional preconditioning of the mantle by metasomatism is implicated.
+In general these experimental studies have avoided alkaline-bearing or indeed alkaline-rich
+and fluid-bearing systems (but see Litvin et al.
+1998; Gasparik and Litvin 2002; Safonov et
+al.
+2007; Brooker and Kjarsgaard 2011) and are still lacking in complexity, and for example,
+understanding of oxygen fugacity compared with natural systems.
+Direct experiments with natural carbonatitic rocks and minerals suffer from a host of
+different problems, but they can provide indicative results (e.g.
+Bobrov et al.
+2004).
+Carbonatites may share geochemical trace element signatures with kimberlites (Hornig29
+Kjarsgaard 1998; Le Roex et al.
+2003) and associations with other families of ultramafic
+rocks such as lamprophyres where CO2-rich ocelli (Huang et al.
+2002) might imply arrested
+unmixing of immiscible liquids.
+Round spherical textures, such as ocelli in rocks are
+sometimes ambiguous (Brooker and Hamilton 1990) and coexisting silicate and carbonatite
+lapilli have been also used to argue against a genetic association (Andersen 2008).
+The
+composition of primary kimberlite from the Slave Craton, based on samples of aphanitic
+kimberlite from the Jericho kimberlite pipe, N.W.T., Canada, have minimum CO2 contents
+(10-17 wt %) and geochemistry suggesting carbonatite affinities (Price et al.
+2000).
+Potassic
+silicate glass occurs with calcite carbonatite in lapilli from extrusive carbonatites at Rangwa
+Caldera Complex, Kenya (Rosatelli et al.
+2003).
+Group II mantle kimberlites have been
+shown to be experimentally related to carbonate melts in their mantle source region (Ulmer
+and Sweeney 2002) and metasomatised mantle xenoliths can show, for example,
+geochemical signatures transitional between kimberlites and carbonatites (Jones 1989).
+Detailed potential relationships between distinct families of silicate rocks and carbonatites
+are given in dedicated books and reviews (Le Bas 1987; Woolley and Kempe 1989; Woolley
+2003; Mitchell 2005; Woolley and Kjarsgaard 2008b), and others have blurred the
+boundaries between carbonatite and kimberlite volcanism (Sparks et al.
+2009) as evident in
+early experiments (Wyllie and Huang 1976).
+Other indicative experiments of upper mantle carbonate melts have investigated liquid
+immiscibility (Brooker and Hamilton 1990; Lee and Wyllie 1996), the transition from
+carbonate to silicate melts in the simplified CaO-MgO-SiO2-CO2 system (Moore and Wood
+1998), mixed carbonate-chloride-silicate systems (Safonov et al.
+2007), dissociation of
+carbonate in low pressure halide melts ( Combes et al.
+1977; Cherginets and Rebrova 2002,
+30
+2003) and the melting behavior of mantle carbonate-phlogopite lherzolite (Thibault et al.
+1992).
+FUTURE RESEARCH
+Fundamental gaps remain in our knowledge of the petrogenesis of carbonate melts in the
+deep mantle, which cloud our understanding of the possible origins of carbonatites,
+including their relationships to mantle silicate rocks and to the deepest known mantle
+magmas, kimberlites.
+Carbonatites at high-pressure: New geological discoveries that provide insights on
+carbonatites are still being made, and can be very instructive.
+For example, carbonatitesilicate
+volcanism carrying mantle xenoliths, carbonatites in major shear zones, and
+carbonatites associated with ophiolite belts are providing new tests and ideas for
+conventional research into mantle-derived carbonatitic melts (Tilton et al.
+1998; Nasir et al.
+2003; Stoppa et al.
+2005; Nasir 2006, 2011; Rajesh and Arai 2006; Attoh and Nude 2008;
+Humphreys et al.
+2010; Bailey and Kearns 2012).
+However, we still lack quantitative
+understanding of high-pressure behavior in several critical areas; for example high-pressure
+behavior of mixed C-O-H fluids to calculate carrying capacities over the range of
+compositions transitional between carbonate-silicate mantle systems, and how these operate
+in fluid-rich pathways escaping from subduction zones (Stalder et al.
+1998).
+What have been
+the roles of carbonate melts in the distribution of carbon throughout Earth’s history, and how
+do these roles relate to changing mantle dynamics and different plate tectonic settings?
+Key
+will be to map out the phase stability of carbonates from the crust into the mantle to connect
+31
+observations from the deepest natural samples (inclusions in diamond) with predictions from
+theory and experiment (Berg 1986; Biellmann et al.
+1993a, 1993b; Brenker 2005; Brenker et
+al.
+2006, 2007).
+Particularly relevant will be to understand the relative stabilities of lowpressure
+carbonate and newly discovered families of high-pressure tetracarbonates.
+Melt structure of tetracarbonates?
+The transformation of carbonate minerals to
+“tetracarbonates” represents potentially the most significant step-forward in the
+understanding of the solid reservoirs of carbon at deeper mantle pressures (Oganov et al.
+2013), in particular since experimental results suggest the transformation may involve a
+range of carbon-bearing phases, including nanodiamond (Boulard et al.
+2011).
+The
+implications for carbonate melt structures, if these are present under lower mantle
+geotherms, is intriguing to consider.
+Changes in the density and viscosity in silicate melts
+occur corresponding to phase changes in the equivalent solid phase due to increases in
+coordination (Genge 1994; Karki and Stixrude 2010).
+Thus, jadeite and albite melts display
+increases in density in both solid and quenched glass phases between 1.0-1.5 GPa and
+decreases in viscosity relating to the plagioclase to garnet phase transition (Karki and
+Stixrude 2010).
+We might therefore expect changes in behavior in carbonate melts
+corresponding to phase transitions in their crystalline solids with increases in coordination
+and close packing under compression.
+Crystalline CaCO3 transforms from calcite to
+aragonite structures at ~2 GPa (Suito et al.
+2001); however, MDS simulations of CaCO3
+melts suggest no equivalent increase in Ca coordination from 6- to 8-fold (Genge et al.
+1995b).
+The large compressibility of CaCO3 melts predicted from these simulations,
+however, would imply that coordination increases are inevitable at higher pressures (>11
+32
+GPa).
+If transformation of CaCO3 melt structure to a tetrahedral carbonate occurs at lower
+mantle pressures then a dramatic change in melt properties would be expected owing to the
+ability of CO4 to form polymerizable networks.
+If the theoretical increases in carbonate melt
+viscosity at high pressures are verified (Jones and Oganov 2010) this behavior would
+fundamentally inhibit mobility of carbonate melts in the lower mantle and transform
+previous conceptions (Jones and Oganov 2009; Stoppa et al.
+2009).
+Significant changes in
+the chemical properties of carbonate melts dramatically change their solubility for metal
+cations.
+The site of transformation of tetracarbonate to carbonate magmas in the lower
+mantle could, therefore, be extremely significant for storage of deep mantle carbon, and we
+might envisage, for example, precipitation of solid phases from rising carbonate melts.
+ACKNOWLEDGEMENTS
+We are grateful to Alan Woolley, for providing a review of an early draft and to the
+Natural History Museum London for access to additional specimens and research facilities.
+The groundwork for this review was supported through graduate studentship training awards
+at University College London provided by NERC.

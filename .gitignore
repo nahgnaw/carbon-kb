@@ -52,3 +52,4 @@ nosetests.xml
 .stat
 
 reverb/*
+topicalPhrases/*

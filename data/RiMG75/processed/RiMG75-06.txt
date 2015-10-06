@@ -1,0 +1,723 @@
+﻿Primordial Origins of Earth’s Carbon
+INTRODUCTION
+It is commonly assumed that the building blocks of the terrestrial planets were derived from a cosmochemical reservoir that is best represented by chondrites, the so-called chondritic Earth model.
+This view is possibly a good approximation for refractory elements (although it has been recently questioned; e.g., Caro et al.
+2008), but for volatile elements, other cosmochemical reservoirs might have contributed to Earth, such as the solar nebula gas and/or cometary matter (Owen et al.
+1992; Dauphas 2003; Pepin 2006).
+Hence, in order to get insights into the origin of the carbon in Earth, it is necessary to compare: (i) the elemental abundances and isotopic compositions of not only carbon, but also other volatile elements in potential cosmochemical “ancestors,” and (ii) the ancestral compositions with those of terrestrial volatiles.
+This approach is the only one that has the potential for understanding the origin of the carbon in Earth but it has several intrinsic limitations.
+First, the terrestrial carbon budget is not well known, and, for the deep reservoir(s) such as the core and the lower mantle, is highly model-dependent (Dasgupta 2013; Wood et al.
+2013).
+Second, the cosmochemical reservoir(s) that contributed volatile elements to proto-Earth may not exist anymore because planet formation might have completely exhausted them (most of the mass present in the inner solar system is now in Venus and Earth).
+Third, planetary formation processes (accretion, differentiation, early evolution of the atmospheres) might have drastically modified the original elemental and isotopic compositions of the volatile elements in Earth.
+Despite these limitations, robust constraints on the origin(s) of the carbon in Earth can be deduced from comparative planetology of volatile elements, which is the focus of this chapter.
+Carbon in the cloud of gas and dust from which the solar system formed was probably mainly in the forms of gaseous CO and of organic-rich carbonaceous dust (e.g., Zubko et al.
+2004).
+Other forms of carbon, such as CH4, volatile organics, and diamonds, were also probably present but in much smaller proportions.
+In primitive meteorites, the depletion of carbon relative to refractory elements and normalized to the solar composition indicates that indeed a large fraction of this element was not in refractory phase(s) and had a volatile element behavior like hydrogen, nitrogen, and noble gases (e.g., Anders and Grevesse 1989; Lodders 2003).
+Furthermore, in primitive meteorites, the total amounts of carbon, nitrogen, and trapped noble gases tend to correlate (Otting and Zärhinger 1967; Kerridge 1985).
+Thus, to first order the noble gases can be taken as proxies for the behavior of carbon during planetary building events, keeping in mind that under specific conditions, such as low oxygen fugacities and in the presence of metal, carbon and nitrogen might have behaved more like refractory elements than like highly volatile elements, such as noble gases.
+In this chapter, we first discuss the origin of the carbon isotopes in the universe and in the solar system.
+We present estimates of the elemental and isotopic compositions of carbon and, when necessary, of other volatile elements in various solar system reservoirs.
+We then discuss the latest estimates of the carbon content and isotopic compositions in the different terrestrial reservoirs.
+From the comparison between these contrasting inventories, we discuss the various possible processes of delivery of volatiles to Earth.
+Finally, the early terrestrial carbon cycle is introduced.
+CARBON IN THE UNIVERSE
+Nucleosynthesis of carbon and stellar evolution
+Only hydrogen, helium, and some lithium were created in significant amounts in the Big Bang (Table 1).
+All other elements were formed by nucleosynthesis in stars (e.g., Burbidge et al.
+1957; Truran and Heger 2003; Meyer and Zinner 2006), except for most lithium, beryllium, and boron, which are largely the products of fragmentation (spallation) of heavier nuclei by energetic cosmic rays in the interstellar medium.
+The build-up of elements (and isotopes) heavier than helium once star formation began in galaxies is often referred to as galactic chemical evolution (GCE).
+Stars range in mass from the smallest brown dwarfs with mass of ~0.012 solar masses (Mo) to super massive stars of >100 Mo.
+Nucleosynthesis of ever-heavier isotopes is the prime energy source for stars and it proceeds in stages that require increasing temperatures and pressures with each new stage.
+The first stages of nucleosynthesis, deuterium (D + 1H = 3He) and lithium (7Li + 1H = 2 4He) burning, occur even as a star is still forming/contracting (pre-main sequence).
+Brown dwarfs, the lowest mass stars (0.012-0.08 Mo), do not get beyond the deuterium-burning stage.
+Higher mass stars join the main sequence, where they spend most of their lives when they begin burning 1H in their cores.
+Hydrogen burning converts 1H to 4He via proton-proton chain and CNO cycle reactions.
+In the CNO cycle, carbon, nitrogen, and oxygen isotopes inherited from earlier generations of stars “catalyze” the conversion of 1H to 4He.
+The isotopes 13C, 14N, and 17O are important intermediate products of the CNO cycle.
+The main sequence life of a star ends when it has exhausted all the 1H in its core.
+In <10 Mo stars, hydrogen burning continues in a shell above the core and the star becomes a red giant branch (RGB) star.
+Massive convection at this transition brings hydrogen-burning products to the stellar surface, most notably 13C, 14N, and 17O.
+Eventually, contraction of the core and mass added to it from the hydrogen-burning shell produce conditions that enable the next stage, core helium burning.
+In helium burning, three 4He nuclei are fused together in the triple-alpha reaction, to form 12C.
+Further alpha addition leads to the formation of 16O, but reaction rates beyond this are very slow.
+During core helium burning, the entire star contracts and it leaves the RGB.
+However, once helium is exhausted in the core, shell burning resumes and the star joins the asymptotic giant branch (AGB).
+For stars of ~3-10 Mo, there is a second dredge-up of hydrogen-burnt material into the envelope of the star.
+The 12C/13C ratios in the envelopes of most stars at the beginning of the AGB are <10, but once alternating phases of hydrogen and helium burning in shells above the exhausted core become established, 12C-rich helium-burnt material is periodically mixed into the envelope.
+For ≤4 Mo stars, the result of adding this material to the envelop is a rapid increase in both the 12C/13C and the C/O ratios.
+Eventually, so much 12C is added that the C/O ratio of the envelope, which was initially less than one, exceeds one.
+For 4-10 Mo stars, conditions at the base of the envelope allow for some hydrogen burning, which destroys much of the added 12C, so that the 12C/13C ratio remains low and the C/O ratio stays below one.
+The chemistry of the envelope during the AGB is important because the AGB stars begin to lose their envelopes in massive stellar winds, the development of which is driven at least in part by dust formation.
+The chemistry of envelopes dictates the types of dust that form—envelopes with C/O < 1 are dominated by crystalline and amorphous silicates and oxides, with most of the carbon tied up in CO, while those with C/O > 1 are dominated by SiC and graphite and/or amorphous carbon, and most of the oxygen is in CO.
+These AGB winds are important sources of freshly synthesized material, particularly 13C and 17O, and dust for the interstellar medium (ISM).
+Eventually, the entire envelope is lost, leaving behind the inert core, now a white dwarf, which is dominated in most cases by 12C and 16O.
+The cores of the most massive AGB stars may experience carbon burning, which converts 12C to 20Ne and 24Mg, producing an O-Ne-Mg white dwarf.
+A white dwarf is not always the final state of an intermediate mass star.
+If it is part of a close binary, it can gain mass from its less evolved companion.
+The increase in temperature and pressure at the surface as material is accreted eventually results in a nova explosion driven by runaway CNO cycle reactions (12C/13C < 5).
+However, not all the accreted material is blown off in a nova explosion, and if after repeated nova events the mass of a white dwarf eventually exceeds ~1.4 Mo it will explode as a type Ia supernova.
+Once 9-25 Mo stars leave the main sequence, their initial evolution is not unlike that of intermediate mass ones, with the development of a supergiant phase and dredge-up that enriches the envelope in CNO-cycle products.
+However, there is never any dredge-up of helium-burnt material, so the C/O < 1.
+Significant mass loss and dust formation is observed to occur during the supergiant phase, but the envelope is never entirely lost before the star becomes a type II supernova.
+The internal structure of the pre-supernova star is a series of shells that have experienced ever more advanced stages of nucleosynthesis with increasing depth.
+These include a relatively massive, carbon-rich helium-burning shell, but the majority of the shells are oxygen-rich.
+Two of the major nucleosynthetic products in type II supernovae are 12C and 16O.
+Further nucleosynthesis occurs during the explosion, producing the elements heavier than iron.
+For the most massive stars, (> 25 Mo), mass loss during the supergiant phase is so vigorous that the envelope is lost, exposing hydrogen-burnt material directly at the surface.
+With continued mass loss, the products of hydrogen burning, such as 14N, become highly overabundant.
+The star is now a Wolf-Rayet star.
+Further mass loss reveals helium-burnt material, rich in 12C and 16O (C/O > 1), and it is only at this stage that dust formation is observed.
+The ultimate fate of a WR star is a type Ib supernova that produces a similar array of elements/isotopes to type IIs.
+Galactic chemical evolution
+The lifetimes of stars vary dramatically with their masses.
+Stars that are only slightly less massive than the Sun have lifetimes that are of the order of the age of the Universe, > 1010 years.
+These low-mass stars will not have contributed to GCE and will not be discussed further here.
+Intermediate and massive stars (> 1 Mo) have lifetimes that range from ~1010 years at the low mass end to only a few million years at the high mass end.
+Early in the history of the Galaxy, massive stars (their winds and type II and Ib supernovae) would have been the main sources of elements/isotopes heavier than helium.
+The main products would have been isotopes like 12C and 16O, so-called primary isotopes because they can be built up from the primary products of the Big Bang (hydrogen and helium).
+With time, and after several generations of massive star formation, the longer-lived intermediate mass stars would have started dying and isotopes like 13C and 17O would have begun to build up.
+Evidence for this GCE can be found in long-lived low-mass stars, some of which can have very low abundances of elements heavier than helium (low metallicity).
+Because rates of star formation decrease with increasing radius from the Galactic center, the effects of GCE can also be seen in the carbon and oxygen isotopic compositions of the interstellar medium, with 12C/13C and 16O/17O ratios increasing more-or-less monotonically with radial distance.
+Carbon in the interstellar medium and the presolar molecular cloud
+Once injected into the ISM, stellar material is subject to a number of energetic processes that modifies it.
+These events include supernova-driven shock waves, cosmic rays, and UV irradiation.
+In the diffuse ISM, these energetic processes mean that complex molecules cannot form and dust is either damaged or destroyed.
+Most rock-forming elements are condensed in amorphous silicate dust, while carbon is distributed between CO and a poorly characterized carbonaceous dust (Zubko et al.
+2004; Draine and Li 2007).
+In the higher densities of molecular clouds, most of the material is shielded from shock waves and UV irradiation.
+The interiors of molecular clouds are also much denser and colder than the diffuse ISM—temperatures may reach 10 K or less.
+As a result, all but the most volatile material is condensed in icy dust grains.
+Despite these temperatures, a complex chemistry can occur in molecular clouds in the gas phase, on grain surfaces, and even within grains (Herbst and van Dishoeck 2009).
+This chemistry is driven to a large extent by cosmic rays that can penetrate the clouds—activation barriers for reactions between cosmic ray generated ions and other gaseous species are essentially zero, allowing for reactions at even these very low temperatures.
+Because the reaction temperatures are so low, extreme isotopic fractionations can be generated.
+Deuterium, for instance, can be enriched by several orders of magnitude in water and simple organic molecules.
+Carbon content and isotopic composition of the solar nebula
+Roughly 99.8% of the total mass of the present solar system is in the Sun.
+Thus, the general assumption is that the Sun’s bulk composition must closely resemble the average composition of the material from which the solar system formed.
+Except for the brief, early episode that destroyed most of the deuterium and lithium, the outer regions of the Sun are unaffected by nucleosynthesis in the stellar interior (e.g., Geiss and Bochsler 1982).
+Therefore, spectroscopic measurements of the Sun’s photosphere combined with hydrodynamic models of its atmosphere can be used to determine most elemental and even some isotopic abundances (Asplund et al.
+2009).
+To estimate the primordial solar or “cosmic” composition, small corrections to the present-day photospheric abundances are needed to account for gravitational settling and diffusion of elements that deplete the photosphere over the lifetime of the solar system (Turcotte et al.
+1998).
+Solar photospheric abundances have been measured for most elements, although they continue to be refined (Asplund et al.
+2009).
+In particular, since 2002 there has been a significant revision downwards in the abundances of carbon, nitrogen, and oxygen.
+The composition of the solar wind and Jupiter’s atmosphere can also provide useful constraints for the abundances of some elements and isotopes.
+Tables 2 and 3 list the abundances and isotopic compositions of a restricted number of elements that are particularly relevant here.
+Figure 1 compares the isotope variations of hydrogen and nitrogen in the solar system, which show a close affinity between primitive meteorites and Earth.
+To first order, the solar composition resembles the compositions of young stars in the local neighborhood, as well as the composition of the local interstellar medium (e.g., Nieva and Przybilla 2011).
+There is scatter in the compositions of other stars in the vicinity of the Sun.
+In part, this diversity reflects uncertainties in the measurements, but it also reflects spatial and temporal variations in the compositions of the interstellar material from which the stars formed (Kobayashi and Nakasato 2011).
+The composition of the interstellar medium is expected to vary in time and space as a result of the infall of material onto the Galactic disk, local “pollution” by highly evolved mass-losing stars (e.g., supernovae, novae, and AGB stars), and because of an overall gradient in star formation rates.
+Nevertheless, the solar composition is a useful and commonly used reference with which to compare the compositions of other astronomical objects.
+Remarkably, the composition of one group of primitive meteorites, the CI chondrites, closely resembles the non-volatile (i.e., not including hydrogen, carbon, nitrogen, oxygen, and the noble gases) photospheric abundances.
+In fact, the resemblance is so close that the appropriately scaled CI abundances of many elements and most isotopes are preferred over the photospheric abundances because they can be measured more accurately (e.g., Lodders 2003; Asplund et al.
+2009).
+The general assumption that the bulk isotopic compositions of the elements in CI chondrites are solar is not valid for the most volatile elements, such as hydrogen, carbon, nitrogen, oxygen, and the noble gases.
+This is because physical and chemical processes in the solar nebula produced several carriers of these elements (e.g., H2, H2O, CO, CH4, NH3, and N2, as well as dust/ice) with different volatilities that were physically and isotopically fractionated relative to one another, so that the CI chondrites did not accrete all of these carriers when they formed.
+Because solar (or CI) is the starting composition from which all solar system materials are assumed to have ultimately evolved, the compositional variations of solar system objects, particularly meteorites, are often expressed as deviations relative to CI.
+Here we also use a CI-CM average composition for volatile abundances, since CM-type meteorites such as Murchison are also remarkably primitive and volatile rich, present analogies with micrometeorites (another potentially important source of terrestrial volatiles, see below), and most CMs have experienced less aqueous alteration than CIs.
+Volatile abundances and isotope compositions in comets with special reference to carbon
+The volatile species emitted by comets are dominated by water, followed by CO, CO2, NH3, and simple organic molecules (Bockelée-Morvan et al.
+2004; Mumma and Charnley 2012).
+To date, there have been no unambiguous remote detections of noble gases in comets.
+Helium and neon have been measured in cometary matter from comet Wild 2 (or 81P/Wild 2) that was returned to Earth by the Stardust mission (Marty et al.
+2008).
+The isotopic composition of neon more closely resembles that of neon trapped in chondrites (phase “Q” neon) rather than that of solar wind neon, and the helium and neon abundances were found to be very high and only matched by lunar regolith that had been irradiated by the solar wind (SW) for long periods of time.
+These observations suggest that the light noble gases in Stardust matter were implanted by solar irradiation early in the formation of the solar system, provided that phase Q neon is indeed derived from solar neon due to isotope fractionation during implantation, as suggested by some models (see Ott 2002, for a review).
+Hence implantation of solar gases could be a significant source for trace gases, but probably not for carbon that is predominantly in organic compounds.
+Based on the data obtained by the VEGA-1 spacecraft as it flew past comet Halley, much of the carbon in that comet is in C-, H-, O-, and N-rich (CHON) dust particles (Kissel and Krueger 1987; Jessberger et al.
+1988).
+The C/Mg ratio in Halley dust is 6-12 times that of CI chondrites (Jessberger et al.
+1988), significantly higher than for the particles captured by the Stardust mission to comet 81P/Wild 2 (Brownlee et al.
+2006).
+This difference could be largely due to the high relative velocity (6 km/s) between the Stardust spacecraft and the Wild 2 particles at the time they were captured.
+The particles were captured in a very low-density medium, but the large kinetic energies of the cometary particles would have favored the preservation of only the more competent and refractory materials.
+Nevertheless, variations in composition between comets cannot be ruled out.
+For comet Halley, Delsemme (1991) estimated a bulk composition of 43 wt.% water, 26 wt.% organics, and 31 wt.% silicates.
+If most of the organics is in CHON-like material (Kissel and Krueger 1987) that is ~70 wt.% carbon, this would mean that Halley-like comets have ~18 wt.% carbon (Table 1).
+Greenberg (1998) arrived at a similar composition for comets in general using a range of constraints, including the Halley data.
+This carbon content would correspond to a bulk H/C molar ratio for Halley of about four, not so different from ratios observed in volatile-rich CI and CM carbonaceous chondrites (molar H/C of 3-13).
+Interplanetary dust particles
+Interplanetary dust particles (IDPs) are small particles that are collected in the upper atmosphere (Bradley 2003).
+Most IDPs are < 50-100 μm across.
+Larger particles, known as cluster IDPs, tend to be very fragile and fragment on the collectors.
+Their small size and/or fluffy nature means that IDPs slow down relatively gently during atmospheric entry.
+Consequently, unlike their larger and/or denser counterparts that at least partially melt (cosmic spherules and micrometeorites) and often vaporize, IDPs are less severely heated on entering the atmosphere.
+Dynamical arguments suggest that IDPs have both cometary and asteroidal sources (e.g., Messenger et al.
+2003a).
+Most IDPs that have been studied have grossly (factors of 2-3) chondritic elemental compositions, except for volatile elements that can be lost during atmospheric entry heating or are subject to terrestrial contamination (Schramm et al.
+1989; Thomas et al.
+1993; Kehm et al.
+2002).
+Extraterrestrial particles with non-chondritic compositions occur in collections, but these objects are more difficult to distinguish from terrestrial contaminants and so are rarely studied.
+The chondritic particles fall into two morphological groups—porous (CP-) and smooth (CS-) particles.
+The CP-IDPs are largely anhydrous, composed mostly of submicron crystalline and amorphous silicates, metal, sulphide, and organic matter.
+The silicate compositions tend to be very heterogeneous.
+Because of their very fine-grained nature, high degree of chemical disequilibrium, and high concentration of organic matter and presolar grains, CP-IDPs are thought to be the most primitive solar system materials available for study.
+In the CS-IDPs, the silicates are dominated by hydrous minerals (predominantly serpentines and clay minerals).
+Although not identical, the CS-IDPs resemble the matrices of the aqueously altered chondrites.
+Because of their resemblance to chondrites and the general belief that comets did not experience aqueous alteration, it is widely assumed that CS-IDPs are derived from asteroids.
+On the other hand, there are no meteorites that resemble CP-IDPs, which, along with their apparently very primitive nature, has led most researchers to conclude that CP-IDPs are from comets.
+A cometary origin of at least some CP-IDPs is supported by the high abundances of isotopically anomalous organic matter and presolar grains in them (e.g., Floss et al.
+2006; Busemann et al.
+2009; Duprat et al.
+2010).
+On average, the abundance of carbon in IDPs is ~12 wt.% (Thomas et al.
+1993), roughly three times that in CI chondrites, although there is considerable variation.
+Most of this carbon is in organic matter.
+Messenger et al.
+(2003b) reviewed the hydrogen, nitrogen and carbon isotopic compositions of IDPs.
+Their bulk carbon isotopic compositions fall within the terrestrial range, but their average isotopic composition of δ13C = -45 ‰ is lighter than any bulk meteorites or the bulk Earth (although for Earth the bulk carbon isotope composition is not precisely known, see below).
+Hydrogen and nitrogen isotopic compositions vary enormously within and between IDPs.
+The most striking features of the hydrogen and nitrogen in IDPs are their often very large deuterium and 15N enrichments.
+These enrichments are poorly correlated despite generally being associated with organic matter (see also: Aléon et al.
+2003; Keller et al.
+2004; Floss et al.
+2006; Busemann et al.
+2009).
+The hydrogen and nitrogen isotopic variations are similar to those seen in the more primitive chondrites (e.g., Floss and Stadermann 2009) and their organic matter (e.g., Busemann et al.
+2006) when they are analyzed at similar spatial scales to IDPs.
+Meteorites
+With the rare exceptions of Lunar and Martian falls, meteorites are fragments of asteroids from the asteroid belt located between the orbits of Mars and Jupiter.
+They are broadly divided into primitive chondrites, and achondrites that have undergone melting and differentiation on their parent bodies (e.g., Scott and Krot 2003).
+Achondrites generally have low abundances of carbon and other volatiles (hydrogen, nitrogen, and noble gases), presumably because their carriers were largely destroyed during melting.
+The notable exceptions are the ureilites that contain up to ~5-7 wt.% in poorly graphitized carbon and the shock-produced high-pressure carbon allotropes diamond and lonsdaleite.
+The ureilites are a potent potential source of Earth’s carbon.
+However, their CI-CM-normalized hydrogen and nitrogen contents are much lower than for carbon.
+Later on, we will argue that the relative abundances of Earth’s volatiles are CI-CM-like.
+Hence, if ureilites were a major source of Earth’s carbon, sources that were strongly depleted in carbon relative to the other volatiles must be found.
+To date, no such sources have been identified.
+Consequently, the ureilites notwithstanding, here we will concentrate on the chondrites as the most likely sources of Earth’s volatiles.
+Historically, the chondrites have been divided into three classes based on their compositions and mineralogies (ordinary, carbonaceous, and enstatite).
+These three classes in turn have been subdivided into a number of groups: ordinary chondrites into H, L, and LL; carbonaceous chondrites into CI, CM, CR, CV, CO, CB, CH, and CK; and enstatite chondrites into EH and EL.
+The name carbonaceous chondrite is a historical one and is a bit misleading because some ordinary and enstatite chondrites contain more carbon than some carbonaceous chondrites (Table 4).
+The chondrite classification scheme is still evolving as more meteorites are found—two new classes (R and K chondrites) have been identified, and a number of individual meteorites do not belong to any recognized group.
+After formation, the chondrites experienced secondary modification (thermal metamorphism and aqueous alteration) on their parent bodies.
+A petrographic classification scheme for secondary processes divides the chondrites into 6 types—types 3 to 6 reflect increasing extent of thermal metamorphism, and types 3 to 1 reflect increasing degrees of aqueous alteration.
+By convention, the chemical classification is followed by the petrologic one (e.g., CI1, CM2, CV3).
+The chondrites are principally made up of three components—chondrules, refractory inclusions, and fine-grained matrix—whose relative abundances vary widely (Brearley and Jones 1998).
+Refractory inclusions and chondrules are high-temperature objects, and normally contain little or no carbon.
+Almost all the carbon in the most primitive chondrites is found in their matrices, as are the other most volatile elements and presolar circumstellar grains.
+The matrix abundances of these materials in all chondrites are similar to those in CI chondrites (Alexander et al.
+2005, 2007; Huss 1990; Huss and Lewis 1994).
+The main carbonaceous component in chondrites is organic, but aqueously altered meteorites often also contain carbonate (Table 4).
+The organics in chondrites also account for a significant fraction of the hydrogen and most of the nitrogen in the bulk chondrites, as well as being associated with the carrier of most of the noble gases.
+Carbon is also present in “primitive” meteorites as nanodiamonds that can make up to ~1,000 ppm of the matrix in chondrites (Huss 1990).
+In bulk, the nanodiamonds contain a trace noble gas component (so-called Xenon-HL) that is clearly of nucleosynthetic origin, so at least some of them are circumstellar.
+However, nanodiamonds have bulk carbon and nitrogen bulk isotopic compositions that are solar (e.g., Ott et al.
+2012), and a dual origin (solar system and inheritance from the presolar molecular cloud) cannot be ruled out.
+Other trace carbonaceous components include circumstellar SiC and graphite that formed around supernovae, novae, and AGB stars prior to the formation of the solar system (e.g., Nittler 2003).
+In all chondrite groups, the carbon content decreases with increasing thermal metamorphism, hence the low minimum carbon contents of CV, CO, and ordinary chondrites.
+Generally, little or no carbon remains by the type 3-4 transition, and if any remains much of it may be terrestrial contamination (Alexander et al.
+1998).
+The CK and R chondrites have all been heavily metamorphosed, which is why they have not been included in Table 4.
+Only in the highly reduced enstatite chondrites is carbonaceous material preserved to higher metamorphic grades (Grady et al.
+1986; Alexander et al.
+1998).
+Aqueous alteration can also modify this organic matter, but the effects tend to be subtler (Alexander et al.
+2007, 2010; Herd et al.
+2011).
+Hence, to understand the origins of this organic material, here we concentrate on the most primitive chondrites (CI, CR, CM, and Tagish Lake) available to us.
+The organic matter in chondrites—relationship to IDPs, comets, and ISM
+The organic matter in chondrites can be divided into soluble (SOM) and insoluble (IOM) fractions (Gilmour 2003; Pizzarello et al.
+2006).
+Even in the most primitive meteorites, the concentrations of traditionally defined SOM, that which is soluble in typical solvents (e.g., water, methanol, toluene, etc.
+), is no more than a few hundred parts per million.
+The SOM is composed of a very complex suite of compounds that include amino acids, carboxylic acids, and polycyclic aromatic hydrocarbons (PAHs).
+The IOM and carbonates are usually assumed to make up the bulk (>75 %) of the carbon in chondrites.
+However, the true IOM, that which remains insoluble even after demineralization with acids, only comprises about half of the bulk carbon in primitive chondrites (Table 4).
+The remainder is in a poorly understood material that is insolvent until hydrolyzed by acids, but it has a composition that is probably not very different from the IOM (e.g., Alexander et al.
+2012).
+For this discussion, it will be assumed that the IOM and the hydrolysable material are closely related.
+The most primitive meteoritic IOM has an elemental composition (C100H75N4O15S4; Alexander et al.
+2007) that is similar to the average composition (C100H80N4O20S2) of comet Halley CHON particles (Kissel and Krueger 1987).
+The IOM appears to be composed of small PAHs decorated and cross-linked by short, highly-branched aliphatic material (e.g.
+Cody et al.
+2002).
+At least in terms of hydrogen, nitrogen, and carbon isotopes, the bulk compositions and range of compositions seen in the most primitive meteoritic IOM (Busemann et al.
+2006) also resembles the IOM in the most primitive IDPs (Aléon et al.
+2000; Messenger 2000; Brownlee et al.
+2006; Busemann et al.
+2009).
+The large deuterium and 15N isotopic enrichments in IOM in chondrites and IDPs are thought to be the result of ion-molecule reactions and other processes in the ISM (Robert and Epstein 1982; Yang and Epstein 1983; Messenger 2000; Aléon et al.
+2003) and/or the outer solar system (Aikawa et al.
+2002; Gourier et al.
+2008).
+There are variations in the isotopic composition of IOM within and between chondrites and IDPs, but these mostly reflect parent body processing in chondrites (Alexander et al.
+2007, 2010; Herd et al.
+2011) and atmospheric entry heating of IDPs (Bockelée-Morvan et al.
+2004).
+The organic particles in the Stardust samples also have hydrogen and nitrogen isotopic anomalies (Brownlee et al.
+2006; McKeegan et al.
+2006; Matrajt et al.
+2008; De Gregorio et al.
+2010).
+The hydrogen isotope anomalies in the Stardust samples are more subdued than in the most primitive chondrites and IDPs, but this difference may reflect modification during capture.
+A further link between the organics in chondrites, IDPs, and comets are the presence of organic nanoglobules in all three (Flynn et al.
+2006; Garvie and Buseck 2006; De Gregorio et al.
+2010; Matrajt et al.
+2012).
+Thus, the organics in meteorites, CP-IDPs, and comets appear to be related despite their parent bodies’ very different formation conditions and locations.
+The bulk carbon content of CI chondrites, which is largely in organic material, represents ~10% of the carbon available (assuming a solar composition for the primordial solar system).
+The carbon contents of comet Halley and the parent bodies of IDPs may be much higher (30-100% of available carbon), although the uncertainties are large (e.g., Alexander 2005).
+Nevertheless, whether the organic matter was inherited from the protosolar molecular cloud or formed in the solar system, the formation mechanism was relatively efficient.
+THE SOLAR SYSTEM: DYNAMICS
+Despite its apparently well-ordered orbital architecture, the solar system’s history is thought to have been dynamic.
+Indeed, there are at least two phases of evolution during which Earth could very well have been prevented from forming or have been destroyed.
+Our understanding of these phases comes from models of orbital dynamics and should thus not be interpreted as absolute truth.
+Indeed, Alexander et al.
+(2012) have questioned some of the predictions of the “Nice” and “Grand Tack” models that will be described below.
+Nonetheless, it is important to realize that simpler models systematically fail to reproduce the observed orbital architecture of the solar system (e.g., Raymond et al.
+2009).
+During the first dangerous phase, interactions with the gaseous protoplanetary disk may have caused Jupiter to migrate inward to just 1.5 AU, in the immediate vicinity of Earth’s formation zone, before “tacking” and migrating back outward beyond 5 AU (the “Grand Tack” model of Walsh et al.
+2011).
+This excursion of Jupiter into the inner solar system may explain the relatively small mass of Mars.
+Had the timing of events, particularly of Saturn’s orbital migration relative to Jupiter’s, been different, Jupiter might well have continued migrating inward and decimated Earth’s building blocks.
+In the second dangerous phase the giant planets are thought to have undergone a dynamical instability that re-arranged their orbital architecture and caused the late heavy bombardment (LHB; the instability is referred to as the “Nice” model of Gomes et al.
+2005; Tsiganis et al.
+2005; and Morbidelli et al.
+2007).
+Although this did cause a large increase in the impact flux throughout the solar system, it was an extremely weak instability: the eccentricity distribution of extra-solar planets suggests that between 50 and 90% of all planetary systems with giant planets undergo much stronger instabilities that would likely have destroyed Earth, or at least provoked collisions between the terrestrial planets (Raymond et al.
+2010, 2011).
+Even in the current epoch, chaotic dynamics driven by gravitational interactions between planets allow for the possibility of a dynamical instability and future collisions between the terrestrial planets (Laskar and Gastineau 2009).
+We now review the current paradigm of the formation history of the solar system, focusing on the growth of the terrestrial planets and how they acquired their volatiles, notably their carbon.
+For a more detailed account of the physics of planet formation, the reader is directed to recent reviews on the subject, notably Papaloizou and Terquem (2006) and Morbidelli et al.
+(2012).
+The solar system formed from a disk of gas and dust orbiting the young Sun, sometimes called the “solar nebula” or “protosolar nebula.” This disk is assumed to have had the same bulk composition as the Sun, but the composition of the gas and dust phases was not uniform throughout the disk.
+Driven by both stellar and viscous heating, the disk was hotter closer to the Sun and cooler farther away.
+Given the temperature-dependent condensation sequence, any given species remains in the gas phase interior to an orbital radius that corresponds to its condensation temperature for the relevant, very low pressure, and should condense beyond that radius.
+For example, interior to the “snow line,” where the temperature is ~170 K, water will remain in the vapor phase, but beyond the snow line it condenses as ice.
+Likewise, each species in a disk has its own condensation line, exterior to which it will condense and interior to which it remains in the gas phase.
+The composition of solids that formed within the disk thus reflects the local temperature and the disk’s composition; this confluence is called the condensation sequence (Pollack et al.
+1994; Lodders 2003).
+The dominant carbon-bearing condensable species in disks are CH4 and CO (e.g., Dodson-Robinson et al.
+2009), although, as noted in the preceding section, carbon-rich dust that is not necessarily seen astronomically may constitute another important, possibly dominant, source of carbon.
+Polycyclic aromatic hydrocarbons (PAHs) are observed to be abundant in the interstellar medium (Tielens 2008) and in carbonaceous meteorites (see previous section), and may thus constitute an important source of carbon (Kress et al.
+2010).
+Two important orbital radii in terms of carbon abundance have been proposed: a radius analogous to the snow line beyond which carbon can condense—referred to as the “tar line” by Lodders (2004); and the radius interior to which the PAHs that were initially presented in the disk are destroyed by thermally-driven reactions—dubbed the “soot line” by Kress et al.
+(2010).
+However, complex, refractory organics like those seen in meteorites, IDPs and comets do not form spontaneously via condensation of CH4, CO, etc.
+at low temperatures.
+Fischer-Tropsch-type (FTT) synthesis can occur if the appropriate catalysts are present, but there is no evidence that the organics in meteorites, for instance, formed by this mechanism (e.g., Alexander et al.
+2007).
+The IOM does start to break down at temperatures of 300-400 °C, thus a more appropriate definition for a “tar line” would be the isotherm beyond which the IOM-like material is stable in the solar nebula.
+Protoplanetary disks are not static, but evolve in time.
+The gaseous component of the disk is dissipated on a timescale of a few million years, as inferred from observations of infrared excesses in the spectra of young stars (Haisch et al.
+2001; Meyer et al.
+2008).
+As the disk dissipates it cools, such that the location of the various condensation fronts move inward in time (Sasselov and Lecar 2000; Ciesla and Cuzzi 2006; Dodson-Robinson et al.
+2009).
+The exact positions of the condensation fronts depend on the disk’s detailed temperature and pressure structure, which in turn is determined by poorly constrained physical characteristics, such as the viscosity and the opacity (e.g., Garaud and Lin 2007).
+In addition, dust particles do not remain on static orbits within the disk but migrate radially due to drag forces and pressure, although models suggest that dust migration probably does not produce large pileups (Hughes and Armitage 2010).
+Terrestrial planets and giant planet cores form from the dust component of the disk.
+Giant planets subsequently accrete massive gaseous atmospheres directly from the gaseous component of the disk.
+Given the strong constraint that gaseous protoplanetary disks only survive for a few million years (Haisch et al.
+2001), and the equally strong isotopic constraints that Earth’s accretion lasted for at least 11 to 30 million years (Yin et al.
+2002; Kleine et al.
+2002) and possibly closer to 50 to 100 Ma, Touboul et al.
+2007), it appears that gas giant planets form faster than the much smaller terrestrial planets.
+This difference is counter-intuitive, given that the giant planets’ cores are thought to be more massive than Earth (Guillot 2005), and may be explained by the simple increase in the amount of condensable material in the giant planet-forming part of the disk because it lies beyond the snow line (Stevenson and Lunine 1988; Kokubo and Ida 2002).
+Although the model we present is the current paradigm, we note that there exists an alternate “top-down” model for giant planet formation that invokes gravitational instability in the gas disk (Boss, 1997).
+Planet formation occurs in a series of dynamical steps.
+First, dust grains agglomerate to form mm- to cm-sized pebbles or possibly even m-sized boulders via low-velocity collisions (e.g., Blum and Wurm 2008).
+Next, planetesimals form from the pebbles/boulders, probably by hydrodynamical processes that efficiently concentrate these particles to a large enough degree to create gravitationally-bound clumps (Chiang and Youdin 2010; and references therein).
+The sizes of planetesimals is debated: some formation and collisional models suggest that planetesimals are “born big,” with radii of hundreds to a thousand kilometers (Johansen and Youdin 2007; Cuzzi et al.
+2008, 2010; Morbidelli et al.
+2009; Chambers 2010), while other models argue in favor of much smaller, sub-km sized planetesimals (Weidenschilling 2011).
+The next phase in the growth of solid bodies is the accretion of planetary embryos from planetesimals.
+A planetesimal that grows larger than its neighbors can rapidly increase its collisional cross section due to gravitational focusing and undergo runaway accretion (Safronov and Zvjagina 1969; Greenberg et al.
+1978; Wetherill and Stewart 1993).
+Runaway accretion slows to so-called “oligarchic growth” as the orbits of nearby planetesimals are excited by the growing embryo (Ida and Makino 1992; Kokubo and Ida 1998).
+This process is thought to produce a population of embryos with comparable masses: roughly lunar to Mars mass in the terrestrial planet region, and ~Earth mass in the giant planet region (Kokubo and Ida 2002).
+A giant planet core needs to reach at least 5 to 10 Earth masses before it can efficiently accrete gas from the disk (Ikoma et al.
+2000), but the growth of giant planet cores from Mars- to Earth-mass embryos remains poorly understood.
+In this size range, embryos are far more efficient at scattering planetesimals than accreting them, and standard growth models fail to produce giant planet cores in the lifetime of the gaseous disk (Thommes et al.
+2003).
+However, two proposed mechanisms may help to solve this problem.
+First, embryos are massive enough to have thin gaseous envelopes, which act to enhance their collisional cross section by a factor of up to ten or more in radius (Inaba and Ikoma 2003).
+Second, embryos probably experience large-scale orbital migration via both the back-reaction from planetesimal scattering (Fernandez and Ip 1984; Kirsh et al.
+2009) and via tidal interactions with the gaseous protoplanetary disk, often referred to as “type 1” migration (Goldreich and Tremaine 1980).
+Hydrodynamical models show that there exist locations in the disk where type 1 migration is convergent (Lyra et al.
+2010; Paardekooper et al.
+2011).
+A combination of these mechanisms may allow relatively small embryos to rapidly grow into full-fledged giant planet cores (e.g., Levison et al.
+2010; Horn et al.
+2012), although this remains an area of active research.
+Giant planet cores accrete gas from the disk at a rate that is limited by their ability to cool and contract (i.e., their atmospheric opacity), thus freeing up space within their Hill sphere for additional gas (e.g., Hubickyj et al.
+2005).
+Thus, gas accretion initially proceeds at a relatively slow pace; the combination of this time lag and the disk’s limited lifetime may explain why Neptune-sized planets are so much more common than Jupiter-sized planets among exoplanets (e.g., Howard et al.
+2010).
+Once the mass in a core’s gaseous envelope is comparable to the solid core mass, gas accretion enters a runaway phase and the planet becomes a gas giant in just ~105 years (Mizuno 1980).
+As the planet accretes, it clears an annular gap in the disk, which then constrains its accretion rate and final mass (e.g., Lissauer et al.
+2009).
+Once a giant planet clears a gap in the disk its orbital evolution is inextricably linked to the disk dynamics.
+This behavior occurs because the gap prevents gas exterior to the planet’s orbit from interacting viscously with gas interior to the planet’s orbit.
+As the disk viscously evolves and spreads radially, the vast majority of the gas spirals inward onto the star, and a small fraction of the mass spreads to large orbital radii to balance the angular momentum budget (Lynden-Bell and Pringle 1974).
+In the giant planet forming part of the disk, the gas flow is generally inward such that a gas giant is essentially dragged inward on the disk’s viscous timescale of 105-6 years in a process called “type 2” migration (Lin and Papaloizou 1986).
+Of course, orbital migration of both type 1 and type 2 only occurs in the presence of the massive but short-lived gaseous component of the disk.
+When the disk dissipates, the gas giants have necessarily reached close to their final masses and orbits, but the most dynamic phase of terrestrial planet formation is in full swing.
+The final phase in the growth of the terrestrial planets involves the collisional accumulation of planetesimals and planetary embryos.
+Embryos initially remain isolated from one another as they grow by accreting planetesimals and stay on low-eccentricity orbits via dynamical friction (Kokubo and Ida 1998).
+Embryos eventually start to interact with each other once the local surface density in planetesimals and embryos is comparable (Kenyon and Bromley 2006).
+Late-stage terrestrial accretion is thus characterized by slow growth by planetesimal-embryo impacts and punctuated growth by giant embryo-embryo impacts (Wetherill 1985).
+Each planet’s feeding zone spreads outward and widens in time during this chaotic phase of strong gravitational scattering (Raymond et al.
+2006; Fig.
+2).
+A planet’s feeding zone determines the mixture of material that condensed in different regions and at different temperatures, and thus the planet’s final composition.
+The temperature at 1 AU is usually thought to have been too hot throughout the disk phase for water to condense (Boss 1998), although some disk models yield low enough temperatures at 1 AU to allow water to condense (Woolum and Cassen 1999; Sasselov and Lecar 2000).
+Although it is possible that water vapor could be adsorbed onto grains at 1 AU (Muralidharan et al.
+2009), it is generally thought that water must have been delivered to Earth by impacts with icy bodies that formed at cooler temperatures.
+Primitive outer asteroidal material (C-complex) is a likely source of Earth’s water (Morbidelli et al.
+2000; Raymond et al.
+2004, 2007).
+C-complex asteroids are thought to be the sources of the carbonaceous chondrites, and of them CI and CM chondrites have compositions that most closely resemble the volatile elemental and isotopic composition of Earth (Alexander et al.
+2012).
+And it is during an advanced accretion phase that Earth accreted the bulk of its water (Fig.
+2).
+As we will discuss below, the same arguments hold for Earth’s carbon.
+Measurements of isotopic chronometers, especially the hafnium-tungsten system, in meteorites and Earth rocks tell us that Earth’s last giant impact occurred at roughly 11 to 150 Ma (Kleine et al.
+2002; Yin et al.
+2002; Touboul et al.
+2007).
+This event is thought to have been an impact with a ~Mars-sized body, which spun out a disk of material to form the Moon (Benz et al.
+1986; Canup and Asphaug 2001).
+Mars, on the other hand, appears not to have undergone any giant impacts after just a few Ma (Dauphas and Pourmand 2011).
+Mars may therefore represent a remnant embryo, while Earth is a fully-grown planet that underwent many giant impacts.
+After the end of the giant impact phase there remains a population of remnant planetesimals.
+The final sweep up of these planetesimals occurs by gravitational scattering by the planets, and these planetesimals end up either colliding with the Sun, a terrestrial or giant planet, or getting scattered outward into interstellar space.
+The fraction of planetesimals that collide with the terrestrial planets provided the so-called “Late Veneer,” which is characterized by the incorporation of highly-siderophile elements (HSEs) into the planets’ mantles (Kimura et al.
+1974).
+Given that HSEs are “iron-loving,” they should have been sequestered into the core during planetary differentiation, and so their presence in the mantle indicates that they were accreted after the last core formation event or at least after the time when there was significant core-mantle re-equilibration.
+The "Late Veneer" phase represents the tail end of accretion, and the source region of "Late Veneer" impactors is constrained by comparing the bulk mantle composition with meteorites (e.g., Dauphas et al.
+2004; Burkhardt et al.
+2011).
+At even later times, a very small amount of material was added to Earth during and after the late heavy bombardment (Gomes et al.
+2005, Bottke et al.
+2012).
+Figure 2 shows the evolution of a dynamical simulation of late stage terrestrial accretion from Raymond et al.
+(2006).
+In the simulation, accretion transitions from the primordial accretion to the "Late Veneer" after the last giant impact that was energetic enough to stimulate core-mantle equilibration (and thus reset the hafnium-tungsten chronometer).
+In this simulation the last giant impact occurred at ~60 Ma for an Earth analog planet (and 20 Ma for a Venus analog).
+Accretion simulations like the one from Figure 2 have succeeded in reproducing a number of characteristics of the actual terrestrial planets, such as their number and approximate total mass (Wetherill 1990) and their low orbital eccentricities and inclinations (Raymond et al.
+2006, 2009; O’Brien et al.
+2006; Morishima et al.
+2008, 2010).
+In addition, these simulations were able to explain the origin and isotopic signature of Earth’s water (Morbidelli et al.
+2000; Raymond et al.
+2007).
+However, these simulations failed to produce realistic Mars analogs.
+Planets at Mars’ orbital distance were systematically a few to ten times more massive than the real Mars (0.11 Earth masses; Wetherill, 1991; Raymond et al.
+2006, 2009; O’Brien et al.
+2006).
+Improvements in numerical resolution and the inclusion of additional physical effects have been unable to solve the Mars problem (Morishima et al.
+2010).
+The only successful solution to the Mars problem came from a change in the “initial conditions.” The aforementioned simulations started from disks of planetesimals and embryos that stretched from a few tenths of an AU out to 4 to 5 AU, just inside Jupiter’s current orbit.
+Mars formed big simply because there was too much mass in the Mars’ feeding zone and no mechanism to clear out that mass.
+However, Hansen (2009) showed that if the terrestrial planets only formed from a narrow annulus of embryos from 0.7 to 1 AU, a small Mars is produced naturally as an edge effect.
+Earth and Venus are big because they formed within the annulus of embryos, and Mars and Mercury are small because they were scattered beyond the annulus, thus limiting their growth.
+In fact, Hansen (2009) was able to reproduce the masses and orbital configurations of all of the terrestrial planets.
+The only problem was that his initial conditions were completely ad-hoc.
+Walsh et al.
+(2011) proposed a new model called the “Grand Tack,” which provides a solution to the Mars problem while remaining consistent with the large-scale evolution of the solar system (Fig.
+3).
+The model relies on the fact that, because the giant planets form much faster than the terrestrial planets, they can sculpt the disk of terrestrial embryos.
+Figure 4 illustrates the Grand Tack model.
+The Grand Tack model starts late in the gas disk phase, when Jupiter was fully formed but Saturn had not yet grown to its final size.
+Jupiter migrated via the type 2 mechanism inward from its formation zone, assumed to be at a few AU, perhaps just beyond the snow line.
+Meanwhile, Saturn started to accrete gas and migrated inward rapidly, catching up with Jupiter.
+Hydrodynamical simulations show that Saturn is naturally trapped in the 2:3 mean motion resonance with Jupiter (Pierens and Nelson 2008).
+When the two planets are locked in this configuration, their direction of migration is switched to outward (Masset and Snellgrove 2001; Morbidelli and Crida, 2007; Pierens and Nelson 2008; Pierens and Raymond 2011).
+Jupiter and Saturn migrate outward until the disk dissipates, stranding them close to their current orbits.
+If Jupiter’s “tack”—i.e., change in the direction of its migration—occurred at ~1.5 AU, then the inner disk of embryos is naturally truncated at about 1 AU.
+The terrestrial planets that form from this disk are a quantitative match to the real ones (Walsh et al.
+2011).
+Although Jupiter migrates through the asteroid belt twice (once going inward, once outward), it is re-populated by two distinct sources.
+The inner belt contains planetesimals that originated interior to Jupiter’s orbit and were subsequently scattered outward during Jupiter’s inward migration, and then back inward during Jupiter’s outward migration.
+The efficiency with which inner disk planetesimals are implanted into the final asteroid belt is only ~0.1 %, but this is actually in very good agreement with the current belt.
+The outer asteroid belt contains planetesimals that originated beyond Jupiter’s orbit, either between the giant planets or beyond the ice giants’ orbits, and were scattered inward during outward migration and implanted with an efficiency of ~1 %.
+Thus, in the context of the Grand Tack model, S-complex asteroids represent leftovers from the terrestrial planet region and C-complex asteroids are leftovers from the giant planet region.
+Water delivery to Earth occurs in the Grand Tack model in the form of C-complex material that is scattered inward past the asteroid belt during Jupiter’s outward migration (Walsh et al.
+2011).
+For every C-complex planetesimal that was implanted into the main belt, roughly 10 to 20 planetesimals were scattered onto orbits with roughly the same semi-major axis but with eccentricities high enough to intercept the inner annulus of embryos.
+This C-complex material therefore represents a “pollution” of the inner annulus of embryos by C-complex planetesimals at the few percent level.
+Accretion simulations including this tail of C-complex material show that it does indeed deliver about the right amount of water to Earth.
+In the context of the Grand Tack model, carbon was delivered to Earth by C-complex material, along with the water and other volatiles (see next section).
+To conclude this section, we emphasize that although studies have mainly focused on the delivery of water to Earth, the delivery of carbon represents a problem of comparable magnitude.
+Carbon chemistry in protoplanetary disks is complex, and the dominant species may have been CH4, CO, refractory carbonaceous dust, and/or perhaps free PAHs.
+However, since carbonaceous chondrite meteorites are thought to represent C-complex asteroids, and since these represent the probable source of water on Earth, carbon probably followed the same path as water in its delivery to Earth.
+CLUES TO THE ORIGIN OF CARBON ON EARTH
+Terrestrial carbon inventory
+Making an inventory of terrestrial carbon is not an easy task.
+The sizes of the main surface reservoirs of carbon (carbonates and reduced carbon in the biosphere and in hydrocarbons) are well documented (Dasgupta 2013; Hazen et al.
+2013a; Jones et al.
+2013; Manning et al.
+2013; Ni and Keppler 2013;).
+In contrast, the inventory of the deep carbon reservoirs is not well constrained (Dasgupta 2013; Shirey et al.
+2013; Wood et al.
+2013), so that estimates require calibration relative to other geochemical proxies and are somewhat model-dependent.
+Estimates of bulk Earth carbon content vary by over an order of magnitude (e.g., 50 ppm carbon for Zhang and Zindler 1993; ≥500 ppm carbon for Marty 2012).
+These values are nevertheless low compared to those of potential cosmochemical contributors (comets: 180,000 ppm; carbonaceous chondrites: 36,000 ppm, Table 1).
+Below we review the carbon content of the major terrestrial reservoirs.
+Earth’s surface.
+The major reservoirs of carbon at the surface of our planet are carbonates in marine and continental sedimentary rocks, and reduced carbon in the biosphere and in fossil hydrocarbons.
+Carbonates occur as continental massive units from ancient oceanic platforms, as oceanic sediments, and as veins and alteration phases in the oceanic crust (Hazen et al.
+2013a, b).
+The amount of reduced carbon is lower than the carbonate reservoir by about a factor of  ~4 to 5.
+Current estimates of the total amount of carbon at Earth’s surface are around 7-11 x 1021 moles (Ronov and Yaroshevskhiy 1976; Javoy et al.
+1982; Holser et al.
+1988; Hayes and Waldbauer 2006).
+Carbonates have δ13C values of around 0 ‰ relative to PDB (the standard PDB is a cretaceous carbonate) and terrestrial organic carbon is more depleted in 13C, with values around -30 ‰, which is a signature of its biogenic origin.
+Consequently, the bulk δ13C of the surface inventory is around -5 to -10 ‰.
+The composition of this surface carbon may not have varied greatly in the geological past, since ancient sedimentary rocks have carbonate and organic carbon values in the same range (Hayes and Waldbauer 2006).
+This bulk value is also surprisingly comparable to estimates of the bulk mantle value of -5 ‰; the surface inventory is a mixture of two pools of carbon with different isotopic compositions, one of which being of presumably biogenic origin.
+This similarity and the constancy of the bulk surface value with time seems to indicate that the relative proportions of carbonates and reduced carbon have been about the same throughout the geological history, which has important implications both for the exchange of carbon between Earth’s surface and deep interior, and for the size of the biosphere through time.
+Mantle.
+The carbon content of mantle-derived material is generally very low because carbon is extensively outgassed from lavas.
+Thus, current estimates of the mantle carbon content are indirect and based on the calibration of carbon to specific geochemical tracers whose geochemical cycles are well constrained.
+Here we review current estimates of the carbon content of the mantle.
+All of them are based on the assumption that carbon is incompatible during partial melting of the mantle source; that is, it goes quantitatively to the surface during magma generation and volcanism.
+The highest rate of magma production takes place along divergent plate margins at mid-ocean ridges, which are also the locus of most of mantle degassing.
+Thus, most estimates are for the mantle source of such magmas, referred in the literature as the depleted mantle (DM).
+The rare isotope of helium, 3He, is of primordial origin in Earth, that is it was trapped within Earth as it formed from a cosmochemical reservoir and it is still degassing from the mantle at present.
+Its abundance in the atmosphere is low as helium escapes to space.
+The flux of 3He from the mantle has been quantified from excesses of 3He in deep-sea waters (knowing the residence time of the latter).
+The original estimate of 1000 ± 300 moles 3He/yr (Craig et al.
+1975) has been recently revised downward to 527 ± 106 moles/yr (Bianchi et al.
+2010).
+The C/3He molar ratio measured in mid-ocean ridge basalts (Marty and Jambon, 1987; Marty and Tolstikhin 1998) and in mid-ocean ridge hydrothermal vents is on average 2.2 ± 0.6 x 109.
+Together with an average partial melting rate of 12 ± 4 % for mid-ocean ridge basalts (MORBs) and a total magma production rate of 21 km3/yr at all mid-ocean ridges, one obtains a carbon content of the MORB mantle source of 27 ± 11 ppm carbon.
+Another approach is to analyze samples from the mantle that are not degassed, or for which degassing fractionation can be corrected for, and to calibrate carbon relative to a non-volatile trace element, such as niobium.
+Saal et al.
+(2002) and Cartigny et al.
+(2008) estimated the CO2/Nb ratio of the DM at 240 and 530, respectively, resulting in estimated carbon contents for the DM of 19 ppm and 44 ppm, respectively.
+Hirschmann and Dasgupta (2009) and Salters and Stracke (2004) estimated the carbon content of the DM at 14 ± 3 ppm and 16 ± 9 ppm, respectively, using similar approaches.
+All these estimates suggest a carbon content for the DM of ~20 to 30 ppm, close to the bulk Earth estimate of Zhang and Zindler (1993) of 50 ppm.
+Noble gases released at centers of hot spot volcanism (e.g., Hawaii, Yellostone, Réunion) that are fed by mantle plumes have isotopic compositions suggesting that they come from a less degassed region of the mantle.
+Thus, the DM is unlikely to represent the bulk Earth inventory.
+Potassium-40 is produced by the radioactive decay of 40K, with a half-life of 1.25 Ga, and the total amount of radiogenic 40Ar produced over 4.5 Ga from terrestrial potassium can be readily computed.
+A known fraction of 40Ar is now in the atmosphere and the complementary amount of radiogenic 40Ar trapped in silicate Earth is obtained by mass balance.
+For a bulk silicate Earth (BSE) potassium content of 280 ± 120 ppm (2 σ) (Arevalo et al.
+2009), about half of the 40Ar produced over Earth’s history is in the atmosphere, and the other half is therefore still trapped in silicate Earth (Allègre et al.
+1996; Ozima and Podosek 2002).
+The carbon content of the BSE can be scaled to 40Ar using the composition of gases and rocks from mantle plume provinces following the method presented in Marty (2012), which gives 765 ppm carbon for the BSE (with a large uncertainty of 420 ppm at the 2 σ level when all errors are propagated).
+An independent estimate of the BSE carbon content can be obtained using primordial noble gases.
+Extinct and extant radioactivities producing noble gas isotopes indicate that most of the non-radiogenic noble gases, such as 36Ar, are in the atmosphere and their mantle abundances are order(s) of magnitude lower.
+The mean C/36Ar ratio of carbonaceous chondrites is 5.6 ± 2.0 x 107 (C and 36Ar data from Otting and Zähringer 1967) and is not significantly different from the ratio for the much less volatile-rich enstatite chondrites (5.9 ± 4.2 x 107, computed with data from Otting and Zähringer 1967).
+Assuming a chondritic source and from the 36Ar atmospheric inventory, one can compute a bulk Earth carbon content that is 920 ± 330 ppm, which is within the uncertainties of the carbon content computed above using a different approach.
+These independent estimates suggest that the terrestrial carbon content of the Earth is within 500 to 1000 ppm—a C content that corresponds to the contribution of about 2 ± 1 wt.% carbonaceous chondrite (CI-CM) material to a dry proto-Earth (Fig.
+4).
+If this estimate is correct, there are several important implications for the origin of volatiles on Earth.
+(i) There exists large reservoir(s) of carbon in Earth that are not yet documented.
+The occurrence of gas-rich regions of the mantle is supported by the isotopic compositions of mantle plume-derived noble gases (helium, neon) isotope, which point to a mantle reservoir that is less degassed that the DM one;
+(ii) Most (>90 %) of the carbon is not at Earth’s surface, but is trapped in bulk silicate Earth, contrary to the case of noble gases that are mostly in the atmosphere;
+(iii) The contribution of ~2 wt.% CI material for carbon and other volatile elements (Fig.
+4) is higher than the so-called “Late Veneer” of about 0.3 wt.% (range: 0.1-0.8 wt.%) of chondritic material to account for the mantle inventory of platinum group elements that never equilibrated with metal, presumably because they were added after the main episodes of core formation (Kimura et al.
+1974).
+Carbon in the core?
+From experimental data, it has been proposed that carbon may be present in the core at the percent level (Wood 1993; Dasgupta and Walker 2008; Wood et al.
+2013).
+A high carbon content of the core would change dramatically the carbon inventory of Earth, and also the bulk carbon isotope composition of our planet, since carbon stored in the core would be isotopically different/fractionated with respect to mantle carbon.
+For instance, a carbon content of 2 % (Wood 1993) in the core corresponds to a BSE content of 6600 ppm carbon.
+If the source of this carbon was chondritic, then it should have been accompanied by ~ 6 x 1016 moles of 36Ar (using the chondritic C/36Ar from the preceding subsection), which is an order of magnitude higher than the current estimate of the terrestrial inventory.
+One could argue that the noble gases were largely lost to space from the primitive atmosphere, and that only the reactive volatiles, such as carbon and, presumably, nitrogen and hydrogen, were quantitatively trapped in Earth.
+However, the same argument against extensive sequestration of carbon into the core also applies to the halogens (Sharp et al.
+2009).
+The chlorine content of bulk Earth is 1.1 x 1023 g, or 3.6 x 10-7 mol 35Cl/g.
+Because Cl is not siderophile (Sharp et al.
+2009), chlorine is in the mantle, in the crust, and in the oceans.
+The average carbonaceous chondrite 35Cl/12C ratio is ~200.
+The equivalent carbon concentration of a chondritic Earth is 800 ppm, in fact remarkably comparable to the carbon content computed in the preceding subsection from the 40Ar budget and from the C/36Ar ratio.
+The isotopic composition of terrestrial chlorine is similar to that of chondrites and there is, therefore, no reason to suspect that chlorine has been lost to space in early times.
+Whether or not the amount of carbon in the core is low is an open question that requires further metal-silicate partitioning experimental studies involving not only carbon, but also nitrogen, hydrogen, and noble gases.
+Volatile (C-H-N-noble gas) elemental and isotopic constraints
+Carbon isotopes are the primary source of information on the origin of this element in Earth, but the message is ambiguous since carbon has only two isotopes and, because it is a light element, the extent of its fractionation can be high and can superimpose isotope fractionation effects to source heterogeneities.
+The stable isotope compositions of other volatile elements, such as hydrogen (water) and nitrogen and the associated noble gases, are important supplementary sources of information on the origin of terrestrial carbon, and are discussed in this section.
+The range of δ13C values of mantle carbon, based on the analysis of diamonds, MORBs, mantle plume rocks, and volcanic gases is thought to be around -5 ± 3 ‰ (Deines 1980; Des Marais and Moore 1984; Javoy et al.
+1986; Marty and Zimmermann 1999).
+Lighter (more negative) values have been reported for a few MORB glasses and volcanic gases and have been interpreted as being due to isotope fractionation during degassing (Javoy et al.
+1986).
+Lighter isotopic compositions in some of diamonds have generally been interpreted as due to isotopic fractionation or incorporation of recycled organic carbon (Dienes 1980; Cartigny et al.
+1998).
+Because a large amount of carbon may be sequestrated in the core, a firm carbon isotope budget of Earth is not yet possible.
+However, the isotope fractionation of carbon between metal and silicate at the very high temperatures and pressures that prevailed during core formation are unlikely to have been larger than a few per mil.
+Terrestrial carbon might have been supplied by the following cosmochemical reservoirs (see also section above).
+(i) The protosolar nebula.
+Solar-like neon is present in the mantle and indicates that a solar-like source supplied a fraction of the terrestrial volatile elements.
+Whether such a source also supplied carbon to Earth is an open question.
+From the analysis of solar wind implanted in lunar regolith grains, Hashizume et al.
+(2004) proposed that the solar wind isotopic composition is light, with an upper limit for δ13C of -105 ± 20 ‰.
+The solar wind may be enhanced in the light isotopes due to Coulomb drag, so that the solar value could be heavier than this limit by about 20-30 ‰ per mass unit for light elements like carbon, nitrogen, or oxygen (Bodmer and Bochsler 1998).
+Thus the solar carbon isotope composition could still be light, possibly lighter than -80 ‰.
+If this estimate is correct, then the presence of solar carbon at depth should be reflected by a light carbon component for samples of deep mantle origin, like those associated with mantle plumes.
+Such an isotopically light carbon component has yet to be observed: mantle carbon shows values of around -5 ‰ whatever the source is, either MORB-like or plume-like.
+D/H and 15N/14N isotope systematics could only allow for a small (< 10 %) fraction of terrestrial hydrogen to be of solar origin (Marty 2012; Alexander et al.
+2012).
+(ii) Comets.
+The D/H ratios of these bodies are generally 2-3 times the terrestrial value (Bockelée-Morvan et al.
+1998; 2008, Mumma and Charnley 2012), which led to the consensus view that ocean water, and, by extension other major volatiles, like carbon and nitrogen, cannot be derived solely from comets.
+Recently, a Jupiter family comet, presumably originating from the Kuiper belt, has been shown to have a terrestrial-like water D/H (Hartogh et al.
+2011), although Alexander et al.
+(2012) argue that the bulk D/H of this comet may be significantly higher if it contains Halley-like abundances of organic matter and this organic matter has a D/H ratio like that in the most primitive meteorite organics.
+15N/14N ratios of comets that have been measured to date are all much higher (δ15N > 800 ‰, where the reference is atmospheric nitrogen; Arpigny et al.
+2003; Bockelée-Morvan et al.
+2008; Mumma and Charnley 2012) than the range of terrestrial values (δ15N from -30 to +40 ‰ for the most extreme end-members), which would preclude a major cometary contribution for terrestrial nitrogen.
+However, there may be a caveat: the nitrogen isotopic compositions have only been measured in cometary CN and HCN, and the composition of cometary NH3, N2 (if quantitatively trapped), and refractory organic matter are not known.
+(iii) Chondrites.
+Their δ13C compositions are generally negative, with values of around 0 to -15 ‰ (Table 4), which encompass the terrestrial carbon isotopic composition and, therefore, support a chondritic origin for this element.
+The hydrogen and nitrogen isotope ratios of Earth are best matched by the bulk CI chondrites, followed by the CMs, with a small input of solar material (Marty 2012; Alexander et al.
+2012).
+There is one notable exception for a chondritic source for terrestrial volatiles, and that is the isotopic composition of atmospheric xenon.
+Atmospheric xenon isotopes and, to a lesser extent, krypton isotopes are enriched by 3-4 % per amu (about 1 % per amu for krypton), relative to chondritic or solar compositions.
+Xenon is also depleted in its elemental abundance by a factor of about 20 relative to other noble gases in the atmosphere (compared to a chondritic abundance pattern).
+This fact, known as the xenon paradox, has been regarded as the result of early escape processes specific to the physical properties of xenon (Pepin 1991; Tolstikhin and O’Nions 1994; Dauphas 2003).
+Recently, Pujol et al.
+(2011) reported xenon isotopic compositions in Archaean rocks that are intermediate between atmospheric and chondritic ones, and suggested a long-term, non-thermal escape of atmospheric xenon through time due to ionization by solar UV light.
+It is not known whether such a process could have affected carbon at Earth’s surface.
+Its effect might have been limited if carbon is indeed mostly sequestrated in the mantle.
+The possibility of xenon loss from the atmosphere after Earth’s forming events has implications for the timing of early atmospheric evolution and of Earth’s formation (see below).
+Inferences on the nature of Earth's building blocks
+According to our estimate, the delivery of volatile elements, including carbon, to Earth required the contribution of 1 to 3 wt.% of “wet” material, having probable affinities with CI, or possibly CM, chondrites.
+By comparison, platinum group elements, which are in chondritic proportions in the mantle, require a lower contribution of about 0.3 wt.% (range: 0.1-0.8 wt.%) of chondritic material after core formation.
+This difference suggests that the delivery of volatile elements was not a late veneer event and was already on-going during terrestrial differentiation.
+The depletion of nitrogen in the BSE (Fig.
+4), if due to nitrogen trapping in the core, also requires early accretion of volatiles.
+This point is important for understanding the nature of the building blocks of our planet.
+The ruthenium and molybdenum isotope signatures of most meteorite groups correlate (Dauphas et al.
+2004; Burkhardt et al.
+2011) and show enrichments in s-process isotopes relative to Earth’s.
+Molybdenum is moderately siderophile, while ruthenium is highly siderophile.
+Thus, mantle molybdenum was predominantly accreted during the main stage of planetary growth, as were volatile elements, while the ruthenium now present in the mantle was delivered as part of a "Late Veneer".
+Thus, the respective cosmochemical reservoirs of these deliveries must have had comparable isotopic compositions during and after Earth’s accretion.
+While most meteorite groups show enrichments in s-process molybdenum and ruthenium isotopes relative to Earth, the exceptions are the enstatite and CI (Orgueil) chondrites for molybdenum and, presumably, for ruthenium, which both have terrestrial-like molybdenum isotopic patterns.
+Hence making Earth from a cosmochemical reservoir having an enstatite-like isotope composition (which has the appropriate oxygen isotope signature) with addition of “wet” material akin to CI-like material is not only compatible with volatile element compositions, but also could have provided a way to oxidize the composition of Earth.
+Importantly, if the volatile elements were accreted before the end of terrestrial differentiation as we argue here, a major fraction of them must have survived the Moon-forming impact and other giant impacts that built early Earth.
+An open question of this scenario is the behavior of carbon and other volatile elements during core formation if they were delivered, not as a late veneer, but during terrestrial differentiation.
+Much progress is expected from experimental high-pressure, high-temperature work on volatile elements in the presence of metal and silicate.
+Is cosmic dust a major source of terrestrial volatiles?
+Micrometeorites (MMs) and interplanetary dust particles (IDPs) are potentially important suppliers of terrestrial volatiles because: (i) the D/H distribution of MMs’ values presents a frequency peak that coincides with that of terrestrial water (Engrand et al.
+1999); (ii) at present, their mass flux of 10,000 to 40,000 tons/yr (Love and Brownlee 1993; Engrand and Maurette 1998) exceeds by far that of meteorites (~8 tons/yr; Bland et al.
+1996); and (iii) “cosmic” dust may be rich in carbon (e.g., Matrajt et el.
+2003).
+Marty et al.
+(2005) estimated that < 10 % atmospheric nitrogen could have been supplied by cosmic dust after Earth’s building events since 4.4 Ga ago, with essentially the correct nitrogen isotopic composition, based on the analysis of nitrogen in MMs and using the lunar surface record of ET contribution to planetary surfaces.
+The impact on the carbon inventory of our planet might have been even more limited since nitrogen is apparently depleted by one order of magnitude in Earth relative to carbon (Fig.
+4).
+From a dynamical point of view, IDPs do not represent a plausible source for the bulk of Earth’s carbon.
+During planetary growth, dust is efficiently accreted by planetesimals and planetary embryos (Leinhardt et al.
+2009, Lambrechts and Johansen 2012) such that its lifetime during the main phases of planetary accretion is short.
+Dust is re-generated by collisions, but is swept up by larger bodies on a timescale that is short compared with the radial drift timescale (Leinhardt et al 2009).
+It is only after the “dust has settled” in terms of planet formation, and the density of planetesimals and surviving embryos (a.k.a., terrestrial planets) has decreased sufficiently in the inner solar system, that dust particles are able to drift over large radial distances and thus deliver volatiles such as carbon and water to Earth.
+These arguments would break down if the snow-/soot-line swept in to ~1 AU during the last stretch of the gaseous protoplanetary disk phase (e.g., Sasselov and Lecar 2000), producing volatile-rich dust grains close to Earth’s orbit.
+However, it has not been demonstrated that such a scenario could deliver the requisite amount of volatiles to Earth.
+Timing of volatile delivery and retention.
+The time constraints for this epoch are scarce and somewhat model dependent.
+Inner planet bodies of the size of Mars accreted in a few Ma (Dauphas and Pourmand 2011).
+It takes longer to make an Earth-size planet, but how long is a matter of debate.
+The 182Hf-182W extinct radiochronometer permits one to explore metal-silicate differentiation of planetary bodies, given the half-life of 182Hf (9 Ma) and the lithophile/siderophile nature of Hf/W.
+Earth has a different W isotope composition compared to chondrites, which allows one to set the last episode of metal-silicate differentiation, presumably the formation of the core, at 11 to 30 Ma after start of solar system condensation (e.g., Yin et al.
+2002; Kleine et al.
+2002).
+The final stage of core formation has been attributed by many to the Moon-forming impact, after which no similarly catastrophic collisions would have taken place.
+Touboul et al.
+(2007) have proposed a longer timeframe (60-120 Ma), since they could not find any W isotopic difference between Earth and Moon.
+They argued that, because the terrestrial and lunar mantles have different Hf/W ratios, the absence of any W isotopic difference between the two bodies implies that their last major episode of differentiation (the Moon-forming impact) took place after 182Hf was decayed, in practice, ≥ 50 Ma.
+However, this assumption would not hold if Earth and the Moon’s mantles have a similar Hf/W ratio, which could have been homogenized between the terrestrial and lunar mantles during or in the aftermaths of the Moon-forming impact.
+Independent time constraints for Earth’s formation come from the notion of atmospheric closure using the extinct radioactivity of 129I (this isotope decays to 129Xe with a half life of 16 Ma).
+The initial abundance of 129I can be estimated from that of terrestrial iodine (the stable 127I isotope) and from the amount of 129Xe in the atmosphere in excess of the stable Xe isotope composition.
+This mass balance yields a closure age of about 120 Ma after the start of solar system formation for the atmosphere (Wetherill 1975), which is also that of bulk Earth since the mantle inventory of radiogenic 129Xe is small compared to the atmospheric one (e.g., Ozima and Podosek 2002).
+Combining this radiochronometric system with the other relevant extinct radioactivity of 244Pu (T1/2 = 82 Ma) that fissions to 131-136Xe yields a similar age of ~80 Ma (Kunz et al.
+1998), since this age range is mostly determined by the decay constant of 129I.
+However, if xenon has been escaping for a long period of time (Pujol et al.
+2011), then the closure ages have to be corrected for such loss and yield < 50 Ma (range 35-50 Ma) for the “age” of the atmosphere and therefore for the main episodes of volatile delivery.
+Such timing is more consistent with the early age of lunar formation initially proposed on the basis of W differences between chondrites and Earth.
+This closure age may represent the time when the Earth retained quantitatively its most volatile elements.
+In the context of the Grand Tack model (Walsh et al.
+2011) the accretion of volatile-rich (C-complex) material occurs mostly in the first ~50 Ma of Earth’s history (Fig.
+5).
+In dynamical simulations, Earth analogues accrete a total of 2 to 3% of carbon-rich material, mainly from small planetesimals, with a tail that extends beyond 100 Ma (O’Brien et al, 2010) In contrast, Earth analogues in simulations with fixed giant planet orbits (e.g., the one in Figure 2) tend to accrete far more C-complex material, typically 5 to 20% (Raymond et al.
+2007, 2009).
+Volatile delivery is not perfectly efficient.
+Some water is lost during accretion due to impact heating for very high-velocity impacts such as those from comets (e.g., Svetsov 2007).
+Giant impacts may also strip a fraction of water from the growing Earth (Canup and Pierazzo 2006), although the entire atmosphere must be completely removed by an impact before a large fraction of Earth’s water can be stripped (Genda and Abe 2005).
+However, the question of volatile retention merits additional study as only a fraction of the relevant circumstances have been carefully explored.
+CARBON TRAPPING IN EARTH
+Earth experienced very high temperatures during accretion, which might have peaked with the Earth-Moon forming event (Cameron 1997; Pahlevan and Stevenson 2007).
+Under these conditions, the retention of volatile elements may have been problematic.
+Noble gases are inert by nature and are presently concentrated in the atmosphere.
+Chemically reactive volatiles, such as carbon, nitrogen, and water, are able to change their speciation and solubilities depending on redox conditions: at low fO2 (below IW) carbon, nitrogen, and hydrogen solubilities in silicates increase drastically (e.g., Kadik et al.
+2011), suggesting that significant amounts of these elements could have been retained in a magma ocean under reducing conditions.
+From dynamical simulations, contributions from wet planetesimals akin to carbonaceous chondrites are a natural consequence of the evolution of the inner solar system.
+Such contributions are not likely to have occurred before the late phases of the gaseous protoplanetary disk phase, and more likely towards the last stages of terrestrial accretion, starting after a few Ma and lasting for several tens of Ma.
+At that time, the size of Earth was likely to have exceeded half of its present size, and in-falling wet planetesimals were quantitatively degassing upon impact (Lange and Ahrens 1982, 1986), generating a CO2-rich steam atmosphere and probably local episodes of intense magmatism.
+Because the solubility of CO2 is low in molten silicates, only a small fraction of impact-generated CO2 could have been trapped in silicates by equilibrium dissolution, and other means of sequestering carbon in the mantle need to be found.
+At this stage of Earth formation, it is unlikely that reducing conditions below IW could have persisted for long intervals of time, particularly because in-falling bodies were oxidized, and the placing of significant amounts of carbon into reduced phases, such as graphite or diamond, was unlikely.
+The problem of trapping CO2 from a steam atmosphere into Earth has been addressed by Sleep et al.
+(2001).
+After the Moon-forming impact, Earth’s surface evolved towards a CO2-rich steam atmosphere overlying liquid water in a geologically short period of time (few Ma) due to the bombardment by remnant planetesimals both wet and dry (see Fig.
+5).
+An upper limit for the CO2 partial pressure is taken to be the one corresponding to all terrestrial carbon being in the atmosphere in the form of CO2.
+The atmospheric pressure of CO2 corresponding to a carbon inventory of 2.5 x 1022 moles (Zhang and Zindler 1993) is 21.5 MPa (215 bar), or ~0.2 GPa (2 kbar) if one uses total bulk Earth carbon content estimated by Marty (2012; 2.6 x 1023 moles).
+The actual CO2 partial pressure could have been much less.
+Impacts of volatile-rich bodies could have continued for 107 to 108 years, while transfer of CO2 from the atmosphere and into the mantle may have occurred on a time scale of ~1 Ma or less, corresponding to the duration of a magma ocean episode induced by a large impact (Sleep et al.
+2001).
+For illustration, if impactors all had sizes of 100 km, a typical size for primordial asteroids, ~20,000 of them with 3 to 4 % carbon would have supplied the required 2 wt.% of Earth’s mass to supply terrestrial volatiles.
+Over 30 Ma, this effect would have led to an average CO2 partial pressure of only about 100 bars.
+In these conditions, most water would have been liquid, with a H2O water pressure of only a few bars.
+Based on analogies with present-day mid-ocean ridge systems, Sleep et al.
+(2001) have argued that atmospheric CO2 precipitated as carbonates in the basaltic crust through hydrothermal circulation.
+Because of the hotter thermal regime of Earth, convection was much faster and the magmas were less sluggish, resulting in efficient hydrothermal trapping of carbon in the newly created crust.
+Foundering of crustal blocks would then transfer carbon into the mantle.
+Part of “subducted” carbon would then be stored at great depth, escaping recirculation to the surface and degassing.
+It is possible that, due to the pressure dependence of oxygen fugacity, such recycled carbon could then have been sequestrated in high-pressure phases.
+A critical unknown for this model is the efficiency of transfer into the mantle, since a hotter regime may also favor degassing of foundering blocks by analogy with modern hot subduction zones.
+Another crucial question is whether the subducted carbon could escape shallow convection and be transferred deeper into the mantle.
+According to Sleep et al.
+(2001), CO2 trapping in the oceanic crust and transfer to the mantle would have to have been efficient in order for the temperature at Earth’s surface to allow liquid water to be stable in on the order of 106 to 108 years, allowing perhaps the development of biological activity in the 50 to 100°C temperature range.
+Several areas of research that to be explored, such as the speciation of carbonates during their transfer into the mantle and the possible existence of carbon-rich fluids in the mantle lasting from this epoch, the direct injection at mantle depth of carbon-rich material during impacts, and the fact that all carbon present in Earth was probably not at the surface at the same time.
+We are only opening the magic book of Earth’s formation and early evolution.
+Table 1.
+The principal nucleosynthetic formation reactions and sources of the isotopes of hydrogen, carbon and nitrogen.
+Table 2.
+The abundances (wt.%) of hydrogen, carbon, and nitrogen in various reservoirs and objects.
+Table 3.
+Key isotopic ratios for hydrogen, carbon and nitrogen in various objects.
+Table 4.
+The range of abundances and isotopic compositions of carbon in bulk and in the directly determined major components—insoluble organic material (IOM) and carbonates (carb)—in the main chondrite groups.
+Shock-heated meteorites were not included in the calculation of the  ranges.
+Tagish Lake is a carbonaceous chondrite that has affinities with the CM and CI chondrites, and fell on January 18th, 2000.
+Figure 1.
+Stable isotope (H, N) variations among solar system objects and reservoirs (adapted from Marty, 2012; data sources therein).
+Figure 2.
+Six snapshots in time of the orbital configuration of a simulation of late-stage terrestrial accretion from Raymond et al.
+(2006).
+The size of each body is proportional to its relative physical size and scales as its mass1/3.
+Jupiter was also included in the simulation on a circular orbit at 5.5 AU (not shown in plot).
+The color of each particle corresponds to its water content: particles inside 2 AU started the simulation dry, particles that started from 2 to 2.5 AU have 0.1% water by mass, and particles that started beyond 2.5 AU have 5% water by mass; during collisions the water mass fraction is a calculated using a simple mass balance.
+In this particular simulation three terrestrial planets formed, as did a few particles trapped in the asteroid belt.
+The two inner planets are reasonably good Venus and Earth analogues in terms of their masses and orbits, but the outer planet is roughly nine times more massive than the real Mars.
+The Earth analogue in this simulation accreted a large volume of water of roughly ten times Earth's current water budget, although water loss during impacts was not accounted for.
+Recall that we expect carbon delivery to Earth to have followed the same dynamical pathway as water delivery.
+Figure 3.
+Snapshots in time of a simulation that represents the Grand Tack model (Walsh et al.
+2011).
+The simulation starts with three parts: (i) an inner disk of planetary embryos (open circles) and dry (red) planetesimals; (ii) a fully-formed Jupiter at 3.5 AU and Saturn’s core trapped in 2:3 resonance (large black dots); and (iii) a pristine outer disk of water-rich planetesimals.
+Jupiter and Saturn migrate inward together while Saturn continues to grow by accreting gas from the disk.
+Once Saturn reaches its final mass the two planets’ migration reverses direction and they migrate outward until the disk dissipates and leaves them stranded at 5.4 and 7.1 AU.
+(See Walsh et al.
+2011 for a discussion of plausible orbital histories of Jupiter and Saturn).
+The inner disk is truncated at 1 AU and the terrestrial planets that formed are similar to the actual ones, including Mars.
+Water and carbon are delivered to Earth in the form of outer disk planetesimals that “overshoot” the asteroid belt as the are scattered inward by Jupiter during the giant planets’ outward migration.
+They can be seen in the 300 and 500 kyr panels as the blue symbols at low semi-major axis and generally high eccentricity.
+Figure 4.
+Normalized abundance of volatile elements in bulk Earth (data from Marty 2012).
+Each volatile molar abundance is divided by the mass of Earth (5.97 x 1027 g) and normalized by the corresponding content in CI-CM chondrites.
+Note that the terrestrial abundance pattern is close to chondritic and corresponds to the contribution of ~2 ± 1 % carbonaceous chondrite material.
+Such contribution is in excess of the “Late Veneer” one, corresponding to the amount of highly siderophile elements in the mantle.
+Figure 5.
+Volatile delivery to Earth analogues in simulations of terrestrial planet formation in the context of the Grand Tack model.
+Earth analogues are defined here simply as simulated planets with masses of 0.7 to 1.3 Earth masses and orbital semi-major axes between 0.8 and 1.25.
+The plot shows the fraction of “wet” (carbon-rich C-complex) material accreted onto each simulated planet as a function of time.
+Each Earth analogue accreted 2-3% of C-complex material in the form of planetesimals that were scattered inward during Jupiter and Saturn’s early outward migration but that were accreted on a much longer timescale of tens to 100 Ma.

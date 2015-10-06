@@ -1,0 +1,601 @@
+﻿Laboratory Simulations of Abiotic Hydrocarbon Formation in Earth’s Deep Subsurface
+INTRODUCTION
+In recent years, methane and other light hydrocarbons with an apparently abiotic origin have been identified in an increasing number of geologic fluids on Earth.
+These compounds have been found in a variety of geologic settings, including seafloor hydrothermal systems, fracture networks in crystalline rocks from continental and oceanic crust, volcanic gases, and gas seeps from serpentinized rocks (for example, Abrajano et al.
+1990; Kelley 1996; Sherwood Lollar 2002, 2008; Fiebig et al.
+2007, 2009; Proskurowski et al.
+2008; Taran et al.
+2010a).
+Understanding the origin of these compounds has significant implications for range of topics that includes the global carbon cycle, the distribution of life in the deep subsurface (Gold 1992), and the origin of life (Martin et al.
+2008).
+There are even claims that abiotic sources are major contributors to global hydrocarbon reservoirs (Gold 1993; Glasby 2006; Kutcherov and Krayushkin 2010; Sephton and Hazen 2013).
+While most experts are highly skeptical of such broad claims, it seems possible that at least some petroleum and gas reservoirs could contain hydrocarbons with an abiotic origin.
+Conceptually, there are two potential major sources of abiotic hydrocarbons to fluids in Earth’s crust.
+First, abiotic hydrocarbons could migrate to the crust from deeper sources within Earth, through processes such as convective transport, grain boundary diffusion, or release of magmatic volatiles.
+Second, abiotic hydrocarbons could form in situ within the crust through reduction of inorganic carbon sources.
+Potential substrates for carbon reduction include CO2 and CO in circulating fluids, and carbon-bearing solids such as carbonate minerals and graphite.
+In either case, the ultimate source of the inorganic carbon may be primordial (i.e., from the mantle) or recycled from Earth’s surface.
+This paper summarizes some of the recent laboratory experimental studies conducted to investigate potential pathways for the abiotic formation of organic compounds in subsurface geologic environments.
+Experimental studies of abiotic organic synthesis are far too numerous for comprehensive coverage in a brief chapter.
+Therefore, this overview focuses on the formation of methane (CH4) and other light hydrocarbons, since these are the compounds that have most frequently been attributed to an abiotic origin in natural systems.
+In addition, only a selected subset of relevant studies is discussed, with the intent of providing a brief overview of current progress rather than an exhaustive review.
+The discussion intentionally takes a critical perspective; this is done not to disparage the results of any particular study (which in most cases have represented the cutting edge of research on the subject), but to emphasize evolving paradigms and identify directions for future research.
+Because the mantle and crust provide very largely different environments for formation of abiotic organic compounds, they are discussed separately in the following sections.
+ABIOTIC HYDROCARBONS IN EARTH’S UPPER MANTLE
+The chemical and physical environment of Earth’s upper mantle
+The stable form of carbon in the deep subsurface is dependent on factors that include temperature, pressure, and the local oxidation state of the system.
+Petrogaphic studies combined with thermodynamic models of fluids in the C-O-H system indicate that the shallower portions of the upper mantle favor oxidized forms of carbon, while greater depths increasingly favor reduced forms, including graphite, CH4, and other hydrocarbons (Frost and McCammon 2007; Zhang and Duan 2009).
+Oxygen thermobarometry of mantle xenoliths indicate that oxygen fugacities in the shallower portions of the upper mantle are buffered to values near the fayalite-magnetite-quartz (FMQ) oxidation state reference benchmark (the oxygen fugacity, fO2, is in indicator of the relative oxidation state in geologic systems, with higher values indicating more oxidizing conditions and lower values indicative of more reducing conditions; Fig.
+1a).
+At greater depths, however, the rocks become increasingly reducing, with fO2 reaching levels equivalent to several log units below FMQ.
+Equilibrium thermodynamic speciation for the C-O-H system at the prevailing oxidation state of mantle rocks indicate that conditions in the shallower parts of the mantle strongly favor CO2 relative to other carbon species (Fig.
+1).
+Consequently, fluids in equilibrium with rocks of the shallow upper mantle should contain predominantly CO2, with little or no methane or other forms of reduced carbon.
+If bulk carbon contents are sufficiently high, the rocks would also contain graphite in equilibrium with the CO2 (Holloway 1984).
+The oxidation state of the upper mantle would allow carbonate minerals to be present as well, but these minerals are generally unstable relative to silicate and oxide assemblages at mantle conditions, and in most circumstances would decompose at temperatures well below those present in the mantle (e.g., French 1971; Frost and McCammon 2007).
+At increasing depths, the relatively more reducing conditions are reflected in the speciation of carbon compounds, with CO2 giving way to CH4 and graphite as the predominant stable forms of carbon (Fig.
+1).
+Methane in the fluid at depth is accompanied by molecular hydrogen (H2) and smaller amounts of light hydrocarbons such as ethane (Fig.
+2; e.g., Kenney et al.
+2002; Zhang and Duan 2009; Spanu et al.
+2011).
+For a typical subcontinental mantle geotherm, the transition from CO2- to CH4-dominated regimes occurs at temperatures between 900 and 1100 ºC and pressures of 3.5 to 5 GPa, corresponding to depths of 125-140 km (Fig.
+1).
+The suboceanic mantle is more reducing and has steeper geotherms (Pollack and Chapman 1977; Frost and McCammon 2007), so the transition to CH4 would occur at somewhat shallower depths.
+Experimental studies of hydrocarbons at mantle conditions
+Experimental studies of C-O-H fluids demonstrate that carbon speciation is strongly dependent on oxidation state, and that conditions in the shallow upper mantle favor CO2 as the predominant form of carbon relative to CH4 and hydrocarbons (Jakobsson and Oskarsson 1990, 1994; Matveev et al.
+1997).
+An example is given in Figure 2, which shows results of an experimental study performed by Matveev et al.
+(1997) to examine the affect of oxidation state on speciation of fluids in equilibrium with graphite at 1000 ºC and 2.4 GPa, equivalent to conditions at depths of about 80 km in the subcontinental mantle (Pollack and Chapman 1977).
+At the strongly reducing conditions on the left side of the diagram, carbon was present in the experimental fluid predominantly as CH4 with minor amounts of C2H6, accompanied by minor amounts of H2.
+At more oxidizing conditions (i.e., towards the right on the diagram), CO2 begins to displace CH4 as the predominant carbon species.
+This transition occurred when the oxidation state present in the experiments was approximately equivalent to the wustite-magnetite (WM) buffer.
+Although the experiments were performed only to oxidation states slightly more oxidizing than the WM buffer, CO2 already represented >95% of the carbon in the fluid.
+The distribution of species observed in the experiments agrees very closely with the predictions of the equilibrium distribution calculated using equation of state (EOS) parameters developed independent of the experiments (Fig.
+2; Zhang and Duan 2009).
+The experimental results of Matveev et al.
+(1997) as well as those of Jakobsson and Oskarsson (1990, 1994) demonstrate two key points relevant to the study of hydrocarbons in the mantle.
+First, the results confirm that oxidation states close to WM or below are required to favor stable formation of hydrocarbons relative to CO2, although the exact point of transition will vary for temperatures and pressures that differ from the experiments.
+Since the oxidation state of the mantle, which is buffered by the stable mineral assemblage, is near FMQ at shallow depths and only approaches WM at depths below about 125 km, CH4 and other light hydrocarbons can only be expected to be stable in the deeper parts of the mantle.
+Second, even though the experiments were run for only a few days or less, it appears that equilibrium among the carbon species was achieved.
+This indicates that equilibration among carbon compounds is rapid at mantle temperatures, and suggests that equilibrium distributions of carbon compounds should be expected for mantle fluids.
+One caveat, however, is that diamond, which is thermodynamically stable relative to graphite at deeper mantle conditions (Fig.
+1), may not be as rapidly reactive as the graphite employed in the experiments.
+Experimental studies performed at metamorphic conditions in the crust (up to 725 ºC and 1 GPa) have indicated that disordered forms of graphite can persist metastably in contact with C–H–O fluids, at least on the timescales of the experiments (Ziegenbein and Johannes 1980; Pasteris and Chou 1998; Foustoukos 2012).
+Even if such metastable forms of graphite persist at the higher temperatures and longer residence times of the upper mantle, however, it is not likely to have a large impact on the speciation of carbon in fluids in equilibrium with the graphite, since the thermodynamic properties of ordered and disordered forms are probably very similar (see, for example, Fig.
+6 of Pasteris and Chou 1998).
+In other efforts to investigate formation of hydrocarbons in the mantle, several recent experimental studies have examined the production of CH4 and other light hydrocarbons when calcite (CaCO3) is exposed to mantle pressures and temperatures under reducing conditions (Kenney et al.
+2002; Scott et al.
+2004; Chen et al.
+2008a; Kutcherov et al.
+2010).
+These experiments have been conducted at temperatures of 500-1500 ºC, and pressures from 1 to 11 GPa.
+Ferrous iron-bearing solids including FeO and fayalite (Fe2SiO4), or native Fe, have been included among the reactants to provide the reducing conditions necessary to convert the inorganic carbon from calcite to hydrocarbons.
+Several of these experiments have been conducted using diamond anvil cells (DAC), which offer the distinct advantage that reactions can be monitored in situ using techniques such as Raman spectroscopy, X-ray diffraction, and optical microscopy (e.g., Scott et al.
+2004).
+During heating of the experiments, the calcite and other minerals decompose, and CH4 is generated as the predominant carbon compound in the fluid.
+In some cases, minor amount of C2-C6 hydrocarbons have been reported as well (Kenney et al.
+2002; Kutcherov et al.
+2010), but CO2 is not observed.
+Few details of the solid reaction products of these experiments have been reported, but magnetite (Fe3O4) and Ca(OH)2 (or CaO) appear to be the major products, with calcium ferrite possibly present in at least one set of experiments (Scott et al.
+2004).
+Whether graphite was produced in any of these experiments is unclear.
+The formation of CH4 in these experiments is consistent with previous experimental results and with thermodynamic expectations that it should be the stable carbon species in the fluid under reducing conditions at the elevated temperature and pressures of the experiments (Fig.
+2; Jakobsson and Oskarsson 1990; Matveev et al.
+1997; Zhang and Duan 2009).
+While none of the experiments provide sufficient information to determine the oxidation state of the system at experimental conditions, the use of FeO and Fe as reactants together with formation of magnetite as a reaction product suggests that most of the carbonate experiments resulted in oxidation states that were near the wüstite-magnetite buffer.
+The production of C2H6 and higher hydrocarbons in the carbonate decomposition experiments as well as other experimental studies using other carbon sources (Fig.
+2; Jakobsson and Oskarsson 1990; Matveev et al.
+1997) is also consistent with thermodynamic considerations, which indicate that minor amounts of C2+ hydrocarbons should accompany CH4 at equilibrium in C-O-H fluids at mantle conditions (e.g., Zhang and Duan 2009; Spanu et al.
+2011).
+For instance, the reaction:
+2CH4 → C2H6 + 2H2						(1)
+demands that C2H6 be present at equilibrium at a finite level consistent with the law of mass action for the reaction:
+log K = log aC2H6 + 2log fH2 - 2log fCH4				(2)
+where K is the equilibrium constant and fX is the fugacity of species X. Thermodynamic constraints indicate that C2H6 should compose up to several percent of the carbons species under reducing conditions at mantle temperatures (Fig.
+2).
+Although speciation calculations like those shown in Figure 2 have not yet considered hydrocarbons larger than C2H6 for mantle conditions, it is likely that these compounds should be present at equilibrium in diminishing amounts with increasing carbon number (Kenney et al.
+2002).
+Results of the carbonate decomposition experiments provide additional evidence for the rapidity of the reduction of inorganic carbon to CH4 at mantle conditions.
+Methane production was observed in these experiments at reaction times lasting only minutes to hours and, although an evaluation of equilibrium status was not considered in the carbonate decomposition studies, it appears likely that equilibrium of the system was attained on the timescales of the experiments.
+Similar results are obtained when graphite is substituted for calcite as the carbon source (Kutcherov et al.
+2010), indicating that graphite can also equilibrate with reduced carbon species in the fluid at short timescales at mantle conditions.
+The use of carbonate minerals in the experiments described is probably best viewed as a means of introducing a source of C and O to the system rather than a literal indication that carbonate decomposition per se contributes to hydrocarbon formation in the mantle.
+Indeed, it is not immediately apparent where carbonate minerals would be present in the mantle under conditions that would be sufficiently reducing for this to occur.
+For typical mantle geotherms, carbonate decomposition occurs at pressures of ~3 GPa or less (Frost and McCammon 2007), and the oxidation state of the system favors their decomposition to CO2 rather than CH4 and other hydrocarbons (Fig.
+1).
+Carbonates may penetrate to greater depths in deeply subducting slabs (e.g., Kerrick and Connolly 2001), but the oxidation states in subducting slabs tend to be even more oxidizing than those elsewhere in the mantle (Frost and McCammon 2007).
+Other recent experiments have demonstrated that CH4 exposed to mantle conditions will spontaneously polymerize to form C2+ hydrocarbons (Chen et al.
+2008b; Kolesnikov et al.
+2009).
+These experiments were performed in diamond anvil cells with in situ detection of hydrocarbon products by Raman spectroscopy.
+For example, Koleshnikov et al.
+(2009) observed formation of ethane, propane, and butane during heating of pure CH4 to temperatures in the 1000-1500 K (727-1227 ºC) range at pressures above 2 GPa, with ethane most abundant (Fig.
+3).
+Other products included H2 and graphite.
+Experiments performed by heating pure ethane at similar conditions produced CH4, H2, and graphite.
+As noted by Koleshnikov et al.
+(2009), at the lower end of the temperature range studied, the experiments were significantly more reducing than mantle conditions, but converge towards the oxidation state of mantle rocks at higher temperatures (see their Fig.
+3a).
+Consequently, the experimental conditions are most directly applicable to the deeper parts of the upper mantle.
+The results of Koleshnikov et al.
+(2009) are consistent with thermodynamic expectations that small amounts of higher hydrocarbons should coexist with CH4 at mantle temperatures and pressure if conditions are sufficiently reducing.
+However, equilibrium states can only be approached if suitable reaction pathways exist that are not kinetically inhibited, and these experiments further demonstrate that reactions among carbon species proceed very rapidly under such conditions, even when the reactions involve formation of carbon-carbon bonds and reaction with graphite.
+Although the reaction mechanism was not determined, the experiments also suggest that formation and polymerization of methyl radicals might be one pathway for the formation of higher hydrocarbons in the deep subsurface.
+Implications for mantle sources of hydrocarbons
+The experimental studies summarized above demonstrate that reactions among carbon species proceed very rapidly at mantle temperatures and pressures.
+Furthermore, comparison of predicted equilibrium distributions of carbon species based on thermodynamic models agree closely with the relative abundances of compounds observed in laboratory experiments (e.g., Fig.
+2).
+Together, these results indicate that the distribution of carbon compounds in the mantle under most circumstances will be controlled by chemical equilibrium.
+Since the equilibrium distribution of carbon species is strongly dependent on the oxidation state, the prevailing oxidation state of the mantle, which is buffered by reactions among minerals, will exert a dominant influence on which carbon compounds are present.
+Given the prevailing mantle oxidation state, it appears likely that CH4 and hydrocarbons should exist in mantle rocks, but only in those rocks at depths greater than ~110-125 km (for a continental geotherm) where conditions are sufficiently reducing to allow these compounds to be stable (Fig.
+1).
+For a suboceanic geotherm, sufficiently reducing conditions to favor the formation of CH4 and hydrocarbons may occur at slightly shallower depths.
+These considerations suggest that one of three sets of circumstances may be required for mantle sources to contribute to CH4 and other hydrocarbons found in crustal fluids.
+First, hydrocarbons from deep within the mantle could be transported to near-surface environments under circumstances that prevent their re-equilibration at the relatively less reducing conditions of the shallow mantle.
+This transport might occur, for instance, during rapid migration of fluids in concert with migrating rocks from the deep mantle.
+The occurrence of diamond-bearing xenoliths in near-surface rocks that were erupted from depths of up to 150 km in the mantle (Shirey et al.
+2013) suggests that conduits for relatively rapid transport may exist, although the distribution of such conduits appears to have been spatially and temporally limited during Earth’s history.
+To date, there have been no experimental studies that have examined oxidation of methane and other reduced carbon compounds that would provide quantitative constraints on the rates of migration required to prevent re-equilibration.
+Second, mantle hydrocarbons could arise in shallower portions of the mantle that are anomalously more reducing than typical values (Fig.
+1).
+For instance, deep subduction of organic-rich sediments might create pockets of rocks whose bulk composition is depleted in O relative to typical mantle, leading to a lower overall oxidation state within the rocks.
+A third possibility is that hydrocarbons might form and persist in disequilibrium with surrounding rocks in the shallow upper mantle.
+However, given the rapidity with which carbon compounds equilibrate at mantle temperatures in laboratory experiments, this seems like a rather remote possibility.
+It has been suggested that the co-occurrence of CH4 and other hydrocarbons with mantle-derived helium (i.e., gases with high 3He/4He ratios) in some hydrothermal fluids and natural gas reservoirs is an indication that the CH4 has a mantle source (e.g., Welhan and Craig 1983; Gold 1993; see also Jenden et al.
+1993; Sephton and Hazen 2013; and references therein).
+If so, the hydrocarbons would probably have to either come from deep within the mantle, or be present as trace constituents of fluids from the shallow mantle where CO2 was the predominant carbon species.
+However, an alternative explanation is that the CH4 and other hydrocarbons migrated out of the mantle as CO2, and were then converted to hydrocarbons by reactions within the crust (see following section) (Jenden et al.
+1993; McCollom 2008).
+For instance, this appears to be the source of methane-rich gases associated with high 3He levels in serpentinized ultramafic rocks (Abrajano et al.
+1990; Proskurowski et al 2008), as well as CH4 and other hydrocarbons in volcanic gases (Fiebig et al.
+2007, 2009).
+ABIOTIC HYDROCARBON FORMATION IN CRUSTAL ENVIRONMENTS
+Chemical and physical environments for hydrocarbon formation in the crust
+The prevailing oxidation state of source regions of magmas in the upper mantle dictates that carbon speciation in pristine magmatic-derived fluids should be dominated by CO2, with very little CH4 present (e.g., Mathez 1984; Kelley 1996).
+This observation appears to be consistent, for example, with chemical analyses of magmatic volatiles trapped in vesicles within seafloor basalts, which are characterized by very high CO2/CH4 ratios (e.g., Pineau and Javoy 1983).
+At the same time, oxidizing conditions at Earth’s surface ensure that CO2 and bicarbonate are the predominant forms of dissolved carbon in seawater, in fracture-filling groundwater, and in shallow pore waters.
+As a consequence, the predominant inputs of carbon to Earth’s crust from both above and below are in highly oxidized forms.
+Accordingly, any hydrocarbons found in fluids circulating in Earth’s crust that do not derive from deep within in the mantle or from biologic sources must therefore be formed by non-biological reduction of inorganic carbon within the crust itself.
+In general, two sets of conditions favor the reduction of inorganic carbon to hydrocarbons within the crust (McCollom and Seewald 2007; McCollom 2008).
+At the elevated temperatures and oxidation states that prevail in environments deep within the crust, CO2 is thermodynamically stable relative to CH4.
+However, decreasing temperatures increasingly favor the stability of CH4 relative to CO2.
+This trend is illustrated in Figure 4a, which shows that the log K for the reaction:
+CO2 + 4H2 ↔ CH4 +	2H2O					(3)
+becomes increasingly positive with decreasing temperature, indicating that lower temperatures favor the compounds on the right side of the reaction relative to those on the left side.
+As shown in Figure 4b, this means that CO2 predominates relative to CH4 at equilibrium for high temperatures (>~200 to 350 ºC, depending on oxidation state), but CH4 is the more thermodynamically stable compound at lower temperatures.
+Similar relationships can be shown for other hydrocarbons relative to CO2.
+As a consequence, cooling of high-temperature fluids that contain dissolved CO2 and H2 will thermodynamically favor reduction of the CO2 to CH4 and other hydrocarbons (e.g., Shock 1990, 1992).
+A second set of circumstances that can promote reduction of inorganic carbon within Earth’s crust is the generation of reducing environments through fluid-rock interactions.
+These interactions are typically manifested by increasing abundances of H2 as fluid-rock interactions proceed, shifting the equilibrium of reactions like the one written above towards the compounds on the right side.
+As a consequence, the predominant equilibrium carbon species can shift from CO2 to CH4 as fluids interact with rocks, even without a change in temperature.
+Because the interaction of aqueous fluids with ultramafic rocks is known to generate particularly large amounts of H2, fluids circulating through these rocks have become the focus of many studies of abiotic hydrocarbon formation.
+For example, hydrothermal fluids circulating through ultramafic rocks below the seafloor have measured H2 concentrations up to 15 mmol/kg, and evidence suggests that light hydrocarbons in these fluids have an abiotic origin (Charlou et al.
+2002, 2010; Kelley et al.
+2005; Proskurowski et al.
+2008).
+Hydrous alteration of ultramafic rocks, which are composed predominantly of the minerals olivine and pyroxene, is known as serpentinization, owing to precipitation of the mineral serpentine as the primary alteration product (Schrenk et al.
+2013).
+Serpentinization can be summarized by the general reaction:
+Mg1.8Fe0.2SiO4  + aH2O → 0.5(Mg,Fe)3Si2O5(OH)4 + x(Mg,Fe)(OH)2 + yFe3O4 + zH2.
+(4)
+Olivine (Fo90)                                      Serpentine                      Brucite           Magnetite
+The exact stoichiometry of this reaction, and thus the amount of H2 generated, is dependent on a number of factors that affect partitioning of Fe among the reaction products, including temperature, rock composition, and water:rock ratio (e.g., Seyfried et al.
+2007; McCollom and Bach 2009; Marcaillou et al.
+2012).
+While ultramafic rocks have become a focal point for studies of abiotic hydrocarbon formation, serpentinization is by no means the only fluid-rock reaction that can produce sufficiently reducing conditions to favor carbon reduction, and many other rock types and reactions may be involved in H2 production within Earth’s crust (e.g., Charlou et al.
+1996; Potter et al.
+2004; Sherwood Lollar et al.
+2006, 2007).
+Although thermodynamic factors can favor reduction of inorganic carbon to hydrocarbons under circumstances like those outlined above, kinetic inhibitions can still prevent the reactions from occurring.
+In contrast to the experimental results obtained at mantle temperatures, which show rapid equilibration among carbon species, reactions involved in the reduction of inorganic carbon at temperatures and pressures relevant to environments in Earth’s crust are susceptible to kinetic inhibitions (e.g., Seewald et al.
+2006).
+Laboratory experiments provide a means to evaluate which conditions within the crust can allow carbon reduction to proceed.
+The remainder of this section describes some of the experimental studies performed in recent years to investigate potential reaction pathways for carbon reduction under crustal conditions.
+Since a detailed review of experimental studies of abiotic organic synthesis under geological conditions was recently published (McCollom and Seewald 2007), only the most salient results are summarized here, and readers interested in a more in depth discussion are referred to the earlier review.
+Fischer-Tropsch-type synthesis
+The most widely invoked pathway for the formation of hydrocarbons and other organic compounds in geologic environments is the Fischer-Tropsch synthesis.
+Accordingly, this process has also received the greatest attention in experimental studies.
+As originally described, Fischer-Tropsch synthesis refers to the surface-catalyzed reduction of CO by H2 in gas mixtures.
+However, the term is often used in a broader context in the geological literature to refer to reduction of an inorganic carbon source to form organic compounds, regardless of the nature of the carbon source, the medium in which the reaction occurs, or the identity of the reductant.
+In many cases, dissolved CO2 is inferred to be the primary carbon source for abiotic organic synthesis in geologic systems.
+We will follow the geologic convention here, and use the term Fischer-Tropsch-type (FTT) synthesis to refer in general to any surface-catalyzed reduction of an inorganic carbon source to organic matter.
+During FTT synthesis, CO or CO2 is reduced to organic compounds through a series of steps on the surface of a catalyst (Fig.
+5).
+Typically, the primary products of the reaction are CH4 and a homologous series of linear alkanes that show a regular decrease in abundance with increasing number of carbons (Fig.
+6).
+However, the process also generates lesser amounts of other compounds, including alkenes, branched hydrocarbons, and oxygen-bearing compounds including alkanols and alkanoic acids (e.g., Anderson and White 1994; McCollom et al.
+1999).
+If a source of nitrogen is present, the synthesis can also generate amino acids, amines, and other N-bearing compounds (Hayatsu et al.
+1968; Yoshino et al.
+1971).
+The Fischer-Tropsch reaction was originally developed as a means of converting coal-bed gases to petroleum, and over the years it has been the subject of hundreds of experimental studies directed at optimizing yields of hydrocarbons and other industrial products.
+Unfortunately, most of this vast literature has no clear relevance to the study of formation of carbon compounds within Earth because the reaction conditions are not directly comparable to geologic environments.
+For instance, industrial Fischer-Tropsch experiments are often performed in dry gas mixtures with no water present (except for the small amounts produced as a by-product of the reaction).
+In contrast, FTT synthesis in geologic systems is often inferred to take place in environments where liquid or supercritical water is the medium for the reactions.
+Industrial reactions also generally rely on purpose-designed synthetic catalysts that may or may not resemble mineral phases present in natural systems.
+The challenge for experimental geochemists is to understand the extent to which FTT reactions can proceed at conditions that more closely resemble subsurface geologic environments.
+One key question is whether FTT type reactions can proceed in environments where reactants are dissolved in sub- or supercritical aqueous fluids.
+Another critical question is which naturally occurring minerals, if any, are effective in catalyzing the reaction, and under what circumstances.
+Some catalysts used in industrial Fischer-Tropsch synthesis are found in natural systems, but for industrial purposes their catalytic properties are typically enhanced in ways that may not occur in natural settings.
+For example, magnetite has long been employed as a catalyst for industrial Fischer-Tropsch studies, but it is usually pre-treated with a stream of H2 and CO prior to use in these applications.
+This process generates pockets of highly reactive native Fe or Fe-carbides on the surface that appear to be active sites for catalysis (e.g., Dictor and Bell 1986; Satterfield et al.
+1986).
+These kinds of sites would likely be destroyed very rapidly in natural systems, especially if H2O is present.
+To address these issues, recent experimental studies concerning the potential contribution of FTT synthesis to hydrocarbon occurrences in geologic systems have largely focused on exploring the capacity for naturally occurring minerals to catalyze the reaction, and on evaluating the effectiveness of the reactions under hydrothermal conditions.
+Several recent laboratory experiments indicate that FTT synthesis can indeed proceed readily under hydrothermal conditions in some circumstances (e.g., McCollom et al.
+1999, 2010; McCollom and Seewald 2006).
+In these studies, CO or formic acid (HCOOH) and water were heated to temperatures of 175 or 250 ºC and pressures ranging from steam-saturation to 25 MPa, with H2 supplied by decomposition of formic acid (HCOOH → CO2 + H2) or of native Fe included in the reaction vessel (Fe + H2O → Fe3O4 + H2).
+Over periods of hours to days, several percent of the carbon is reduced to typical Fischer-Tropsch reaction products.
+These products include CH4 and other light hydrocarbons, as well as long-chain n-alkanes, alkanols, and alkanoic acids (Fig.
+6).
+The products exhibit a regular decrease in abundance with increasing carbon number that is characteristic of Fischer-Tropsch products.
+While these experiments show that FTT synthesis is not necessarily inhibited by hydrothermal conditions, a couple of considerations may limit their direct applicability to natural systems.
+First, the synthesis in these experiments was probably catalyzed either by native Fe included in the reaction vessel, or by the walls of the steel tube used in some of the experiments.
+Thus, they may not represent catalysts present in natural environments.
+Second, it appears likely that the synthesis reactions took place either in the vapor headspace for reactions performed in fixed-volume tube reactors (McCollom et al.
+1999) or in H2-rich vapor bubbles formed on the surfaces of the solids in reactions performed at higher pressures (McCollom and Seewald 2006; McCollom et al.
+2010).
+Consequently, while these experiments show that the presence of water-saturated vapors do not preclude efficient FTT synthesis, they do not indicate that the reactions can proceed for compounds dissolved in aqueous liquid.
+In addition, H2 was also present in these experiments at very high levels (>200 mmol/kg) that are probably rarely approached in natural environments within Earth’s crust.
+The prospect that abiotic hydrocarbons might form during serpentinization of ultramafic rocks led to experimental investigation of the capacity for minerals found in serpentinites to catalyze carbon reduction reactions.
+The first study to focus on this possibility was that of Berndt et al.
+(1996), who monitored the production of light hydrocarbons during reaction of Fe-bearing olivine with an aqueous solution containing dissolved bicarbonate at elevated temperature and pressure (300°C, 50 MPa).
+The experiment utilized a flexible-cell reaction apparatus, which allows reactions to proceed without a vapor phase present and also provides a means to monitor concentrations of compounds dissolved in the fluid as reactions proceed.
+Dissolved concentrations of H2 and several light hydrocarbons (CH4, C2H6, and C3H8) were observed to increase steadily during the experiment as the serpentinization reaction progressed, while the concentration of total dissolved CO2 (CO2,aq + HCO3-) declined (Fig.
+8).
+The authors interpreted the small amounts of hydrocarbons generated over the course of the experiment to represent products of Fischer-Tropsch synthesis through reduction of dissolved CO2.
+Magnetite formed in the experiments as a product of serpentinization (Rxn.
+4) was suggested to be the catalyst.
+Although Berndt et al.
+(1996) also reported the presence of bi-lobed, carbonaceous particles among the solid reaction products that were interpreted to be high-molecular weight products of FTT synthesis, this claim has since been retracted (see Geology 1996, p. 671).
+The groundbreaking results of Berndt et al.
+(1996) suggested that reduction of dissolved inorganic carbon to hydrocarbons could proceed readily with minerals common in hydrothermal systems serving as catalysts.
+Further investigation, however, showed that hydrocarbon formation at the conditions of their experiments was much more limited than initially thought.
+McCollom and Seewald (2001) performed an experiment under essentially identical conditions to those of Berndt et al.
+(1996), except that 13C-labeled bicarbonate (99% H13CO3-) was substituted as the inorganic carbon source in order to trace the origin of carbon in the hydrocarbon products.
+While the experiment yielded similar amounts of H2 and C1-C3 hydrocarbons to those reported by Berndt et al.
+(1996), isotopic analysis of the hydrocarbon products indicated that only a small fraction of the CH4 contained the 13C label (2-15%), while none of the C2H6 or C3H8 was labeled.
+This result indicated that, except for a small fraction of the CH4, the C1-C3 hydrocarbons generated in the experiments were not the product of reduction of dissolved CO2, but were instead generated from thermal decomposition of other sources of reduced carbon already present among the reactants at the start of the experiment.
+It is worth emphasizing that, at the H2 concentrations attained in both of these experiments (up to 158 mmol/kg; Fig.
+7), reduction of inorganic carbon to CH4 and other hydrocarbons was strongly favored by thermodynamics, and essentially all of the dissolved CO2 present should have been converted to CH4 to attain equilibrium (Fig.
+4).
+Yet, only a very small fraction (<<1%) of the available carbon was reduced to CH4, even after nearly three months of heating at 300 ºC.
+Thus, the results clearly demonstrated that reduction of dissolved inorganic carbon to light hydrocarbons is kinetically sluggish even at 300 ºC.
+Furthermore, although magnetite was formed in abundance in both experiments as a product of serpentinization (Rxn.
+3), the lack of significant hydrocarbon formation suggests that it is not a very effective catalyst for reduction of dissolved inorganic carbon in natural systems.
+Otherwise, a much larger fraction of the inorganic carbon present in the experiments would have been converted to CH4 or other organic compounds.
+In a series of follow-up experiments also using 13C-labeled carbon sources, it was found that dissolved CO2 (or HCO3-) was rapidly reduced by H2 to HCOOH and CO under hydrothermal conditions (McCollom and Seewald 2003; Seewald et al.
+2006).
+In contrast to CH4, these compounds attained thermodynamic equilibrium within a few days, even at temperatures as low as 175°C and in the absence of mineral catalysts.
+Methanol was also found to accumulate, but did not reach equilibrium proportions.
+As in the serpentinization experiments, 13C-labeled CH4 was produced in small amounts (μmolar concentrations) during these experiments, along with larger amounts of unlabeled CH4 and other light.
+Overall, the experimental results demonstrated that partial reduction of dissolved inorganic carbon proceeds rapidly and spontaneously to HCOOH and CO under hydrothermal conditions, but complete reduction to CH4 proceeds only very slowly without catalysis.
+Several other experimental studies have focused on evaluating the catalytic potential of individual minerals found in serpentinites, including NiFe-alloys, magnetite, chromite, and Ni-sulfide (pentlandite).
+Awaruite, a Ni-Fe alloy with compositions between Ni2Fe and Ni3Fe, occurs in many serpentinites as a by-product of the highly reducing conditions that can develop as a result of H2 production during serpentinization (Frost 1985; Klein and Bach 2009).
+Horita and Berndt (1999) examined the reduction of dissolved CO2 in the presence of NiFe-alloy, magnetite, water, and highly elevated H2 concentrations (170-300 mmol/kg).
+Experiments were conducted at temperatures of 200-400 ºC and 50 MPa.
+In contrast to the small amounts of  CH4 produced in the earlier experiments of Berndt et al.
+(1996),  nearly complete conversion of CO2 to CH4 was observed in the 300 ºC experiments in two weeks or less, and >40% conversion was observed after 3 months of reaction at 200 ºC.
+Moreover, rates of conversion were found to increase when greater amounts of NiFe-alloy were included, and no CH4 was generated in a control experiment in the absence of the alloy, demonstrating that the NiFe-alloy had catalyzed the production of CH4.
+No C2H6 or C3H8 were found in the experiment, indicating that the catalysis exclusively promoted CH4 synthesis.
+Lesser amounts of conversion of CO2 to CH4 were observed at 400 ºC, which was attributed to passivation of the catalyst at higher temperature.
+The experiments of Horita and Berndt (1999) provided the first documentation that the kinetic inhibitions to reduction of dissolved CO2 to CH4 could be effectively overcome by naturally occurring minerals, and that NiFe-alloy was a very effective catalyst in promoting the reaction.
+The experiments also showed that pure CH4 could be produced by an abiotic process in hydrothermal environments, which was contrary to the widely held notion that only methanogenic microorganisms were capable of producing nearly pure CH4 in geologic systems (e.g., Whiticar 1990).
+Although the alloy present in the experiments of Horita and Berndt (1999) was significantly enriched in Ni (Ni50Fe to Ni10Fe) relative to awaruite found in natural serpentinites, there is no obvious reason to doubt that natural awaruite would have similar catalytic properties.
+The catalytic potential of chromite and magnetite has been investigated in experiments by Foustoukos and Seyfried (2004).
+Two experiments were performed under hydrothermal conditions at 390°C and 40 MPa, one containing chromite plus magnetite and the other including only magnetite, with both minerals synthesized from Fe and Cr oxides.
+A 13C-labeled inorganic carbon source was used (99% H13CO3-) to assess the origin of carbon in reaction products, and high levels of H2 (>100 mmol/kg) provided conditions favorable for carbon reduction (Fig.
+4).
+During heating for 44 to 120 days, 13CH4 was observed to accumulate at concentrations up to 192 μmol/kg.
+Much smaller, but detectable, levels of 13C-labeled C2H6 or C3H8 were also observed.
+In each case, the labeled compounds represented only a small fraction of the total concentrations of C1-C3 hydrocarbons observed in the experiments.
+A key finding of this study was that C2+ hydrocarbons could be produced from reduction of dissolved reactants, demonstrating that higher hydrocarbons as well as CH4 could be generated without a vapor phase present in subsurface and hydrothermal environments.
+Although yields were low (<0.1% of added inorganic carbon), the concentrations attained were comparable to those of hydrocarbons in deep-sea hydrothermal systems thought to have an abiotic origin (e.g., Proskurowski et al.
+2008; Charlou et al.
+2010).
+The results show that it is possible for light hydrocarbons to be generated from reduction of inorganic carbon in subsurface environments even when there is no vapor phase present.
+Owing to the high levels of unlabeled hydrocarbons in the experiments, which apparently derived from traces of background reduced carbon included among the reactants, the use of labeled carbon source was a critical factor in the authors’ ability to demonstrate that the hydrocarbons were derived from reduction of inorganic carbon.
+Foustoukos and Seyfried (2004) inferred that the minerals catalyzed formation of the hydrocarbons and, based on the observation that yields of labeled hydrocarbons were higher in the experiment that contained chromite than in the experiment that contained only magnetite, the authors inferred that chromite was more effective than magnetite in promoting the hydrocarbon formation.
+However, subsequent studies have not observed any catalytic effect for the reduction of dissolved CO2 by naturally occurring chromites (Lazar et al.
+2012; Oze et al.
+2012), and alternative explanations for the differences observed by Foustoukos and Seyfried (2004) are possible.
+In particular, the chromite-bearing experiment contained higher H2 than the magnetite-only experiment (~220 mmol/kg vs. ~120 mmol/kg) and was also performed at a substantially lower pH (4.8 vs. 8.8, which changes the predominant carbon species from CO2(aq) to HCO3-), either of which may have affected the rate of reduction of inorganic carbon to hydrocarbons independent of any mineral catalysis.
+As a consequence, the capacity for chromite to catalyze the reduction of inorganic carbon to CH4 and other light hydrocarbons under natural hydrothermal conditions remains uncertain.
+Because the physical properties of water undergo substantial changes near the critical point (404 ºC, 29 MPa for seawater salinity; Bischoff and Rosenbauer 1985), the near-critical conditions of the Foustoukos and Seyfried (2004) experiments may have had a role in allowing the reduction of carbon to occur.
+However, a more recent study by Ji et al.
+(2008) reported the reduction of dissolved 13CO2 to C1-C5 hydrocarbons in experiments at 300 ºC and 30 MPa with a cobalt-enriched magnetite catalyst.
+The authors only reported isotopic analyses only for the C3-C5 hydrocarbons, but the results showed that at least 50% of carbon in linear alkanes was 13C, while branched C4 and C5 alkanes contained none of the added 13C.
+Yields of hydrocarbons in these experiments were an order of magnitude greater than those of Foustoukos and Seyfried (2004), although uncertainties in the abundance and isotopic composition of CO2 and CH4 preclude direct comparisons.
+In any case, the results of Ji et al.
+(2008) provide further evidence that synthesis of at least short-chain hydrocarbons is possible in the absence of a vapor phase.
+The potential of magnetite to promote abiotic production of hydrocarbons under hydrothermal conditions was further investigated by Fu et al.
+(2007), who heated solutions of CO2 and H2 in the presence of magnetite at 400 ºC and 50 kPa.
+In order to avoid background contributions of hydrocarbons from magnetite, the minerals were scrupulously treated prior to the experiments to reduce carbon contents, and control experiments without an added carbon source did not generate detectable levels of CH4 or other light hydrocarbons.
+In contrast, when a carbon source was injected into the experiments (as CO2 or HCOOH) together with H2, concentrations of CH4, C2H6, or C3H8 were found to increase over time.
+On the order of 0.2-0.3% of the inorganic carbon added to experiments was converted to hydrocarbons, comparable to the conversion amounts observed by Foustoukos and Seyfried (2004) at similar pressure and temperature.
+Based on a carbon imbalance in their experiments, Fu et al.
+(2007) also suggested that a large fraction of the inorganic carbon reactant was converted to additional unidentified organic products, although no supporting evidence was provided.
+While the experiments of McCollom and Seewald (2001), Fu et al.
+(2007), and Foustoukos and Seyfried (2004) resulted in the synthesis of CH4 and, in some case, other light hydrocarbons in the presence of magnetite, it must be pointed out that none of these studies provide definitive evidence that magnetite actually catalyzed the reactions.
+Using similar methods, experiments conducted by Seewald et al.
+(2006) with no minerals present generated small amounts of CH4 comparable to those observed in magnetite-bearing experiments, and it seems possible that other hydrocarbons might be produced as well.
+Definitive studies showing that the presence of magnetite increases the production of hydrocarbons over that observed for the same conditions without magnetite have not yet been published.
+Additionally, in the experiments of Horita and Berndt (1999), the catalytic properties of NiFe-alloy was demonstrated by showing that CH4 production increased with the amount of alloy present, but no similar set of experiments with variable amounts of magnetite have yet been published.
+Consequently, whether magnetite can catalyze carbon reduction in hydrothermal environments should be considered an unresolved question.
+The potential for hydrocarbon synthesis in the presence of pentlandite (an Fe-Ni sulfide mineral) has also been explored by Fu et al.
+(2008), using similar conditions (400 ºC, 50 MPa) and experimental methods to those of previous experiments with chromite and magnetite.
+The source of inorganic carbon in the experiment, and also of H2, was 13C-labeled HCOOH.
+During several weeks of reaction, μmolar concentrations of labeled 13CH4, 13C2H6, and 13C3H8 accumulated in the fluid, along with much higher levels of unlabeled compounds.
+Overall conversion of inorganic carbon was <0.01%, and 13CH4 yields were an order of magnitude lower than observed in the previous magnetite and chromite experiments (Foustoukos and Seyfried 2004).
+More recently, Lazar et al.
+(2012) reported that 13CH4 generation was faster during experiments using natural komatiite and H13COOH as reactants at 300 ºC than in parallel experiments with synthetic komatiite, and inferred that the increased rates were attributable to the presence of pentlandite in the natural sample.
+These studies suggest that Ni-bearing sulfides are another potential catalyst for reduction of inorganic carbon to hydrocarbons in subsurface hydrothermal environments.
+While most of studies described above were performed at temperatures of 300 ºC or above, several recent studies have explored the production of CH4 during reaction of olivine with water at lower temperatures (Jones et al.
+2010; Neubeck et al.
+2011; Oze et al.
+2012).
+In a series of experiments using methods similar to those of Berndt et al.
+(1996) and McCollom and Seewald (2001), Jones, Oze, and colleagues (Jones et al.
+2010; Oze et al.
+2012) reacted olivine and chromite with fluids containing variable amounts of HCO3- at 200 ºC and 30 MPa.
+Steadily increasing levels of H2 were observed during the experiments, resulting from serpentinization of olivine (Rxn.
+3).
+Methane concentrations increased in parallel with the H2, which was inferred by the authors to be an indication that the CH4 was generated by FTT synthesis reactions catalyzed by magnetite.
+After reaction for up to 1321 hours, dissolved concentrations of 5-12 mmol/kg H2 and 56-120 μmol/kg CH4 were attained.
+Although these authors inferred that the CH4 observed in their experiments was the product of magnetitie-catalyzed reduction of dissolved inorganic carbon, results from previous experiments suggest that this inference must be viewed with caution.
+As described above, numerous experimental studies have demonstrated that minerals and other sources can produce background CH4 during hydrothermal experiments in comparable amounts to the CH4 concentration reported by Jones et al.
+(2010) and Oze et al.
+(2012).
+Furthermore, most of their experiments generated CH4 even though no inorganic carbon source was included among the reactants, and dissolved inorganic carbon was below detection limits throughout the experiments.
+Methane generation actually decreased when an inorganic carbon source was added, opposite to expectations for carbon reduction.
+Since Jones et al.
+(2010) and Oze et al.
+(2012) did not assess background levels of CH4 in their experiments, it is not possible to evaluate the actual source of the CH4.
+However, based on results of other studies, it is likely that only a very small fraction of the CH4 observed, if any, was derived from reduction of inorganic carbon during the experiments.
+Neubeck et al.
+(2011) employed a totally different experimental approach to examine CH4 generation from olivine at 30-70 ºC.
+These investigators reacted olivine with a bicarbonate solution in partially filled glass vials, sealed with rubber stoppers and flushed with N2.
+The headspace of the vials was monitored for production of H2 and CH4, and over nine months of reaction these compounds were found to accumulate at low nanomolar amounts, with higher yields observed with increasing temperature.
+Based on lower CH4 production in mineral-free experiments and apparent absence of alternative carbon sources, Neubeck et al.
+(2011) inferred that the CH4 observed in their experiments was derived from reduction of the dissolved HCO3-, with trace amounts of magnetite or chromite serving as catalysts.
+If the results of Neubeck et al.
+(2011) are taken at face value, it would suggest a possible widespread source of CH4 within the crust from low-temperature serpentinization of ultramafic rocks.
+However, as with results of Jones et al.
+(2010) and Oze et al.
+(2012), the claim of abiotic CH4 formation in these experiments must be viewed with some caution.
+Neubeck et al.
+(2011) do not report any effort to assess background levels of CH4 in their experiments, and the amounts of CH4 produced in experiments that included no inorganic carbon source among the reactants were nearly identical to the levels generated in experiments performed with bicarbonate solutions.
+As a result, this study provides no evidence directly linking the CH4 observed to reduction of bicarbonate, and previous results suggest that most, if not all, of the CH4 observed may have been derived from reduced carbon sources among the reactants.
+Consequently, the potential for abiotic CH4 production during low-temperature alteration of ultramafic rocks remains uncertain.
+Isotopic fractionation during FTT synthesis.
+The carbon and hydrogen isotopic compositions of CH4 and other light hydrocarbons have increasingly become key elements of efforts to identify hydrocarbons with an abiotic origin in natural systems (e.g., Sherwood Lollar et al.
+2002, 2008; Fiebig et al.
+2007; Proskurowski et al.
+2008; Taran et al.
+2010b).
+The potential for isotopes to be used as criteria for identification of abiotic hydrocarbons has led to renewed interest in recent years in experimental study of isotopic fractionation during FTT synthesis.
+The isotopic compositions of FTT reaction products have been reported for a number of laboratory experiments performed under a variety of reaction conditions, including CO/H2 gas mixtures in flow-through reactors (Taran et al.
+2007, 2010b; Shi and Jin 2011), gas mixtures in closed reaction vessels (Lancet and Anders 1970; Hu et al.
+1998), and hydrothermal reactions (McCollom and Seewald 2006; Fu et al.
+2007; McCollom et al.
+2010).
+A variety of Fe-, Co-, and Ru-bearing catalysts have been used in these experiments.
+The isotopic compositions of the light hydrocarbons generated in the various experiments exhibit both some similarities and some substantial differences.
+Nearly all of the hydrocarbons generated in the experiments are depleted in 13C relative to the initial carbon source.
+However, the magnitude of the depletion varies considerably among the different experiments, and also varies substantially within individual experiments as a function of reaction times and for compounds with different number of carbon atoms.
+These trends are illustrated in Figure 8, which shows the carbon isotopic composition of a few selected examples of experimental reaction products.
+It should be noted that these examples represent only a portion of the full range of isotopic compositions that have been reported for experimental products.
+Within this selected set of results, however, 13C depletions of the products relative to the carbon source range up to 33‰, while other results show no fractionation or even a slight enrichment in 13C.
+Among the experiments, the isotopic compositions of hydrocarbons exhibit a wide variety of different trends as a function of carbon number.
+At present, however, no obvious explanation for the variation in trends among experiments has emerged, and there does not appear to be any consistent variations in trends with factors such as catalyst composition, reaction temperature, or closed- versus open-system reactions.
+Although not strictly a FTT reaction because no carbon-carbon bonds are formed, the reduction of dissolved CO2 to CH4 catalyzed by NiFe-alloy also results in a substantial depletion in 13C, with depletions of 42-49 ‰ at 200 ºC and 15-29 ‰ at 300 ºC reported for the experiments of Horita and Berndt (1999).
+Much less data is available on the hydrogen isotope composition of experimental FTT reaction products (Fu et al.
+2007; Taran et al 2010a; McCollom et al.
+2010).
+However, the limited data that are available for hydrogen isotopes show somewhat more consistent trends among experiments than the data for carbon isotopes.
+For the most part, these data show that CH4 is depleted in 2H by -35 to -80‰ relative to the initial H2, and exhibit a regular trend of increasing 2H abundance with increasing number of carbon atoms (Fig.
+9).
+The data of Fu et al.
+(2007) deviate somewhat from this trend, but the CH4 in this experiment probably includes some contribution from background sources.
+In addition to the lack of consistency among isotopic trends observed among experimental products, the presently available experimental data do not show close agreement with isotopic trends observed for natural samples of light hydrocarbons that are thought to have an abiotic origin (Fig.
+9).
+Although this might be construed to be an indication that the hydrocarbons in the natural samples do not really have an abiotic origin, a more likely explanation would appear to be that the experimental conditions employed to date do not accurately simulate the conditions of hydrocarbon formation in natural systems.
+At this point, however, it is not immediately apparent which aspects of the natural system are not adequately represented in the laboratory experiments.
+While there are clear discrepancies among the broader datasets for experimental and natural systems, a consistent explanation may be emerging for at least a subset of those data.
+Sherwood Lollar et al.
+(2008) proposed a model to explain the isotopic composition of light hydrocarbons in deep fracture fluids from ancient Precambrian Shield settings that involves isotopic fractionation during formation of the first C–C bond that initiates chain growth, but subsequent additions of carbon atoms to the hydrocarbon backbone are non-fractionating.
+The outcome is an isotopic trend that shows a sharp fractionation between CH4 and C2H6, while higher hydrocarbons converge towards the isotopic value of CH4 (Fig.
+10).
+McCollom et al.
+(2010) inferred a similar scenario to explain the carbon isotopic trend observed for C1-C5 hydrocarbons generated in their laboratory FTT synthesis experiments performed under hydrothermal conditions (Fig.
+10).
+These two trends exhibit a difference in direction of isotopic fractionation between CH4 and C2H6, but a similar convergence towards the isotopic composition of methane with increasing carbon number for C2+ compounds.
+The opposing directions of the initial step may be attributable to different reaction mechanisms or conditions effecting the fractionation during the chain initiation.
+Implications for abiotic hydrocarbon formation by FTT synthesis within the crust.
+Several general conclusions can be drawn from the experiments described in the previous sections that are particularly relevant evaluation of the production of abiotic hydrocarbons within Earth’s crust.
+Several experiments demonstrate that pathways exist for the reduction of dissolved CO2 (or HCO3-) to CH4 and other hydrocarbons.
+However, except when NiFe-alloy was present, the amount of carbon converted to hydrocarbons was only a very small fraction (<<1%) of the inorganic carbon present in the experiments, even with very high temperatures and dissolved H2 concentrations that in many cases are an order of magnitude higher than those observed in natural systems.
+In each of the experiments, thermodynamic constraints indicate that most or all of the carbon should have been converted to hydrocarbons to approach equilibrium, yet the reaction only proceeded to a very limited extent.
+While it is possible that the minerals present in these experiments (magnetite, chromite, pentlandite) promoted the reactions to some degree, none of these minerals could have been very effective in catalyzing the conversion of inorganic carbon to hydrocarbons, or much greater yields would have been attained.
+Thus, while industrial Fischer-Tropsch processes may conceptually invoke rapid synthesis of organic compounds, FTT reactions in natural systems may require significantly longer reaction times and produce a more limited range of compounds.
+The same gradual reduction reaction rates observed in the experiments may prevail in natural systems as well.
+For instance, although CH4 and other hydrocarbons with an apparent abiotic origin have been observed in high-temperature (>350 ºC) ultramafic-hosted deep-sea hydrothermal systems (e.g., Charlou et al.
+2002, 2010), the concentrations of CH4 in these fluids are much lower than expected for thermodynamic equilibrium with the measured levels of dissolved CO2 and H2 in the fluids (McCollom and Seewald 2007; McCollom 2008).
+Consequently, while some reduction of inorganic carbon has apparently occurred as the fluids circulated through the hydrothermal system, the reactions remain far from equilibrium.
+Nevertheless, concentrations of CH4 and other light hydrocarbons produced in the experiments are similar to those observed in fluids from the natural system.
+The slow rates of reduction of dissolved inorganic carbon are in strong contrast to the rapid reaction rates and high hydrocarbon yields (typically >50%; e.g., Taran et al.
+2010b) obtained in conventional gas-phase Fischer-Tropsch studies using transition metal catalysts.
+Rapid reaction rates and relatively high conversions (1-10%) have also been observed for FTT reactions in the presence of a water-saturated vapor phase (McCollom and Seewald 2006; McCollom et al.
+2010), although these reactions were probably catalyzed by native Fe.
+This comparison suggests the possibility that the presence of a vapor phase may facilitate rapid reduction of inorganic carbon to hydrocarbons at crust temperatures, although it remains to be determined whether naturally occurring minerals can promote the reaction to the same degree as native transition metals.
+Vapor phase reactions might occur, for instance, during ascent of magmatic fluids to the surface.
+Alternatively, an H2-rich vapor phase could develop in fluids circulating through the crust as a result of fluid-rock interactions that consume H2O and produce H2, such as serpentinization.
+With respect to the latter, it may be noteworthy the mineral assemblage magnetite + pentlandite + awaruite that is found in many serpentinites requires H2 concentrations that are at, or very close to, the solubility limit of H2 in water (Klein and Bach 2009), suggesting that an H2-rich vapor may have exsolved locally during formation of this assemblage.
+An exception to the above discussion, of course, is NiFe-alloy, which has been shown to effectively catalyze reduction of dissolved CO2 to CH4 (Horita and Berndt 1999).
+Where this mineral is present, rapid reduction of CO2 and equilibration with CH4 can be expected at temperatures at least as low as 200 ºC.
+The formation of NiFe-alloys requires conditions that are more strongly reducing than are commonly found in Earth’s crust, but such conditions are sometimes attained during serpentinization of ultramafic rocks (Frost 1985; Klein and Bach 2009).
+Consequently, fluids circulating through serpentinites could become enriched in abiotic CH4 as a result of interaction with NiFe-alloy.
+However, since this process appears to exclusively catalyze formation of CH4, additional processes would be required for formation of other light hydrocarbons in these environments.
+The high CH4/C2+ ratios and 13C-depleted isotopic signatures for CH4 formed by NiFe-alloy catalysis are very similar to the characteristics of CH4 produced during methanogenesis by autotrophic microorganisms (Whiticar 1990), indicating that it may be difficult to confidently distinguish between abitoic and biotic sources of CH4 in many subsurface settings (Horita and Berndt 1999; Sherwood Lollar and McCollom 2006; Bradley and Summons 2010).
+Alternative pathways for hydrocarbon formation in the crust
+While most experimental studies have focused on FTT synthesis as a possible contributor of abiotic hydrocarbons to geologic systems, it is by no means the only pathway that could generate these compounds.
+A few of these alternative pathways are discussed briefly in the following sections.
+For most alternative pathways, however, there has been little or no experimental study of the reactions at conditions relevant to Earth’s crust, and certainly none have been investigated to nearly the same extent as FTT synthesis.
+Methane Polymerization.
+The process of methane polymerization discussed above with respect to the mantle (Chen et al.
+2008b; Kolesnikov et al.
+2009) could also contribute to formation of C2+ hydrocarbons in the crust, provided a source of CH4 is available.
+However, pure CH4 might arise, for instance, through NiFe-alloy catalyzed reduction of CO2 in serpentinites (Horita and Berndt 1999) or reaction of H2-rich fluids with graphite in metamorphic rocks (Holloway 1984).
+To date, the potential for methane polymerization has apparently not been investigated experimentally at conditions relevant to the crust, although methane polymerization has been invoked as a possible explanation for isotopic trends in some deep-crustal fluids (Sherwood Lollar et al.
+2008).
+Polymerization of CH4 to higher hydrocarbons can be represented by the general reaction:
+nCH4 → CnHn+2 + (n-1)H2.
+(5)
+As pointed out earlier, thermodynamic considerations demand that some finite amount of hydrocarbons must be present at equilibrium with CH4 to satisfy the type of reactions represented by this equation, albeit the amount of hydrocarbons required at equilibrium may be vanishingly small under some conditions.
+According to the reaction, formation of hydrocarbons will be favored by lower levels of H2, all other factors being equal.
+Carbonate decomposition.
+Another process that could generate hydrocarbons in the crust is thermal decomposition of carbonate minerals.
+Carbonate minerals precipitate in a variety of geologic settings at relatively low temperatures, and these minerals will decompose when exposed to higher temperatures in metamorphic or hydrothermal environments.
+This decomposition can lead to the formation of reduced carbon compounds, particularly when the carbonates contain ferrous Fe that can serve as a reductant for the carbon (French 1971).
+For example, reduced carbon coexisting with magnetite in ancient metamorphosed rocks in the Isua Greenstone Belt in Greenland has been attributed to thermal decomposition of siderite (i.e., FeCO3 → Fe3O4 + C; Van Zuilen et al.
+2002), and decomposition of Fe-bearing carbonates has also been suggested as source of reduced carbon in Martian meteorites (Zolotov and Shock 2000; McCollom 2003; Steele et al.
+2012).
+It is possible that light hydrocarbons could be produced as a by-product of such reactions.
+In contrast to the experiments with calcite conducted at the elevated temperatures relevant to the mantle where thermodynamic equilibrium appears to have exerted a large influence on carbon speciation, thermal decomposition of carbonates at temperatures in the crust may allow the formation of metastable organic compounds.
+Experimental investigations of the formation of hydrocarbons during thermal decomposition of carbonates at temperatures and pressures relevant to the crust have been limited.
+However, in one set of experiments, thermal degradation of siderite in the presence of water vapor at 300 ºC was found to produce small amounts of organic products, predominantly alkylated and hydroxylated aromatic compounds (McCollom 2003).
+Only trace amounts of CH4 and other light hydrocarbons were observed.
+The products of this experiment differed considerably from the typical products of Fischer-Tropsch synthesis, suggesting that an alternative reaction mechanism was responsible for the organic compounds generated.
+However, the actual process involved remains undetermined.
+The relatively small amounts of CH4 generated during siderite decomposition at 300 ºC compared with the amounts formed in carbonate decomposition experiments performed at higher temperatures and pressures (Kenney et al.
+2002; Scott et al.
+2004; Chen et al.
+2008a; Kutcherov et al.
+2010) appears to be related to the lower H/C and H/O ratios of the experimental charge rather than to the differences in reaction conditions.
+Whether thermal composition of siderite might produce greater amounts of hydrocarbons under other reaction conditions, and whether other carbonates might also generate organic compounds during decomposition at crust temperatures in reducing environments, are questions that remain to be explored with further experiments.
+Organosulfur pathways.
+Abiotic synthesis reactions that proceed through organosulfur intermediates are another possible source of hydrocarbons in the crust.
+Scientific interest in the possibility that organosulfur compounds might contribute to abiotic organic synthesis was initially stimulated by the origin of life theories of Gunther Wächtershäuser and others.
+In these theories, reaction of carbon-bearing fluids with sulfide minerals in hydrothermal environments induced organic synthesis reactions that later evolved into primordial metabolic pathways (Wächtershäuser 1990, 1993).
+The first experimental study to test this theory was that of Heinen and Lauwers (1996), who heated solid FeS with H2S, CO2, and water in glass vials at temperatures of 25 to 90 ºC, and observed formation of a homologous series of C1-C5 alkylthiols as major products.
+Reduction of carbon in this system presumably involved reaction of CO2 with H2 produced by the reaction: FeS + H2S → FeS2 (pyrite) + H2 (referred to by Wächtershäuser as “pyrite-pulled” reactions).
+The alkylthiols decrease in abundance with increasing number of carbons, and linear butane- and pentanethiol were more abundant than branched forms.
+This initial set of experiments was followed up recently by Loison et al.
+(2010).
+Using similar reaction conditions to Heinen and Lauwers (1996), but replacing the water in the reactions with D2O, these investigators showed that the alkylthiols incorporated D into their structures, thus proving they were formed during the reactions.
+Other reaction products identified by Loison et al.
+(2010) were polydeuterated C1-C4 carboxylic acids.
+In a related study, Huber and Wächtershäuser (1997) reported formation of acetic acid during reaction of aqueous solutions of methanethiol (CH3SH) with CO gas at 100°C in the presence of metal sulfide minerals.
+The overall reaction can be expressed as:
+CH3SH + CO + H2O → CH3COOH + H2S.
+(6)
+The key step in this reaction is the formation of a C–C bond, which the authors inferred took place by insertion of CO into the C–S bond on the surface of the sulfide mineral.
+The reaction was further investigated by Cody et al.
+(2000), who reacted nonanethiol (C9H19SH) with formic acid in the presence of iron sulfide at 250 ºC and 50-200 MPa.
+Decomposition of formic acid resulted in a mixture of CO, CO2, H2, and H2O in the reaction vessel at experimental conditions.
+Through a reaction analogous to Rxn.
+9, decanoic acid (C9H19COOH) was found as a reaction product, although this compound was only a minor component of a broad spectrum of organic products dominated by dinonyldisulfide (H19C9SSC9H19).
+In a follow-up study testing the capacity of other sulfide minerals and native Ni to catalyze the reaction, C11-C13 carboxylic acids were identified as reaction products in addition to decanoic acid (Cody et al.
+2004).
+Although several metal sulfide minerals catalyzed the reaction, it was most strongly promoted by Ni- and Co-bearing sulfides.
+Results of these experiments suggest the possibility that organic compounds might be generated in subsurface environments through the sequential formation of C–C bonds involving thiols or other organosulfur as reaction intermediates, with sulfide minerals serving as a catalyst.
+The products of these reactions have many similarities to the products of FTT synthesis, such as a preference for straight alkyl chains relative to branched forms, a regular decrease in abundance with increasing carbon number, and involvement of surface catalysis in the synthesis reaction.
+However, the apparent lack of alkane and alkene products similar to those that predominate during FTT synthesis (Fig.
+6) suggests that a distinctly different reaction mechanism may be involved.
+Based on a series of experiments with potential reaction intermediates, Loison et al.
+(2010) have proposed a scenario whereby a homologous series of alkylthiols and carboxylic acids with increasing carbon number would be generated through an iterative process involving formation and reduction of thioesters.
+In this scenario, CO is inserted into the C–S bond of an alkylthiol to form a thiocarboxylic acid with one additional carbon, which is then either converted to a carboxylic acid or reduced to an akylthiol, which can then undergo the same reaction cycle.
+McCollom and Seewald (2007) proposed a somewhat different iterative process, whereby CO is incorporated into a growing alkyl carbon chain through insertion into the C–S bond of the alkylthiol to form carboxylic acid, followed by reduction of the acid to an alcohol, which then is converted back to an alkylthiol that starts the sequence of steps over again.
+Whatever the actual mechanism, the outcome would be formation of series of alkylthiols and carboxylic acids that could subsequently undergo reduction to form hydrocarbons or other organic matter.
+If this were to occur, the process could contribute to the light hydrocarbons observed in geologic fluids.
+Since the canonical wisdom is that most industrial catalysts for Fischer-Tropsch synthesis are “poisoned” by sulfur (though this remains to be rigorously tested for natural geologic materials), sulfide-catalyzed reactions could provide an alternative pathway for hydrocarbon formation in sulfur-rich subsurface environments.
+Clay-catalyzed hydrocarbon synthesis.
+Clay minerals have catalytic properties for many types of chemical reactions, which have been exploited for many years by industry.
+Since clay minerals are widespread in geologic environments, including altered igneous rocks and sediments, it is possible that they could play a role in the abiotic formation of hydrocarbons.
+This possibility was investigated in experiments by Williams et al.
+(2005), who reacted aqueous methanol solutions with clay minerals at 300°C and 100 MPa.
+The reactions produced dimethylether (a condensation product of two methanol molecules) as the principal product, but a number of other organic products were observed including CH4, C2-C6 alkanes and alkenes, and an assortment of alkylated cyclic aromatic compounds, such as alkylbenzenes, alkylphenols, alkylnaphthalenes, and alkylnaphthols.
+The predominance of alkylated aromatic compounds among the higher molecular weight reaction products distinguishes them from the linear saturated alkanes that are characteristic of FTT synthesis, suggesting either a different mechanism is involved or that alkanes were generated and then underwent secondary reactions to form aromatic compounds.
+The mechanism of the reaction remains to be determined, but the authors hypothesized that that the organic compounds may have formed within the interlayers of the clay structure, suggesting that clay minerals may provide unique microenvironments for organic synthesis.
+SOME DIRECTIONS FOR FUTURE STUDIES
+Hopefully, this review has provided a sense of the considerable insights that experimental studies have provided for the conditions that allow abiotic hydrocarbons to form in subsurface geologic environments.
+At the same time, it should be evident that there exist many significant gaps in understanding of these processes.
+Experimental studies demonstrate that carbon speciation will likely be controlled by thermodynamic considerations at mantle conditions, but kinetic inhibitions limit carbon reduction reactions at temperatures within the crust below about 400 ºC.
+While experiments show that some minerals can allow these inhibitions to be overcome, the catalytic potential of most naturally occurring minerals remains uncertain.
+Further experimental studies are needed to evaluate whether minerals that occur in natural systems of interest can catalyze hydrocarbon synthesis, and under what conditions.
+Another important issue to resolve is the impact of vapor phase versus liquid aqueous phase conditions on catalysis and reaction rates.
+It is also apparent that significant discrepancies exist between the isotopic compositions of hydrocarbons observed in experimental systems and those of apparently abiotic compounds in natural systems.
+While there is a tremendous potential to use isotope systematics to help determine whether hydrocarbons in geologic fluids have an abiotic origin, confidence in this criteria would be significantly improved if there was a firm experimental basis for interpretation of the isotopic signatures.
+At this time, however, it remains unclear what factors contribute to the wide variation observed in isotopic compositions of experimentally generated FTT reaction products, or which of the experimental products best represents the conditions of natural environment.
+A more systematic approach is needed to determine how variations in reaction conditions affect the isotopic composition of the products.
+Development of clumped isotope methods for hydrocarbons similar to those used for analyzing carbonate minerals (Eiler 2007) may also provide novel insights, although they would need to be calibrated with additional experimental studies.
+Resolution of these issues will provide a much more solid basis for evaluating sources of abiotic hydrocarbons in Earth’s crust.
+Figure 1.
+Equilibrium distribution of carbon species at mantle conditions.
+(a) Contours of mole fraction (X) for CO2 (dashed lines) and CH4 (solid lines) in equilibrium with graphite as a function of oxidation state relative to FMQ.
+Circles correspond to the pressure, temperature, and fO2 values defined by study of mantle xenoliths from South Africa, Canada, and Russia.
+The line marked “XO =1/3” defines conditions where O composes 33% of the elemental composition of the C-O-H fluid, and defines the point where CO2 and CH4 are in equal proportions.
+To the right of this line, CO2 dominates the carbon species and CH4 dominates to the left.
+The numbers labeling the lines are the mole percent of the major carbon component in the fluid (CH4 or CO2).
+The diagram is calculated for a mantle geothermal gradient of 45 ºC/km.
+(b) C-O-H fluid speciation along an adiabat in the upper mantle defined by a potential temperature of 1200 ºC and fO2 values derived from study of mantle xenoliths.
+CCO refers to the reaction C(graphite) + O2 = CO2.
+In (a), graphite is unstable and the fluid is dominated by CO2 to the right of the CCO line, while graphite is unstable to the left of the line in (b).
+[Diagram (a) modified after Zhang and Duan (2009), Fig.
+7a, page 2099, copyright 2009, with permission from Elsevier, and (b) used with permission of Annual Reviews, Frost and McCammon (2007); permission conveyed through Copyright Clearance Center, Inc.].
+Figure 2.
+Equilibrium distribution of fluid species in the C-O-H systems at 1000 ºC and 2.4 GPa as a function of bulk fluid O/(O+H) ratio (a proxy of oxidation state).
+Symbols show results of laboratory experiments of Matveev et al.
+(1997), while lines represent equation of state model for the system from Zhang and Duan (2009).
+Also shown for reference are equivalent O/(O + H) values for the oxidation state buffers IW (iron-wüstite) and WM (wüstite-magnetite), and for an fO2 one log unit below FMQ (FMQ-1).
+The temperature and pressure of the diagram and an oxidation state near FMQ-1 represent conditions at ~80 km depth in the mantle.
+[Diagram modified after Zhang and Duan (2009), Fig.
+3, page 2096, copyright 2009, with permission from Elsevier].
+Figure 3.
+Raman spectra from experiments conducted at mantle pressures and temperatures in diamond anvil cells.
+(a) Spectrum obtained during heating of calcite, FeO, and water at 1,500 ºC and 5.7 GPa (Scott et al., 2004).
+The peak at 2972 cm-1 corresponds to a C-H vibration stretching mode, and indicates formation of CH4 during heating.
+(b) Spectrum obtained during heating of pure methane at 2 GPa at ~300 K (bottom line), ~900 K (middle) and ~1,500 K (top) (Kolesnikov et al., 2009).
+(b) Reprinted by permission from Macmillan Publishers Ltd: Nature Geosciences, copyright 2009.
+Figure 4.
+Thermodynamic relationships between dissolved CO2 and CH4 at elevated temperature and pressure.
+(a) Log K for reduction of CO2 to CH4.
+(b) Calculated equilibrium (CH4/CO2) ratios as a function of temperature at two values of H2 concentration that bracket those found in reducing environments within the crust.
+Data shown are for a pressure of 50 MPa.
+Values for log K calculated using thermodynamic data from SUPCRT92 (Johnson et al., 1992) and Shock et al.
+(1989).
+Figure 5.
+Generalized reaction mechanism for Fischer-Tropsch synthesis of hydrocarbons.
+The reaction is initiated with binding of CO to the catalyst surface to form a carbonyl unit (–CO), which then undergoes sequential reduction to surface-bound carbide (–C), methylene (–CH2), and methyl (–CH3) groups.
+Chain growth occurs as methylene groups polymerize to one another, and terminates when the growing chain combines with a methyl group or surface-bound H rather than another methylene.
+Figure 6.
+Example of typical products of Fischer-Tropsch-type synthesis.
+(a) Gas chromatogram of non-volatile products, showing predominance of linear saturate hydrocarbons (n-alkanes; filled circles) and alcohols (n-1-alkanols; open circles).
+(b) Relative abundance of saturated hydrocarbons (n-alkanes) as a function of carbon number, showing typical log-linear decrease.
+The slope of the decrease (α) is a gauge of the relative probabilities of continued growth of the carbon chain versus chain termination.
+The break in slope at carbon number around 10 is common for iron-based catalysts.
+Figure shows data from McCollom and Seewald (2006).
+Figure 7.
+Dissolved concentrations of H2, total dissolved CO2 (ΣCO2), and light hydrocarbons during reaction with serpentinized olivine in the experimental study of Berndt et al.
+(1996).
+Concentrations in mmol kg-1 (mmol) or μmol kg-1 (μmol).
+Figure 8.
+Carbon isotopic composition of CH4 and C2-C5 alkanes for selected experimental FTT reaction products.
+Values are shown both as measured values (left) and relative to the composition of the initial carbon source (right) (Δ13C = δ13Cproduct - δ13Csource).
+Figure 9.
+Comparison of C and H isotope compositions of light hydrocarbons produced during laboratory FTT synthesis experiments with compounds from natural systems thought to have an abiotic origin.
+For each connected series, the point labeled “C1” represents methane and each successive point represents an alkane with an additional carbon atom (from C2 to C5, depending on the study).
+Natural samples are from fracture fluids in ancient Precambrian Shield rocks (Kidd Creek; Sherwood Lollar et al.
+2008), deep-sea hydrothermal vent fluids from the Lost City site, thought to be generated from serpentinization of ultramafic rocks (Proskurowski et al.
+2008), and volcanic gases from Socorro Island, Mexico (Taran et al.
+2010a).
+Data for FTT synthesis experiments are from Fu et al.
+(2007), Taran et al.
+(2010b) and McCollom et al.
+(2010).
+Catalysts used in the synthesis experiments are cobalt (Co), iron (Fe), or magnetite (mgt).
+Figure 10.
+Comparison of carbon isotope trends for hydrocarbons thought to have an abiotic origin from Kidd Creek (circles; Sherwood Lollar et al.
+2008) with those for hydrocarbons generated in FTT synthesis experiments performed under hydrothermal conditions (open squares; McCollom et al.
+2010).

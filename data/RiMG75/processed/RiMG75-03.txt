@@ -1,0 +1,601 @@
+﻿   CHAPTER 3: Structure, Bonding, and Mineralogy of Carbon at Extreme Conditions
+INTRODUCTION
+The nature and extent of Earth’s deep carbon cycle remains uncertain.
+This chapter considers high-pressure carbon-bearing minerals, including those of Earth’s mantle and core, as well as phases that might be found in the interiors of larger planets outside our solar system.
+These phases include both experimentally produced and theoretically predicted polymorphs of carbon dioxide, carbonates, carbides, silicate-carbonates, as well as very high-pressure phases of pure carbon.
+One theme in the search for possible high P-T, deep-Earth phases is the likely shift from sp2 bonding (trigonal coordination) to sp3 bonding (tetrahedral coordination) in carbon-bearing phases of the lower mantle and core, as exemplified by the graphite-to-diamond transition (Bundy et al.
+1961; Davies 1984).
+A similar phenomenon has been documented in the preferred coordination spheres of many elements at high pressure.
+For example, silicon is ubiquitously found in tetrahedral coordination in crustal and upper mantle minerals, but adopts octahedral coordination in many high-pressure phases.
+Indeed, the boundary between Earth’s transition zone and lower mantle may be described as a crystal chemical shift from 4-coordinated to 6-coordinated silicon (Hazen and Finger 1978; Finger and Hazen 1991).
+Similarly, magnesium and calcium commonly occur in octahedral 6-coordination in minerals at ambient conditions, but transform to 8- or greater coordination in high-pressure phases, as exemplified by the calcite-to-aragonite transformation of CaCO3 and the pyroxene-to-perovskite and post-perovskite transformations of MgSiO3 (Murakami et al.
+2004; Oganov and Ono 2004).
+Consequently, a principal focus in any consideration of deep-Earth carbon minerals must include carbon in higher coordination, and even more complex bonding at more extreme conditions that characterize the interiors of larger planets.
+THEORETICAL CONSIDERATIONS
+We briefly review theoretical methods used to examine dense carbon-bearing minerals, focusing on first-principles or ab initio approaches.
+To compute the energies, one can choose one among a hierarchy of theoretical approximations.
+The energetics of the phases considered in this chapter have also been studied using quantum chemistry methods.
+These approaches have been applied, for example, to pure carbon phases (Guth 1990; Che et al.
+1999).
+A leading approach is density functional theory (Hohenberg and Kohn 1964; Kohn and Sham 1965), which in principle is an exact quantum-mechanical theory, but in practice requires approximations, such as the LDA (local density approximation: Perdew and Wang 1992).
+Early LDA calculations proved successful in predicting the high-pressure behavior of carbon (e.g.
+Fahy et al.
+1986; Fahy and Louie 1977)
+Recent extensions of the LDA include GGA (generalized gradient approximation: Perdew et al.
+1996), meta-GGA (Tao et al.
+2003), or higher-level approximations currently under development.
+The only approximate term in the equations is the exchange-correlation energy (the non-classical part of the electron-electron interaction energy), the most successful approximations of which are based on the properties of the electron gas, with more advanced approximations taking into account more non-local features, for example, gradient, Laplacian, or orbital kinetic energy density.
+The usual accuracy of such approximations as LDA and GGA is on the order of 1-2% for bond lengths and unit-cell parameters, where LDA usually underestimates and GGA overestimates bond lengths; ~15% for the elastic constants; and ~5% for vibrational frequencies.
+For phase transitions and chemical reactions, the GGA seems to perform much better than the LDA, with phase transition pressures accurate to within ~5 GPa (usually overestimated); however, for metal-insulator transitions errors of both approximations are typically much larger.
+For ionic and covalent materials and for normal metals (carbon allotropes and most carbonates and perhaps carbides belong to these classes) both LDA and GGA give good description of the structural properties and thermodynamics.
+Large errors in all compounds are documented for calculations of electronic excitation energies and band gaps (both LDA and GGA significantly underestimate band gaps); one must employ special methods, such as the GW method (Aryasetiawan and Gunnarsson 1998), to compute these parameters.
+Mott insulators represent a particular pathological case, where today’s DFT too often gives unreasonable results.
+Until recently, DFT calculations could not adequately account for van der Waals interactions, but ways for incorporating these effects are now possible (Dion et al.
+2004; Roman-Perez and Soler 2009).
+Given the high degree of thermodynamic equilibrium reached in Earth’s deep interior due to high temperatures and long geological timescales, it often suffices in studies of mantle and core mineralogy to consider free energies of relevant chemical equilibria without accounting for kinetics.
+The Gibbs free energy G of a particular phase can be calculated as:
+G =E + PV – TS =  F + PV = F -V()T,                        (1)
+where P is the pressure, V the volume, T the temperature, S the entropy, F  is the Helmholtz free energy, E0 is the ground-state energy (at 0 K), and En are the energy levels of the system:
+F = E0 – kBT ln .
+(2)
+The sum within the logarithm in Equation (2) is called the partition function, and its rigorous calculation is complicated owing to the difficulty in obtaining energy levels experimentally or theoretically for their overwhelmingly large number in solids.
+In the simplest, harmonic, approximation these energy levels are:
+En=(+n)ω,                             (3)
+where n is the quantum number, ω the frequency of the vibration, and is the Planck constant.
+More sophisticated approximations exist, but the general point is that a knowledge of the energy landscape allows one to compute all thermodynamic properties, including the entropy.
+Predicting the most stable structure is a global optimization problem, and such problems are mathematically said to be of the NP-hard class and cannot be solved with a guarantee.
+To deal with such problems, one develops heuristic methods, the goal of which is to achieve high success rate and efficiency for a given class of problems.
+A variety of methods exists for predicting structures (e.g., Martoňák et al.
+2003; Oganov and Glass 2006; Oganov et al.
+2010; Pickard and Needs 2011; for an overview of different methods see Oganov 2010).
+A large number of results for carbon-bearing phases under pressure (Oganov et al.
+2006, 2008; Li et al.
+2009; Lyakhov and Oganov 2011; Wen et al.
+2011; Zhu et al.
+2011, 2012a; Bazhanova et al.
+2012) have been obtained with the evolutionary algorithm USPEX (Oganov and Glass 2006; Oganov 2010; Lyakhov et al.
+2010; Oganov et al.
+2011).
+A powerful computational method called evolutionary metadynamics has recently been developed by Zhu et al.
+(2012a).
+This method, which merges features of the USPEX method and metadynamics (Martoňák et al.
+2003), is capable of rapidly finding the ground state structure and a large number of low-energy metastable structures, provided a reasonable initial structure is provided.
+As in the original metadynamics method, the new method produces meaningful structural transformation mechanisms.
+However, equilibration is achieved not using molecular dynamics, which is prone to trapping in metastable states and often leads to amorphization during metadynamics simulations, but rather employs global optimization moves borrowed from the USPEX method.
+Unlike original metadynamics, this technique produces extremely rich sets of low-energy crystal structures, while using less computer time.
+Particularly attractive is a possibility to determine the most likely crystal structure accessible from the initial structure through metastable transitions.
+ELEMENTAL CARBON
+One of the remarkable features of carbon is existence of a broad range of metastable phases that can be formed near ambient conditions and their wide fields of kinetic stability.
+We consider both stable and metastable phases (Fig.
+1) as well as both equilibrium and metastable transitions among the phases, and predictions of carbon allotropes at very high pressures beyond those of Earth.
+This section includes a discussion of metastable transitions of the lower density phase.
+Not only do these structures provide useful insight into carbon crystal chemistry and bonding, but transitions to these phases also may be relevant to natural impact phenomena involving these phases in nature.
+Stable Phases
+The common naturally-occurring sp2 and sp3 allotropes of carbon occur in different crystallographic forms of graphite-like and diamond-like phases, respectively: hexagonal graphite and a rhombohedral stacking variant; as well as hexagonal lonsdaleite and cubic diamond (see Hazen et al.
+2013).
+The large cohesive energy of diamond (717 kJ/mol), together with significant energy barriers, gives rise to its high degree of metastability and extremely high melting temperature (5000 K).
+The high activation barrier for a transformation between graphite and diamond explains why synthesis of diamond from graphite requires not only high pressures, but also high temperatures and often the presence of catalysts.
+The structures and occurrences of naturally occurring carbon allotropes, including graphite, diamond, and lonsdaleite, are reviewed elsewhere in this volume (Hazen et al.
+2013).
+Here we focus on phase transitions in graphite.
+The graphite melting line at low pressures is now well established (Ludwig 1902; Basset 1939; Jones 1958; Gathers et al.
+1974a, b; Kirillin et al.
+1984; Savvatimskiy 2005; Scheindlin and Senchenko 1988; Fig.
+2).
+Since the original measurements of its compressibility (Adams 1921) and vibrational spectrum (Ramaswamy 1930; Raman 1961), the physical properties of carbon allotropes have been well determined over the range of conditions relevant to Earth’s interior.
+For example, there is excellent agreement on the value of diamond’s very high bulk modulus (440 GPa at 300 K) from a variety of experimental and theoretical techniques (Occelli et al.
+2003).
+The singular strength of diamond correlates with its very high shear modulus (535 GPa at 300 K, which exceeds the bulk modulus (observed in only a few materials: Brazhkin et al.
+2002).
+Theoretical methods now accurately reproduce the elastic properties of diamond and provide robust predictions of their variations over the entire P-T range of Earth’s interior (Nuñez Valdez et al.
+2012).
+The electronic properties of diamond are now well determined experimentally (Endo et al 2001), and there is excellent agreement with electronic structure calculations.
+On the other hand, the anharmonic properties of diamond are not fully understood (Gillet et al.
+1998).
+The initial slope of the diamond melting line was for many years controversial, but now seems well established and has a positive value (Bundy et al.
+1996), Recent very high P-T shock wave indicate a maximum in the melting line near 1.5 TPa (Knudson et al.
+2008; Eggert et al.
+2010; Fig.
+3).
+Early first-principles calculations (Galli et al.
+1989) indicated that liquid carbon at low pressure and 5000 K,  should  have  mainly  two-fold  and  three-fold coordination.
+Theoretical studies of the carbon melting curve have continued to super-Earth conditions beyond the stability of diamond (see Correa et al 2006).
+The types and concentrations of defects present in the material remain subjects of study (Gabrysch 2008).
+Recent advances in analytical methods confirm that most mantle diamonds are very pure except for variable low concentrations of nitrogen.
+McNeill et al.
+(2009) analyzed a suite of 10 diamonds from the Cullinan Mine (previously known as Premier), South Africa, along with other diamonds from Siberia (Mir and Udachnaya) and Venezuela.
+The concentrations of a wide range of elements for all the samples (expressed by weight in the solid) are very low, with rare earth elements along with Y, Nb, and Cs ranging from 0.01 to 2 ppb.
+Large ion lithophile elements (LILE) such as Rb and Ba vary from 1 to 30 ppb.
+Ti ranges from ppb levels up to 2 ppm.
+The graphite-to-diamond and graphite-to-lonsdaleite transitions have been intensely investigated (see Hazen 1999; Hazen et al.
+2013).
+The position of the diamond/graphite equilibrium line has been quite accurately established by thermodynamic calculations based upon the measured physical properties of graphite and diamond in the temperature range from 300 to about 1200 K (Rossini and Jessup 1938; Leipunskii 1939; Berman and Simon 1955; Day 2012) and by experiments on growing or graphitization of diamond (Bundy et al.
+1961; Kennedy and Kennedy 1976).
+Shock compression experiments on hexagonal graphite particles yield mostly hexagonal diamond (e.g., Kudryumov et al.
+2012), whereas in natural  impact events, kinetics and grain size can influence the survival of lonsdaleite (DeCarli et al.
+2002a).
+Metastable phases
+Because of the high cohesive and activation energy, carbon polymorphs typically exist metastably well into a P-T region where a different solid phase is thermodynamically stable.
+For example, diamond survives indefinitely at room conditions, where graphite is the thermodynamically stable form.
+The metastability of diamond may also persist to very high pressures, well into the stability field of higher-pressure phases.
+We also mention that studies of metastable growth of diamond within Earth continue, though the mechanism is not well understood (Simakov 2012).
+It is also useful to point out that diamond can be easily produced outside of its stability field (e.g., by chemical vapor deposition), and that it can exhibit striking properties (Hazen 1999).
+For example, measurements show that the material has much higher toughness than natural diamond (Liang et al.
+2009; Pan et al.
+2009).
+Similarly, the natural hexagonal diamond or lonsdaleite (Bundy and Kasper 1967; Lonsdale 1971) is becoming increasingly recognized in both meteoritic and terrestrial materials (Ross et al.
+2011; Shumilova et al.
+2011), yet its occurrence cannot be interpreted in terms of origin, since fundamental understanding of its metastability remains unresolved (Godard et al.
+2012; Kurdyumov et al.
+2012).
+Metastable allotropes of carbon include fullerenes, nanotubes, and graphene, as well as disordered or amorphous forms, such  as  glassy  carbon   and  carbon black and possibly metastable solid forms referred to as carbynes (see Hazen et al.
+2013, Table 1).
+The synthesis of carbynes (sp hybridized allotrope) has been reported (Kasatochkin et al.
+1967; Chalifoux and Tykwinski 2010), but this finding remains controversial.
+The proclivity of carbon to form well-defined kinetically stable structures persists at extreme conditions.
+For example, it has long been known that if graphite is compressed to ~15 GPa at low temperature (e.g., room temperature or below) it transforms to a different allotrope of carbon that is distinct from diamond (Aust and Drickamer 1963; Hanfland  et al.
+1989; Zhao and Spain 1989; Miller et al.
+1997; Utsumi and Yagi 1991; Yagi et al.
+1992; Mao et al.
+2003).
+The phase was found to exhibit unusual properties.
+For example, Goncharov (1990) found that the transition pressure for single-crystal graphite can be lowered to about 14 GPa under uniaxial stress directed along the c-axis of the crystal.
+These Raman and optical observations were corroborated by Hanfland et al.
+(1989) and Utsumi et al.
+(1993).
+Hanfland et al.
+(1990) showed that the phase transition started at about 14 GPa using X-ray diffraction and Raman spectroscopy.
+The phase formed from single-crystal graphite was found to be transparent, and Miller et al.
+(1997) quenched the transparent form at low temperatures.
+X-ray Raman and diffraction measurements reported by Mao et al.
+(2003) showed mixed sp2 and sp3 bonding but the structure could not be determined.
+The phase was also found to be superhard (Fig.
+4).
+Very recently, Wang et al.
+(2012b) used X-ray diffraction, Raman spectroscopy, and optical techniques to examine this phase.
+Early calculations of the structure formed from compression of graphite were carried out by Kertesz and Hoffmann (1984) and Fahy et al.
+(1986).
+This metastable transition has been the subject of more recent theoretical studies.
+Using USPEX, Oganov and Glass (2006) found a number of interesting low-energy metastable carbon allotropes, among which was a monoclinic (space group C2/m) structure with tetrahedral coordination (sp3 hybridization) of carbon atoms, forming 5- and 7-fold rings (Fig.
+5).
+The structure has a 2D-analog: (2x1)-reconstructions of the (111) surfaces of diamond and silicon.
+Li et al.
+(2009) subsequently named this structure M-carbon (because of its monoclinic symmetry) and identified it as the “superhard graphite,” based on the close match between theoretical and experimental diffraction data.
+The bct-C4 structure (Baughman et al.
+1997; Umemoto et al.
+2010; Zhou et al.
+2010) was proposed as an alternative, and that was shortly followed by descriptions of hypothetical W-carbon (Wang et al.
+2011) and Z-carbon (Zhao et al.
+2011; Amsler et al.
+2012), as well as further structures (e.g., Selli et al.
+2011; Niu et al.
+2012).
+It is notable also that while Amsler et al.
+(2012) proposed Z-carbon to explain experimental measurements on “superhard graphite,” Zhao et al.
+(2011) concluded that its X-ray diffraction is incompatible with experimental data on “superhard graphite,” but can explain experimental data on over-compressed carbon nanotubes (Wang et al.
+2004).
+With two evolutionary metadynamics simulations starting from graphite-2H and graphite-3R, Zhu et al.
+(2012b) found all of these structures and several new ones.
+All of these structures are metastable, superhard, and insulating; they all become more stable than graphite under pressure (7 to 27 GPa); they all contain carbon entirely in the tetrahedral coordination; and they all have buckled graphene sheets, suggesting possible mechanism of formation of these phases from graphite.
+Although more than a dozen different crystal structures have been suggested for the phase, the proposed low-symmetry, monclinic, M-carbon structure proposed by Li et al.
+(2009) is the only one that fits the highest resolution high-pressure data, reported by Wang et al.
+(2012b).
+Theory can discriminate between proposed high-pressure metastable structures and provide insights into the transition.
+The metastable high-pressure phase is formed solely because it has the lowest activation barrier at the indicated P-T conditions (e.g., 15 GPa and 300 K).
+Using transition path sampling (Dellago et al.
+1998; Leoni and Boulfelfel 2010; Boulfelfel et al.
+2012) found that the likeliest sp3 structure of carbon to be formed by room-temperature compression of graphite-2H is indeed M-carbon.
+Boulfelfel et al.
+(2012) predict this transition has a lower energy barrier than transitions to other structures.
+The transition involves bending of graphene layers and formation of bonds between them—a mechanism that leads to the peculiar geometry of M-carbon with 5-and 7-fold rings.
+Fullerenes at pressure
+We now consider transitions and structures formed from metastable low-pressure fullerene-related phases.
+The ambient phase of C60 has the high-symmetry face-centered cubic (fcc) structure.
+Reversible transitions are observed at low P-T conditions (see Hemley and Dera 2000).
+Under hydrostatic conditions the fcc structure of solid C60 remains kinetically stable to pressures of 20 GPa, whereas non-hydrostatic stress induces a phase transition to a new phase of lower symmetry (Duclos et al.
+1991).
+Further studies revealed that non-hydrostatic compression of C60 induces the formation of diamond (Núñez-Regueiro et al.
+1992) and other related structures above 15 GPa (Sundqvist 1999).
+Compression increases the possibility of interaction between the double bonds on nearest neighbor molecules, which results in the formation of polymers (Marques et al.
+1996; Sundqvist 1999).
+He and Ne can be introduced into fullerene cages (see Saunders et al.
+1996).
+The extent to which this could lead to the possibility of trapping gases under pressure in planetary interiors remains to be investigated.
+Recently, Wang et al.
+(2012a) reported a long-range ordered material constructed from units of amorphous carbon clusters synthesized by compressing solvated fullerenes.
+Using X-ray diffraction, Raman spectroscopy, and quantum molecular dynamics simulation, they observed that, although C60 cages were crushed and became amorphous, the solvent molecules remained intact, playing a crucial role in maintaining the long-range periodicity.
+Once formed, the high-pressure phase is quenchable back to ambient conditions.
+The phase has very high strength, producing ring cracks in the diamond anvils used in the experiment (as does the phase produced from graphite; Mao et al.
+2003).
+Ultrahigh-pressure phases
+A number of studies through the years have addressed the question of the upper limits of the diamond stability field and possible post-diamond phases.
+Experimental data in this P-T regime have been obtained by dynamic compression.
+Early LDA calculations by Fahy and Louie (1987) predicted that at pressures above 1 TPa diamond transforms to the so-called bc8 structure—an unusual tetrahedral structure that has been observed as a metastable state of silicon (Kasper and Richards 1964).
+Their total energy calculations (Fahy and Louie 1987) showed that diamond becomes less stable than the bc8 structure, but more stable structures might exist.
+Evolutionary crystal structure prediction simulations (Oganov and Glass 2006) confirm their conclusion that above 1 TPa the bc8 structure of carbon is thermodynamically stable.
+Other theoretical calculations, together with existing shock-wave data, are consistent with these predictions for bc8 (Knudson et al.
+2008).
+Martinez-Canales et al.
+(2012) employed DFT methods to examine structures with up to 12 carbon atoms per unit cell at pressures between 1 TPa and 1 petapascal (1000 TPa).
+They propose a sequence of denser carbon allotropes: The bc8 phase is predicted to transform to the simple cubic structure at 2.9 TPa, followed by a soft-phonon transition to a simple hexagonal structure at 6.4 TPa, the electride fcc structure at 21 TPa, a double hexagonal close-packed (hcp) structure at 270 TPa, and ultimately a body-centered cubic (bcc) structure at 650 TPa.
+It is now possible to explore these ultrahigh-pressure regimes with dynamic compression techniques using megajoule class lasers such as the National Ignition Facility (NIF; e.g.
+R. Smith et al., to be published).
+CARBIDES
+Carbides of iron have been considered as potentially significant components of Earth’s core based on early comparisons with meteoritic iron (Ringwood 1960; Lovering 1964; Ahrens 1982; Hazen et al.
+2013) and the requirement for a light alloying element to match observed core densities (Birch 1964; Wood et al.
+2013).
+The stoichiometry of high-pressure Fe-carbide is uncertain; if Fe7C3 is more stable than Fe3C, then up to 1.5 percent carbon could be present in the inner core (Mookherjee 2011; Mookherjee et al.
+2011).
+The incorporation of carbon in the fluid outer core has been studied based on extrapolations from low P-T data as well as various theoretical techniques (Terasaki et al.
+2010; Zhang and Yin 2012; and references therein).
+The widespread existence of carbides in Earth’s silicate mantle (particularly Fe-carbide) has been predicted for depths >250 km based on experimentally determined fO2 conditions (Frost et al.
+2004; Rohrbach et al.
+2007, 2010; Frost and McCammon 2008; Rohrbach and Schmidt 2011; Stagno and Frost 2011) and the reactivity of carbon and iron at high pressures and temperatures (Rouquette et al.
+2008; Oganov et al 2008; Lord et al.
+2009).
+Mantle iron carbide stability is illustrated schematically in Figure 6 as a function of depth and oxygen fugacity.
+Despite the prediction for abundant Fe-carbides in the mantle, terrestrial occurrences are very rare, and are typically associated with diamond.
+Fe-carbides have been documented as inclusions within diamonds from Jagersfontein, South Africa (Jones at al.
+2008); Juina, Brazil (Kaminsky and Wirth 2011); and the 23rd Party Congress Kimberlite, Russia (Bulanova and Zayakina 1991).
+Scarce occurrences of “native iron” inclusions in diamond (Stachel et al.
+1998; Bulanova et al.
+2010) likely include unrecognized Fe-carbide.
+Other fragmentary evidence to support carbide in the mantle includes unique spherical micro-inclusions of Fe-carbide (“cohenite”) observed in garnet intergrowths from polycrystalline mantle diamond (Jacob et al.
+2004).
+The mantle Fe-rich carbide compositions from Jagersfontein are the most numerous and show limited compositional variation of (Fe-Ni-Cr) with minor constituent silicon and trace Co (Table 1; Fig.
+7; Hazen et al.
+2013).
+Chemically these mantle carbides appear to be mixtures of various end members like haxonite [(Fe,Ni)23C6] and isovite [(Cr,Fe)23C6], but there is no experimental information on their phase relations at high-pressure mantle conditions.
+The equation of state and elastic constants of cohenite have been studied to at least 187 GPa (Scott et al.
+2001; Fiquet et al.
+2009; Sata et al.
+2010).
+Theoretical studies employing the random sampling approach by Weerasinghe et al.
+(2011) suggest that at inner core pressures (330 to 364 GPa) cohenite transforms to a denser orthorhombic Cmcm structure.
+Evolutionary structure prediction simulations (Bazhanova et al.
+2012) found an even more stable structure with space group I-4, [Set this properly as I{overbar4}] which at 0 K is stable in the pressure range 310 to 410 GPa.
+Both the random sampling study (Weerasinghe et al.
+2011) and the evolutionary prediction (Bazhanova et al.
+2012) agree that at inner core pressures Fe3C is not thermodynamically stable.
+Rather, Fe2C with the Pnma space group appears to be the most stable iron carbide at pressures of Earth’s inner core.
+Bazhanova et al.
+(2012) found that incorporation of ~13 mol% carbon into the inner core leads to perfect matching of its density, which sets the upper limit for the carbon content of the core.
+More complex chemistries (e.g., ternary phase) remains to be studied using these techniques.
+In addition, it would be useful to examine higher P-T conditions relevant to super Earths.
+We note that mixed metal carbides exhibit interesting electronic properties such as superconductivity [e.g.
+MgCxNi3 (x≈1), which has a perovskite structure (He et al.
+2001).
+MOLECULAR FRAMEWORK STRUCTURES
+Carbon dioxide
+A number of molecular solids may play a role in carbon mineralogy, both at low temperatures and at high pressures (Hemley and Dera 2000).
+The crystalline phases of carbon dioxide exemplify the potential for varied crystal chemical contexts.
+The familiar low-temperature phase of carbon dioxide, also known as “dry ice,” incorporates isolated linear CO2 molecules in a cubic structure (space group Pa3, a ~ 5.5 Å), with 4 linear CO2 molecules per unit cell (Keesom and Köhler 1934; Aoki et al.
+1994).
+Structure refinement of this phase at 1.0 GPa gives a C-O bond length of 1.168(1) Å (Downs and Somayazulu 1998), very close to that of the free molecule.
+This phase, which is a mineral in the cold polar regions of Mars (Byrne and Ingersoll 2003), can also form at room temperature and pressures above ~0.3 GPa.
+Phase III crystallizes in a Cmca structure.
+The reported phase II (0.5-2.3 GPa) is less well characterized (Liu 1983), and Downs and Somayazulu (1998) find that phase I is stable in at least part of this pressure range.
+It has also been reported that a distorted phase IV forms between the stability field of I and III (Olijnyk and Jephcoat 1998).
+CO2 III was identified by Raman spectroscopy (Hanson 1985; Olijnyk et al.
+1988).
+At pressures >10 GPa carbon dioxide transforms to one of at least three other molecular solids, denoted phases II, III, and IV, as well as a possible phase VII, depending on the temperature (Aoki et al.
+1994; Park et al.
+2003; Sun et al.
+2009; Datchi et al.
+2009).
+However, these relatively low-density forms of crystalline CO2 are not expected to persist at mantle conditions.
+The existence of CO2-based framework structures analogous to SiO2 with the coordination of carbon by oxygen increased from three- to four-fold was first shown by Raman studies, which provided direct evidence for a polymeric structure following laser heating at pressures above ~40 GPa and above 2000 K (Iota et al.
+1999).
+The phase was originally called “quartz-like” based on the close similarity to the vibrational spectra of quartz and named CO2-V (Iota et al.
+1999).
+First-principles theory has confirmed the stability of framework structures with tetrahedral carbon; i.e., relative both to the molecular solid and to decomposition to elemental carbon and hydrogen (Serra et al.
+1999).
+Subsequent X-ray diffraction data appeared to be best fit with the tridymite structure (Yoo et al 1999).
+The stability of the phase has been examined with experiments (Tschauner et al.
+2001; Santoro et al.
+2006) and theoretical calculations (Holm et al.
+2000; Dong, et al.
+2000; Bonev et al.
+2003; Oganov et al.
+2008).
+An additional possible phase VI with octahedrally-coordinated carbon reported by Iota et al.
+(2008) has not been confirmed by other experiments or theory.
+The structures of these phases were until recently under debate.
+At the same time, it was not possible to rule out that there may be even more stable structures.
+Evolutionary crystal structure prediction calculations (Oganov et al.
+2008) were shown to be consistent with β-cristobalite as the thermodynamically stable crystal structure (Fig.
+8).
+The structure of phase V has been recently determined by high-pressure X-ray diffraction measurements (Fig.
+9; Datchi et al.
+2012; Santoro et al.
+2012).
+Using high-pressure diamond anvil cells combined with high-temperature laser heating, the authors of both studies formed CO2-V and probed the crystal structure using synchrotron X-ray diffraction measurements.
+Through Rietveld analysis methods, both groups determined that CO2-V does in fact have the β-cristobalite structure and is composed of CO4 tetrahedral units.
+Interestingly, the CO4 units possess O-C-O bond angles that average 109.5°, in stark contrast to molecular carbon dioxide.
+Structural determination as a function of pressure revealed the bulk modulus of 136 GPa, significantly less than the value reported previously (Yoo et al.
+1999).
+The melting curve of CO2 has been determined to 15 GPa (Giordano et al., 2006; Giordano and Datchi, 2007).
+Quenched samples after laser heating to 2000–3000 K at 28–75 GPa showed that CO2 breaks down to form oxygen and diamond at lower temperature with increasing pressure (Tschauner et al.
+2001).
+Recently, the solid–solid phase transitions, melting behavior, and chemical reactivity of CO2 to these pressures and at temperatures up to 2500 K using in situ Raman spectroscopy in laser-heated diamond anvil cells were reported by Litasov et al.
+(2011).
+Molecular CO2 melts to a molecular fluid up to 33 (±2) GPa and 1720 (±100) K, where it meets a solid–solid phase line to form a triple point (Fig.
+10).
+At higher pressure, non-molecular phase V does not melt but instead dissociates to carbon and oxygen with a transition line having a negative P-T slope.
+A comparison with P–T profiles of Earth’s mantle indicates that CO2-V can be stable near the top of the lower mantle and dissociates at greater depths.
+Decarbonation reactions of subducted carbonates in the lower mantle would produce diamond and fluid oxygen, which in turn significantly affects redox state, increasing oxygen fugacity by several orders of magnitude.
+The reaction of free oxygen with lower mantle minerals such as Mg-perovskite could create significant conductivity anomalies (Litasov et al.
+2011).
+Decomposition of CO2 was found to be unlikely in first-principles calculations (Oganov et al.
+2008; Boates et al 2012), as the computed enthalpy of decomposition of CO2 is extremely high (3.3 eV at 50 GPa), discrepancy between experiment and theory that needs to be resolved.
+Recently, evidence for coesite-structured CO2 has been reported (Sengupta and Yoo 2009).
+Still higher-pressure structures of CO2 are predicted (Fig.
+11), including dissociation at TPa pressures due to the predicted higher density of the elemental assemblage is predicted (Fig.
+12).
+Other compounds
+Early work on the high-pressure behavior of other binary carbon compounds, in particular formed from simple molecular phases, was reviewed by Hemley and Dera (2000).
+Recently, structures of carbon monoxide have been investigated theoretically using DFT (Sun et al.
+2011).
+Both three-dimensional frameworks and layered structures were reported stable above 2 GPa, although these may have been metastable.
+Some of these new structures of CO (Fig.
+13) could be metallic and others might be recoverable to ambient pressure.
+The high-pressure behavior of clathrate hydrates, which exist in nature in several forms depending on pressure and temperature and gas composition, are of special interest.
+Recent high-pressure neutron scattering studies have provided definitive experimental results for testing and refining intermolecular potentials used to describe the hydrophobic interactions in these dense molecular phases (Tulk et al.
+2012).
+These measurements yielded detailed data on the structure of a high-pressure form of methane clathrate hydrate and gave precise information on the number of methane molecules that could fit into the cages of the inclusion compound.
+The results showed that the correct occupancy for the largest cages in this beautiful structure is three methane molecules.
+The study provides tests of models for hydrophobic interactions and methane-methane interactions since the high-pressure structure H clathrate contains cages that are both singly and triply occupied.
+Similar types of high-pressure transformations to denser forms can be anticipated for hydrocarbon phases.
+For example, liquid methane has been observed on Titan’s surface and crystalline forms may occur at depth (e.g., Shin et al.
+2012).
+At room temperature and 1.59 GPa methane crystallizes to the low-temperature (methane I) form, in which rotationally disordered CH4 molecules occupy positions of a face-centered cubic (space group Fm3m) lattice (Hazen et al.
+1980).
+The higher-pressure behavior of crystalline methane is complex, with several known phases.
+Above 5.25 GPa and room temperature solid methane transforms to structures in which the molecules are rotationally locked (Hirai et al.
+2008).
+These studies point to the vast unexplored phase stability of high-pressure molecular hydrocarbons (see, Sephton and Hazen 2013)
+CARBONATES
+Behavior of sp2 carbonates
+High-pressure phase transitions in rhombohedral carbonates epitomize the challenges of understanding deep carbon mineralogy, because a variety of reversible metastable transitions to slightly denser sp2 forms are possible, and these forms are less kinetically inhibited than reconstructive transitions to sp3 forms.
+Calcite provided one of the earliest experimental demonstrations of distinctive metastable high-pressure carbonate phases (Bridgman 1939; Jamieson 1957; Merrill and Bassett 1975).
+At ~1.5 GPa and 25°C calcite transforms displacively to a monoclinic form known as calcite-II with space group P21/c, with a second reversible transition at ~2.2 GPa to calcite-III (Suito et al.
+2001).
+Catalli and Williams (2005) report yet another transition to a presumably distorted modification of calcite-III at P ~25 GPa, which reverts to calcite-III with significant hysteresis on lowering pressure.
+Less attention has been paid to the high-pressure polymorphs of other rhombohedral carbonates (Hazen et al.
+2013).
+The high-pressure behavior of ferrous iron and magnesium carbonates, which are likely candidates for deep-Earth carbonates, are of special interest (Biellmann et al.
+1993; Isshiki et al.
+2004; Panero and Kabbes 2008; Seto et al.
+2008).
+The high-spin (HS) to low-spin (LS) magnetic transition in siderite measured by means of X-ray emission spectroscopy (XES) has been reported to occur at 50 GPa (Mattila et al.
+2007).
+The structure does not change through the spin transition, but there is a discontinuous volume change (Lavina et al.
+2010).
+However, at 10 GPa and 1800 K, siderite breaks down to form a new iron oxide Fe4O5, isostructural with calcium ferrite, though the residual carbon phase was not identified (Lavina et al.
+2011).
+Dolomite [CaMg(CO3)2] is considered to be a major constituent of subducted carbonates (e.g., Zhu and Ogasawara 2002); therefore its phase stability and equation of state at high pressures and temperatures is important to understanding Earth’s deep carbon cycle.
+At pressures below 7 GPa and temperatures between ~500 and 1000 ºC dolomite is observed to decompose to aragonite plus magnesite (Martinez et al.
+1996; Sato and Katsura 2001).
+As a result, dolomite is normally not considered a potential carrier to transport carbon to Earth’s deep interior.
+However, two higher-pressure phases of dolomite have been documented experimentally.
+Dolomite-II, which has the calcite-III structure, occurs at pressure >20 GPa (Santillán et al.
+2003).
+Mao et al.
+(2011) observed a transition to a significantly denser monoclinic phase called dolomite-III at 41 GPa and 1200 ºC, with stability extending to 83 GPa.
+This study by Mao et al.
+(2011) provides evidence that the addition of minor amounts of iron can stabilize dolomite in polymorphs that exist at P-T conditions of subducting slabs, thereby providing a mechanism to carry carbonate into the deep mantle.
+X-ray diffraction/laser heating techniques were used to study high-pressure and temperature dolomite polymorphs to 83 GPa and 1700 K of a natural Fe-bearing dolomite from Windham, Vermont with a composition of Ca0.988Mg0.918Fe0.078Mn0.016(CO3)2.
+They observed two distinct phase transformations: 1) to dolomite-II at ~17 GPa and 300 K, and 2) to a new monoclinic phase (dolomite-III) between 36 and 83 GPa.
+Both high-pressure polymorphs were stable up to 1500 K, indicating that the addition of minor Fe stabilizes dolomite under the conditions akin to the deep mantle.
+Thus, Fe-dolomite may provide a means for delivering carbon to Earth’s deep interior, though additional experiments are required to determine the structure of dolomite-III, examine the potential effects of Fe substitution on the phase transitions, and determine the redox properties of Fe-bearing carbonate in Earth’s mantle.
+zA reccen experimental study examined the high-pressure vibrational and elastic properties of iron-bearing magnesite across the spin transition.
+Distinctive changes in the unit cell volumes and vibrational properties are indicative of a high-spin to low-spin transition at 40 GPa.
+The spin transition enhances the stability of the carbonate phase (Lin et al 2012).
+The orthorhombic aragonite group minerals (Hazen et al.
+2013) have received less study at high pressure.
+Holl et al.
+(2000) studied witherite to 8 GPa and found that it undergoes a displacive phase transition at approximately 7 GPa.
+The topology of the structure did not change, but the CO3 groups shifted into the same plane as the Ba atoms, changing the symmetry to hexagonal.
+High-pressure sp3 carbonates
+Given the behavior of other carbon-bearing systems at very high pressure, it seems likely that the sp2 carbonates with trigonally coordinated carbon will transform to sp3 polymorphs with tetrahedrally-coordinated carbon.
+At ~40 GPa, Ono et al.
+(2005) found a phase transition from aragonite to another phase, which was subsequently solved using the USPEX method and verified experimentally (Fig.
+14; Oganov et al.
+2006; Ono et al.
+2007).
+The structure (orthorhombic, space group Pmmn) was called post-aragonite; it still has carbon in the sp2-state (CO3-anions), and is characterized by 12-fold coordination of Ca atoms and joint hexagonal close packing of oxygen and calcium atoms.
+At pressures above 137 GPa, a new structure was predicted using USPEX (Oganov et al.
+2006), and once again the predicted structure matched the experimental X-ray diffraction patterns obtained at P > 130 GPa (Ono et al.
+2007) well.
+The structure (space group C2221) features chains of carbonate tetrahedra similar to silicate tetrahedral chains in pyroxenes.
+However, unlike pyroxenes, the C2221 structure has large cations in one position (rather than two in pyroxenes).
+The presence of tetrahedral carbonate ions (with sp3 hybridization) marks a dramatic shift in the chemistry of carbonates.
+Note that both post-aragonite and the C2221 structures belong to new structure-types, which could not have been found by analogy with any known structures.
+Another new structure with P1 symmetry was found by (Oganov et al.
+2006) as metastable and energetically closely competitive with aragonite in a wide pressure range.
+It is predicted to be stable in a narrow (a few GPa) pressure interval around 42 GPa, between aragonite and post-aragonite.
+A phase with this structure was recently documented in experiments of Merlini et al.
+(2012).
+Experiments demonstrate that magnesite is stable at least up to ~80 GPa (Fiquet et al.
+2002) and transforms to a new phase above 100 GPa (Isshiki et al.
+2004).
+Systematic search through databases of known crystal structures, combined with energy minimization, indicated that a pyroxene structure (space group C2/c) becomes energetically more favorable than magnesite above ~100 GPa (Skorodumova et al.
+2005), but Oganov et al.
+(2006) found that the C2221 structure (stable for CaCO3) is preferable to the C2/c pyroxene structure.
+USPEX simulations at 110 GPa and 150 GPa found a large number of low-enthalpy structures that are competitive in a wide pressure range and are more favorable than previously known structures (Oganov et al.
+2008).
+Magnesite was found to be stable up to 82 GPa, whereas at higher pressures there are two phases with similar structures containing three-membered rings {C3O9}6− made of carbonate tetrahedra (Fig.
+15) and Mg atoms in eight- and ten-fold coordinations.
+These unusual structures were confirmed experimentally in a recent x-ray diffraction study by Boulard et al.
+(2011), who found that the Mg-Fe carbon-bearing compound can form at conditions corresponding to depths greater than 1,800 km (Fig.
+16).
+Its structure, based on three-membered rings of corner-sharing (CO4)4- tetrahedra, closely agrees with the earlier predictions (Oganov et al.
+2008).
+This polymorph of carbonates concentrates Fe(III) as a result of intracrystalline reaction between Fe(II) and CO32- groups schematically written as 4FeO + CO2 → 2Fe2O3 + C. This oxidation-reduction reaction results in an assemblage consisting of the new high-pressure phase, magnetite, and diamond.
+Above ~160 GPa, (Oganov et al 2008) simulations predict a structure with space group Pna21 containing chains of corner-sharing carbonate tetrahedra to be stable.
+The presence of tetrahedral carbonate-ions at very high pressures invites an analogy with silicates, but the analogy is limited.
+In silicates, the inter-tetrahedral angle Si-O-Si is extremely flexible (Belov 1961), which is one of the reasons for the enormous diversity of silicate structure types.
+Figure 17 shows the variation of the energy as a function of the Si-O-Si angle in the model H6Si2O7 molecule (Lasaga and Gibbs 1987).
+One can see only a shallow minimum at Si–O–Si ≈ 135º, but a deep minimum at C–O–C ≈ 124º with steep energy variations for H6C2O6.
+This difference suggests a much more limited structural variety of tetrahedral carbonates, compared to silicates.
+The C–O–C angles in the tetrahedral structures of CO2, CaCO3, and MgCO3 are in the relatively narrow range from 115° to 125° at atmospheric pressure and decrease to 112° to 115° at 100 GPa.
+The differences between silicates and tetrahedral carbonates can also be seen from the large differences in the high-pressure structures of CO2, CaCO3, and MgCO3 and the stable structures of SiO2, CaSiO3, and MgSiO3.
+The fundamental change of carbonate chemistry from sp2 (triangular carbonate ions) to sp3 (tetrahedral carbonate ions) has important consequences for the viscosity of carbonate melts, which at high pressures (presumably above ~80 to 130 GPa) is expected to be rather high (in contrast to very low viscosity of liquid carbonates at low pressures; Jones et al.
+2013).
+This prediction remains to be confirmed experimentally.
+Silicate carbonates
+Under ambient conditions, CO2 and SiO2 are thermodynamically stable and do not react.
+Therefore, a natural question is whether or not compounds between CO2 and SiO2 are even possible under any conditions, and how they might relate to recently identified silicon clathrate in carbonatite (melanophlogite: Beard et al.
+2013).
+A recent study has reported the discovery that a silicon carbonate phase can form from carbon dioxide and silica under pressure (Santoro et al.
+2011).
+In this work, dense carbon dioxide fills the micro-pores of silicalite, a pure SiO2 zeolitic material, at high pressure.
+All the SiO4 tetrahedra are on the surface of the micropores and consequently in contact with the CO2.
+The large effective interaction area between the two materials greatly favors the chemical reaction between them.
+This silicon carbonate phase is obtained when the system is compressed to 18-20 GPa and heated at 600-700 K. The material can be temperature quenched and was characterized by optical spectroscopy and synchrotron X-ray diffraction (Fig.
+18).
+The structure of this new compound reflects that of the original silicalite crystal, although it is affected by stoichiometric and spatial disorder.
+High-pressure silicate-carbonates with 4-coordinated carbon and 6-coordinated silicon represent an as yet unexplored crystal chemical possibility.
+More than 50 low-pressure silicate-carbonates with 3-coordinated carbon and 4-coordinated silicon are known, most notably the Ca-Si-carbonates spurrite [Ca5(SiO4)2(CO3)] and tilleyite [Ca5(Si2O7)(CO3)2].
+Some of these unusual crystal structures, which incorporate both planar CO3 and tetrahedral SiO4 units, may represent plausible structure topologies for high-pressure calcium carbonates with carbon in mixed 3- and 4-coordination.
+Alternatively, polyhedral packing arrangements for tetravalent cations in both tetrahedral and octahedral coordination are well established.
+For example, (GeO6) octahedra and (SiO4) tetrahedra combine in the synthetic phases Ca2Ge2Si5O16 and BaGeSi3O6 (Robbins et al.
+1968; Smolin 1969; Nevskii et al.
+1975), while the rare mineral bartelkeite [PbFeGeVI(GeIV2O7)(OH)2.H2O] incorporates both GeO4 and GeO6 polyhedra (Origlieri et al.
+2012).
+These structure types, therefore, are possible isomorphs for silicate-carbonates at mantle pressures.
+In addition, Hazen et al.
+(1996) describe a related group of unusual high-pressure framework silicates with mixed 4- and 6-coordinated silicon (Fig.
+19) with the general formula:
+[(A1+4-2xB2+x)SiVIm(SiIVnO2(m+n)+2],
+where A and B are monovalent and divalent cations, respectively, in 8 or greater coordination.
+All of these layered structures, including the benitoite form of BaSi4O9 and the wadeite form of K2Si4O9 (Swanson and Prewitt 1983; Finger et al.
+1995), possess densities intermediate between those of purely 4- or 6-coordinated phases, and thus must represent a transitional pressure range.
+Therefore, with the caveat that O-C-O angles are more restricted than O-Si-O angles (see above), a variety of plausible deep-Earth silicate-carbonate structures, including alkali and alkaline earth silicate-carbonate phases, should not be overlooked.
+At pressures significantly greater than those of Earth’s lower mantle it is likely that silicon adopts a coordination greater than six; possible mixed carbon-silicate phases in this regime remains to be explored.
+These phases could be important components of carbon-rich super-Earths.
+Finally, the nature of carbonates and silicate-carbonates at more extreme conditions, including those reached on dynamic compression, represents an unexplored area for future research.
+Transient shock pressures generated in bolide impacts exceed the duration of laboratory shock synthesis by orders of magnitude and, despite potential kinetic effects (DeCarli et al.
+2002b), offer distinct potential for understanding the high-pressure behavior of carbon mineralogy.
+Combinations of natural observations, experiments, and modeling provide an important framework for understanding high-pressure phase equilibria in mixed carbon-silicate and simple carbonate systems over a very wide temperature interval (Martinez et al.
+1998; Jones et al.
+2000).
+CONCLUSIONS
+This survey of carbon mineralogy outlines much that is known regarding varied possible C-bearing mineral phases in deep planetary interiors.
+With the exception of the diamond polymorph of carbon and rare occurrences of Si and Fe carbides (Hazen et al.
+2013), deep carbon phases have not been well documented, and with few notable exceptions, their high-pressure stability limits are still poorly understood.
+Furthermore, although the measured solubility of carbon in nominally acarbonaceous upper mantle silicates is extremely low (Keppler et al.
+2003), the potential for carbon solid solution in lower mantle and core phases, including oxides, silicates, sulfides, and silicate melts, is not well constrained (Ni and Keppler 2013).
+Thus, while documented inventories of Earth’s carbon represent only ~0.07 weight percent, hidden reservoirs may represent in excess of 1.5 percent (Mason 1979; Kerridge 1985; Javoy 1997).
+This situation is analogous to our understanding of the deep hydrogen cycle 30 years ago (Smyth 2006; Smyth and Jacobsen 2006).
+Future high-pressure studies might consider the significant potential for storage and distribution of trace elements in C phases, including N, light elements, and especially noble gases, whose association with deep carbon is implied from volcanic degassing and from cosmochemistry (see Marty et al.
+2013).
+We should also examine whether stability of new high-pressure C-bearing phases may influence isotopic fractionation at high-pressure conditions (Mikhail et al.
+2011), which has enormous implications for reservoirs, fluxes, and geodynamic processes from the core to the atmosphere.
+A great deal has been learned recently from both high-pressure experiments and computational theory.
+Recent advances point to the likelihood of novel sp3 phases with tetrahedrally-coordinated carbon, including topologies that differ from those of silicate minerals.
+High-pressure carbonates and carbonate-silicates will continue to be of special interest in modeling the extent and distribution of mantle carbon and elucidating the deep carbon cycle.
+High-pressure studies of carbon-bearing molecular phases also hold great promise for discovering novel phases with unusual properties.
+We thus anticipate that the next decade will see rapid and fundamental advances in the understanding of the mineralogy of carbon at extreme conditions.
+Figure 1.
+Structures of selected allotropes of carbon.
+Figure 2.
+Phase diagram for carbon in Earth to 50 GPa (approximately 1500 km depth), showing the classic diamond-graphite line and field for liquid; note the liquidus for diamond has positive dP/dT consistent with calculations to higher pressure, and the only significant change to the early curve of Bundy et al.
+(1996).
+The red curve marks the metastable lonsdaleite or hexagonal (h-) diamond transition from Utsumi et al.
+(1996).
+At P-T conditions close to this red curve and above ~1070 K (800 oC), h-diamond from graphite is quenchable and recoverable, whereas below ~1070 K, h-diamond is unquenchable.
+The form of graphite used in the experiments has some influence, and additional metasatable complications for h-diamond are not yet fully understood (see Utsumi and Yagi 1991; Utsumi et al.
+1994).
+Lonsdaleite is associated with formation in terrestrial impact craters and meteorites (see review in Ross et al.
+2011) and its recent enigmatic discovery in ultrahigh pressure (UHP) metamorphic rocks may either be due to impact shock, or crystal-scale overpressure (Godard et al.
+2012).
+Figure 3.
+Calculated phase relations for diamond to super Earth conditions.
+Above 1000 GPa diamond is displaced by BC8.
+The green line marks the terrestrial geotherm (approximate), along which the maximum pressure at Earth’s center corresponds to ~360 GPa in the inner core.
+Note that diamond is stable to approximately twice the pressure at Earth’s center and does not melt below ~5000K.
+Diamond is expected to be a planetary “survivor of catastrophe,” such as the Moon-forming collision on Earth.
+Diagram based on Correa et al (2006).
+Note that on this diagram with extreme pressure range, the field for graphite is too small to depict (but tracks along the low-pressure axis).
+Figure 4.
+X-ray Raman spectra of graphite under pressure.
+The lower energy peak, labeled π, corresponds to 1s to π* transitions and the higher energy portion, labeled σ, corresponds to 1s to σ* transitions.
+The bottom spectra, taken in the horizontal direction, probes bonds in the a  plane, and the top spectra, taken in the vertical direction, probe the c plane.
+The inset shows the geometry of the diamond anvil cell experiment.
+The spectra reveal the development of mixed π and σ bonding in the high pressure phase formed by compression of graphite (adapted from Mao et al.
+2003).
+Figure 5.
+Calculated high-pressure metastable sp3 structures of elemental carbon.
+Reproduced from Zhu et al.
+(2012b).
+Figure 6.
+The polymorphs of carbon as a function of fO2 with depth in an ambient pyrolitic mantle (Mikhail et al.
+2011; modified from Rohrbach and Schmidt 2011).
+Note the dominance in the terrestrial mantle for reduced carbon species relative to carbonate.
+Figure 7.
+Plot of Fe-Ni-Cr compositions of mantle carbide inclusions within diamond at Jagersfontein, based on electron microprobe analyses (after Jones et al.
+2008).
+Different diamonds can host different carbide compositions: solid red circles = Jag1 (n = 9), open blue circles = Jag2 (n = 5) and solid black square (Jag10 n = 17).
+These carbides also contain minor Co, Si and O (see Table 1).
+Figure 8.
+CO2 structures: a) molecular P42/mnm structure, stable at lower pressures than polymeric CO2-V phase; b) β-cristobalite-type structure of CO2-V with tetrahedral coordination of carbon atoms; c) polymeric C2221 structure, d) metastable polymeric Pna21 structure.
+From (Oganov et al.
+2008).
+At the bottom are the calculated enthalpies of candidate structures of CO2: e) in the low-pressure region, relative to the molecular Pa3 structure; f) in the high-pressure region, relative to the non-molecular C222 structure.
+From (Oganov et al.
+2008).
+Figure 9.
+Expermintally determined structure of CO2-V at 43 GPa showing partially collapsed arrangement of CO4 tetrahedra.
+a) Santoro et al.
+(2012); b) Datchi et al.
+(2012).
+Reproduced with permission.
+Figure 10.
+Phase diagram for CO2.
+The light grey line is an estimated Earth geotherm.
+Adapted from Litasov et al.
+(2011).
+Figure 11.  β-cristabolite and layered structures of CO2 predicted at pressures above 200 GPa.
+(a) and (b) show the Fcc oxygen sublatice and (c) and (d) show the carbon sublattice.
+Adapted from Lee et al.
+(2009).
+Figure 12.
+Calculated P-V equations of state of CO2, C, and O to ultrahigh (TPa) pressures (T=0K).
+The volume change associated with the calculated breakdown of CO2 to elemental C and O is indicated.
+The lower pressure range is shown in the inset (J. Montoya, unpublished).
+Figure 13.
+Predicted high-pressure structure of CO with the Cmcm layered structure.
+The grey and red spheres represent C and O atoms, respectively, and the yellow spheres identify the six-membered ring in the structure.
+This represents only one of several high-pressure structures predicted for CO under pressure (from Sun et al.
+2011).
+Figure 14.
+(A) Predicted structures of high-pressure polymorphs of CaCO3: a) post-aragonite (stable at 42 to 137 GPa); b) C2221 phase (stable at > 137 GPa); c) P-T phase, probably stable in a narrow pressure range of a few GPa between aragonite and post-aragonite.
+From (Oganov et al.
+2006).
+d) and e) Enthalpies of candidate structures of CaCO3 as a function of pressure, in eV per formula unit, relative to post-aragonite.
+From Oganov et al.
+(2006).
+Figure 15.
+Predicted structures of stable high-pressure phases of MgCO3: a) post-magnesite phase II; b) phase III; c) Pna21-20 structure.
+From (Oganov et al.
+2008).
+Figure 16.
+Experimentally determined structure of the high-pressure ferromagnesium carbonate phase with space group P21/c.
+(CO4)4- tetrahedral appear in green and magnesium atoms are shown as violet spheres (Boulard et al.
+2011).
+Figure 17 (A) Energy variation as a function of the T-O-T angle (red dashed line = Si; black dotted line = C).
+Calculations were performed on H6T2O7 molecules; at each angle all T-O distances and O-T-O valence angles were optimized.
+(B) The minimum energy configuration of C2O7 has a 123.6° C-O-C angle.
+From (Oganov et al.
+2008).
+Figure 18.
+Infrared and Raman spectra (right insert) of mixed silicate and CO2 showing the formation of the high pressure silicon carbonate phase.
+A schematic representation of the original silicate structure is shown in the left inset (Santoro et al.
+2011).
+Figure 19.
+Observed and predicted framework silicates with SiO4 tetrahedra (red), SiO6 octahedra (blue), alkali cations (yellow spheres), and alkaline earth cations (green spheres) might represent carbonate-silicate structures at elevated temperature and pressure.
+Structures are shown in views parallel and perpendicular to layers of tetrahedral groups.
+(A) sodium silicate, Na4Si2VISi4IVO14; (B) predicted calcium germanate-type, Ca2Si2VISi5IVO16; (C) wadeite-type K4Si2VISi6IVO18; (D) benitoite-type Ba2Si2VISi6IVO18; (E) barium germanate-type Ba2Si2VISi6IVO18; (F) sodium silicate, Na4Si2VISi6IVO18; (G) predicted beryl-type Ba2Si2VISi6IVO18; (H) sodium-calcium silicate, Na1.8Ca1.1SiVISi5IVO14.
+(From Hazen et al.
+1996).
