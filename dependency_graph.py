@@ -65,7 +65,7 @@ class DependencyGraph(object):
         return [triple[2] for triple in self.__dep_triples if triple[0][0] == head_index and triple[1] == relation]
 
     @property
-    def triples(self):
+    def dep_triples(self):
         return self.__dep_triples
 
     @property
