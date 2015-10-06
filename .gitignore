@@ -50,3 +50,5 @@ nosetests.xml
 .pydevproject
 .idea
 .stat
+
+reverb/*

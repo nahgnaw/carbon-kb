@@ -74,7 +74,6 @@ class RelationExtractor(object):
             nn = ' '.join([nn['word'] for nn in sorted(nn_list, key=lambda e: e['index'])])
         return nn
 
-    # Extract nsubj dependencies
     def extract_nsubj(self):
         if self._dependencies['nsubj'] in self.__dep_triple_dict:
             for triple in self.__dep_triple_dict['nsubj']:
@@ -118,7 +117,6 @@ class RelationExtractor(object):
                             pred = p['word']
                             self.__relations.append((subj, pred, obj))
 
-    # Extract nsubjpass dependencies
     def extract_nsubjpass(self):
         if self._dependencies['nsubjpass'] in self.__dep_triple_dict:
             for triple in self.__dep_triple_dict['nsubjpass']:
@@ -160,6 +158,7 @@ sentences = u"""
     With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
     This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element (Holland 1984; Berner 2004; Hazen et al. 2012).
     Therefore, any comprehensive survey of carbon in Earth must consider the broad range of carbon-bearing phases.
+    The International Mineralogical Association (IMA) recognizes more than 380 carbon-bearing minerals (http://rruff.info/ima/), including carbon polymorphs, carbides, carbonates, and a variety of minerals that incorporate organic carbon in the form of molecular crystals, organic anions, or clathrates. This chapter reviews systematically carbon mineralogy and crystal chemistry, with a focus on those phases most likely to play a role in the crust. Additional high-temperature and high-pressure carbon-bearing minerals that may play a role in the mantle and core are considered in the next chapter on deep carbon mineralogy (Oganov et al. 2013).
     """
 
 for sentence in sent_tokenize(sentences):
