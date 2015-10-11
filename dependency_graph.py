@@ -11,7 +11,7 @@ class DependencyGraph(object):
         self.__sentence = sentence
         self.__raw = {}
         self.__tree = {}
-        self.__text = []
+        self.__words = []
         self.__lemmas = []
         self.__tags = []
         self.__tagged_text = None
@@ -41,7 +41,7 @@ class DependencyGraph(object):
             head = words[head_index - 1][0]
             head_tag = words[head_index - 1][1]["PartOfSpeech"]
             rel = dep[5]
-            self.__text.append(word)
+            self.__words.append(word)
             self.__lemmas.append(lemma)
             self.__tags.append(tag)
             tagged_text.append(nltk.tree.Tree(tag, [word]))
@@ -70,7 +70,7 @@ class DependencyGraph(object):
 
     @property
     def text(self):
-        return self.__text
+        return self.__words
 
     @property
     def raw(self):

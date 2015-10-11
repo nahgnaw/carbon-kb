@@ -1,5 +1,6 @@
 # -*- coding: utf8 -*-
 
+import os
 from nltk.tokenize import sent_tokenize
 from dependency_graph import DependencyGraph
 
@@ -24,16 +25,17 @@ class RelationExtractor(object):
         'jj': u'JJ'
     }
 
-    def __init__(self, sentence):
+    def __init__(self, sentence, debug=False):
         self.__sentence = sentence
         self.__dep_triple_dict = {}
-        self.__make_dep_triple_dict()
+        self.__make_dep_triple_dict(debug)
         self.__relations = []
 
-    def __make_dep_triple_dict(self):
+    def __make_dep_triple_dict(self, debug):
         dg = DependencyGraph(self.__sentence)
         triples = dg.dep_triples
-        # dg.print_dep_triples()
+        if debug:
+            dg.print_dep_triples()
         for triple in triples:
             dep = triple[1]
             if dep in self._dependencies.values():
@@ -152,19 +154,21 @@ class RelationExtractor(object):
         return self.__relations
 
 
-sentences = u"""
-    Carbon, element 6, displays remarkable chemical flexibility and thus is unique in the diversity of its mineralogical roles.
-    Carbon has the ability to bond to itself and to more than 80 other elements in a variety of bonding topologies, most commonly in 2-, 3-, and 4-coordination.
-    With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
-    This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element.
-    Therefore, any comprehensive survey of carbon in Earth must consider the broad range of carbon-bearing phases.
-    The International Mineralogical Association (IMA) recognizes more than 380 carbon-bearing minerals, including carbon polymorphs, carbides, carbonates, and a variety of minerals that incorporate organic carbon in the form of molecular crystals, organic anions, or clathrates. This chapter reviews systematically carbon mineralogy and crystal chemistry, with a focus on those phases most likely to play a role in the crust. Additional high-temperature and high-pressure carbon-bearing minerals that may play a role in the mantle and core are considered in the next chapter on deep carbon mineralogy.
-    """
+if __name__ == '__main__':
+    sentences = u"""
+        Carbon has the ability to bond to itself and to more than 80 other elements in a variety of bonding topologies, most commonly in 2-, 3-, and 4-coordination.
+         With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
+        This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element.
+        Therefore, any comprehensive survey of carbon in Earth must consider the broad range of carbon-bearing phases.
+        The International Mineralogical Association recognizes more than 380 carbon-bearing minerals, including carbon polymorphs, carbides, carbonates, and a variety of minerals that incorporate organic carbon in the form of molecular crystals, organic anions, or clathrates.
+         This chapter reviews systematically carbon mineralogy and crystal chemistry, with a focus on those phases most likely to play a role in the crust.
+        Additional high-temperature and high-pressure carbon-bearing minerals that may play a role in the mantle and core are considered in the next chapter on deep carbon mineralogy.
+        """
 
-for sentence in sent_tokenize(sentences):
-    sentence = sentence.strip()
-    print sentence
-    extractor = RelationExtractor(sentence)
-    extractor.extract_nsubj()
-    extractor.extract_nsubjpass()
-    print extractor.relations
+    for sent in sent_tokenize(sentences):
+        sent = sent.strip()
+        print sent
+        extractor = RelationExtractor(sent)
+        extractor.extract_nsubj()
+        extractor.extract_nsubjpass()
+        print extractor.relations

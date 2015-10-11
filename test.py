@@ -1,14 +1,15 @@
-from __future__ import unicode_literals, print_function
-from spacy.en import English
+# -*- coding: utf8 -*-
 
+import re
 
-nlp = English()
-doc = nlp('Natural graphite is a common crustal mineral that occurs most abundantly in metamorphic rocks in pods and veins.')
-for sentence in doc.sents:
-    print(sentence.root.orth_)
+s = u'see Holland (1984); Berner (2004); Hazen et al. (2012).'
 
-for chunk in doc.noun_chunks:
-    print(chunk.label_, chunk.orth_, chunk.root.head.dep_, chunk.root.head.orth_)
+reference_patterns = [
+    r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\d{4}[;|,]*)',
+    r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\(\d{4}\)[;|,]*)',
+]
 
-# for token in doc:
-#     print (token.orth_, token.dep_, token.head.orth_)
+match = re.compile('|'.join(reference_patterns), re.UNICODE)
+s = re.sub(match, '', s)
+
+print s

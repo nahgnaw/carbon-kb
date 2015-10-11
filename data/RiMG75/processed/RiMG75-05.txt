@@ -5,7 +5,7 @@ The chemistry of dissolved carbon changes dramatically with pressure (P) and tem
 In aqueous fluids at low P and T, molecular carbon gas species such as CO2 and CH4 saturate at low concentration to form a separate phase.
 With modest increases in P and T, these molecular species become fully miscible with H2O, enabling deep crustal and mantle fluids to become highly concentrated in carbon.
 At such high concentrations, carbon species play an integral role as solvent components and, with H2O, control the mobility of rock-forming elements in a wide range of geologic settings.
-The migration of carbon-bearing crustal and mantle fluids contributes to Earth’s carbon cycle; however, the mechanisms, magnitudes, and time variations of carbon transfer from depth to the surface remain least understood parts of the global carbon budget (Berner 1991, 1994; Berner and Kothavala 2001)
+The migration of carbon-bearing crustal and mantle fluids contributes to Earth’s carbon cycle; however, the mechanisms, magnitudes, and time variations of carbon transfer from depth to the surface remain least understood parts of the global carbon budget ( 1994; )
 Here we provide an overview of carbon in water-rich crustal and mantle fluids.
 We first review the evidence for the presence and abundance of carbon in these fluids.
 We then discuss oxidized and reduced carbon, both as solutes in H2O-rich fluids and as major components of miscible CO2–CH4–H2O fluids.
@@ -13,27 +13,16 @@ Our goal is to provide some of the background needed to understand the role of f
 Carbon in aqueous fluids of crust and mantle
 Numerous lines of evidence indicate that carbon may be an important component of crustal and mantle fluids.
 Fluid inclusions provide direct samples of carbon-bearing fluids from a range of environments.
-Carbon species in fluid inclusions include molecular gas species (CO2, CH4), carbonate ions, and complex organic compounds, including petroleum (Roedder 1984).
-Carbon-bearing fluid inclusions occur in all crustal metamorphic settings, but they have also been reported in samples derived from mantle depths, including nearly pure CO2 inclusions in olivine in mantle xenoliths (Roedder 1965; Deines 2002), inclusions in ultrahigh-pressure metamorphic minerals exhumed from mantle depths (Fu et al.
-2003b; Frezzotti et al.
-2011), and carbon-bearing fluid inclusions in diamonds from depths corresponding to more than 5 GPa (Navon et al.
-1988; Schrauder and Navon 1993).
+Carbon species in fluid inclusions include molecular gas species (CO2, CH4), carbonate ions, and complex organic compounds, including petroleum .
+Carbon-bearing fluid inclusions occur in all crustal metamorphic settings, but they have also been reported in samples derived from mantle depths, including nearly pure CO2 inclusions in olivine in mantle xenoliths , inclusions in ultrahigh-pressure metamorphic minerals exhumed from mantle depths (b; ), and carbon-bearing fluid inclusions in diamonds from depths corresponding to more than 5 GPa .
 The formation of carbon-bearing minerals in fluid-flow features such as veins and segregations are prima facie indications of carbon transport by deep fluids.
-Environments in which carbonate veins have been observed range from shallow crustal settings to rocks exhumed from subduction zones (Gao et al.
-2007) and, rarely, mantle xenoliths (Demeny et al.
-2010).
-Graphite is also widely observed as a vein mineral, most famously perhaps in the Borrowdale graphite deposit of the Lake District in the United Kingdom (e.g., Barrenechea et al.
-2009).
+Environments in which carbonate veins have been observed range from shallow crustal settings to rocks exhumed from subduction zones  and, rarely, mantle xenoliths .
+Graphite is also widely observed as a vein mineral, most famously perhaps in the Borrowdale graphite deposit of the Lake District in the United Kingdom (e.g., ).
 The occurrence of C-bearing minerals in metamorphic veins is consistent with the observation that the C content of metamorphic rocks decreases with increasing metamorphic grade.
-For example, pelagic clay lithologies (“pelites”) progressively decarbonate during metamorphism: whereas the global average oceanic sediment has 3.01 wt% CO2, low-grade metapelites have an average of 2.31 wt% CO2, and high-grade metapelites average 0.22 wt% CO2 (Shaw 1956; Plank and Langmuir 1998).
+For example, pelagic clay lithologies (“pelites”) progressively decarbonate during metamorphism: whereas the global average oceanic sediment has 3.01 wt% CO2, low-grade metapelites have an average of 2.31 wt% CO2, and high-grade metapelites average 0.22 wt% CO2 .
 The decarbonation correlates with dehydration, clearly demonstrating that prograde metamorphic reactions liberate a fluid phase containing both H2O and carbon as components.
-Similarly, the development of calc-silicate skarns in carbonate lithologies (Einaudi et al.
-1981), in which fluid flow induces replacement of carbonate minerals (chiefly calcite) by silicates and oxides, requires liberation of carbon to water-rich fluids.
-Finally, spring waters discharging from active metamorphic terranes commonly contain carbon derived from depth (Irwin 1970; Chiodini et al.
-1995; Chiodini et al.
-1999; Becker et al.
-2008; Wheat et al.
-2008).
+Similarly, the development of calc-silicate skarns in carbonate lithologies , in which fluid flow induces replacement of carbonate minerals (chiefly calcite) by silicates and oxides, requires liberation of carbon to water-rich fluids.
+Finally, spring waters discharging from active metamorphic terranes commonly contain carbon derived from depth .
 Sources of carbon in aqueous fluids of the crust and mantle
 The carbon that is incorporated into deep fluids is derived from two sources.
 It may be liberated from the host rocks during fluid-rock reaction (“internal sources”), or it may be introduced by mixing with other fluids (“external sources”).
@@ -44,98 +33,62 @@ Pure limestone generated by accumulation of biomineralized calcite (shells, etc.
 contains 44 wt% CO2, whereas dolomite contains ~48 wt% CO2.
 Varying amounts of siliciclastic detritus found in “impure” carbonates lowers the CO2 concentration.
 The carbonate compensation depth limits the accumulation of carbon in pelagic sediments.
-But even deep-ocean sedimentary packages contain at least some CO2: the global average composition of oceanic sediment entering subduction zones is 3.01 ± 1.44 wt% CO2 (Plank and Langmuir 1998).
+But even deep-ocean sedimentary packages contain at least some CO2: the global average composition of oceanic sediment entering subduction zones is 3.01 ± 1.44 wt% CO2 .
 In addition, calcite is one of the most common cements found in sandstone.
-Carbonate minerals are rare products of magmatic crystallization of silicate magmas, though they occur as primary phases in C-rich magmas such as carbonatites and kimberlites (Jones et al.
-2013).
-Carbonate minerals have been observed as inclusions in silicate minerals in mantle xenoliths (e.g., McGetchin and Besancon 1973).
+Carbonate minerals are rare products of magmatic crystallization of silicate magmas, though they occur as primary phases in C-rich magmas such as carbonatites and kimberlites .
+Carbonate minerals have been observed as inclusions in silicate minerals in mantle xenoliths (e.g., ).
 Near Earth’s surface, secondary processes can enrich igneous, metamorphic, and sedimentary lithologies in CO2 by weathering and alteration.
-On continents, rock weathering extracts CO2 from the atmosphere to produce secondary carbonate minerals (Urey 1952; Berner et al.
-1983).
+On continents, rock weathering extracts CO2 from the atmosphere to produce secondary carbonate minerals .
 In submarine settings, seafloor alteration processes lead to significant CO2 uptake by secondary carbonation of basaltic crust.
-For example, fresh mid-ocean ridge basalt (MORB) is estimated to contain ~0.15 wt% CO2, but during alteration and seafloor weathering the CO2 content of the upper 600 m of the oceanic crust may increase to 3.26 wt%, and the average CO2 gain by the entire crustal section is elevated to 0.35 wt% (Staudigel 2003).
-Abundant carbonate veins in oceanic serpentinites are observed in core, dredge hauls, and ophiolites, indicating that altered oceanic mantle rocks likewise contain significant carbon (e.g., Thompson et al.
-1968; Thompson 1972; Bonatti et al.
-1974; Bonatti et al.
-1980; Trommsdorff et al.
-1980; Morgan and Milliken 1996; Schrenk et al.
-2013).
+For example, fresh mid-ocean ridge basalt (MORB) is estimated to contain ~0.15 wt% CO2, but during alteration and seafloor weathering the CO2 content of the upper 600 m of the oceanic crust may increase to 3.26 wt%, and the average CO2 gain by the entire crustal section is elevated to 0.35 wt% .
+Abundant carbonate veins in oceanic serpentinites are observed in core, dredge hauls, and ophiolites, indicating that altered oceanic mantle rocks likewise contain significant carbon (e.g.,       ).
 The most common source of reduced carbon is buried organic material found in sedimentary lithologies.
 Carbon in sedimentary basins is present in a variety of species and phases that span a substantial range of redox states.
-Familiar organic compounds found in sedimentary basins include the fossil fuels such as coal, petroleum, and natural gas, which typically have their origins in the transformation of detrital organic remains of life (Sephton and Hazen 2013).
+Familiar organic compounds found in sedimentary basins include the fossil fuels such as coal, petroleum, and natural gas, which typically have their origins in the transformation of detrital organic remains of life .
 The biomolecules that accumulate with mineral grains in sediments and sedimentary rocks are those compounds that are most resistant to microbial modification.
 The most refractory compounds are membrane molecules of microbes and lignin molecules from plants, which can be transformed into petroleum or coal, respectively, if the subsurface geologic conditions are conducive.
 Through a complex series of reactions, these compounds may transform to graphite during crustal metamorphism.
 This graphite can be an important source for carbon in metamorphic fluids.
-Condensed zero-valent and reduced carbon occurs in mantle rocks in a variety of forms (Mathez et al.
-1984).
-It is found as a free phase as graphite or diamond, or as carbide minerals such as moissanite, cementite or other Fe–C compounds (Dasgupta and Hirschmann 2010; Shiryaev et al.
-2011; Hazen et al.
-2013).
-Small amounts of carbon may dissolve in mantle minerals (Tingle and Green 1987; Tingle et al.
-1988; Keppler et al.
-2003; Shcheka et al.
-2006; Ni and Keppler 2013) or coat grain surfaces (Mathez 1987; Pineau and Mathez 1990; Mathez and Mogk 1998).
+Condensed zero-valent and reduced carbon occurs in mantle rocks in a variety of forms .
+It is found as a free phase as graphite or diamond, or as carbide minerals such as moissanite, cementite or other Fe–C compounds .
+Small amounts of carbon may dissolve in mantle minerals  or coat grain surfaces .
 External carbon sources.
 The carbon in a system experiencing fluid-mineral interaction need not be solely internally derived from the local rock host.
 Fluids carrying carbon from external sources may mix with an otherwise carbon-free fluid.
 At least at depths above the brittle-ductile transition, meteoric waters drawn downward by hydrothermal or metamorphic circulation may carry atmosphere-derived carbon.
 Magmas also represent a potentially important carbon source.
-Carbon in volcanic gases typically occurs as CO2; reduced species such as CO and CH4 are very low in abundance (Symonds et al.
-1994; Burton 2013).
-Pre-eruptive CO2 contents of the main types of mafic magmas are 2000–7000 ppm in ocean island basalts and ~1500 ppm in normal MORB (Marty and Tolstikhin 1998; Gerlach et al.
-2002; Oppenheimer 2003; Dasgupta 2013; Ni and Keppler 2013).
-Andesite exhibits a wide range of pre-eruptive CO2, from below detection to 2500 ppm (Wallace 2005), and CO2 is typically below detection in silicic magmas such as dacites and rhyolites (Oppenheimer 2003).
-Carbonatite and carbonated silicate magmas, though rare, carry substantial carbon and may act as a carbon source where they trigger production of more common magmas (Dasgupta and Hirschmann 2006; Jones et al.
-2013).
+Carbon in volcanic gases typically occurs as CO2; reduced species such as CO and CH4 are very low in abundance .
+Pre-eruptive CO2 contents of the main types of mafic magmas are 2000–7000 ppm in ocean island basalts and ~1500 ppm in normal MORB .
+Andesite exhibits a wide range of pre-eruptive CO2, from below detection to 2500 ppm , and CO2 is typically below detection in silicic magmas such as dacites and rhyolites .
+Carbonatite and carbonated silicate magmas, though rare, carry substantial carbon and may act as a carbon source where they trigger production of more common magmas .
 Although inferred pre-eruptive carbon contents of the more common magma types are generally low, molecular carbon species are strongly partitioned into the vapor phase when magmas reach saturation.
 This fractionation means that substantial carbon may be lost prior to entrapment of melt inclusions or liberation of volcanic gas, both of which form the basis for estimates of the above volatile abundances.
 In many cases, concentration estimates are therefore simply lower bounds.
 This factor may be particularly important in convergent margins and orogenic belts.
-For example, Blundy et al.
-(2010) proposed early saturation of CO2 and more CO2-rich arc magmas than previously assumed.
+For example,  proposed early saturation of CO2 and more CO2-rich arc magmas than previously assumed.
 The occurrence of magmatic calcite inclusions in granitoids is a test of this idea.
-Audétat et al.
-(2004) describe magmatic calcite inclusions in quartz and apatite in a quartz monzodioritic dike at Santa Rita, New Mexico.
-Calcite on the liquidus in granitic systems requires crystallization at depths of at least 10 km (Swanson 1979; Audétat et al.
-2004), at conditions of high CO2 partial pressure.
+describe magmatic calcite inclusions in quartz and apatite in a quartz monzodioritic dike at Santa Rita, New Mexico.
+Calcite on the liquidus in granitic systems requires crystallization at depths of at least 10 km , at conditions of high CO2 partial pressure.
 The Santa Rita example suggests that, at least locally, very high carbon contents may in fact occur in felsic systems.
-Rare carbonate-bearing scapolite that is rich in meionite component [Ca4Al6Si6O24(CO3)] has been reported from a range of volcanic and plutonic rock types (Goff et al.
-1982; Mittwede 1994; Smith et al.
-2008).
-Carbon contents may also be particularly high in alkaline and peralkaline magmatic systems due to elevated carbonate solubility (Koster van Groos and Wyllie 1968).
-Alkali carbonate/bicarbonate-rich fluids have been reported from numerous granitic pegmatites (Anderson et al.
-2001; Sirbescu and Nabelek 2003a, b; Thomas et al.
-2006, 2011).
+Rare carbonate-bearing scapolite that is rich in meionite component [Ca4Al6Si6O24(CO3)] has been reported from a range of volcanic and plutonic rock types .
+Carbon contents may also be particularly high in alkaline and peralkaline magmatic systems due to elevated carbonate solubility (Koster van ).
+Alkali carbonate/bicarbonate-rich fluids have been reported from numerous granitic pegmatites ( a, b;  2011).
 Evidence is chiefly the presence of fluid and melt inclusions containing carbonate daughter minerals such as nahcolite (Na2CO3), zabuyelite (Li2CO3), and even potassium carbonate (K2CO3).
-In a detailed study, Thomas et al.
-(2011) report evidence for pegmatite emplacement from a three-phase fluid system of hydrous carbonate melt, a hydrous carbonate-saturated silicate melt, and CO2-rich vapor.
+In a detailed study,  report evidence for pegmatite emplacement from a three-phase fluid system of hydrous carbonate melt, a hydrous carbonate-saturated silicate melt, and CO2-rich vapor.
 Total carbonate species concentrations in the vapor phase may exceed 30–40 wt%.
 These observations demonstrate that magmatic systems represent an important, though highly variable, source of carbon in the geologic environment through which they pass.
-Finally, mantle degassing may provide an important source of carbon (Burton 2013; Dasgupta 2013).
+Finally, mantle degassing may provide an important source of carbon .
 Evidence for mantle fluids in deep environments is typically obscured by more voluminous fluids sourced from crustal rocks.
-However, fluid inclusions in mantle xenoliths record evidence for reduced carbon species, including CH4, CO, and, potentially, COS (Melton et al.
-1972; Melton and Giardini 1974; Murck et al.
-1978; Bergman and Dubessy 1984; Tomilenko et al.
-1998).
-In addition, carbonate-metasomatized shear zones of the deep crust display mantle-like C, Sr, and He isotope ratios, leading to the inference that components of the fluids that deposited the carbonates were initially of mantle origin (Baratov et al.
-1984; Lapin et al.
-1987; Stern and Gwinn 1990; Dahlgren et al.
-1993; Dunai and Touret 1993; Oliver et al.
-1993; Wickham et al.
-1994).
+However, fluid inclusions in mantle xenoliths record evidence for reduced carbon species, including CH4, CO, and, potentially, COS .
+In addition, carbonate-metasomatized shear zones of the deep crust display mantle-like C, Sr, and He isotope ratios, leading to the inference that components of the fluids that deposited the carbonates were initially of mantle origin .
 OXIDIZED CARBON IN AQUEOUS FLUIDS AT HIGH P AND T
 A vast body of experimental and theoretical work has shown that in pure H2O at ambient conditions and along the liquid-vapor saturation curve, species of oxidized carbon dissolved in pure H2O include carbonate ion (CO3-2), bicarbonate ion (HCO3-), and dissolved CO2 (CO2aq; Fig.
 1).
 A fourth possible species, “true” carbonic acid (H2CO3; Fig.
-1), has been isolated as a pure gas and solid (e.g., Terlouw et al.
-1987), but decomposes rapidly in H2O, such that the reaction
+1), has been isolated as a pure gas and solid (e.g., ), but decomposes rapidly in H2O, such that the reaction
 H2CO3 = CO2aq + H2O	(1)
-proceeds far to the right; for example, at room T and P, H2CO3 concentration is about ~0.1% of CO2aq (Loerting et al.
-2000; Ludwig and Kornath 2000; Tossell 2006; England et al.
-2011).
-Detection of these low concentrations of H2CO3 in aqueous solutions has now been convincingly achieved (Falcke and Eberle 1990; Soli and Byrne 2002; Adamczyk et al.
-2009).
+proceeds far to the right; for example, at room T and P, H2CO3 concentration is about ~0.1% of CO2aq .
+Detection of these low concentrations of H2CO3 in aqueous solutions has now been convincingly achieved .
 Nevertheless, because of its very low concentration, geochemists conventionally treat the carbon present in both hydrated neutral species as CO2aq.
 The predominant oxidized carbon species interact via two stepwise dissociation reactions.
 The first involves generation of bicarbonate from CO2aq and a solvent H2O molecule:
@@ -150,68 +103,62 @@ But dissolved oxidized carbon chemistry will vary strongly with geologic environ
 Aqueous fluids at high P and T
 Experimental constraints on homogeneous systems.
 Whereas there is a voluminous literature on aqueous carbonate ion speciation at ambient conditions and along the liquid-vapor saturation curve of H2O, there have been few direct studies of homogenous aqueous carbonate systems at high P and T. This lack is chiefly due to the experimental challenges posed by working at these conditions.
-Read (1975) appears to have been the first experimentalist to examine aqueous carbonate equilibria at pressures greater than a few hundred atmospheres.
-Extending earlier work by Ellis (1959a) and Ryzhenko (1963), he used electrical conductivity measurements to 250 °C and 0.2 GPa (= 2 kbar) to determine the equilibrium constant for reaction (2):
+appears to have been the first experimentalist to examine aqueous carbonate equilibria at pressures greater than a few hundred atmospheres.
+Extending earlier work by Ellis (1959a) and  he used electrical conductivity measurements to 250 °C and 0.2 GPa (= 2 kbar) to determine the equilibrium constant for reaction (2):
 (4)
 The results revealed that K rises with increasing P at constant T, but drops with increasing T at constant P. Thus, reaction (2) is driven to the right on isothermal compression, but to the left on isobaric heating.
-Kruse and Franck (1982) compressed KHCO3 solutions at up to 300 °C and 0.050 GPa, and used Raman spectroscopy to show that CO3-2 is favored relative to HCO3-.
-Frantz (1998) used a similar approach on 1 molal K2CO3 and KHCO3 solutions.
+ compressed KHCO3 solutions at up to 300 °C and 0.050 GPa, and used Raman spectroscopy to show that CO3-2 is favored relative to HCO3-.
+used a similar approach on 1 molal K2CO3 and KHCO3 solutions.
 He studied solutions along two isobars of 0.1 and 0.2 GPa, to 550 °C.
 When adjusted for Raman scattering cross-section ratios, the results support isobaric decreases in HCO3- relative to CO2aq and CO3-2 (Fig.
 3).
-Martinez et al.
-(2004) studied 0.5 and 2 m K2CO3 solutions in a diamond cell.
+studied 0.5 and 2 m K2CO3 solutions in a diamond cell.
 Raman spectra in runs to 400 °C and 0.03 GPa indicated the presence of CO3-2, but not HCO3-.
 They inferred that HCO3- stability decreases significantly at high pressure.
 Thus, it appears that bicarbonate ion becomes less stable relative to CO2aq and carbonate as P and T rise to crustal and mantle conditions.
 None of the spectroscopic studies yielded evidence for metal-carbonate ion pairing, although the solutions were relatively dilute.
-In addition, no evidence has been found for carbonic acid, consistent with results at ambient conditions (e.g., Davis and Oliver 1972); however, Falcke and Eberle (1990) found evidence of H2CO3 at high ionic strengths.
-The significantly higher ionic strengths of high P–T solutions (Manning 2004) means that this species may yet be found at these conditions.
+In addition, no evidence has been found for carbonic acid, consistent with results at ambient conditions (e.g., ); however,  found evidence of H2CO3 at high ionic strengths.
+The significantly higher ionic strengths of high P–T solutions  means that this species may yet be found at these conditions.
 Finally, there is not yet any evidence of other species in high P–T aqueous solutions.
 For example, it has been suggested that dicarbonate ion (C2O5-2) may be produced by reaction of carbonate ion with H2O:
 2CO3-2 + H2O = C2O5-2 + 2OH-	(5)
-(Zeller et al.
-2005).
+.
 Although dicarbonate ions may form when CO2 dissolves into carbonate melts via
 CO2 + CO3-2 = C2O5-2	(6)
-(Claes et al.
-1996), there is as yet no evidence for this species in relevant geological fluids at crustal or mantle conditions.
+, there is as yet no evidence for this species in relevant geological fluids at crustal or mantle conditions.
 Experimental studies of carbonate mineral solubility in H2O.
 The most voluminous source of information on oxidized carbon species in aqueous solutions comes from studies of the solubility of carbonate minerals in H2O and mixed solvents.
-In general, experimental work has focused on the solubility of divalent metal carbonates, chiefly calcite, because carbonate minerals involving monovalent or trivalent cations are highly soluble or require extremely acidic pH, respectively (Rimstidt 1997).
+In general, experimental work has focused on the solubility of divalent metal carbonates, chiefly calcite, because carbonate minerals involving monovalent or trivalent cations are highly soluble or require extremely acidic pH, respectively .
 The solubility of carbonate minerals in H2O is strongly dependent on pH, regardless of P and T (Fig.
 4).
 However, when carbonate minerals dissolve in initially pure H2O, the solute products shift pH to a value that is more alkaline than neutral pH at the conditions of interest.
 Hence, all carbonate minerals contribute alkalinity to crustal and mantle fluids.
 We focus first on calcite in H2O, then other minerals in H2O, then carbonate minerals in more complex solutions.
-Numerous studies investigated calcite solubility in H2O (CO2-free or equilibrated with Earth’s atmosphere) at low P and T along the H2O liquid-vapor saturation curve and up to ~0.1 GPa (Wells 1915; Frear 1929; Schloemer 1952; Morey 1962; Segnit 1962; Plummer 1982).
+Numerous studies investigated calcite solubility in H2O (CO2-free or equilibrated with Earth’s atmosphere) at low P and T along the H2O liquid-vapor saturation curve and up to ~0.1 GPa .
 The results showed that calcite dissolution in pure H2O is congruent, and that solubility decreases with increasing temperature isobarically and along the H2O boiling curve—the well-known “reverse solubility” effect for calcite.
 There are only 3 studies of calcite solubility in H2O at higher P and T appropriate for metamorphism and mantle fluids (Fig.
 5).
-Walther and Long (1986) reported initial results at 0.1–0.3 GPa, 300–600 °C.
+reported initial results at 0.1–0.3 GPa, 300–600 °C.
 They observed that solubility decreased with increasing temperature at 0.1–0.2 GPa; however at 0.3 GPa solubility was constant or increased slightly with temperature.
-Fein and Walther (1989) later showed that the solubilities of Walther and Long (1986) were too low because they used less accurate post-experiment analytical procedures.
+later showed that the solubilities of  were too low because they used less accurate post-experiment analytical procedures.
 However, the revised results yield similar solubility trends at 0.2 GPa (Fig.
 5).
-Caciagli and Manning (2003) extended these studies to deep crustal and mantle pressures (Fig.
+extended these studies to deep crustal and mantle pressures (Fig.
 5).
 Their data confirm that at high pressure calcite exhibits an isobaric rise in solubility with temperature.
-Calcite transforms to aragonite at high pressure (Boettcher 1968; Johannes 1971); no studies have yet investigated aragonite solubility directly, though Caciagli and Manning (2003) extrapolated their results into the aragonite stability field.
-Lennie (2005) found that, at ambient T, ikaite (CaCO3•6H2O) was stable with respect to calcite + H2O; however, solubility data were not obtained.
+Calcite transforms to aragonite at high pressure ; no studies have yet investigated aragonite solubility directly, though  extrapolated their results into the aragonite stability field.
+found that, at ambient T, ikaite (CaCO3•6H2O) was stable with respect to calcite + H2O; however, solubility data were not obtained.
 Although solubilities of a wide range of metal carbonate minerals in H2O have been investigated at low pressures and temperatures (below 0.1 GPa), high-pressure studies are rare.
-Sanchez-Valle et al.
-(2003) combined hydrothermal diamond anvil cell (HDAC) methods with synchrotron X-ray fluorescence to determine SrCO3 solubility in H2O to 3.6 GPa and 525 °C.
+combined hydrothermal diamond anvil cell (HDAC) methods with synchrotron X-ray fluorescence to determine SrCO3 solubility in H2O to 3.6 GPa and 525 °C.
 Strontianite was used because a high atomic number was required to obtain sufficiently favorable detection limits.
 Heating/compression runs in the HDAC revealed that strontianite solubility increases with pressure and temperature.
 Maximum solubility at 3.3–3.6 GPa and 475–525 °C was ~0.2 mol/kg H2O.
-Siderite (FeCO3) dissolution in H2O has been studied to 400 °C 1.13 GPa in the HDAC (Marocchi et al.
-2011), but the acquired Raman spectra were not used to determine quantitative solubility values.
+Siderite (FeCO3) dissolution in H2O has been studied to 400 °C 1.13 GPa in the HDAC , but the acquired Raman spectra were not used to determine quantitative solubility values.
 The paucity of data on the dissolution of simple carbonate minerals in pure H2O at the high pressures presents serious challenges for testing thermodynamic models of carbonate ions and mineral solubility (see below).
-However, the hydrothermal piston–cylinder methods (e.g., Caciagli and Manning 2003) in parallel with hydrothermal diamond anvil cell methods (Sanchez-Valle et al.
-2003) hold promise for generating such data in the near future.
+However, the hydrothermal piston–cylinder methods (e.g., ) in parallel with hydrothermal diamond anvil cell methods  hold promise for generating such data in the near future.
 Experimental studies of calcite solubility in NaCl–H2O.
-Studies at P < 0.1 GPa show that calcite solubility in H2O increases with addition of NaCl (Ellis 1963; Malinin 1972).
-Fein and Walther (1989) extended these studies to higher pressure of 0.2 GPa and temperature up to 600 °C.
+Studies at P < 0.1 GPa show that calcite solubility in H2O increases with addition of NaCl .
+extended these studies to higher pressure of 0.2 GPa and temperature up to 600 °C.
 They showed that with addition of up to 0.1 m NaCl, calcite solubility increased consistent with formation of CaCl+ in solution (Fig.
 6).
 Newton and Manning (2002a) conducted experiments on calcite solubility in H2O–NaCl at 600–900 °C, 1.0 GPa, and to highly concentrated NaCl solutions approaching halite saturation.
@@ -226,23 +173,23 @@ Experiments at 0.6, 1.0, and 1.4 GPa revealed a slight increase with pressure (~
 Moreover, Newton and Manning’s solubility data display a simple dependence on the square of the NaCl mole fraction.
 This result has important implications for the nature of carbon and other solutes.
 An increase in solubility over the entire investigated range shows that the solute species are not hydrous; if they were, their concentrations would be required to decline with rising NaCl in concert with decreasing H2O activity.
-These concentrated solutions behave in a manner similar to molten salts (Newton and Manning 2002a, 2005; Tropper and Manning 2007), in which the activity of NaCl is proportional to the square of its mole fraction (Aranovich and Newton 1996), and solute mixing is nearly ideal.
+These concentrated solutions behave in a manner similar to molten salts (a, 2005; ), in which the activity of NaCl is proportional to the square of its mole fraction , and solute mixing is nearly ideal.
 This result led to the inference that the dissolution reaction, written in terms of predominant species, was
 CaCO3 + NaCl = CaCl+ + NaCO3-	(8)
 calcite
-Further discussion of the chemistry of saline brines can be found in Newton and Manning (2010).
+Further discussion of the chemistry of saline brines can be found in .
 Experimental studies of calcite solubility in CO2–H2O.
-Miller (1952), Ellis (1959b), Sharp and Kennedy (1965), and Malinin and Kanukov (1972) showed that, at low fixed P and T, calcite solubility in H2O increases to a maximum and then declines with increasing XCO2.
-Fein and Walther (1987) extended these studies to 0.2 GPa, 550 °C, and found similar behavior.
+Ellis (1959b),  and  showed that, at low fixed P and T, calcite solubility in H2O increases to a maximum and then declines with increasing XCO2.
+extended these studies to 0.2 GPa, 550 °C, and found similar behavior.
 At 0.2 GPa, calcite solubility reaches a maximum at XCO2 = 0.025 to 0.05 and then decreases (Fig.
 8).
 Fein and Walther suggested that this solubility behavior arises from the tradeoff between increasing formation of bicarbonate and decreasing H2O activity as XCO2 was increased.
 Thermodynamics of oxidized carbon in dilute aqueous systems.
 Two fundamentally different approaches to treat oxidized dissolved carbon species have evolved in the literature, depending on the application.
-The first approach, which could be termed a component approach, is commonly used for the treatment of metamorphic fluids and fluids in the mantle (Anderson and Crerar 1993; Zhang and Duan 2009).
-It treats CO2 as a component for which the partial molal Gibbs free energy () is expressed by
+The first approach, which could be termed a component approach, is commonly used for the treatment of metamorphic fluids and fluids in the mantle .
+It treats CO2 as a component for which the partial molal Gibbs free energy  is expressed by
 (9)
-where the first term on the right-hand side represents the standard partial molal Gibbs energy of CO2      ().
+where the first term on the right-hand side represents the standard partial molal Gibbs energy of CO2      .
 The standard state is the hypothetical ideal gas at the temperature of interest and 1 atmosphere.
 The second term on the right-hand side represents the connection from the standard state to the real fluid.
 In this term,  represents the fugacity coefficient,  the mole fraction and  the partial pressure of CO2, all at the pressure and temperature of interest.
@@ -250,71 +197,58 @@ This approach ignores the detailed speciation of the dissolved carbon dioxide.
 There is no concept of pH in the model.
 Advantages of this approach are that the first term on the right-hand side of Equation (9) can be easily calculated from experimental data and statistical mechanics, and that it permits consideration of the full compositional range along the CO2–H2O binary (see below).
 Most of the labor involved in this approach is associated with evaluating the second term on the right-hand side.
-Specifically, very intensive experimental and theoretical efforts are needed to derive the fugacity coefficients for pure fluids and mixtures of fluids (Jacobs and Kerrick 1981b; Kerrick and Jacobs 1981; Holland and Powell 1991; Zhang et al.
-2007; Zhang and Duan 2009).
+Specifically, very intensive experimental and theoretical efforts are needed to derive the fugacity coefficients for pure fluids and mixtures of fluids (b;    ).
 Without any experimental data it is difficult to implement this approach.
 The second approach could be called the speciation approach, commonly used in the aqueous geochemistry of hydrothermal fluids.
 Here, all known dissolved carbon species are treated explicitly and the dependence on pH and concentrations of other components can be evaluated.
-For example, for the dissolved carbonate ion, we treat the partial molal Gibbs free energy of formation of the ion                    () by defining
+For example, for the dissolved carbonate ion, we treat the partial molal Gibbs free energy of formation of the ion                     by defining
 (10)
 where  represents the standard partial molal free energy of formation at reference pressure and temperature, and  and  represent the activity coefficient and molality, respectively, of the aqueous carbonate ion.
 Here the standard state is the hypothetical 1.0 M solution referenced to infinite dilution at the temperature and pressure of interest.
 The advantage of this approach is that ions are treated explicitly, enabling pH variations to be analyzed as a result of interactions with silicate mineral assemblages that control activity ratios such as  a_(〖Ca〗^(2+) )⁄(a_(H^+)^2 ).
 Disadvantages of this approach are that only species whose existence is known can be included in the model, and its applicability is limited to H2O-rich solutions and conditions where H2O solvent properties are well known.
 The most difficult and uncertain aspect of evaluating Equation (10) is the calculation of the first term on the right-hand side: the standard Gibbs free energy of formation of the ion.
-Considerable effort has been expended in developing methods to calculate this term for many types of aqueous species including metal complexes and biomolecules (Shock and Helgeson 1988, 1990; Shock et al.
-1989, 1997a, 1997b; Shock 1995; Amend and Helgeson 1997; Sverjensky et al.
-1997; Plyasunov and Shock 2001; Richard 2001; Dick et al.
-2006).
-In contrast, the second term on the right-hand side can be approximated, at least for water-rich fluids, by the extended Debye–Hückel equation (Helgeson et al.
-1981), which can be used to evaluate the aqueous ion activity coefficients.
+Considerable effort has been expended in developing methods to calculate this term for many types of aqueous species including metal complexes and biomolecules ( 1990;  1997a, 1997b;      ).
+In contrast, the second term on the right-hand side can be approximated, at least for water-rich fluids, by the extended Debye–Hückel equation , which can be used to evaluate the aqueous ion activity coefficients.
 Experimental and theoretical studies relevant to these two approaches are summarized below.
 As an example of the species approach we focus on the aqueous CO3-2 ion.
 The standard Gibbs free energy of formation of the ion at elevated pressure and temperature can be calculated from
 (11)
-where  again represents the free energy at the reference pressure and temperature (Shock et al.
-1997b).
-The function f(P,T) is a complex function of equation-of-state coefficients of the carbonate ion associated with the non-solvation part of the Gibbs free energy change, and  represents the equation-of-state coefficient for the carbonate ion associated with the solvation part of the Gibbs free energy change, which also depends on the dielectric constant of pure water ().
-Equation-of-state coefficients have been developed for hundreds of aqueous species and are part of the data file for the program SUPCRT92 (Johnson et al.
-1992).
+where  again represents the free energy at the reference pressure and temperature (b).
+The function f(P,T) is a complex function of equation-of-state coefficients of the carbonate ion associated with the non-solvation part of the Gibbs free energy change, and  represents the equation-of-state coefficient for the carbonate ion associated with the solvation part of the Gibbs free energy change, which also depends on the dielectric constant of pure water .
+Equation-of-state coefficients have been developed for hundreds of aqueous species and are part of the data file for the program SUPCRT92 .
 Equation (11) emphasizes that the dielectric constant at pressure and temperature is a critical parameter for evaluating the standard Gibbs energies of aqueous species at high pressures and temperatures.
-However, extensive sets of experimental values of  have only been measured to about 0.5 GPa and 550 °C (Heger et al.
-1980).
-A synthesis of these values together with estimates from the Kirkwood equation (Pitzer 1983) is incorporated in SUPCRT92 which enables prediction to 0.5 GPa and 1000 °C (Shock et al.
-1992).
-A more recent synthesis, also based on the Kirkwood equation has been extrapolated to 1.0 GPa and 1,200 K (Fernandez et al.
-1997).
+However, extensive sets of experimental values of  have only been measured to about 0.5 GPa and 550 °C .
+A synthesis of these values together with estimates from the Kirkwood equation  is incorporated in SUPCRT92 which enables prediction to 0.5 GPa and 1000 °C .
+A more recent synthesis, also based on the Kirkwood equation has been extrapolated to 1.0 GPa and 1,200 K .
 The limitation of SUPCRT92 calculations to 0.5 GPa has long been a severe roadblock to the application of quantitative aqueous geochemistry to deep crustal and mantle conditions.
 Methods for making calculations at higher pressures up to 3.0 GPa are summarized below.
-Much progress has been made in recent years by extrapolating experimental solubilities and individual equilibrium constants to pressures substantially greater than the 0.5 GPa limitation of SUPCRT92 (Manning 1994, 1998, 2004; Caciagli 2003; Dolejs and Manning 2010).
+Much progress has been made in recent years by extrapolating experimental solubilities and individual equilibrium constants to pressures substantially greater than the 0.5 GPa limitation of SUPCRT92 ( 1998, 2004;  ).
 Empirical extrapolations can be carried out by taking advantage of the approximate linearity of many equilibrium constants when plotted in terms of the logK versus the logH2O at a given temperature, where H2O is the density of water.
 An example for the solubility product of calcite is shown in Figure 9.
 Extrapolation of equilibrium constants as in Figure 9, together with other aqueous phase equilibria involving dissolved oxidized carbon species enables prediction of solubility and aqueous speciation involving aqueous ions at elevated pressure and temperature without using Equations (10) and (11).
-Evaluation of the aqueous ion activity coefficients in Equation (10) at pressures and temperatures to 0.5 GPa and 550 °C is carried out using the extended Debye–Hückel equation for NaCl-bearing fluids (Helgeson et al., 1981).
+Evaluation of the aqueous ion activity coefficients in Equation (10) at pressures and temperatures to 0.5 GPa and 550 °C is carried out using the extended Debye–Hückel equation for NaCl-bearing fluids .
 For example, the activity coefficient of the carbonate ion is calculated according to
 (12)
-where Z refers to the charge on the carbonate ion (-2), and refer to Debye–Hückel coefficients that are properties of pure water (Helgeson and Kirkham 1974a, b);  refers to the ion-size parameter for NaCl solutions, I refers to the ionic strength, and  represents the extended term parameter for NaCl solutions.
-Using smoothed values of the dielectric constant from Helgeson and Kirkham (1974a), Franck et al.
-(1990), and Fernandez et al.
-(1997), it is possible to obtain estimates of  and (Fig.
+where Z refers to the charge on the carbonate ion (-2), and refer to Debye–Hückel coefficients that are properties of pure water (a, b);  refers to the ion-size parameter for NaCl solutions, I refers to the ionic strength, and  represents the extended term parameter for NaCl solutions.
+Using smoothed values of the dielectric constant from Helgeson and Kirkham (1974a),  and  it is possible to obtain estimates of  and (Fig.
 10).
 Values of the extended term parameter  are subject to substantial uncertainty at elevated pressures and temperatures, but can be estimated from correlation with the density of water to give the preliminary shown in Figure 11.
 Taken together, equilibrium constants such as those shown in Figure 10 and Debye–Hückel parameters such as those shown in Figures 10 and 11 can be used to estimate the solubilities of carbonate minerals in water.
 As an example, the solubility of calcite is shown in Figure 12 at 500 °C as a function of pressure.
-The predicted solubility of calcite can be compared with a variety of published experimental studies (Walther 1986; Fein 1989; Caciagli 2003).
-It can be seen that the predicted curve agrees well with the data from Fein and Walther (1989), but is higher than the data from Walther and Long (1986), and is in agreement with the lowest solubilities reported by Caciagli and Manning (2003).
-The steep increase in solubility between 0.1 and 0.5 GPa noted by Caciagli and Manning (2003) tapers off to a much slower rate of increase with pressure approaching 3.0 Gpa at 500 °C.
+The predicted solubility of calcite can be compared with a variety of published experimental studies .
+It can be seen that the predicted curve agrees well with the data from  but is higher than the data from  and is in agreement with the lowest solubilities reported by .
+The steep increase in solubility between 0.1 and 0.5 GPa noted by  tapers off to a much slower rate of increase with pressure approaching 3.0 Gpa at 500 °C.
 In this range of pressures, the predominant reaction controlling the solubility of calcite is given by
 CaCO3 + H2O = Ca+2 + 2OH- + CO2aq	(13)
 calcite
 The calculated pH values vary from 7.8 at 0.1 GPa to 5.4 at 3.0 GPa, yet less than 5% of the dissolved carbon is present as HCO3- and CO3-2 in the fluids.
-It should be emphasized that the theoretical curve shown in Figure 12 is completely predicted based on the established standard Gibbs free energy of formation of calcite (Berman 1988), the estimated equilibrium constants for
+It should be emphasized that the theoretical curve shown in Figure 12 is completely predicted based on the established standard Gibbs free energy of formation of calcite , the estimated equilibrium constants for
 H2O = H+ + OH-	(14)
 and Reactions (2), (3), and (13), extrapolated to elevated pressures as described above with the density model and the estimated aqueous ion activity coefficients discussed above.
-As noted above, the extrapolations for the logK values were based on SUPCRT92 predictions to 0.5 GPa using published equations of state for aqueous CO2, HCO3-, and CO3-2 (Shock et al.
-1989, 1997).
+As noted above, the extrapolations for the logK values were based on SUPCRT92 predictions to 0.5 GPa using published equations of state for aqueous CO2, HCO3-, and CO3-2 ( 1997).
 However, the density extrapolation for the water dissociation reaction (Eqn.
-13) was based on an independent summary of experimental values (Marshall and Franck 1981).
+13) was based on an independent summary of experimental values .
 CO2–H2O mixing and miscibility
 Above a temperature of about 350 °C and pressures higher than the H2O liquid–vapor saturation curve, H2O and CO2 are fully miscible (Fig.
 13).
@@ -325,72 +259,54 @@ Experimental and theoretical constraints on the CO2–H2O binary.
 The mixing of CO2 and H2O is highly nonideal (Eqn.
 9), so considerable effort has been dedicated to generating experimental and theoretical constraints for use in petrology.
 Experimental studies take two approaches.
-A variety of approaches has been used to obtain direct measurement of volumes of mixing in homogeneous CO2–H2O fluids (Todheide and Franck 1963; Takenouchi and Kennedy 1964; Sterner and Bodnar 1991; Seitz and Blencoe 1999).
+A variety of approaches has been used to obtain direct measurement of volumes of mixing in homogeneous CO2–H2O fluids .
 Experimental challenges generally limit these studies to low pressure.
-Studies utilizing fluid inclusions hold promise for extending PVT measurements to higher pressures (e.g., Sterner and Bodnar 1991; Frost and Wood 1997).
+Studies utilizing fluid inclusions hold promise for extending PVT measurements to higher pressures (e.g.,  ).
 An alternative is study of displacement of mineral equilibria as a function of fluid composition in mixed volatile systems.
-Building on pioneering work by Greenwood, Metz, Skippen, and co-workers (e.g., Greenwood 1967; Metz and Trommsdorff 1968; Skippen 1971), a number of investigators have provided high-pressure constraints on the mixing properties of the CO2–H2O binary (Eggert and Kerrick 1981; Jacobs and Kerrick 1981a; Aranovich and Newton 1999).
-Theoretical approaches also offer promise (Brodholt and Wood 1993; Destrigneville et al.
-1996).
+Building on pioneering work by Greenwood, Metz, Skippen, and co-workers (e.g.,   ), a number of investigators have provided high-pressure constraints on the mixing properties of the CO2–H2O binary ( a; ).
+Theoretical approaches also offer promise .
 The experimental data and theoretical results serve as constraints for equations of state of CO2–H2O fluid mixtures.
 The literature on this topic is so large that even its review papers are too numerous to list completely.
-Useful compilations, contributions and critiques can be found in Ferry and Baumgartner (1987), Duan et al.
-(1996), and Gottschalk (2007).
+Useful compilations, contributions and critiques can be found in   and .
 CO2–H2O–NaCl and other complex fluids.
-Addition of NaCl to CO2–H2O yields an extensive region of immiscibility in the ternary system (e.g., Heinrich 2007).
-Experimental studies in this system were reviewed by Liebscher (2007).
-Extension of low-P experiments (Gehrig et al.
-1979; Anovitz et al.
-2004; Aranovich et al.
-2010) to 0.5 GPa and beyond (Kotelnikov and Kotelnikova 1990; Johnson 1991; Frantz et al.
-1992; Joyce and Holloway 1993; Gibert et al.
-1998; Shmulovich and Graham 1999, 2004) indicates the presence of a miscibility gap between low density CO2–H2O rich vapor and NaCl–H2O–rich brine at a wide range of crustal and mantle P and T. Experimental studies on CaCl2–CO2–H2O yield similar results (Zhang and Frantz 1989; Shmulovich and Graham 2004).
-Equations of state for ternary system have been constructed based on experiment and theory (Bowers and Helgeson 1983a, b; Duan et al.
-1995), allowing computation of simple phase equilibria involving one or two fluid phases.
+Addition of NaCl to CO2–H2O yields an extensive region of immiscibility in the ternary system (e.g., ).
+Experimental studies in this system were reviewed by .
+Extension of low-P experiments  to 0.5 GPa and beyond (      2004) indicates the presence of a miscibility gap between low density CO2–H2O rich vapor and NaCl–H2O–rich brine at a wide range of crustal and mantle P and T. Experimental studies on CaCl2–CO2–H2O yield similar results .
+Equations of state for ternary system have been constructed based on experiment and theory (a, b; ), allowing computation of simple phase equilibria involving one or two fluid phases.
 Figure 14a shows an example of the isothermal, isobaric ternary at 0.9 GPa and 800 °C.
 A single, miscible fluid phase occurs in the H2O-rich portion of the system.
 Phase separation occurs at < 65 mol% H2O, yielding an NaCl-rich brine and a CO2-rich vapor.
 At these conditions, the brine phase attains halite saturation at ~60 mol% NaCl, whereas halite saturates in the vapor phase at only ~1 mol% NaCl in fluids with > 72 mol% CO2.
 As illustrated in Figure 14b, replacement of NaCl by CaCl2 significantly expands the miscibility gap, all else equal.
 Variations in the topology of the ternary system are illustrated in Figure 15, which shows that the miscibility gap is expected to persist for a wide range of crustal and mantle conditions, even for low-salinity CO2–H2O fluids.
-Newton and Manning (2002) hypothesized that, in the presence of calcite, H2O–NaCl fluids may coexist with a hydrous, saline CaCO3 liquid at 800–1000 °C, 1.0 GPa (Fig.
+hypothesized that, in the presence of calcite, H2O–NaCl fluids may coexist with a hydrous, saline CaCO3 liquid at 800–1000 °C, 1.0 GPa (Fig.
 16).
 In general, extensive immiscibility in the NaCl–CO2–H2O ternary system has fundamental importance for carbon transport in the crust and mantle.
-It requires that CO2 is largely partitioned into a low-density vapor phase that may move separately from a dense, saline brine (Touret 1985; Skippen and Trommsdorff 1986; Trommsdorff and Skippen 1986; Newton et al.
-1998; Heinrich et al.
-2004).
-Shmulovich et al.
-(2006) reported experimental data and a model for quartz solubility in CO2–H2O fluids containing different salts.
+It requires that CO2 is largely partitioned into a low-density vapor phase that may move separately from a dense, saline brine .
+ reported experimental data and a model for quartz solubility in CO2–H2O fluids containing different salts.
 However, there is currently insufficient data to constrain models that include the properties of ternary fluids in this system and ionic species.
-Though preliminary models have been constructed (e.g., Duan et al.
-1995), more accurate and complete data and models are needed for treating complex reactive flow problems in crustal and mantle settings.
+Though preliminary models have been constructed (e.g., ), more accurate and complete data and models are needed for treating complex reactive flow problems in crustal and mantle settings.
 It is generally assumed that non-polar molecules such as CO2 are poor solvents.
 However, it has been hypothesized that CO2-rich fluids are responsible for element metasomatism in several geologic contexts.
 For example, petrologic observations of some granulites require a fluid phase with low H2O activity that is capable of dissolving and redistributing important major and trace elements.
-Newton et al.
-(1980) argued that a silicate melt could not explain observations, and proposed a CO2-rich fluid instead.
-Although supported by evidence from CO2-rich fluid inclusions, petrologic considerations were problematic (Lamb and Valley 1987; Yardley and Valley 1997); the requirement that such a fluid was responsible for metasomatic transfer of presumed low-solubility elements such as alkalis and Th poses further challenges.
-Similar proposals have been made for REE and other element metasomatism in mantle xenoliths (Berkesi et al.
-2012).
-The immiscibility between brine and vapor in the H2O–CO2–NaCl system even at very high P and T potentially solves this conundrum (Touret 1985; Newton et al.
-1998; Newton and Manning 2010).
+argued that a silicate melt could not explain observations, and proposed a CO2-rich fluid instead.
+Although supported by evidence from CO2-rich fluid inclusions, petrologic considerations were problematic ; the requirement that such a fluid was responsible for metasomatic transfer of presumed low-solubility elements such as alkalis and Th poses further challenges.
+Similar proposals have been made for REE and other element metasomatism in mantle xenoliths .
+The immiscibility between brine and vapor in the H2O–CO2–NaCl system even at very high P and T potentially solves this conundrum .
 In this hypothesis, metasomatism takes place in the presence of a two-phase fluid.
-The CO2-rich vapor phase has wetting properties that lead to its selective entrapment as fluid inclusions, while the brine phase is a powerful solvent responsible for observed metasomatism (Gibert et al.
-1998).
+The CO2-rich vapor phase has wetting properties that lead to its selective entrapment as fluid inclusions, while the brine phase is a powerful solvent responsible for observed metasomatism .
 Both phases contain CO2, but partitioning between the phases differs depending on P, T, and composition.
 Such two-phase systems may be more important in crustal metamorphism than has previously been appreciated.
 Mineral solubility and solute structure in CO2–H2O fluids.
-The presence of CO2 strongly influences mineral solubility and material transport by crustal and mantle aqueous fluids (Walther and Helgeson 1980).
+The presence of CO2 strongly influences mineral solubility and material transport by crustal and mantle aqueous fluids .
 Because CO2 is non-polar (Fig.
-1), its addition to H2O lowers the solvent dielectric constant at constant P and T (Walther and Schott 1988; Walther 1992), indicating that dilution of H2O by CO2 reduces the number of H2O molecules that solvate solutes dissolved in the fluid.
-The disruption of aqueous ion hydration by CO2 in high P–T fluids was studied by Evans et al.
-(2009) using EXAFS on RbBr–H2O–CO2 fluids to 579 °C and 0.26 GPa.
+1), its addition to H2O lowers the solvent dielectric constant at constant P and T , indicating that dilution of H2O by CO2 reduces the number of H2O molecules that solvate solutes dissolved in the fluid.
+The disruption of aqueous ion hydration by CO2 in high P–T fluids was studied by  using EXAFS on RbBr–H2O–CO2 fluids to 579 °C and 0.26 GPa.
 The fluids were trapped as synthetic fluid inclusions in corundum.
 In CO2-free solutions, the number of nearest neighbor oxygen atoms (in hydrating H2O molecules) decreased from 6 ± 0.6 to 1.4 ± 0.1 as T increased from 20 to 534 °C, and P to ~0.3 GPa.
-At XCO2 = 0.08, Evans et al.
-(2009) infer decreases of 16 and 22% in the number of nearest-neighbor oxygen atoms at 312 and 445 °C, respectively.
+At XCO2 = 0.08,  infer decreases of 16 and 22% in the number of nearest-neighbor oxygen atoms at 312 and 445 °C, respectively.
 This decrease suggests that CO2 addition leads to decreasing extent of ion hydration.
-Fein and Walther (1987) experimentally investigated calcite solubility in H2O–CO2 fluids to 0.2 GPa and 550 °C.
+ experimentally investigated calcite solubility in H2O–CO2 fluids to 0.2 GPa and 550 °C.
 They found that at constant pressure and temperature, calcite solubility initially increases with increasing XCO2.
 It reaches a maximum at XCO2 = 0.025 to 0.05 and then decreases.
 Taking the calcite dissolution reaction to be
@@ -398,34 +314,30 @@ CaCO3 + 2H+ = Ca+2 + CO2aq + H2O	(15)
 calcite
 they inferred that the initial isothermal, isobaric solubility increase is due to reaction (2) progressing to the right.
 However, H2O activity declines with increasing CO2, and this decline eventually predominates, driving reaction (9) progressively to the left (decreasing solubility) with further increase in CO2.
-Fein and Walther (1987) suggested that the consequence of reduced H2O activity is diminished extent of hydration of Ca+2 in solution.
+suggested that the consequence of reduced H2O activity is diminished extent of hydration of Ca+2 in solution.
 Similar effects lead to a decrease in quartz solubility with increasing XCO2.
-Solute silica does not form complexes with CO2, so changes in H2O activity are chiefly responsible for solubility variations with  at a given P and T. Walther and Orville (1983) suggested that H2O solvation of dissolved silica could be assessed by writing the quartz dissolution reaction as:
+Solute silica does not form complexes with CO2, so changes in H2O activity are chiefly responsible for solubility variations with  at a given P and T.  suggested that H2O solvation of dissolved silica could be assessed by writing the quartz dissolution reaction as:
 SiO2 + nH2O = Si(OH)4•(n-2)H2O	(16)
 quartz 	solute complex
 The equation includes two moles of H2O as hydroxyl and n-2 moles of molecular, solvation H2O per mole of solute silicon.
 At constant P and T, the number of H2O of solvation can be determined from quartz solubility data by the relation .
 Early work lacked sufficient precision to derive the silica hydration state.
-Walther and Orville (1983) concluded that, assuming all silica dissolved as monomeric Si(OH)4, n ≈ 4 (i.e., two molecular H2O of solvation) for many conditions, though uncertainties in n were at least ±1.
-Later studies yielded n of 3.5 or 2 (Shmulovich et al.
-2006; Akinfiev and Diamond 2009), or suggested that n decreases with increasing  at constant P and T (Newton and Manning 2000; Shmulovich et al.
-2001).
-Improved accuracy of this approach has been attained by taking advantage of new and more precise equations of state for H2O–CO2 fluids (e.g., Aranovich and Newton 1999) and by accounting explicitly for aqueous silica polymerization (e.g., Zotov and Keppler 2000, 2002; Newton and Manning 2002b, 2003).
-Newton and Manning (2009) determined quartz solubility in H2O–CO2 fluids at 800 °C and 1.0 GPa.
+concluded that, assuming all silica dissolved as monomeric Si(OH)4, n ≈ 4 (i.e., two molecular H2O of solvation) for many conditions, though uncertainties in n were at least ±1.
+Later studies yielded n of 3.5 or 2 , or suggested that n decreases with increasing  at constant P and T .
+Improved accuracy of this approach has been attained by taking advantage of new and more precise equations of state for H2O–CO2 fluids (e.g., ) and by accounting explicitly for aqueous silica polymerization (e.g.,  2002; b, 2003).
+determined quartz solubility in H2O–CO2 fluids at 800 °C and 1.0 GPa.
 Using experimentally constrained models of H2O activity and mixing of silica monomers and dimers, they determined that n = 4.0 for their experiments and all previous high-quality data at different P and T. They also obtained n = 7.0 for silica dimers.
 These results indicate that, regardless of silica species, there are two solvating H2O molecules per Si in H2O–CO2 fluids for a large range of crustal metasomatic processes.
 This result is somewhat surprising because it implies that the hydration state of aqueous silica does not change over a wide range of XCO2.
 Evidently, over the range of XCO2 studied so far, the decline in silica solubility with increasing CO2 concentration means that there is always sufficient molecular H2O to supply the two H2O molecules associated with each dissolved Si.
-The simple model for silica solubility in mixed H2O–CO2 fluids aids study of crustal mass transfer (e.g., Ferry et al.
-2011).
+The simple model for silica solubility in mixed H2O–CO2 fluids aids study of crustal mass transfer (e.g., ).
 REDUCED CARBON IN AQUEOUS FLUIDS AT HIGH P AND T
 CH4 and CO solubility in H2O
 Gas solubilities in H2O generally decrease with rising temperature, but this is only true to a certain extent along the vapor–liquid saturation (boiling) curve for H2O.
-Solubility minima vary among gases (Shock et al.
-1989; Shock and McKinnon 1993; Plyasunov and Shock 2001).
+Solubility minima vary among gases .
 In the case of methane, the solubility minimum occurs at about 100 °C as shown in Figure 17.
 It can also be seen in Figure 17 that there is increasing experimental disagreement in the solubility of methane with increasing temperature, and the scatter seems to maximize at higher temperatures.
-The curve in Figure 17 is calculated with thermodynamic data and revised HKF equation-of-state parameters from Plyasunov and Shock (2001), who also used experimental high-temperature enthalpy of solution data and partial molal heat capacity data for CH4aq in their regression procedure.
+The curve in Figure 17 is calculated with thermodynamic data and revised HKF equation-of-state parameters from  who also used experimental high-temperature enthalpy of solution data and partial molal heat capacity data for CH4aq in their regression procedure.
 Note that the calculated equilibrium constant for methane dissolution is an order of magnitude less negative at 300 °C than at the solubility minimum at 100 °C, suggesting that significant amounts of methane can be lost from solution in cooling portions of hydrothermal systems.
 Carbon monoxide is similar in solubility to CH4, as indicated by the curves in Figure 18, and both gases are considerably less soluble than CO2.
 Note that the minimum logK for the CO dissolution reaction is a little lower in temperature than that for CH4, but that both minima are at considerably lower temperatures than that for CO2, which occurs at about 175 °C.
@@ -435,16 +347,15 @@ As with CO2, CH4 and CO become fully miscible with H2O at T greater than about 3
 13).
 Thus, in most crustal and mantle contexts, binary fluids are stable as a single phase for all compositions.
 Numerous equations of state based on experiment and theory have been derived to describe the behavior of these fluids.
-Gottschalk (2007) provides a recent review of the topic.
+provides a recent review of the topic.
 Further similarities between CH4–H2O and CO2–H2O (and likely CO–H2O as well) can be found in the role played by the addition of NaCl.
 As in the CO2–H2O system discussed above, addition of NaCl leads to unmixing into two fluid phases, an H2O-rich brine, and a CH4-rich vapor (Fig.
 19).
 Generally, it can be expected that the similarity in CH4–H2O and CO2–H2O mixing properties should lead to very similar geochemical behavior of the molecular carbon species in aqueous solutions.
-For example, it can be anticipated that the effect of CH4 on quartz solubility is similar to that of CO2 as described by Newton and Manning (2009), all else equal.
+For example, it can be anticipated that the effect of CH4 on quartz solubility is similar to that of CO2 as described by  all else equal.
 Kinetic inhibition of CH4 formation
-In many crustal fluids, coexisting CO2 and CH4 are not in equilibrium with each other (e.g., Janecky and Seyfried 1986; Shock 1988, 1990; Charlou et al.
-1998, 2000; McCollom and Seewald 2001).
-Disequilibrium is most pronounced at temperatures below about 500 °C (Shock 1990, 1992), which are relevant to low-grade metamorphism, hydrothermal systems, sedimentary basins, and subduction zones.
+In many crustal fluids, coexisting CO2 and CH4 are not in equilibrium with each other (e.g.,   1990;  2000; ).
+Disequilibrium is most pronounced at temperatures below about 500 °C ( 1992), which are relevant to low-grade metamorphism, hydrothermal systems, sedimentary basins, and subduction zones.
 The underlying reasons for this disequilibrium state lie in the difficulty of breaking bonds and transferring the eight electrons required for CO2 and CH4 to react reversibly.
 Consequently, stable equilibrium between CO2 and CH4 is in many cases attained only at high P and T. In many hydrothermal systems, and throughout sedimentary basins, CH4 is so slow to form that it persists in concentrations that are far from equilibrium with redox conditions determined by coexisting mineral assemblages.
 As shown in Figure 20, the kinetic inhibition of CO2–CH4 equilibration produces a “window of opportunity” for metastable persistence of wide array of aqueous organic compounds at conditions where C–O–H fluids would otherwise consist almost entirely of CO2, CH4, H2O, and H2.
@@ -454,13 +365,10 @@ Slow reaction rates also help explain why there are organic compounds present in
 In fact, metastable organic compounds are relatively abundant throughout the Solar System, especially in the outer reaches populated by icy satellites and comets, which appear to have extensive inventories of organic compounds.
 Even though organic compounds persist in metastable states, they continue to react in response to thermodynamic driving forces.
 In many cases, reactions among organic compounds reach metastable equilibrium states, in which the organic compounds attain ratios consistent with equilibrium constants for reactions written among them.
-These metastable states were first recognized in data from natural systems (Shock 1988, 1989, 1994; Helgeson et al.
-1993), which led to experimental tests first with hydrocarbons (Seewald 1994) and then with organic acids, alcohols, and ketones (Seewald 2001; McCollom and Seewald 2003a, b; see McCollom 2013).
-Recently it was shown that many conversions between alkanes and alkenes, alkenes and alcohols, and alcohols and ketones are reversible reactions at temperatures and pressures of upper-crustal hydrothermal systems (Yang et al.
-2012; Shipp et al.
+These metastable states were first recognized in data from natural systems ( 1989, 1994; ), which led to experimental tests first with hydrocarbons  and then with organic acids, alcohols, and ketones ( a, b; see ).
+Recently it was shown that many conversions between alkanes and alkenes, alkenes and alcohols, and alcohols and ketones are reversible reactions at temperatures and pressures of upper-crustal hydrothermal systems ( Shipp et al.
 in press).
-Abundances of organic compounds in sedimentary basins suggest that, in some cases, metastable equilibrium states also include CO2 (Shock 1988, 1989, 1994; Helgeson et al.
-1993), leading to the hypothesis that abiotic organic synthesis in hydrothermal systems proceeds from CO2 to organic compounds (Shock 1990, 1992; Shock and Schulte 1998; McCollom and Seewald 2007; Shock and Canovas 2010; McCollom 2013).
+Abundances of organic compounds in sedimentary basins suggest that, in some cases, metastable equilibrium states also include CO2 ( 1989, 1994; ), leading to the hypothesis that abiotic organic synthesis in hydrothermal systems proceeds from CO2 to organic compounds ( 1992;    ).
 Reduced carbon and aqueous fluids at high P and T
 Burial metamorphism of organic compounds.
 Resilient compounds derived from plants (lignin) and microbes (long-chain carboxylic acids) progressively transform on burial.
@@ -473,13 +381,11 @@ Alkanes, alkenes, alcohols, ketones, aldehydes, and other compounds are generate
 Finally, methane and other small organic compounds are released during the conversion of lignin to coal.
 While much attention has been focused on these transformations in the context of the origin and evolution of coal and petroleum deposits, the same processes operate on even small concentrations of organic matter that are insufficient to generate large deposits.
 Significantly, it is only in the last few decades that H2O has been recognized as a reactant or product involved in many of these organic transformations.
-This view challenges the traditional assumption that water is a passive participant in the physical movement of organic compounds in sedimentary basins (Hoering 1984; Shock 1988, 1989, 1994; Helgeson et al.
-1993, 2009; Lewan 1997; Lewan and Ruble 2002; Lewan and Roy 2011; Reeves et al.
-2012).
+This view challenges the traditional assumption that water is a passive participant in the physical movement of organic compounds in sedimentary basins (  1989, 1994;  2009;    ).
 Lignin, which makes up the structural parts of plants like wood, has evolved to be resistant to attack.
 The biosynthesis of lignin by plants starts with three aromatic alcohol building blocks (monolignols) that are derived from phenylalanine (see structures in Fig.
 21).
-Biosynthetic processes in plant cells generate polymers of these alcohols through processes that are slowly being revealed (Davin and Lewis 2005).
+Biosynthetic processes in plant cells generate polymers of these alcohols through processes that are slowly being revealed .
 In the polymerization process, the overall stoichiometry of lignin structures largely reflects that of the monolignols, with only slight modifications.
 As a consequence, the model lignin molecules shown in Figure 21 plot near the locations of the monolignols in the C–H–O ternary diagram shown in Figure 22.
 Taken together, the open symbols in Figure 22 represent the plant material available for incorporation into sedimentary basins.
@@ -500,14 +406,12 @@ One is the release of O2; however, this process seems unlikely in highly reduced
 Effective ways to remove oxygen during elevation of coal rank are the production of CO2 and/or H2O, shown by dashed vectors in Figure 22.
 In the case of dehydration, numerous hydroxyl groups are candidates for this process (Fig.
 21); however, acetic acid lies on this same vector, making it difficult to resolve the effects of dehydration from those resulting from acetic acid production.
-Fluids associated with some coal deposits are enriched in acetic and other small organic acids (Fisher and Boles 1990).
+Fluids associated with some coal deposits are enriched in acetic and other small organic acids .
 In summary, the transformation reactions leading to coal accompany the alteration of lignin in any sedimentary rock.
 They lead to the release of methanol, acetic acid, other small organic solutes, and methane to sedimentary basin fluids.
 Major resilient constituents of microbial membranes are long-chain carboxylic acids.
 It is widely thought that during the organic transformations that accompany burial and heating of sediments, these acids undergo decarboxylation.
-When a carboxyl group is cleaved from the rest of the molecule, CO2 and long-chain alkanes are generated (Cooper and Bray 1963; Jurg and Eisma 1964; Robinson 1966; Kvenvolden and Weiser 1967; Smith 1967; Shimoyama and Johns 1971, 1972; Philippi 1974; Snape et al.
-1981; Kissin 1987; Hunt et al.
-2002).
+When a carboxyl group is cleaved from the rest of the molecule, CO2 and long-chain alkanes are generated (      1972;    ).
 Tie lines in Figure 23 show how several carboxylic acids (indicated by carbon numbers) can decarboxylate into CO2 and an alkane.
 As examples, acetic acid (2 in Fig.
 23) produces CO2 and methane via
@@ -519,15 +423,12 @@ The products of decarboxylation reactions lie along the C–O and C–H binaries
 This geometry emphasizes that decarboxylation is a disproportionation reaction, because in each case the products are one compound with bulk carbon oxidation state that is more oxidized (CO2) and one with carbon that is more reduced (an alkane) than in the reacting acid.
 The production of hydrocarbons and CO2 by acid decarboxylation is advantageous to the geochemist, because organic acids are far more soluble in water than are hydrocarbons, and it is easier to model the chemistry and transport of aqueous acids as hydrocarbon precursors than it is to model the hydrocarbons themselves.
 Recognition of this situation led researchers to investigate the rates of carboxylic acid decarboxylation.
-Initial results showed highly variable rates depending on the composition of the experimental container used (Kharaka et al.
-1983; Palmer and Drummond 1986).
-Palmer and Drummond (1987) determined that the least catalytic surface to use is gold, and that has been the standard for subsequent work.
-Early studies focused on acetic acid, which is among the most abundant organic acids found in oilfield brines and other deep fluids; rates were determined by quantifying its decreasing concentration (Kharaka et al.
-1983).
+Initial results showed highly variable rates depending on the composition of the experimental container used .
+determined that the least catalytic surface to use is gold, and that has been the standard for subsequent work.
+Early studies focused on acetic acid, which is among the most abundant organic acids found in oilfield brines and other deep fluids; rates were determined by quantifying its decreasing concentration .
 Subsequently, researchers attempted to show mass balance in their experiments, with the hope of demonstrating equal concentrations of methane and CO2 generated by the decarboxylation reaction (Eqn.
 17).
-In some cases it could be argued that roughly similar abundances of methane and CO2 were produced, giving some confidence that decarboxylation rates could be established (Palmer and Drummond 1986; Bell and Palmer 1994; Bell et al.
-1994).
+In some cases it could be argued that roughly similar abundances of methane and CO2 were produced, giving some confidence that decarboxylation rates could be established .
 However, the composition of the experimental solution, the presence of minerals, and the presence or absence of a gas headspace in the experiments also allowed processes other than decarboxylation to occur.
 These variables were explored in detail by McCollom and Seewald (2003b, a), who used mineral assemblages to control the oxidation state of their experiments, and maintained careful control of mass balance.
 When put to the test, the elegant simplicity of decarboxylation runs into difficulties in explaining the fate of organic acids in geologic fluids.
@@ -537,8 +438,7 @@ CH3COOH + 2H2O ⇒ 2CO2 + 4H2	(19)
 McCollom and Seewald (2003b) also showed that, at the same conditions and in the presence of the same mineral assemblages, valeric acid (C4H9COOH) transformed by a variety of reaction pathways.
 One such pathway was the degradation of valeric acid to formic acid and butene (C4H8) in the presence of hematite + magnetite, implying an overall reaction such as
 C4H9COOH ⇒ C4H8 + HCOOH	(20)
-At the high P and T of these experiments, formic acid rapidly converts to CO2 and H2 (McCollom and Seewald 2001, 2003a; Seewald et al.
-2006) via
+At the high P and T of these experiments, formic acid rapidly converts to CO2 and H2 ( 2003a; ) via
 HCOOH ⇒ CO2 + H2	(21)
 At more reduced conditions consistent with the pyrite + pyrrhotite + magnetite assemblage, McCollom and Seewald (2003b) showed that butene would be rapidly reduced to butane (C4H10), via
 C4H8 + H2 ⇒ C4H10	(22)
@@ -551,16 +451,12 @@ Instead, hexanoic acid plots above this line, implying that the addition of H2 i
 C5H11COOH + H2 ⇒ C5H12 + HCOOH	(23)
 If formic acid breakdown followed Equation (21), then H2 would be consumed and produced in the overall process, again giving the misleading impression of direct decarboxylation.
 In principle, during transformation of membrane biomolecules it would also be possible for other C–C bonds to be broken, allowing the formation of acetic, propanoic or other small carboxylic acids together with correspondingly shorter alkanes.
-The extent of decarboxylation, deformylation, and other reactions could then determine the fates of these acids, which tend to accumulate in oil-field brines and other aqueous fluids co-produced with petroleum (Shock 1988, 1989, 1994; Helgeson et al.
-1993; Seewald 2001, 2003).
+The extent of decarboxylation, deformylation, and other reactions could then determine the fates of these acids, which tend to accumulate in oil-field brines and other aqueous fluids co-produced with petroleum ( 1989, 1994;   2003).
 The mechanisms of decarboxylation reactions at the molecular level are currently under investigation (Glein and Shock, unpublished data).
 Reduced carbon in aqueous fluids at greater depths.
 Graphite is the dominant crystalline form of reduced carbon at conditions of the middle and lower crust and upper mantle.
-It may be produced by a variety of pathways, such as metamorphism of organic matter, reduction of carbonate minerals, partial melting, or infiltration of externally derived carbon-bearing fluids (Nokleberg 1973; Andreae 1974; Perry and Ahmad 1977; Rumble et al.
-1977; Wada et al.
-1994; Luque et al.
-1998).
-The composition of fluids coexisting with graphite-bearing rocks varies strongly with P, T, fluid composition, and oxygen fugacity (French 1966; Ohmoto and Kerrick 1977; Huizenga 2001, 2011; Huizenga and Touret 2012).
+It may be produced by a variety of pathways, such as metamorphism of organic matter, reduction of carbonate minerals, partial melting, or infiltration of externally derived carbon-bearing fluids .
+The composition of fluids coexisting with graphite-bearing rocks varies strongly with P, T, fluid composition, and oxygen fugacity (   2011; ).
 A simple way to explore variations in graphite solubility is to track variations in the graphite saturation surface in the C–O–H ternary system (Fig.
 24).
 Each ternary diagram in Figure 24 is constructed at a fixed P and T, but fO2 varies with composition within the plot.
@@ -569,27 +465,16 @@ Figure 24 illustrates that graphite-saturated fluid composition is variable at f
 Comparison of the ternaries also confirms that graphite solubility varies with P and T. An important conclusion to be drawn from the ternary diagrams is that, at many conditions, the solubility of graphite, nominally a refractory phase, can be surprisingly high.
 In general, devolatilization of graphite-bearing rocks will produce dissolved, reduced carbon at a concentration limited by the solubility of graphite at the ambient fO2.
 The relative abundance of carbon and its distribution among dominant carbon-bearing molecular components such as CH4, CO2, and COS species, will vary strongly with P and T. For example, in the presence of graphite at relatively reducing conditions, a C–O–H–S fluid coexisting with the model mineral assemblage biotite + K-feldspar + pyrite + pyrrhotite will have total carbon concentration and species abundances that are strong functions of T at constant P (Fig.
-25; Ferry and Baumgartner, 1987).
+25; ).
 Carbon concentrations are higher at oxidizing conditions, with virtually all carbon is present as CO2.
 Where reducing conditions prevail in the lower crust and upper mantle, the predominant dissolved form of carbon is generally CH4.
-This conclusion is supported by fluid inclusions containing CH4 from regional metamorphic terranes (e.g., Sisson and Hollister 1990; Huff and Nabelek 2007).
-Interestingly, CH4 appears to be quite common as a solute in subduction-zone settings (Zheng et al.
-2000, 2003; Fu et al.
-2001, 2002, 2003a, b; Shi et al.
-2005).
-Numerous studies have shown that CH4 (and hydrocarbons) can form at high pressures and temperatures (Kenney et al.
-2002; Kutcherov et al.
-2002; Scott et al.
-2004; Kolesnikov et al.
-2009; Sharma et al.
-2009; Marocchi et al.
-2011).
+This conclusion is supported by fluid inclusions containing CH4 from regional metamorphic terranes (e.g.,  ).
+Interestingly, CH4 appears to be quite common as a solute in subduction-zone settings ( 2003;  2002, 2003a, b; ).
+Numerous studies have shown that CH4 (and hydrocarbons) can form at high pressures and temperatures .
 But in many settings where CH4 is recorded as a component of metamorphic fluids, the temperature of entrapment does not exceed 500 °C, which raises the question of why it has formed despite the kinetic inhibition of methane formation at these temperatures.
 Rates of abiogenic methanogenesis may be increased by catalysis involving mineral surfaces in the host rock.
-Much geochemical research on heterogeneous catalysis has been motivated by observations that abundant reduced gases are produced during serpentinization of olivine-rich ultramafic rocks, with metal oxides, Fe–Ni alloys, and Fe–Ni sulfides as byproducts (Schrenk et al.
-2013).
-A range of experimental studies has demonstrated the effectiveness of these catalytic effects on accelerating the rate of alkanogenesis (Horita and Berndt 1999; Foustoukos and Seyfried 2004; Fu et al.
-2008).
+Much geochemical research on heterogeneous catalysis has been motivated by observations that abundant reduced gases are produced during serpentinization of olivine-rich ultramafic rocks, with metal oxides, Fe–Ni alloys, and Fe–Ni sulfides as byproducts .
+A range of experimental studies has demonstrated the effectiveness of these catalytic effects on accelerating the rate of alkanogenesis .
 CONCLUDING REMARKS
 Our understanding of the chemistry of aqueous carbon is advanced at conditions relevant for the shallow geologic environments; however, much remains to be done to extend this framework to the higher-pressure systems relevant to Earth’s deep carbon cycle.
 Most progress has been made in development and application of equations of state for molecular fluids.
