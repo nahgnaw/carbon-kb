@@ -409,8 +409,7 @@ For example, the ratio of unsaturated to saturated fatty acids of the piezophili
 The unsaturated to saturated ratio increases from 1.9 at ambient pressure up to about 3 at 69 MPa at 2 oC.
 As seen in Figure 10, pressure generally increases the order of membranes, thus mimicking the effect of cooling.
 But we note that applying high pressure can lead to the formation of additional ordered phases, which are not observed under ambient pressure conditions, such as a partially interdigitated high pressure gel phase, Lβi, found for phospholipid bilayers with acyl-chain lengths ≥ C16 (a, b; ).
-To illustrate this phase variety, the results of a detailed small-angle X-ray and neutron scattering and FTIR spectroscopy study of the P-T phase diagram of DPPC in excess water are shown in Figure 11.
-At much higher pressures as shown here, even further ordered gel phases appear, differing in the tilt angle of the acyl-chains and the level of hydration in the headgroup area.
+To illustrate this phase variety, the results of a detailed small-angle X-ray and neutron scattering and FTIR spectroscopy study of the P-T phase diagram of DPPC in excess water are shown in  At much higher pressures as shown here, even further ordered gel phases appear, differing in the tilt angle of the acyl-chains and the level of hydration in the headgroup area.
 Even at pressures where the bulk water freezes, the lamellar structure of the membrane is preserved .
 Lipid mixtures, cholesterol, and peptides
 To increase the level of complexity, T-P phase diagrams of binary mixtures of saturated phospholipids have been determined as well (a, b, c, 2000, 2004; ).
@@ -659,79 +658,64 @@ Studies of life at extreme conditions also hold the potential for technological 
 The use of advanced technologies, such as neutron scattering, proteomics, and genomics, will enable us to probe even more complex systems, and directed evolution in the lab will allow us to interrogate the cellular response to high pressure.
 There is a bright future for high-pressure biophysics and microbiology that will lead to an understanding of the evolution and adaptation of cells and their macromolecules to high pressure.
 Moreover, given the spatial magnitude of pressure-affected environments, it is possible that a significant portion of the global organic carbon produced on Earth is mediated by pressure-affected microbial communities.
-Figure 1.
-Structure of native and unfolded staphylococcal nuclease at 0.1 (left) and 800 MPa (right), respectively.
+ Structure of native and unfolded staphylococcal nuclease at 0.1 (left) and 800 MPa (right), respectively.
 These drawings have been obtained from molecular dynamics simulations.
 (Redrawn after Fig.
 10 from )
-Figure 2.
-Potential of mean force (W) for methane association at various pressures.
+ Potential of mean force (W) for methane association at various pressures.
 The arrows indicate the changes with increasing pressure.
 Note that the minimum of methane pair separated by a water molecule “W” remains largely unaffected by a pressure increase.
 The inset shows the difference in free energy between the contact pair and the solvent separated pair.
 [Used by permission of the US National Academy of Sciences, from  95, Fig.
 2, p.
 1553.)
-Figure 3.
-Schematic energy landscape for protein folding.
+ Schematic energy landscape for protein folding.
 At the top of the funnel, at high free energy, one can find the various conformations that make up the unfolded ensemble.
 At the bottom of the funnel the global energy minimum represents the native state, here illustrated for myoglobin.
 Even in the global minimum one can discern various quasi-energetic substates represented by different wells (enlarged on the right-hand side of the funnel).
-Figure 4.
-Schematic representation of the folding-unfolding reaction of wild-type (WT) staphylococcal nuclease (Snase) and two of its mutants (Δ+PHS V66K and Δ+PHS V66N).
+ Schematic representation of the folding-unfolding reaction of wild-type (WT) staphylococcal nuclease (Snase) and two of its mutants (Δ+PHS V66K and Δ+PHS V66N).
 The folded state is abbreviated by F, U is the unfolded state, T represents the transition state ensemble, and ΔVof is the overall volume change upon folding.
 Redrawn after figure 5 of .
-Figure 5.
-Schematic representation of a pressure-temperature stability diagram for proteins.
+ Schematic representation of a pressure-temperature stability diagram for proteins.
 Inside the ellipse the protein adopts its native conformation, outside the ellipse it is unfolded.
 See main text for full description of regions I to III.
-Figure 6.
-Effect of co-solutes and their concentration (c) dependence on the unfolding pressure (Pm) of staphylococcal nuclease (Snase).
+ Effect of co-solutes and their concentration (c) dependence on the unfolding pressure (Pm) of staphylococcal nuclease (Snase).
 [Used by permission of the American Chemical Society, from  Biochemistry, 43, Fig.
 3, p.
 3338.]
-Figure 7.
-Structure of B-DNA at ambient pressure (green) and 200 MPa (red) as determined by NMR spectroscopy.
+ Structure of B-DNA at ambient pressure (green) and 200 MPa (red) as determined by NMR spectroscopy.
 This figure was made with PyMol using PDB codes 2VAH (low-pressure structure) and 2VAI (high-pressure structure).
-Figure 8.
-Schematic drawing of various lamellar and nonlamellar lyotropic lipid mesophases adopted by membrane lipids: Lc, lamellar crystalline; Lβ', Pβ', lamellar gel; Lα, lamellar liquid-crystalline (fluid-like); QIIG (space group Ia3d); QIIP (space group Im3m); QIID (space group Pn3m); HII, inverse hexagonal.
+ Schematic drawing of various lamellar and nonlamellar lyotropic lipid mesophases adopted by membrane lipids: Lc, lamellar crystalline; Lβ', Pβ', lamellar gel; Lα, lamellar liquid-crystalline (fluid-like); QIIG (space group Ia3d); QIIP (space group Im3m); QIID (space group Pn3m); HII, inverse hexagonal.
 Numerous factors determine the particular mesophase structure, e.g., the type of lipids, lipid chain length and degree of unsaturation, headgroup area and charge, solvent properties, pH, temperature, and pressure.
-Figure 9.
-Effect of temperature (at 1 bar = 0.1 MPa) (left) and pressure (at T = 30 oC) (right) on the partial lipid volume VL of DMPC bilayers as obtained from densimetric measurements.
+ Effect of temperature (at 1 bar = 0.1 MPa) (left) and pressure (at T = 30 oC) (right) on the partial lipid volume VL of DMPC bilayers as obtained from densimetric measurements.
 The gel-to-gel (Lβ' to Pβ',) and gel-to-fluid (Lα) lamellar phase transitions appear at temperatures Tp and Tm, respectively.
-Figure 10.
-T-P phase diagram for the main (chain-melting) transition of different phospholipid bilayer systems.
+ T-P phase diagram for the main (chain-melting) transition of different phospholipid bilayer systems.
 The fluid-like (liquid-crystalline) Lα-phase is observed in the low-pressure, high-temperature region of the phase diagram; the ordered gel phase regions appear at low temperatures and high pressures, respectively.
 The gel-to-fluid transition lines of the phosphatidylcholines are drawn as  solid lines, those of the phospholipids with different headgroups as dashed lines.
 The lengths and degree of unsaturation of the acyl-chains of the various phospholipids are denoted on the right-hand side of the figure.
 See footnote 2 for abbreviations.
 (1 bar = 0.1 MPa)
-Figure 11. a) T-P phase diagram of DPPC bilayers in excess water.
+ a) T-P phase diagram of DPPC bilayers in excess water.
 Besides the Gel 1 (Pβ'), Gel 2 (Lβ') and Gel 3 phase, an additional crystalline gel phase (Lc) can be induced in the low-temperature regime after prolonged cooling, which is not shown here.
 b) Phase diagram of DPPC-gramicidin D (GD) (5 mol%) in excess water as obtained from diffraction and spectroscopic data.
 The inset shows a schematic view of the helical dimer (HD) and double helix (DH) conformation of GD.
 (1 bar = 0.1 MPa)
-Figure 12.
-T-P-X phase diagram of equimolar DMPC/DPPC (di-C14/di-C16) and DMPC/DSPC (di-C14/di-C18) multi-lamellar vesicles in excess water.
+ T-P-X phase diagram of equimolar DMPC/DPPC (di-C14/di-C16) and DMPC/DSPC (di-C14/di-C18) multi-lamellar vesicles in excess water.
 x is the weight fraction of lipid.
 (1 bar = 0.1 MPa)
-Figure 13.
-T-P phase diagram of the ternary lipid mixture DOPC/DPPC/Chol (1:2:1) in excess water as obtained from FTIR spectroscopy (•) and small-angle X-ray scattering (Δ) data.
+ T-P phase diagram of the ternary lipid mixture DOPC/DPPC/Chol (1:2:1) in excess water as obtained from FTIR spectroscopy (•) and small-angle X-ray scattering (Δ) data.
 The ld+lo two-phase coexistence region is marked in grey and depicted schematically in the adjacent drawing.
 The liquid disordered phase is represented by ld, whereas lo and so are the liquid and solid ordered phases, respectively.
 (1 bar = 0.1 MPa)
-Figure 14.
-T-P phase diagram of DOPE in excess water.
+ T-P phase diagram of DOPE in excess water.
 Lipid phases: Lβ, lamellar gel; Lα, lamellar liquid-crystalline (fluid-like), and HII inverse hexagonal.
 (1 bar = 0.1 MPa)
-Figure 15.
-Activity k (in arbitrary units) of Na+, K+-ATPase
+ Activity k (in arbitrary units) of Na+, K+-ATPase
 as measured using an enzymatic assay
 at selected pressures and T = 37 oC.
 The free energy of hydrolysis of one ATP molecule is converted to uphill transport by actively transporting 3 Na+ ions out of and 2 K+ into the cell.
 (1 bar = 0.1 MPa)
-Figure 16.
-Schematic cross-section of Earth’s subsurface highlighting the different deep biosphere settings (not to scale).
+ Schematic cross-section of Earth’s subsurface highlighting the different deep biosphere settings (not to scale).
 1: deep sea; 2: deep-sea hydrothermal vents; 3: oceanic crust; 4: sedimentary subseafloor; 5: deep-sea cold seep; 6: continental crust.
 The red and blue lines represent the current temperature and pressure limits for life, respectively.
 Solid lines highlight the parameter, which currently limits the depth of the deep biosphere.
@@ -739,8 +723,7 @@ The upper dashed red line symbolizes the 10 MPa arbitrarily defined upper limit 
 [Used with permission of Elsevier, from  Research in Microbiology, 161, Fig.
 1, p.
 800.]
-Figure 17.
-Metabolic rates and turnover times of natural communities of microorganisms.
+ Metabolic rates and turnover times of natural communities of microorganisms.
 Blue indicates nutrient-rich environments.
 Red indicates nutrient starved environments such as subsurface sediments.
 Left axis shows metabolized organic carbon per cell carbon per unit time.
@@ -748,8 +731,7 @@ Right axis shows the corresponding turnover time of cell carbon, approximately c
 [Used with permission of the US National Academy of Sciences, from  Proceedings of the National Academy of Sciences USA, 108, Fig.
 1, p.
 18193.]
-Figure 18.
-Directed evolution of E. coli K-12 MG1655 toward high pressure (ambient temperature) [Used with permission of American Society for Microbiology from  mBio, 2, Fig.
+ Directed evolution of E. coli K-12 MG1655 toward high pressure (ambient temperature) [Used with permission of American Society for Microbiology from  mBio, 2, Fig.
 1, p.
 2.]
 1 Abbreviations: DMPC 1,2-dimyristoyl-sn-glycero-3-phosphatidylcholine (di-C14:0); DMPS 1,2-dimyristoyl-sn-glycero-3-phosphatidylserin (di-C14:0); DPPC 1,2-dipalmitoyl-sn-glycero-3-phosphatidylcholine (di-C16:0); DPPE 1,2-dipalmitoyl-sn-glycero-3-phosphatidylethanolamine (di-C16:0); DOPC 1,2-dioleoyl-sn-glycero-3-phosphatidylcholine (di-C18:1,cis); DOPE 1,2-dioleoyl-sn-glycero-3-phosphatidylethanolamine (di-C18:1,cis); POPC 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphatidylcholine (C16:0,C18:1,cis); DLPC 1,2-dilauroyl-sn-glycero-3-phosphocholine.

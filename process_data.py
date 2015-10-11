@@ -41,11 +41,12 @@ class Sentences(object):
 
     @staticmethod
     def text_process(line):
-        # Remove references and http in the parentheses
         replacement = [
-            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\d{4}[;|,]*)',
-            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\(\d{4}\)[;|,]*)',
-            r'([\(|\[]http://.*[\)|\]])'
+            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\d{4}[;|,]*)',   # Citations
+            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\(\d{4}\)[;|,]*)',   # Citations
+            r'([\(|\[]http://.*[\)|\]])',   # http
+            r'(Figure \d{1,3}\.)',  # Figure caption
+            r'(Table \d{1,3}\.)'    # Table caption
         ]
         replacement_pattern = re.compile('|'.join(replacement), re.UNICODE)
         line = re.sub(replacement_pattern, '', line)

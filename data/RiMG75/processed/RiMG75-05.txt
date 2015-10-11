@@ -225,15 +225,14 @@ The limitation of SUPCRT92 calculations to 0.5 GPa has long been a severe roadbl
 Methods for making calculations at higher pressures up to 3.0 GPa are summarized below.
 Much progress has been made in recent years by extrapolating experimental solubilities and individual equilibrium constants to pressures substantially greater than the 0.5 GPa limitation of SUPCRT92 ( 1998, 2004;  ).
 Empirical extrapolations can be carried out by taking advantage of the approximate linearity of many equilibrium constants when plotted in terms of the logK versus the logH2O at a given temperature, where H2O is the density of water.
-An example for the solubility product of calcite is shown in Figure 9.
-Extrapolation of equilibrium constants as in Figure 9, together with other aqueous phase equilibria involving dissolved oxidized carbon species enables prediction of solubility and aqueous speciation involving aqueous ions at elevated pressure and temperature without using Equations (10) and (11).
+An example for the solubility product of calcite is shown in  Extrapolation of equilibrium constants as in Figure 9, together with other aqueous phase equilibria involving dissolved oxidized carbon species enables prediction of solubility and aqueous speciation involving aqueous ions at elevated pressure and temperature without using Equations (10) and (11).
 Evaluation of the aqueous ion activity coefficients in Equation (10) at pressures and temperatures to 0.5 GPa and 550 °C is carried out using the extended Debye–Hückel equation for NaCl-bearing fluids .
 For example, the activity coefficient of the carbonate ion is calculated according to
 (12)
 where Z refers to the charge on the carbonate ion (-2), and refer to Debye–Hückel coefficients that are properties of pure water (a, b);  refers to the ion-size parameter for NaCl solutions, I refers to the ionic strength, and  represents the extended term parameter for NaCl solutions.
 Using smoothed values of the dielectric constant from Helgeson and Kirkham (1974a),  and  it is possible to obtain estimates of  and (Fig.
 10).
-Values of the extended term parameter  are subject to substantial uncertainty at elevated pressures and temperatures, but can be estimated from correlation with the density of water to give the preliminary shown in Figure 11.
+Values of the extended term parameter  are subject to substantial uncertainty at elevated pressures and temperatures, but can be estimated from correlation with the density of water to give the preliminary shown in 
 Taken together, equilibrium constants such as those shown in Figure 10 and Debye–Hückel parameters such as those shown in Figures 10 and 11 can be used to estimate the solubilities of carbonate minerals in water.
 As an example, the solubility of calcite is shown in Figure 12 at 500 °C as a function of pressure.
 The predicted solubility of calcite can be compared with a variety of published experimental studies .
@@ -335,8 +334,7 @@ REDUCED CARBON IN AQUEOUS FLUIDS AT HIGH P AND T
 CH4 and CO solubility in H2O
 Gas solubilities in H2O generally decrease with rising temperature, but this is only true to a certain extent along the vapor–liquid saturation (boiling) curve for H2O.
 Solubility minima vary among gases .
-In the case of methane, the solubility minimum occurs at about 100 °C as shown in Figure 17.
-It can also be seen in Figure 17 that there is increasing experimental disagreement in the solubility of methane with increasing temperature, and the scatter seems to maximize at higher temperatures.
+In the case of methane, the solubility minimum occurs at about 100 °C as shown in  It can also be seen in Figure 17 that there is increasing experimental disagreement in the solubility of methane with increasing temperature, and the scatter seems to maximize at higher temperatures.
 The curve in Figure 17 is calculated with thermodynamic data and revised HKF equation-of-state parameters from  who also used experimental high-temperature enthalpy of solution data and partial molal heat capacity data for CH4aq in their regression procedure.
 Note that the calculated equilibrium constant for methane dissolution is an order of magnitude less negative at 300 °C than at the solubility minimum at 100 °C, suggesting that significant amounts of methane can be lost from solution in cooling portions of hydrothermal systems.
 Carbon monoxide is similar in solubility to CH4, as indicated by the curves in Figure 18, and both gases are considerably less soluble than CO2.
@@ -387,8 +385,7 @@ The biosynthesis of lignin by plants starts with three aromatic alcohol building
 21).
 Biosynthetic processes in plant cells generate polymers of these alcohols through processes that are slowly being revealed .
 In the polymerization process, the overall stoichiometry of lignin structures largely reflects that of the monolignols, with only slight modifications.
-As a consequence, the model lignin molecules shown in Figure 21 plot near the locations of the monolignols in the C–H–O ternary diagram shown in Figure 22.
-Taken together, the open symbols in Figure 22 represent the plant material available for incorporation into sedimentary basins.
+As a consequence, the model lignin molecules shown in Figure 21 plot near the locations of the monolignols in the C–H–O ternary diagram shown in  Taken together, the open symbols in Figure 22 represent the plant material available for incorporation into sedimentary basins.
 In the case of lignin, burial in sedimentary basins leads to the generation of the low-rank coal lignite.
 Plotting compositions of lignin and lignite coal in Figure 22 reveals that the transformation of lignin to lignite is accompanied by a decrease in the relative abundance of hydrogen.
 The most direct pathway for hydrogen loss is by the liberation of methane.
@@ -400,11 +397,9 @@ The vector extending from methanol shows that lignin would evolve toward the com
 Any combination of methane and methanol production during lignin transformation drives the residual solid material into the compositional range bounded by the arrowheads of the two solid vectors (Fig.
 22).
 The methane and methanol produced will be dissolved in aqueous fluids that coexist with this organic transformation process, and some of the methane can also exist as natural gas.
-Higher coal ranks—bituminous coal and anthracite—plot near the carbon apex of the ternary diagram shown in Figure 22.
-The transformation of lignite into these higher ranks of coal requires the removal of oxygen, which can occur in several ways, some more likely than others.
+Higher coal ranks—bituminous coal and anthracite—plot near the carbon apex of the ternary diagram shown in  The transformation of lignite into these higher ranks of coal requires the removal of oxygen, which can occur in several ways, some more likely than others.
 One is the release of O2; however, this process seems unlikely in highly reduced sedimentary basins, because if O2 were released it would likely react immediately with reduced constituents in the system (e.g., reduced forms of S, Fe, N, or C).
-Effective ways to remove oxygen during elevation of coal rank are the production of CO2 and/or H2O, shown by dashed vectors in Figure 22.
-In the case of dehydration, numerous hydroxyl groups are candidates for this process (Fig.
+Effective ways to remove oxygen during elevation of coal rank are the production of CO2 and/or H2O, shown by dashed vectors in  In the case of dehydration, numerous hydroxyl groups are candidates for this process (Fig.
 21); however, acetic acid lies on this same vector, making it difficult to resolve the effects of dehydration from those resulting from acetic acid production.
 Fluids associated with some coal deposits are enriched in acetic and other small organic acids .
 In summary, the transformation reactions leading to coal accompany the alteration of lignin in any sedimentary rock.
@@ -419,8 +414,7 @@ CH3COOH ⇒ CH4 + CO2	(17)
 and hexadecanoic acid (16 in Fig.
 23) would yield CO2 and pentadecane via
 C15H31COOH ⇒  C15H32 + CO2	(18)
-The products of decarboxylation reactions lie along the C–O and C–H binaries of the ternary diagram in Figure 23.
-This geometry emphasizes that decarboxylation is a disproportionation reaction, because in each case the products are one compound with bulk carbon oxidation state that is more oxidized (CO2) and one with carbon that is more reduced (an alkane) than in the reacting acid.
+The products of decarboxylation reactions lie along the C–O and C–H binaries of the ternary diagram in  This geometry emphasizes that decarboxylation is a disproportionation reaction, because in each case the products are one compound with bulk carbon oxidation state that is more oxidized (CO2) and one with carbon that is more reduced (an alkane) than in the reacting acid.
 The production of hydrocarbons and CO2 by acid decarboxylation is advantageous to the geochemist, because organic acids are far more soluble in water than are hydrocarbons, and it is easier to model the chemistry and transport of aqueous acids as hydrocarbon precursors than it is to model the hydrocarbons themselves.
 Recognition of this situation led researchers to investigate the rates of carboxylic acid decarboxylation.
 Initial results showed highly variable rates depending on the composition of the experimental container used .

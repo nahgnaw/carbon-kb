@@ -282,27 +282,22 @@ Similar mineralogical oddities might dominate on planets in other star systems w
 In such a system hydrocarbons, carbides, and organo-silanes might dominate relative to carbonate minerals.
 In the extreme case, a carbon-rich planet might be dominated by graphite and diamond .
 We conclude that the detailed study of carbon-bearing minerals through deep time can provide an unparalleled window into the tectonic, geochemical, and biological evolution of any terrestrial planet or moon.
-Figure 1.
-The presence of abundant Fe2+ in near-surface environments of the Archean Eon resulted in an effective hematite-magnetite buffer with fO2 at STP constrained to lie near 10-72.
+ The presence of abundant Fe2+ in near-surface environments of the Archean Eon resulted in an effective hematite-magnetite buffer with fO2 at STP constrained to lie near 10-72.
 Observations of redox sensitive uranium, sulfur, and europium species in Archean rocks are consistent with this value of fO2 .
 Thermodynamic data used to construct this diagram came from the following sources: U-species (a); all other aqueous species (b); minerals .
-Figure 2.
-Ferrous iron carbonate stability requires log fO2 < -68 at STP, assuming log fCO2 < -2.
+ Ferrous iron carbonate stability requires log fO2 < -68 at STP, assuming log fCO2 < -2.
 This value is consistent with the STP hematite-magnetite buffer of log fO2 ~ -72.
 The lower dashed line in the diagram at log fO2 = -83.1 represents the lower stability of water at 1 atm H2.
 Thermodynamic data used to construct this diagram came from the following sources: aqueous species (b); minerals ; the diagram was calculated with the aid of Geochemists Workbench .
-Figure 3.
-The stabilities of the copper carbonates azurite and malachite require log fO2 > -43 at STP, assuming log fCO2 < -2, which precludes their formation prior to the Great Oxidation Event.
+ The stabilities of the copper carbonates azurite and malachite require log fO2 > -43 at STP, assuming log fCO2 < -2, which precludes their formation prior to the Great Oxidation Event.
 Thermodynamic data used to construct this diagram came from the following sources: aqueous species (b); Cu carbonate minerals (Preis & ); Cu oxide minerals ; the diagram was calculated with the aid of Geochemists Workbench .
-Figure 4.
-Differing morphologies of calcium carbonate are found in Mesoproterozoic strata and suggest that spatial variation in geochemical conditions may favor the abiotic precipitation of different carbonate minerals.
+ Differing morphologies of calcium carbonate are found in Mesoproterozoic strata and suggest that spatial variation in geochemical conditions may favor the abiotic precipitation of different carbonate minerals.
 A) Fans and splays of hexagonal, acicular crystals with blunt terminations suggest neomorphic replacement of original aragonite.
 B) Herringbone carbonate (here under crossed-polars) consists of elongate crystals, whose c-axis rotates from parallel to perpendicular to the elongated growth of the crystal.
 It has been interpreted to reflect neomorphic recrystallization of spherulitic crystal clusters, with microdolomite inclusions, which suggest that the original mineralogy may have been magnesian-calcite.
 C) Homogeneous crystal size distribution of molar-tooth calcite indicates precipitation through spontaneous nucleation and growth events, with limited Ostwald ripening.
 Laboratory experiments suggest original depositional as amorphous calcium carbonate.
 Long axis is is 2.6 mm in A, 1.37 mm in B, and 6.9 mm in C.
-Figure 5.
-The compound eyes (with “eye shade”) of the trilobite Erbenochile erbeni, as with other members of the order Phacopidae, incorporate single crystal lenses of calcite with the hexagonal c-axes precisely oriented perpendicular to the lens.
+ The compound eyes (with “eye shade”) of the trilobite Erbenochile erbeni, as with other members of the order Phacopidae, incorporate single crystal lenses of calcite with the hexagonal c-axes precisely oriented perpendicular to the lens.
 Furthermore, each lens is radially zoned with variable Mg/Ca to correct for chromatic aberration.
 Photograph courtesy of Adam Aronson.

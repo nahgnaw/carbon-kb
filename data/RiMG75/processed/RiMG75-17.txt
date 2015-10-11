@@ -390,7 +390,6 @@ As investigators of life underground, we anticipate the chance to learn more abo
 Soon, we hope, there will be more complete synthetic models of how the living and non-living aspects of Earth’s uppermost layers function and integrate with one another.
 These models will guide our search for new deep life, its niches, capabilities, and adaptations.
 We look forward to new explanations for how the subsurface biosphere is sustained and how its expression matters to life at the surface.
-Figure 1.
-Subsurface phenomena that create chemical, physical, or mixed chemical-physical gradients within which microbial metabolic activity is known to occur or might occur.
+ Subsurface phenomena that create chemical, physical, or mixed chemical-physical gradients within which microbial metabolic activity is known to occur or might occur.
 Various processes are plotted along an arbitrary axis that defines whether the process is primarily chemical or physical in origin.
 Processes are classified according to whether they are mainly natural associated with Earth (non-bold), mainly human-induced (bold), or best described as being either natural or human-induced (shaded).

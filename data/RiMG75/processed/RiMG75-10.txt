@@ -75,8 +75,7 @@ Tanzania (
 The low carbonate melt viscosity was first measured accurately in
 experiments using in-situ synchrotron radiation to track rapidly falling spheres (Dobson et al.
 4
-1996) and is compared with other data ( a) in Table 1.
-We note
+1996) and is compared with other data ( a) in  We note
 that only natural high PT iron-rich melts in Earth’s core may approach such extremely low
 viscosities .
 Calculated physical properties by Genge et al.
@@ -589,8 +588,7 @@ influence of metasomatized lithospheric mantle ( Woolley and Bailey
 Stable isotope ratios: Early studies of carbon and oxygen isotope ratios of carbonatites
 focused on coarse-grained intrusive carbonatites associated with alkaline silicate rocks in
 western Germany; Alnö, Sweden; and Colorado, USA, to define primary igneous
-carbonatite  reproduced in Figure 14.
-By observing the origins of
+carbonatite  reproduced in  By observing the origins of
 divergent trends in oxygen isotopes affected by secondary fluid/hydrothermal alteration, a
 common origin could be defined.
 Thus, the co-variation of carbon and oxygen isotopes were

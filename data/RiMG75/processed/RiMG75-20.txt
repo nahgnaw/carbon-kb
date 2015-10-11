@@ -30,8 +30,7 @@ By understanding the types of viruses that predominate in a given system, we can
 Here, we provide a brief overview of different viral types and life cycles, and then describe what types of viruses we might expect to predominate in the deep subsurface, given the environmental conditions.
 Viral life cycles
 Viruses infecting archaea and bacteria assume two different lifestyle strategies, each with significant implications for the viral relationship with the host and for the nature of virus-host co-evolution.
-Here, we provide a very simplified overview of viral life cycles; these are illustrated schematically in Figure 1.
-In the lytic cycle, viral particles attach to the outside of the host and inject their genetic material into the host cytoplasm.
+Here, we provide a very simplified overview of viral life cycles; these are illustrated schematically in  In the lytic cycle, viral particles attach to the outside of the host and inject their genetic material into the host cytoplasm.
 This genetic material then mounts a takeover of cell machinery for immediate synthesis of viral particles, which accumulate within the cell until it bursts, or lyses, releasing the viral particles into the surrounding medium, ready to infect a new host (Figure 1A).
 Viruses employing the lysogenic cycle, in contrast, incorporate their genome into the host genome upon infection.
 Incorporated viral genomes are known as “prophage” or “proviruses,” and can lie latent within the cellular genome for many generations.
@@ -49,8 +48,7 @@ RNA viruses are often among the smallest of the viruses, with some RNA viruses p
 Giant viruses continue to be discovered in various biomes of the globe , and much remains to be learned about their lifestyles, replication mechanisms, and their evolutionary and ecological impacts on their hosts.
 Viruses of the archaea and bacteria, our focus here, are represented by a wide variety of morphologies, including filamentous, icosahedral, and head-tail viruses.
 Many of the archaeal viruses possess particularly unusual shapes that have only recently been discovered.
-Examples of typical archaeal and bacterial virus morphologies are depicted in Figure 2.
-The most commonly observed phages (bacterial viruses) in the oceans are the head-tail viruses , all of which have linear double-stranded DNA genomes.
+Examples of typical archaeal and bacterial virus morphologies are depicted in  The most commonly observed phages (bacterial viruses) in the oceans are the head-tail viruses , all of which have linear double-stranded DNA genomes.
 Among the dsDNA viruses, morphology can give an indication of lifestyle and host range.
 In the marine realm the most abundant viruses are from the Podoviridae family, which have short, non-contractile tails and tend to infect only a narrow range of hosts, usually only particular strains within a species .
 In contrast, the members of the Myoviridae family, with contractile tails, and the Siphoviridae, with long non-contractile tails, tend to have a broader host range.
@@ -172,8 +170,7 @@ Hydrologically active regions of the subsurface
 Much of the ocean crust experiences fluid flux to a certain degree; it is estimated that at least 60% of the ocean crust is hydrologically active .
 The volume of fluid fluxing through the crust is at its highest near active hydrothermal systems at mid-ocean ridges, but does not immediately dissipate.
 The degree of fluid flux varies depending on the sediment cover, as sediments tend to restrict fluid flow .
-This dynamic situation is illustrated schematically in Figure 4.
-Most fluid flux occurs through connected channels in ocean crust, such as around breccia zones and around pillow basalts or flow boundaries .
+This dynamic situation is illustrated schematically in  Most fluid flux occurs through connected channels in ocean crust, such as around breccia zones and around pillow basalts or flow boundaries .
 Seawater flows through seamounts, ridge flanks and recharge zones away from the ridge axis, with residence times ranging from days to years, depending on the location .
 Thus a substantial portion of the ocean subsurface biosphere is exposed to dynamic fluid flux.
 Connectivity of habitats within the subsurface via fluid flux from one region to the next has the potential to bring members of separate microbial communities, including archaea, bacteria, and their viruses, into contact with each other.
@@ -414,19 +411,16 @@ Virally-mediated horizontal gene transfer.
 Virus
 A parasitic element with a DNA or RNA genome that relies on a host to replicate, but has an extracellular state in which the genetic material is contained within a protein and/or lipid coat.
 Infects all three domains of life.
-Figure 1.
-Schematic and generalized depiction of the lytic and lysogenic cycles of phage.
+ Schematic and generalized depiction of the lytic and lysogenic cycles of phage.
 A) Lytic cycle, in which a virus lands on the cellular membrane, injects genetic material into the cytoplasm, resulting in viral takeover of cellular machinery.
 New viral capsids are synthesized, packaged with viral genomes, and lyse the cell.
 B) Lysogenic cycle, in which a virus lands on the cellular membrane, injects its genetic material into the cytoplasm, and then integrates into the host genome.
 This “prophage” lies latent for several generations, then enters the lytic cycle in response to an induction event.
 See text for details.
-Figure 2.
-Transmission electron micrographs of bacterial and archaeal viruses.
+ Transmission electron micrographs of bacterial and archaeal viruses.
 Scale bars for bacterial viruses are 50 nm; scale bars for archaeal viruses are 100nm.
 Reprinted with permission from  Microbiology and Molecular Biology Reviews.
-Figure 3.
-Schematic summary of the effects of archaeal and bacterial viruses on hosts.
+ Schematic summary of the effects of archaeal and bacterial viruses on hosts.
 A) Ecological impacts in which viruses play a role in structuring microbial diversity and trophic interactions.
 Through “kill the winner” type dynamics (see text for details), viruses maintain greater evenness within a population by reducing the abundance of the most abundant strains.
 Through the viral shunt, viruses lyse cells and thus contribute to the pool of dissolve organic matter (DOM), which may stimulate growth of the microbial community.
@@ -436,18 +430,15 @@ Lytic viruses do this through the process of generalized transduction, in which 
 Lysogenic viruses can also do this through the process of specialized transduction, in which enzymes removing the viral genome from the host genome accidentally remove some host genetic material adjacent to the prophage.
 This genetic material is also packaged into a viral capsid and transmitted to the next host.
 Viruses can also express viral genes during the process of infection: during the lytic cycle, viruses can express genes to support cellular activity while viral capsids and genomes are synthesized (such as psbA); they can also do this during the lysogenic cycle, while integrated as prophage (such as cholera toxin).
-Figure 4.
-Schematic depicting fluid flux and porosity in the marine subsurface.
+ Schematic depicting fluid flux and porosity in the marine subsurface.
 Arrows depict fluid flux across the seawater/subsurface interface, and throughout the subsurface.
 Inset shows detail of fluid flux and mixing of seawater and high-temperature hydrothermal fluid in mid-ocean ridge hydrothermal systems, where high-temperature
 hydrothermal fluid (red) rises from high-temperature water rock reactions deeper in the subsurface and mixes with colder seawater (blue).
 Crust ages as it moves away from the mid-ocean spreading ridge.
-Figure 5.
-Rarefaction curves of clusters of translated open reading frames from viral metagenomic sequences from around the globe.
+ Rarefaction curves of clusters of translated open reading frames from viral metagenomic sequences from around the globe.
 ORFs were clustered to 0.40 similarity using UCLUST .
 Rarefaction curves were generated in mother .
-Figure 6.
-Role of parasitic elements in early replication cycles.
+ Role of parasitic elements in early replication cycles.
 A) Cooperative replication network.
 Element D is a parasite to the network because it uses network resources, but it does not contribute to network fitness.
 B) Selection may favor elements that are able to contribute to the fitness of the host network.

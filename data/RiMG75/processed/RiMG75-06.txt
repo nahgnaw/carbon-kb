@@ -182,8 +182,7 @@ However, nanodiamonds have bulk carbon and nitrogen bulk isotopic compositions t
 Other trace carbonaceous components include circumstellar SiC and graphite that formed around supernovae, novae, and AGB stars prior to the formation of the solar system (e.g., ).
 In all chondrite groups, the carbon content decreases with increasing thermal metamorphism, hence the low minimum carbon contents of CV, CO, and ordinary chondrites.
 Generally, little or no carbon remains by the type 3-4 transition, and if any remains much of it may be terrestrial contamination .
-The CK and R chondrites have all been heavily metamorphosed, which is why they have not been included in Table 4.
-Only in the highly reduced enstatite chondrites is carbonaceous material preserved to higher metamorphic grades .
+The CK and R chondrites have all been heavily metamorphosed, which is why they have not been included in  Only in the highly reduced enstatite chondrites is carbonaceous material preserved to higher metamorphic grades .
 Aqueous alteration can also modify this organic matter, but the effects tend to be subtler ( 2010; ).
 Hence, to understand the origins of this organic material, here we concentrate on the most primitive chondrites (CI, CR, CM, and Tagish Lake) available to us.
 The organic matter in chondrites—relationship to IDPs, comets, and ISM
@@ -515,20 +514,14 @@ Another crucial question is whether the subducted carbon could escape shallow co
 According to  CO2 trapping in the oceanic crust and transfer to the mantle would have to have been efficient in order for the temperature at Earth’s surface to allow liquid water to be stable in on the order of 106 to 108 years, allowing perhaps the development of biological activity in the 50 to 100°C temperature range.
 Several areas of research that to be explored, such as the speciation of carbonates during their transfer into the mantle and the possible existence of carbon-rich fluids in the mantle lasting from this epoch, the direct injection at mantle depth of carbon-rich material during impacts, and the fact that all carbon present in Earth was probably not at the surface at the same time.
 We are only opening the magic book of Earth’s formation and early evolution.
-Table 1.
-The principal nucleosynthetic formation reactions and sources of the isotopes of hydrogen, carbon and nitrogen.
-Table 2.
-The abundances (wt.%) of hydrogen, carbon, and nitrogen in various reservoirs and objects.
-Table 3.
-Key isotopic ratios for hydrogen, carbon and nitrogen in various objects.
-Table 4.
-The range of abundances and isotopic compositions of carbon in bulk and in the directly determined major components—insoluble organic material (IOM) and carbonates (carb)—in the main chondrite groups.
+ The principal nucleosynthetic formation reactions and sources of the isotopes of hydrogen, carbon and nitrogen.
+ The abundances (wt.%) of hydrogen, carbon, and nitrogen in various reservoirs and objects.
+ Key isotopic ratios for hydrogen, carbon and nitrogen in various objects.
+ The range of abundances and isotopic compositions of carbon in bulk and in the directly determined major components—insoluble organic material (IOM) and carbonates (carb)—in the main chondrite groups.
 Shock-heated meteorites were not included in the calculation of the  ranges.
 Tagish Lake is a carbonaceous chondrite that has affinities with the CM and CI chondrites, and fell on January 18th, 2000.
-Figure 1.
-Stable isotope (H, N) variations among solar system objects and reservoirs (adapted from  data sources therein).
-Figure 2.
-Six snapshots in time of the orbital configuration of a simulation of late-stage terrestrial accretion from .
+ Stable isotope (H, N) variations among solar system objects and reservoirs (adapted from  data sources therein).
+ Six snapshots in time of the orbital configuration of a simulation of late-stage terrestrial accretion from .
 The size of each body is proportional to its relative physical size and scales as its mass1/3.
 Jupiter was also included in the simulation on a circular orbit at 5.5 AU (not shown in plot).
 The color of each particle corresponds to its water content: particles inside 2 AU started the simulation dry, particles that started from 2 to 2.5 AU have 0.1% water by mass, and particles that started beyond 2.5 AU have 5% water by mass; during collisions the water mass fraction is a calculated using a simple mass balance.
@@ -536,8 +529,7 @@ In this particular simulation three terrestrial planets formed, as did a few par
 The two inner planets are reasonably good Venus and Earth analogues in terms of their masses and orbits, but the outer planet is roughly nine times more massive than the real Mars.
 The Earth analogue in this simulation accreted a large volume of water of roughly ten times Earth's current water budget, although water loss during impacts was not accounted for.
 Recall that we expect carbon delivery to Earth to have followed the same dynamical pathway as water delivery.
-Figure 3.
-Snapshots in time of a simulation that represents the Grand Tack model .
+ Snapshots in time of a simulation that represents the Grand Tack model .
 The simulation starts with three parts: (i) an inner disk of planetary embryos (open circles) and dry (red) planetesimals; (ii) a fully-formed Jupiter at 3.5 AU and Saturn’s core trapped in 2:3 resonance (large black dots); and (iii) a pristine outer disk of water-rich planetesimals.
 Jupiter and Saturn migrate inward together while Saturn continues to grow by accreting gas from the disk.
 Once Saturn reaches its final mass the two planets’ migration reverses direction and they migrate outward until the disk dissipates and leaves them stranded at 5.4 and 7.1 AU.
@@ -545,13 +537,11 @@ Once Saturn reaches its final mass the two planets’ migration reverses directi
 The inner disk is truncated at 1 AU and the terrestrial planets that formed are similar to the actual ones, including Mars.
 Water and carbon are delivered to Earth in the form of outer disk planetesimals that “overshoot” the asteroid belt as the are scattered inward by Jupiter during the giant planets’ outward migration.
 They can be seen in the 300 and 500 kyr panels as the blue symbols at low semi-major axis and generally high eccentricity.
-Figure 4.
-Normalized abundance of volatile elements in bulk Earth (data from ).
+ Normalized abundance of volatile elements in bulk Earth (data from ).
 Each volatile molar abundance is divided by the mass of Earth (5.97 x 1027 g) and normalized by the corresponding content in CI-CM chondrites.
 Note that the terrestrial abundance pattern is close to chondritic and corresponds to the contribution of ~2 ± 1 % carbonaceous chondrite material.
 Such contribution is in excess of the “Late Veneer” one, corresponding to the amount of highly siderophile elements in the mantle.
-Figure 5.
-Volatile delivery to Earth analogues in simulations of terrestrial planet formation in the context of the Grand Tack model.
+ Volatile delivery to Earth analogues in simulations of terrestrial planet formation in the context of the Grand Tack model.
 Earth analogues are defined here simply as simulated planets with masses of 0.7 to 1.3 Earth masses and orbital semi-major axes between 0.8 and 1.25.
 The plot shows the fraction of “wet” (carbon-rich C-complex) material accreted onto each simulated planet as a function of time.
 Each Earth analogue accreted 2-3% of C-complex material in the form of planetesimals that were scattered inward during Jupiter and Saturn’s early outward migration but that were accreted on a much longer timescale of tens to 100 Ma.

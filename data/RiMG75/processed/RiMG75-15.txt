@@ -415,8 +415,7 @@ At this time, however, it remains unclear what factors contribute to the wide va
 A more systematic approach is needed to determine how variations in reaction conditions affect the isotopic composition of the products.
 Development of clumped isotope methods for hydrocarbons similar to those used for analyzing carbonate minerals  may also provide novel insights, although they would need to be calibrated with additional experimental studies.
 Resolution of these issues will provide a much more solid basis for evaluating sources of abiotic hydrocarbons in Earth’s crust.
-Figure 1.
-Equilibrium distribution of carbon species at mantle conditions.
+  Equilibrium distribution of carbon species at mantle conditions.
 (a) Contours of mole fraction (X) for CO2 (dashed lines) and CH4 (solid lines) in equilibrium with graphite as a function of oxidation state relative to FMQ.
 Circles correspond to the pressure, temperature, and fO2 values defined by study of mantle xenoliths from South Africa, Canada, and Russia.
 The line marked “XO =1/3” defines conditions where O composes 33% of the elemental composition of the C-O-H fluid, and defines the point where CO2 and CH4 are in equal proportions.
@@ -428,48 +427,39 @@ CCO refers to the reaction C(graphite) + O2 = CO2.
 In (a), graphite is unstable and the fluid is dominated by CO2 to the right of the CCO line, while graphite is unstable to the left of the line in (b).
 [Diagram (a) modified after  Fig.
 7a, page 2099, copyright 2009, with permission from Elsevier, and (b) used with permission of Annual Reviews,  permission conveyed through Copyright Clearance Center, Inc.].
-Figure 2.
-Equilibrium distribution of fluid species in the C-O-H systems at 1000 ºC and 2.4 GPa as a function of bulk fluid O/(O+H) ratio (a proxy of oxidation state).
+  Equilibrium distribution of fluid species in the C-O-H systems at 1000 ºC and 2.4 GPa as a function of bulk fluid O/(O+H) ratio (a proxy of oxidation state).
 Symbols show results of laboratory experiments of  while lines represent equation of state model for the system from .
 Also shown for reference are equivalent O/(O + H) values for the oxidation state buffers IW (iron-wüstite) and WM (wüstite-magnetite), and for an fO2 one log unit below FMQ (FMQ-1).
 The temperature and pressure of the diagram and an oxidation state near FMQ-1 represent conditions at ~80 km depth in the mantle.
 [Diagram modified after  Fig.
 3, page 2096, copyright 2009, with permission from Elsevier].
-Figure 3.
-Raman spectra from experiments conducted at mantle pressures and temperatures in diamond anvil cells.
+  Raman spectra from experiments conducted at mantle pressures and temperatures in diamond anvil cells.
 (a) Spectrum obtained during heating of calcite, FeO, and water at 1,500 ºC and 5.7 GPa .
 The peak at 2972 cm-1 corresponds to a C-H vibration stretching mode, and indicates formation of CH4 during heating.
 (b) Spectrum obtained during heating of pure methane at 2 GPa at ~300 K (bottom line), ~900 K (middle) and ~1,500 K (top) .
 (b) Reprinted by permission from Macmillan Publishers Ltd: Nature Geosciences, copyright 2009.
-Figure 4.
-Thermodynamic relationships between dissolved CO2 and CH4 at elevated temperature and pressure.
+ Thermodynamic relationships between dissolved CO2 and CH4 at elevated temperature and pressure.
 (a) Log K for reduction of CO2 to CH4.
 (b) Calculated equilibrium (CH4/CO2) ratios as a function of temperature at two values of H2 concentration that bracket those found in reducing environments within the crust.
 Data shown are for a pressure of 50 MPa.
 Values for log K calculated using thermodynamic data from SUPCRT92  and .
-Figure 5.
-Generalized reaction mechanism for Fischer-Tropsch synthesis of hydrocarbons.
+  Generalized reaction mechanism for Fischer-Tropsch synthesis of hydrocarbons.
 The reaction is initiated with binding of CO to the catalyst surface to form a carbonyl unit (–CO), which then undergoes sequential reduction to surface-bound carbide (–C), methylene (–CH2), and methyl (–CH3) groups.
 Chain growth occurs as methylene groups polymerize to one another, and terminates when the growing chain combines with a methyl group or surface-bound H rather than another methylene.
-Figure 6.
-Example of typical products of Fischer-Tropsch-type synthesis.
+  Example of typical products of Fischer-Tropsch-type synthesis.
 (a) Gas chromatogram of non-volatile products, showing predominance of linear saturate hydrocarbons (n-alkanes; filled circles) and alcohols (n-1-alkanols; open circles).
 (b) Relative abundance of saturated hydrocarbons (n-alkanes) as a function of carbon number, showing typical log-linear decrease.
 The slope of the decrease (α) is a gauge of the relative probabilities of continued growth of the carbon chain versus chain termination.
 The break in slope at carbon number around 10 is common for iron-based catalysts.
 Figure shows data from .
-Figure 7.
-Dissolved concentrations of H2, total dissolved CO2 (ΣCO2), and light hydrocarbons during reaction with serpentinized olivine in the experimental study of .
+ Dissolved concentrations of H2, total dissolved CO2 (ΣCO2), and light hydrocarbons during reaction with serpentinized olivine in the experimental study of .
 Concentrations in mmol kg-1 (mmol) or μmol kg-1 (μmol).
-Figure 8.
-Carbon isotopic composition of CH4 and C2-C5 alkanes for selected experimental FTT reaction products.
+  Carbon isotopic composition of CH4 and C2-C5 alkanes for selected experimental FTT reaction products.
 Values are shown both as measured values (left) and relative to the composition of the initial carbon source (right) (Δ13C = δ13Cproduct - δ13Csource).
-Figure 9.
-Comparison of C and H isotope compositions of light hydrocarbons produced during laboratory FTT synthesis experiments with compounds from natural systems thought to have an abiotic origin.
+  Comparison of C and H isotope compositions of light hydrocarbons produced during laboratory FTT synthesis experiments with compounds from natural systems thought to have an abiotic origin.
 For each connected series, the point labeled “C1” represents methane and each successive point represents an alkane with an additional carbon atom (from C2 to C5, depending on the study).
 Natural samples are from fracture fluids in ancient Precambrian Shield rocks (Kidd Creek; Sherwood ), deep-sea hydrothermal vent fluids from the Lost City site, thought to be generated from serpentinization of ultramafic rocks , and volcanic gases from Socorro Island, Mexico (a).
 Data for FTT synthesis experiments are from  Taran et al.
 (2010b) and .
 Catalysts used in the synthesis experiments are cobalt (Co), iron (Fe), or magnetite (mgt).
-Figure 10.
-Comparison of carbon isotope trends for hydrocarbons thought to have an abiotic origin from Kidd Creek (circles; Sherwood ) with those for hydrocarbons generated in FTT synthesis experiments performed under hydrothermal conditions (open squares; ).
+  Comparison of carbon isotope trends for hydrocarbons thought to have an abiotic origin from Kidd Creek (circles; Sherwood ) with those for hydrocarbons generated in FTT synthesis experiments performed under hydrothermal conditions (open squares; ).

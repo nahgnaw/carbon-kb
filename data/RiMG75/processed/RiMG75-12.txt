@@ -791,15 +791,13 @@ The color CL images show multiple growth histories with significant resorption i
 Note the very thin growth rings in d. Diamonds e and f are gray-scale CL images  of sub-lithospheric diamonds from the Collier 4 kimberlite pipe, Juina field, Brazil.
 Diamond in e is about 3 mm on the long axis.
 Note the irregular zoning in both diamonds.
-Figure 2.
-Block diagram showing the basic relationship between a continental craton, its lithospheric mantle keel and diamond stable regions in the keel, and the convecting mantle.
+ Block diagram showing the basic relationship between a continental craton, its lithospheric mantle keel and diamond stable regions in the keel, and the convecting mantle.
 Under the right fO2, diamonds can form in the convecting mantle, the subducting slab, and the mantle keel.
 Figure redrawn from an original by  with additions from .
 G=graphite, D=diamond, LAB=lithosphere/asthenosphere boundary.
 Mineral assemblage information and abbreviations defined in Tables 1 and 2.
 These assemblages give the expected inclusions to be found in peridotitic or ultramafic (left) and eclogitic or basaltic (right) rock compositions.
-Figure 3.
-Diamond localities of the world in relation to Archean cratons and classified as to whether they are kimberlite-hosted and from mantle keels (lithospheric), kimberlite-hosted and from the convecting mantle (superdeep), of surface (i.e., weathered out of original host) origin (alluvial), from ultra-high pressure crustal terranes (UHP), or formed by the shock of meteorite impact (impact).
+ Diamond localities of the world in relation to Archean cratons and classified as to whether they are kimberlite-hosted and from mantle keels (lithospheric), kimberlite-hosted and from the convecting mantle (superdeep), of surface (i.e., weathered out of original host) origin (alluvial), from ultra-high pressure crustal terranes (UHP), or formed by the shock of meteorite impact (impact).
 The crustal age/craton basemap is from .
 Diamond locality information from      and information from the authors.
 Localities as follows: (1) Diavik, Ekati, Snap Lake, Jericho, Gahcho Kue, DO-27; (2) Fort a la Corne; (3) Buffalo Hills; (4) State Line; (5) Prairie Creek; (6) Wawa; (7) Victor; (8) Renard; (9) Guaniamo; (10) Juina/Sao Luis; (11) Arenapolis; (12) Coromandel, Abaete, Canasta; (13) Chapad Daimantina; (14) Boa Vista; (15) Koidu; (16) Kan Kan; (17) Akwatia; (18) Tortiya; (19) Aredor; (20) Bangui; (21) Mbuji-Mayi; (22) Camafuca, Cuango, Catoca; (23) Mavinga; (24) Mwadui; (25) Luderitz, Oranjemund, Namaqualand; (26) Orapa/Damtshaa, Lhetlakane, Jwaneng, Finsch; (27) Murowa, Venetia, The Oaks, Marsfontein, Premier, Dokolwayo, Roberts Victor, Letseng-la-Terae, Jagersfontein, Koffiefontein, Monastery, Kimberley (Bultfontein, Kimberley, DeBeers, Dutoitspan, Kamfersdam, Wesselton); (28) Kollur; (29) Majhgawan/Panna; (30) Momeik; (31) Theindaw; (32) Phuket; (33) West Kalimantan; (34) South Kalimantan; (35) Springfield Basin, Eurelia/Orroro, Echunga; (36) Argyle, Ellendale, Bow River; (37) Merlin; (38) Copetown/Bingara; (39) Mengyin; (40) Fuxian; (41) Mir, 23rd Party Congress, Dachnaya, Internationalskaya, Nyurbinskaya; (42) Aykhal, Yubileynaya, Udachnaya, Zarnitsa, Sytykanskaya, Komsomolskaya; (43) Ural Mts.
@@ -808,8 +806,7 @@ Figure 4a-b.
 Composition of fluids in diamonds from worldwide locations.
 Data from the work of Klein-BenDavid (2004, 2007a, 2009),  and Tomlinson (2006, 2009).
 Note the clear delineation of three end-members (a), the large compositional variability (b), and that some localities have specific differences in their Fe/Mg (b).
-Figure 5.
-Nd isotope evolution diagram based on data in Klein-BenDavid et al.
+ Nd isotope evolution diagram based on data in Klein-BenDavid et al.
 (2010; and unpublished) on fibrous diamonds from Botswana obtained by closed-system laser ablation ICP-MS .
 Nd evolution illustrated is meant to be typical of the multi-stage history required explain not only the Nd data but the concurrently obtained Pb and Sr isotopic compositions and trace element data (not shown, but see ) on the same mass of diamond.
 Initial development of the enriched reservoir, at t1, requires early separation of the enriched source from either a chondritic or depleted mantle reservoir sometime in the Archean (as required by elevated 207Pb/204Pb at modest 206Pb/204Pb).
@@ -830,8 +827,7 @@ The vertical extent of these curves is an approximation of the fO2 range over wh
 Diamond is unstable above the horizontal DCO buffer line.
 (c) The fO2 of mantle xenolths as a function of pressure or depth.
 Carbon speciation curves are the same as in A) but are calculated along the average geothermal gradient recorded by the xenoliths.
-Figure 7.
-Carbon isotope distributions of worldwide diamonds from a different types of occurrences (e.g.
+ Carbon isotope distributions of worldwide diamonds from a different types of occurrences (e.g.
 see Fig.
 3).
 Widely-studied peridotitic and eclogitic lithospheric diamonds (upper left) are compared to superdeep and coated diamonds as well as other diamond types.
@@ -839,22 +835,18 @@ Monocrystalline diamonds unusual in their low δ13C are represented by eclogitic
 Polycrystalline diamonds, metamorphic UHP diamonds and carbonado diamonds whose origin remains unknown are also compared.
 The “main mantle range” defined by fibrous diamonds (i.e., kimberlite-related, see text for details), carbonatites, and carbonates from kimberlites.
 For references see Cartigny (2005, 2010).
-Figure 8.
-An illustration of the δ13C-N variability that can be produced during the crystallization of diamonds in a natural lithospheric peridotite.
+ An illustration of the δ13C-N variability that can be produced during the crystallization of diamonds in a natural lithospheric peridotite.
 The trends are modeled to record diamond growth from methane of multiple diamonds that all found in the same xenolith.
 Each data point represents a single diamond.
 Adapted from .
-Figure 9.
-The rationale in using the 15N/14N-values in diamonds lies in the distinct distributions displayed by surface and mantle reservoirs.
+ The rationale in using the 15N/14N-values in diamonds lies in the distinct distributions displayed by surface and mantle reservoirs.
 Nitrogen in metasedimentary and metamorphic diamonds, metagabbros and metaophioloites (not shown) being enriched in 15N compared to the mantle shown here by fibrous/coated diamond, mid-ocean ridge basalts (not shown) and peridotitic diamonds.
 The similarities of the 15N/14N-distributions of eclogitic and peridotitic diamonds must be explained if the source of carbon and nitrogen in eclogitic diamond is to be largely related to subduction (see text for discussion).
 From .
-Figure 10.
-P–T estimates for eclogitic xenoliths and touching Grt–Cpx pairs included in eclogitic diamonds using a combination of the Fe–Mg exchange thermometer (K00; Krogh ) with two different versions of the Grt–Cpx barometer (ST00:  Si08: ).
+ P–T estimates for eclogitic xenoliths and touching Grt–Cpx pairs included in eclogitic diamonds using a combination of the Fe–Mg exchange thermometer (K00; Krogh ) with two different versions of the Grt–Cpx barometer (ST00:  Si08: ).
 Both combinations produce a substantial overlap of diamond-bearing and graphite-bearing eclogites, a significant proportion of diamond-bearing samples in the graphite stability field, and variable proportions of excessive T and P values (much greater than expected for majorite-poor garnets), suggesting poor reliability of eclogite thermobarometry.
 Dashed line: conductive geotherms for a surface heat flow of 40 mW/m2 after  black solid line: graphite–diamond boundary after  grey band: T range for mantle adiabat based on mantle potential temperatures of 1300 to 1400 °C.
-Figure 11.
-(a) P–T estimates for lherzolitic and websteritic Cpx inclusions (monomineralic and Opx-free polymineralic inclusions) in worldwide diamonds based on single-Cpx thermobarometry .
+ (a) P–T estimates for lherzolitic and websteritic Cpx inclusions (monomineralic and Opx-free polymineralic inclusions) in worldwide diamonds based on single-Cpx thermobarometry .
 The estimates should correspond to the conditions of formation of the diamonds, with some P underestimation at P > 4.5 GPa.
 The scatter is considerably reduced if one excludes diopsides with aCr < 0.005, for which P estimates can be severely in error (see text for further explanation).
 Inclusions in websteritic diamonds containing also non-touching Opx inclusions are indicated with crossed-symbols.
@@ -863,8 +855,7 @@ Conductive geotherms for different surface heat flows (mW/m2) after  graphite–
 T range for mantle adiabat is based on mantle potential temperatures of 1300 to 1400 °C.
 (b) Relationships between molar fraction of majoritic components and P for isolated inclusions of majorite-rich Grt in worldwide diamonds based on majorite barometry .
 Bracket indicates P range for non-wehrlitic peridotitic inclusions.
-Figure 12.
-Isomekes for inclusions in diamonds based on Pi estimates (see text for details) obtained using different techniques and thermoelastic parameters as in .
+ Isomekes for inclusions in diamonds based on Pi estimates (see text for details) obtained using different techniques and thermoelastic parameters as in .
 Sources of Pi data: olivine – Izraeli et al.
 (1999; Raman, grey band), Nestola et al.
 (2011; X-ray diffraction, grey line); coesite – Sobolev et al.
@@ -877,12 +868,10 @@ Figure 13(a-b).
 (a) Inclusion of olivine in diamond showing diamond-imposed, flattened cubo-octahedral habit (modified from ).
 Faces of the dominant octahedral (o) and cubic (c) forms are indicated.
 (b) Diamond macle (twinned and flattened) with a number of olivine inclusions having major faces parallel to the octahedral diamond face ( with permission).
-Figure 14.
-Garnet from a worldwide database on the classification in a plot Cr2O3 versus CaO (wt.%) with compositional fields of .
+ Garnet from a worldwide database on the classification in a plot Cr2O3 versus CaO (wt.%) with compositional fields of .
 See text for discussion.
 Figure and caption from  with permission.
-Figure 15.
-REE in peridotitic and eclogitic garnet inclusions from the database of  and normalized to C1-chondrite .
+ REE in peridotitic and eclogitic garnet inclusions from the database of  and normalized to C1-chondrite .
 The top diagram shows the compositional fields and average compositions of harzburgitic and lherzolitic garnets.
 The average composition of lherzolitic garnets from Birim diamonds (Akwatia, Ghana; Fig.
 3) is shown to represent “normal” REE patterns generally (but not exclusively) restricted to the lherzolitic paragenesis.
@@ -909,8 +898,7 @@ For isochron studies, mantle extraction ages extrapolated from labeled points ar
 WC 1-2 represents the Wilson Cycle rifting (stage 1-2) for the Pilbara craton (Van ) whereas WC 5-6 represents the Wilson Cycle continental closure (stage 5-6) for the Kaapvaal craton.
 Locality abbreviations are as follows: (Pr) Premier, (O) Orapa, (A) Aryle, (Jw) Jwaneng, (F) Finsch, (Ko) Koffiefontein, (U) Udachnaya, (V) Venetia, (K) Kimberley pool, (E) Ellendale, (W) Wellington, (Dv) Diavik, (Kl) Klipspringer, (Pa) Panda, (M) Murowa, (L) Letseng.
 Figure and caption (modified) from  with permission.
-Figure 18.
-Tomographic image of the lithospheric mantle derived from seismic P-wave data at a depth of 150 km (e.g.,  ).
+ Tomographic image of the lithospheric mantle derived from seismic P-wave data at a depth of 150 km (e.g.,  ).
 The Kaapvaal and Zimbabwe cratonic blocks and the Limpopo mobile belt (K,L, and Z of inset) collectively comprise the Kaapvaal-Zimbabwe craton.
 Bold green line indicates the outermost boundary of the Kaapvaal-Zimbabwe craton as defined by the break between Archean and Proterozoic Re-Os ages for peridotite xenoliths .
 Colored squares are diamond mines: red = predominantly eclogitic silicate inclusions (Letlhakane, LE; other abbreviations in caption to Fig.
@@ -930,17 +918,14 @@ Other structural and igneous elements of the Kaapvaal-Zimbabwe craton  as follow
 (b) Cross section of craton along line A-B illustrating that the Kimberley Block was on the hangingwall for westward dipping subduction during continent collision at 2.9 Ga and received the bulk of diamond-forming fluids, sulfur, and eclogitic components at this time.
 Figure modified from  and Aulbach et al.
 (2009b).
-Figure 20.
-Schematic diagrams illustrating possible mantle conditions (e.g., depth, oxygen fugacity) and geodynamic settings in which lithopsheric and sub-lithospheric diamonds and their mineral inclusions are formed.
+ Schematic diagrams illustrating possible mantle conditions (e.g., depth, oxygen fugacity) and geodynamic settings in which lithopsheric and sub-lithospheric diamonds and their mineral inclusions are formed.
 The relative roles of mantle and subducted lithospheric protoliths, crystallization from partial melts, mantle redox, and mantle flow, can all be deduced and quantified through detailed, integrated studies of diamonds and their inclusions.
 See text for detailed discussion.
-Figure 21.
-A schematic diagram illustrating the growth environment of lithospheric diamonds and their mineral inclusions.
+ A schematic diagram illustrating the growth environment of lithospheric diamonds and their mineral inclusions.
 Studies show the importance of C-O-H-S metasomatic fluids in diamond growth, and the chemistry of mineral inclusions clearly reveals both peridotitic (P-type) and eclogitic (E-type) protoliths.
 The chemistry, age, and tectonic setting of the diamonds and their inclusions provide powerful constraints for models of the growth and evolution of cratonic mantle lithosphere.
 Carbonatite to kimberlite evolution after .
-Table 1.
-Mineral inclusions in lithospheric diamonds and their associated  parageneses (modified from ).
+ Mineral inclusions in lithospheric diamonds and their associated  parageneses (modified from ).
 The more common mineral inclusions in diamond are shown in boldface; the rarer inclusion minerals are in normal typeface within brackets.
 Sulfides are common minerals in all diamond parageneses.
 Sometimes rare minerals like ferropericlase, moissanite and others may be present as inclusions in diamonds.
@@ -948,8 +933,7 @@ Sometimes rare minerals like ferropericlase, moissanite and others may be presen
 Abbreviations of minerals are after  as follows: chrome-pyrope (Cr-Prp), olivine (Ol), chromite (Chr), sulfide (Sf), eskolaite (Esk), phlogopite (Phl), pyrope (Prp), enstatite (En), chrome-diopside (Cr-Di), magnesite (Mgs), ilmenite (Ilm), rutile (Rt), clinopyroxene (Cpx), garnet (Grt), omphacite (Omp), kyanite (Ky), sanidine (Sa), coesite (Coe), and corundum (Crn).
 Polycrystalline diamond includes boart, framesite and diamondite (see text for details).
 Mg# = 100Mg/(Mg+Fe); Ca# = 100Ca/(Ca+Mg+Fe+Mn); Cr# = 100Cr/(Cr+Al).
-Table 2.
-Mineral inclusions in sublithospheric diamonds and their associated parageneses [modified from  and references therein, with additions].
+ Mineral inclusions in sublithospheric diamonds and their associated parageneses [modified from  and references therein, with additions].
 The indicative mineral assemblages of the depth zones of sublithospheric inclusions in diamond are never seen due to exsolution and transformations to low-pressure phases as indicated.
 Furthermore, the rarity of these inclusions and their small size means that, in most cases, crystal structure is inferred from elemental composition.
 Therefore, the depth ranges of these diamonds with inclusions are approximate because they are derived from the principal mineral inclusions observed in the diamond at low pressure.

@@ -329,83 +329,66 @@ Recent advances point to the likelihood of novel sp3 phases with tetrahedrally-c
 High-pressure carbonates and carbonate-silicates will continue to be of special interest in modeling the extent and distribution of mantle carbon and elucidating the deep carbon cycle.
 High-pressure studies of carbon-bearing molecular phases also hold great promise for discovering novel phases with unusual properties.
 We thus anticipate that the next decade will see rapid and fundamental advances in the understanding of the mineralogy of carbon at extreme conditions.
-Figure 1.
-Structures of selected allotropes of carbon.
-Figure 2.
-Phase diagram for carbon in Earth to 50 GPa (approximately 1500 km depth), showing the classic diamond-graphite line and field for liquid; note the liquidus for diamond has positive dP/dT consistent with calculations to higher pressure, and the only significant change to the early curve of .
+ Structures of selected allotropes of carbon.
+ Phase diagram for carbon in Earth to 50 GPa (approximately 1500 km depth), showing the classic diamond-graphite line and field for liquid; note the liquidus for diamond has positive dP/dT consistent with calculations to higher pressure, and the only significant change to the early curve of .
 The red curve marks the metastable lonsdaleite or hexagonal (h-) diamond transition from .
 At P-T conditions close to this red curve and above ~1070 K (800 oC), h-diamond from graphite is quenchable and recoverable, whereas below ~1070 K, h-diamond is unquenchable.
 The form of graphite used in the experiments has some influence, and additional metasatable complications for h-diamond are not yet fully understood (see  ).
 Lonsdaleite is associated with formation in terrestrial impact craters and meteorites (see review in ) and its recent enigmatic discovery in ultrahigh pressure (UHP) metamorphic rocks may either be due to impact shock, or crystal-scale overpressure .
-Figure 3.
-Calculated phase relations for diamond to super Earth conditions.
+ Calculated phase relations for diamond to super Earth conditions.
 GPa diamond is displaced by BC8.
 The green line marks the terrestrial geotherm (approximate), along which the maximum pressure at Earth’s center corresponds to ~360 GPa in the inner core.
 Note that diamond is stable to approximately twice the pressure at Earth’s center and does not melt below ~5000K.
 Diamond is expected to be a planetary “survivor of catastrophe,” such as the Moon-forming collision on Earth.
 Diagram based on .
 Note that on this diagram with extreme pressure range, the field for graphite is too small to depict (but tracks along the low-pressure axis).
-Figure 4.
-X-ray Raman spectra of graphite under pressure.
+ X-ray Raman spectra of graphite under pressure.
 The lower energy peak, labeled π, corresponds to 1s to π* transitions and the higher energy portion, labeled σ, corresponds to 1s to σ* transitions.
 The bottom spectra, taken in the horizontal direction, probes bonds in the a  plane, and the top spectra, taken in the vertical direction, probe the c plane.
 The inset shows the geometry of the diamond anvil cell experiment.
 The spectra reveal the development of mixed π and σ bonding in the high pressure phase formed by compression of graphite (adapted from ).
-Figure 5.
-Calculated high-pressure metastable sp3 structures of elemental carbon.
+ Calculated high-pressure metastable sp3 structures of elemental carbon.
 Reproduced from Zhu et al.
 (2012b).
-Figure 6.
-The polymorphs of carbon as a function of fO2 with depth in an ambient pyrolitic mantle ( modified from ).
+ The polymorphs of carbon as a function of fO2 with depth in an ambient pyrolitic mantle ( modified from ).
 Note the dominance in the terrestrial mantle for reduced carbon species relative to carbonate.
-Figure 7.
-Plot of Fe-Ni-Cr compositions of mantle carbide inclusions within diamond at Jagersfontein, based on electron microprobe analyses (after ).
+ Plot of Fe-Ni-Cr compositions of mantle carbide inclusions within diamond at Jagersfontein, based on electron microprobe analyses (after ).
 Different diamonds can host different carbide compositions: solid red circles = Jag1 (n = 9), open blue circles = Jag2 (n = 5) and solid black square (Jag10 n = 17).
 These carbides also contain minor Co, Si and O (see Table 1).
-Figure 8.
-CO2 structures: a) molecular P42/mnm structure, stable at lower pressures than polymeric CO2-V phase; b) β-cristobalite-type structure of CO2-V with tetrahedral coordination of carbon atoms; c) polymeric C2221 structure, d) metastable polymeric Pna21 structure.
+ CO2 structures: a) molecular P42/mnm structure, stable at lower pressures than polymeric CO2-V phase; b) β-cristobalite-type structure of CO2-V with tetrahedral coordination of carbon atoms; c) polymeric C2221 structure, d) metastable polymeric Pna21 structure.
 From .
 At the bottom are the calculated enthalpies of candidate structures of CO2: e) in the low-pressure region, relative to the molecular Pa3 structure; f) in the high-pressure region, relative to the non-molecular C222 structure.
 From .
-Figure 9.
-Expermintally determined structure of CO2-V at 43 GPa showing partially collapsed arrangement of CO4 tetrahedra.
+  Expermintally determined structure of CO2-V at 43 GPa showing partially collapsed arrangement of CO4 tetrahedra.
 a)  b) .
 Reproduced with permission.
-Figure 10.
-Phase diagram for CO2.
+ Phase diagram for CO2.
 The light grey line is an estimated Earth geotherm.
 Adapted from .
-Figure 11.  β-cristabolite and layered structures of CO2 predicted at pressures above 200 GPa.
+  β-cristabolite and layered structures of CO2 predicted at pressures above 200 GPa.
 (a) and (b) show the Fcc oxygen sublatice and (c) and (d) show the carbon sublattice.
 Adapted from .
-Figure 12.
-Calculated P-V equations of state of CO2, C, and O to ultrahigh (TPa) pressures (T=0K).
+  Calculated P-V equations of state of CO2, C, and O to ultrahigh (TPa) pressures (T=0K).
 The volume change associated with the calculated breakdown of CO2 to elemental C and O is indicated.
 The lower pressure range is shown in the inset (J. Montoya, unpublished).
-Figure 13.
-Predicted high-pressure structure of CO with the Cmcm layered structure.
+ Predicted high-pressure structure of CO with the Cmcm layered structure.
 The grey and red spheres represent C and O atoms, respectively, and the yellow spheres identify the six-membered ring in the structure.
 This represents only one of several high-pressure structures predicted for CO under pressure (from ).
-Figure 14.
-(A) Predicted structures of high-pressure polymorphs of CaCO3: a) post-aragonite (stable at 42 to 137 GPa); b) C2221 phase (stable at > 137 GPa); c) P-T phase, probably stable in a narrow pressure range of a few GPa between aragonite and post-aragonite.
+ (A) Predicted structures of high-pressure polymorphs of CaCO3: a) post-aragonite (stable at 42 to 137 GPa); b) C2221 phase (stable at > 137 GPa); c) P-T phase, probably stable in a narrow pressure range of a few GPa between aragonite and post-aragonite.
 From .
 d) and e) Enthalpies of candidate structures of CaCO3 as a function of pressure, in eV per formula unit, relative to post-aragonite.
 From .
-Figure 15.
-Predicted structures of stable high-pressure phases of MgCO3: a) post-magnesite phase II; b) phase III; c) Pna21-20 structure.
+ Predicted structures of stable high-pressure phases of MgCO3: a) post-magnesite phase II; b) phase III; c) Pna21-20 structure.
 From .
-Figure 16.
-Experimentally determined structure of the high-pressure ferromagnesium carbonate phase with space group P21/c.
+  Experimentally determined structure of the high-pressure ferromagnesium carbonate phase with space group P21/c.
 (CO4)4- tetrahedral appear in green and magnesium atoms are shown as violet spheres .
 Figure 17 (A) Energy variation as a function of the T-O-T angle (red dashed line = Si; black dotted line = C).
 Calculations were performed on H6T2O7 molecules; at each angle all T-O distances and O-T-O valence angles were optimized.
 (B) The minimum energy configuration of C2O7 has a 123.6° C-O-C angle.
 From .
-Figure 18.
-Infrared and Raman spectra (right insert) of mixed silicate and CO2 showing the formation of the high pressure silicon carbonate phase.
+ Infrared and Raman spectra (right insert) of mixed silicate and CO2 showing the formation of the high pressure silicon carbonate phase.
 A schematic representation of the original silicate structure is shown in the left inset .
-Figure 19.
-Observed and predicted framework silicates with SiO4 tetrahedra (red), SiO6 octahedra (blue), alkali cations (yellow spheres), and alkaline earth cations (green spheres) might represent carbonate-silicate structures at elevated temperature and pressure.
+ Observed and predicted framework silicates with SiO4 tetrahedra (red), SiO6 octahedra (blue), alkali cations (yellow spheres), and alkaline earth cations (green spheres) might represent carbonate-silicate structures at elevated temperature and pressure.
 Structures are shown in views parallel and perpendicular to layers of tetrahedral groups.
 (A) sodium silicate, Na4Si2VISi4IVO14; (B) predicted calcium germanate-type, Ca2Si2VISi5IVO16; (C) wadeite-type K4Si2VISi6IVO18; (D) benitoite-type Ba2Si2VISi6IVO18; (E) barium germanate-type Ba2Si2VISi6IVO18; (F) sodium silicate, Na4Si2VISi6IVO18; (G) predicted beryl-type Ba2Si2VISi6IVO18; (H) sodium-calcium silicate, Na1.8Ca1.1SiVISi5IVO14.
 (From ).

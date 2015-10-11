@@ -366,7 +366,7 @@ Subduction zone thermal conditions based both on geodynamic and petrologic const
 It can be noticed that the estimates derived from the rock records suggest higher subduction zone temperatures than those predicted by geodynamic modeling.
 For simplicity only one plausible P-T trajectory of ancient subduction that is hotter than Cascadia subduction zone by 100 °C is plotted.
 This estimate is most likely at the upper end of all the ranges slab-surface temperatures, given that most other modern subduction zones are cooler than that of Cascadia.
-Therefore, the difference between the geodynamic predictions and natural rock record is likely even more than appear in Figure 8.
+Therefore, the difference between the geodynamic predictions and natural rock record is likely even more than appear in 
 The compositions and the relative proportions of carbon-bearing rock types during this ancient time-period are poorly constrained and in Figure 8 it is assumed that all the three dominant carbonated lithologies that subduct in modern Earth—that is carbonated ocean floor sediments, carbonated altered basalt, and carbonated peridotite (ophicarbonate)—participated in the subduction-type environment of deep time, although their relative importance in terms of the flux of carbon in the downgoing slab may have been different than what has been estimated for modern subduction zones globally .
 Figure 8b shows that on average, at any given pressure, carbonated pelitic sediments have the lowest decarbonation and carbonate melting temperatures, thus they are most prone to losing their carbon inventory during subduction.
 Carbonated ocean floor basalts or their derivatives, carbonated eclogite, have intermediate decarbonation or carbonate melting temperatures and carbonated peridotites have the highest carbonate melting solidi.
@@ -621,21 +621,18 @@ In subduction-influenced, carbon-rich, oxidized domains carbonatitic melt may ev
 However, oxidized forms of carbon at depths greater than the deep upper mantle may be an exception and reduced phases such as Fe-Ni-S-C melt, Fe-Ni alloy, and Fe-rich carbides are the phases of interest with increasing depth, while diamond becomes a stable phase only in C-rich and/or S-rich mantle domains.
 Further work in multi-component metallic system will be required to understand the full spectrum of reduced carbon storage in the mantle.
 It also needs to be explored whether there are remnants of metallic alloy/carbide melt left behind from the event of core formation and whether such phases preserve very different compositions than those expected from iron disproportionation in silicates and subsequent Fe-C reaction.
-Figure 1.
-Cartoon illustrating the range of deep-Earth processes from magma ocean stage of the Hadean Eon to plate tectonic framework of the modern world that likely influenced the long-term carbon cycle.
+ Cartoon illustrating the range of deep-Earth processes from magma ocean stage of the Hadean Eon to plate tectonic framework of the modern world that likely influenced the long-term carbon cycle.
 This chapter reviews Earth’s deep carbon cycle in light of these processes.
 The early Earth processes cartoon (left), although shown together, may be temporally separated.
 For example, if carbon exchange between the proto-atmosphere and the magma ocean had an important role in the later evolution of the mantle, such a process was required to continue after the core formation had ceased (see text for details).
-Figure 2.
-The effect of equilibrium partitioning of carbon between metallic and silicate melt in a magma ocean on the inventory of mantle and core carbon, modified after Dasgupta et al.
+ The effect of equilibrium partitioning of carbon between metallic and silicate melt in a magma ocean on the inventory of mantle and core carbon, modified after Dasgupta et al.
 (in press-a).
 This calculation assumes that the inventory of carbon in the BSE and the core reflects perfect equilibration of the present-day mass of the core (32.3%) with the mass of silicate Earth.
 Carbon concentration of deep Earth reservoirs (core: grey curve and mantle: black curves) are plotted as a function of bulk Earth carbon that participated in the core-mantle fractionation event.
 The mantle and core concentrations are plotted for four different  values of 5500, 2500, 1000, and 500, which may cover all the possible conditions of core-mantle equilibration.
 Plotted for comparison are the estimated range of modern Earth mantle carbon contents [depleted mantle similar to the source regions of mid-ocean ridge basalts: ~50-200 ppm CO2 ; enriched mantle similar to the source regions of intraplate ocean island basalt or off-axis seamounts: up to 4000 ppm CO2; ], primarily based on volcanic CO2 flux and the estimate of BSE carbon content of 120 ppm  and ~765 ppm .
 Also plotted for reference are the carbon abundance in CI chondrite of ~3.5 wt.% , estimated bulk Earth carbon content of 730 ppm , and carbon solubility limit for Fe-rich alloy melt at high temperature and low pressure .
-Figure 3.
-The effect of incomplete alloy melt-silicate melt equilibrium on the inventory of mantle and core carbon.
+ The effect of incomplete alloy melt-silicate melt equilibrium on the inventory of mantle and core carbon.
 The calculation in this figure assumes that between 20% (a) and 1% (b) of the present-day core mass equilibrated with the silicate magma ocean.
 The fraction of metallic alloy melt mass that equilibrated with the mantle was taken from  who specifically modeled the impact of an already differentiated object with the proto-Earth, for the case where very limited metal-silicate equilibration takes place before the core of the impactor merges with the core of the proto-Earth.
 Shown for reference from Figure 2 are the present day mantle carbon content estimates for depleted and enriched sources, the BSE carbon content estimates, bulk Earth carbon content estimate of  and carbon content of CI-type meteorite.
@@ -646,8 +643,7 @@ Also, in this case the equilibrating fraction of alloy melt may reach C-saturati
 Flotation of these diamonds may elevate the magma ocean C-content thus perhaps even attaining the BSE value of ~765 ppm C .
 However, it is argued in the text that this extreme case of incomplete core-mantle equilibration is unlikely.
 The bulk core carbon content estimation (dark grey lines) assumes that the unequilibrated fraction of the segregating metallic melt contained no carbon.
-Figure 4.
-Storage capacity of carbon in silicate magma at core-forming conditions (fO2 ~IW-3 to IW).
+ Storage capacity of carbon in silicate magma at core-forming conditions (fO2 ~IW-3 to IW).
 (a) Total carbon content in silicate melts as a function of pressure.
 A range of silicate compositions saturated with CH4-H2 fluid and/or graphite and at temperatures of 1200-2000 °C is plotted.
 Also shown for reference are the CO2 solubilities in a tholeiitic basalt at graphite saturation at 1600 and 2000 °C and between fO2 similar to IW-2 to IW-1.5, following the model of .
@@ -656,14 +652,12 @@ Also shown for reference are the CO2 solubilities in a tholeiitic basalt at grap
 in press-a) at similarly reducing conditions.
 This plot shows that the total carbon content at graphite saturation for tholeiitic basalts increases with increasing temperature and decreases with increasing pressure and these systematics are similar to what is expected for CO2 solubility from thermodynamic calculations.
 However, the experimentally measured total dissolved carbon content at a given oxygen fugacity is significantly higher than that of the carbon in the form of dissolved carbonates alone, which highlights the role of other reduced species and fH2 and fH2O in the magma ocean storage capacity of carbon.
-Figure 5.
-Schematic cross sections illustrating the range of deep Earth processes from magma ocean stage of the Hadean Eon to the plate tectonic framework of the modern world, which may explain the “excess carbon” in the mantle.
+ Schematic cross sections illustrating the range of deep Earth processes from magma ocean stage of the Hadean Eon to the plate tectonic framework of the modern world, which may explain the “excess carbon” in the mantle.
 (a) Addition of volatile-rich materials to Earth after core formation has ceased.
 (b) Interaction between a magma ocean and carbon-rich proto-atmosphere to increase the C-budget of the magma ocean.
 (c) Convective mixing of C-rich lower mantle materials with the entire mantle, after the crystallization of the magma ocean.
 (d) Core-mantle interactions and possible back-release of C-bearing fluids/melts aided by the presence of “water”; introduction of water to core-mantle boundary regions may be aided by subduction.
-Figure 6.
-The effect of addition of chondritic late veneer and back-mixing of Fe-rich carbide from inefficient core formation on the bulk mantle carbon budget.
+ The effect of addition of chondritic late veneer and back-mixing of Fe-rich carbide from inefficient core formation on the bulk mantle carbon budget.
 The suggested range of CI-carbonaceous chondrite addition as required by the refractory siderophile element budget of the mantle and W-isotopic composition of the Earth-Moon system is highlighted in grey.
 The mean and standard deviation of the suggested value of ordinary chondrite addition are also highlighted in grey.
 Shown for reference are the BSE carbon estimate given by  and .
@@ -672,8 +666,7 @@ The figure shows that if BSE carbon content of  or any other higher value is app
 If on the other hand C-bearing core melt trapped in the lower mantle undergoes fractional crystallization, then some mantle domains could be Fe-carbide-bearing.
 Plotted, for example, are enrichments predicted for mixing such mantle domains containing stoichiometric (Fe,Ni)3C or (Fe,Ni)7C3 carbides.
 Admixing ~0.6 to 1.0 wt.% of Fe-rich carbide can potentially elevate the magma ocean residual to core formation to the carbon level similar to that of BSE.
-Figure 7.
-Experimentally constrained solidus of nominally anhydrous, carbonated fertile peridotite.
+ Experimentally constrained solidus of nominally anhydrous, carbonated fertile peridotite.
 The experiments include those from  at 1.4-3.5 GPa,  at 3.0-10.0 GPa, Dasgupta and Hirschmann (2007a) at 6.6 GPa,  at 10.0-20.0 GPa,  at 16.5-32.0 GPa, and  at 10-23 GPa.
 The shape of the solidus over 3-10 GPa pressure range is constrained by the experiments of  but the exact location is adjusted to that expected for a peridotite with ppm level CO2 after Dasgupta and Hirschmann (2007a).
 Subsolidus and supersolidus experiments are given by solid blue and open red circles, respectively.
@@ -681,8 +674,7 @@ The preferred solidus from 2 to 35 GPa is fitted with a polynomial.
 Unlike in the study of  where the solidus at >10 GPa was parameterized by correcting for the bulk compositional differences between the studies performed at lower (≤10 GPa; natural fertile peridotite compositions) and higher (≥10 GPa; fertile peridotite with excess alkalis or peridotite in the simple system CMASN+CO2) pressures, here the solidus at >10 GPa is parameterized by using the brackets from the study of .
 Also shown for reference (black boxes on the 1350 °C mantle adiabat) are the conditions of redox melting as proposed by (1)  and (2) .
 The green and saffron shaded bands indicate approximate location of the solid mantle adiabats of the modern mantle (TP = 1300-1450 °C) and the Archean mantle (TP = 1500-1700 °C), respectively.
-Figure 8.
-Comparison of subducting slab P-T estimates for the Hadean to Proterozoic subduction-type environment and experimentally constrained equilibria of decarbonation and carbonate melting of: (a) carbonated basaltic crust; (b) carbonate-bearing pelitic sediments; and (c) carbonated (lithospheric) mantle peridotite.
+ Comparison of subducting slab P-T estimates for the Hadean to Proterozoic subduction-type environment and experimentally constrained equilibria of decarbonation and carbonate melting of: (a) carbonated basaltic crust; (b) carbonate-bearing pelitic sediments; and (c) carbonated (lithospheric) mantle peridotite.
 P-T estimates relevant for ancient subduction zones come from thermobarometric estimates of various ancient natural assemblages.
 Ages from various studies are marked next to the P-T estimates.
 The data from Hopkins et al.
@@ -693,13 +685,11 @@ Decarbonation melting conditions for basalt-hosted carbonates in (a) come from t
 Carbonate-out boundaries for subducting pelites in (b) come from the studies of (TS08)  (TD11, TD12) Tsuno and Dasgupta (2011; 2012), and  and for carbonated peridotite (± H2O) in (c) from the studies of (WG88)  (FG89)  and (D06) .
 For clarity only the complete decarbonation and carbonatite melting boundaries are shown.
 The complete near-solidus relations involving silicate melting are not included.
-Figure 9.
-Subduction potential of carbonated lithologies from the Archean Eon to the present by comparing subducting slab T estimates through time and experimentally constrained T of decarbonation and carbonate melting.
+ Subduction potential of carbonated lithologies from the Archean Eon to the present by comparing subducting slab T estimates through time and experimentally constrained T of decarbonation and carbonate melting.
 (a) The range of metamorphic temperatures as a function of age for various subduction zone crustal assemblages.
 The temperature estimates are based on thermometry and are taken from the literature data given in Figure 8 legend and in the text.
 The actual P-T estimates from Figure 8 are projected to a constant pressure of 2 GPa for the ease of comparison.
-The red and the blue diamonds represent the maximum and minimum temperatures projected from each study plotted in Figure 8.
-The present-day (0 Ga) subducting slab temperature range reflects the slab-surface temperatures for Cascadia (max T) and the average of all the intermediate to cold subduction zones (min T).
+The red and the blue diamonds represent the maximum and minimum temperatures projected from each study plotted in  The present-day (0 Ga) subducting slab temperature range reflects the slab-surface temperatures for Cascadia (max T) and the average of all the intermediate to cold subduction zones (min T).
 Although highly speculative, these data suggest that the subduction zones globally may have cooled substantially throughout Earth’s history.
 The “Delta T” indicates the excess slab temperature applicable for subduction of a given age.
 (b) Excess slab temperature required to cause decarbonation/melting of a given lithology at 3 and 5 GPa versus the excess slab temperature of ancient to modern subduction zones as constrained in (a).
@@ -710,22 +700,18 @@ For consistency, the same range of slab surface temperatures are used for constr
 To constrain the fate of carbonate-bearing mantle lithosphere (ophicarbonates), the temperatures at the base of the oceanic crust are used from the same subduction zones (i.e., Sunda, Vanuatu, Nicaragua, Lesser Antilles, and Cascadia).
 The position of each of these lithologies on the x-axis reflects the age where approximately half of the 5 GPa “Delta T” estimates for the given lithology falls below the trend of “Delta T” indicated by ancient subduction zones.
 Based on this comparison, it appears that subduction zones may have cooled enough by ~1.5 Ga and ~1.3 Ga to not force decarbonation or carbonated melting of basaltic crusts and sediments, respectively at sub arc depths, whereas if the top of mantle lithosphere was carbonated then such lithology would remain unsusceptible to decarbonation even in the early Archean Eon.
-Figure 10.
-Subduction efficiency of carbon in present day Earth, based on the comparison of subducting slab P-T paths worldwide  and the available experimental boundaries of decarbonation and melting of carbonated basalt (a), carbonated pelite (b), and carbonated peridotite (c).
-Experiments that constrain the decarbonation and melting of subducting lithologies are the same as those plotted in Figure 8.
-The subducting slab P-T paths (dashed lines with numbers next to them) plotted in (a) and (b) are those for the top surface of the slabs, given that both sedimentary and secondary carbonates in oceanic basalt reside mostly within top 500 m of the slab.
+ Subduction efficiency of carbon in present day Earth, based on the comparison of subducting slab P-T paths worldwide  and the available experimental boundaries of decarbonation and melting of carbonated basalt (a), carbonated pelite (b), and carbonated peridotite (c).
+Experiments that constrain the decarbonation and melting of subducting lithologies are the same as those plotted in  The subducting slab P-T paths (dashed lines with numbers next to them) plotted in (a) and (b) are those for the top surface of the slabs, given that both sedimentary and secondary carbonates in oceanic basalt reside mostly within top 500 m of the slab.
 The subducting slab P-T paths in (b) are those for the base of the 7 km thick oceanic crust or at the top surface of the mantle lithosphere.
 The slab-surface P-T paths in (b), marked with 1 through 5, are specifically for those subduction zones where ocean-floor sediments are known to have a distinct carbonate fraction .
 The gray shaded region marks the range of sub-arc depths for all modern subduction zones combined .
 Carbonate mineral major element compositions stable along the phase boundaries are marked.
 Lithologies that stabilize dolomite solid solution or dolomite-magnesite solid solution on average have lower carbonate-out boundaries compared to those that stabilize calcitic solid solution.
-Figure 11.
-Comparison of carbonated fertile peridotite solidus (thick black line) from Figure 6 with geotherms based on xenoliths of the Archean and Proterozoic cratonic peridotite.
+ Comparison of carbonated fertile peridotite solidus (thick black line) from Figure 6 with geotherms based on xenoliths of the Archean and Proterozoic cratonic peridotite.
 Steady-state conductive geotherms are for a surface heat flux of 40-80 mW m-2.
 Shown for reference are volatile-free peridotite solidus (red line) from  and proposed depth range of carbonate to graphite/diamond transition (gray horizontal band;  based on skiagite activity in garnet and experimental oxy-barometry calibration of .
 The xenolith geotherm data are from .
-Figure 12.
-Iron-rich portion of the Fe-C binary phase diagrams at (a) 10 GPa and (c) 50 GPa adapted from the study of .
+ Iron-rich portion of the Fe-C binary phase diagrams at (a) 10 GPa and (c) 50 GPa adapted from the study of .
 Also marked along the top x-axis are the Fe/C mass ratios for various bulk compositions.
 The shaded band with lines in the middle in (a) and (c) indicate the expected temperatures of the mantle along an average mantle adiabat derived from  at these depths.
 (b) and (d), based on the phase diagram (a) and (c) respectively, show the expected phase assemblages in Fe-Ni metal alloy in the mantle (in weight percent) and carbon content (in ppm) of the mantle space.
@@ -733,8 +719,7 @@ The shaded band with lines in the middle in (a) and (c) indicate the expected te
 The red horizontal lines in (b) and (d) mark the expected mass fraction of alloy at these mantle depths as suggested by .
 Reduced solubilities of carbon in carbide-saturated alloy at higher pressures suggest that carbide-saturation of the mantle takes place even for a carbon depleted MORB-source mantle at lower mantle depths, whereas for a similarly carbon-poor deep upper mantle, the entire carbon inventory could be dissolved in a metallic alloy phase (see text for details).
 The plot in (d) also suggests that unless a small amount of Ni has a large influence on the Fe-C phase diagram, diamond stability in the lower mantle requires the mantle to be extremely carbon-rich or much poorer in metal alloy fraction.
-Figure 13.
-(a) Fe+Ni-C-S ternary showing the expected compositional range in the Fe(±Ni)-C-S subsystem of the mantle (gray shaded field).
+ (a) Fe+Ni-C-S ternary showing the expected compositional range in the Fe(±Ni)-C-S subsystem of the mantle (gray shaded field).
 The field is based on 50-1000 ppm C, 150-350 ppm S, and 0.1-1.0 wt.% Fe-Ni alloy fraction in the mantle.
 Also shown for comparison are the experimentally investigated bulk compositions in the Fe-C-S (a), Fe-Ni-C, and Fe-Ni-C-S systems (Buono et al.
 submitted), the near-liquidus relations for which are presented in (b).

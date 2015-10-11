@@ -405,52 +405,39 @@ We have nanoscale diffraction and imaging tools in hand (and they are also being
 With improvements in beamline instruments, insertion devices, and brighter sources, we may realize nanoscale resolution with X-ray Raman spectroscopy and other inelastic scattering techniques.
 The future is also bright (pardon the pun) for in-situ synchrotron X-ray studies and also neutron studies with new and upgraded sources coming on-line.
 New ultrafast laser techniques and hard X-ray free electron lasers offer the possibility for future deep carbon studies with time-resolved measurements and the experimental study of the mechanisms and transformation pathways involved in phase transitions.
-Figure 1.
-Top: Schematic diagram of DAC sample configuration focusing on sample and diamond culets.
+ Top: Schematic diagram of DAC sample configuration focusing on sample and diamond culets.
 Bottom panels: Three X-ray radiographs collected upon increasing pressure, which illustrate the anvils deforming and cupping with pressure.
-Figure 2.
-(a) Symmetric DAC; (b) Panoramic DAC with radial access; (c) cross DAC with radial access and axial access.
-Figure 3.
-Secondary electron images of carbonate-bearing samples illustrating distinctions between melt-absent (a) and melt-present (b) conditions.
+ (a) Symmetric DAC; (b) Panoramic DAC with radial access; (c) cross DAC with radial access and axial access.
+ Secondary electron images of carbonate-bearing samples illustrating distinctions between melt-absent (a) and melt-present (b) conditions.
 Abbreviations: ol, olivine; opx, orthopyroxene; cpx, clinopyroxene; gt, garnet; mst, magnesite; and cbl, carbonate melt.
 From .
-Figure 4.
-Secondary electron image of a recovered sample (MgCO3+Pt) transformed at 85 GPa and 2400 K in DAC.
+ Secondary electron image of a recovered sample (MgCO3+Pt) transformed at 85 GPa and 2400 K in DAC.
 The edge of the heated area can easily be discerned by textural changes.
-Figure 5.
-SEM pictures illustrating different steps in FIB sample preparation: (a) milling of a thick section from the recovered DAC sample; (b) extraction of this section using a nanomanipulator; (c) welding of the thick section on a TEM grid; d) after final thinning of the section welded to a copper TEM grid.
+ SEM pictures illustrating different steps in FIB sample preparation: (a) milling of a thick section from the recovered DAC sample; (b) extraction of this section using a nanomanipulator; (c) welding of the thick section on a TEM grid; d) after final thinning of the section welded to a copper TEM grid.
 For this last step, a low current Ga+ beam was used in order to minimize damage, such as amorphization of the sample.
-Figure 6.
-(a) HAADF-STEM image of a recovered DAC sample: The starting material was embedded within CO2 and heated on both sides.
+ (a) HAADF-STEM image of a recovered DAC sample: The starting material was embedded within CO2 and heated on both sides.
 The carbonation reaction front thus progressed from both sides, but did not affect the central part of the sample.
 In each of the reaction zones, the starting material is surrounded by Fe-bearing magnesite [(Mg,Fe)CO3].
 Magnetite is also present in the Fe-Mg carbonate areas in association with nanodiamonds; (b) TEM image of nano-diamonds; (c) electron diffraction from nano-diamonds.
 Modified after .
-Figure 7.
-Carbon K-edge spectra from different carbon-bearing phases.
+ Carbon K-edge spectra from different carbon-bearing phases.
 From top to bottom: three allotrope of pure carbon: diamond, graphite and amorphous carbon and different carbon-bearing minerals: hydrotalcite [Mg6Al2(CO3)(OH)16·4(H2O)], desautelsite [Mg6Mn2(CO3)(OH)16•4(H2O)], siderite (FeCO3), and calcite (CaCO3).
 From .
-Figure 8.
-(a) Carbon K-edge spectra collected from a recovered sample of Fe-bearing magnesite compressed and heated to 80 GPa and 2300 K in the untransformed (top spectra) and transformed (bottom spectra) areas; (b) DFT calculations for electron density of state of the carbon atoms (p orbital symmetry) in different structures (schematics shown at right).
+ (a) Carbon K-edge spectra collected from a recovered sample of Fe-bearing magnesite compressed and heated to 80 GPa and 2300 K in the untransformed (top spectra) and transformed (bottom spectra) areas; (b) DFT calculations for electron density of state of the carbon atoms (p orbital symmetry) in different structures (schematics shown at right).
 This unoccupied density of state roughly corresponds to the excitation probed by EELS at the carbon K-edge (excitonic effects are neglected in the calculation).
 Modified after .
-Figure 9.
-Top: STEM-EELS image and carbon K edge of a high-pressure carbon-bearing phase.
+ Top: STEM-EELS image and carbon K edge of a high-pressure carbon-bearing phase.
 Bottom: STXM image of the same area and  carbon K edge of the same phase.
 While EELS provides absorption spectra at very high spatial resolution, higher energy resolution is obtained by STXM.
-Figure 10.
-Left: STXM stacks of transmitted images (processed into optical density images) taken at 0.1 eV energy intervals, from which spectra can be extracted for each area.
+ Left: STXM stacks of transmitted images (processed into optical density images) taken at 0.1 eV energy intervals, from which spectra can be extracted for each area.
 Right: Spectra for one area containing the high-pressure (HP) phase, corresponding to a new phase of FeCO3.
 Spectra from a different area containing to nanodiamonds is shown at top.
-Figure 11.
-The pressure distribution as a function of sample position (radial distance from the center of anvil) determined with a ~5-µm (black squares) and a 600-nm (black diamonds) focused X-ray beam.
+ The pressure distribution as a function of sample position (radial distance from the center of anvil) determined with a ~5-µm (black squares) and a 600-nm (black diamonds) focused X-ray beam.
 A 20 GPa/µm gradient in 1-µm area at the peak pressure of 105 GPa can be observed.
 From .
-Figure 12.
-XRD patterns for the same Mg0.6Fe0.4SiO3 post-perovskite sample measured at 142 GPa with 250-nm (a) and 5-μm (b) monochromatic X-ray beams.
+ XRD patterns for the same Mg0.6Fe0.4SiO3 post-perovskite sample measured at 142 GPa with 250-nm (a) and 5-μm (b) monochromatic X-ray beams.
 From .
-Figure 13.
-Left:  High-pressure XRS carbon K-edge spectra for graphite plotted as normalized scattered intensity versus energy loss (incident energy – analyzer energy).
+ Left:  High-pressure XRS carbon K-edge spectra for graphite plotted as normalized scattered intensity versus energy loss (incident energy – analyzer energy).
 The lower-energy peak at approximately 285 eV corresponds to 1s to p* transitions and the broad higher-energy portion corresponds to 1s to s* transitions.
 The bottom spectra, taken in the horizontal direction, probes bonds in the a plane and does not show any p-bonding.
 The top seven spectra, taken in the vertical direction, probe the c plane.
@@ -460,13 +447,11 @@ From .
 Right: High-pressure XRS spectra glassy carbon collected during compression and decompression cycles.
 Top right corner is a schematic of the structure of glassy carbon at ambient conditions.
 From .
-Figure 14.
-Schematic of Fresnel zone plate based nanoscale resolution X-ray microscopes.
+ Schematic of Fresnel zone plate based nanoscale resolution X-ray microscopes.
 (a) In the scanning transmission X-ray microscope (STXM) a zone plate is used to focus an incident parallel beam down to a small focal spot and the sample is then rastered through the beam to produce the image.
 (b) Full-field transmission X-ray microscope (TXM), which utilizes a zone plate as an objective lens to project a magnified image on a 2D detector.
 From .
-Figure 15.
-Setup of X-ray microscope instrument at Beamline 6-2 at SSRL before and after virtual source.
+ Setup of X-ray microscope instrument at Beamline 6-2 at SSRL before and after virtual source.
 (a) The beam passes through vertical and horizontal slits, a vertically collimating mirror (M0) followed by vertical slits, monochromator, and toroidal mirror (M1) to focus the beam at the virtual source (S3).
 (b) Capillary condenser (C) provides hollow cone illumination and pinhole (P) removes undeflected light.
 Sample image is focused by micro zone plate (MZP) onto CCD detector, with optional phase ring (PR).
@@ -474,18 +459,14 @@ Bottom: bird’s eye view showing cross DAC and dual pinhole.
 The incident X-ray beam is directed through the sample via four side openings in DAC, which is then rotated to get tomographic image.
 From .
 Bottom: Photo of Xradia instrument with the cross DAC mounted at sample position and incident X-rays travel from bottom left to top right.
-Figure 16.
-Images from 3D reconstruction of quenched samples composed of mixtures of molten Fe-rich liquids (bright white) in a silicate matrix (dark gray) at (a) pressure-temperature conditions of 8 GPa and 1800oC, where the Fe-rich melt forms isolated spheres and at (b) higher pressure-temperature conditions of 64 GPa and 3000oC, where the Fe-rich melt forms connected channels.
-Figure 17.
-Top: NanoXCT images of the compression of a round 10-mm Sn sample in a panoramic DAC.
+ Images from 3D reconstruction of quenched samples composed of mixtures of molten Fe-rich liquids (bright white) in a silicate matrix (dark gray) at (a) pressure-temperature conditions of 8 GPa and 1800oC, where the Fe-rich melt forms isolated spheres and at (b) higher pressure-temperature conditions of 64 GPa and 3000oC, where the Fe-rich melt forms connected channels.
+ Top: NanoXCT images of the compression of a round 10-mm Sn sample in a panoramic DAC.
 With increasing pressure, one can follow the change in volume and shape to determine the equation of state and the shape preferred orientation.
 Bottom: Volumes measured as a function of pressure at 4.7, 8.1, and 12.0 GPa (the size of the black dots represents the estimated error bar).
 The equation of state of Sn for both the low-pressure and high-pressure phases are plotted together and demonstrate the excellent agreement between the XRD and nanoXCT results.
 From .
-Figure 18.
-In-situ high-pressure TXM images of a 15-mm diameter glassy carbon sphere coated with ~1-mm thick Pt compressed to four different pressures in a DAC.
-Figure 19.
-Direct chemical-bond tomography from a diamond–graphite sample.
+ In-situ high-pressure TXM images of a 15-mm diameter glassy carbon sphere coated with ~1-mm thick Pt compressed to four different pressures in a DAC.
+ Direct chemical-bond tomography from a diamond–graphite sample.
 (a) Schematic computer reproduction of the sample.
 (b) XRD contrast measurement of the full volume.
 (c) XRS spectra through the graphite–diamond ensemble, for the beam path shown in (a).

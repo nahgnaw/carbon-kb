@@ -13,8 +13,7 @@ The uncertainty in our knowledge of this critical input into the geological carb
 Notwithstanding the uncertainties in our understanding of CO2 degassing from Earth, it is clear that these natural emissions were recently dwarfed by anthropogenic emissions, which have rapidly increased since industrialisation began on a large scale in the 18th century, leading to a rapid increase in atmospheric CO2 concentrations.
 While atmospheric CO2 concentrations have varied between 190-280 ppm for the last 400,000 years , human activity has produced a remarkable increase in CO2 abundance, particularly in the last 100 years, with concentrations reaching ~390 ppmv at the time of writing.
 This situation highlights the importance of understanding the natural carbon cycle, so that we may better determine the evolution of the anthropogenic perturbation.
-The principle elements of the multifaceted and complex geological carbon cycle are summarised in Figure 1.
-The main sources of carbon are active and inactive volcanism from arcs and rift zones and metamorphism of crustal carbonates.
+The principle elements of the multifaceted and complex geological carbon cycle are summarised in  The main sources of carbon are active and inactive volcanism from arcs and rift zones and metamorphism of crustal carbonates.
 The main sinks for geological carbon are silicate weathering and carbonation of oceanic crust.
 Knowledge of both the total magnitude of carbon ingassing during subduction and carbon released from volcanism and metamorphism would allow quantification of the evolution and relative distribution of volatiles in the crust and mantle .
 The main focus of this work is the role of volcanism in producing CO2 in the atmosphere and oceans.
@@ -251,8 +250,7 @@ A further estimate was produced by defining 4 populations in the measured data s
 The combination of these two approaches yielded a global volcanic lake CO2 emission of 117 ± 19 Mt/yr, of which 94 Mt/yr is attributed to magmatic degassing.
 Submarine volcanism
 There are three main submarine sources of CO2, MOR, arc volcanoes and fore-arc degassing (which appears to be dominated by CH4 emissions ).
-Global emissions from MOR have been determined by various authors, as reported in Table 5.
-The large spread of MOR fluxes, from 4.4 to 792, reflects uncertainties in the dissolved contents of C and global 3He fluxes.
+Global emissions from MOR have been determined by various authors, as reported in  The large spread of MOR fluxes, from 4.4 to 792, reflects uncertainties in the dissolved contents of C and global 3He fluxes.
 performed a careful examination of the CO2/3He ratios used and determined a median value of 2.2 ×109 with standard deviation of 0.7×109.
 Using a 3He flux of 1000±250 mol/yr  they derived a MOR CO2 flux of 97 ± 40 Mt/yr CO2.
 The more recent determination of MOR CO2 flux from  who measured CO2/3He in MOR hydrothermal plumes of 55±33 Mt/yr is in reasonable agreement with that estimate.
@@ -280,8 +278,7 @@ We therefore use the total presented in table 4 for the CO2 emissions from tecto
 Summing the extrapolated passive plume, diffuse degassing, lake degassing global estimates and emissions from inactive, hydrothermal and tectonic structures produces a total subaerial volcanic flux of 540 Mt/yr, and a global emission (including MOR emissions) of 637 Mt/yr (Table 6).
 Thus global volcanic CO2 fluxes are only ~1.8 % of the anthropogenic CO2 emission of 35,000 Mt per year .
 Comparison with previous estimates of subaerial volcanic CO2 flux
-There have been several papers which estimate the global CO2 flux, as shown in Table 7.
-Our update of the global volcanic CO2 flux, 637 Mt/yr, is larger than the maximum suggested by  of 440 Mt/yr.
+There have been several papers which estimate the global CO2 flux, as shown in  Our update of the global volcanic CO2 flux, 637 Mt/yr, is larger than the maximum suggested by  of 440 Mt/yr.
 This is in part because CO2 emissions from volcanic lakes were not addressed in that work.
 The total subaerial flux we calculate of 637 Mt/year is also higher than that proposed by  due primarily to the improvement in measurements of persistently degassing volcanoes.
 We note that  included the fluxes from single eruptive events from  and Mt.

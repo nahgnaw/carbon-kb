@@ -271,13 +271,10 @@ This model generates the observed mantle concentrations of a number of weakly- a
 The core-mantle partitioning of W and Mo were found to be very sensitive to the S and C contents of the metal.
 If we assume that ~2% S is present in the core and that this S was added during the last 13% of accretion , then the current W and Mo contents of the mantle would be consistent with ~0.6% carbon in the core.
 We conclude that all 4 approaches to carbon as a component of the “light” element in the core lead to an upper likely concentration of ~1% of this element in the core.
-Figure 1.
-The concentrations of elements in bulk silicate Earth plotted as a function of the temperature at which 50% of the element would be condensed from a gas of solar composition .
+ The concentrations of elements in bulk silicate Earth plotted as a function of the temperature at which 50% of the element would be condensed from a gas of solar composition .
 Concentrations are ratioed to the values in CI chondrites and normalized to Mg=1.0.
-Figure 2.
-Figure from  illustrating the carbon isotopic fractionation of all whole rock mantle xenoliths and separated minerals from these xenoliths.
-Figure 3.
-A summary of the carbon isotopic compositions of the silicate parts of planetary bodies as determined from HED meteorites (Vesta), SNC meteorites (Mars), and Earth compared to CI, CM, CO, and CV chondrites (Chondrite).
+  Figure from  illustrating the carbon isotopic fractionation of all whole rock mantle xenoliths and separated minerals from these xenoliths.
+ A summary of the carbon isotopic compositions of the silicate parts of planetary bodies as determined from HED meteorites (Vesta), SNC meteorites (Mars), and Earth compared to CI, CM, CO, and CV chondrites (Chondrite).
 See text for more detail.
 Figure 4 Phase diagram of the iron-carbon system showing the eutectic composition (solid circles) at different pressures.
 Note the decrease in observed carbon content at the eutectic to 50 GPa and that the 130 GPa diagram is an extrapolation.

@@ -20,8 +20,7 @@ Hydrocarbons (e.g., CH4, C2H6, etc.
 ), CO2, and aqueous solutions can occupy the pores or fractures of numerous types of complex heterogeneous Earth materials present in the systems outlined above.
 This accessible porosity within the solids can span wide length scales (d as pore diameter or fracture aperture) including micro-, meso-, and macroporous regimes (d < 2.0 nm, 2.0 < d < 50 nm, and d > 50 nm, respectively, as defined by IUPAC).
 Porous solid matrices include rock or soil systems that contain clays and other phyllosilicates, zeolites, coal, graphite, or other carbonaceous-rich units; and weathered or altered silicates (e.g., feldspar to clay; olivine to serpentine), oxides, and carbonates.
-Examples of micro- and mesoporous features in natural solids and synthetic engineered proxies for natural materials are given in Figure 1.
-A number of factors dictate how fluids, and with them reactants and products of intrapore transformations, migrate into and through these nano-environments, wet, and ultimately adsorb and react with the solid surfaces.
+Examples of micro- and mesoporous features in natural solids and synthetic engineered proxies for natural materials are given in  A number of factors dictate how fluids, and with them reactants and products of intrapore transformations, migrate into and through these nano-environments, wet, and ultimately adsorb and react with the solid surfaces.
 Factors include the size, shape, distribution, and interconnectedness of confined geometries, the chemistry of the solid and the fluids, and their physical properties .
 The dynamic behavior of fluids and gases contained within solids is controlled by processes occurring at the interface between the various phases (e.g., water-water, water-solute, water-volatile, water-solid, solute-solid, volatile-solid, etc.
 ), as well as the rates of supply and removal of mobile constituents.
@@ -182,7 +181,7 @@ This characterization is indeed confirmed by the practically zero intensity reco
 On the other hand, the spectra of the samples impregnated with hexane exhibit, in practice, the same trend, while the slight variation of intensity is attributed to the reduced contrast achieved as increased quantities of the hydrocarbon are introduced in the pore network.
 Most interestingly, the autocorrelation function curves obtained from scattering for the cases of the partial filling (e.g., Vswater = 1/3 or 2/3 where Vs is defined as the fraction of total pore volume occupied by a certain fluid component) of the pore volume with only the aqueous phase and the complete saturation with an equivalent water–hexane mixture (i.e., Vswater = 1/3 or 2/3 and Vshexane = 2/3 or 1/3) practically coincide despite the differentiation of the fluids occupying the pore volume and the significant variation therefore of the interfacial energies coupled in the respective systems.
 In practical terms this important observation provides direct experimental evidence that the spatial distribution of the fluid phases is related to their wetting/non-wetting relative behavior and is not affected significantly by the actual values of their particular interfacial properties.
-Simulations of this wetting process for different loadings are shown in Figure 7.
+Simulations of this wetting process for different loadings are shown in 
 Zeolites are microporous aluminosilicate minerals that play an important role in many natural and industrial processes, including water purification through ion exchange, catalytic hydrocarbon cracking, and separation of pollutants from natural gas.
 They possess pore widths of typically a few tenths of a nanometer, making X-ray and neutron diffraction suitable tools for the study of these materials and guest molecules inside their pore systems.
 Neutron diffractometers exist in a variety of configurations for thermal and cold neutrons optimized for resolution or flux and interrogate length scales of up to 2 nm.
@@ -227,7 +226,7 @@ reported on the residence times (τ), mean jump length (l), and translational mo
 The Na–Y zeolite structure is made up of a network of tetrahedrally connected pores (a-cages) of diameter ~1.18 nm.
 The pores are interconnected through windows of diameter ~0.8 nm.
 A schematic of Na–Y zeolite structure is shown in Figure 8b.
-They compared the experimental results with MD as shown in Table 1.  explored the diffusion and relaxation dynamics of benzene (C6H6) in oriented 5-nm nanochannels of chrysotile [Mg3Si2O5(OH)4] asbestos fibers from 260 to 320 K (Fig.
+They compared the experimental results with MD as shown in   explored the diffusion and relaxation dynamics of benzene (C6H6) in oriented 5-nm nanochannels of chrysotile [Mg3Si2O5(OH)4] asbestos fibers from 260 to 320 K (Fig.
 9, left).
 The macroscopic alignment of the nanochannels provided an opportunity to study the anisotropy of the dynamics of a confined fluid by means of collecting the data with the scattering vector either parallel or perpendicular to the fibers axes.
 The translational diffusive motion of benzene molecules was observed to be isotropic.
@@ -431,8 +430,7 @@ However, we highlight a contribution from  who simulated the adsorption of simpl
 One model had atomically smooth pore walls, the other was rough at the atomic scale.
 The adsorption isotherms obtained showed large adsorption-desorption hysteresis loops in the case of the smooth pore, and more gradual adsorption curves in the case of the rough surface.
 Careful analysis suggested that the smooth model yields results in agreement with experiments at short length, but not at large scales, while the rough model reproduces the surface disorder at large length scales but does not at short length scales.
-When the structure of the confined fluid is considered at those relative pressures at which the pores are not completely filled, the simulation results are dramatically different, as shown in Figure 24.
-Within the smooth pore (left panel) a clear separation is observed between the adsorbed fluid and the confined gas at the center of the pore, while in the rough pore model (right panel) a few bubbles of gas are found trapped within the adsorbed fluid.
+When the structure of the confined fluid is considered at those relative pressures at which the pores are not completely filled, the simulation results are dramatically different, as shown in  Within the smooth pore (left panel) a clear separation is observed between the adsorbed fluid and the confined gas at the center of the pore, while in the rough pore model (right panel) a few bubbles of gas are found trapped within the adsorbed fluid.
 It is very likely that the transport properties in this dual-phase system strongly depend on the structure of the confined fluid, and therefore the predictions obtained with the two models are expected to be very different [no transport properties were reported by ].
 Because sub-surface pores are likely to be very heterogeneous in size, shape, surface morphology, and even chemical composition, in our opinion the observations from  should be kept in mind when simulation data are compared to experiments.
 It is very likely that the phase equilibrium within the pores will determine the diffusion of confined substances.
@@ -470,8 +468,7 @@ For example,  investigated, using parallel tempering Monte Carlo techniques, the
 Because the pore is strongly attractive to both fluids, the freezing temperature for both confined substances, as well as for their mixtures, was found to be larger than that in the bulk.
 The phase diagram for the confined mixture showed an azeotrope, similarly to that observed for the bulk mixture.
 Regarding azeotropic mixtures,  reported dielectric spectroscopy experiments for CCl4/C6H12 mixtures confined in carbon fibers and grand canonical Monte Carlo simulations for Ar/CH4 mixtures confined in carbon-slit pores.
-The results are summarized in Figure 27.
-Both experiments and simulations show that qualitatively the phase diagram for either mixture does not change upon confinement (note the azeotrope).
+The results are summarized in  Both experiments and simulations show that qualitatively the phase diagram for either mixture does not change upon confinement (note the azeotrope).
 However, because all fluids considered are strongly attracted to the confining pores, the coexistence lines are shifted to higher temperatures upon confinement.
 The other important observation is that the composition of the azeotrope is enriched in the component that is most strongly attracted to the carbon pores (C6H12 in the case of the CCl4/C6H12 mixture, Ar in the case of the Ar/CH4 mixture).
 A cautionary note should be made here, as the experiments could not assess the composition of the mixture under confinement.

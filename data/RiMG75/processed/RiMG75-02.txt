@@ -313,82 +313,60 @@ Studies of minerals that incorporate organic molecules are in their infancy, and
 Characterization of such phases may prove especially important in resolving debates regarding abiotic versus biotic origins of some deep organic molecules .
 Furthermore, organic mineralogy may play a dominant role on Titan, as well as planets and moons in other C-rich star systems.
 Indeed, carbon mineralogy may provide one of the most sensitive geological indicators of the evolution and present state of other worlds.
-Figure 1.
-[Rotating structure 1] Graphite.
+ [Rotating structure 1] Graphite.
 (A) The graphite  (native C) crystal structure (hexagonal, space group P63/mmc; a = 2.464 Å; c = 6.736 Å; Z = 4) incorporates monoatomic layers of 3-coordinated carbon, linked by van der Waals interactions.
 (B) Natural graphite crystals reflect the hexagonal crystal structure.
 This 1 mm diameter crystal displays basal pinacoid and prism faces.
 The crystal, associated with calcite, is from the Crestmore quarries, Riverside Co., California.
 Photo courtesy of John A. Jaszczak.
-Figure 2.
-[Rotating structure 2] (A) The diamond  (native C) crystal structure (cubic, space group Fd3m; a = 3.560 Å; Z = 8) features a framework of tetrahedrally coordinated carbon atoms.
+ [Rotating structure 2] (A) The diamond  (native C) crystal structure (cubic, space group Fd3m; a = 3.560 Å; Z = 8) features a framework of tetrahedrally coordinated carbon atoms.
 (B) A natural diamond crystal reflects the cubic crystal structure.
 The semi-translucent diamond cube (ref.
 no.
 S014632) is 24.3 x 21.8 x 21.7 millimeters in size and weighs 156.381 carats (31.3 gm) and is shown with a 1-carat diamond for scale.
 It is represented to be from Ghana.
 Photo courtesy of Harold and Erica Van Pelt.
-Figure 3.
-[Rotating structure 3] The lonsdaleite (native C) crystal structure (hexagonal, space group P63/mmc; a = 2.52 Å; c = 4.12 Å; Z = 4)
-Figure 4.
-The carbon phase diagram (after ).
-Figure 5.
-[Rotating structure 4] The moissanite (SiC) crystal structure (hexagonal, space group P63mc; a = 3.081 Å; c = 5.031 Å; Z = 2).
+ [Rotating structure 3] The lonsdaleite (native C) crystal structure (hexagonal, space group P63/mmc; a = 2.52 Å; c = 4.12 Å; Z = 4)
+ The carbon phase diagram (after ).
+ [Rotating structure 4] The moissanite (SiC) crystal structure (hexagonal, space group P63mc; a = 3.081 Å; c = 5.031 Å; Z = 2).
 Carbon and silicon atoms appear in blue and grey, respectively.
-Figure 6.
-[Rotating structure 5] The structure of the iron carbide cohenite [(Fe,Ni,Co)3C] (orthorhombic, space group Pbnm; a = 4.518 Å, b = 5.069 Å; c = 6.736 Å; Z = 4).
+ [Rotating structure 5] The structure of the iron carbide cohenite [(Fe,Ni,Co)3C] (orthorhombic, space group Pbnm; a = 4.518 Å, b = 5.069 Å; c = 6.736 Å; Z = 4).
 Carbon and iron atoms appear in blue and gold, respectively.
-Figure 7.
-The diversity of carbonate minerals.
+ The diversity of carbonate minerals.
 (A) Rhodochrosite (to come); (B) Ankerite [CaFe2+(CO3)2] from Brownley Hill mine, Nenthead, Cumbria, England showing the typical curved saddle-shaped rhombohedral crystals.
 Photo courtesy of the RRUFF project; (C) Artinite [Mg2CO3(OH)2·3H2O], divergent sprays of clear colorless acicular crystals from San Benito County, California, USA.
 Photo courtesy of the RRUFF project; (D) Aurichalcite [Zn5(CO3)2(OH)6], divergent sprays of light blue lathlike crystals from Bisbee, Cochise County, Arizona, USA, Photo courtesy of the RRUFF project; (E) Hydromagnesite [Mg5(CO3)4(OH)2·4H2O], colorless bladed crystals from Paradise Range, Nye County, Nevada, USA, Photo courtesy of the RRUFF project; (F) [Jouravskite, Ca3Mn4+(SO4)(CO3)(OH)6·12H2O], yellow hexagonal prism associated with calcite from the Wessels mine, Kurumen, Kalahari Manganese fields, Cape Province, South Africa, Photo courtesy of the RRUFF project; (G) Stichtite [Mg6Cr2CO3(OH)16·4H2O], an aggregate of contorted purple plates from Dundas, Tasmania, Australia, Photo courtesy of the RRUFF project; (H) Zaratite [Ni3CO3(OH)4·4H2O], green amorphous crust, intimately associated with népouite from Lord Brassy mine, Tasmania, Australia, Photo courtesy of the RRUFF project.
-Figure 8.
-[Rotating structure 6]  The structure of calcite (CaCO3) (rhombohedral; space group R{bar3}c; hexagonal setting a = 4.989 Å; c = 17.061 Å; Z = 6; rhombohedral setting a = 6.375; α = 46.1°; Z = 2).
+ [Rotating structure 6]  The structure of calcite (CaCO3) (rhombohedral; space group R{bar3}c; hexagonal setting a = 4.989 Å; c = 17.061 Å; Z = 6; rhombohedral setting a = 6.375; α = 46.1°; Z = 2).
 Blue spheres are carbon atoms, with light green CaO6 octahedra.
-Figure 9.
-Crystal forms of natural calcite.
+ Crystal forms of natural calcite.
 (A) Rhombohedral cleavage fragment of optical grade material from near Presidio, Texas, USA, University of Arizona Mineral 4  (B) Scalenohedrons collected in the early 1800’s from the Bigrigg mine, Cumbria, England.
 Bob Downs specimen; (C) Hexagonal prisms with rhombohedral terminations from Joplin, Missouri, USA 5; (D) Herringbone growths of acicular crystals from the Southwest mine, Bisbee, Arizona, USA,  (E) Hexagonal prisms with pyrite centers from Charcas, San Luis Potosi, Mexico,  (F) Stalactite globules from Southwest mine, Bisbee, Arizona, USA,  (G) Aggregate of bladed crystals from the Onyx cave, Santa Rita Mts, Arizona, USA,  (H) Hexagonal prisms with pyramidal terminations from thje Camp Bird mine, Imogene Basin, Ouray County, Colorado, USA, .
 All photographs by Alesha Siegal, University of Arizona.
-Figure 10.
-[Rotating structure 7]  Dolomite.
+ [Rotating structure 7]  Dolomite.
 (A) The structure of dolomite [MgCa(CO3)2] (rhombohedral; space group R{bar3}; hexagonal setting a = 4.807 Å; c = 16.00 Å; Z = 3; rhombohedral setting a = 6.015, α = 47.1°; Z = 1).
 Blue spheres are carbon atoms, with light green CaO6 octahedra and dark green MgO6 octahedra.
 (B) Dolomite crystals reflect their rhombohedral crystal structure.
-Figure 11.
-[Animated figure] The rigid body librating CO32- unit of the calcite and dolomite mineral groups.
+  [Animated figure] The rigid body librating CO32- unit of the calcite and dolomite mineral groups.
 Blue and red ellipsoids represent carbon and oxygen atoms, respectively.
-Figure 12.
-[Rotating structure 8]  Aragonite Group.
+ [Rotating structure 8]  Aragonite Group.
 (A) The structure of aragonite (CaCO3) (orthorhombic; space group Pmcn; a = 4.960 Å; b = 7.964 Å; c = 5.738 Å; Z = 4).
 Blue spheres are carbon atoms, whereas green polyhedral are CaO9 groups.
 (B) The orthorhombic structure of aragonite is manifest in its common crystal form.
-Figure 13.
-[Rotating structure 9] The crystal structure of vaterite (CaCO3).
+ [Rotating structure 9] The crystal structure of vaterite (CaCO3).
 (hexagonal, space group P63/mmc; a = 7.135 Å; c = 16.98 Å; Z = 16).
 Blue spheres and green polyhedral represent carbon and calcium-oxygen polyhedral, respectively.
-Figure 14.
-[Rotating structure 10] The structure of huntite [CaMg3(CO3)4].
+ [Rotating structure 10] The structure of huntite [CaMg3(CO3)4].
 (hexagonal; space group R32; a = 9.503 Å, c = 7.821 Å; Z = 3).
 The huntite structure is unusual in the trigonal prism coordination of calcium, coupled with octahedral coordination of magnesium.
-Figure 15.
-[Rotating structure 10] Methane hydrate.
+ [Rotating structure 10] Methane hydrate.
 (A) The structure of methane hydrate [H2O.CH4] (cubic; space group Pm3m; a = 12 Å).
 (B) Methane hydrate burns at room conditions, as the hydrate melts and methane is released.
-Table 1.
-Allotropes of native carbon.
-Table 2.
-Natural carbide minerals (data compiled from MinDat.Org locality and species databases).
-Table 3.
-Natural carbide locality register, with associated reduced and/or high-P mineral species (data compiled from MinDat.Org locality and species databases).
+ Allotropes of native carbon.
+ Natural carbide minerals (data compiled from MinDat.Org locality and species databases).
+ Natural carbide locality register, with associated reduced and/or high-P mineral species (data compiled from MinDat.Org locality and species databases).
 Several moissanite localities of poorly-defined paragenesis are not included.
-Table 4.
-Select reduced and/or high-pressure mineral species associated with natural carbides (data compiled from MinDat.Org locality and species databases).
-For locality key see Table 3.
-Table 5.
-Selected anhydrous carbonates, primarily species with more than 10 known localities .
-Table 6.
-Selected hydrous carbonates.
-Table 7.
-Representative minerals incorporating organic molecules.
+ Select reduced and/or high-pressure mineral species associated with natural carbides (data compiled from MinDat.Org locality and species databases).
+For locality key see 
+ Selected anhydrous carbonates, primarily species with more than 10 known localities .
+ Selected hydrous carbonates.
+ Representative minerals incorporating organic molecules.

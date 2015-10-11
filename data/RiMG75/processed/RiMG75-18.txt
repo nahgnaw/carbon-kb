@@ -407,41 +407,35 @@ Some have speculated that water-rock reactions played a role in the origins of l
 Furthermore, serpentinites have been documented on the surface of Mars and serpentinization may be operative elsewhere in our solar system.
 Microorganisms in serpentinite settings may host relicts of these ancient microbe-mineral processes.
 Although delineating biotic from abiotic processes is challenging at the edge of the biosphere, it is critical that we are not deterred as it may help us to define the limits of our biosphere, and ultimately the transition between prebiotic Earth and life.
-Figure 1.
-Examples of serpentinization and calcium carbonate mineralization.
+ Examples of serpentinization and calcium carbonate mineralization.
 (A) Fractured serpentinite rock from the Tablelands Ophiolite, Newfoundland, Canada, showing the complex mosaic of fractures and infilling associated with pervasive serpentinization.
 Carbonate chimneys formed in the marine serpentinite environments at the Lost City Field (B) and Mariana Forearc (C).
 B used with permission from .
 C used with permission from .
-Figure 2.
-Schematic of putative biogeochemical processes in continental (A) and marine (B) serpentinization settings.
+ Schematic of putative biogeochemical processes in continental (A) and marine (B) serpentinization settings.
 Question marks indicate sources of uncertainty due to lack of data and should be considered speculative.
 Each schematic represents an idealized setting and reflects reality to varying degrees for each actual natural environment.
 This diagram is most representative of low-temperature, actively serpentinizing systems such as the Lost City hydrothermal field.
 Many serpentinite-hosted marine systems (e.g.
 Rainbow and Logatchev) feature sulfide chimneys rather than carbonate chimney deposits and have lower pH fluids compared to this diagram.
-Figure 3.
-Physiological and phylogenetic diversification of “single species” archaeal biofilms from the LCHF hydrothermal chimneys.
+ Physiological and phylogenetic diversification of “single species” archaeal biofilms from the LCHF hydrothermal chimneys.
 Panel A is a TEM thin section through a biofilm of LCMS showing the morphological diversity of cells within the carbonate chimney.
 Scale bar is 1 µm.
 Panel B shows the phylogenetic diversity of nitrogenase (nifH) genes from the same biofilms.
 The single species biofilms harbored at least 18 different clusters of methanogen-related nifH genes likely involved in nitrogen fixation.
 Figures are reproduced with permission from .
-Figure 4.
-Diagram of ionic gradients in serpentinizing ecosystems and their relationship to biochemistry.
+ Diagram of ionic gradients in serpentinizing ecosystems and their relationship to biochemistry.
 The theorized role that chemical gradients between alkaline hydrothermal fluids and an acidic ocean may have played in the development of the proton motive force (PMF) in prebiotic settings (A) and comparison to the modern day PMF (B) across biological membranes [reproduced with permission from ].
 C. depicts the pH and electrochemical gradients across the cytoplasmic membrane of microorganisms inhabiting different pH ranges and how they contribute to the PMF.
 Δψ is the transmembrane electrical potential, ΔpH is the transmembrane pH gradient, R and F are the gas and Faraday constants, respectively.
 These electrochemical gradients are harnessed by modern biochemistry to make ATP, to facilitate transport, and for mechanical processes such as motility.
 Alkaliphiles grow optimally at pH > 9 and most known alkaliphiles maintain a cytoplasmic pH < 10.
 Adapted from .
-Figure 5.
-Examples of mineral nucleation associated with microbiological processes in serpentinite ecosystems.
+ Examples of mineral nucleation associated with microbiological processes in serpentinite ecosystems.
 Panels A through C are photomicrographs of carbonate hydrothermal chimney from the Lost City Field, near the Mid Atlantic Ridge, where pore spaces within the chimneys take the shape of microbial biofilms pervasive along the exterior of the structures.
 Panel D shows a lithified microbial biofilm (top) coating a serpentinite rock in the Coast Range Ophiolite of California, USA.
 A-C are reproduced with permission from .
 D is reproduced with permission from .
-Figure 6.
-Plot showing the carbon (δ13C) and hydrogen (δD) isotopic ratios of methane from diverse environments.
+ Plot showing the carbon (δ13C) and hydrogen (δD) isotopic ratios of methane from diverse environments.
 Methane from serpentinizing environments tends to be enriched in 13C compared to locations where it is derived predominantly from biological methanogenesis or the thermogenic degradation of organic matter.
 Reproduced with permission from .
