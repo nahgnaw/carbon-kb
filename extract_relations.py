@@ -1,6 +1,5 @@
 # -*- coding: utf8 -*-
 
-import os
 from nltk.tokenize import sent_tokenize
 from dependency_graph import DependencyGraph
 
@@ -8,22 +7,22 @@ from dependency_graph import DependencyGraph
 class RelationExtractor(object):
 
     _dependencies = {
-        'nsubj': u'nsubj',
-        'nsubjpass': u'nsubjpass',
-        'dobj': u'dobj',
-        'cop': u'cop',
-        'auxpass': u'auxpass',
-        'nn': u'nn',
-        'vmod': u'vmod',
-        'prep': u'prep',
-        'pobj': u'pobj',
-        'conj:and': u'conj:and'
+        'nsubj': 'nsubj',
+        'nsubjpass': 'nsubjpass',
+        'dobj': 'dobj',
+        'cop': 'cop',
+        'auxpass': 'auxpass',
+        'nn': 'nn',
+        'vmod': 'vmod',
+        'prep': 'prep',
+        'pobj': 'pobj',
+        'conj:and': 'conj:and'
     }
 
     _pos_tags = {
-        'nn': u'NN',
-        'vb': u'VB',
-        'jj': u'JJ'
+        'nn': 'NN',
+        'vb': 'VB',
+        'jj': 'JJ'
     }
 
     def __init__(self, sentence, debug=False):
@@ -120,6 +119,10 @@ class RelationExtractor(object):
         obj_nn = self.__get_noun_compound(obj_index)
         if obj_nn:
             obj = self.__concatenate([obj_nn, obj])
+        # Find out if the object has prepositional object
+        obj_pobj_phrases = self.__get_pobj_phrase(obj_index)
+        if obj_pobj_phrases:
+            obj = self.__concatenate([obj, obj_pobj_phrases[0]])
         # Find out if the object has conjunctions
         obj_conj = self.__get_conjunctions(obj_index)
         if obj_conj:
@@ -158,6 +161,12 @@ class RelationExtractor(object):
                         for o in obj_list:
                             obj = self.__get_object(o)
                             self.__relations.append((subj, pred, obj))
+                    # If there is no direct objects, look for prepositional objects
+                    else:
+                        pobj_phrases = self.__get_pobj_phrase(pred_index)
+                        if pobj_phrases:
+                            for pp in pobj_phrases:
+                                self.__relations.append((subj, pred, pp))
                     # TODO: 'iobj' (is it necessary?)
                 # if the dependency relation is a copular verb:
                 elif triple['head']['pos'].startswith(self._pos_tags['nn']) \
@@ -206,7 +215,7 @@ class RelationExtractor(object):
 
 if __name__ == '__main__':
     sentences = u"""
-        With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
+        Carbon, element 6, displays remarkable chemical flexibility and thus is unique in the diversity of its mineralogical roles. Carbon has the ability to bond to itself and to more than 80 other elements in a variety of bonding topologies, most commonly in 2-, 3-, and 4-coordination. With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties. This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element.
         """
 
     for sent in sent_tokenize(sentences):
