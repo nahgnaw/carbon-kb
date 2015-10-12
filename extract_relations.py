@@ -88,7 +88,19 @@ class RelationExtractor(object):
                 conjunctions.append(conj['word'])
         return conjunctions
 
-    def __extract_subject(self, subj_dict):
+    def __get_pobj_phrase(self, head_index):
+        pobj_phrases = []
+        prep_list = self.__get_dependents(self._dependencies['prep'], head_index)
+        if prep_list:
+            for prep in prep_list:
+                obj_list = self.__get_dependents(self._dependencies['pobj'], prep['index'])
+                if obj_list:
+                    for o in obj_list:
+                        obj = self.__get_object(o)
+                        pobj_phrases.append(self.__concatenate([prep['word'], obj]))
+        return pobj_phrases
+
+    def __get_subject(self, subj_dict):
         subj_index = subj_dict['index']
         subj = subj_dict['word']
         # If the subject is a compound noun, use the noun compound
@@ -98,10 +110,10 @@ class RelationExtractor(object):
         # Find out if the subject has conjunctions
         subj_conj = self.__get_conjunctions(subj_index)
         if subj_conj:
-            subj = self.__concatenate([subj, ' '.join(subj_conj)], ' and ')
+            subj = self.__concatenate([subj, ' '.join(subj_conj)], ' & ')
         return subj
 
-    def __extract_object(self, obj_dict):
+    def __get_object(self, obj_dict):
         obj_index = obj_dict['index']
         obj = obj_dict['word']
         # if the object is a compound noun, use the noun compound
@@ -111,14 +123,30 @@ class RelationExtractor(object):
         # Find out if the object has conjunctions
         obj_conj = self.__get_conjunctions(obj_index)
         if obj_conj:
-            obj = self.__concatenate([obj, ' '.join(obj_conj)], ' and ')
+            obj = self.__concatenate([obj, ' '.join(obj_conj)], ' & ')
+        # Find out if the object has vmod
+        vmod_list = self.__get_dependents(self._dependencies['vmod'], obj_index)
+        if vmod_list:
+            vmod_phrases = []
+            for vmod in vmod_list:
+                pobj_phrases = self.__get_pobj_phrase(vmod['index'])
+                if pobj_phrases:
+                    for pobj_phrase in pobj_phrases:
+                        vmod_phrases.append(self.__concatenate([vmod['word'], pobj_phrase]))
+                dobj_list = self.__get_dependents(self._dependencies['dobj'], vmod['index'])
+                if dobj_list:
+                    for dobj in dobj_list:
+                        vmod_phrases.append(self.__concatenate([vmod['word'], dobj['word']]))
+            if vmod_phrases:
+                vmod_phrases = '(' + self.__concatenate(vmod_phrases) + ')'
+                obj = self.__concatenate([obj, vmod_phrases])
         return obj
 
     def extract_nsubj(self):
         if self._dependencies['nsubj'] in self.__dep_triple_dict:
             for triple in self.__dep_triple_dict['nsubj']:
                 # The subject is the dependent
-                subj = self.__extract_subject(triple['dependent'])
+                subj = self.__get_subject(triple['dependent'])
                 # If the dependency relation is a verb:
                 if triple['head']['pos'].startswith(self._pos_tags['vb']):
                     # The predicate is the head
@@ -128,14 +156,15 @@ class RelationExtractor(object):
                     obj_list = self.__get_dependents(self._dependencies['dobj'], pred_index)
                     if obj_list:
                         for o in obj_list:
-                            obj = self.__extract_object(o)
+                            obj = self.__get_object(o)
                             self.__relations.append((subj, pred, obj))
                     # TODO: 'iobj' (is it necessary?)
                 # if the dependency relation is a copular verb:
                 elif triple['head']['pos'].startswith(self._pos_tags['nn']) \
                         or triple['head']['pos'].startswith(self._pos_tags['jj']):
                     # The object is the head
-                    obj = self.__extract_object(triple['head'])
+                    obj_index = triple['head']['index']
+                    obj = self.__get_object(triple['head'])
                     # Predicate
                     pred_list = self.__get_dependents(self._dependencies['cop'], obj_index)
                     if pred_list:
@@ -147,7 +176,7 @@ class RelationExtractor(object):
         if self._dependencies['nsubjpass'] in self.__dep_triple_dict:
             for triple in self.__dep_triple_dict['nsubjpass']:
                 # The subject is the dependent
-                subj = self.__extract_subject(triple['dependent'])
+                subj = self.__get_subject(triple['dependent'])
                 # If there is a "by" following the VBN, VBN + "by" should be the predicate, and
                 # the pobj of "by" should be the object
                 vbn_index = triple['head']['index']
@@ -162,7 +191,7 @@ class RelationExtractor(object):
                             obj_list = self.__get_dependents(self._dependencies['pobj'], p['index'])
                             if obj_list:
                                 for o in obj_list:
-                                    obj = self.__extract_object(o)
+                                    obj = self.__get_object(o)
                                     self.__relations.append((subj, pred, obj))
                     else:
                         obj = vbn
@@ -177,7 +206,7 @@ class RelationExtractor(object):
 
 if __name__ == '__main__':
     sentences = u"""
-        Carbon has the ability to tie to itself and to more than 80 other elements in a variety of bonding topologies, most commonly in 2-, 3-, and 4-coordination.
+        With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
         """
 
     for sent in sent_tokenize(sentences):
