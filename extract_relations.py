@@ -16,7 +16,8 @@ class RelationExtractor(object):
         'nn': u'nn',
         'vmod': u'vmod',
         'prep': u'prep',
-        'pobj': u'pobj'
+        'pobj': u'pobj',
+        'conj:and': u'conj:and'
     }
 
     _pos_tags = {
@@ -76,6 +77,17 @@ class RelationExtractor(object):
             nn = ' '.join([nn['word'] for nn in sorted(nn_list, key=lambda e: e['index'])])
         return nn
 
+    def __get_conjunctions(self, head_index):
+        conjunctions = []
+        conj_list = self.__get_dependents(self._dependencies['conj:and'], head_index)
+        for conj in conj_list:
+            nn = self.__get_noun_compound(conj['index'])
+            if nn:
+                conjunctions.append(self.__concatenate([nn, conj['word']]))
+            else:
+                conjunctions.append(conj['word'])
+        return conjunctions
+
     def extract_nsubj(self):
         if self._dependencies['nsubj'] in self.__dep_triple_dict:
             for triple in self.__dep_triple_dict['nsubj']:
@@ -86,6 +98,10 @@ class RelationExtractor(object):
                 subj_nn = self.__get_noun_compound(subj_index)
                 if subj_nn:
                     subj = self.__concatenate([subj_nn, subj])
+                # Find out if the subject has conjunctions
+                subj_conj = self.__get_conjunctions(subj_index)
+                if subj_conj:
+                    subj = self.__concatenate([subj, ' '.join(subj_conj)], ' and ')
                 # If the dependency relation is a verb:
                 if triple['head']['pos'].startswith(self._pos_tags['vb']):
                     # The predicate is the head
@@ -112,6 +128,10 @@ class RelationExtractor(object):
                     obj_nn = self.__get_noun_compound(obj_index)
                     if obj_nn:
                         obj = self.__concatenate([obj_nn, obj])
+                    # Find out if the object has conjunctions
+                    obj_conj = self.__get_conjunctions(obj_index)
+                    if obj_conj:
+                        obj = self.__concatenate([obj, ' '.join(obj_conj)], ' and ')
                     # Predicate
                     pred_list = self.__get_dependents(self._dependencies['cop'], obj_index)
                     if pred_list:
@@ -129,6 +149,10 @@ class RelationExtractor(object):
                 subj_nn = self.__get_noun_compound(subj_index)
                 if subj_nn:
                     subj = subj_nn + ' ' + subj
+                # Find out if the subject has conjunctions
+                subj_conj = self.__get_conjunctions(subj_index)
+                if subj_conj:
+                    subj = self.__concatenate([subj, ' '.join(subj_conj)], ' and ')
                 # If there is a "by" following the VBN, VBN + "by" should be the predicate, and
                 # the pobj of "by" should be the object
                 vbn_index = triple['head']['index']
@@ -144,10 +168,16 @@ class RelationExtractor(object):
                             if obj_list:
                                 for o in obj_list:
                                     obj = o['word']
-                                    self.__relations.append((subj, pred, obj))
+                                     # Find out if the object has conjunctions
+                                    obj_conj = self.__get_conjunctions(o['index'])
+                                    if obj_conj:
+                                        obj = self.__concatenate([obj, ' '.join(obj_conj)], ' and ')
+                                        self.__relations.append((subj, pred, obj))
                     else:
                         obj = vbn
                         self.__relations.append((subj, pred, obj))
+
+    # TODO: pattern: has the ability to ...
 
     @property
     def relations(self):
@@ -156,19 +186,13 @@ class RelationExtractor(object):
 
 if __name__ == '__main__':
     sentences = u"""
-        Carbon has the ability to bond to itself and to more than 80 other elements in a variety of bonding topologies, most commonly in 2-, 3-, and 4-coordination.
-         With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
-        This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element.
-        Therefore, any comprehensive survey of carbon in Earth must consider the broad range of carbon-bearing phases.
-        The International Mineralogical Association recognizes more than 380 carbon-bearing minerals, including carbon polymorphs, carbides, carbonates, and a variety of minerals that incorporate organic carbon in the form of molecular crystals, organic anions, or clathrates.
-         This chapter reviews systematically carbon mineralogy and crystal chemistry, with a focus on those phases most likely to play a role in the crust.
-        Additional high-temperature and high-pressure carbon-bearing minerals that may play a role in the mantle and core are considered in the next chapter on deep carbon mineralogy.
+        Apple seed and Iron seed are followed with fruits and animals.
         """
 
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
         print sent
-        extractor = RelationExtractor(sent)
+        extractor = RelationExtractor(sent, debug=True)
         extractor.extract_nsubj()
         extractor.extract_nsubjpass()
         print extractor.relations
