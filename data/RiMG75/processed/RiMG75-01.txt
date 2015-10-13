@@ -9,7 +9,7 @@ Carbon’s chemical behavior in Earth’s hidden deep interior epitomizes the dy
 Past consideration of the global carbon cycle has focused primarily on the atmosphere, oceans, and shallow crustal environments.
 A tremendous amount is known about these parts of Earth’s carbon cycle.
 By contrast, relatively little is known about the deep carbon cycle (Fig. 1).
-Knowledge of the deep interior, which may contain more than 90% of Earth’s carbon (Javoy 1997), is limited (Table 1).
+Knowledge of the deep interior, which may contain more than 90% of Earth’s carbon , is limited (Table 1).
 Basic questions about deep carbon are poorly constrained:
 • How much carbon is stored in Earth’s deep interior?
 • What are the reservoirs of that carbon?
@@ -20,38 +20,28 @@ Basic questions about deep carbon are poorly constrained:
 • Are there deep sources of hydrocarbons?
 Key unanswered questions guide research on carbon in Earth.
 Perhaps most fundamental are questions related to understanding the physical and chemical behavior of carbon-bearing phases at extreme conditions representative of the deep interiors of Earth and other planets.
-We need to inventory possible C-bearing minerals at pressures and temperatures to hundreds of gigapascals and thousands of degrees and we must characterize the physical and thermochemical properties of those phases at relevant P-T conditions both experimentally and theoretically ( Chapter 2; Oganov et al.
-2013, Chapter 3).
+We need to inventory possible C-bearing minerals at pressures and temperatures to hundreds of gigapascals and thousands of degrees and we must characterize the physical and thermochemical properties of those phases at relevant P-T conditions both experimentally and theoretically ( Chapter 2;  Chapter 3).
 We need to investigate the diversity of carbon minerals over time ( Chapter 4).
-We must also understand the behavior of carbon-bearing fluids, and compile a comprehensive database of thermochemical properties and speciation of C-O-H-N fluids extending to upper mantle pressure and temperature conditions (Manning et al.
-2013, Chapter 5).
+We must also understand the behavior of carbon-bearing fluids, and compile a comprehensive database of thermochemical properties and speciation of C-O-H-N fluids extending to upper mantle pressure and temperature conditions ( Chapter 5).
 The nature and extent of carbon reservoirs in Earth’s deep interior is fundamental to understanding carbon in Earth.
-Primitive carbonaceous chondritic meteorites provide one proxy for the composition of the earliest Solar System and, by extension, Earth at the time of its formation (Marty et al.
-2013, Chapter 6).
+Primitive carbonaceous chondritic meteorites provide one proxy for the composition of the earliest Solar System and, by extension, Earth at the time of its formation ( Chapter 6).
 However, the several weight percent carbon in those meteorites is one to two orders of magnitude greater than Earth’s confirmed carbon reservoirs.
 What happened to the missing carbon?
-One key to answering this question is a comprehensive characterization of mantle carbon reservoirs and quantification of deep fluxes of carbon-bearing fluids to and from the mantle—the essence of the deep carbon cycle (Dasgupta, 2013, Chapter 7).
+One key to answering this question is a comprehensive characterization of mantle carbon reservoirs and quantification of deep fluxes of carbon-bearing fluids to and from the mantle—the essence of the deep carbon cycle ( Chapter 7).
 Current estimates of the carbon flux into Earth’s mantle through tectonic subduction exceed by an order of magnitude the known carbon flux emitted by volcanoes—an untenable balance that would deplete surface reservoirs of carbon in significantly less than a billion years.
-Added to these uncertainties, we do not know the extent to which carbon could represent a significant element in Earth’s core (Wood et al.
-2013, Chapter 8).
-Could trace amounts of carbon (a few parts per million) enter mantle silicate minerals or melts (Ni and Keppler 2013, Chapter 9)?
-These potential volumetrically large but diffuse carbon reservoirs contrast with such concentrated deep carbon phases as carbonate magmas (Jones et al.
-2013, Chapter 10) and diamonds (Shirey et al.
-2013, Chapter 12), as well as volcanic emissions of carbon species (Burton 2013, Chapter 11), which provide special insights to Earth’s dynamic state and complex history.
-Progress in all of these areas depends on the development of new instrumentation, including environmental chambers to access C-bearing samples in new regimes of P-T under controlled conditions (e.g., pH, fO2) and with increased sample volumes, as well as enhanced analytical facilities for investigating carbon-bearing samples at the nanometer scale (Mao and Boulard 2013, Chapter 13).
+Added to these uncertainties, we do not know the extent to which carbon could represent a significant element in Earth’s core ( Chapter 8).
+Could trace amounts of carbon (a few parts per million) enter mantle silicate minerals or melts ( Chapter 9)?
+These potential volumetrically large but diffuse carbon reservoirs contrast with such concentrated deep carbon phases as carbonate magmas ( Chapter 10) and diamonds ( Chapter 12), as well as volcanic emissions of carbon species ( Chapter 11), which provide special insights to Earth’s dynamic state and complex history.
+Progress in all of these areas depends on the development of new instrumentation, including environmental chambers to access C-bearing samples in new regimes of P-T under controlled conditions (e.g., pH, fO2) and with increased sample volumes, as well as enhanced analytical facilities for investigating carbon-bearing samples at the nanometer scale ( Chapter 13).
 A central aspect of Earth’s carbon cycle—one fundamentally tied to economic and environmental concerns—is the nature, sources, and evolution of subsurface organic molecules, including hydrocarbons and biomolecules.
-While a biologically mediated origin is postulated for most of Earth’s so-called “fossil fuels,” debates continue on the genesis of some deep hydrocarbons (Sephton and Hazen 2013, Chapter 14).
+While a biologically mediated origin is postulated for most of Earth’s so-called “fossil fuels,” debates continue on the genesis of some deep hydrocarbons ( Chapter 14).
 To understand possible deep abiotic organic synthesis, including prebiotic processes that set the stage for life, we need to exploit experimental procedures to mimic deep hydrothermal geochemical environments (McCollom, Chapter 15).
-In this regard, a comprehensive understanding of diverse mineral-molecule nano-scale interactions at the fluid-rock interface is required (Cole et al.
-2013, Chapter 16).
+In this regard, a comprehensive understanding of diverse mineral-molecule nano-scale interactions at the fluid-rock interface is required ( Chapter 16).
 Any overview of carbon in Earth must assess the fascinating role of deep subsurface microbial life, which, though sparse, is widespread and thus may represent a significant fraction of Earth’s total biomass.
-In our efforts to assess the nature and extent of the deep microbial biosphere, we are conducting a global 3-D census of deep microbial life, including both terrestrial and marine ecosystems (Colwell and D’Hondt 2013, Chapter 17).
-Central to any discussion of deep biology is energy flow, as exemplified by zones of serpentinization—zones of intense hydrogen production that possibly represent the oldest ecosystem on Earth (Schrenk et al.
-2013, Chapter 18).
-Any understanding of the nature and survival of deep life entails investigations of biomolecular adaptations under extreme conditions, which in turn necessitates a new laboratory-based approach to studying life at extreme pressures and temperatures (Meersman et al.
-2013, Chapter 19).
-Most enigmatic of all are deep viruses, which promote rapid microbial turnover rates and lateral gene transfer and thus may play the dominant role in evolution of subsurface ecosystems (Baross et al.
-2013, Chapter 20).
+In our efforts to assess the nature and extent of the deep microbial biosphere, we are conducting a global 3-D census of deep microbial life, including both terrestrial and marine ecosystems ( Chapter 17).
+Central to any discussion of deep biology is energy flow, as exemplified by zones of serpentinization—zones of intense hydrogen production that possibly represent the oldest ecosystem on Earth ( Chapter 18).
+Any understanding of the nature and survival of deep life entails investigations of biomolecular adaptations under extreme conditions, which in turn necessitates a new laboratory-based approach to studying life at extreme pressures and temperatures ( Chapter 19).
+Most enigmatic of all are deep viruses, which promote rapid microbial turnover rates and lateral gene transfer and thus may play the dominant role in evolution of subsurface ecosystems ( Chapter 20).
 At this stage in our pursuit of a fundamental understanding of carbon in Earth, our knowledge baseline as set forth in the following chapters is significant, but the unanswered questions—what we know we don’t know—far outweigh what we know.
 That’s an energizing state for any scientific pursuit, for the unknown is what beckons us to the laboratory, the field, and the computer.
 And yet, as we embark on this decadal quest, the greatest lure is not so much the assurance that we will fill in many gaps in what we know we don’t know, but rather that we will discover entirely new, unanticipated phenomena.

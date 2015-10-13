@@ -3,13 +3,11 @@ INTRODUCTION
 Surficial observations reveal carbon in a great variety of organic, inorganic, and biological forms that subduct with descending slabs and rise and erupt in volcanoes.
 Due to the lack of experimental means for studying carbon under extreme deep Earth conditions, we have limited information on the density and bonding nature of carbon-bearing fluids, and virtually no information on the texture and porosity of fluid-rock assemblages.
 Our knowledge on some of the most fundamental questions surrounding the deep carbon cycle becomes increasingly tenuous as we move into the planet.
-For example, in what form do carbon-bearing materials exist deep within Earth (Oganov et al.
-2013)?
-How does carbon move within the planet’s deep interior (Dasgupta 2013)?
+For example, in what form do carbon-bearing materials exist deep within Earth ?
+How does carbon move within the planet’s deep interior ?
 To address these types of questions, we need to improve our understanding of carbon-bearing phases at the extreme pressure-temperature conditions existing in Earth.
 As the fourth most abundant element in the universe, the backbone of organic matter and major energy carriers, pure carbon forms a variety of allotropes including both crystalline and disordered structures such as diamond, graphite, graphene, buckyballs, nanotubes and glassy carbon with numerous and exciting potential in technological applications.
-Adding the more than 370 other carbon-bearing mineral species (Hazen et al.
-2013), this represents a huge range of structures and bonding and fascinating (as well as complex) physics and chemistry.
+Adding the more than 370 other carbon-bearing mineral species , this represents a huge range of structures and bonding and fascinating (as well as complex) physics and chemistry.
 Currently much is unknown about the behavior of carbon-bearing phases at high pressures and temperatures.
 Experimental study of materials behavior at extreme conditions requires the ability to reach simultaneous high pressure-temperature conditions, and the development and implementation of a battery of micro/nanoscale probes to characterize samples.
 In addition, studying carbon brings its own set of complications and considerations.
@@ -19,8 +17,7 @@ Significant progress has been made to bring the study of the deep Earth on par w
 Finally we will look ahead to future developments and prospects for the experimental study of deep carbon.
 SYNTHESIZING SAMPLES AT HIGH PRESSURES AND TEMPERATURES
 The diamond anvil cell (DAC) is the main static pressure device for studying carbon-bearing phases at Earth’s lower mantle and core conditions.
-Following its invention in 1959 (Bassett 2009), decades of development have extended the pressure-temperature range of the laser-heated DAC so that it now covers conditions of the entire geotherm of the planet (Tateno et al.
-2010).
+Following its invention in 1959 , decades of development have extended the pressure-temperature range of the laser-heated DAC so that it now covers conditions of the entire geotherm of the planet .
 High pressure
 A DAC anvil consists of a small pressure-bearing tip (culet) on one end of a diamond that expands to a large base (table) at the other end.
 The force applied to the low-pressure table of opposing anvils is transmitted to the culet where the pressure intensification is inversely proportional to the culet:table area ratio.
@@ -41,22 +38,16 @@ This cell is also compatible with laser-heating.
 For X-ray Raman spectroscopy, a panoramic DAC with large openings through the side will be used, since the incident X-ray beam is directed through the gasket (Fig. 2b).
 In this case, an X-ray transparent material, high-strength beryllium, is used as the gasket.
 In the case of X-ray tomography, one needs maximum access around the radial direction, which has led to the modification of a plate DAC to a new cross DAC (Fig. 2c).
-More in-depth discussion of DAC technology can be found in a number of review articles (e.g., Boehler 2005; Mao and Mao 2007).
+More in-depth discussion of DAC technology can be found in a number of review articles (e.g.,  ).
 High temperature
-Temperatures in excess of 5000 K (Tateno et al.
-2010) can be achieved for samples simultaneously under extreme pressure in DACs by heating with high-powered infrared lasers (Bassett 2001), and variations of double-sided laser heating systems are available in-house and at synchrotron X-ray beamlines for reaching simultaneous high pressures and temperatures (Shen et al.
-2001).
+Temperatures in excess of 5000 K  can be achieved for samples simultaneously under extreme pressure in DACs by heating with high-powered infrared lasers , and variations of double-sided laser heating systems are available in-house and at synchrotron X-ray beamlines for reaching simultaneous high pressures and temperatures .
 Temperature gradients can be minimized by creating a flat-top power profile and by sandwiching samples between two thermal insulating layers to   minimize heat loss through the diamond anvils.
-Developments in portable laser-heating systems have made it possible to add the high-temperature dimension to high-pressure research at beamlines without dedicated laser-heating systems (Shen et al.
-2001; Boehler et al.
-2009).
+Developments in portable laser-heating systems have made it possible to add the high-temperature dimension to high-pressure research at beamlines without dedicated laser-heating systems .
 The laser-heating technique normally requires an opaque, laser-absorbing sample and does not couple with transparent samples.
-This problem has been overcome by using CO2 lasers (Tschauner et al.
-2001) or by adding laser absorbers (e.g., mixing inert laser absorbers for solid samples, or using a metallic foil with a high melting point as the laser absorber, which in effect turns into an internal furnace for fluid samples).
+This problem has been overcome by using CO2 lasers  or by adding laser absorbers (e.g., mixing inert laser absorbers for solid samples, or using a metallic foil with a high melting point as the laser absorber, which in effect turns into an internal furnace for fluid samples).
 A small 10-20 µm diameter hole is drilled into the foil, which is placed inside a gasket chamber filled with the transparent samples and then compressed to high pressures.
 An infrared YLF laser beam 30 µm in diameter is centered at the hole and heats the peripheral metal foil around the small hole; the heated part forms a donut-shaped furnace, effectively heating the transparent sample inside.
-Transparent samples such as CO2 have been heated to high temperatures at high pressure, indicating the high heating efficiency of the internal donut furnace method (Santoro et al.
-2004).
+Transparent samples such as CO2 have been heated to high temperatures at high pressure, indicating the high heating efficiency of the internal donut furnace method .
 Spatial resolution
 If the sample and textures are quenchable for ex-situ experiments, measurements are generally not limited by the spatial resolution of available techniques (except for optical probes, where one can run into the diffraction limit below ~1 μm).
 The main challenge for ex-situ analysis is being able to quench and recover the very small DAC samples.
@@ -72,10 +63,7 @@ Ex-situ techniques, as their name indicates, are conducted after the extreme pre
 The recovered sample may not always preserve all the characteristics of the high-pressure and temperature phases, so a comparison between the ex-situ and in-situ analyses is preferred when possible.
 However, ex-situ analyses often offer more flexibility than in-situ measurements and higher quality results.
 Numerous ex-situ analytical techniques are available, which can provide a large range of information from the micron to the angstrom (= 0.1 nm) scale.
-Previous DAC studies have demonstrated the great potential in combining in-situ analyses with ex-situ analyses in order to obtain a detailed description of the run product (e.g Irifune et al.
-2005; Auzende et al.
-2008; Fiquet et al.
-2010).
+Previous DAC studies have demonstrated the great potential in combining in-situ analyses with ex-situ analyses in order to obtain a detailed description of the run product (e.g   ).
 In the following section we first discuss the use of scanning electron microscopy (SEM) to image the recovered samples and identify areas of interest for further ex-situ study.
 Portions of interest are then prepared using a focused ion beam (FIB) instrument.
 Among the numerous ex-situ probes available, we will describe transmission electron microscopy (TEM) and the associated analytical techniques and scanning transmission X-ray microscopy (STXM) and how they can be used to study deep carbon.
@@ -94,9 +82,8 @@ With its nanoscale resolution, the SEM represents a fast and non-destructive ana
 Electron beams do induce contamination in the form of carbonaceous deposits over the sample surface bombarded by the electron beam; however, this is effect is limited to the surface of the sample and will not affect FIB cross-sections.
 The low voltage electron beam commonly used for SEM imaging (5 keV) generally will not damage the sample.
 Use of an SEM to study the texture of samples synthesized by piston cylinder and multi-anvil apparatuses is pervasive.
-For example, SEM images are commonly used to look for evidence of melting in the recovered sample (e.g., Rohrbach et al.
-2007; Stagno and Frost 2010).
-Figure 3 shows examples of the textural criteria that have been applied in order to determine the solidus of a carbonated peridotite (Dasgupta and Hirschmann 2006).
+For example, SEM images are commonly used to look for evidence of melting in the recovered sample (e.g.,  ).
+Figure 3 shows examples of the textural criteria that have been applied in order to determine the solidus of a carbonated peridotite .
 SEM is also very useful for imaging recovered samples from DAC experiments, which require high spatial resolution.
 SEM images and the chemical analyses allow identification of the laser-heated spot, which is usually a distinct circular area in the sample (Fig. 4) or other area of interest in the recovered samples.
 This identification is critical for the preparation of the sample for other ex-situ analyses.
@@ -106,13 +93,8 @@ Tripod polishing, ion milling, or ultramicrotomy can be used to prepare such thi
 However, due to the small size and fragility of DAC samples these traditional sample preparation methods are very difficult to utilize and often lead to sample destruction.
 Moreover, only the FIB provides the opportunity to also image at the nanoscale, and thus the ability to carefully choose the region to be analyzed using the TEM.
 This selection is particularly critical when preparing a recovered DAC sample that has undergone large pressure and temperature gradients, and/or is compositionally heterogeneous.
-For example, with the FIB, one can extract a thin section in the center of the laser-heated area, minimizing thermal gradients in the observed area (Greaves et al.
-2008; Auzende et al.
-2008; Fiquet et al.
-2010).
-FIB milling of TEM sections has been exploited by the semiconductor industry over the past two decades, primarily to ensure quality control by TEM examination of silicon wafers (Anderson et al.
-1992; Stevie et al.
-1995).
+For example, with the FIB, one can extract a thin section in the center of the laser-heated area, minimizing thermal gradients in the observed area .
+FIB milling of TEM sections has been exploited by the semiconductor industry over the past two decades, primarily to ensure quality control by TEM examination of silicon wafers .
 A FIB column is very similar to a SEM column, except that it uses a beam of gallium ions.
 When the high-energy gallium ions strike the sample, they sputter atoms from the surface.
 Thin sections from recovered DAC experiments can thus be prepared by milling into the samples.
@@ -122,8 +104,7 @@ Figure 5 shows the different steps for FIB preparation of a recovered high-press
 Finally, the sample is thinned to about 100-nm thickness (Fig. 5d).
 One of the major issues in the use of FIB for preparation of samples for crystallography studies is the possible amorphization of the thin section during the thinning process.
 The use of a lower intensity ion beam during the thinning can help to minimize amorphization, but depending on the sample this can be problematic.
-Further details on the extraction of TEM thin sections by FIB are available in a number of references (Heaney et al.
-2001; Marquardt and Marquardt 2012).
+Further details on the extraction of TEM thin sections by FIB are available in a number of references .
 Characterization tools
 Transmission electron microscopy (TEM).
 TEM is a powerful instrument for understanding reaction mechanisms and studying the distribution of phases resulting from chemical reactions.
@@ -137,14 +118,9 @@ Given its ability to analyze multiple phases with high spatial resolution, TEM a
 High-resolution TEM (HRTEM), also allows one to probe the presence of phases that exist in small quantities that cannot be detected by XRD.
 Identification of the different phases is also important when an unknown phase is present among other reaction products.
 For example the formation of the newly discovered high-pressure phase of (Mg,Fe)CO3 is a result of a redox reaction that also leads to the formation of magnetite and nanodiamonds, which are easily identified by TEM (Figs.
-6b and c; Boulard et al.
-2011).
-The microstructure of the thin section observed by TEM provides information on the interaction between different phases, as well as textural and chemical zonation that results from reactions in the sample or may indicate a temperature or pressure gradient in the sample during compression and laser heating (e.g., Irifune et al.
-2005).
-The ability to obtain atomic-scale resolution provides unique information on the nanostructure, which enables the study of deformation processes of minerals under pressure, observations of dislocations and epitaxial crystallization (Veblen et al.
-1993; Mussi et al.
-2010; Couvy et al.
-2011).
+6b and c; ).
+The microstructure of the thin section observed by TEM provides information on the interaction between different phases, as well as textural and chemical zonation that results from reactions in the sample or may indicate a temperature or pressure gradient in the sample during compression and laser heating (e.g., ).
+The ability to obtain atomic-scale resolution provides unique information on the nanostructure, which enables the study of deformation processes of minerals under pressure, observations of dislocations and epitaxial crystallization .
 Imaging can also be performed in scanning TEM (STEM), in which the electron beam is focused and scanned across the sample with a probe size of about 1 nm.
 STEM has the advantage over conventional TEM of delivering a lower electron dose (as the probe is rapidly scanned over the sample), thus facilitating the study of beam-sensitive materials.
 Figure 6a shows a high-angle annular dark-field (HAADF) STEM picture of a recovered sample.
@@ -168,19 +144,12 @@ Here the diffraction spots are then arranged into concentric rings (Fig. 6c).
 Electron diffraction is a powerful tool for solving and refining structures and currently represents a promising technique for nanomaterials studies.
 This techniques is, however, not commonly applied for the refinement of a high-pressure structure as it has two requirements.
 The high-pressure phase is quenchable back to room temperature and pressure, and the sample must not amorphize during FIB milling.
-For example, perovskite-structured silicates, which are synthesized at high pressure, are often observed as amorphous silicate phases in thin section (Auzende et al.
-2008; Ricolleau et al.
-2010).
-In the case of carbonates, the different high-pressure phases of magnesite (MgCO3) were shown by XRD to be unquenchable at low temperature and pressure, and again were present as amorphous carbonate phases in the recovered sample (Isshiki et al.
-2004; Irifune et al.
-2005; Boulard et al.
-2011).
-A crystalline phase was observed after high pressure-temperature transformation of siderite (FeCO3); however, the structures observed by electron diffraction are different from those measured via in-situ high-pressure and high-temperature XRD (Boulard et al.
-2012).
+For example, perovskite-structured silicates, which are synthesized at high pressure, are often observed as amorphous silicate phases in thin section .
+In the case of carbonates, the different high-pressure phases of magnesite (MgCO3) were shown by XRD to be unquenchable at low temperature and pressure, and again were present as amorphous carbonate phases in the recovered sample .
+A crystalline phase was observed after high pressure-temperature transformation of siderite (FeCO3); however, the structures observed by electron diffraction are different from those measured via in-situ high-pressure and high-temperature XRD .
 High-pressure phases are by definition metastable and the energy deposited by the high-voltage electron beam (usually 200 keV) can cause amorphization while rotating the crystal to obtain diffraction patterns at different orientations.
 X-ray energy dispersive spectroscopy (XEDS).
-Until recently, the determination of the chemical composition of lower-mantle phases was mainly indirectly inferred from the relationship of unit-cell volumes and composition by XRD (e.g., Mao et al.
-1997).
+Until recently, the determination of the chemical composition of lower-mantle phases was mainly indirectly inferred from the relationship of unit-cell volumes and composition by XRD (e.g., ).
 X-ray energy dispersive spectroscopy (variously called EDX and XEDS) can provide direct chemical analysis of each phase in a quenched sample.
 By imparting additional energy to samples, electrons from the incident beam excite an atom in a sample enough to eject an electron from its inner shells.
 The resulting electron vacancy is filled by an electron from an outer shell, emitting an X-ray with energy equal to the energy difference between the two electronic states.
@@ -188,8 +157,7 @@ This emitted X-ray is characteristic of a particular element and the intensity o
 Given the approximation that the section observed is of a constant thickness, each mineralogical phase of a specific composition will produce a different XEDS spectra.
 Qualitative analysis can easily be conducted by the identification of the different peaks recorded.
 In order to perform quantitative analyses, it is necessary to compare the analyses with the XEDS spectra of standards with known compositions that have been analyzed under the same analytical conditions.
-This technique was applied, for example, to determine the chemical composition of each phase in a MORB assemblage in order to determine the density of a MORB at different pressure and temperature conditions in Earth’s mantle (Ricolleau et al.
-2010).
+This technique was applied, for example, to determine the chemical composition of each phase in a MORB assemblage in order to determine the density of a MORB at different pressure and temperature conditions in Earth’s mantle .
 However, the X-ray emissions from light elements (e.g., boron, carbon, nitrogen, and oxygen) are weak, and not all instruments are equipped for analyzing these low-Z elements.
 Thus, in the case of the study of carbon-bearing phases, these chemical analyses are usually only qualitative for light element abundance.
 We will see in the next section that electron energy loss spectroscopy (EELS) is usually more accurate for the low-Z elements.
@@ -218,21 +186,14 @@ Figure 7 shows different carbon K edges for a number of carbon-bearing compounds
 The different allotropes of carbon are easily distinguishable.
 Due to similarities in their bonding, amorphous carbon and graphite have similar edge shapes, with a lower energy peak at 285 eV and a second more intense feature at 290 eV.
 Diamond, however, has a very different edge shape with a peak maximum at 292.6 eV.
-The differences between the carbon K edges for graphite and diamond may be explained by the presence of sp2 bonding in graphite, which results in a peak at 285 eV, identified as transitions to the π* anti-bonding molecular orbital, and a second peak at 290 eV, due to transitions to σ* orbitals (Weng et al.
-1989; Brandes et al.
-2008).
-In diamond, the bonding between the carbon atoms can be described in terms of tetrahedrally directed sp3 hybrid orbitals, and the first peak is identified as arising from transitions to molecular orbitals of σ* character (Weng et al.
-1989).
-Between the extremes of sp3-bonded diamond and sp2-bonded graphite exists a large range of carbonaceous materials that have intermediate bond types, such as glassy carbon and evaporated amorphous carbon (Robertson 1986; Robertson and O’Reilly 1987).
+The differences between the carbon K edges for graphite and diamond may be explained by the presence of sp2 bonding in graphite, which results in a peak at 285 eV, identified as transitions to the π* anti-bonding molecular orbital, and a second peak at 290 eV, due to transitions to σ* orbitals .
+In diamond, the bonding between the carbon atoms can be described in terms of tetrahedrally directed sp3 hybrid orbitals, and the first peak is identified as arising from transitions to molecular orbitals of σ* character .
+Between the extremes of sp3-bonded diamond and sp2-bonded graphite exists a large range of carbonaceous materials that have intermediate bond types, such as glassy carbon and evaporated amorphous carbon .
 In the carbonate anion, CO32-, a central carbon atom is bonded to three planar trigonal oxygen anions.
 The carbon K ELNES from the minerals containing the carbonate anion exhibit an edge shape consisting of a sharp initial peak at 290.3 eV and a broader, less intense, feature with a maximum at 301.3 eV.
-These features may be attributed to transitions to the unoccupied π* and σ* anti-bonding molecular orbitals of a CO32- cluster (Hofer and Golob 1987; Garvie et al.
-1994; Brandes et al.
-2004; Schumacher et al.
-2005).
+These features may be attributed to transitions to the unoccupied π* and σ* anti-bonding molecular orbitals of a CO32- cluster .
 If no reference spectra exist, ab initio calculations can be used for interpreting ELNES spectra.
-Figure 8a shows carbon K-edge EELS spectra collected in the untransformed and transformed regions for Fe-bearing magnesite compressed to 80 GPa and heated to 2300 K (Boulard et al.
-2011).
+Figure 8a shows carbon K-edge EELS spectra collected in the untransformed and transformed regions for Fe-bearing magnesite compressed to 80 GPa and heated to 2300 K .
 In the case of untransformed carbonate phase, the peak at 290.3 eV corresponds to planar CO32- carbonate groups.
 The spectrum measured in the transformed area shows a main peak shifted at 290.7 eV and a smaller peak at 287.5 eV.
 As no reference EELS spectra exist for that new high-pressure phase, density functional theory (DFT) calculations of the unoccupied electronic density of state were performed in order to interpret the carbon K-edge measured (Fig. 8b).
@@ -244,26 +205,22 @@ The result is shown at the bottom.
 These structural changes have a strong influence on the unoccupied density of state.
 Indeed, as expected for less dense structures, the overall unoccupied density of state shifts to lower energy.
 Narrow peaks are present and correspond to tetrahedral C3O96- rings, whose molecular signatures are similar to those observed in EELS in samples recovered from high-pressure experiments (i.e., a peak observed at around 290.7 eV).
-When applied to 3d transition metals, EELS allows the determination of redox state of the element (e.g., Paterson and Krivanek 1990).
+When applied to 3d transition metals, EELS allows the determination of redox state of the element (e.g., ).
 The ferrous/ferric iron ratio, for example, can be estimated by various methods such as Mössbauer spectroscopy and electron probe microanalysis (EPMA); however, only EELS performed in TEM can provide a spatial resolution as small as a few nanometers.
-Calibrations have been performed in order to quantify the Fe3+/∑Fe ratio in minerals by analyzing Fe L2,3 ELNES (Van Aken et al.
-1998; van Aken and Liebscher 2002).
-Determination of Fe3+/∑Fe ratio can be applied to determine the oxygen fugacity of a mineral assemblage, and thus study at which fO2 carbonates are reduced into diamond at mantle conditions (e.g., Stagno et al.
-2011).
+Calibrations have been performed in order to quantify the Fe3+/∑Fe ratio in minerals by analyzing Fe L2,3 ELNES (Van  van ).
+Determination of Fe3+/∑Fe ratio can be applied to determine the oxygen fugacity of a mineral assemblage, and thus study at which fO2 carbonates are reduced into diamond at mantle conditions (e.g., ).
 Core-loss peak intensity is proportional to the number of each element in the measured region.
-If the background for a particular absorption edge can be extrapolated and subtracted, the remaining core-loss intensity provides a quantitative estimate of the concentration of the corresponding element (e.g., Egerton 2009).
+If the background for a particular absorption edge can be extrapolated and subtracted, the remaining core-loss intensity provides a quantitative estimate of the concentration of the corresponding element (e.g., ).
 This analysis allows the application of energy-selected imaging, which shows the spatial distribution of one element—the equivalent of an X-ray elemental map.
 When EELS is performed in the STEM mode, it is possible to obtain not only elemental maps but also maps of the distribution of different elemental forms (i.e., maps of carbon in carbonate groups versus carbon in the diamond structure).
 Finally elemental ratios can be calculated by measuring the different elemental ionization edges in the same window.
-EELS can thus also be applied to determine the chemical composition of a material (Egerton 1979; Aitouchen et al.
-1997).
+EELS can thus also be applied to determine the chemical composition of a material .
 While EELS provides absorption spectra with very high spatial resolution, high-energy resolution can be obtained by scanning transmission X-ray microscopy (STXM).
 These two analytical methods are thus highly complementary.
 Scanning transmission X-ray microscopy (STXM).
 STXM is based on a synchrotron light source that provides X-ray absorption spectra.
 These measurements can be done directly on FIB thin sections, such as the one prepared for TEM observation.
-As an example of comparison of STXM and EELS analysis, Figure 9 presents the images and spectra measured on a recovered sample of FeO+CO2 transformed at 75 GPa and 2200 K. Typical spatial resolution is 30 nm (Hitchcock et al.
-2008) in STXM, while STEM-EELS presents the advantage of a probe size of ~1 nm, which allow analysis of very small particles.
+As an example of comparison of STXM and EELS analysis, Figure 9 presents the images and spectra measured on a recovered sample of FeO+CO2 transformed at 75 GPa and 2200 K. Typical spatial resolution is 30 nm  in STXM, while STEM-EELS presents the advantage of a probe size of ~1 nm, which allow analysis of very small particles.
 However, STXM is far superior with regard to spectral resolution: up to 0.1 eV at 290 eV.
 STXM measurements consist of focusing a monochromatic beam at one particular energy (between 200 and 2000 eV) and scanning the sample.
 Detectors positioned behind the sample measure the intensity of the beam transmitted on each step of the sample with a spatial resolution up to 30 nm.
@@ -272,14 +229,11 @@ This stack of transmission images gives 3D data: x, y, and the spectral dimensio
 In order to reconstitute an X-ray absorption spectrum, these pictures need to be aligned and converted into optical density.
 From there, an X-ray absorption spectrum can be extracted on each pixel of the picture.
 Radiation damage is an issue for both TEM-EELS and STXM since both techniques use ionizing radiation.
-However, recent studies have demonstrated that X-ray microscopy produced far less damage to the sample than TEM-EELS (e.g., Hitchcock et al.
-2008).
+However, recent studies have demonstrated that X-ray microscopy produced far less damage to the sample than TEM-EELS (e.g., ).
 STXM presents great advantages for the study of recovered samples from DAC experiments for which the small quantity of materials makes them more precious and metastablity of the high-pressure recovered phases can make them very fragile under electron beam.
-STXM has been applied primarily to study carbon in natural samples, such as carbon bearing materials in extraterrestrial sample or the relationships between mineral and organic chemical species (e.g., Lepot et al.
-2008).
+STXM has been applied primarily to study carbon in natural samples, such as carbon bearing materials in extraterrestrial sample or the relationships between mineral and organic chemical species (e.g., ).
 However, few STXM studies have yet been conducted on recovered DAC samples.
-As shown in Figure 9, STXM have been used to highlight slight energy shifts in the carbon K-edge between a trigonally coordinated carbonate (which shows a molecular peak at 290.3 eV) and a high-pressure tetrahedrally coordinated carbon phase (Boulard et al.
-2012).
+As shown in Figure 9, STXM have been used to highlight slight energy shifts in the carbon K-edge between a trigonally coordinated carbonate (which shows a molecular peak at 290.3 eV) and a high-pressure tetrahedrally coordinated carbon phase .
 In contrast to EELS, STXM permits the precise determination of the energy of this molecular peak.
 These results demonstrate the exciting potential for using STXM in the ex-situ study of high-pressure carbon-bearing phases.
 IN-SITU TECHNIQUES
@@ -293,12 +247,12 @@ In the case of in-situ techniques, the size of current X-ray probes has been a k
 This problem can be partially remedied by using a nano/sub-µm sized beam to improve the spatial resolution of pressure gradients that are perpendicular to the beam.
 The excellent transparency of single-crystal diamond windows to a wide range of electromagnetic radiation offers the potential for the development of numerous analytical probes for more comprehensive, in-situ characterization of high pressure-temperature behavior.
 Synchrotron X-ray probes offer a number of advantages for high-pressure diamond anvil cell work.
-The high brightness and penetrating power enables many measurements which previously have been flux-limited (Mao and Mao 2007).
+The high brightness and penetrating power enables many measurements which previously have been flux-limited .
 The very short wavelength of high-energy X-rays also relaxes the constraint of the theoretical diffraction limit.
 In practice the focus size is restricted by the quality of the X-ray optics.
 A number of strategies exist for nanoscale focusing of X-rays with major progress in focusing with mirrors, lenses, and also lensless options; 100-600 nm-sized X-ray beams focused using K-B mirrors are well established at specialized nano-focusing beamlines .
 Compound refractive lenses can focus to ~100nm, but are limited to higher energies due to absorption of X-ray by the lens.
-Fresnel zone plates can achieve tens of nm full-width half-maximum (FWHM) focusing resolution for hard X-rays (Als-Nielsen and McMorrow 2011), and have the advantage of operating over a wide range of energy.
+Fresnel zone plates can achieve tens of nm full-width half-maximum (FWHM) focusing resolution for hard X-rays , and have the advantage of operating over a wide range of energy.
 In this section, we discuss in-situ X-ray techniques for high-pressure work and their promise for deep carbon research.
 They include developments in diffraction (nanoscale XRD or nanoXRD) for studying structure, spectroscopy (e.g., X-ray Raman spectroscopy or XRS) for studying bonding, and imaging (e.g., nanoscale X-ray computed tomography or nanoXCT).
 Nanoscale X-ray diffraction
@@ -315,14 +269,12 @@ In laser-heating experiments, thermal gradients can also pose major issues.
 The flat-top portion of the laser spot should be much larger than the X-ray beam in order to minimize temperature gradients.
 With a smaller beam this essential condition is much easier to control.
 Resolving multiple phases.
-Multiple samples have been studied in the same pressure chamber for direct comparison of their equations of state under the same pressure conditions, and natural rock specimens have been studied to simulate more realistic high-pressure geological environments (Lee et al.
-2004).
+Multiple samples have been studied in the same pressure chamber for direct comparison of their equations of state under the same pressure conditions, and natural rock specimens have been studied to simulate more realistic high-pressure geological environments .
 Such studies, while very promising, have been limited due to the overlap of diffraction peaks, which complicates analysis of the different phases involved.
 These problems can be overcome by using an X-ray beam that is an order of magnitude smaller, which could then distinguish between multiple samples and phases.
 This resolution is critical when studying possible reactions between carbon-bearing phases at mantle conditions.
 At lower pressures, carbon is found in accessory phases (e.g., CO2 rich fluids, carbonates, hydrocarbons, graphite/diamond) and unlike H2O does not dissolve in major silicate minerals.
-At higher pressures, carbon-bearing phases may undergo dramatic structure changes (e.g., coordination change in Mg-Fe carbonates) and react with silicate and oxide minerals, changing their structure (Boulard et al.
-2011, 2012).
+At higher pressures, carbon-bearing phases may undergo dramatic structure changes (e.g., coordination change in Mg-Fe carbonates) and react with silicate and oxide minerals, changing their structure ( 2012).
 Enabling single-crystal studies on polycrystalline samples.
 XRD from single crystals can provide well-constrained, detailed structural information that is crucial for understanding the microscopic mechanisms of high-pressure phenomena and characterizing novel pressure-induced phase transitions.
 However, single crystals often break up into powders after reconstructive transitions or due to non-hydrostatic conditions.
@@ -333,10 +285,9 @@ In reality, most new phases formed under multi-GPa pressures are neither a good 
 Whether a sample should be considered a single crystal or a powder depends upon the number of crystallites impinged by the X-ray beam (Fig. 12).
 It will be single-crystal XRD if the beam is smaller than the crystal, polycrystalline XRD if the beam covers a very large number of crystals, or spotty polycrystalline XRD if the beam covers an insufficient number of crystals.
 Reducing the X-ray probe size to a sub-micron focused X-ray beam enables us to carry out single-crystal studies even in the polycrystalline sample with grain sizes in the µm or sub-µm range .
-This capability may be critical for structural determination of new carbon-bearing phases (e.g., high-pressure tetrahedrally-coordinated carbonates; Boulard et al.
-2011), where the low scattering of carbon and multiple phases present make powder patterns difficult to interpret uniquely.
+This capability may be critical for structural determination of new carbon-bearing phases (e.g., high-pressure tetrahedrally-coordinated carbonates; ), where the low scattering of carbon and multiple phases present make powder patterns difficult to interpret uniquely.
 X-ray Raman spectroscopy
-Carbon K-edge spectroscopy is a powerful tool for studying carbon bonding and chemistry, but is largely limited to being a surficial probe, owing to the low carbon K-edge energy (Rueff and Shukla 2010).
+Carbon K-edge spectroscopy is a powerful tool for studying carbon bonding and chemistry, but is largely limited to being a surficial probe, owing to the low carbon K-edge energy .
 This problem can be overcome by inelastic X-ray scattering.
 In high-pressure XRS, the high-energy incident X-ray penetrates the pressure vessel and reaches the sample.
 The scattered photon loses a portion of energy corresponding to the electron edge of the element of interest in the sample, and still is high enough in energy to exit the vessel to be registered on the analyzer-detector system.
@@ -345,31 +296,21 @@ The incident X-ray energy is scanned relative to the elastic line to determine t
 XRS features are relatively insensitive to momentum transfer , and thus the angle is set at an angle to optimize the intensity, and multiple analyzers can be used to increase the counting rate without concern for their differences in q.
 XRS spectra of second-row elements from Li (56 eV) to O (543 eV) have been successfully observed at high pressures.
 A number of XRS studies have been conducted on a variety of carbon systems, which reveal interesting bonding changes in-situ at high pressure.
-These studies, including graphite (Mao et al.
-2003), C60 ( 2007b), benzene (Pravica et al.
-2007), and glassy carbon (Lin et al.
-2011), demonstrate the great promise of this technique for looking at deep carbon phases (Fig. 13).
+These studies, including graphite , C60 ( 2007b), benzene , and glassy carbon , demonstrate the great promise of this technique for looking at deep carbon phases (Fig. 13).
 XRS has widened the reach of X-ray absorption spectroscopy (XAS) on low-Z samples, which was once limited to the soft X-ray range, to systems and sample conditions where the penetration capability of a hard X-ray probe is essential.
-In addition it has opened up the possibility to measure the spectra that are symmetry forbidden in XAS (Bergmann et al.
-2003).
+In addition it has opened up the possibility to measure the spectra that are symmetry forbidden in XAS .
 This capability has resulted in rapid growth in XRS over the last few years, yet given the large number of systems that could uniquely profit from XRS, the number of such studies has been very small when compared to conventional XAS.
 Progress has been hampered because only a few heavily oversubscribed instruments exist worldwide, and due to the diminutive XRS cross-section, in many systems very long scanning times are required to obtain a high-quality spectrum.
 Currently, conducting XRS on carbon phases above 50 GPa is extremely challenging.
 The sample becomes very thin, dramatically reducing counts, and the signal to noise ratio also declines (more background scattering).
-These limitations are being overcome with improvements in a number of areas including those in DAC sample configuration (e.g., maintaining much thicker samples to higher pressures using novel composite gaskets; Wang et al.
-2011), construction of new XRS instruments with more and improved analyzers to collect more solid angle and flux, improvements in X-ray optics and focusing, and brighter light sources.
+These limitations are being overcome with improvements in a number of areas including those in DAC sample configuration (e.g., maintaining much thicker samples to higher pressures using novel composite gaskets; ), construction of new XRS instruments with more and improved analyzers to collect more solid angle and flux, improvements in X-ray optics and focusing, and brighter light sources.
 X-ray imaging
 X-ray computed tomography (XCT) is a powerful, non-destructive method for imaging the internal structure of a sample.
 The potential applications in wide-ranging fields for XCT have been recognized since its initial development and use in medical imaging.
-XCT has been used very successfully for cm-sized and larger geological samples with a resolution of up to 10 µm for in-house systems with micro-focused X-ray tubes, and has become a standard method for studying the texture of multiple phases (e.g., studying pore spaces in petroleum engineering; Mees et al.
-2003).
-More recently at synchrotron sources, microXCT instruments with improved spatial resolution of ~2.5 µm have been used to look at natural samples (e.g., pumice clasts; Gualda et al.
-2010), the connectivity of quenched basalt melt networks in peridotites using phase contrast (Zhu et al.
-2011), and quenched core-forming melts within a silicate matrix (Watson and Roberts 2011).
-Measurements at high pressure have been conducted in a Drickamer press with rotating anvils to investigate the deformation of vitreous carbon and forsterite spheres in a FeS matrix  and for direct determination of the volume of glasses (Lesher et al.
-2009).
-DAC techniques have been used to study the equation of state of amorphous Se up to 10.7 GPa (Liu et al.
-2008).
+XCT has been used very successfully for cm-sized and larger geological samples with a resolution of up to 10 µm for in-house systems with micro-focused X-ray tubes, and has become a standard method for studying the texture of multiple phases (e.g., studying pore spaces in petroleum engineering; ).
+More recently at synchrotron sources, microXCT instruments with improved spatial resolution of ~2.5 µm have been used to look at natural samples (e.g., pumice clasts; ), the connectivity of quenched basalt melt networks in peridotites using phase contrast , and quenched core-forming melts within a silicate matrix .
+Measurements at high pressure have been conducted in a Drickamer press with rotating anvils to investigate the deformation of vitreous carbon and forsterite spheres in a FeS matrix  and for direct determination of the volume of glasses .
+DAC techniques have been used to study the equation of state of amorphous Se up to 10.7 GPa .
 For a typical sample size with dimensions of ~100 μm in a DAC at moderate pressures, 1-μm spatial resolution can only provide 10-2 resolution in volume, which is an order of magnitude lower than diffraction for crystalline materials.
 At higher pressure (>10 GPa), the sample thickness is dramatically reduced to tens or even less than 10 μm.
 In this case, μm-resolution tomography will not provide accurate volume measurements.
@@ -384,11 +325,8 @@ For nanoXCT, a number of additional components are required to attain nanoscale 
 For example, the full field X-ray microscope at Beamline 6-2 of the Stanford Synchrotron Radiation Lightsource is capable of 40-nm resolution from 4-14 keV over a 30-μm field of view (Fig. 15).
 The relatively large depth of focus provides full transmission imaging as opposed to surface only for electron microscopy.
 Spectroscopic imaging above and below the absorption edge facilitates studies of nanoscale element distribution.
-NanoXCT has been used to image samples with biological, environmental, and materials applications, but has been applied only very recently to high-pressure mineral and rock studies (Andrews et al.
-2009).
-In terms of lensless imaging approaches, coherent diffraction imaging and holography are also areas of active research where current resolution is limited to tens of nm due to limits in the coherent flux for coherent imaging (Miao et al.
-2008) and the size of reference beam for holography (McNulty et al.
-1992).
+NanoXCT has been used to image samples with biological, environmental, and materials applications, but has been applied only very recently to high-pressure mineral and rock studies .
+In terms of lensless imaging approaches, coherent diffraction imaging and holography are also areas of active research where current resolution is limited to tens of nm due to limits in the coherent flux for coherent imaging  and the size of reference beam for holography .
 Both of these techniques are very promising and can reach very high resolution, but have not been widely applied for high-pressure research.
 The tens of nm spatial resolution of nanoscale X-ray imaging enables a number of exciting capabilities.
 It allows us to have accuracy in volume determinations for amorphous or poorly crystalline phases, which rivals that from X-ray diffraction of crystals.
@@ -408,26 +346,22 @@ This morphology may be a reflection of very low dihedral angles, as the Fe-melt 
 Alternatively, the change may result from the development of shape-preferred orientation.
 The change in connectivity from isolated Fe-alloy spheres to a connected Fe-alloy melt network with pressure can be clearly imaged without even having to calculate the dihedral angle.
 One can imagine investigating the interactions of carbon-rich fluids with surrounding rock by imaging the fluid portion relative to the solid grains.
-These promising results demonstrate that nanoXCT on quenched samples can be conducted to 100 GPa and > 3000 K. An alternative method for analysis of quenched samples is slicing the sample with the FIB (or polishing off thin layers) and then analyzing the 2D images with SEM, repeating for sections through the sample, and reconstructing the 3D picture layer-by-layer (Bruhn et al.
-2000) However, this procedure is destructive, time-consuming, and may suffer from sample-alteration by the high-energy electrons and ions.
+These promising results demonstrate that nanoXCT on quenched samples can be conducted to 100 GPa and > 3000 K. An alternative method for analysis of quenched samples is slicing the sample with the FIB (or polishing off thin layers) and then analyzing the 2D images with SEM, repeating for sections through the sample, and reconstructing the 3D picture layer-by-layer  However, this procedure is destructive, time-consuming, and may suffer from sample-alteration by the high-energy electrons and ions.
 Nevertheless, FIB/SEM analysis after 3D nanoXCT measurement on quenched samples can provide critical benchmarks and calibrations for the spatial and chemical resolution of this new nanoXCT technique.
 In-situ nanoXCT at high pressures and temperatures.
-For in-situ studies, two types of DACs have been developed that have been optimized for XCT through a beryllium gasket: a panoramic DAC that has been widely used for spectroscopic studies to >100 GPa, and a newly designed cross DAC that adopts the principle of the “plate DAC” (Boehler 2006; Figs.
+For in-situ studies, two types of DACs have been developed that have been optimized for XCT through a beryllium gasket: a panoramic DAC that has been widely used for spectroscopic studies to >100 GPa, and a newly designed cross DAC that adopts the principle of the “plate DAC” ( Figs.
 2b and 2c) and whose functionality has been tested.
 Both DACs have wide radial access in and out of the equatorial plane when used with an X-ray-transparent high-strength beryllium gasket.
 For conducting TXM, the typical panoramic DAC has a 110-degree radial access and the cross DAC has 150-degree access.
 DACs need solid posts sufficiently strong in tension to support the opposing diamond anvils as they are pushed against each other.
 These posts block the X-rays and prevent access over a certain angular range so, while further improvements to the DAC design can increase the angular access, full 180-degree access is currently not possible.
 For large volume presses, an option is to use high-load thrust bearings to permit the rotation of the sample relative to the press, however, the need for high-precision alignment has prevented its implemented in DAC designs so far.
-For DACs, the “missing angle” problem can be partially mitigated with specialized reconstruction algorithms (Miao et al.
-2005; Wang et al.
-2012).
+For DACs, the “missing angle” problem can be partially mitigated with specialized reconstruction algorithms .
 An application for in-situ nanoXCT is the determination of the equations of state of amorphous materials.
 For crystalline materials, powder and single-crystal diffraction can be used to measure the equation of state with ~1.0 x 10-3 resolution.
 Owing to their lack of long range order, diffraction patterns from amorphous and liquid phases are often difficult to interpret and the position of broad diffraction maxima is not directly related to macroscopic density, as it is in the case of crystalline materials.
 Nano XCT can provide geometric information on samples regardless of their crystallinity.
-As a benchmark for this type of technique, the volume change with pressure for a crystalline Sn sample was determined using tomography with nanoscale spatial resolution TXM in a DAC (Wang et al.
-2012).
+As a benchmark for this type of technique, the volume change with pressure for a crystalline Sn sample was determined using tomography with nanoscale spatial resolution TXM in a DAC .
 The results were consistent with diffraction results and had comparable error bars (Fig. 17), demonstrating the potential for the application of this method to a large variety of amorphous materials and liquids.
 Preliminary results on glassy carbon show that with proper sample preparation (in this case a coating of Pt to help with absorption contrast), one can image the volume of a low-Z amorphous material like glassy carbon (Fig. 18).
 One can also look at the shapes of multiple phases within heterogeneous samples (fluid-solid interactions) and study how these topologies change in-situ at high pressure and variable temperature.
@@ -436,15 +370,12 @@ Other contrast mechanisms.
 A successful XCT experiment requires careful consideration of sample absorption.
 If the absorption is too high, the sample is opaque, and if it is too low, the absorption contrast will be low.
 In addition to reaching higher pressures in a DAC, the sample size reduction from mm-sized in conventional and microXCT to µm-sized in nanoXCT has the advantage that the absorption of small samples can easily be optimized to electronic edges (e.g., for the Fe K-edge at 7.1 keV).
-Therefore, comparison of 3D XCT measurements collected above and below the Fe K-edge can be used for determination of 3D mapping of the distribution and partitioning of Fe, which has implications for the oxidation of the mantle and influences the oxidation state of deep carbon (Frost and McCammon 2008).
+Therefore, comparison of 3D XCT measurements collected above and below the Fe K-edge can be used for determination of 3D mapping of the distribution and partitioning of Fe, which has implications for the oxidation of the mantle and influences the oxidation state of deep carbon .
 By collecting the 3D XCT at small energy steps for from the pre-edge region through the electronic edge, it is possible to probe and map the oxidation state, spin state, and crystallographic site for Fe from its XANES signal.
 In terms of penetration of the DAC and collection of sufficient signal, we can access transition element K-edges and rare earth element L-edges, providing a map of coordination and oxidation states, as well as quantitative composition information.
 Exciting developments in XRD and XRS have also been used for 3D tomographic reconstruction of carbon-bearing phases although the spatial resolution is still at the few μm to tens of μm range.
-Recent results at ambient pressure using XRS and XRD demonstrate that the differences in the chemical-bonding reflected in the carbon K-edge and the XRD patterns can be used to image diamond in graphite (Huotari et al.
-2011; Fig. 19).
-In-situ high-pressure XRD computed tomography is also actively being developed at synchrotron sources and has been applied on carbon-bearing phases (Bleuet et al.
-2008; Alvarez-Murga et al.
-2011).
+Recent results at ambient pressure using XRS and XRD demonstrate that the differences in the chemical-bonding reflected in the carbon K-edge and the XRD patterns can be used to image diamond in graphite ( Fig. 19).
+In-situ high-pressure XRD computed tomography is also actively being developed at synchrotron sources and has been applied on carbon-bearing phases .
 CONCLUSIONS AND OUTLOOK
 The new millennium has seen the rapid development of a battery of ex-situ and in-situ techniques that can be used for investigating deep carbon.
 The ultimate goal for experimental deep-carbon studies is to be able to determine the physics and chemistry of all possible carbon-bearing phases at conditions down to the base of the lower mantle.
@@ -458,7 +389,7 @@ Bottom panels: Three X-ray radiographs collected upon increasing pressure, which
   Symmetric DAC;  Panoramic DAC with radial access;  cross DAC with radial access and axial access.
  Secondary electron images of carbonate-bearing samples illustrating distinctions between melt-absent  and melt-present  conditions.
 Abbreviations: ol, olivine; opx, orthopyroxene; cpx, clinopyroxene; gt, garnet; mst, magnesite; and cbl, carbonate melt.
-From Dasgupta and Hirschman (2006).
+From .
  Secondary electron image of a recovered sample (MgCO3+Pt) transformed at 85 GPa and 2400 K in DAC.
 The edge of the heated area can easily be discerned by textural changes.
  SEM pictures illustrating different steps in FIB sample preparation:  milling of a thick section from the recovered DAC sample;  extraction of this section using a nanomanipulator;  welding of the thick section on a TEM grid; d) after final thinning of the section welded to a copper TEM grid.
@@ -467,16 +398,13 @@ For this last step, a low current Ga+ beam was used in order to minimize damage,
 The carbonation reaction front thus progressed from both sides, but did not affect the central part of the sample.
 In each of the reaction zones, the starting material is surrounded by Fe-bearing magnesite [(Mg,Fe)CO3].
 Magnetite is also present in the Fe-Mg carbonate areas in association with nanodiamonds;  TEM image of nano-diamonds;  electron diffraction from nano-diamonds.
-Modified after Boulard et al.
-(2012).
+Modified after .
  Carbon K-edge spectra from different carbon-bearing phases.
 From top to bottom: three allotrope of pure carbon: diamond, graphite and amorphous carbon and different carbon-bearing minerals: hydrotalcite [Mg6Al2(CO3)(OH)16·4(H2O)], desautelsite [Mg6Mn2(CO3)(OH)16•4(H2O)], siderite (FeCO3), and calcite (CaCO3).
-From Garvie et al.
-(1994).
+From .
   Carbon K-edge spectra collected from a recovered sample of Fe-bearing magnesite compressed and heated to 80 GPa and 2300 K in the untransformed (top spectra) and transformed (bottom spectra) areas;  DFT calculations for electron density of state of the carbon atoms (p orbital symmetry) in different structures (schematics shown at right).
 This unoccupied density of state roughly corresponds to the excitation probed by EELS at the carbon K-edge (excitonic effects are neglected in the calculation).
-Modified after Boulard et al.
-(2011).
+Modified after .
  Top: STEM-EELS image and carbon K edge of a high-pressure carbon-bearing phase.
 Bottom: STXM image of the same area and  carbon K edge of the same phase.
 While EELS provides absorption spectra at very high spatial resolution, higher energy resolution is obtained by STXM.
@@ -485,48 +413,41 @@ Right: Spectra for one area containing the high-pressure (HP) phase, correspondi
 Spectra from a different area containing to nanodiamonds is shown at top.
  The pressure distribution as a function of sample position (radial distance from the center of anvil) determined with a ~5-µm (black squares) and a 600-nm (black diamonds) focused X-ray beam.
 A 20 GPa/µm gradient in 1-µm area at the peak pressure of 105 GPa can be observed.
-From Wang et al.
-(2010).
+From .
  XRD patterns for the same Mg0.6Fe0.4SiO3 post-perovskite sample measured at 142 GPa with 250-nm  and 5-μm  monochromatic X-ray beams.
-From Wang et al.
-(2010).
+From .
  Left:  High-pressure XRS carbon K-edge spectra for graphite plotted as normalized scattered intensity versus energy loss (incident energy – analyzer energy).
 The lower-energy peak at approximately 285 eV corresponds to 1s to p* transitions and the broad higher-energy portion corresponds to 1s to s* transitions.
 The bottom spectra, taken in the horizontal direction, probes bonds in the a plane and does not show any p-bonding.
 The top seven spectra, taken in the vertical direction, probe the c plane.
 With increasing pressure the s-bonding increases at the expense of the p bonds.
 Top right corner is a photomicrograph showing indention (ring crack) of diamond anvil by the superhard high-pressure form of cold-compressed graphite with schematic of the structure of graphite below.
-From Mao et al.
-(2003).
+From .
 Right: High-pressure XRS spectra glassy carbon collected during compression and decompression cycles.
 Top right corner is a schematic of the structure of glassy carbon at ambient conditions.
-From Lin et al.
-(2011).
+From .
  Schematic of Fresnel zone plate based nanoscale resolution X-ray microscopes.
 In the scanning transmission X-ray microscope (STXM) a zone plate is used to focus an incident parallel beam down to a small focal spot and the sample is then rastered through the beam to produce the image.
 Full-field transmission X-ray microscope (TXM), which utilizes a zone plate as an objective lens to project a magnified image on a 2D detector.
-From Als-Nielson and McMorrow (2011).
+From .
  Setup of X-ray microscope instrument at Beamline 6-2 at SSRL before and after virtual source.
 The beam passes through vertical and horizontal slits, a vertically collimating mirror (M0) followed by vertical slits, monochromator, and toroidal mirror (M1) to focus the beam at the virtual source (S3).
 Capillary condenser  provides hollow cone illumination and pinhole  removes undeflected light.
 Sample image is focused by micro zone plate (MZP) onto CCD detector, with optional phase ring (PR).
 Bottom: bird’s eye view showing cross DAC and dual pinhole.
 The incident X-ray beam is directed through the sample via four side openings in DAC, which is then rotated to get tomographic image.
-From Andrews et al.
-(2009).
+From .
 Bottom: Photo of Xradia instrument with the cross DAC mounted at sample position and incident X-rays travel from bottom left to top right.
  Images from 3D reconstruction of quenched samples composed of mixtures of molten Fe-rich liquids (bright white) in a silicate matrix (dark gray) at  pressure-temperature conditions of 8 GPa and 1800oC, where the Fe-rich melt forms isolated spheres and at  higher pressure-temperature conditions of 64 GPa and 3000oC, where the Fe-rich melt forms connected channels.
  Top: NanoXCT images of the compression of a round 10-mm Sn sample in a panoramic DAC.
 With increasing pressure, one can follow the change in volume and shape to determine the equation of state and the shape preferred orientation.
 Bottom: Volumes measured as a function of pressure at 4.7, 8.1, and 12.0 GPa (the size of the black dots represents the estimated error bar).
 The equation of state of Sn for both the low-pressure and high-pressure phases are plotted together and demonstrate the excellent agreement between the XRD and nanoXCT results.
-From Wang et al.
-(2012).
+From .
  In-situ high-pressure TXM images of a 15-mm diameter glassy carbon sphere coated with ~1-mm thick Pt compressed to four different pressures in a DAC.
  Direct chemical-bond tomography from a diamond–graphite sample.
 Schematic computer reproduction of the sample.
 XRD contrast measurement of the full volume.
 XRS spectra through the graphite–diamond ensemble, for the beam path shown in .
 Chemical-bond contrast 3D image in a selected region around the diamond corner.
-From Huotari et al.
-(2011).
+From .

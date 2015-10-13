@@ -58,12 +58,6 @@ class DependencyGraph(object):
             lemma = word_info['Lemma']
             yield n, word, lemma, tag, head, rel
 
-    def get_triples_by_relation(self, relations):
-        return [triple for triple in self.__dep_triples if triple[1] in relations]
-
-    def get_dependent_by_head_relation(self, head_index, relation):
-        return [triple[2] for triple in self.__dep_triples if triple[0][0] == head_index and triple[1] == relation]
-
     @property
     def dep_triples(self):
         return self.__dep_triples

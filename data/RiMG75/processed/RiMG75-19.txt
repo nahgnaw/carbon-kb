@@ -1,27 +1,17 @@
 ﻿High-Pressure Biochemistry and Biophysics
 INTRODUCTION
 By the end of the 19th century British and French oceanographic expeditions had shown that life exists in the deepest ocean trenches.
-Since then, microorganisms have been found to thrive in diverse environments characterized by a wide range of pressure-temperature-composition (P-T-X) conditions (Rothschild and Mancinelli 2001).
+Since then, microorganisms have been found to thrive in diverse environments characterized by a wide range of pressure-temperature-composition (P-T-X) conditions .
 The range of physicochemical conditions under which microbial life has been observed has continued to expand with greater access to extreme environments and greatly improved tools for sampling and assessing the diversity and physiology of microbial communities.
 This exploration now includes examination of subseafloor and continental subsurface settings—key goals of the Deep Life Directorate within the Deep Carbon Observatory (DCO) Program.
-Bacterial metabolic activity has been described at temperatures as low as −40 °C (Rivkina et al.
-2000; Price and Sowers 2004; Panikov and Sizova 2007; Collins et al.
-2010) and a methanogen has been cultured at 122 °C under hydrostatic pressure (Takai et al.
-2008).
-Moreover, bacteria can withstand ionizing radiation levels up to 30,000 grays (Rainey et al.
-2005), and can grow over a pH ranges between 0 and 12.5 (Takai et al.
-2001; Sharma et al.
-2012), at salinities up to 5.2 M NaCl (Kamekura 1998), and at hydrostatic pressures up to 130 MPa (Yayanos 1986).
-Bacterial survival has also been demonstrated up into the GPa range (Sharma et al.
-2002; Vanlint et al.
-2011).
+Bacterial metabolic activity has been described at temperatures as low as −40 °C  and a methanogen has been cultured at 122 °C under hydrostatic pressure .
+Moreover, bacteria can withstand ionizing radiation levels up to 30,000 grays , and can grow over a pH ranges between 0 and 12.5 , at salinities up to 5.2 M NaCl , and at hydrostatic pressures up to 130 MPa .
+Bacterial survival has also been demonstrated up into the GPa range .
 Because of the difficulty to access deep pressure-affected environments compared to most other extreme environments, less is known about deep-sea and deep-continental microbial communities and their physiological adaptation to high hydrostatic pressure, even though high-pressure environments are more voluminous in nature than other extreme environments.
-Our current knowledge about life at high pressure currently derives from studies of deep-sea microorganisms that possess adaptations for growth at pressures roughly in the 10-130 MPa range (Bartlett 2002; Lauro and Bartlett 2008; Oger and Jebbar 2010).
+Our current knowledge about life at high pressure currently derives from studies of deep-sea microorganisms that possess adaptations for growth at pressures roughly in the 10-130 MPa range .
 Such pressures are far below those typically used to assess the survival of microbes or to interrogate biophysically their isolated macromolecular systems.
 Nevertheless, the growth and reproduction adaptations at even these modest pressures provide valuable information on physiological properties, complex quaternary assemblages, and enzyme architectures necessary to understand the adaptation of life in a pressurized world.
-The technologies associated with growing deep-sea microbes in pressurized vessels are well described (Jannasch et al.
-1996; Prieur and Marteinsson 1998; Yayanos 2001; Kato 2006), although additional technological developments continue to be made (Hiraki et al.
-2012).
+The technologies associated with growing deep-sea microbes in pressurized vessels are well described , although additional technological developments continue to be made .
 For this reason, high-pressure biology has become an important topic, ranging from physiological studies of deep-sea organisms under in-situ conditions, to the nature and function of extremophile organisms inhabiting the rocky subsurface.
 Complementing and underpinning the biological investigations are studies of the high-pressure physics and chemistry of the macromolecules essential for life that are important to a broad range of disciplines including food science, biomedicine, and nanotechnology.
 In this chapter we first review effects of high pressure on lipid membranes, proteins, and nucleic acids, which are the principal macromolecules of cells.
@@ -32,15 +22,13 @@ PROTEINS AND POLYPEPTIDES
 Structures of proteins and polypeptides
 Proteins are the chief macromolecules of the cell.
 They catalyze small molecule transformations, they allow cells to move around and to do work, and they maintain internal cell rigidity.
-Furthermore, they control the genes that determine the cell constitution and function, transport molecules across membranes, direct the synthesis of themselves and other macromolecules, and protect other macromolecules against denaturing conditions (Lodish et al.
-1995).
+Furthermore, they control the genes that determine the cell constitution and function, transport molecules across membranes, direct the synthesis of themselves and other macromolecules, and protect other macromolecules against denaturing conditions .
 It is difficult to consider life processes as currently understood without proteins.
 From the chemical viewpoint proteins are linear, heterogeneous polymers assembled from 20 different amino acid residues linked by covalent peptide bonds into the polypeptide chain.
 However, their most surprising characteristic is the fact that each polypeptide chain folds into a unique three-dimensional structure that is defined by the amino acid sequence.
 This feature makes proteins stand out among all macromolecules, biological and synthetic.
 The acquisition of the three-dimensional structure is necessary for a protein to be biologically functional.
-Some proteins, however, only adopt a tertiary structure upon interaction with their target molecule, whereas others can maintain functionality only through interaction with other proteins of macromolecules (Wright et al.
-1999).
+Some proteins, however, only adopt a tertiary structure upon interaction with their target molecule, whereas others can maintain functionality only through interaction with other proteins of macromolecules .
 As the nascent polypeptide chain comes off the ribosome it will start to fold.
 This process involves the adoption of well-defined secondary structure elements such as the α-helix and β-sheet structures.
 The assembly of these structures in three-dimensional space results in the tertiary structure that is generally referred to as the native state.
@@ -52,15 +40,11 @@ Non-covalent interactions, with typical energies of 4-40 kJ mol−1, are weak co
 As a result, proteins are only marginally stable and can easily break down into a less-ordered state, the so-called unfolded state.
 However, this state is highly unstable under physiological conditions and the protein readily reassumes its native state.
 It has always been assumed that the unfolded state is a random coil structure in which no side chain-side chain interactions occur.
-However, a large body of evidence now suggests that the unfolded state is, in fact, a heterogeneous ensemble of varying compactness and often contains large amounts of residual structure (Shortle 1996; Smith et al.
-1996; Klein-Seetharaman et al.
-2002).
-Protein stability is defined as the difference in free energy, ΔGstab, between the native and the unfolded state under physiological conditions (Creighton 1990; Pace et al.
-1991).
+However, a large body of evidence now suggests that the unfolded state is, in fact, a heterogeneous ensemble of varying compactness and often contains large amounts of residual structure .
+Protein stability is defined as the difference in free energy, ΔGstab, between the native and the unfolded state under physiological conditions .
 However, here ΔG will refer to the free energy change of unfolding, which equals − ΔGstab.
 Typical values of ΔG are in the range 20 to 40 kJ mol−1.
-The reason for this low stability lies in the fact that proteins require sufficient conformational flexibility for transport across membranes, natural turnover, binding of substrates, and processes like allostery and signal transduction (Daniel et al.
-1996).
+The reason for this low stability lies in the fact that proteins require sufficient conformational flexibility for transport across membranes, natural turnover, binding of substrates, and processes like allostery and signal transduction .
 Thermodynamic considerations: Volume versus compressibility arguments
 As described above, proteins exist with distinct structures and conformational states determined by the P and T conditions as well as the chemical  environments.
 For a reversible, two-state folding/unfolding process between N (Native) ↔ U (Unfolded) states, the pressure  and temperature  dependence of ΔG, the difference in Gibbs free energy between U and N, is given by
@@ -76,14 +60,13 @@ These parameters are assumed to be P- and T-independent, and are defined as foll
 Δβ = − (∂ΔV/∂P)T						(3)
 ΔCp = T (∂ΔS/∂T)P
 Eq. 2 originates as a Taylor expansion of ΔG(P,T), with a cut-off after the second-order terms.
-The precise meaning and measurement of the α, β and CP parameters are developed and discussed elsewhere (Chalikian 2003; Meersman et al.
-2006).
+The precise meaning and measurement of the α, β and CP parameters are developed and discussed elsewhere .
 At constant T, Eq. 2 can be rewritten as:
 (4)
 The last term on the right reflects the P dependence of ΔV, which, at high pressures, can no longer be predicted from ΔVo alone.
 The compressibility factor Δβ is related to the isothermal compressibility βT [βT = −V−1(∂V/∂P)T], which is the second derivative of ΔV with respect to pressure, via Δβ =V ΔβT.
 The isothermal compressibility of a system is of particular interest because its difference between the native and unfolded states reflects the pressure dependence of ΔV, and therefore influences the relative response of the two protein conformations to densified conditions.
-In addition, there exists a relationship developed via statistical mechanics between the isothermal compressibility and volume fluctuations within the system (Heremans and Smeller 1998):
+In addition, there exists a relationship developed via statistical mechanics between the isothermal compressibility and volume fluctuations within the system :
 <δV²> = kB T V βT
 (5)
 Here kB is the Boltzmann constant, T is the absolute temperature, and V is the intrinsic volume of the system.
@@ -99,28 +82,26 @@ Moreover, there is a close resemblance between the temperature dependence of pro
 Thus the liquid hydrocarbon model has been quite successful in explaining the energetic properties of thermal unfolding.
 Based on such studies the volume change upon unfolding of proteins is predicted to have a large negative absolute value at ambient conditions.
 However, it is also predicted that ΔV for this transfer should become positive with increasing pressure.
-In contrast, at 0.1 MPa, depending on the temperature of unfolding, amongst other factors, the sign of ΔV can become positive or negative, and it may depend on the nature of the observed transition, e.g., native-to-molten globule or native-to-unfolded processes (Chalikian 2003).
-However, at high pressure protein unfolding is invariably accompanied by small and negative volume changes, typically on the order of −10 to −100 mL mol−1 (Royer 2002).
-This apparent contradiction is termed the "protein volume paradox" and it was first recognized by Kauzmann, who stated that “the liquid hydrocarbon model fails almost completely when one attempts to extend it to the effects of pressure on protein unfolding” (Kauzmann 1987).
+In contrast, at 0.1 MPa, depending on the temperature of unfolding, amongst other factors, the sign of ΔV can become positive or negative, and it may depend on the nature of the observed transition, e.g., native-to-molten globule or native-to-unfolded processes .
+However, at high pressure protein unfolding is invariably accompanied by small and negative volume changes, typically on the order of −10 to −100 mL mol−1 .
+This apparent contradiction is termed the "protein volume paradox" and it was first recognized by Kauzmann, who stated that “the liquid hydrocarbon model fails almost completely when one attempts to extend it to the effects of pressure on protein unfolding” .
 What is the molecular interpretation of this apparently anomalous volume change?
 The partial molar volume of a protein i in solution, Vi, is defined as the change in volume of the solution as a small amount of solute is added, divided by the total number of moles of added solute while keeping the amount of the other components constant.
 For an ideal solution, Vi would be the difference between the solution volume and the original solvent volume.
 However, due to hydration effects dissolution of a protein will also affect the solvent volume.
 Therefore, Vi can be expressed as the sum of both an intrinsic term and a hydration term:
 (6)
-where Vatom is the sum of the van der Waals volumes of the constituent atoms, Vcavities is the volume of the cavities that originate from imperfect packing in the native conformation, and ΔVhydration is the volume change resulting from the interaction of the protein with the solvent (Heremans and Smeller 1998).
+where Vatom is the sum of the van der Waals volumes of the constituent atoms, Vcavities is the volume of the cavities that originate from imperfect packing in the native conformation, and ΔVhydration is the volume change resulting from the interaction of the protein with the solvent .
 Upon protein unfolding, the van der Waals volumes will not change, so the volume change accompanying the unfolding can be written as:
 (7)
-Evidence for the role of cavities in the folded structure comes from mutagenesis experiments, where the creation of new cavities as a result of amino acid mutations results in larger negative volume changes upon unfolding compared to the native protein (Torrent et al.
-1999).
+Evidence for the role of cavities in the folded structure comes from mutagenesis experiments, where the creation of new cavities as a result of amino acid mutations results in larger negative volume changes upon unfolding compared to the native protein .
 Contributions to ΔΔVhydration arise from changes in hydration of hydrophobic and hydrophilic groups and from the hydration of cavities previously devoid of water.
 Note that the hydrophobic contribution is probably very small and its sign is often unclear.
 In principle, the largest contribution to ΔΔVhydration would arise from the exposure to or burial from water of charged groups due to electrostriction effects: the formation of an ion in solution results in a strong attraction of the dipoles of nearby water molecules by the Coulombic field of the ion.
 The overall volumetric properties of proteins, however, seem to be largely if not primarily determined by their internal solvent-excluded void volumes and the tendency of these volumes to expand with increasing temperature.
-Differential hydration, on the other hand, appears to contribute less to the volume change of unfolding (Rouget et al.
-2011; Royer and Winter 2011).
+Differential hydration, on the other hand, appears to contribute less to the volume change of unfolding .
 Mechanistic aspects of pressure-induced protein unfolding
-Pioneering observations of pressure effects on the behavior of proteins were made independently by Percy W. Bridgman (1914) and Keizo Suzuki (1960).
+Pioneering observations of pressure effects on the behavior of proteins were made independently by Percy W.  and Keizo .
 Both found that, contrary to expectation, the rates of the pressure-induced unfolding increase as the temperature is reduced, implying that the process is characterized by a negative activation enthalpy.
 Such negative activation energies have also been observed in the urea-induced unfolding of proteins.
 To explain his observations Suzuki proposed the following mechanism:
@@ -128,56 +109,36 @@ To explain his observations Suzuki proposed the following mechanism:
 where P is the native protein, P(H2O)n is the hydrated protein and PU is the unfolded protein.
 This model suggests that pressure results in the penetration of water molecules into the protein interior in a strongly exothermic step that results in unfolding.
 Several lines of evidence in support of this model have now been obtained.
-For instance, it was shown that lysozyme remains globular at high pressure, although its hydrodynamic volume has increased by 60-80% and fluorescence probes have undergone a blue shift, indicative of an increased polarity of their environment (Silva and Weber 1993).
-In another study the distance dependence of chromophore-solvent interactions in cytochrome c was determined and it was found that, as a lower estimate, the solvent had to be within ~4.5 Å of the chromophore in order to cause a blue shift in the fluorescence spectrum (Lesch et al.
-2004).
+For instance, it was shown that lysozyme remains globular at high pressure, although its hydrodynamic volume has increased by 60-80% and fluorescence probes have undergone a blue shift, indicative of an increased polarity of their environment .
+In another study the distance dependence of chromophore-solvent interactions in cytochrome c was determined and it was found that, as a lower estimate, the solvent had to be within ~4.5 Å of the chromophore in order to cause a blue shift in the fluorescence spectrum .
 This distance is much smaller than the radius of cytochrome c, suggesting that water indeed had to penetrate the protein to explain the blue shift.
-Others have used neutron and X-ray scattering techniques to determine the radius of gyration of proteins under pressure (Paliwal et al.
-2004; Panick et al.
-1998).
-For example, the Rg of staphylococcal nuclease (Snase) increased from 16.3 Å at 0.1 MPa to 34.7 Å at 310 MPa, an expansion that is comparable to the increase in Rg resulting from urea-induced unfolding (Rg ≈ 33 Å at 8 M urea), but is still much less than in the case of heat-induced unfolding (Rg ≈ 65 Å) (Paliwal et al.
-2004).
+Others have used neutron and X-ray scattering techniques to determine the radius of gyration of proteins under pressure .
+For example, the Rg of staphylococcal nuclease (Snase) increased from 16.3 Å at 0.1 MPa to 34.7 Å at 310 MPa, an expansion that is comparable to the increase in Rg resulting from urea-induced unfolding (Rg ≈ 33 Å at 8 M urea), but is still much less than in the case of heat-induced unfolding (Rg ≈ 65 Å) .
 The latter value approximates the value expected for a random coil.
 The data also indicated that the protein remained globular at 310 MPa, even though an increase in the Rg by a factor of two corresponds to an eight-fold increase in volume.
-Further characterization of the unfolded states of Snase and several other proteins indicates a persistence of at least some native secondary structure at high pressure (Zhang et al.
-1995; Panick et al.
-1998; Meersman et al.
-2002; Paliwal et al.
-2004).
+Further characterization of the unfolded states of Snase and several other proteins indicates a persistence of at least some native secondary structure at high pressure .
 Thus the pressure-unfolded state can be considered to be a swollen, hydrated globular structure with a partially unfolded conformation, as illustrated for Snase (Fig. 1).
 The persistence of secondary structure is interesting, as it indicates that the penetration of water molecules into the protein does not cause further unfolding through, for example, competition of protein-protein hydrogen bonds for protein-water hydrogen bonds.
-In recent years computer simulations, for example, using pairs of methane molecules in water as a simple model for the hydrophobic effect, have provided further microscopic details of the pressure-unfolding mechanism that support the empirical model (Payne et al.
-1997; Hummer et al.
-1998; Ghosh et al.
-2001, 2002).
+In recent years computer simulations, for example, using pairs of methane molecules in water as a simple model for the hydrophobic effect, have provided further microscopic details of the pressure-unfolding mechanism that support the empirical model (   2002).
 The potential of mean force for a pair of methane molecules in contact with each other (r ≈ 0.39 nm) is destabilized relative to the a pair of molecules separated by solvent (r ≈ 0.79 nm) as the pressure increases (Fig. 2), implying a weakening of the hydrophobic contact.
-The latter can be rationalized by the supposition that, as pressure increases, the average number of water molecules surrounding another water molecule increases and the average binding energy of the water molecules decreases (Sciortino et al.
-1991).
+The latter can be rationalized by the supposition that, as pressure increases, the average number of water molecules surrounding another water molecule increases and the average binding energy of the water molecules decreases .
 Thus, as a result of a reduction in the tetrahedral symmetry of the hydrogen bond network, the relative cost of inserting water molecules into an unfavorable non-polar environment is also reduced.
-Using a water-soluble polymer as a model system, the increased level of hydration of both hydrophobic and polar moieties under pressure could also be demonstrated experimentally (Meersman et al.
-2005).
-However, one should keep in mind that the above description of water under pressure is based on current levels of simulations for bulk water (Sciortino et al.
-1991).
+Using a water-soluble polymer as a model system, the increased level of hydration of both hydrophobic and polar moieties under pressure could also be demonstrated experimentally .
+However, one should keep in mind that the above description of water under pressure is based on current levels of simulations for bulk water .
 In addition to influencing the structure of water by reducing its tetrahedral framework, pressure is also a necessary requirement for keeping water within the protein.
 It is well known from hydrogen exchange experiments, for example, that water molecules can penetrate into and escape from the protein interior on picosecond to millisecond timescales.
-A molecular dynamics (MD) simulation demonstrated that water molecules inserted between a hydrophobic pair of amino acids only remained there at high pressure, whereas at 0.1 MPa the original hydrophobic contact was restored within the simulation time (Paliwal et al.
-2004).
+A molecular dynamics (MD) simulation demonstrated that water molecules inserted between a hydrophobic pair of amino acids only remained there at high pressure, whereas at 0.1 MPa the original hydrophobic contact was restored within the simulation time .
 We can now return to the volume paradox presented above.
 Given the fact that pressure-induced unfolding corresponds to the penetration of water into the protein core rather than to the exposure of the core residues to the solvent, as is usually the case in heat-induced unfolding, any estimation of ΔV on the basis of a random coil-like unfolded state will overestimate the hydrophobic hydration.
-Moreover, although the compressibility change Δβ is often assumed to be zero, Prehoda et al.
-(1998) showed that Δβ is significantly different from this value in the case of ribonuclease A and found that ΔV = −21 mL mol−1 compared with −59 mL mol−1 when Δβ was assumed to be zero.
-Δβ , however, was found to be quite small in the case of Snase (Seemann et al.
-2001).
+Moreover, although the compressibility change Δβ is often assumed to be zero,  showed that Δβ is significantly different from this value in the case of ribonuclease A and found that ΔV = −21 mL mol−1 compared with −59 mL mol−1 when Δβ was assumed to be zero.
+Δβ , however, was found to be quite small in the case of Snase .
 Thus a proper understanding of the structure of the pressure-unfolded state, an improved estimate of the contribution of cavities to the volume change, and the pressure dependence of the volume change could provide a solution to Kauzmann’s apparent volume paradox.
 Pressure effects on multimeric proteins and aggregates
 So far we have considered the effect of pressure on monomeric proteins, which generally become unfolded between 400-800 MPa.
-Moderate pressures of 100-300 MPa are also known to dissociate protein oligomers into their monomers (Silva and Weber 1993).
+Moderate pressures of 100-300 MPa are also known to dissociate protein oligomers into their monomers .
 The latter can maintain their native conformation or may denature in this process.
 These pressure limits have been incorporated into discussions of the likely maximal pressures for survival of organisms and also technological applications of pressure-induced sterilization procedures.
-Of particular interest is the pressure-induced depolymerization of larger protein assemblies, such as cytoskeletal proteins, which have been shown to result in morphological changes in both eukaryotic and bacterial cells (Wilson et al.
-2001; Molina-Höppner et al.
-2003; Ishii et al.
-2004).
+Of particular interest is the pressure-induced depolymerization of larger protein assemblies, such as cytoskeletal proteins, which have been shown to result in morphological changes in both eukaryotic and bacterial cells .
 Note that these changes occur at low pressures (~50 MPa) and that, in some cases, the original cell morphology is restored after the pressure is returned to ambient.
 In case of irreversible depolymerization of the cytoskeleton, however, this will impair cell growth and viability.
 Pressure effects on protein energy landscapes
@@ -185,8 +146,7 @@ Energy landscapes reflect cooperative structural relaxation processes, from prot
 When dealing with proteins, one should consider free energy rather than potential energy landscapes, as the conformational entropy of the polypeptide chain plays a major role in determining the relative stability of the different states.
 The process of protein folding involves a change in free energy when moving from the unfolded ensemble to folded (native) ensemble.
 However, due to the dynamical behavior of proteins one can also explore changes in volume and energy within a single ensemble, e.g., the native state, and depict this variation within a single ensemble in terms of a free energy landscape.
-Thus, an apparent single well (a local energy minimum) on the overall folding landscape contains many other local minima (Fig. 3; Fenimore et al.
-2004).
+Thus, an apparent single well (a local energy minimum) on the overall folding landscape contains many other local minima (Fig. 3; ).
 We address the influence of pressure on these two aspects of free energy landscapes.
 Protein folding free energy landscapes.
 In general, the pressure dependence of a reaction rate k is given by:
@@ -194,54 +154,35 @@ In general, the pressure dependence of a reaction rate k is given by:
 where R is the ideal gas constant and ΔV# is the activation volume.
 Any reaction that is accompanied by a negative ΔV#, i.e., if the transition state has a smaller volume than the product, will be accelerated by pressure and vice versa.
 Pressure is a useful variable to investigate reaction mechanisms as studies of model systems have shown that pressure (i.e., density) effects often determine the mechanism, whereas temperature mainly changes the frequency of the motions.
-The effects of pressure on folding and unfolding rates have been investigated by pressure-jump and high-pressure stopped-flow experiments for a number of proteins and in most cases pressure is found to decrease the folding rate and to increase the unfolding rate (Panick et al.
-1998; Pappenberger et al.
-2000; Jacob et al.
-2002; Brun et al.
-2006; Korzhnev et al.
-2006).
-Using an off-lattice minimalist model, Hillson et al.
-(1999) demonstrated that, depending on the nature of the atomic interactions involved in the transition state, pressure may lower or increase the transition state free energy.
+The effects of pressure on folding and unfolding rates have been investigated by pressure-jump and high-pressure stopped-flow experiments for a number of proteins and in most cases pressure is found to decrease the folding rate and to increase the unfolding rate .
+Using an off-lattice minimalist model,  demonstrated that, depending on the nature of the atomic interactions involved in the transition state, pressure may lower or increase the transition state free energy.
 Thus the folding rate can, in principle, increase or decrease with pressure, although only decreases in folding rates have been observed so far with an increase in pressure.
 The latter phenomenon is due to the fact that, as pressure increases, the diffusion of the polypeptide chain as it adopts its final structure, characterized by the reconfigurational diffusion coefficient, becomes slower, and this effect in practice dominates any pressure-induced lowering of the transition state energy.
 Because the reconfigurational diffusion coefficient is a function of the fold of the native protein and the roughness of the energy landscape, one can conclude that the free energy landscape is rougher at pressures different from ambient.
 An important consequence of this conclusion is that metastable states may reside in their local minima for longer times, thereby enabling their characterization.
-In this respect it is also of interest to note that the pressure-unfolded states of several proteins have been suggested to resemble intermediates in the folding process (Zhang et al.
-1995; Meersman et al.
-2002).
-For example, in the case of ribonuclease A hydrogen-deuterium exchange protection factors and the secondary structure of the pressure-unfolded state are similar to those found for a previously characterized early folding intermediate (Zhang et al.
-1995), suggesting that high-pressure studies may provide important information on such intermediate conformations.
+In this respect it is also of interest to note that the pressure-unfolded states of several proteins have been suggested to resemble intermediates in the folding process .
+For example, in the case of ribonuclease A hydrogen-deuterium exchange protection factors and the secondary structure of the pressure-unfolded state are similar to those found for a previously characterized early folding intermediate , suggesting that high-pressure studies may provide important information on such intermediate conformations.
 In order to go from the unfolded to the folded state, the polypeptide chain has to cross a free energy barrier, which corresponds to the transition state.
-The properties of this transition state are rather elusive given its transient nature; structural information has been obtained mainly through mutational (φ-value) analysis, and computational methods (Vendruscolo et al.
-2005).
+The properties of this transition state are rather elusive given its transient nature; structural information has been obtained mainly through mutational (φ-value) analysis, and computational methods .
 The transition state has been found to be a rather heterogeneous ensemble of conformations, whose major, defining feature is an overall native-like topology.
-One important question concerns the role of water in the folding mechanism and whether the rate-limiting step involves desolvation (Rhee et al.
-2004).
+One important question concerns the role of water in the folding mechanism and whether the rate-limiting step involves desolvation .
 This question can be addressed by determining the hydration properties of the transition state ensemble (TSE).
 Pressure studies can provide information on the TSE by measuring the activation volumes of folding  and unfolding .
-In the case of Snase, for instance, the respective activation volumes are +56 and −8 mL mol−1, indicating that the TSE is closer to the native than to the unfolded state on the reaction coordinate and that it is largely dehydrated (Fig. 4; Brun et al.
-2006).
-This is the case for most proteins studied so far, a finding that seems to differ from the conclusions of most computational studies and φ-value analyses (Brun et al.
-2006).
-However, it has been shown for Snase that although the wild-type protein has a highly dehydrated transition state, some of its mutants containing ionizable residues have a hydrated TSE, i.e., the absolute value of < (Fig. 4; Brun et al.
-2006).
+In the case of Snase, for instance, the respective activation volumes are +56 and −8 mL mol−1, indicating that the TSE is closer to the native than to the unfolded state on the reaction coordinate and that it is largely dehydrated (Fig. 4; ).
+This is the case for most proteins studied so far, a finding that seems to differ from the conclusions of most computational studies and φ-value analyses .
+However, it has been shown for Snase that although the wild-type protein has a highly dehydrated transition state, some of its mutants containing ionizable residues have a hydrated TSE, i.e., the absolute value of < (Fig. 4; ).
 Taken together these data suggest that the degree of hydration of the TSE depends on the properties of the particular protein as well as on the experimental conditions.
-Moreover, a recent simulation study comparing implicit and explicit solvation models showed that, although both models are qualitatively in agreement with each other, the explicit model does indicate that the TSE is more hydrated (Rhee et al.
-2004).
+Moreover, a recent simulation study comparing implicit and explicit solvation models showed that, although both models are qualitatively in agreement with each other, the explicit model does indicate that the TSE is more hydrated .
 Part of the apparent contradiction mentioned above can therefore be related to the fact that most simulations deal with water implicitly and that φ-value analysis is also interpreted in terms of an implicit role of the solvent.
 As a consequence, high-pressure methods may provide the best, if not the only, experimental approach to characterize the TSE in terms of hydration.
 Protein dynamics: accessing conformational substates.
 Proteins are dynamic molecules, a characteristic that enables them to perform functions such as ligand or substrate binding and alteration and release.
-The fluctuations that underlie this dynamic behavior cause the protein to adopt numerous conformations, which are commonly referred to as conformational substates (Frauenfelder et al.
-1990; Fenimore et al.
-2004).
+The fluctuations that underlie this dynamic behavior cause the protein to adopt numerous conformations, which are commonly referred to as conformational substates .
 Thus the native state of a protein is actually an ensemble of nearly isoenergetic substates (Fig. 3), which may perform different functions.
 Experiments have shown that within these substates one can also identify statistical substates, which perform the same function, but with different rates.
 Pressure is a useful tool to explore the conformational substates in an energy landscape as it can shift the population from one substate to another on the basis of the volumetric properties of the respective substates.
 In addition, pressure can also change the reaction rate k with which a given substate performs its function, as its value depends on the activation volume (; Eq. 9), which may be different for different substates, as well as on the properties of the solvent (e.g., viscosity).
-This type of experiment can lead to new insights into the dynamics and reactions of proteins, such as the binding mechanism of carbon monoxide and oxygen to myoglobin (Frauenfelder et al.
-1990; Fenimore et al.
-2004).
+This type of experiment can lead to new insights into the dynamics and reactions of proteins, such as the binding mechanism of carbon monoxide and oxygen to myoglobin .
 In a recent example, pressure modulation in combination with FTIR spectroscopy was applied to reveal equilibria between spectroscopically resolved substates of the lipidated signaling protein N-Ras.
 The conformational dynamics of N-Ras in its different nucleotide binding states in the absence and presence of a model membrane were probed by pressure perturbation.
 It was shown that not only nucleotide binding, but also the presence of the membrane has a drastic effect on the conformational dynamics and selection of conformational substates of the protein.
@@ -249,20 +190,17 @@ Moreover, a previously unknown substate that appears upon membrane binding was o
 From free energy landscapes to P-T phase diagrams
 Life on Earth can thrive in environments characterized by a wide range of pressures and temperatures.
 In order to understand this ability on the molecular level it is necessary to consider pressure effects on proteins in particular, and living systems in general, over a wide temperature range.
-A plot of the transition midpoint for pressure unfolding versus temperature yields an elliptical phase diagram (Fig. 5), which, interestingly, is also found when plotting inactivation rates of microorganisms (Hashizume et al.
-1995; Yayanos 1998) or the phase separation behavior of water-soluble polymers (Meersman et al.
-2006).
+A plot of the transition midpoint for pressure unfolding versus temperature yields an elliptical phase diagram (Fig. 5), which, interestingly, is also found when plotting inactivation rates of microorganisms  or the phase separation behavior of water-soluble polymers .
 On the basis of the contours of the phase diagram, with its re-entrant behavior at low temperature, cold unfolding of proteins was predicted.
-It is worth noting that, at least at elevated pressures, cold and pressure unfolding are thermodynamically (Fig. 5) and mechanistically similar (Meersman et al.
-2002).
+It is worth noting that, at least at elevated pressures, cold and pressure unfolding are thermodynamically (Fig. 5) and mechanistically similar .
 This close relationship between the effects of pressure and cold may explain why the cellular responses to these variables are similar.
 Pressure is often used in cold unfolding experiments because pressures of ~200 MPa reduce the freezing point of water by ~20oC, thus enabling experiments at low temperature in the liquid state.
 The phase diagram can be described by Eq. 2, often referred to as the Hawley equation.
 The main advantage of this equation over purely empirical equations lies in the fact that all parameters can be given a physical interpretation.
 However, using this equation one can only obtain the differences in compressibility, thermal expansion, and heat capacity between the unfolded and the native state.
 Therefore, other techniques are required to determine βT, Cp and αp.
-These thermodynamic quantities are of particular interest as they can be related to fluctuations in volume, energy, and a cross-correlation of volume and energy, respectively (Heremans and Smeller 1998).
-Such fluctuations underlie the dynamic behavior of proteins in aqueous conditions (Chalikian 2003).
+These thermodynamic quantities are of particular interest as they can be related to fluctuations in volume, energy, and a cross-correlation of volume and energy, respectively .
+Such fluctuations underlie the dynamic behavior of proteins in aqueous conditions .
 At the phase boundary, the Gibbs free energy change for unfolding, ΔG=GD
 GN, is zero.
 Within the elliptic contour the protein is in the native conformation (ΔG>0), outside the contour the protein is unfolded (ΔG<0).
@@ -278,35 +216,27 @@ In the third region (III) ΔH, ΔV, and ΔS are all positive.
 One of the interesting features of the phase diagram is that for a number of proteins dTm/dP is positive at low pressures and high temperatures, suggesting that pressure increases the stability of the protein towards thermal unfolding.
 This effect may provide the molecular basis for cells and their constituents to survive at combinations of high temperature and high pressure.
 As a result it is possible to refold a thermally unfolded protein (at 0.1 MPa), at temperatures just above the unfolding temperature, by increasing the pressure.
-The fact that in this low pressure-high temperature region the unfolding is associated with a positive volume change has been attributed to the difference in the thermal expansion of the folded and unfolded states (Seemann et al.
-2001).
+The fact that in this low pressure-high temperature region the unfolding is associated with a positive volume change has been attributed to the difference in the thermal expansion of the folded and unfolded states .
 This can be seen from the pressure-temperature dependence of the volume change ΔV:
 (10)
 where the second term  represents the temperature dependence of the volume.
-The volume change ΔV is found to have a strong temperature dependence, with ΔV becoming less negative as the temperature increases (Seemann et al.
-2001).
-However, in the case of ribonuclease A the changes in ΔV with temperature have been shown to depend on other experimental conditions (Yamaguchi et al.
-1995).
-The signs of ΔV and ΔS provide a thermodynamic basis for the mechanistic and conformational differences between the pressure and heat unfolding of proteins, and rationalize the similarities between the pressure and cold unfolding (Meersman et al.
-2002).
+The volume change ΔV is found to have a strong temperature dependence, with ΔV becoming less negative as the temperature increases .
+However, in the case of ribonuclease A the changes in ΔV with temperature have been shown to depend on other experimental conditions .
+The signs of ΔV and ΔS provide a thermodynamic basis for the mechanistic and conformational differences between the pressure and heat unfolding of proteins, and rationalize the similarities between the pressure and cold unfolding .
 The slope of the equilibrium line in the diagram (Fig. 5) is given by:
 (11)
 Note that, if Δβ, Δα, and ΔCp are zero then this equation is reduced to the classical Clapeyron equation (dTm/dP = TmΔV/ΔH), which describes the behavior under pressure of, for instance, lipids.
 This demonstrates clearly the importance of the second-order terms in the elliptic nature of the phase diagrams of proteins.
-Higher-order terms, describing the temperature and pressure dependence of Δβ, Δα, and ΔCP, have been ignored in Eq. 2, but for at least one protein, ribonuclease A, a pressure dependence of ΔCP has been reported (Yamaguchi et al.
-1995).
+Higher-order terms, describing the temperature and pressure dependence of Δβ, Δα, and ΔCP, have been ignored in Eq. 2, but for at least one protein, ribonuclease A, a pressure dependence of ΔCP has been reported .
 Inclusion of such higher-order terms distorts the diagram, but does not change completely its overall elliptical appearance.
 In practice, the stability of a protein will depend strongly on solution conditions such as pH, the presence of chemical denaturants, or co-solutes.
-Zipp and Kauzmann (1973) studied the phase diagram of myoglobin over a wide pH range.
+studied the phase diagram of myoglobin over a wide pH range.
 They observed that the shape of the diagram changed at extreme pH values, where the difference between the cold and heat unfolding temperatures becomes smaller and the unfolding pressure is lowered.
-Likewise, the presence of co-solutes such as urea and salts also affect the position and shape of the phase diagram, although the outcome depends strongly on their kosmotropic or chaotropic nature (Fig. 6; Herberhold et al.
-2004).
-The addition of co-solutes or co-solvents can have a large effect on the volume change, and Scharnagl et al.
-(2005) have given a comprehensive thermodynamic description of the effect of co-solutes and co-solvents on the stability of the protein.
+Likewise, the presence of co-solutes such as urea and salts also affect the position and shape of the phase diagram, although the outcome depends strongly on their kosmotropic or chaotropic nature (Fig. 6; ).
+The addition of co-solutes or co-solvents can have a large effect on the volume change, and  have given a comprehensive thermodynamic description of the effect of co-solutes and co-solvents on the stability of the protein.
 Other factors, such as macromolecular crowding as occurs in organisms, have been virtually unexplored with respect to pressure stability.
 Moreover, food scientists, investigating the inactivation of microorganisms in foods, are well aware of the fact that the pressure sensitivity of vegetative bacteria depends on the composition of the food matrix.
-For instance, when plotting the decimal reduction time D in the P-T plane, the inactivation of Escherichia coli in carrot juice follows a linear pattern, whereas in HEPES buffer a typical elliptical outline can be observed (Van Opstal et al.
-2005).
+For instance, when plotting the decimal reduction time D in the P-T plane, the inactivation of Escherichia coli in carrot juice follows a linear pattern, whereas in HEPES buffer a typical elliptical outline can be observed (Van ).
 This example clearly shows that pressure sensitivity strongly depends on the nature of the experimental medium.
 Hence, one should be careful when extrapolating data from in vitro (buffer) systems to real life systems, as the latter involve a large number of unknown factors that we cannot yet fully understand or model.
 Kinetic aspects of the phase diagram
@@ -321,7 +251,7 @@ According to the transition state theory the activation volume is defined as:
 Similar to the P-T phase diagram, the P-T-k diagram can be divided in three regions based on the signs of ΔV#, ΔH# and ΔS#.
 This similarity can easily be understood from the thermodynamic background of the kinetic theory of the transition state.
 An important aspect that has to be taken into account is the irreversibility of the protein unfolding, which is generally due to protein aggregation at high temperatures.
-Such a phenomenon can be represented by the following mechanism (Heremans and Smeller 1997):
+Such a phenomenon can be represented by the following mechanism :
 (14)
 where N and D are the native and reversibly unfolded protein, and I is the irreversibly unfolded protein.
 From the viewpoint of the phase diagram two conditions are worth considering.
@@ -339,61 +269,45 @@ It explains why protein aggregation is often observed during thermal unfolding e
 Relevance of biophysical studies on proteins to deep carbon
 Most studies presented herein investigate the effects of pressure on proteins obtained from mesophilic microorganisms or even multicellular organisms.
 The conclusions derived from these studies are likely to be general; i.e., they can be extended to proteins found in extremophiles.
-Little is known about the pressure stability of proteins from piezophiles, but research on proteins from thermophiles and psychrophiles suggests that these proteins shift their thermal stability by increasing the number of stabilizing (non-covalent) interactions (Daniel et al.
-1996).
+Little is known about the pressure stability of proteins from piezophiles, but research on proteins from thermophiles and psychrophiles suggests that these proteins shift their thermal stability by increasing the number of stabilizing (non-covalent) interactions .
 The pressure range in which proteins unfold tends to be higher than that in which cell survival is compromised.
 What could be more critical in the context of pressure effects on cellular growth and viability is the maintenance of protein-protein, protein-nucleic acid, and protein-lipid interactions (vide infra) that are more pressure sensitive.
 Likewise, relatively low pressures could suffice to influence protein dynamics, and hence protein activity, although few studies have addressed this issue.
 Low pressures will also influence reaction rates, thereby affecting important cellular processes responsible, for instance, for turnover of cellular constituents and catabolic reactions.
-Pressure effects could be particularly relevant in view of the long generation times observed in subseafloor microorganisms (Jørgensen and Boetius 2007).
+Pressure effects could be particularly relevant in view of the long generation times observed in subseafloor microorganisms .
 All these observations are further complicated when changing the nature of the matrix in which protein stability is studied from water to a more complex one that resembles the intracellular environment.
 Here, effects such as molecular crowding may have a crucial influence on protein stability and dynamics.
-Moreover, the P-T diagram indicates a close relationship between pressure and temperature effects, and could explain why proteomics studies on cells that have been exposed to pressure stress have revealed so far that the proteins for which the expression becomes upregulated are similar to those induced by heat or cold (Hörmann et al.
-2006).
+Moreover, the P-T diagram indicates a close relationship between pressure and temperature effects, and could explain why proteomics studies on cells that have been exposed to pressure stress have revealed so far that the proteins for which the expression becomes upregulated are similar to those induced by heat or cold .
 It remains a question, however, whether or not these mainly chaperone (heat shock) proteins play the same role in coping with pressure as with heat.
 NUCLEIC ACIDS
 Deoxyribonucleic acid (DNA) and ribosomal ribonucleic acid (rRNA) represent the hereditary blueprint of every cell.
 Other RNA’s, such as messenger and transfer RNA, are involved in the translation of the genetic information into proteins.
 Whereas DNA adopts essentially one structure, the iconic double helix of Watson and Crick, the various RNA molecules display a much greater conformational variability.
 The thermal stability of the DNA double helix has been well characterized structurally and biochemically and it is well known that the two complementary DNA strands dissociate into single-stranded coils by heating.
-The midpoint of the melting transition Tm (at atmospheric pressure) depends on the base pair composition and the sequence of the DNA, as well as on the salt concentration, indicating that the stability of DNA is intimately related to its hydration (Dubins et al.
-2001; Rayan et al.
-2005).
-After his observation of an elliptical P-T phase diagram for proteins, Hawley (1971) investigated the pressure-temperature stability of nucleic acids to assess whether a similar diagram could be developed for DNA (Hawley et al.
-1974).
+The midpoint of the melting transition Tm (at atmospheric pressure) depends on the base pair composition and the sequence of the DNA, as well as on the salt concentration, indicating that the stability of DNA is intimately related to its hydration .
+After his observation of an elliptical P-T phase diagram for proteins,  investigated the pressure-temperature stability of nucleic acids to assess whether a similar diagram could be developed for DNA .
 He found that dTm/dP is linear and positive (up to 600 MPa) with slightly steeper slopes at higher salt concentration.
-Because the melting enthalpy ΔHm is positive at atmospheric pressure (0.1 MPa), one can derive from the Clapeyron equation that ΔV is positive, indicating that pressure stabilizes the helix conformation of Clostridium perfringens DNA (Hawley et al.
-1974).
+Because the melting enthalpy ΔHm is positive at atmospheric pressure (0.1 MPa), one can derive from the Clapeyron equation that ΔV is positive, indicating that pressure stabilizes the helix conformation of Clostridium perfringens DNA .
 This conformation is not unexpected as base stacking and hydrogen bonds are stabilized by high pressure.
-The pressure insensitivity of the DNA double helix was recently confirmed by high-pressure crystallography and NMR experiments (Girard et al.
-2007; Wilton et al.
-2008).
+The pressure insensitivity of the DNA double helix was recently confirmed by high-pressure crystallography and NMR experiments .
 Both studies indicate that the double helix undergoes only a minor distortion under pressure (Fig. 7), although the details of the distortion were not the same in the crystalline versus solution state.
 By plotting the slope of the coexistence lines as a function of Tm, Hawley observed that the slope changes sign at Tm ≈ 59 oC, implying that below this temperature ΔV would be negative and thus pressure would destabilize the DNA double helix.
 Note that 59 oC is well below the Tm of natural chromosomes under physiological conditions.
-Indeed, work on synthetic DNA or RNA duplexes revealed that pressure destabilizes the double-stranded conformation at Tm values below approximately 50 oC (Dubins et al.
-2001); in other words dTm/dP becomes negative at high salt concentrations and low temperatures.
+Indeed, work on synthetic DNA or RNA duplexes revealed that pressure destabilizes the double-stranded conformation at Tm values below approximately 50 oC ; in other words dTm/dP becomes negative at high salt concentrations and low temperatures.
 For instance, the midpoint for the pressure-induced melting of the poly(dA)poly(rU) DNA/RNA duplex is 60 MPa at 25 oC.
-Such a change in sign of dTm/dP also has been observed for water soluble synthetic polymers, depending on the nature and concentration of the added salt (Kunugi et al.
-1999).
-The effect of salts has been attributed to changes in water structure and can be related to the Hofmeister series (Cacace et al.
-1997; Zhang et al.
-2006).
+Such a change in sign of dTm/dP also has been observed for water soluble synthetic polymers, depending on the nature and concentration of the added salt .
+The effect of salts has been attributed to changes in water structure and can be related to the Hofmeister series .
 This again underscores the importance of hydration in the processes considered in this chapter.
-Dubins et al.
-(2001) also calculated the phase diagram in an extended P-T region.
+also calculated the phase diagram in an extended P-T region.
 The calculated phase diagram reveals that as pressure is further increased dTm/dP changes sign, and above 600 MPa dTm/dP is close to zero (regardless of Tm at 0.1 MPa).
 Unfortunately, these authors did not explore this pressure range experimentally in order to verify the correctness of their prediction.
-Also, Hawley et al.
-(1974) did not observe any transition in C. perfringens DNA under pressures in excess of 900 MPa.
-In contrast to DNA, computer simulations of a RNA hairpin show that it does unfold under pressure (Garcia et al.
-2007).
+Also,  did not observe any transition in C. perfringens DNA under pressures in excess of 900 MPa.
+In contrast to DNA, computer simulations of a RNA hairpin show that it does unfold under pressure .
 Presumably this conformation change is due to the fact that RNA, similar to proteins, has a tertiary structure held together by non-covalent interactions.
 The temperature dependence of the unfolding pressure again follows an elliptic outline.
 When comparing the heat- and pressure-induced helix-to-coil transition it was found that the cooperative length, being the number of base pairs that melt as one unit, of the pressure-induced transition is two-fold greater than the one for the heat transition.
 This difference suggests that these processes are mechanistically different.
-Moreover, on the basis of the hypochromicity of several infrared bands and a comparison of thermodynamic variables (αp, βΤ, ΔV), it was concluded that the pressure-induced single-strand DNA is more structured than the heat-induced coil, due to the greater amount of stacking at high pressure (Rayan et al.
-2005).
+Moreover, on the basis of the hypochromicity of several infrared bands and a comparison of thermodynamic variables (αp, βΤ, ΔV), it was concluded that the pressure-induced single-strand DNA is more structured than the heat-induced coil, due to the greater amount of stacking at high pressure .
 These findings are reminiscent of the differences in high pressure vs. high temperature behavior of proteins.
 Several cellular processes involving nucleic acids, such as replication, transcription and recombination, depend on the correct recognition of protein and DNA or RNA binding partners.
 X-ray crystallography of protein-DNA complexes can identify the non-covalent interactions involved in the complex.
@@ -402,23 +316,17 @@ Therefore, pressure can provide information on the stoichiometry and thermodynam
 A typical dissociation constant for BamHI-DNA complex is 4.6 ± 0.4 nM at 50 MPa vs. 0.7 ± 0.1 nM at 0.1 MPa, demonstrating a clear destabilization at high pressure under the test conditions used.
 Molecular dynamics studies show that pressure forces water into the protein-DNA complex and that it is sequestered at the intermolecular interface, similar to the effect of pressure on protein oligomers.
 Moreover, as most DNA-interacting proteins are oligomers, high hydrostatic pressure studies can also reveal information on the effect of DNA binding on their stability.
-Depending on the protein involved, DNA has been found both to stabilize and to destabilize protein oligomers (Silva et al.
-2002).
-For instance, the tetrameric LacI repressor protein is stabilized by the inducer, but destabilized by DNA (Royer et al.
-1990).
-In contrast, the dimeric LexA repressor, involved in the regulation of the transcription of the SOS system in E. coli, is stabilized upon DNA binding (Mohana-Borges et al.
-2000).
-Pressure effects have also been studied on RNA-RNA interactions (e.g., GAAA tetraloop-receptor motif;  Downey et al.
-2007).
+Depending on the protein involved, DNA has been found both to stabilize and to destabilize protein oligomers .
+For instance, the tetrameric LacI repressor protein is stabilized by the inducer, but destabilized by DNA .
+In contrast, the dimeric LexA repressor, involved in the regulation of the transcription of the SOS system in E. coli, is stabilized upon DNA binding .
+Pressure effects have also been studied on RNA-RNA interactions (e.g., GAAA tetraloop-receptor motif;  ).
 Here the volume change associated with the pressure-induced dissociation (−5 to −9 mL.mol−1) was smaller than those typically observed for protein unfolding or protein-DNA dissociation.
 In addition, the effect of the co-solutes sucrose and glycerol was found to be opposite of what is seen in the case of proteins.
-In a recent study of the binding of a highly conserved protein involved in DNA repair in prokaryotes, RecA, to single stranded DNA (ssDNA) was investigated (Merrin et al.
-2011).
+In a recent study of the binding of a highly conserved protein involved in DNA repair in prokaryotes, RecA, to single stranded DNA (ssDNA) was investigated .
 As expected, pressures of 70-130 MPa were sufficient to disrupt the RecA-ssDNA interaction.
 When comparing the RecA of a mesophile with that of a thermophilic organism it was observed that the increased thermal stability correlated with increased pressure stability.
 Moreover, a pressure-temperature plot for the dissociation also displays the same contour as that for protein unfolding.
-This similarity supports the conclusion that the effect of pressure on protein-DNA interactions is mainly due to changes in structure and/or hydration at the interface, rather than being caused by changes in DNA structure (Wilton et al.
-2008).
+This similarity supports the conclusion that the effect of pressure on protein-DNA interactions is mainly due to changes in structure and/or hydration at the interface, rather than being caused by changes in DNA structure .
 More importantly, the pressure range in which this important interaction is disrupted corresponds to the upper pressure limit for microbial growth in nature.
 Taken together the above suggests that the disruption of protein-protein and protein-nucleic acid interactions is potentially key to the loss of pressure survivability in microorganisms.
 LIPIDS AND CELL MEMBRANES
@@ -438,13 +346,9 @@ The lipids in the Lβ’ phase are arranged on a two-dimensional triangular latt
 This phase is also called solid-ordered (so) phase.
 Besides neutral or zwitterionic lipids, negatively-charged lipids are also present in the cell membranes.
 The melting temperature of negatively-charged lipid membranes generally increases when neutralizing the charges by proteins or divalent ions.
-In addition to these thermotropic phase transitions, a range of pressure-induced phase transformations has also been observed (Winter et al.
-1989, 2000, 2004;  b; Hammouda et al.
-1997; Czeslik et al.
-1998; Winter 2001).
+In addition to these thermotropic phase transitions, a range of pressure-induced phase transformations has also been observed ( 2000, 2004;  b;   ).
 Because the average end-to-end distance of disordered hydrocarbon chains in the Lα-phase is smaller than that of ordered (all-trans) chains, the bilayer becomes thinner during melting at the Pβ'/Lα-transition, even though the partial lipid volume increases.
-This behavior is demonstrated in Figure 9, which shows the temperature dependence of the specific partial lipid volume VL of DMPC1 in water (Bottner et al.
-1994).
+This behavior is demonstrated in Figure 9, which shows the temperature dependence of the specific partial lipid volume VL of DMPC1 in water .
 The change of VL near 14 oC corresponds to a small volume change in course of the Lβ'-to-Pβ' transition.
 The main transition at Tm = 23.9 oC for this phospholipid is accompanied by a pronounced 3% change in volume, which is mainly due to changes of the chain cross-sectional area, because the chain disorder increases drastically at the transition.
 The compression of the bilayer as a whole is anisotropic, lateral shrinking being accompanied by a increase in thickness due to a straightening of the acyl-chains.
@@ -460,17 +364,12 @@ In lipid bilayers the fluctuations in enthalpy, volume, and area are higher clos
 High enthalpy fluctuations lead to high heat capacity, high volume fluctuations lead to high volume compressibility, and high area fluctuations lead to a high area compressibility.
 In turn, area fluctuations lead to fluctuations in curvature and bending elasticity.
 These properties may be required for optimal physiological function.
-A common slope of ∼0.22 °C MPa−1 has been observed for the gel-fluid phase boundary of saturated phosphatidylcholines as shown in Figure 10 (Winter 2001; Winter et al.
-2000, 2004).
-Assuming the validity of the Clapeyron relation describing first-order phase transitions for this quasi-one-component lipid system, dTm/dP = TmΔVm(Tm, P)/ΔHm(Tm, p), the positive slope can be explained by an endothermic enthalpy change, ΔHm, and a partial molar volume increase, ΔVm, for the gel-to-fluid transition, which have indeed been determined in direct thermodynamic measurements (Seeman et al.
-2003; Janosch et al.
-2004; Krivanek et al.
-2008).
+A common slope of ∼0.22 °C MPa−1 has been observed for the gel-fluid phase boundary of saturated phosphatidylcholines as shown in Figure 10 (  2004).
+Assuming the validity of the Clapeyron relation describing first-order phase transitions for this quasi-one-component lipid system, dTm/dP = TmΔVm(Tm, P)/ΔHm(Tm, p), the positive slope can be explained by an endothermic enthalpy change, ΔHm, and a partial molar volume increase, ΔVm, for the gel-to-fluid transition, which have indeed been determined in direct thermodynamic measurements .
 The transition enthalpy at atmospheric pressure is about 36 kJ mol−1, for DPPC at ambient pressure and decreases slightly with pressure; (dΔHm/dP) =
 0.034 kJ⋅mol
 1⋅MPa
-1 (Potekhin et al.
-2008).
+1 .
 As dΔHm/dP =
 Tm(dΔVm/dT)p + ΔCp,m(dTm/dP), the drop of enthalpy change with pressure evidences a significant difference in the coefficients of thermal expansion of the two phases.
 Similarly, ΔVm decreases linearly with increasing pressure (from 22.9 cm3 mol
@@ -478,46 +377,35 @@ Similarly, ΔVm decreases linearly with increasing pressure (from 22.9 cm3 mol
 1 at 200 MPa, i.e., dΔVm/dP =
 0.0493 cm3⋅mol
 1 MPa
-1; Potekhin et al.
-2008).
+1; ).
 According to dΔVm/dP = (dΔVm/dP)T + (dΔVm/dT)p⋅(dTm/dP), this decrease is due to the significant difference in the lipid compressibility coefficients in the fluid and gel phase, respectively.
 The transition half-width (ΔTm,1/2), which can be estimated as the ratio of the calorimetric peak area ΔHm,cal to its amplitude Cp,max, can be determined from the van’t Hoff enthalpy change by using ΔHm,vH = 4RTm2Cp,max/ΔHm,cal = 4RTm2/ΔTm,1/2.
 The transition half-width does not change with pressure, and the average number of lipid molecules (N = ΔHm,cal/ΔHm,vH) comprising the coooperative unit N of the transition grows slightly with the increase of pressure and temperature.
 Similar transition slopes have been determined for the mono-cis-unsaturated lipid POPC, the phosphatidylserine DMPS, and the phosphatidylethanolamine DPPE.
 Only the slopes of the di-cis-unsaturated lipids DOPC and DOPE have been found to be markedly smaller.
 The two cis-double bonds of DOPC and DOPE lead to very low transition temperatures and slopes, as they impose kinks in the linear conformations of the lipid acyl-chains, thus creating significant free volume fluctuations in the bilayer so that the ordering effect of high pressure is reduced.
-Hence, in order to remain in a physiologically relevant, fluid-like state at high pressures, more of such cis-unsaturated lipids are incorporated into cellular membranes of deep-sea organisms, another example of homeoviscous adaptation (Yayanos 1986; Behan et al.
-1992).
-For example, the ratio of unsaturated to saturated fatty acids of the piezophilic deep-sea bacterium CNPT3 is linearly dependent on the hydrostatic pressure at which they were cultivated (DeLong et al.
-1985).
+Hence, in order to remain in a physiologically relevant, fluid-like state at high pressures, more of such cis-unsaturated lipids are incorporated into cellular membranes of deep-sea organisms, another example of homeoviscous adaptation .
+For example, the ratio of unsaturated to saturated fatty acids of the piezophilic deep-sea bacterium CNPT3 is linearly dependent on the hydrostatic pressure at which they were cultivated .
 The unsaturated to saturated ratio increases from 1.9 at ambient pressure up to about 3 at 69 MPa at 2 oC.
 As seen in Figure 10, pressure generally increases the order of membranes, thus mimicking the effect of cooling.
-But we note that applying high pressure can lead to the formation of additional ordered phases, which are not observed under ambient pressure conditions, such as a partially interdigitated high pressure gel phase, Lβi, found for phospholipid bilayers with acyl-chain lengths ≥ C16 ( b; Hammouda et al.
-1997).
+But we note that applying high pressure can lead to the formation of additional ordered phases, which are not observed under ambient pressure conditions, such as a partially interdigitated high pressure gel phase, Lβi, found for phospholipid bilayers with acyl-chain lengths ≥ C16 ( b; ).
 To illustrate this phase variety, the results of a detailed small-angle X-ray and neutron scattering and FTIR spectroscopy study of the P-T phase diagram of DPPC in excess water are shown in  At much higher pressures as shown here, even further ordered gel phases appear, differing in the tilt angle of the acyl-chains and the level of hydration in the headgroup area.
-Even at pressures where the bulk water freezes, the lamellar structure of the membrane is preserved (Czeslik et al.
-1998).
+Even at pressures where the bulk water freezes, the lamellar structure of the membrane is preserved .
 Lipid mixtures, cholesterol, and peptides
-To increase the level of complexity, T-P phase diagrams of binary mixtures of saturated phospholipids have been determined as well ( b, c, 2000, 2004; Winter 2001).
+To increase the level of complexity, T-P phase diagrams of binary mixtures of saturated phospholipids have been determined as well ( b, c, 2000, 2004; ).
 They are typically characterized by lamellar gel phases at low temperatures, a lamellar fluid phase at high temperatures, and an intermediate fluid-gel coexistence region (Fig. 12).
 The narrow fluid-gel coexistence region in the DMPC(di-C14)-DPPC(di-C16) system indicates a nearly ideal mixing behavior of the two components (isomorphous system).
 In comparison, the coexistence region in the DMPC(di-C14)-DSPC(di-C18) system is broader and reveals pronounced deviations from ideality.
 As seen in Figure 12, with increasing pressure the gel-fluid coexistence region of the binary lipid systems is shifted toward higher temperatures.
-A shift of about 0.22 C MPa−1 is observed, similar to the slope of the gel-fluid transition line of the pure lipid components ( b; Winter et al.
-2000, 2004; Winter 2001).
+A shift of about 0.22 C MPa−1 is observed, similar to the slope of the gel-fluid transition line of the pure lipid components ( b;  2004; ).
 Membranes also contain other (macro)molecules, such as cholesterol and peptides.
-Cholesterol (Chol) thickens liquid-crystalline bilayers and increases the packing density of the lipid acyl-chains in a way that has been referred to as “condensing effect” (Jorgensen et al.
-1995; Seemann et al.
-2003; Krivanek et al.
-2008).
+Cholesterol (Chol) thickens liquid-crystalline bilayers and increases the packing density of the lipid acyl-chains in a way that has been referred to as “condensing effect” .
 An increase in pressure up to the 100 MPa range is much less effective in suppressing water permeability than cholesterol embedded in fluid DPPC bilayers at high concentration levels.
 It has been shown that sterols can efficiently regulate the structure, motional freedom, and hydrophobicity of lipid membranes, so that they can withstand even drastic changes in environmental conditions, such as in external pressure and temperature.
 Membrane proteins can constitute about 30% of the entire protein content of a cell and act as various anchors, enzymes, or transporters on, within, and traversing the lipid environment.
 Membrane lipids and proteins influence each other directly as a result of their biochemical nature and in reaction to environmental changes.
 Pressure studies on this interaction, however, are still scarce.
-One example is the channel peptide gramicidin D (GD) on the structure and phase behavior of phospholipid bilayers (Zein et al.
-2000; Eisenblatter et al.
-2005).
+One example is the channel peptide gramicidin D (GD) on the structure and phase behavior of phospholipid bilayers .
 Gramicidin is polymorphic, being able to adopt a range of structures with different topologies.
 Common forms are the dimeric single-stranded right-handed β6.3-helix with a length of 24 Å, and the antiparallel double-stranded β5.6-helix, being approximately 32 Å long.
 For comparison, the hydrophobic fluid bilayer thickness is about 30 Å for DPPC bilayers, and the hydrophobic thickness of the gel phases is larger by 4-5 Å.
@@ -525,42 +413,25 @@ Depending on the gramicidin concentration, significant changes of the lipid bila
 These changes include disappearance of certain gel phases formed by the pure DPPC system, and the formation of broad two-phase coexistence regions at higher gramicidin concentrations (Fig. 11b).
 Likewise, the lipid environment influences peptide conformation.
 Depending on the phase state and lipid acyl-chain length, gramicidin adopts at least two different types of quaternary structures in the bilayer environment, a double helical pore (DH) and a helical dimer channel (HD; inset Fig. 11b).
-When the bilayer thickness changes at the gel-to-fluid main phase transition of DPPC, the conformational equilibrium of the peptide also changes (Zein et al.
-2000).
+When the bilayer thickness changes at the gel-to-fluid main phase transition of DPPC, the conformational equilibrium of the peptide also changes .
 Hence, not only the lipid bilayer structure and T-P-dependent phase behavior drastically depends on the polypeptide concentration, but also the peptide conformation (and hence function) can be significantly influenced by the lipid environment.
 No pressure-induced unfolding of the polypeptide is observed up to 1.0 GPa.
 For large integral and peripheral proteins, however, pressure-induced changes in the physical state of the membrane may lead to a weakening of protein-lipid interactions as well as to protein dissociation.
 Studies were also carried out on the phase behavior of cholesterol containing ternary lipid mixtures, generally containing an unsaturated lipid like a phosphatidylcholine and a saturated lipid-like sphingomyelin (SM) or DPPC.
-Such lipid systems are supposed to mimic distinct liquid-ordered lipid regions, called “rafts,” which also seem to be present in cell membranes and are thought to be important for cellular functions such as signal transduction and the sorting and transport of lipids and proteins (Munro 2003; Janosch et al.
-2004; Nicolini et al.
-2005, 2006; Jeworrek et al.
-2008; Weise et al.
-2009;  b).
+Such lipid systems are supposed to mimic distinct liquid-ordered lipid regions, called “rafts,” which also seem to be present in cell membranes and are thought to be important for cellular functions such as signal transduction and the sorting and transport of lipids and proteins (   2006;    b).
 Lipid domain formation can be influenced by temperature, pH, calcium ions, protein adsorption, and may be expected to change upon pressurization as well.
 Recently, we determined the liquid-disordered/liquid-ordered (ld/lo) phase coexistence region of canonical model raft mixtures such as POPC/SM/Chol (1:1:1), which extends over a rather wide temperature range.
-An overall fluid phase without domains is only reached at temperatures above ~50 oC (Nicolini et al.
-2006).
+An overall fluid phase without domains is only reached at temperatures above ~50 oC .
 Upon pressurization at ambient temperatures (20-40 oC), an overall (liquid- and solid-) ordered state is reached at pressures of about 100-200 MPa.
 A similar behavior has been observed for the model raft mixture DOPC/DPPC/Chol (1:2:1; Fig. 13;  b).
-Interestingly, in this pressure range of ~200 MPa, cessation of membrane protein function in natural membrane environments has been observed for a variety of systems (De Smedt et al.
-1979; Chong et al.
-1985; Kato et al.
-2002; Ulmer et al.
-2002; Powalska et al.
-2007; Linke et al.
-2008; Periasamy et al.
-2009), which might be related to the membrane matrix reaching a physiologically unacceptable overall ordered state at these pressures.
+Interestingly, in this pressure range of ~200 MPa, cessation of membrane protein function in natural membrane environments has been observed for a variety of systems (De       ), which might be related to the membrane matrix reaching a physiologically unacceptable overall ordered state at these pressures.
 Moreover, many bacteria have been shown to completely lose their biologically relevant activity at these pressures.
 Nonlamellar lipid phases
-For a series of lipid molecules, nonlamellar lyotropic phases, such as inverse bicontinuous cubic (QII) or hexagonal (HII) phases, are observed as thermodynamically stable phases or as long-lived metastable phases (Seddon et al.
-1993; Winter et al.
-2000, 2004; Winter 2001; Fig. 8).
+For a series of lipid molecules, nonlamellar lyotropic phases, such as inverse bicontinuous cubic (QII) or hexagonal (HII) phases, are observed as thermodynamically stable phases or as long-lived metastable phases (  2004;  Fig. 8).
 Lipids, which can adopt a hexagonal phase, are present at substantial levels in biological membranes, usually with at least 30 mol% of the total lipid content.
 Fundamental metazoan cell processes, such as endo- and exocytosis, fat digestion, membrane budding, and fusion, involve a rearrangement of biological membranes, where such nonlamellar highly curved lipid structures are probably involved, but probably also static cubic structures (cubic membranes) occur in biological cells.
 The cubic lipid phases are mostly bicontinuous unilamellar lipid bilayer phases with periodic three-dimensional order.
-In recent years, the temperature- and pressure-dependent structure and phase behavior of series of phospholipid systems, including phospholipid/fatty acid mixtures (e.g., DLPC/LA, DMPC/MA, DPPC/PA) and monoaclyglycerides (MO, ME), exhibiting nonlamellar phases have been studied (Erbes et al.
-1996; Templer et al.
-1998;  b, c, 2000, 2004).
+In recent years, the temperature- and pressure-dependent structure and phase behavior of series of phospholipid systems, including phospholipid/fatty acid mixtures (e.g., DLPC/LA, DMPC/MA, DPPC/PA) and monoaclyglycerides (MO, ME), exhibiting nonlamellar phases have been studied (   b, c, 2000, 2004).
 Contrary to DOPC which shows a lamellar Lβ-to-Lα transition (Fig. 10), the corresponding lipid DOPE with ethanolamine as (smaller) headgroup exhibits an additional phase transition from the lamellar Lα to the nonlamellar, inverse hexagonal HII phase at high temperatures (Fig. 14).
 As pressure forces a closer packing of the lipid chains, which results in a decreased number of gauche bonds and kinks in the chains, both transition temperatures, of the Lβ-Lα and the Lα-HII transition, increase with increasing pressure.
 The Lα-HII transition observed in DOPE/water and also in egg-PE/water (egg-PE is a natural mixture of different phosphatidylethanolamines) is the most pressure-sensitive lyotropic lipid phase transition found to date (dT/dP ≈ 0.40 oCMPa−1).
@@ -574,100 +445,78 @@ In a detailed study, the influence of hydrostatic pressure on the activity of Na
 The data shown in Figure 15 reveal that the activity, k, of Na+, K+-ATPase is inhibited by pressures below 200 MPa.
 The plot of lnk vs. P revealed an apparent activation volume of the pressure-induced inhibition reaction which amounts to ΔV≠ = 47 mL mol
 1.
-At higher pressures, exceeding 200 MPa, the enzyme is inactivated irreversibly in agreement with literature data (De Smedt et al.
-1979; Chong et al.
-1985).
-Kato et al.
-(2002) suggested that the activity of the enzyme shows at least three step changes induced by pressure: at pressures below and around 100 MPa, a decrease in the fluidity of the lipid bilayer and a reversible conformational change in the transmembrane protein is induced, leading to functional disorder of the membrane associated ATPase activity.
+At higher pressures, exceeding 200 MPa, the enzyme is inactivated irreversibly in agreement with literature data (De  ).
+suggested that the activity of the enzyme shows at least three step changes induced by pressure: at pressures below and around 100 MPa, a decrease in the fluidity of the lipid bilayer and a reversible conformational change in the transmembrane protein is induced, leading to functional disorder of the membrane associated ATPase activity.
 Pressures of 100-200 MPa cause a reversible phase transition and the dissociation or conformational changes in the protein subunits, and pressures higher that 220 MPa irreversibly destroy the membrane structure due to protein unfolding and interface separation.
 To be able to explore the effect of the lipid matrix on the enzyme activity, the Na+, K+-ATPase was also reconstituted into various lipid bilayer systems of different chain length, configuration, phase state and heterogeneity including model raft mixtures.
 In the low-pressure region, around 10 MPa, a significant increase of the activity was observed for the enzyme reconstituted into DMPC and DOPC bilayers.
 It was found that the enzyme activity decreases upon further compression, reaching zero activity around 200 MPa for all reconstituted systems measured, similar to the natural system.
-A similar behavior has been found for the chloroplast ATP-synthase (Souza et al.
-2004).
-The effect of pressure was also determined for the HorA activity of the bacterium Lactobacillus plantarum (Ulmer et al.
-2002), an ATP-dependent multi-drug-resistance transporter of the ABC family.
+A similar behavior has been found for the chloroplast ATP-synthase .
+The effect of pressure was also determined for the HorA activity of the bacterium Lactobacillus plantarum , an ATP-dependent multi-drug-resistance transporter of the ABC family.
 Changes were determined in the membrane composition of L. plantarum induced by different growth temperatures and their effect on the pressure inactivation, and a temperature-pressure phase diagram was constructed for the L. plantarum membranes that could be correlated with the respective kinetics of high-pressure inactivation.
 Upon pressure-induced transitions to rigid (e.g., gel-like) membrane structures at pressures around 50-150 MPa for temperatures between 20 and 37oC, fast inactivation of HorA was observed.
-The effect of pressure and the influence of the lipid matrix on lipid-protein interactions was also studied for the multidrug resistance protein LmrA, which was expressed in the bacterium Lactococcus lactis and functionally reconstituted in different model membrane systems (Periasamy et al.
-2009).
+The effect of pressure and the influence of the lipid matrix on lipid-protein interactions was also studied for the multidrug resistance protein LmrA, which was expressed in the bacterium Lactococcus lactis and functionally reconstituted in different model membrane systems .
 The membrane systems were composed of DMPC, DOPC, DMPC+10 mol% Chol, and the model raft mixture DOPC:DPPC:Chol (1:2:1).
-Teichert (2008) showed that a sharp pressure-induced fluid-to-gel phase transition without the possibility for lipid sorting, such as in DMPC bilayers, has a drastic inhibitory effect on the LmrA activity.
+showed that a sharp pressure-induced fluid-to-gel phase transition without the possibility for lipid sorting, such as in DMPC bilayers, has a drastic inhibitory effect on the LmrA activity.
 As inferred from the experiments performed so far, inactivation of membrane protein function upon entering a rigid gel-like (solid-ordered) membranous state seems to be a rather common phenomenon.
 Otherwise, an overall fluid-like membrane phase over the whole pressure range covered, with suitable hydrophobic matching, such as for DOPC, prevents the membrane protein from total high-pressure inactivation even up to 200 MPa.
 Also the systems exhibiting thicker membranes with higher lipid order parameters, such as DMPC/10 mol% Chol and the model raft mixture, show remarkable pressure stabilities.
 The results also revealed that an efficient packing with optimal lipid adjustment to prevent (also pressure-induced) hydrophobic mismatch might be a particular prerequisite for the homodimer formation, and hence function of LmrA.
 Recently, high-pressure-induced dimer dissociation of membrane proteins in vivo was studied using the ToxR inner membrane-spanning transcription factor present in some piezosensitive and piezophilic bacteria.
 Analyses of ToxR derived from the mesophilic bacterium Vibrio cholerae were carried out by introducing protein variants in Escherichia coli reporter strains carrying a ToxR activatable reporter gene fusion.
-Dimerization ceased at 20 to 50 MPa, depending on the nature of the transmembrane segment rather than as a result of changes in the pressure-induced lipid bilayer environment (Linke et al.
-2008).
-Similar results were also obtained for ToxR derived from the piezophilic deep-sea bacterium Photobacterium profundum strain SS9 in both E. coli and SS9 backgrounds (Linke et al.
-2009).
+Dimerization ceased at 20 to 50 MPa, depending on the nature of the transmembrane segment rather than as a result of changes in the pressure-induced lipid bilayer environment .
+Similar results were also obtained for ToxR derived from the piezophilic deep-sea bacterium Photobacterium profundum strain SS9 in both E. coli and SS9 backgrounds .
 Relevance of lipid biophysics for deep carbon
 The biophysical results discussed above demonstrate that organisms are able to modulate the physical state of their membranes in response to pressure and temparature changes in the external environment by regulating the fractions of the various lipids in a cell membrane differing in chain length, chain unsaturation, or headgroup structure (“homeoviscous adaption”).
 Moreover, they have further means to regulate membrane fluidity, such as by changing the membrane concentration of their sterols and by a lateral redistribution of their various lipid components and domains.
 In fact, several studies have demonstrated that membranes are significantly more fluid in barophilic and/or psychrophilic species, which is principally a consequence of an increase in the unsaturated to saturated lipid ratio.
 It needs to be emphasized that, similar to the case for proteins, the effects of cold temperatures and pressure are the same, whereas adaptation to high temperature conditions induces a reduction of the degree of unsaturated lipids.
-Archaea also contain a significant fraction of tetraether lipids in their membranes (Hanford and Peeples 2002).
+Archaea also contain a significant fraction of tetraether lipids in their membranes .
 The pressure behavior of these lipids, in which the aliphatic chains are connected to the glycerol backbone via ether bonds instead of ester linkages, remains to be elucidated.
 Further research into the effects of pressure on protein-lipid interactions and their consequences for membrane protein activity is required.
 HIGH-PRESSURE MICROBIOLOGY AND BIOCHEMICAL CYCLES
 The oceans have an average depth of 3,800 m at a pressure of 38 MPa.
 Pressure increases with depth at a rate of ~10 MPa km−1 in the oceanic water column and in general about 20-30 MPa km−1 below sediments and hard-rocks.
-Deep-sea microbiology has its origins in the pioneering expeditions in the 19th century by the French scientists Certes and Regnard, who collected microbes from depths as great as 8,200 m. Certes actually performed some high-pressure experiments on bacteria and both scientists concluded that the deep-sea microbes were present in-situ in a state of suspended animation (reviewed by Deming and Baross 2000).
-The inspiring discovery of microbial populations preferentially active under deep-sea high-pressure conditions was reported much later by ZoBell, his student Morita and others during the Danish Galathea “Round the World” expedition of 1950-1952 (ZoBell and Morita 1959; Bartlett et al.
-2008 and refs therein).
+Deep-sea microbiology has its origins in the pioneering expeditions in the 19th century by the French scientists Certes and Regnard, who collected microbes from depths as great as 8,200 m. Certes actually performed some high-pressure experiments on bacteria and both scientists concluded that the deep-sea microbes were present in-situ in a state of suspended animation (reviewed by ).
+The inspiring discovery of microbial populations preferentially active under deep-sea high-pressure conditions was reported much later by ZoBell, his student Morita and others during the Danish Galathea “Round the World” expedition of 1950-1952 (  and refs therein).
 ZoBell first introduced the concept of "piezophily" (termed “barophily” in those early days) by comparing cell-density estimates of various physiological groups of microbes incubated at atmospheric pressure and elevated pressure on mud samples from 5.8 km off the coast of Bermuda.
 Even after the observational reports of ZoBell, the issue of whether piezophiles actually existed was still debated until 1979 when Yayanos and his team succeeded in obtaining and maintaining a pure culture of the piezophile that later came to be identified as Psychromonas sp.
 CNPT-3 and then a few years later the obligate piezophile Colwellia sp.
-MT-41 (Yayanos et al.
-1979, 1981).
-Yayanos and colleagues then correlated the rates of piezophilic growth with capture depth and explored several facets of piezophile lipid and protein adaptation to high pressure (Delong and Yayanos 1985, 1986, 1987).
-Along the way Yayanos suggested the formal name change for these organisms and their behavior from “barophile” to “piezophile,” since the Greek term piezo is that associated for pressure (Yayanos 1995).
-For life forms existing under high hydrostatic pressure conditions Jannash and Taylor (1984) defined the deep ocean as those organisms living in oceanic water below 1000 m, i.e., under pressures higher than 10 MPa.
+MT-41 ( 1981).
+Yayanos and colleagues then correlated the rates of piezophilic growth with capture depth and explored several facets of piezophile lipid and protein adaptation to high pressure ( 1986, 1987).
+Along the way Yayanos suggested the formal name change for these organisms and their behavior from “barophile” to “piezophile,” since the Greek term piezo is that associated for pressure .
+For life forms existing under high hydrostatic pressure conditions  defined the deep ocean as those organisms living in oceanic water below 1000 m, i.e., under pressures higher than 10 MPa.
 That concept was later extended to all high-pressure environments (Fig. 16), and now extends to environments ranging from the cold and oligotroph deep ocean, to hydrothermal vents rich in nutrients along spreading oceanic ridges, and subseafloor and subcontinental environments with highly variable sources of energy and thermal gradients.
-Considering the very large extent of the high-pressure biotopes identified to date, the deep biosphere could therefore represent a largely “unseen majority” of life on Earth, perhaps constituting up to 30% of the total living biomass, or even more (Whitman et al.
-1998; Parkes et al.
-2000).
-Although the upper limit of such projections have been questioned recently (Kallmeyer et al.
-2012; Colwell and D’Hondt 2013), the subseafloor remains potentially the largest ecosystem on Earth.
-These organisms constitute an important and active cycling reservoir of carbon resources on Earth (D’Hondt et al.
-2002; Jørgensen and D’Hondt 2006; Jørgensen and Boetius, 2007).
-They are also the most difficult to access due to the technological challenges of drilling and working beneath hundreds to thousand of meters of seawater (see Schrenk et al.
-2010 for a detailed review).
+Considering the very large extent of the high-pressure biotopes identified to date, the deep biosphere could therefore represent a largely “unseen majority” of life on Earth, perhaps constituting up to 30% of the total living biomass, or even more .
+Although the upper limit of such projections have been questioned recently , the subseafloor remains potentially the largest ecosystem on Earth.
+These organisms constitute an important and active cycling reservoir of carbon resources on Earth .
+They are also the most difficult to access due to the technological challenges of drilling and working beneath hundreds to thousand of meters of seawater (see  for a detailed review).
 Who’s down there?
 Within the water column of ocean basins the groups of microbial species (more specifically operational taxonomic units, OTUs) present at depth are distinct from those above them, and conversely are more related to those OTUs from other deep-sea water masses, including across ocean basins .
 Examples of highly abundant deep-living clades of marine microbes include the order Rhizobiales within the Alphaproteobacteria, SAR324 within the Deltaproteobacteria, SAR406 within the Marine Group A, the phylum Thaumarchaea, the Group II Euryarchaeota and basidiomycete fungi.
-Extending from the deep-sea pelagic environment into the benthos microbial communities are highly stratified along narrow bands of redox gradients (Nealson 1997).
+Extending from the deep-sea pelagic environment into the benthos microbial communities are highly stratified along narrow bands of redox gradients .
 Relatively few microbiological studies have yet been performed on sediments present at great depth, regardless of the combination of water depth or sediment depth.
-Consortia of methane-oxidizing archaea and sulfate-reducing bacteria related to those first reported in shallower cold-seep environments by others (Boetius 2000) have been recorded at depths up to 7.4 km in the Japan Trench (Kato et al.
-2008).
-Deep-sea hydrothermal vent environments have long been proposed to provide a view into the deep subsurface biosphere (Deming and Baross 1993; Colwell and D’Hondt 2013; Schrenk et al.
-2013).
+Consortia of methane-oxidizing archaea and sulfate-reducing bacteria related to those first reported in shallower cold-seep environments by others  have been recorded at depths up to 7.4 km in the Japan Trench .
+Deep-sea hydrothermal vent environments have long been proposed to provide a view into the deep subsurface biosphere .
 These systems harbor diverse microbial communities, existing over broad ranges of temperature and pH, and responsible for extensive cycling of sulfur, hydrogen, and methane.
-The microbes range from aerobic mesophiles to anaerobic hyperthermophiles (Jaeschke et al.
-2012).
+The microbes range from aerobic mesophiles to anaerobic hyperthermophiles .
 The archaeal domain dominates at the highest temperatures and lowest pHs still supporting life and include both Euryarchaeota and Crenarchaeota.
 Within the bacteria Aquificales and members of the Epsilonproteobacteria are often dominant.
-A useful examination of the genes and processes present within these communities has been reported by Xie et al.
-(2011).
+A useful examination of the genes and processes present within these communities has been reported by .
 Cultured piezophilic isolates from deep biosphere locations provide useful resources for investigations into the adaptations responsible for life at high pressure.
 Some of these studies are described below, but much awaits the more detailed biophysical studies described in the preceding sections of this chapter.
 To date all such isolates come from the deep sea.
 The psychrophilic and psychrotolerant piezophilic isolates obtained to date come from deep-sea seawater, animal, and surficial sediment samples.
-Most of these microbes belong to the five bacterial genera Colwellia, Moritella, Photobacterium, Psychromonas, and Shewanella within the Gammaproteobacteria (Kato et al.
-2008; Lauro and Bartlett, 2008).
-Additional microbes displaying modest degrees of high-pressure adaptation are represented by an anaerobic sulfate-reducing member of the genus Desulfovibrio and one Gram-positive member of genus Carnobacterium (e.g., see Table 7 in Orcutt et al.
-2011 and Table 2 in Oger and Jebbar 2010).
+Most of these microbes belong to the five bacterial genera Colwellia, Moritella, Photobacterium, Psychromonas, and Shewanella within the Gammaproteobacteria .
+Additional microbes displaying modest degrees of high-pressure adaptation are represented by an anaerobic sulfate-reducing member of the genus Desulfovibrio and one Gram-positive member of genus Carnobacterium (e.g., see Table 7 in  and Table 2 in ).
 More recently low-nutrient cultivation strategies have been used to isolate a slow-growing, low-biomass producing obligate piezophile within the subphylum Alphaproteobacteria and the genus Roseobacter .
 This latter isolate is likely to be much more representative than others obtained to date of the bulk of deep-ocean heterotrophic life forms existing under exceedingly low concentrations of organic carbon.
 At the other end of the temperature scale adaptation to elevated pressure is also evident.
-One dramatic example is strain CH1 isolated from hydrothermal vent smoker material collected at a depth of 4,100 m on the Mid-Atlantic ridge (Zeng et al.
-2009).
+One dramatic example is strain CH1 isolated from hydrothermal vent smoker material collected at a depth of 4,100 m on the Mid-Atlantic ridge .
 Strain CH1 grows optimally at 98 °C and 52 MPa and belongs to the genus Pyrococcus, within the Euryarchaeota lineage of the archaea domain.
 It is the first obligately piezophilic and hyperthermophilic microorganism known so far.
 Genomic attributes at depth
-Just as the communities of microbes present at depth are distinct from the microbial consortia above them, so are their genes (Colwell and D’Hondt 2013).
+Just as the communities of microbes present at depth are distinct from the microbial consortia above them, so are their genes .
 The relatively few metagenomics studies of deep-sea microbial populations completed thus far have indicated much about the selective pressures and metabolic pathways present in the pelagic portion of the deep, dark biosphere .
 They have come from the North Pacific Gyre (4000 m depth), the Mediterranean (3000 m depth), and the Puerto Rico Trench (6000 m depth).
 The results indicate that the genome sizes of deep-sea microbes are substantially larger than those of their surface-water counterparts.
@@ -687,10 +536,8 @@ The high number of rRNA operons is thought to enable P. profundum SS9 to rapidly
 One of the best studied adaptations of deep-sea piezophiles such as strain SS9 is their need to counteract the compression effect of high pressure on membrane physical structure by producing high levels of unsaturated fatty acids.
 Many piezophiles produce not just high levels of monounsaturated fatty acids but also omega-3 polyunsaturated fatty acids (PUFAs) using a biosynthetic process related to that of polyketide antibiotics.
 The importance of unsaturated fatty acids to growth at high pressure has been demonstrated, although the relative importance of mono- and poly-unsaturated fatty acid varies among species.
-Genetic and fatty acid supplementation experiments have demonstrated the critical role of the monounsaturated fatty acids, and the dispensable role of the PUFA eicosapentaenoic acid (EPA), in high-pressure growth of P. profundum SS9 (Allen et al.
-1999; Allen and Bartlett 2000).
-However, in the case of the piezophile Shewanella violacea DSS12, genetic and phospholipid feeding experiments have clearly demonstrated the requirement for EPA in the high-pressure growth and cell division of this species (Kawamoto et al.
-2011).
+Genetic and fatty acid supplementation experiments have demonstrated the critical role of the monounsaturated fatty acids, and the dispensable role of the PUFA eicosapentaenoic acid (EPA), in high-pressure growth of P. profundum SS9 .
+However, in the case of the piezophile Shewanella violacea DSS12, genetic and phospholipid feeding experiments have clearly demonstrated the requirement for EPA in the high-pressure growth and cell division of this species .
 The basis for the difference in fatty acid needs at high pressure between the two species is unknown but could relate to differences in physiology, fermentation versus respiration, and resulting lipid-protein interactions.
 Insight into additional nonessential genes important for the growth of SS9 at depth was obtained following transposon mutagenesis and screening for cells with growth defects at either low temperature or elevated pressure.
 Many of the genes influencing low-temperature and high-pressure growth were involved in signal transduction and adaptation.
@@ -714,51 +561,38 @@ The mechanisms responsible for this piezo-adaptation are unknown.
 Metabolism: organic matter, energy and nutrients
 Microbial populations and their metabolic activities rely on substrate diversity and availability.
 Understanding such metabolic cycles is central to understanding carbon cycling by the deep biosphere.
-Although it has been sometimes asserted that the deep deep subseafloor microbial cells could be mostly dormant or even dead, both field and experimental studies (Price and Sowers 2004; Morono et al.
-2011) have now shown that deep life is able to proceed, although in extreme slow motion, with a mean metabolic rate four orders of magnitude slower than at the surface (D’Hondt et al.
-2002; Jørgensen and D’Hondt 2006), leading to generation times of subseafloor communities that range between only a few hours to thousands of years under nutrient- and/or energy limited conditions (Fig. 17).
-The proliferation of subsurface life requires the availability of organic matter that derives in such dark environments from the deposition of terrigeneous sediments along the margins, in some cases from primary productivity in overlying surface waters or at hydrothermal vents, and importantly from recycling the microbial necromass over timescales of hundreds to thousands of years (Lomstein et al.
-2012).
+Although it has been sometimes asserted that the deep deep subseafloor microbial cells could be mostly dormant or even dead, both field and experimental studies  have now shown that deep life is able to proceed, although in extreme slow motion, with a mean metabolic rate four orders of magnitude slower than at the surface , leading to generation times of subseafloor communities that range between only a few hours to thousands of years under nutrient- and/or energy limited conditions (Fig. 17).
+The proliferation of subsurface life requires the availability of organic matter that derives in such dark environments from the deposition of terrigeneous sediments along the margins, in some cases from primary productivity in overlying surface waters or at hydrothermal vents, and importantly from recycling the microbial necromass over timescales of hundreds to thousands of years .
 Other studies show that microorganisms operate extremely efficient catabolic systems and they may not necessarily inhabit only the most apparently favorable environments.
-It has been suggested that as little as −4.5 kJ mol−1 of free energy supply could support bacterial growth, and that bacterial metabolism can proceed near equilibrium in syntrophic associations (Jackson and McInerney 2002).
+It has been suggested that as little as −4.5 kJ mol−1 of free energy supply could support bacterial growth, and that bacterial metabolism can proceed near equilibrium in syntrophic associations .
 In the deep-sea water column that is mostly oxic, aerobic respiration will dominate.
 Below the seafloor, oxygen becomes rapidly depleted within the sediments and other electron terminal acceptors, including nitrate and sulfate are utilized by facultative and obligate microorganisms for metabolism.
-Within the oxic oligotrophic sediments, the activity is generally low but it may increase by several orders of magnitude depending on the lithology (Picard and Ferdelman 2011).
-Under the deeper anoxic conditions, the terminal electron acceptors are used in sequential series, according to the free energy yield of the redox reactions, starting from nitrate reduction and denitrification, to dissimilatory Mn(IV) and Fe(III) reduction, to sulfate reduction and finally to methanogenesis, which is of primary importance to the DCO Deep Life mission (Fang and Bazylinski 2008).
-This activity is even lower but is stimulated at solid-fluid interfaces (D’Hondt et al.
-2002; Parkes et al.
-2005).
-Metabolic activity of model piezosensitive microorganisms has been investigated under high-pressure conditions, including the yeast Saccharomyces cerevisiae for which the physiological response to high pressure is known as the best characterized eukaryotic cell (Fernandes 2005; Abe 2007).
+Within the oxic oligotrophic sediments, the activity is generally low but it may increase by several orders of magnitude depending on the lithology .
+Under the deeper anoxic conditions, the terminal electron acceptors are used in sequential series, according to the free energy yield of the redox reactions, starting from nitrate reduction and denitrification, to dissimilatory Mn(IV) and Fe(III) reduction, to sulfate reduction and finally to methanogenesis, which is of primary importance to the DCO Deep Life mission .
+This activity is even lower but is stimulated at solid-fluid interfaces .
+Metabolic activity of model piezosensitive microorganisms has been investigated under high-pressure conditions, including the yeast Saccharomyces cerevisiae for which the physiological response to high pressure is known as the best characterized eukaryotic cell .
 Although alcoholic fermentation was predicted to stop at 50 MPa due to inactivation of the enzyme phosphofructokinase as the cytoplasm becomes too acid, experiments showed that the fermentation continues to 87 ± 7 MPa.
-At 10 MPa, both the rate and the yield of ethanol production are enhanced, showing that pressure-enhanced catabolism might not be specific to piezophiles (Picard et al.
-2007).
+At 10 MPa, both the rate and the yield of ethanol production are enhanced, showing that pressure-enhanced catabolism might not be specific to piezophiles .
 Dissimilatory Se(IV) and Fe(III) reduction by the model bacterium Shewanella oneidensis MR-1 has also been investigated as a function of hydrostatic pressure.
-The catabolic activity of the piezosensitive S. oneidensis extends well beyond its anabolic limits (Picard et al.
-2011, 2012), suggesting that piezosensitive strains could potentially ensure their maintenance in most of the deep subsurface environments at moderate pressures of 40-50 MPa.
+The catabolic activity of the piezosensitive S. oneidensis extends well beyond its anabolic limits ( 2012), suggesting that piezosensitive strains could potentially ensure their maintenance in most of the deep subsurface environments at moderate pressures of 40-50 MPa.
 ACQUISITION OF RESISTANCE TO GIGAPASCAL PRESSURES
 Exploring extreme pressure limits for life
 Although this topic falls out with any census of life relevant to the carbon cycle on Earth, it is important to examine and understand the ultimate limits for survival and adaptation of organisms to the most extreme conditions of high P, T, and chemical environments.
 Those studies are then relevant to the existence and origin of life on Earth as well as elsewhere in the universe, as well as for practical applications including food technology and bio-nanomaterials fabrication.
-Based on the results of biochemical/biophysical research combined with the growing body of information on the pressure limits of the integrity of cell membranes, proteins, and intracellular apparatus, it was thought until relatively recently that most organisms could not survive beyond approximately ~120 MPa (Zeng et al.
-2009).
+Based on the results of biochemical/biophysical research combined with the growing body of information on the pressure limits of the integrity of cell membranes, proteins, and intracellular apparatus, it was thought until relatively recently that most organisms could not survive beyond approximately ~120 MPa .
 Industrial processing units for Pascalization treatments typically operate at between 200-300 MPa for flow systems, or up to an upper limit around 500-700 MPa for batch conditions, depending on the organisms and biochemical conditions targeted.
 In this section we will discuss recent work on the evolution of organisms resistant to pressures that are far beyond the pressure limits currently experienced by organisms on Earth.
-In 2002, researchers from the Geophysical Laboratory in Washington DC reported a remarkable result that samples of E. coli and S. oneidensis showed signs of metabolic activity at pressures extending into the GPa range (1.4-1.7 GPa), mainly based on in-situ Raman spectroscopic investigations of product/reactant ratios (Sharma et al.
-2002).
-However, that result received immediate criticism, questioning both the results and their interpretations (Yayanos 2002).
-One of the criteria that Sharma et al.
-(2002) used for survivability was formate oxidation.
+ researchers from the Geophysical Laboratory in Washington DC reported a remarkable result that samples of E. coli and S. oneidensis showed signs of metabolic activity at pressures extending into the GPa range (1.4-1.7 GPa), mainly based on in-situ Raman spectroscopic investigations of product/reactant ratios .
+However, that result received immediate criticism, questioning both the results and their interpretations .
+One of the criteria that  used for survivability was formate oxidation.
 Formate oxidation is a metabolic reaction that is vital for bacteria and it is also quite easy to detect using spectroscopy.
 The main problem, however, is that this reaction can also occur even if the cells are not viable; i.e., if they are inactivated by death or dormancy.
 Studies have shown that this reaction can occur in purified enzyme solutions; therefore, it is not considered by the microbiological community as a satisfactory indicator of the presence of a living cell.
-More recently a directed evolution study of E. coli confirmed that microbes can in fact adapt and survive to at least 2 GPa (Vanlint et al.
-2011; Fig. 18).
+More recently a directed evolution study of E. coli confirmed that microbes can in fact adapt and survive to at least 2 GPa ( Fig. 18).
 That work subjected a strain of E. coli to progressively higher pressures extending into the GPa range.
 Following decompression, the survivors were recovered and allowed to form colonies and their pressure resistance was examined.
-Using this technique, Vanlint et al.
-(2011) could identify clones that had a pressure resistance extending up to at least 2 GPa, greatly exceeding that of the parent strain that became extinct above 700 MPa.
-Kish et al.
-(2012) recently published results suggesting that high-pressure tolerance is due to mechanical properties of the cell, including cell envelope structure and intracellular salts.
+Using this technique,  could identify clones that had a pressure resistance extending up to at least 2 GPa, greatly exceeding that of the parent strain that became extinct above 700 MPa.
+ recently published results suggesting that high-pressure tolerance is due to mechanical properties of the cell, including cell envelope structure and intracellular salts.
 This study is the first to investigate the role of these intracellular salts in both Gram-negative E. coli MG1655, Chromohalobacter salexigens and Gram-positive (Deinococcus radiodurans R1) and archaea (Halobacterium salinarum NRC-1) bacterial strains.
 The strains were subjected to pressures up to 400 MPa and the authors concluded that even without directed evolution bacterial strains can acquire piezo-resistance from adaptations to other environmental factors.
 Acquisition of Gigapascal pressure resistance by higher organisms
@@ -772,19 +606,14 @@ Although these studies have been interpreted in terms of pressure-induced select
 Overall, this work emphasizes the role of water in the disruption of hydrated biological structures at high pressure as outlined in the first part of this chapter.
 Resistance to extreme shock pressures
 Other remarkable survival stories concern the exposure of bacterial organisms to shock conditions.
-It is well known that impacts from comets and meteorites, including ejecta from other planets as well as non-planetary bodies, have influenced the chemical evolution of Earth, and investigations or speculations about these extra-solar bodies or remnants of early solar system components have instigated theories of “panspermia” and possible origins of life elsewhere in the universe with subsequent transportation to early Earth (Melosh 1988).
-Such theories propose that primitive life forms extending to bacteria can survive in extreme environments, such as those of interplanetary space, for a sufficient time for these life forms to become trapped in debris (Fajardo-Cavazos et al.
-2009), and then to be transported intact to Earth via a planetary impact, meteor bombardment, or cometary interaction (Willis et al.
-2006).
+It is well known that impacts from comets and meteorites, including ejecta from other planets as well as non-planetary bodies, have influenced the chemical evolution of Earth, and investigations or speculations about these extra-solar bodies or remnants of early solar system components have instigated theories of “panspermia” and possible origins of life elsewhere in the universe with subsequent transportation to early Earth .
+Such theories propose that primitive life forms extending to bacteria can survive in extreme environments, such as those of interplanetary space, for a sufficient time for these life forms to become trapped in debris , and then to be transported intact to Earth via a planetary impact, meteor bombardment, or cometary interaction .
 Earth then provides a hospitable habitat for those life forms to evolve and develop.
 Such organism survival studies following shock impact have been examined experimentally.
 Experiments on organic matter at hypervelocities have been conducted using light gas guns on various broths, spores, and bacterial organisms from 1-8 GPa.
 These hypervelocity impacts are integral to several hypotheses arising from origin-of-life questions.
-Experiments have now tested several strains of bacteria, including Rhodococcus erythropolis, Bacillis subtilis, E. coli, Enterococcus faecalis, and the eukaryote Zygosaccharomyces bailii at shock pressures (Burchell et al.
-2001, 2004; Hazell et al.
-2010, 2009).
-In some experiments the bacteria are subjected to shock pressures of up to 78 GPa and survive (Burchell et al.
-2004).
+Experiments have now tested several strains of bacteria, including Rhodococcus erythropolis, Bacillis subtilis, E. coli, Enterococcus faecalis, and the eukaryote Zygosaccharomyces bailii at shock pressures ( 2004;  2009).
+In some experiments the bacteria are subjected to shock pressures of up to 78 GPa and survive .
 While the survival rates vary between runs, these cells, whether in a broth or as a spore, show a resistance to the pressures they have experienced.
 In addition to surviving these extreme shock pressures, the organisms appear to exhibit subsequent growth and continued existence post pressure shock.
 However, to date no truly systematic studies have been carried out, especially controlling the temperatures achieved during the shock experiments.
@@ -792,24 +621,20 @@ CONCLUSIONS
 The early expeditions of the late 19th century revolutionized our awareness of life in the deep sea, and Bridgman’s developments in high-pressure experimentation opened up the possibility of exploring molecules and life at high pressure.
 As we come close to the centenary of Bridgman’s pioneering observations on the pressure-induced unfolding of proteins, obligate piezophiles have been isolated and the physical chemistry underlying pressure effects on biomacromolecules have been largely elucidated, although intermolecular (e.g., protein-lipid) interactions remain to be investigated in greater detail.
 Yet, the existence of diverse organisms in extreme environments, some of which may display generation times of years to decades, highlights the many challenges that remain in understanding life in high-pressure environments.
-Physiological adaptation of microorganisms to high-pressure environments may also broaden our understanding of the adaptation of organisms to other extreme conditions of pH, salinity, and low temperatures (Kish et al.
-2012), because organisms from extreme environments are often exposed to multiple stressors: high pressure, low or high temperatures, low nutrient concentrations, and more.
-Thus extremophiles may reveal elements of cellular evolution and ultimately provide greater insight on the origins of life (Daniel et al.
-2006).
-Studies of life at extreme conditions also hold the potential for technological advances; for example, by the discovery of new molecules that hold the potential to cure human diseases (Wilson and Brimble, 2009; Lutz and Falkowsi 2012).
+Physiological adaptation of microorganisms to high-pressure environments may also broaden our understanding of the adaptation of organisms to other extreme conditions of pH, salinity, and low temperatures , because organisms from extreme environments are often exposed to multiple stressors: high pressure, low or high temperatures, low nutrient concentrations, and more.
+Thus extremophiles may reveal elements of cellular evolution and ultimately provide greater insight on the origins of life .
+Studies of life at extreme conditions also hold the potential for technological advances; for example, by the discovery of new molecules that hold the potential to cure human diseases .
 The use of advanced technologies, such as neutron scattering, proteomics, and genomics, will enable us to probe even more complex systems, and directed evolution in the lab will allow us to interrogate the cellular response to high pressure.
 There is a bright future for high-pressure biophysics and microbiology that will lead to an understanding of the evolution and adaptation of cells and their macromolecules to high pressure.
 Moreover, given the spatial magnitude of pressure-affected environments, it is possible that a significant portion of the global organic carbon produced on Earth is mediated by pressure-affected microbial communities.
  Structure of native and unfolded staphylococcal nuclease at 0.1 (left) and 800 MPa (right), respectively.
 These drawings have been obtained from molecular dynamics simulations.
-(Redrawn after Fig. 10 from Paliwal et al.
-2004)
+(Redrawn after Fig. 10 from )
  Potential of mean force  for methane association at various pressures.
 The arrows indicate the changes with increasing pressure.
 Note that the minimum of methane pair separated by a water molecule “W” remains largely unaffected by a pressure increase.
 The inset shows the difference in free energy between the contact pair and the solvent separated pair.
-[Used by permission of the US National Academy of Sciences, from Hummer et al.
-(1998), 95, Fig. 2, p.
+[Used by permission of the US National Academy of Sciences, from  95, Fig. 2, p.
 1553.)
  Schematic energy landscape for protein folding.
 At the top of the funnel, at high free energy, one can find the various conformations that make up the unfolded ensemble.
@@ -817,14 +642,12 @@ At the bottom of the funnel the global energy minimum represents the native stat
 Even in the global minimum one can discern various quasi-energetic substates represented by different wells (enlarged on the right-hand side of the funnel).
  Schematic representation of the folding-unfolding reaction of wild-type (WT) staphylococcal nuclease (Snase) and two of its mutants (Δ+PHS V66K and Δ+PHS V66N).
 The folded state is abbreviated by F, U is the unfolded state, T represents the transition state ensemble, and ΔVof is the overall volume change upon folding.
-Redrawn after figure 5 of Brun et al.
-(2006).
+Redrawn after figure 5 of .
  Schematic representation of a pressure-temperature stability diagram for proteins.
 Inside the ellipse the protein adopts its native conformation, outside the ellipse it is unfolded.
 See main text for full description of regions I to III.
  Effect of co-solutes and their concentration  dependence on the unfolding pressure (Pm) of staphylococcal nuclease (Snase).
-[Used by permission of the American Chemical Society, from Herberhold et al.
-(2004), Biochemistry, 43, Fig. 3, p.
+[Used by permission of the American Chemical Society, from  Biochemistry, 43, Fig. 3, p.
 3338.]
  Structure of B-DNA at ambient pressure (green) and 200 MPa (red) as determined by NMR spectroscopy.
 This figure was made with PyMol using PDB codes 2VAH (low-pressure structure) and 2VAI (high-pressure structure).
@@ -863,16 +686,15 @@ The free energy of hydrolysis of one ATP molecule is converted to uphill transpo
 The red and blue lines represent the current temperature and pressure limits for life, respectively.
 Solid lines highlight the parameter, which currently limits the depth of the deep biosphere.
 The upper dashed red line symbolizes the 10 MPa arbitrarily defined upper limit of the deep biosphere.
-[Used with permission of Elsevier, from Oger and Jebbar (2010), Research in Microbiology, 161, Fig. 1, p.
+[Used with permission of Elsevier, from  Research in Microbiology, 161, Fig. 1, p.
 800.]
  Metabolic rates and turnover times of natural communities of microorganisms.
 Blue indicates nutrient-rich environments.
 Red indicates nutrient starved environments such as subsurface sediments.
 Left axis shows metabolized organic carbon per cell carbon per unit time.
 Right axis shows the corresponding turnover time of cell carbon, approximately corresponding to minimum potential generation times.
-[Used with permission of the US National Academy of Sciences, from Jørgensen (2011), Proceedings of the National Academy of Sciences USA, 108, Fig. 1, p.
+[Used with permission of the US National Academy of Sciences, from  Proceedings of the National Academy of Sciences USA, 108, Fig. 1, p.
 18193.]
- Directed evolution of E. coli K-12 MG1655 toward high pressure (ambient temperature) [Used with permission of American Society for Microbiology from Vanlint et al.
-(2011), mBio, 2, Fig. 1, p.
+ Directed evolution of E. coli K-12 MG1655 toward high pressure (ambient temperature) [Used with permission of American Society for Microbiology from  mBio, 2, Fig. 1, p.
 2.]
 1 Abbreviations: DMPC 1,2-dimyristoyl-sn-glycero-3-phosphatidylcholine (di-C14:0); DMPS 1,2-dimyristoyl-sn-glycero-3-phosphatidylserin (di-C14:0); DPPC 1,2-dipalmitoyl-sn-glycero-3-phosphatidylcholine (di-C16:0); DPPE 1,2-dipalmitoyl-sn-glycero-3-phosphatidylethanolamine (di-C16:0); DOPC 1,2-dioleoyl-sn-glycero-3-phosphatidylcholine (di-C18:1,cis); DOPE 1,2-dioleoyl-sn-glycero-3-phosphatidylethanolamine (di-C18:1,cis); POPC 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphatidylcholine (C16:0,C18:1,cis); DLPC 1,2-dilauroyl-sn-glycero-3-phosphocholine.

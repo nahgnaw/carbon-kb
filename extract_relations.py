@@ -1,5 +1,6 @@
 # -*- coding: utf8 -*-
 
+import codecs
 from nltk.tokenize import sent_tokenize
 from dependency_graph import DependencyGraph
 
@@ -216,14 +217,32 @@ class RelationExtractor(object):
 
 
 if __name__ == '__main__':
-    sentences = u"""
-       Predicted structures of stable high-pressure phases of MgCO3: a) post-magnesite phase II; b) phase III; c) Pna21-20 structure.
-    """
 
-    for sent in sent_tokenize(sentences):
-        sent = sent.strip()
+    file_path = 'data/RiMG75/processed/RiMG75-02.txt'
+    f = codecs.open(file_path, encoding='utf-8')
+    for line in f:
+        sent = line.strip()
         print sent
-        extractor = RelationExtractor(sent, debug=True)
-        extractor.extract_nsubj()
-        extractor.extract_nsubjpass()
-        print extractor.relations
+        try:
+            extractor = RelationExtractor(sent, debug=False)
+        except:
+            print 'Failed to parse the sentence.'
+        else:
+            extractor.extract_nsubj()
+            extractor.extract_nsubjpass()
+            print extractor.relations
+
+    # sentences = u"""
+    #    But carbon commonly forms double bonds with itself, for example in ethene (H2C=CH2), oxygen in carbon dioxide (O=C=O), or sulfur in carbon disulfide (S=C=S), and it can form triple bonds with itself, as in ethylene (commonly known as acetylene; HC≡CH), or with nitrogen, as in hydrogen cyanide (HC≡N).
+    # """
+    # for sent in sent_tokenize(sentences):
+    #     sent = sent.strip()
+    #     print sent
+    #     try:
+    #         extractor = RelationExtractor(sent, debug=True)
+    #     except:
+    #         print 'Failed to parse the sentence.'
+    #     else:
+    #         extractor.extract_nsubj()
+    #         extractor.extract_nsubjpass()
+    #         print extractor.relations

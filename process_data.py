@@ -11,8 +11,8 @@ class Sentences(object):
     def __init__(self, raw_data_dir):
         self.raw_data_dir = raw_data_dir
         self.sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
-        extra_abbreviations = ['dr', 'vs', 'mr', 'mrs', 'prof', 'inc', 'i.e', 'fig', 'p', 'et al', 'e.g', 'etc', 'eq']
-        self.sent_detector._params.abbrev_types.update(extra_abbreviations)
+        extra_abbr = ['dr', 'vs', 'mr', 'mrs', 'prof', 'inc', 'i.e', 'fig', 'p', 'et al', 'e.g', 'etc', 'eq']
+        self.sent_detector._params.abbrev_types.update(extra_abbr)
 
     def __iter__(self):
         for root, _, files in os.walk(self.raw_data_dir):
@@ -43,8 +43,8 @@ class Sentences(object):
     @staticmethod
     def text_process(line):
         replacement = [
-            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\d{4}[a-z][;|,]*)',   # Citations
-            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\(\d{4}[a-z]\)[;|,]*)',   # Citations
+            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\d{4}[a-z]?[;|,]*)',   # Citations
+            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\(\d{4}[a-z]?\)[;|,]*)',   # Citations
             r'([\(|\[]http://.*[\)|\]])',   # http
             r'(Figure \d{1,3}\.)',  # Figure caption
             r'(Table \d{1,3}\.)',    # Table caption
