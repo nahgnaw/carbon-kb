@@ -3,17 +3,41 @@ INTRODUCTION
 Carbon, element 6, displays remarkable chemical flexibility and thus is unique in the diversity of its mineralogical roles.
 Carbon has the ability to bond to itself and to more than 80 other elements in a variety of bonding topologies, most commonly in 2-, 3-, and 4-coordination.
 With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
-This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element .
+This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element (Holland 1984; Berner 2004; Hazen et al.
+2012).
 Therefore, any comprehensive survey of carbon in Earth must consider the broad range of carbon-bearing phases.
 The objective of this chapter is to review the mineralogy and crystal chemistry of carbon, with a focus primarily on phases in which carbon is an essential element: most notably the polymorphs of carbon, the carbides, and the carbonates.
-The possible role of trace carbon in nominally acarbonaceous silicates and oxides, though potentially a large and undocumented reservoir of the mantle and core , is not considered here.
-Non-mineralogical carbon-bearing phases treated elsewhere, including in this volume, include C-O-H-N aqueous fluids ; silicate melts ; carbonate melts ; a rich variety of organic molecules, including methane and higher hydrocarbons ; and subsurface microbial life .
+The possible role of trace carbon in nominally acarbonaceous silicates and oxides, though potentially a large and undocumented reservoir of the mantle and core (Wood 1993; Jana and Walker 1997; Freund et al.
+2001; McDonough 2003; Keppler et al.
+2003; Shcheka et al.
+2006; Dasgupta 2013; Ni and Keppler 2013; Wood et al.
+2013), is not considered here.
+Non-mineralogical carbon-bearing phases treated elsewhere, including in this volume, include C-O-H-N aqueous fluids (Javoy 1997; Zhang and Duan 2009; Jones et al.
+2013; Manning et al.
+2013); silicate melts (Dasgupta et al.
+2007; Dasgupta 2013; Manning et al.
+2013); carbonate melts (Cox 1980; Kramers et al.
+1981; Wilson and Head 2007; Walter et al.
+2008; Jones et al.
+2013); a rich variety of organic molecules, including methane and higher hydrocarbons (McCollom and Simoneit 1999; Kenney et al.
+2001; Kutcherov et al.
+2002; Sherwood-Lollar et al.
+2002; Scott et al.
+2004; Helgeson et al.
+2009; McCollom 2013; Sephton and Hazen 2013); and subsurface microbial life (Parkes et al.
+1993; Gold 1999; Chapelle et al.
+2002; D’Hondt et al.
+2004; Roussel et al.
+2008; Colwell and D’Hondt 2013; Schrenk et al.
+2013; Meersman et al.
+2013; Anderson et al.
+2013).
 The International Mineralogical Association (IMA) recognizes more than 380 carbon-bearing minerals .
 SYSTEMATIC CARBON MINERALOGY
 Carbon, a non-metal that typically forms covalent bonds with a variety of other elements, is the most chemically adaptable element of the periodic table.
 In an ionic sense, element 6 can act as a cation with oxidation number +4, as in carbon dioxide (CO2) or in the carbonate anion   (CO3-2).
 Alternatively, carbon can act as an anion with oxidation number as low as -4, as in methane (CH4) and in other alkanes.
-Carbon also frequently displays a range of intermediate oxidation number states from +2 in carbon monoxide (CO) or -2 in methanol (CH3OH), as well as occurring in its neutral state (C) in a variety of carbon allotropes.
+Carbon also frequently displays a range of intermediate oxidation number states from +2 in carbon monoxide (CO) or -2 in methanol (CH3OH), as well as occurring in its neutral state  in a variety of carbon allotropes.
 Carbon chemistry is also enriched by the ability of C to form single, double, or triple bonds, both with itself and with a wide range of other chemical elements.
 In many carbon compounds each C atom bonds to 4 other atoms by single bonds, as in methane and carbon tetrafluoride (CF4).
 But carbon commonly forms double bonds with itself, for example in ethene (H2C=CH2), oxygen in carbon dioxide (O=C=O), or sulfur in carbon disulfide (S=C=S), and it can form triple bonds with itself, as in ethylene (commonly known as acetylene; HC≡CH), or with nitrogen, as in hydrogen cyanide (HC≡N).
@@ -25,21 +49,26 @@ These varied carbon allotropes exhibit extremes in physical and chemical propert
 Diamond and lonsdaleite are the hardest known substances, whereas graphite is among the softest.
 Transparent diamond is an exceptional electrical insulator while possessing the highest known thermal conductivity at room temperature, whereas opaque graphite is an electrical conductor and thermal insulator.
 Isotropic diamond is widely used as a tough abrasive, whereas anisotropic graphite is employed as a lubricant.
-Diamond possesses the highest nuclear density of any known condensed phase at ambient conditions  and is predicted to have high-pressure phases of even greater density , whereas some carbon nanogels feature among the lowest known nuclear densities.
+Diamond possesses the highest nuclear density of any known condensed phase at ambient conditions (Zhu et al.
+2011) and is predicted to have high-pressure phases of even greater density (Oganov et al.
+2013), whereas some carbon nanogels feature among the lowest known nuclear densities.
 Here we focus on the essential characteristics of the three most common minerals of native carbon—graphite, diamond, and lonsdaleite—all of which play roles in Earth’s subsurface carbon cycle.
-For more comprehensive reviews of the chemical and physical properties of these carbon polymorphs see       and .
+For more comprehensive reviews of the chemical and physical properties of these carbon polymorphs see Bragg et al.
+(1965), Deer et al.
+(1966), Field (1979), Davies (1984), Klein and Hurlbut (1993), Harlow (1998), and Zaitsev (2001).
 Graphite.
 Carbon forms covalent bonds with itself in all of the carbon polymorphs, in which C adopts one of two coordination environments (Table 1).
 In graphite, graphene, buckyballs, nanotubes, and several types of amorphous and glassy carbon, the carbon atoms are in planar three-coordination.
 This trigonal coordination, with typical C-C distances of ~1.42 Å and C-C-C angles close to 120 degrees, results from the hybridization of carbon’s electrons into three orbitals, known as the sp2 bonding configuration because the 2s orbital mixes (or hybridizes) with two 2p orbitals to form three sp2 orbitals.
 The hexagonal layered structure of graphite (Figure 1a; Rotating structure #1) features electrically neutral, monoatomic, flat carbon layers, which bond to each other through van der Waals attractions and which are separated from each other by 3.41 Å.
 This layered structure leads to the distinctive, highly anisotropic properties of graphite (Figure 1b).
-Individual carbon layers, which are known as graphene when meticulously separated from a graphite crystal or vapor deposited, are extremely strong and display unique electronic and mechanical properties .
+Individual carbon layers, which are known as graphene when meticulously separated from a graphite crystal or vapor deposited, are extremely strong and display unique electronic and mechanical properties (Geim and Novoselov 2007; Geim 2009).
 Weak van der Waal’s forces between these layers lead to graphite’s applications in lubricants and as pencil “lead.”
-Natural graphite is a common crustal mineral that occurs most abundantly in metamorphic rocks in pods and veins as a consequence of the reduction and dehydration of sediments rich in carbon (e.g., ).
+Natural graphite is a common crustal mineral that occurs most abundantly in metamorphic rocks in pods and veins as a consequence of the reduction and dehydration of sediments rich in carbon (e.g., Klein and Hurlbut 1993).
 Commercial metamorphic graphite deposits, notably from China, India, and Brazil, are exploited in the manufacture of pencils, lubricants, steel, and brake linings.
 Graphite is also found as an accessory mineral in some igneous rocks and as a micro- or nano-phase in a variety of meteorites.
-In these diverse lithologies graphite is commonly precipitated in veins from reduced C-O-H fluids .
+In these diverse lithologies graphite is commonly precipitated in veins from reduced C-O-H fluids (Rumble and Hoering 1986; Rumble et al.
+1986).
 In addition, graphite can crystallize from the vapor state in the carbon-rich, expanding hot envelopes of energetic late-stage stars, including supernovas.
 Diamond and lonsdaleite.
 In contrast to the sp2 bonding environment of carbon in graphite, each carbon atom can bind to 4 adjacent C atoms in tetrahedral coordination, as exemplified by the diamond and lonsdaleite polymorphs (Figures 2 and 3; Rotating structures 2 and 3).
@@ -48,80 +77,121 @@ This tetrahedral bonding configuration reflects the hybridization of one 2s and 
 The structures of cubic diamond and hexagonal lonsdaleite are similar: both forms of carbon feature tetrahedral coordination of C in a three-dimensional framework.
 However, given a flat layer of linked carbon tetrahedra with all vertices pointed in the same direction (layer A), there exist two ways to stack subsequent layers, in orientations described as B or C. The diamond structure represents a three-layer stacking sequence of […ABCABC…] along the (111) cubic direction, whereas lonsdaleite stacking is two-layer […ABAB…] along the (001) hexagonal direction.
 A similar stacking difference distinguishes the cubic and hexagonal forms of a number of topologically similar mineral pairs, such as the polymorphs of zinc sulfide (ZnS), sphalerite and wurtzite, respectively.
-Note also that the stacking sequence of these carbon polymorphs can incorporate errors, as is often the case with lonsdaleite that has formed by impact shock of graphite .
-The framework structures of diamond and lonsdaleite lead to their superlative physical and chemical properties .
+Note also that the stacking sequence of these carbon polymorphs can incorporate errors, as is often the case with lonsdaleite that has formed by impact shock of graphite (Frondel and Marvin 1967).
+The framework structures of diamond and lonsdaleite lead to their superlative physical and chemical properties (Davies 1984).
 Notably, the exceptional hardness and strength of these phases arises from the strong three-dimensional network of C-C bonds.
-Recent theoretical studies on diamond and lonsdaleite suggest that diamond possesses the greater strength .
+Recent theoretical studies on diamond and lonsdaleite suggest that diamond possesses the greater strength (Pan et al.
+2009; Lyakhov and Oganov 2011).
 The key to understanding the contrasting properties of the natural carbon allotropes is their different pressure-temperature stability fields.
 The deep origin of diamond was first recognized in the years following the widely publicized discovery of the 20-carat Eureka diamond by children playing in a dry central South African streambed in 1866, and the even more dramatic 83.5-carat Star of South Africa diamond two years later.
-A subsequent diamond rush brought more than 10,000 prospectors to the semi-desert region, and inevitably led to the recognition of diamond in their volcanic host rock, dubbed kimberlite .
-The South African kimberlites’ cone-shaped deposits, which cut vertically through shattered country rock, spoke of violent explosive eruptions from great depth .
-The hypothesis that diamond comes from depth was reinforced by determination of the crystal structures of diamond versus graphite .
+A subsequent diamond rush brought more than 10,000 prospectors to the semi-desert region, and inevitably led to the recognition of diamond in their volcanic host rock, dubbed kimberlite (Davies 1984; Hazen 1999).
+The South African kimberlites’ cone-shaped deposits, which cut vertically through shattered country rock, spoke of violent explosive eruptions from great depth (Lewis 1887; Bergman 1987; Mitchell 1995).
+The hypothesis that diamond comes from depth was reinforced by determination of the crystal structures of diamond versus graphite (Bragg and Bragg 1913; Hull 1917; Hassel and Mark 1924; Bernal 1924).
 The higher coordination number of carbon in diamond (4-fold) compared to graphite (3-fold), coupled with its much greater density (3.51 versus 2.23 g/cm3), provided physical proof that diamond was the higher-pressure polymorph.
-Early determinations of the carbon phase diagram , though refined in subsequent years (   Figure 4), revealed that diamond is the higher-pressure, lower-temperature form and that, under a normal continental geotherm, diamond likely forms at depths greater than 100 kilometers.
+Early determinations of the carbon phase diagram (Rossini and Jessup 1938), though refined in subsequent years (Bundy et al.
+1961; Kennedy and Kennedy 1976; Day 2012; Figure 4), revealed that diamond is the higher-pressure, lower-temperature form and that, under a normal continental geotherm, diamond likely forms at depths greater than 100 kilometers.
 By contrast, the steeper geothermal gradients of the oceanic crust and mantle preclude diamond formation, at least within the sub-oceanic upper mantle and transition zone.
-Efforts to synthesize diamond under extreme laboratory conditions extend back to the early 1800s, long before the crucial role of high-pressure was recognized .
+Efforts to synthesize diamond under extreme laboratory conditions extend back to the early 1800s, long before the crucial role of high-pressure was recognized (Mellor 1924; Hazen 1999).
 Among the most renowned 19th-century chemists to try his hand at diamond making was Frederick-Henri Moissan, who won the Nobel Prize for his risky isolation of the dangerous element fluorine.
 Moissan employed a novel electric arc furnace to generate record temperatures ~3000°C.
-Moissan initially thought he was successful in synthesizing diamond but is now known to have formed hard, transparent crystals of silicon carbide—a compound that he also discovered in nature, and what is now known as the mineral moissanite (a;  see below).
-Numerous other heroic efforts prior to 1950 also failed ( 1946; von  ).
+Moissan initially thought he was successful in synthesizing diamond but is now known to have formed hard, transparent crystals of silicon carbide—a compound that he also discovered in nature, and what is now known as the mineral moissanite ( Hazen 1999; see below).
+Numerous other heroic efforts prior to 1950 also failed (Bridgman 1931, 1946; von Platen 1962; Coes 1962).
 In spite of the relatively accessible pressure-temperature regime of diamond stability > 4 GPa (approximately 40,000 atmospheres or 40 kilobars), the transition from graphite to diamond is kinetically inhibited.
-The keys to facile diamond synthesis—employing a liquid metal flux coupled with sustained pressures above 5 GPa and temperatures above 1200°C—were not achieved until the post-World War II efforts by scientists at the General Electric Research Laboratory in Schenectady, New York (  1965;    ).
+The keys to facile diamond synthesis—employing a liquid metal flux coupled with sustained pressures above 5 GPa and temperatures above 1200°C—were not achieved until the post-World War II efforts by scientists at the General Electric Research Laboratory in Schenectady, New York (Bundy et al.
+1955; Suits 1960, 1965; Wentorf 1962; Hall 1970; Strong 1989; Hazen 1999).
 The breakthrough of high-pressure diamond synthesis by Francis Bundy, Tracy Hall, Herbert Strong, and Robert Wentorf in December of 1954 led to what is today a multi-billion dollar industry that supplies annually hundreds of tons of industrial diamond abrasives.
 Two other synthesis techniques have expanded the varieties of diamond available for commercial exploitation.
-Of special interest are efforts to generate diamond and lonsdaleite under shock conditions that mimic bolide impact events .
-In some meteorites lonsdaleite and/or diamond is found to replace graphite in crystallites that retain a hexagonal shape ( El  ).
+Of special interest are efforts to generate diamond and lonsdaleite under shock conditions that mimic bolide impact events (DeCarli and Jamieson 1961; Beard 1988).
+In some meteorites lonsdaleite and/or diamond is found to replace graphite in crystallites that retain a hexagonal shape (Langenhorst et al.
+1999; El Goresy et al.
+2001; Langenhorst and Deutsch 2012).
 In this rapid, solid-state martensitic transition the flat, graphitic sp2 planes of carbon atoms shift relative to each other and buckle to produce an sp3 array of C layers that are rather disordered in their stacking arrangement.
-The subsequent discovery of techniques for diamond and lonsdaleite synthesis by vapor deposition at low-pressure conditions that mimic diamond formation in expanding stellar envelopes has greatly increased the potential for diamond use in science and industry .
-These varied efforts in diamond synthesis have produced exceptional new materials, including isotopically pure diamonds with the highest recorded thermal conductivity, semiconducting diamonds, nano-crystalline polishing powders, lonsdaleite crystals that are harder than many natural diamond, and a range of deeply colored flawless synthetic gemstones up to 10 carats .
+The subsequent discovery of techniques for diamond and lonsdaleite synthesis by vapor deposition at low-pressure conditions that mimic diamond formation in expanding stellar envelopes has greatly increased the potential for diamond use in science and industry (Angus et al.
+1968; Derjaguin and Fedoseev 1968; Angus and Hayman 1988; Spear and Dismukes 1994; Irifune and Hemley 2012).
+These varied efforts in diamond synthesis have produced exceptional new materials, including isotopically pure diamonds with the highest recorded thermal conductivity, semiconducting diamonds, nano-crystalline polishing powders, lonsdaleite crystals that are harder than many natural diamond, and a range of deeply colored flawless synthetic gemstones up to 10 carats (Liang et al.
+2009; Meng et al.
+2012).
 Intense research on natural diamond is also providing important insights regarding Earth’s geochemical and tectonic evolution.
-A number of recent studies focus on diamond’s rich and revealing suites of oxide, silicate, carbide, and sulfide inclusions from depths of up to perhaps 850 kilometers—mantle samples that provide evidence for aspects of geochemical and tectonic evolution over more than 3 billion years of Earth history .
+A number of recent studies focus on diamond’s rich and revealing suites of oxide, silicate, carbide, and sulfide inclusions from depths of up to perhaps 850 kilometers—mantle samples that provide evidence for aspects of geochemical and tectonic evolution over more than 3 billion years of Earth history (Shirey et al.
+2002; McCammon et al.
+2004; Sommer et al.
+2007; Pearson et al.
+2007; Gübelin and Koivula 2008; Shirey and Richardson 2011; Walter et al.
+2011; Shirey et al.
+2013).
 Carbides
-Carbides, which form when carbon bonds to a less electronegative element, are represented by dozens of synthetic compounds that have a range of industrial applications .
+Carbides, which form when carbon bonds to a less electronegative element, are represented by dozens of synthetic compounds that have a range of industrial applications (Ettmayer and Lengauer 1994).
 The International Mineralogical Association has recognized 10 different naturally occurring carbide minerals (Tables 2 and 3; http://rruff.info/ima/).
-Although rare and volumetrically trivial as reservoirs of carbon in the crust, they may represent a significant volume of carbon in Earth’s deep interior, and thus may provide insight to the deep carbon cycle .
-All metal carbides are refractory minerals; they have relatively high solidus and liquidus temperatures, with melting points typically above 2400 °C .
+Although rare and volumetrically trivial as reservoirs of carbon in the crust, they may represent a significant volume of carbon in Earth’s deep interior, and thus may provide insight to the deep carbon cycle (Dasgupta 2013; Wood et al.
+2013).
+All metal carbides are refractory minerals; they have relatively high solidus and liquidus temperatures, with melting points typically above 2400 °C (Nadler and Kempter 1960; Lattimer and Grossman 1978).
 A number of these minerals are found in association with diamond and other high-pressure phases, as well as with assemblages of unusual reduced minerals, including native Al, Fe, Si, Sn, W, and more than a dozen other native metallic elements, as well as exotic sulfides, phosphides, and silicides (Table 4).
 Carbides, along with diamond, may thus represent Earth’s deepest surviving minerals, and may prove a relatively unexplored window on the nature of the deep mantle environment and the deep carbon cycle.
 Moissanite.
 Moissanite (α−SiC), also known commercially as carborundum when sold as an abrasive (hardness 9.5), is the most common of the natural carbides.
-Produced synthetically for more than a century , moissanite is used in numerous applications, including automobile parts (e.g., brakes and clutches), bulletproof vests, light-emitting diodes, semiconductor components, anvils for high-pressure research and, since 1998, it has been marketed as inexpensive diamond-like artificial gemstones .
-Since its discovery in 1893 by Henri Moissan in mineral residues from the Canyon Diablo meteor crater in Arizona (b), natural moissanite has been found in dozens of localities, including meteorites, serpentinites, chromitites, ophiolite complexes, and in close association with diamond in kimberlites and eclogites (   1993; Di       see also http://mindat.org).
-While some occurrences of moissanite are apparently of near-surface origin, including sites of forest fires and contact metamorphism of silicate magmas with coal beds , silicon carbide also represents one of the deepest mantle minerals known to reach the surface.
-The discovery of moissanite inclusions in diamond , combined with observations of native silicon and Fe-Si alloy inclusions in moissanite , may point to an origin in reduced mantle microenvironments.
+Produced synthetically for more than a century (Acheson 1893), moissanite is used in numerous applications, including automobile parts (e.g., brakes and clutches), bulletproof vests, light-emitting diodes, semiconductor components, anvils for high-pressure research and, since 1998, it has been marketed as inexpensive diamond-like artificial gemstones (Bhatnagar and Baliga 1993; Xu and Mao 2000; Madar 2004; Saddow and Agarwal 2004).
+Since its discovery in 1893 by Henri Moissan in mineral residues from the Canyon Diablo meteor crater in Arizona , natural moissanite has been found in dozens of localities, including meteorites, serpentinites, chromitites, ophiolite complexes, and in close association with diamond in kimberlites and eclogites (Lyakhovich 1980; Leung et al.
+1990; Alexander 1990, 1993; Di Pierro et al.
+2003; Lee et al.
+2006; Qi et al.
+2007; Xu et al.
+2008; Trumbull et al.
+2009; Shiryaev et al 2011; see also http://mindat.org).
+While some occurrences of moissanite are apparently of near-surface origin, including sites of forest fires and contact metamorphism of silicate magmas with coal beds (Sameshima and Rodgers 1990), silicon carbide also represents one of the deepest mantle minerals known to reach the surface.
+The discovery of moissanite inclusions in diamond (Moore and Gurney 1989; Otter and Gurney 1989; Leung 1990; Gorshkov et al.
+1997), combined with observations of native silicon and Fe-Si alloy inclusions in moissanite (Trumbull et al.
+2009), may point to an origin in reduced mantle microenvironments.
 However, further research is required to determine the range of oxygen fugacities under which moissanite is stable at mantle pressures and temperatures.
-Occurrences of silicon carbide in mantle-derived kimberlites and several ophiolite complexes reflect its stability at high pressure and very low oxygen fugacity .
+Occurrences of silicon carbide in mantle-derived kimberlites and several ophiolite complexes reflect its stability at high pressure and very low oxygen fugacity (Mathez et al.
+1995).
 Secondary ion mass spectrometric (SIMS) analysis shows that ophiolite-hosted moissanite has a distinctive 13C-depleted isotopic composition (δ13C from − 18 to − 35‰, n = 36), which is significantly lighter than the main carbon reservoir in the upper mantle (δ13C near − 5‰).
-Alternatively, significant isotope fractionation between carbide and diamond has been observed in high-pressure experiments (-7 per mil at 5 GPa;  ), greatly complicating the potential for identification of carbon reservoirs through carbon isotope systematics of mantle-derived samples .
-It has been suggested that moissanite may also occur in the lower mantle, where the existence of 13C-depleted carbon is strongly supported by studies of extraterrestrial carbon .
-Moissanite, like diamond, also forms by vapor deposition  and it is relatively common in space in the envelopes of carbon-rich AGB stars.
+Alternatively, significant isotope fractionation between carbide and diamond has been observed in high-pressure experiments (-7 per mil at 5 GPa; Mikhail et al.
+2010; Mikhail 2011), greatly complicating the potential for identification of carbon reservoirs through carbon isotope systematics of mantle-derived samples (Mikhail et al.
+2011).
+It has been suggested that moissanite may also occur in the lower mantle, where the existence of 13C-depleted carbon is strongly supported by studies of extraterrestrial carbon (Trumbull et al.
+2009).
+Moissanite, like diamond, also forms by vapor deposition (Hough et al.
+1997) and it is relatively common in space in the envelopes of carbon-rich AGB stars.
 It is subsequently carried as a pre-solar guest in carbonaceous chondrites.
-The origins of moissanite and other carbides have been inferred from unusual variations in both C-isotopes and N-isotopes .
+The origins of moissanite and other carbides have been inferred from unusual variations in both C-isotopes and N-isotopes (Daulton et al.
+2003).
 Meteoritic carbides commonly contain dissolved nitrogen, while the comparable family of nitride minerals [e.g., osbornite (TiN)] contains some dissolved carbon.
-This mutual limited solubility of N-C in minerals persists through natural diamond (C), which also contains minor N, and in the future may be useful for understanding crystallization histories and source reservoirs.
-Moissanite is also relatively widely distributed as micro-crystals in the ejecta from some meteorite impact craters formed in continental crust, and it may be associated with impact diamond and a variety of iron silicides like suessite .
-Low-pressure SiC is also found in the KT impact layer , though unlike impact diamond, SiC is not ubiquitous in crustal impact deposits .
+This mutual limited solubility of N-C in minerals persists through natural diamond , which also contains minor N, and in the future may be useful for understanding crystallization histories and source reservoirs.
+Moissanite is also relatively widely distributed as micro-crystals in the ejecta from some meteorite impact craters formed in continental crust, and it may be associated with impact diamond and a variety of iron silicides like suessite (Ernston et al.
+2010).
+Low-pressure SiC is also found in the KT impact layer (Hough et al.
+1995; Langenhorst and Deutsch 2012), though unlike impact diamond, SiC is not ubiquitous in crustal impact deposits (Gilmour et al.
+2003).
 Indeed, another possibility for deep SiC formation, given the antiquity of some kimberlite/diamond hosted SiC, might be residues from giant impact processes during formation of Earth’s Moon, since at that time materials from a cross-section through the upper mantle were violently exposed to the vacuum of space.
 Ideal moissanite has a hexagonal structure closely related to that of lonsdaleite (and identical to wurtzite), in which every atom is tetrahedrally coordinated and corner-linked tetrahedral layers are stacked ideally in a two-layer […ABAB…] configuration (Figure 5; Rotating structure 4).
 The Si-C distance of 1.86 Å is appreciably longer than that of the carbon polymorphs because of the greater size of Si compared to C. Moissanite is known to recrystallize at temperatures between 1400 and 1600 oC to β-SiC, which is cubic and similar to the diamond structure.
-More than 250 stacking polytypes of SiC have been documented, notably hexagonal forms with 4-layer (4H) and 6-layer (6H—the most common terrestrial polytype; ) repeats {[…ABAC…] and […ABCACB…], respectively}, and a rhombohedral form with a 15-layer (15R) sequence […ABCBACABACBCACB…].
-Hundreds of other polytypes with repeat sequences from dozens to hundreds of layers (i.e., 141R and 393R) have also been characterized (    see also http://img.chem.ucl.ac.uk/www/kelly/LITERATURESICWEB.HTM#4 and http://mindat.org).
-Such complex polytypes have inspired a variety of models related to possible growth models, including screw dislocation or spiral growth mechanism (e.g.,  1951; ), the faulted matrix model (a, 1975b, 1978), one-dimensional disorder theory (a, 1954b), and the axial nearest neighbor Ising model .
-A curious crystal chemical aspect related to silicon carbide is the apparent absence of Si-C bonding in other naturally occurring compounds .
+More than 250 stacking polytypes of SiC have been documented, notably hexagonal forms with 4-layer (4H) and 6-layer (6H—the most common terrestrial polytype; Capitani et al.
+2007) repeats {[…ABAC…] and […ABCACB…], respectively}, and a rhombohedral form with a 15-layer (15R) sequence […ABCBACABACBCACB…].
+Hundreds of other polytypes with repeat sequences from dozens to hundreds of layers (i.e., 141R and 393R) have also been characterized (Krishna and Verma 1965; Lee et al.
+2006; Capitani et al.
+2007; Shiryaev et al.
+2011; see also http://img.chem.ucl.ac.uk/www/kelly/LITERATURESICWEB.HTM#4 and http://mindat.org).
+Such complex polytypes have inspired a variety of models related to possible growth models, including screw dislocation or spiral growth mechanism (e.g., Frank 1949, 1951; Verma and Krishna 1966), the faulted matrix model ( 1975b, 1978), one-dimensional disorder theory ( 1954b), and the axial nearest neighbor Ising model (Price and Yeomans 1984).
+A curious crystal chemical aspect related to silicon carbide is the apparent absence of Si-C bonding in other naturally occurring compounds (Nawrocki 1997; Franz 2007; Tran et al.
+2011).
 Chemists have explored a rich landscape of synthetic organic silanes, silanols, and silicones, but natural examples of these potentially crystal-forming compounds have not yet been described.
 Cohenite.
 The iron carbide cohenite [(Fe,Ni,Co)3C], also called cementite when it occurs as a binding agent in steel, is second in abundance as a natural carbide only to moissanite.
-In nature cohenite is known primarily as an accessory mineral from more than a dozen iron meteorites , but it also occurs occasionally with native iron in the crust, for example at Disko Island in central west Greenland, and the Urals in Russia.
-Though iron carbides are rare in nature, the low-pressure phase behavior of carbon in iron has been studied extensively by the steel industry (e.g., ).
+In nature cohenite is known primarily as an accessory mineral from more than a dozen iron meteorites (Brett 1967), but it also occurs occasionally with native iron in the crust, for example at Disko Island in central west Greenland, and the Urals in Russia.
+Though iron carbides are rare in nature, the low-pressure phase behavior of carbon in iron has been studied extensively by the steel industry (e.g., Brooks 1996).
 Iron carbide occurs occasionally with native iron in the crust.
-For example, local occurrences of metallic iron with iron carbide (“cohenite”) may result from thermal interaction and reduction of basalt with coal or other carbon-rich sediments (  1981; ).
-Most famously, Fe-Ni carbide (Ni-poor cohenite) occurs in massive native iron, with schreibersite, sulphides and a variety of minerals in graphite-bearing glassy Tertiary basalts on and around Disko Island, Greenland (individual iron masses > 20 tons;     ).
-A further 10 ton mass was discovered as recently as 1985, 70 km away from the original Disko iron location .
-Comparable massive and dispersed native iron containing not only iron carbide but also silicon carbide (H-6, moissanite), occurs together with a rich variety of more than 40 minerals including native metals (Al, Cu), in glass-bearing Permian doleritic sills on the Putorana Plateau, Siberia .
-1985 These occurrences are partly brecciated and, although superficially resembling meteoritic textures, they are considered to be terrestrial .
-The origin of the Disko iron is still debated: detailed mapping of dispersed iron in regional basalts strongly favors large-scale interaction of carbon-rich sediments with volcanic lavas .
-However, their correlation with basal stratigraphic units on the Nussussuaq peninsula that preserve unambiguous Ir-bearing impact spherules has reintroduced the prospect for involvement of a meteorite impact in the origin of carbon-rich Disko iron  as originally invoked by its discoverer .
-The structure of cohenite, (orthorhombic; space group Pbnm, a = 4.518 Å; b = 5.069 Å; c = 6.736 Å; ), has been extensively studied.
+For example, local occurrences of metallic iron with iron carbide (“cohenite”) may result from thermal interaction and reduction of basalt with coal or other carbon-rich sediments (Melson and Switzer 1966; Pederson 1979, 1981; Cesnokov et al.
+1998).
+Most famously, Fe-Ni carbide (Ni-poor cohenite) occurs in massive native iron, with schreibersite, sulphides and a variety of minerals in graphite-bearing glassy Tertiary basalts on and around Disko Island, Greenland (individual iron masses > 20 tons; Nordenskiöld 1872; Pauly 1969; Bird and Weathers 1977; Goodrich 1984; Goodrich and Bird 1985).
+A further 10 ton mass was discovered as recently as 1985, 70 km away from the original Disko iron location (Ulff-Moller 1986).
+Comparable massive and dispersed native iron containing not only iron carbide but also silicon carbide (H-6, moissanite), occurs together with a rich variety of more than 40 minerals including native metals (Al, Cu), in glass-bearing Permian doleritic sills on the Putorana Plateau, Siberia (Oleynikov et al.
+1985).
+1985 These occurrences are partly brecciated and, although superficially resembling meteoritic textures, they are considered to be terrestrial (Treiman et al.
+2002).
+The origin of the Disko iron is still debated: detailed mapping of dispersed iron in regional basalts strongly favors large-scale interaction of carbon-rich sediments with volcanic lavas (Larsen and Pedersen 2009).
+However, their correlation with basal stratigraphic units on the Nussussuaq peninsula that preserve unambiguous Ir-bearing impact spherules has reintroduced the prospect for involvement of a meteorite impact in the origin of carbon-rich Disko iron (Jones et al.
+2005) as originally invoked by its discoverer (Nordenskiöld 1872).
+The structure of cohenite, (orthorhombic; space group Pbnm, a = 4.518 Å; b = 5.069 Å; c = 6.736 Å; Hendricks 1930), has been extensively studied.
 Many samples display different cell parameters, potentially related to a variety of causes such as quenching rates.
 The structure is composed of regular trigonal prisms of iron atoms with carbon at the center (Figure 6; Rotating structure 5).
 (Note that in the first structure experiments it was reported that cohenite features a framework of near regular CFe6 octahedra, each with 6 iron atoms surrounding a central carbon atom.
@@ -129,179 +199,258 @@ However, the positions of the carbon atoms were not determined and the assumptio
 New carbides from Chinese ultramafic rocks.
 Two natural occurrences of exotic carbides deserve special note, because they point to a possibly rich and as yet largely unexplored deep carbide mineralogy.
 The first localities are associated with ultramafic rocks in Central China: (1) in podiform chromitites of the Luobusha ophiolite complex, Autonomous Tibetan Region; (2) within the Mengyin kimberlite field, Linyi Prefecture; (3) within the Yangliuping N-Cu-PGE Deposit, Sichuan Province; and (4) at Liu Village, Henan Province.
-These deposits incorporate minor amounts of three carbides that are unknown from any other region: qusongite (WC;  ), yarlongite [(Fe4Cr4Ni)C4;  2008], and tongbaite (Cr3C2;  ).
-The association of these carbides with moissanite, cohenite, and khamrabaevite [(Ti,V,Fe)C], as well as other dense, high-temperature phases such as diamond, coesite (a high-pressure form of SiO2), and varied native metals, including Fe, Ni, W, Cr, Pb, and W, points to a high-temperature, high-pressure origin in a reduced mantle environment .
+These deposits incorporate minor amounts of three carbides that are unknown from any other region: qusongite (WC; Fang et al.
+2009; Shi et al.
+2009), yarlongite [(Fe4Cr4Ni)C4; Nicheng et al.
+2005, 2008], and tongbaite (Cr3C2; Tian et al.
+1983; Dai et al.
+2004).
+The association of these carbides with moissanite, cohenite, and khamrabaevite [(Ti,V,Fe)C], as well as other dense, high-temperature phases such as diamond, coesite (a high-pressure form of SiO2), and varied native metals, including Fe, Ni, W, Cr, Pb, and W, points to a high-temperature, high-pressure origin in a reduced mantle environment (Robinson et al.
+2001; Shi et al.
+2009).
 New carbides from placer deposits of the Urals.
 A second enigmatic carbide region is found in the Ural Mountains of Russia, within both the Avorinskii Placer, Baranchinsky Massif, and in sediments of the Neiva River near Verkhneivinsk.
-Placer deposits have yielded <0.3 mm-diameter grains of isovite [(Cr,Fe)23C6; ], as well as euhedral crystals from the complex nonstoichiometric solid solution between niobocarbide and tantalocarbide [(Nb,Ta)C1-x;  ].
+Placer deposits have yielded <0.3 mm-diameter grains of isovite [(Cr,Fe)23C6; Generalov et al.
+1998], as well as euhedral crystals from the complex nonstoichiometric solid solution between niobocarbide and tantalocarbide [(Nb,Ta)C1-x; Gusev et al.
+1996; Novgorodova et al.
+1997].
 All known specimens of the latter two minerals, however, were collected early in the 20th century and the exact location of the placer deposit is currently unknown.
 These two possibly related placer deposits produce an enigmatic suite of other unusual minerals, including native rhenium and osmium (both with melting temperatures > 3000°C), anyuite [Au(Pb,Sb)2], and jedwabite [Fe7(Ta,Nb)3].
 The source lithologies and paragenesis of these minerals are not known, though the concentration of Nb and Ta suggests a possible association with carbonatitic magmas.
 In any case, they point to the potential diversity of rare carbides in unusual geochemical environments.
 Rhombohedral carbonates
 By far the most abundant carbon-bearing minerals, both in the number of different species and in their total crustal volume, are the carbonates, of which more than 300 have received IMA approval .
-Two types of rhombohedral carbonates—the calcite and dolomite groups—collectively represent by far the most abundant carbonate minerals in Earth’s crust, with calcite (CaCO3) and dolomite [CaMg(CO3)2] in massive sedimentary and metamorphic formations accounting for at least 90% of crustal carbon (b).
-Orthorhombic carbonates in the aragonite group also play a significant role in Earth surface processes , particularly through biomineralization .
+Two types of rhombohedral carbonates—the calcite and dolomite groups—collectively represent by far the most abundant carbonate minerals in Earth’s crust, with calcite (CaCO3) and dolomite [CaMg(CO3)2] in massive sedimentary and metamorphic formations accounting for at least 90% of crustal carbon .
+Orthorhombic carbonates in the aragonite group also play a significant role in Earth surface processes (Speer 1983), particularly through biomineralization (Stanley and Hardie 1998; Dove et al.
+2003; Knoll 2003).
 These three groups are surveyed below.
 Calcite and the calcite group.
-The most important carbonate minerals belonging to the calcite group (Table 5; b) include calcite (CaCO3), magnesite (MgCO3), rhodocrosite (MnCO3), siderite (FeCO3), and smithsonite (ZnCO3).
+The most important carbonate minerals belonging to the calcite group (Table 5; ) include calcite (CaCO3), magnesite (MgCO3), rhodocrosite (MnCO3), siderite (FeCO3), and smithsonite (ZnCO3).
 It should be emphasized that these minerals seldom occur as pure end-members, but instead commonly form solid solutions with many divalent cations.
-The calcite structure (space group R{bar3}c; e.g.,   ) has a topology similar to that of NaCl, with each Ca2+ coordinated to 6 (CO3)2- groups, and each (CO3)2- group in turn coordinated to 6 Ca2+ cations.
+The calcite structure (space group R{bar3}c; e.g., Bragg 1914; Effenberger et al.
+1981; Chang et al.
+1997) has a topology similar to that of NaCl, with each Ca2+ coordinated to 6 (CO3)2- groups, and each (CO3)2- group in turn coordinated to 6 Ca2+ cations.
 However, the orientations of the (CO3)2- groups, while the same within each layer, are 180° out of phase in successive layers, thus doubling the repeat distance in the c axial direction relative to a sodium chloride analog.
-Note that this layer-by-layer alternation of (CO3)2- group orientations results in an oxygen atom distribution that approximates hexagonal close packing, with C and Ca occupying 3- and 6-coordinated interstices, respectively .
+Note that this layer-by-layer alternation of (CO3)2- group orientations results in an oxygen atom distribution that approximates hexagonal close packing, with C and Ca occupying 3- and 6-coordinated interstices, respectively (Megaw 1973).
 The flattened shape of this carbonate anion results in an obtuse rhombohedral angle of 101°55' (Figure 8; Rotating structure 6).
 Calcite is widely distributed in Earth’s crust; it appears most commonly within sedimentary rocks, where it occurs as the principal mineral of limestone, and as a natural cementing agent in many siliceous sandstone and shale units that were deposited under marine conditions.
-Calcite also dominates some metamorphic rocks such as marble and calcareous gneiss; occurs widely in hydrothermal systems, where it forms extensive vein networks; and is common in some unusual carbonate-rich igneous rocks such as carbonatites .
-Although widely formed under Earth’s near-surface conditions, distributions of calcite and other rhombohedral carbonate minerals have varied significantly through Earth history, principally as a consequence of feedbacks between the geosphere and biosphere .
+Calcite also dominates some metamorphic rocks such as marble and calcareous gneiss; occurs widely in hydrothermal systems, where it forms extensive vein networks; and is common in some unusual carbonate-rich igneous rocks such as carbonatites (Jones et al.
+2013).
+Although widely formed under Earth’s near-surface conditions, distributions of calcite and other rhombohedral carbonate minerals have varied significantly through Earth history, principally as a consequence of feedbacks between the geosphere and biosphere (Knoll 2003; Hazen et al.
+2008; Hazen et al.
+2013).
 At present, the majority of calcium carbonate deposition occurs as calcite precipitated within shallow marine settings.
-In these settings, magnesium—whose concentration is nearly 4x that of calcium in normal marine fluids—is readily incorporated into the calcite crystal lattice, with Mg concentrations of marine calcites equal to a few to nearly 20 mole % MgCO3 .
+In these settings, magnesium—whose concentration is nearly 4x that of calcium in normal marine fluids—is readily incorporated into the calcite crystal lattice, with Mg concentrations of marine calcites equal to a few to nearly 20 mole % MgCO3 (MacKenzie et al.
+1983; Morse and MacKenzie 1990; Morse et al.
+2006; Berner and Berner 2012).
 Such Mg-bearing calcites are commonly referred to as magnesian calcite or “high Mg calcite” (HMC) and are distinguished from calcites with low Mg concentrations (“low Mg calcite” or LMC).
 Magnesium is one of a suite of divalent ions that ready co-precipitate with calcium in the calcite lattice.
-Because ionic co-precipitation reflects a combination of the ionic availability, temperature, and lattice structure, and because it can substantially affect the solubility and rate of dissolution of the resultant calcite, differential co-precipitation of ions within calcite has been, and continues to be a subject of intense investigation as a means of unraveling the geologic history of the oceanic system .
-One of calcite’s remarkable and as yet largely unexplored features is its extraordinary range of crystal forms (e.g., ).
+Because ionic co-precipitation reflects a combination of the ionic availability, temperature, and lattice structure, and because it can substantially affect the solubility and rate of dissolution of the resultant calcite, differential co-precipitation of ions within calcite has been, and continues to be a subject of intense investigation as a means of unraveling the geologic history of the oceanic system (Morse and Mackenzie 1990).
+One of calcite’s remarkable and as yet largely unexplored features is its extraordinary range of crystal forms (e.g., Dana 1958).
 Habits range from the more common rhombohedral and scalenohedral crystal forms, to needle-like, platy, and equant shapes with expression of at least 300 different documented crystal forms (Figure 9; see also specimen photographs on http://mindat.org).
-Some of the most varied crystal habits are widely distributed in association with both biological skeletalization  and speleogenesis  and reflect a complex array of physical, chemical, and biological influences during crystallization.
-Because calcite crystal morphology is strongly affected by the kinetics of crystal growth, unraveling the differential effects of fluid saturation state, carbonate ion availability, ionic activity, the presence or absence of ionic inhibitors to nucleation and growth, and even the presence or absence of mineral catalyzing organic molecules (e.g.,    ), is critical to reveal as of yet untapped insights to Earth’s crustal evolution.
-This need to document connections between environment and crystal form may be true, in particular, for our understanding of distinct carbonate morphologies such as “herringbone” calcite  and “molar-tooth” calcite  that show distinct environmental distributions through Earth history (see ).
+Some of the most varied crystal habits are widely distributed in association with both biological skeletalization (Fallini et al.
+1996; Dove et al.
+2003) and speleogenesis (Frisia et al.
+2000) and reflect a complex array of physical, chemical, and biological influences during crystallization.
+Because calcite crystal morphology is strongly affected by the kinetics of crystal growth, unraveling the differential effects of fluid saturation state, carbonate ion availability, ionic activity, the presence or absence of ionic inhibitors to nucleation and growth, and even the presence or absence of mineral catalyzing organic molecules (e.g., Cody and Cody 1991; Teng and Dove 1997; Teng et al.
+1998; Orme et al.
+2001), is critical to reveal as of yet untapped insights to Earth’s crustal evolution.
+This need to document connections between environment and crystal form may be true, in particular, for our understanding of distinct carbonate morphologies such as “herringbone” calcite (Sumner and Grotzinger 1996; Kah et al.
+1999) and “molar-tooth” calcite (Pollock et al.
+2006) that show distinct environmental distributions through Earth history (see Hazen et al.
+2013).
 Other calcite group minerals.
 The magnesium carbonate magnesite (MgCO3) forms primarily through alteration of Mg-rich igneous and metamorphic rocks, commonly in association with serpentine, as well as by direct precipitation from Mg-rich solutions and as a primary phase in mantle-derived carbonatites.
 Anhydrous magnesium carbonate commonly hydrates to form one of several secondary minerals (Table 6), including hydromagnesite [Mg4(CO3)3(OH)2.3H2O], artinite [Mg2CO3(OH)2·3H2O], dypingite [Mg5(CO3)4(OH)2·5H2O],  pokrovite [Mg2CO3(OH)2], nesquehonite (MgCO3.3H2O), and landsfordite (MgCO3.5H2O).
 Rhodochrosite, the manganese carbonate (MnCO3), most commonly occurs as a vein-filling phase in hydrothermal ore districts.
 Limited solid solutions with Ca, Fe, and Mg end-members, as well as Zn, Ba, and Pb, are typical, as is partial alteration to manganese oxide hydroxides.
 Rhodochrosite is typically pale pink in color, though relatively rare deep rose pink specimens occur occasionally and are highly prized as semi-precious gemstones.
-The iron carbonate siderite (FeCO3) occurs in massive beds as an important component of some Precambrian banded iron sedimentary formations , as well as in hydrothermal veins associated with ferrous metal sulfides.
+The iron carbonate siderite (FeCO3) occurs in massive beds as an important component of some Precambrian banded iron sedimentary formations (Klein 2005), as well as in hydrothermal veins associated with ferrous metal sulfides.
 Siderite commonly incorporates Ca, Mn, and Co, and it forms a complete solid solution with magnesite in a variety of lithological settings, as well as with smithsonite (ZnCO3) in hydrothermal lead-zinc ore deposits.
-Siderite is only stable under conditions of relatively low fO2 .
+Siderite is only stable under conditions of relatively low fO2 (Hazen et al.
+2013).
 It is metastable under ambient oxic conditions and typically decomposes to a suite of iron oxide-hydroxides such as goethite [FeO(OH)], and related hydrous phases [FeO(OH).nH2O]—reactions that are accelerated by chemolithoautotrophic microbial activity.
 Dolomite group.
-The dolomite group (space group R{bar3}) is topologically identical to calcite, but in these double carbonate minerals two or more different cations occupy alternate layers perpendicular to the c axis (  b;  Figure 10; Rotating structure 7).
+The dolomite group (space group R{bar3}) is topologically identical to calcite, but in these double carbonate minerals two or more different cations occupy alternate layers perpendicular to the c axis (Wasastjerna 1924; Wyckoff and Merwin 1924;  Chang et al.
+1997; Figure 10; Rotating structure 7).
 Important end-member minerals in this group (Table 5) include dolomite [CaMg(CO3)2], ankerite [FeMg(CO3)2], kutnohorite [CaMn(CO3)2], and minrecordite [CaZn(CO3)2].
-Note that in both the calcite and dolomite mineral groups the (CO3)2- anions lie perpendicular to the rhombohedral c axis and they librate with a helical motion along this axis ( Figure 11; Animated figure with librating CO3]).
+Note that in both the calcite and dolomite mineral groups the (CO3)2- anions lie perpendicular to the rhombohedral c axis and they librate with a helical motion along this axis (Gunasekaran et al.
+2006; Figure 11; Animated figure with librating CO3]).
 The planar orientation of the CO32- anions in the calcite and dolomite group minerals results in many of their distinctive properties, for example in their extreme optical anisotropy (maximum and minimum refractive indices differ by ~0.2 in these minerals), which causes the familiar double refraction seen through calcite cleavage rhombohedra.
 The near-perfect [104] cleavage of calcite and dolomite group minerals also arises from anisotropies in bonding; this cleavage plane results in the minimum number of broken Ca-O bonds and no broken C-O bonds.
 Strong bonding in the plane parallel to the CO32- anions (i.e., the a axis of the hexagonal setting) compared to weaker Ca-O bonds in the perpendicular direction (the c axis of the hexagonal setting) leads to extreme anisotropy in calcite’s thermal expansion, as well.
-The c-axis thermal expansion is positive ~ +3.2 x 10-5 °C-1, whereas a-axis thermal expansion is negative ~ –0.3 x 10-5 °C-1 .
+The c-axis thermal expansion is positive ~ +3.2 x 10-5 °C-1, whereas a-axis thermal expansion is negative ~ –0.3 x 10-5 °C-1 (Markgraf and Reeder 1985).
 Note, however, that in magnesite and dolomite the shorter, stronger Mg-O bonds result in thermal expansion that is positive in both a and c axial directions.
 Dolomite is by far the most abundant species among the dolomite group minerals.
 It forms primarily within both sedimentary and metamorphic deposits through the diagenetic replacement of calcite during interaction with Mg-rich fluids.
-Phase relations in the CaCO3-MgCO3-FeCO3 system, including the phases calcite, magnesite, siderite, and dolomite, as well as magnesian calcite, as summarized by  reveal extensive regions in pressure-temperature-composition space of coexisting calcite group and dolomite group minerals—a topology that is borne out by the common association of calcite and dolomite in sedimentary rocks.
-Ankerite and kutnahorite are Fe2+- and Mn2+-bearing dolomites, respectively, with near-continuous solid solutions observed among the Mg, Fe, and Mn end-members .
+Phase relations in the CaCO3-MgCO3-FeCO3 system, including the phases calcite, magnesite, siderite, and dolomite, as well as magnesian calcite, as summarized by Chang et al.
+(1997), reveal extensive regions in pressure-temperature-composition space of coexisting calcite group and dolomite group minerals—a topology that is borne out by the common association of calcite and dolomite in sedimentary rocks.
+Ankerite and kutnahorite are Fe2+- and Mn2+-bearing dolomites, respectively, with near-continuous solid solutions observed among the Mg, Fe, and Mn end-members (Essene 1983).
 These phases occur most commonly as a result of hydrothermal alteration of calcite by reduced fluids rich in Fe2+ and Mn2+.
 The aragonite group
-A large number of CaCO3 polymorphs enrich carbonate mineralogy .
+A large number of CaCO3 polymorphs enrich carbonate mineralogy (Carlson 1983; Chang et al.
+1997).
 The aragonite group, which includes the aragonite form of CaCO3 plus cerussite (PbCO3), strontianite (SrCO3), and witherite (BaCO3), prevail in carbonates that contain cations with ionic radii as large or larger than calcium.
-The crystal structure of aragonite ( Figure 12; Rotating structure 8), first determined by  is orthorhombic with the standard space group Pnam (with c < a < b).
+The crystal structure of aragonite (Speer 1983; Figure 12; Rotating structure 8), first determined by Bragg (1924), is orthorhombic with the standard space group Pnam (with c < a < b).
 However, the structure is more conveniently described in a non-standard orientation with a < c < b, resulting in space group Pmcn.
 The structure in this orientation possesses alternating (001) layers of divalent metal cations and (CO3)2- anions.
-Two types of (CO3)2- layers (C1 and C2) alternate with two orientations of metal cations (A and B) in a stacking sequence […AC1BC2…] .
+Two types of (CO3)2- layers (C1 and C2) alternate with two orientations of metal cations (A and B) in a stacking sequence […AC1BC2…] (Speer 1983).
 Each (CO3)2- anion is coordinated to 6 divalent metal atoms, and each metal atom is coordinated to 9 oxygen atoms (Figure 12a).
-Aragonite is a denser polymorph of CaCO3 than calcite (2.95 versus 2.71 g/cm3), and has been recognized as a mineral characteristic of relatively high-pressure, low-temperature metamorphic environments .
+Aragonite is a denser polymorph of CaCO3 than calcite (2.95 versus 2.71 g/cm3), and has been recognized as a mineral characteristic of relatively high-pressure, low-temperature metamorphic environments (McKee 1962; Coleman and Lee 1962; Ernst 1965).
 Aragonite, however, is also one of the predominant carbonate minerals—along with calcite and dolomite—that comprise the vast amount of carbon mineralization in Earth’s surface environments.
-Although aragonite is the least stable of these minerals, and undergoes rapid recrystallization to thermodynamically more stable forms, it has been recognized as a fundamental constituent of marine depositional environments since at least the Archean , and represents a primary shallow-marine depositional facies throughout the Proterozoic .
-Furthermore, since the onset of enzymatic biomineralization, more than 500 million years ago, aragonite has been a primary constituent of the fossil record, forming metastable skeletons of some calcareous algae  as well as the skeletal components of a variety of invertebrates, including a wide variety of molluscs, scleractinian corals, and some bryozoans .
-Three other aragonite group minerals, the Sr, Ba, and Pb carbonates strontianite, witherite, and cerussite, respectively, are all found primarily in relatively low-temperature hydrothermal or supergene environments, commonly associated with sulfates and metal sulfide ores .
-Strontianite, in particular, has also been found in association with enzymatic biomineralization, with strontianite comprising nearly 40% of the skeletal carbonate in some scleractinian corals , although it is uncertain whether strontianite in this case is primary or an early diagenetic phase resulting from recrystallization along the metastable strontianite-aragonite solid solution .
+Although aragonite is the least stable of these minerals, and undergoes rapid recrystallization to thermodynamically more stable forms, it has been recognized as a fundamental constituent of marine depositional environments since at least the Archean (Sumner and Grotzinger 2004), and represents a primary shallow-marine depositional facies throughout the Proterozoic (Grotzinger and Read 1983; Bartley and Kah 2004; Kah and Bartley 2011).
+Furthermore, since the onset of enzymatic biomineralization, more than 500 million years ago, aragonite has been a primary constituent of the fossil record, forming metastable skeletons of some calcareous algae (Bathurst 1976) as well as the skeletal components of a variety of invertebrates, including a wide variety of molluscs, scleractinian corals, and some bryozoans (Cloud 1962; Rucker and Carver 1969; Knoll 2003; Dove 2010).
+Three other aragonite group minerals, the Sr, Ba, and Pb carbonates strontianite, witherite, and cerussite, respectively, are all found primarily in relatively low-temperature hydrothermal or supergene environments, commonly associated with sulfates and metal sulfide ores (Smith 1926; Mitchell and Pharr 1961; Mamedov 1963; Speer 1977; Dunham and Wilson 1985; Wang and Li 1991).
+Strontianite, in particular, has also been found in association with enzymatic biomineralization, with strontianite comprising nearly 40% of the skeletal carbonate in some scleractinian corals (McGreegor et al.
+1997), although it is uncertain whether strontianite in this case is primary or an early diagenetic phase resulting from recrystallization along the metastable strontianite-aragonite solid solution (Plummer et al.
+1992).
 Phase diagrams for the aragonite polymorphs of CaCO3 and other calcite group minerals underscore the effects of divalent cation coordination number on carbonate structure type.
-Several calcite group minerals transform to the aragonite structure at high pressure ; conversely, the aragonite group minerals strontianite and witherite transform to the calcite structure at high temperature .
+Several calcite group minerals transform to the aragonite structure at high pressure (Carlson 1983; Yoshioka and Kitano 2011); conversely, the aragonite group minerals strontianite and witherite transform to the calcite structure at high temperature (Chang 1965).
 Other anhydrous carbonates
 More than 90 anhydrous carbonates other than the above mentioned rhombohedral and orthorhombic species have been described, though only a handful of these diverse phases are common (Table 5; http://rruff.info/ima/).
 Of these minerals, vaterite, huntite, and several minerals associated with carbonatites deserve special note.
 Vaterite.
 Vaterite is a polymorph of CaCO3 that is unstable under ambient conditions, yet plays an important role in biomineralization.
 Nanocrystalline vaterite rapidly converts to calcite, but can be stabilized indefinitely by a variety of hydrophilic organic molecules.
-Vaterite’s critical role in biomineralization arises from the low energy required for its conversion to other crystalline forms .
+Vaterite’s critical role in biomineralization arises from the low energy required for its conversion to other crystalline forms (Xu et al.
+2006; Soldati et al.
+2008; Wehrmeister et al.
+2012).
 Therefore, it is the preferred mineral phase (along with amorphous calcium carbonate, or ACC) for storing material critical to skeletal growth.
-Typically, metazoans process nan-aggregates of vaterite (or ACC; ) to form mesoscale syntaxial structures, which may provide an energetically favorable pathway to the construction of larger skeletal elements (e.g., single-crystal echinoderm plates).
+Typically, metazoans process nan-aggregates of vaterite (or ACC; Addadi et al.
+2003) to form mesoscale syntaxial structures, which may provide an energetically favorable pathway to the construction of larger skeletal elements (e.g., single-crystal echinoderm plates).
 Details of the vaterite crystal structure, which must be analyzed using nano-scale powders by X-ray or electron diffraction methods, remains in doubt.
-It was once thought to be hexagonal (space group P63/mmc; a = 7.135 Å; c = 16.98 Å; ).
-However, Le  found evidence for an orthorhombic structure with 3-fold cyclic twinning (space group Ama2; a = 8.472 Å; b = 7.158 Å; c = 4.127 Å; Z = 4).
-By contrast,  propose a monoclinic unit cell (a = 12.17 Å, b = 7.12 Å, c = 9.47 Å, ß = 118.94º), which is a geometric transformation of the smallest hexagonal cell proposed by .
+It was once thought to be hexagonal (space group P63/mmc; a = 7.135 Å; c = 16.98 Å; Kahmi 1963).
+However, Le Bail et al.
+(2011) found evidence for an orthorhombic structure with 3-fold cyclic twinning (space group Ama2; a = 8.472 Å; b = 7.158 Å; c = 4.127 Å; Z = 4).
+By contrast, Mugnaioli et al.
+(2012) propose a monoclinic unit cell (a = 12.17 Å, b = 7.12 Å, c = 9.47 Å, ß = 118.94º), which is a geometric transformation of the smallest hexagonal cell proposed by Kamhi (1963).
 All studies agree that vaterite features Ca in distorted 7 or 8 coordination, with an octahedron of 6 Ca-O bonds at ~2.4 Å, and two longer Ca-O bonds at >2.9 Å (Figure 13; Rotating structure 9]).
 Thus, calcium coordination in vaterite is intermediate between that of calcite (6) and aragonite (9).
-employed first-principles calculations and molecular dynamics simulations to elucidate details of the vaterite structure and CO32- group orientations.
-Previous studies had suggested rotational disorder among carbonate groups, but  demonstrate a more stable configuration with an ordered CO32- superstructure.
+Wang and Becker (2009) employed first-principles calculations and molecular dynamics simulations to elucidate details of the vaterite structure and CO32- group orientations.
+Previous studies had suggested rotational disorder among carbonate groups, but Wang and Becker (2009) demonstrate a more stable configuration with an ordered CO32- superstructure.
 Vaterite is commonly rotationally disordered when first crystallized, but it can achieve carbonate orientational order through annealing.
 Huntite.
-Huntite [CaMg3(CO3)4] occurs as a low-temperature mineral, both by direct precipitation from aqueous solutions enriched in Mg and as an alteration product of dolomite or magnesite .
+Huntite [CaMg3(CO3)4] occurs as a low-temperature mineral, both by direct precipitation from aqueous solutions enriched in Mg and as an alteration product of dolomite or magnesite (Kinsman 1967).
 Its hexagonal structure (space group R32; a = 9.503 Å; c = 7.821 Å) bears some similarities to rhombohedral carbonates.
-Magnesium is in octahedral coordination in all of these carbonates, but calcium in huntite is in trigonal prismatic coordination, as opposed to octahedral coordination in calcite, dolomite, and other species ( Figure 14 [Rotating structure 10]).
+Magnesium is in octahedral coordination in all of these carbonates, but calcium in huntite is in trigonal prismatic coordination, as opposed to octahedral coordination in calcite, dolomite, and other species (Dollase and Reeder 1986; Figure 14 [Rotating structure 10]).
 Carbonatite carbonate mineralogy.
-Finally, a number of exotic carbonate minerals are found associated with carbonatites, which are defined as igneous rocks (extrusive or intrusive) with greater than 50 percent carbonate minerals .
-These rare mantle-derived magmas are stable over a wide temperature range and can erupt as remarkably cool surface lavas at ~500 to 600°C .
+Finally, a number of exotic carbonate minerals are found associated with carbonatites, which are defined as igneous rocks (extrusive or intrusive) with greater than 50 percent carbonate minerals (Tuttle and Gittins 1966; Bell 1989; Jones et al.
+2013).
+These rare mantle-derived magmas are stable over a wide temperature range and can erupt as remarkably cool surface lavas at ~500 to 600°C (Dawson et al.
+1990; Church and Jones 1995).
 Carbonatites encompass a range of compositions, including those dominated by calcite (Ca), dolomite (Ca-Mg), ankerite (Ca-Fe), and alkali (Na-K+Ca) carbonate minerals.
-Furthermore, these magmas are often enriched in an unusual suite of elements in addition to carbon: alkalis, alkaline earths, fluorine, phosphorus, rare earth elements, and niobium .
-As a result of these chemical complexities, approximately 30 different carbonate minerals have been identified from these varied sources .
-Several of the rhombohedral carbonates are found commonly in carbonatites, including calcite, magnesite, siderite, rhodochrosite, and dolomite, as well as orthorhombic aragonite and strontianite .
+Furthermore, these magmas are often enriched in an unusual suite of elements in addition to carbon: alkalis, alkaline earths, fluorine, phosphorus, rare earth elements, and niobium (Deans 1966).
+As a result of these chemical complexities, approximately 30 different carbonate minerals have been identified from these varied sources (Kapustin 1980; Chang et al.
+1997).
+Several of the rhombohedral carbonates are found commonly in carbonatites, including calcite, magnesite, siderite, rhodochrosite, and dolomite, as well as orthorhombic aragonite and strontianite (Garson and Morgan 1978; Kapustin 1980; Dziedzic and Ryka 1983).
 These familiar minerals are accompanied by a number of exotic double carbonates include alstonite and barytocalcite [both polymorphs of CaBa(CO3)2], norsethite [BaMg(CO3)2], and the rare earth carbonates burbankite [(Na,Ca)3(Sr,Ba,Ce)3(CO3)5], sahamalite-(Ce) [Ce2Mg(CO3)4] and carbocernaite [(Ca,Na)(Sr,Ce,La)(CO3)2].
 Note that reference is sometimes made to “breunnerite” [(Mg,Fe)CO3], but this Fe-rich magnesite is not a valid mineral species.
-The alkali carbonatites are exemplified by Oldoinyo Lengai in Tanzania (the only currently active carbonatite volcano), and feature several minerals with the general formula [(Na,K)2Ca(CO3)2] ( 1966; ).
-The two sodium-rich end-members are nyerereite (typically with Na/K ~4.5, though the official IMA chemical formula lacks K) and a possible higher-temperature polymorph zemkorite (with Na/K ~6.2; again, the official IMA-approved formula lacks K); potassium end-member species are fairchildite and a lower-temperature form, bütschliite .
+The alkali carbonatites are exemplified by Oldoinyo Lengai in Tanzania (the only currently active carbonatite volcano), and feature several minerals with the general formula [(Na,K)2Ca(CO3)2] (Dawson 1962, 1966; Chang et al.
+1997).
+The two sodium-rich end-members are nyerereite (typically with Na/K ~4.5, though the official IMA chemical formula lacks K) and a possible higher-temperature polymorph zemkorite (with Na/K ~6.2; again, the official IMA-approved formula lacks K); potassium end-member species are fairchildite and a lower-temperature form, bütschliite (Dawson 1962; Mrose et al.
+1966; McKie and Frankis 1977; Yergorov et al.
+1988; Chang et al.
+1997).
 These phases are also accompanied by the rare sodium carbonate gregoryite [Na2(CO3)], which can only form in alkali-rich, alkaline earth-poor systems.
 Carbonatites can also develop suites of rare earth element (REE) carbonate or carbonate-fluoride minerals, including the bastnäsite group [REE(CO3)F, found with dominant REE = Ce, La, Nd, or Y], synchysite and parasite [both CaREE(CO3)2F, found with dominant REE = Ce, Nd, or Y]], huanghoite-(Ce) [Ba(Ce,REE)(CO3)2F], and the cordylite group [NaBaREE2(CO3)4F, found with dominant REE = Ce or La].
-REE-carbonatites are often geologically associated with U and Th minerals ( see also uranyl carbonates below).
-Two of the world’s largest economic ore bodies for REE are carbonatites: Mountain Pass California (age 1.37 Ga;   ) and Bayan Obo, China (age 1.35 Ga: Le  ).
-Finally, several hydrous carbonates, including the uncommon REE phases of the ancylite group [(Ca,Sr,Pb)(REE)(CO3)2(OH).H2O, found with dominant REE = Ce, La, or Nd], calkinsite-(Ce) [(Ce,REE)2(CO3)2.4H2O], and the lanthanite group [REE2(CO3)3·8H2O, found with dominant REE = Ce, La, or Nd], along with two closely associated hydrated Mg-Al carbonates, manasseite [Mg6Al2(CO3)(OH)16·4H2O] and hydrotalcite [Mg6Al2(CO3)(OH)16·4H2O], have been reported from some carbonatites .
+REE-carbonatites are often geologically associated with U and Th minerals (Ruberti et al 2008; see also uranyl carbonates below).
+Two of the world’s largest economic ore bodies for REE are carbonatites: Mountain Pass California (age 1.37 Ga; Olson et al.
+1954; Jones and Wyllie 1986; Castor 2008) and Bayan Obo, China (age 1.35 Ga: Le Bas et al.
+1992; Yang et al.
+2011).
+Finally, several hydrous carbonates, including the uncommon REE phases of the ancylite group [(Ca,Sr,Pb)(REE)(CO3)2(OH).H2O, found with dominant REE = Ce, La, or Nd], calkinsite-(Ce) [(Ce,REE)2(CO3)2.4H2O], and the lanthanite group [REE2(CO3)3·8H2O, found with dominant REE = Ce, La, or Nd], along with two closely associated hydrated Mg-Al carbonates, manasseite [Mg6Al2(CO3)(OH)16·4H2O] and hydrotalcite [Mg6Al2(CO3)(OH)16·4H2O], have been reported from some carbonatites (Kapustin 1980).
 Hydrous carbonates
 Most carbon-bearing minerals—more than 210 of the approximately 320 IMA approved carbonate species—are hydrated or hydrous (Table 6; http://rruff.info/ima/).
-These diverse species, whose classification has been systematized by  occupy numerous specialized near-surface niches but are for the most part volumetrically minor.
+These diverse species, whose classification has been systematized by Mills et al.
+(2009), occupy numerous specialized near-surface niches but are for the most part volumetrically minor.
 Most of these diverse minerals have mixed anionic groups, including more than 30 carbonate-sulfates, more than 40 carbonate-silicates, and more than 20 carbonate-phosphates, plus carbonates with uranyl, arsenate, borate, and other ionic groups, which represent near-surface alteration products of other minerals (see Tables 5 and 6 for some of the more common representative examples).
 Malachite and azurite.
 The common hydrous copper carbonates, malachite [Cu2(OH)2CO3] and azurite [Cu3(OH)2(CO3)2], which form in the oxidized zone of copper deposits, are typical of a large number of near-surface carbonate phases, including more than 20 other hydrous copper carbonates.
-These colorful minerals are among the thousands of mineral species that  identified as potentially biologically mediated .
+These colorful minerals are among the thousands of mineral species that Hazen et al.
+(2008) identified as potentially biologically mediated (Hazen et al.
+2013).
 Uranyl carbonates.
 At least 30 carbonates incorporate the (UO2)2+ uranyl cation group.
 These fascinating and colorful phases, which commonly form as alteration products of near-surface uranium ore bodies, include 4 anhydrous carbonates: rutherfordine [(UO2)(CO3)], the isomorphous alkali uranyl carbonates agricolite and čejkaite [K4(UO2)(CO3)3 and Na4(UO2)(CO3)3, respectively], and widenmannite [Pb2(UO2)(CO3)3].
 Most of the hydrous and hydrated uranyl carbonates are rare; 20 of these species are documented from five or fewer localities .
 Hydrated calcium carbonates.
-In addition to the mineralogically complex hydrated carbonates outlined above, hydrated phases of calcium carbonate {i.e., ikaite [CaCO3·6H2O] and its pseudomorphs [which have been given a number of unofficial varietal names such as thinolite, glendonite, jarrowite, and fundylite ], plus monohydrocalcite (CaCO3.H2O) and hydromagnesite [Mg5(CO3)4(OH)2·4H2O]}, play critical roles in the near-surface co-evolution of the geosphere and biosphere.
+In addition to the mineralogically complex hydrated carbonates outlined above, hydrated phases of calcium carbonate {i.e., ikaite [CaCO3·6H2O] and its pseudomorphs [which have been given a number of unofficial varietal names such as thinolite, glendonite, jarrowite, and fundylite (Browell 1860; Dana 1884; Shearman and Smith 1985; Ito 1996; Swainson and Hammond 2001)], plus monohydrocalcite (CaCO3.H2O) and hydromagnesite [Mg5(CO3)4(OH)2·4H2O]}, play critical roles in the near-surface co-evolution of the geosphere and biosphere.
 Hydrated calcite is common in modern microbial systems and commonly represents an initial precipitate phase within microbially mediated carbonate deposits.
-Similarly, pseudomorphs after ikaite provide thermodynamic indicators of cold marine temperatures, and can potentially be used as a unique indicator of glaciated conditions in the geologic past, for example, as pseudomorphs after ikaite in the Mississippian of Alberta, Canada  and in glendonites in Neoproterozoic shallow shelf environments .
+Similarly, pseudomorphs after ikaite provide thermodynamic indicators of cold marine temperatures, and can potentially be used as a unique indicator of glaciated conditions in the geologic past, for example, as pseudomorphs after ikaite in the Mississippian of Alberta, Canada (Brandley and Krause 1997) and in glendonites in Neoproterozoic shallow shelf environments (James et al.
+1998).
 Minerals incorporating organic molecules
 The IMA has recognized approximately 50 organic minerals, and it is likely that many more species remain to be identified and described (Table 7; http://rruff.info/ima).
 These diverse phases fall into three main categories—organic molecular crystals, minerals with organic molecular anions, and clathrates.
 Note that while many of these minerals are a direct or indirect consequence of biological activity, some minerals with organic molecules may have a non-biological origin.
-Consequently,  have also introduced the term “organomineral” to designate “mineral products containing organic carbon,” but “not directly produced by living cells.” As examples they cite carbon-bearing siliceous hot-spring deposits, desert varnish, stromatolites, and a variety of trace fossils.
+Consequently, Perry et al.
+(2007) have also introduced the term “organomineral” to designate “mineral products containing organic carbon,” but “not directly produced by living cells.” As examples they cite carbon-bearing siliceous hot-spring deposits, desert varnish, stromatolites, and a variety of trace fossils.
 Organic molecular crystals.
 Organic molecular crystals encompass those carbon-bearing minerals in which electrically neutral organic molecules crystalize into a periodic arrangement, principally through van der Waals interactions (Table 7).
 This diverse group includes a number of species known only as accessory minerals associated with coal; for example, 9 different hydrocarbon minerals, such as kratochvilite (C13H10), fichtelite (C19H34), dinite (C20H36), and evenkite (C24H48); acetamide (CH3CONH2); and the ring-shaped nickel porphyrin mineral abelsonite, Ni(C31H32N4).
-Burning coal mines also produce molecular crystals through sublimation, including kladnoite [C6H4(CO)2NH] and hoelite (C14H8O2; ).
+Burning coal mines also produce molecular crystals through sublimation, including kladnoite [C6H4(CO)2NH] and hoelite (C14H8O2; Jehlička et al.
+2007).
 Other molecular crystals are unique to fossilized wood [flagstaffite (C10H22O3)]; roots [refikite (C20H32O2)]; or bat guano deposits in caves, for example the purines uricite (C5H4N4O3) and guanine (C5H5N5O), and urea [CO(NH2)2].
-It is intriguing to note that average temperatures on Earth are too high for many crystals of small organic molecules to form, including crystalline forms of carbon dioxide (which has been observed near the poles of Mars; ), methane, ethane (C2H6), ethylene (C2H2), and propane (C3H8).
-One can anticipate that these and many other such minerals await discovery in the cold, hydrocarbon-rich near-surface environment of Saturn’s moon Titan, as well as in the form of condensed phases in dense molecular clouds .
+It is intriguing to note that average temperatures on Earth are too high for many crystals of small organic molecules to form, including crystalline forms of carbon dioxide (which has been observed near the poles of Mars; Byrne and Ingersoll 2003), methane, ethane (C2H6), ethylene (C2H2), and propane (C3H8).
+One can anticipate that these and many other such minerals await discovery in the cold, hydrocarbon-rich near-surface environment of Saturn’s moon Titan, as well as in the form of condensed phases in dense molecular clouds (Glein 2012).
 Minerals with organic anions.
 Approximately 25 mineral species incorporate organic anions bonded to Ca, Mg, Cu, Na, and other metal cations (Table 7).
 Predominant among these organic salt minerals are more than a dozen oxalates with the (C2O4)2- anion.
 The most common oxalate is weddellite [Ca(C2O4).2H2O], which is found in such varied environments as bat guano, sediments derived from lichens, human kidney stones, cactus (saguaro, Carnegiea gigantea), and the depths of the Weddell Sea.
 Other oxalates include caoxite [Ca(C2O4).3H2O], glushinskite [Mg(C2O4).2H2O], humboldtine [Fe(C2O4).2H2O], lindbergite [Mn(C2O4).2H2O], natroxalate [Na2(C2O4)], and oxammite [(NH4)2(C2O4).H2O] (the latter a biomineral known exclusively from guano deposits).
 Other organic anions in minerals include formate (HCOO)-1, for example in formicate [Ca(CHOO)2] and dashkovite [Mg(HCOO)2.2H2O]; acetyl (CH3COO)-1 in hoganite [Cu(CH3COO)2.H2O] and calclacite [Ca(CH3COO)Cl.5H2O] (the latter mineral known only from specimens of limestone stored in wooden drawers); methyl sulfonate (CH3SO3)-1 in ernstburkite [Mg(CH3SO3)2.12H2O]; and thiocyanate (SCN)-1 in julienite [Na2Co(SCN)4.8H2O].
-Finally,  describe a Cu2+ succinate monohydrate phase that occurs as a consequence of washing copper mineral specimens with detergents.
+Finally, Rastsvetaeva et al.
+(1996) describe a Cu2+ succinate monohydrate phase that occurs as a consequence of washing copper mineral specimens with detergents.
 Clathrate silicates.
 Clathrates comprise a third as yet poorly described group of minerals containing organic molecules.
 These minerals feature open three-dimensional framework structures that incorporate molecules in cage-like cavities.
-Chibaite and melanophlogite are silica clathrates with open zeolite-like SiO2 frameworks that may contain hydrocarbons from methane to butane (C4H10) as the guest molecule .
+Chibaite and melanophlogite are silica clathrates with open zeolite-like SiO2 frameworks that may contain hydrocarbons from methane to butane (C4H10) as the guest molecule (Skinner and Appleman 1963; Momma et al.
+2011).
 Melanophlogite with CO2 and/or methane as the guest molecule has been found in natrocarbonatite lavas at Oldoinyo Lengai (Carmody thesis 2012).
 Clathrate hydrates.
 Water-based clathrates, also known as gas hydrates or clathrate hydrates, are remarkable crystalline compounds that form at low temperatures (typically < 0ºC) and elevated pressures (> 6 MPa).
-These materials have attracted considerable attention because of their potential for applications to energy storage and recovery applications (   2011).
+These materials have attracted considerable attention because of their potential for applications to energy storage and recovery applications (Max 2003; Boswell 2009; Koh et al.
+2009, 2011).
 Different gas clathrate hydrate structure types have a variety of cage sizes and shapes, which depend primarily on the size and character of the gas molecule.
-The principal documented natural clathrate hydrate mineral is an as yet unnamed methane hydrate commonly known as “methane ice, which crystallizes in marine sediments of the continental shelves or in permafrost zones below a depth of ~130 .
+The principal documented natural clathrate hydrate mineral is an as yet unnamed methane hydrate commonly known as “methane ice, which crystallizes in marine sediments of the continental shelves or in permafrost zones below a depth of ~130 (Hyndman and Davis 1992).
 Methane hydrate is structurally similar to the silica clathrates.
 Its cubic structure (space group Pm3m, a = 12 Å) features a three-dimensional H2O framework with two types of cages partially filled with CH4 molecules: a pentagonal dodecahedron (designated 512, or a cage formed by 12 interconnected 5-member rings of H2O) and a tetrakaidecahedron (designated 51262), each with average radii ~4 Å, each holding one CH4 molecule (Figure 15; [Rotating structure 10]).
-Although the methane content is variable, methane ice holds on average ~0.17 mole of methane per mole of water, corresponding to a density of ~0.9 g/cm3 .
-The geographic distribution of methane hydrate is extensive, with hundreds of confirmed deposits .
-The total methane storage in clathrates was estimated by  as 2 x 1016 m3—a quantity orders of magnitude greater than that represented by all other natural gas reserves.
-Annual natural gas consumption in North America, by comparison, is ~6 x 1011 m3 .
-In fact, the methane stored in clathrate hydrates may exceed the energy represented by known reserves of all other fossil fuels combined .
-In addition to this common phase, Guggenheim and Koster van  and Koster van  have reported the synthesis of a possible new gas-hydrate phase that consists of a clay-methane hydrate intercalate.
-In addition,  have reported additional methane clathrate hydrate phases that occur exclusively at high pressures.
+Although the methane content is variable, methane ice holds on average ~0.17 mole of methane per mole of water, corresponding to a density of ~0.9 g/cm3 (Max 2003).
+The geographic distribution of methane hydrate is extensive, with hundreds of confirmed deposits (Hyndman and Spence 1992; Kvenvolden 1995; Milkov 2004).
+The total methane storage in clathrates was estimated by Allison and Boswell (2007) as 2 x 1016 m3—a quantity orders of magnitude greater than that represented by all other natural gas reserves.
+Annual natural gas consumption in North America, by comparison, is ~6 x 1011 m3 (Boswell 2009).
+In fact, the methane stored in clathrate hydrates may exceed the energy represented by known reserves of all other fossil fuels combined (Kvenvolden 1995; Grace et al.
+2008).
+In addition to this common phase, Guggenheim and Koster van Groos (2003) and Koster van Groos and Guggenheim (2009) have reported the synthesis of a possible new gas-hydrate phase that consists of a clay-methane hydrate intercalate.
+In addition, Chou et al.
+(2000) have reported additional methane clathrate hydrate phases that occur exclusively at high pressures.
 Mineral-molecule interactions
-Finally, it should be noted that organic molecules often interact strongly with mineral surfaces, especially in aqueous environments .
+Finally, it should be noted that organic molecules often interact strongly with mineral surfaces, especially in aqueous environments (Hazen 2006; Jonsson et al.
+2009; Bahri et al.
+2011; Cleaves et al.
+2011).
 Such interactions of organic species with mineral surfaces have received special attention for at least two reasons related to the biosphere.
-First, a number of minerals have been invoked as possibly playing key roles in the origins of life through the selection, concentration, protection, and templating of biomolecules, as well as the possible catalysis of biomolecules (      2006).
-Specific hypotheses focus on the roles of hydroxides , quartz ( 1975; ), feldspars and zeolites , carbonates , phosphates ( 1995; ), borates , phosphides , and sulfides ( 1990, 1993;      2001, 2004; ).
-In this regard, clay minerals have received special attention for their potential ability to template and catalyze the polymerization of amino acids and nucleotides as steps in the origins of life ( 2005;     ).
-A second possible influence of mineral-molecule interactions on the biosphere also invokes clay minerals, which might have contributed significantly to the rise of atmospheric oxygen through the adsorption, concentration, and subsequent burial of significant amounts of organic matter from the terrestrial environment .
-This process of organic burial is one of the most efficient mechanisms for atmospheric oxidation .
+First, a number of minerals have been invoked as possibly playing key roles in the origins of life through the selection, concentration, protection, and templating of biomolecules, as well as the possible catalysis of biomolecules (Bernal 1951; Goldschmidt 1952; Orgel 1998; Lahav 1999; Schoonen et al.
+2004; Hazen 2005, 2006).
+Specific hypotheses focus on the roles of hydroxides (Holm et al.
+1993; Pitsch et al.
+1995; Hill et al.
+1998), quartz (Bonner et al.
+1974, 1975; Evgenii and Wolfram 2000), feldspars and zeolites (Smith 1998; Parsons et al.
+1998; Smith et al.
+1999), carbonates (Hazen et al.
+2001), phosphates (Weber 1982, 1995; Acevedo and Orgel 1986), borates (Ricardo et al.
+2004; Grew et al.
+2011), phosphides (Pasek et al.
+2007), and sulfides (Wächtershäuser 1988, 1990, 1993; Russell et al.
+1994; Russell and Hall 1997; Huber and Wächtershäuser 1998; Bebié and Schoonen 2000; Cody et al.
+2000, 2001, 2004; Cody 2004).
+In this regard, clay minerals have received special attention for their potential ability to template and catalyze the polymerization of amino acids and nucleotides as steps in the origins of life (Cairns-Smith 1982, 2005; Cairns-Smith and Hartman 1986; Ferris et al.
+1996; Ertem and Ferris 1996; Orgel 1998; Ferris 2005).
+A second possible influence of mineral-molecule interactions on the biosphere also invokes clay minerals, which might have contributed significantly to the rise of atmospheric oxygen through the adsorption, concentration, and subsequent burial of significant amounts of organic matter from the terrestrial environment (Kennedy et al.
+2006).
+This process of organic burial is one of the most efficient mechanisms for atmospheric oxidation (Berner et al 2000; Hayes and Waldbauer 2006; Hazen et al.
+2013).
 CONCLUSIONS: UNRESOLVED QUESTIONS IN CARBON MINERALOGY
 More than two centuries of mineralogical research have revealed much regarding the varied C-bearing mineral phases in Earth’s near-surface environment.
 Nevertheless, much remains to be learned.
@@ -310,48 +459,48 @@ No other crystalline phase exhibits such a wide range of morphologies.
 What environmental factors influence calcite crystal forms?
 And why don’t other rhombohedral carbonates display a similar variety?
 Studies of minerals that incorporate organic molecules are in their infancy, and numerous other phases at the interface between the crystalline and biological worlds are likely awaiting discovery.
-Characterization of such phases may prove especially important in resolving debates regarding abiotic versus biotic origins of some deep organic molecules .
+Characterization of such phases may prove especially important in resolving debates regarding abiotic versus biotic origins of some deep organic molecules (Sephton and Hazen 2013; McCollom 2013).
 Furthermore, organic mineralogy may play a dominant role on Titan, as well as planets and moons in other C-rich star systems.
 Indeed, carbon mineralogy may provide one of the most sensitive geological indicators of the evolution and present state of other worlds.
  [Rotating structure 1] Graphite.
-(A) The graphite  (native C) crystal structure (hexagonal, space group P63/mmc; a = 2.464 Å; c = 6.736 Å; Z = 4) incorporates monoatomic layers of 3-coordinated carbon, linked by van der Waals interactions.
-(B) Natural graphite crystals reflect the hexagonal crystal structure.
+The graphite  (native C) crystal structure (hexagonal, space group P63/mmc; a = 2.464 Å; c = 6.736 Å; Z = 4) incorporates monoatomic layers of 3-coordinated carbon, linked by van der Waals interactions.
+Natural graphite crystals reflect the hexagonal crystal structure.
 This 1 mm diameter crystal displays basal pinacoid and prism faces.
 The crystal, associated with calcite, is from the Crestmore quarries, Riverside Co., California.
 Photo courtesy of John A. Jaszczak.
- [Rotating structure 2] (A) The diamond  (native C) crystal structure (cubic, space group Fd3m; a = 3.560 Å; Z = 8) features a framework of tetrahedrally coordinated carbon atoms.
-(B) A natural diamond crystal reflects the cubic crystal structure.
+ [Rotating structure 2]  The diamond  (native C) crystal structure (cubic, space group Fd3m; a = 3.560 Å; Z = 8) features a framework of tetrahedrally coordinated carbon atoms.
+A natural diamond crystal reflects the cubic crystal structure.
 The semi-translucent diamond cube (ref.
 no.
 S014632) is 24.3 x 21.8 x 21.7 millimeters in size and weighs 156.381 carats (31.3 gm) and is shown with a 1-carat diamond for scale.
 It is represented to be from Ghana.
 Photo courtesy of Harold and Erica Van Pelt.
  [Rotating structure 3] The lonsdaleite (native C) crystal structure (hexagonal, space group P63/mmc; a = 2.52 Å; c = 4.12 Å; Z = 4)
- The carbon phase diagram (after ).
+ The carbon phase diagram (after Hazen 1999).
  [Rotating structure 4] The moissanite (SiC) crystal structure (hexagonal, space group P63mc; a = 3.081 Å; c = 5.031 Å; Z = 2).
 Carbon and silicon atoms appear in blue and grey, respectively.
  [Rotating structure 5] The structure of the iron carbide cohenite [(Fe,Ni,Co)3C] (orthorhombic, space group Pbnm; a = 4.518 Å, b = 5.069 Å; c = 6.736 Å; Z = 4).
 Carbon and iron atoms appear in blue and gold, respectively.
  The diversity of carbonate minerals.
-(A) Rhodochrosite (to come); (B) Ankerite [CaFe2+(CO3)2] from Brownley Hill mine, Nenthead, Cumbria, England showing the typical curved saddle-shaped rhombohedral crystals.
-Photo courtesy of the RRUFF project; (C) Artinite [Mg2CO3(OH)2·3H2O], divergent sprays of clear colorless acicular crystals from San Benito County, California, USA.
-Photo courtesy of the RRUFF project; (D) Aurichalcite [Zn5(CO3)2(OH)6], divergent sprays of light blue lathlike crystals from Bisbee, Cochise County, Arizona, USA, Photo courtesy of the RRUFF project; (E) Hydromagnesite [Mg5(CO3)4(OH)2·4H2O], colorless bladed crystals from Paradise Range, Nye County, Nevada, USA, Photo courtesy of the RRUFF project; (F) [Jouravskite, Ca3Mn4+(SO4)(CO3)(OH)6·12H2O], yellow hexagonal prism associated with calcite from the Wessels mine, Kurumen, Kalahari Manganese fields, Cape Province, South Africa, Photo courtesy of the RRUFF project; (G) Stichtite [Mg6Cr2CO3(OH)16·4H2O], an aggregate of contorted purple plates from Dundas, Tasmania, Australia, Photo courtesy of the RRUFF project; (H) Zaratite [Ni3CO3(OH)4·4H2O], green amorphous crust, intimately associated with népouite from Lord Brassy mine, Tasmania, Australia, Photo courtesy of the RRUFF project.
+Rhodochrosite (to come);  Ankerite [CaFe2+(CO3)2] from Brownley Hill mine, Nenthead, Cumbria, England showing the typical curved saddle-shaped rhombohedral crystals.
+Photo courtesy of the RRUFF project;  Artinite [Mg2CO3(OH)2·3H2O], divergent sprays of clear colorless acicular crystals from San Benito County, California, USA.
+Photo courtesy of the RRUFF project;  Aurichalcite [Zn5(CO3)2(OH)6], divergent sprays of light blue lathlike crystals from Bisbee, Cochise County, Arizona, USA, Photo courtesy of the RRUFF project;  Hydromagnesite [Mg5(CO3)4(OH)2·4H2O], colorless bladed crystals from Paradise Range, Nye County, Nevada, USA, Photo courtesy of the RRUFF project;  [Jouravskite, Ca3Mn4+(SO4)(CO3)(OH)6·12H2O], yellow hexagonal prism associated with calcite from the Wessels mine, Kurumen, Kalahari Manganese fields, Cape Province, South Africa, Photo courtesy of the RRUFF project;  Stichtite [Mg6Cr2CO3(OH)16·4H2O], an aggregate of contorted purple plates from Dundas, Tasmania, Australia, Photo courtesy of the RRUFF project;  Zaratite [Ni3CO3(OH)4·4H2O], green amorphous crust, intimately associated with népouite from Lord Brassy mine, Tasmania, Australia, Photo courtesy of the RRUFF project.
  [Rotating structure 6]  The structure of calcite (CaCO3) (rhombohedral; space group R{bar3}c; hexagonal setting a = 4.989 Å; c = 17.061 Å; Z = 6; rhombohedral setting a = 6.375; α = 46.1°; Z = 2).
 Blue spheres are carbon atoms, with light green CaO6 octahedra.
  Crystal forms of natural calcite.
-(A) Rhombohedral cleavage fragment of optical grade material from near Presidio, Texas, USA, University of Arizona Mineral 4  (B) Scalenohedrons collected in the early 1800’s from the Bigrigg mine, Cumbria, England.
-Bob Downs specimen; (C) Hexagonal prisms with rhombohedral terminations from Joplin, Missouri, USA 5; (D) Herringbone growths of acicular crystals from the Southwest mine, Bisbee, Arizona, USA,  (E) Hexagonal prisms with pyrite centers from Charcas, San Luis Potosi, Mexico,  (F) Stalactite globules from Southwest mine, Bisbee, Arizona, USA,  (G) Aggregate of bladed crystals from the Onyx cave, Santa Rita Mts, Arizona, USA,  (H) Hexagonal prisms with pyramidal terminations from thje Camp Bird mine, Imogene Basin, Ouray County, Colorado, USA, .
+Rhombohedral cleavage fragment of optical grade material from near Presidio, Texas, USA, University of Arizona Mineral Museum 16674   Scalenohedrons collected in the early 1800’s from the Bigrigg mine, Cumbria, England.
+Bob Downs specimen;  Hexagonal prisms with rhombohedral terminations from Joplin, Missouri, USA UAMM 16545;  Herringbone growths of acicular crystals from the Southwest mine, Bisbee, Arizona, USA, UAMM 9499;  Hexagonal prisms with pyrite centers from Charcas, San Luis Potosi, Mexico, UAMM 1214;  Stalactite globules from Southwest mine, Bisbee, Arizona, USA, UAMM 9499;  Aggregate of bladed crystals from the Onyx cave, Santa Rita Mts, Arizona, USA, UAMM 5503;  Hexagonal prisms with pyramidal terminations from thje Camp Bird mine, Imogene Basin, Ouray County, Colorado, USA, UAMM 6703.
 All photographs by Alesha Siegal, University of Arizona.
  [Rotating structure 7]  Dolomite.
-(A) The structure of dolomite [MgCa(CO3)2] (rhombohedral; space group R{bar3}; hexagonal setting a = 4.807 Å; c = 16.00 Å; Z = 3; rhombohedral setting a = 6.015, α = 47.1°; Z = 1).
+The structure of dolomite [MgCa(CO3)2] (rhombohedral; space group R{bar3}; hexagonal setting a = 4.807 Å; c = 16.00 Å; Z = 3; rhombohedral setting a = 6.015, α = 47.1°; Z = 1).
 Blue spheres are carbon atoms, with light green CaO6 octahedra and dark green MgO6 octahedra.
-(B) Dolomite crystals reflect their rhombohedral crystal structure.
+Dolomite crystals reflect their rhombohedral crystal structure.
   [Animated figure] The rigid body librating CO32- unit of the calcite and dolomite mineral groups.
 Blue and red ellipsoids represent carbon and oxygen atoms, respectively.
  [Rotating structure 8]  Aragonite Group.
-(A) The structure of aragonite (CaCO3) (orthorhombic; space group Pmcn; a = 4.960 Å; b = 7.964 Å; c = 5.738 Å; Z = 4).
+The structure of aragonite (CaCO3) (orthorhombic; space group Pmcn; a = 4.960 Å; b = 7.964 Å; c = 5.738 Å; Z = 4).
 Blue spheres are carbon atoms, whereas green polyhedral are CaO9 groups.
-(B) The orthorhombic structure of aragonite is manifest in its common crystal form.
+The orthorhombic structure of aragonite is manifest in its common crystal form.
  [Rotating structure 9] The crystal structure of vaterite (CaCO3).
 (hexagonal, space group P63/mmc; a = 7.135 Å; c = 16.98 Å; Z = 16).
 Blue spheres and green polyhedral represent carbon and calcium-oxygen polyhedral, respectively.
@@ -359,8 +508,8 @@ Blue spheres and green polyhedral represent carbon and calcium-oxygen polyhedral
 (hexagonal; space group R32; a = 9.503 Å, c = 7.821 Å; Z = 3).
 The huntite structure is unusual in the trigonal prism coordination of calcium, coupled with octahedral coordination of magnesium.
  [Rotating structure 10] Methane hydrate.
-(A) The structure of methane hydrate [H2O.CH4] (cubic; space group Pm3m; a = 12 Å).
-(B) Methane hydrate burns at room conditions, as the hydrate melts and methane is released.
+The structure of methane hydrate [H2O.CH4] (cubic; space group Pm3m; a = 12 Å).
+Methane hydrate burns at room conditions, as the hydrate melts and methane is released.
  Allotropes of native carbon.
  Natural carbide minerals (data compiled from MinDat.Org locality and species databases).
  Natural carbide locality register, with associated reduced and/or high-P mineral species (data compiled from MinDat.Org locality and species databases).

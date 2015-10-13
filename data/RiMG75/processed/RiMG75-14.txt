@@ -10,16 +10,31 @@ Types of hydrocarbons
 Deep hydrocarbons include a rich diversity of organic chemical compounds in the form of petroleum deposits, including oil and gas in various reservoirs, bitumen in oil sands, coal and clathrate hydrates.
 The major gaseous hydrocarbons are the alkanes methane (natural gas, CH4), ethane (C2H6), propane (C3H8) and butane (C4H10).
 Liquid components of petroleum include a complex mixture primarily of linear and cyclic hydrocarbons from C5 to C17, as well as numerous other molecular species, while solid hydrocarbons include such broad categories of condensed organics as paraffin waxes (typically from C18 to C40).
-In addition, mature coal deposits sometimes hold a suite of unusual pure crystalline hydrocarbon phases and other organic minerals (see ).
+In addition, mature coal deposits sometimes hold a suite of unusual pure crystalline hydrocarbon phases and other organic minerals (see Hazen et al.
+2013).
 Water-based clathrates, also known as gas hydrates or clathrate hydrates, are an important emerging source of deep methane that deserve special notice in the context of deep hydrocarbons.
-These remarkable crystalline water-cage compounds, which form at low temperatures (< 0 ºC) and elevated pressures (> 6 MPa), have potential applications both as a major methane source and as model materials for efficient energy storage (   2011).
-Several clathrate hydrate structure types feature a variety of cage sizes and shapes, depending on the size and shape of the incorporated gas molecule (see ).
-“Methane ice,” by far the dominant natural clathrate hydrate mineral, forms in permafrost zones below a depth of ~130 meters and in marine sediments on the outer continental shelves ( Guggenheim and Koster van  ).
-The extent of methane hydrate is remarkable, with total estimated methane storage of 2 x 1016 m3 .
-Methane ice thus represents a potential energy source that is orders of magnitude greater than the proven traditional natural gas reserves , and which may exceed the energy content of all known fossil fuel reserves .
-It is well established that methane-bearing hydrate clathrates arise from H2O-CH4 fluids subjected to low temperature and high pressure , at which conditions an H2O framework crystallizes around the CH4 template molecules.
-However, the origins of the methane may be varied and are a continuing subject of debate .
-Subsurface methanogenic microorganisms represent one significant source of methane generated at relatively low temperatures (        see ).
+These remarkable crystalline water-cage compounds, which form at low temperatures (< 0 ºC) and elevated pressures (> 6 MPa), have potential applications both as a major methane source and as model materials for efficient energy storage (Buffett 2000; Boswell 2009; Koh et al.
+2009, 2011).
+Several clathrate hydrate structure types feature a variety of cage sizes and shapes, depending on the size and shape of the incorporated gas molecule (see Hazen et al.
+2013).
+“Methane ice,” by far the dominant natural clathrate hydrate mineral, forms in permafrost zones below a depth of ~130 meters and in marine sediments on the outer continental shelves (Max 2003; Guggenheim and Koster van Groos 2003; Koh et al.
+2011).
+The extent of methane hydrate is remarkable, with total estimated methane storage of 2 x 1016 m3 (Kvenvolden 1995; Milkov 2004).
+Methane ice thus represents a potential energy source that is orders of magnitude greater than the proven traditional natural gas reserves (Allison and Boswell 2007), and which may exceed the energy content of all known fossil fuel reserves (Kvenvolden 1995; Grace et al.
+2008).
+It is well established that methane-bearing hydrate clathrates arise from H2O-CH4 fluids subjected to low temperature and high pressure (Buffett 2000; Hyndman and Davis 1992; Max 2003), at which conditions an H2O framework crystallizes around the CH4 template molecules.
+However, the origins of the methane may be varied and are a continuing subject of debate (Abrajano et al.
+1988; Horita and Berndt 1999; Fu et al.
+2007; Chen et al.
+2008).
+Subsurface methanogenic microorganisms represent one significant source of methane generated at relatively low temperatures (Chapelle et al.
+2002; D’Hondt et al.
+2004; Hinrichs et al.
+2006; Jorgensen and Boetius 2007; Roussel et al.
+2008; Schrenk et al.
+2010; Mason et al.
+2010; Menez et al.
+2012; see Colwell and D’Hondt 2013).
 Thermal cracking of hydrocarbons in petroleum at high temperature followed by migration of the methane to surficial environments is another important contributor to the formation of methane hydrates.
 Whether there are substantial additional abiotic sources from the lower crust and mantle is as yet unresolved (see below).
 Diagenesis and kerogen formation
@@ -27,202 +42,259 @@ The more conventional view of petroleum formation is that it formed when selecte
 Oxygen-poor conditions, produced by exhaustion of local oxygen levels by biomass decay and often sustained by physical barriers to oxygen recharge, are obvious enhancers for fossil organic matter preservation and passage into the geosphere.
 The major organic components in life are large, high molecular weight entities and the most resistant of these units are preserved in sediments, augmented by cross-linking reactions that polymerize and incorporate smaller units into the complex network.
 The high molecular weight sedimentary organic matter is termed kerogen from the Greek for “wax former.” It is worth noting that not all of life’s organic matter is reflected in kerogen.
-Even under relatively favourable conditions less that 1% of the starting organism, representing the most resistant chemical constituents, may be preserved .
+Even under relatively favourable conditions less that 1% of the starting organism, representing the most resistant chemical constituents, may be preserved (Demaison and Moore 1980).
 The chemistry of kerogen depends strongly on its contributing organisms and several different types are formed.
 Type I forms from mainly algae, Type II from a mixture of algae and land plants, and Type III primarily from land plants.
 Irrespective of kerogen type, increased temperature and pressure leads to thermal dissociation or “cracking” and produces petroleum.
 Owing to instrinsic chemical constitution, Type I and Type II kerogens are predisposed to generate oil while Type III kerogens produce gas.
 At more extreme temperature and pressures, petroleum can undergo secondary cracking reactions that result in significant quantities of the smallest hydrocarbon molecule, methane.
-Petroleum reservoirs often comprise porous and permeable sedimentary rock .
+Petroleum reservoirs often comprise porous and permeable sedimentary rock (Selley 1985).
 Under such conditions at Earth’s surface organic matter is normally destroyed, so it follows that petroleum must have been introduced into the reservoir from elsewhere.
 The passage of petroleum from source rock to reservoir, driven largely by buoyancy, is termed migration.
 Oil, gas, and water are stratified in reservoirs based on density, indicating that the fluids have travelled vertically.
 For vertical migration to be arrested the reservoir must be capped by an impermeable seal.
 ABIOTIC ORIGINS OF DEEP HYDROCARBONS
 Deep gas theories
-The hypothesis that at least some components of petroleum have a deep abiotic origin in the lower crust or mantle has a long history, with influential support and elaboration by Russian chemist and mineralogist Dimitri Mendelev  and astronomer and mathematician Fred Hoyle .
+The hypothesis that at least some components of petroleum have a deep abiotic origin in the lower crust or mantle has a long history, with influential support and elaboration by Russian chemist and mineralogist Dimitri Mendelev (Mendeleev 1877) and astronomer and mathematician Fred Hoyle (Hoyle 1955).
 The deep-Earth gas hypothesis proposes that abiogenic methane reflects a cosmic organic inheritance that is subsequently released by the mantle and migrates towards the surface utilizing weaknesses in the crust such as plate boundaries, faults, and sites of meteorite impacts.
 The deep sourced methane polymerizes en route to higher molecular weight hydrocarbons that ultimately form petroleum deposits.
-Members of the so-called “Russian-Ukrainian School” pursued this model with theory, experiments, and field observations .
+Members of the so-called “Russian-Ukrainian School” pursued this model with theory, experiments, and field observations (Kudyratsev 1951; Kenny 1996; Glasby 2006; Safronov 2009).
 Superficial support for this theory is provided by the increase in abundance of methane with depth in petroleum-containing basins.
 However, it is known that the higher temperatures associated with greater depths in Earth’s subsurface promotes the cracking of high molecular weight hydrocarbons to produce lower molecular weight units, the ultimate product of which is methane.
 Hence, enhanced methane concentrations with depth are most effectively explained as an organic response to the geothermal gradient rather than closer proximity to a mantle source of methane.
-Yet the position that petroleum is primarily abiotic in origin is still held by some advocates .
+Yet the position that petroleum is primarily abiotic in origin is still held by some advocates (Gold 1992; Kenney et al.
+2001).
 The theory, however, is not completely without merit and mounting evidence points to facile and potentially widespread abiotic synthesis of methane, and possibly some higher hydrocarbons, under specific geochemical conditions.
 Major issues exist however, over the scientific rigor of popularized deep gas concepts and the quantitative importance of the underlying processes to the world’s hydrocarbon resources.
 Thomas Gold and the “Deep Hot Biosphere”
 Early 20th-century research of the Russian-Ukrainian School, though extensive, was published in Russian and until the 1990s was largely ignored in the West.
-The abiotic petroleum hypothesis first gained significant exposure outside the Soviet Union during the 1977 gasoline crisis, when Cornell astrophysicist Thomas (Tommy) Gold published an editorial in the Wall Street Journal  in which he claimed that most deep hydrocarbons are generated abiotically in the mantle and migrate to the crust, where they act as an energy source for microbes producing a deep microbial ecosystem—the “Deep Hot Biosphere”— that may rival the surface biosphere in mass and volume.
-The organic remains of microbes in the deep hot biosphere represent the source of biological molecules in petroleum as a biological overprint onto an abiogenic organic mixture ( 1982;  1999; see ).
+The abiotic petroleum hypothesis first gained significant exposure outside the Soviet Union during the 1977 gasoline crisis, when Cornell astrophysicist Thomas (Tommy) Gold published an editorial in the Wall Street Journal (Gold 1977) in which he claimed that most deep hydrocarbons are generated abiotically in the mantle and migrate to the crust, where they act as an energy source for microbes producing a deep microbial ecosystem—the “Deep Hot Biosphere”— that may rival the surface biosphere in mass and volume.
+The organic remains of microbes in the deep hot biosphere represent the source of biological molecules in petroleum as a biological overprint onto an abiogenic organic mixture (Gold and Soter 1980, 1982; Gold 1992, 1999; see Hazen 2005).
 The proposal contains an implicit concession that the biological molecules in petroleum cannot be generated by polymerization of methane.
 Echoing some of the previous arguments of the Russian-Ukrainian School, Gold presented several lines of evidence for abiotic petroleum, including (1) the presence of clearly abiotic hydrocarbons and other organic molecules in meteorites and on other solar system bodies; (2) plausible synthetic pathways for mantle hydrocarbon production; (3) the association of hydrocarbon deposits with helium and other trace gases, presumably from mantle sources; (4) the existence of extensive deep microbial communities that impart an overprint of biomarkers onto the abiotic petroleum; (5) the tendency of hydrocarbon reservoirs to occur at many depths in a single locality, implying an underlying deep source; (6) the distribution of hydrocarbon deposits related to underlying mantle structures; (7) the distribution of metals and other trace elements in petroleum, which correlate more strongly with chondrite compositions than presumed crustal sources; and (8) the occurrence of hydrocarbons in non-sedimentary formations such as crystalline rocks.
 Evidence for abiotic hydrocarbon synthesis
-While compelling evidence for the abiotic synthesis of petroleum is lacking, there is unambiguous experimental, theoretical, and field evidence for deep abiotic origins of some hydrocarbons .
+While compelling evidence for the abiotic synthesis of petroleum is lacking, there is unambiguous experimental, theoretical, and field evidence for deep abiotic origins of some hydrocarbons (McCollom 2013).
 Abiotic hydrocarbons in space: Carbon is the fourth most abundant element in the Cosmos and remote observations indicate that the Universe is replete with organic compounds produced without the influence of biology.
-Studies of the absorption spectra of dense molecular clouds reveal more than 150 small molecules .
+Studies of the absorption spectra of dense molecular clouds reveal more than 150 small molecules (Ehrenfreund and Charnley 2000; Kwok 2009).
 The greatest amounts of hydrocarbons in our solar system are associated with the gas giant planets and their satellites, where significant amounts are present in atmospheres and on icy surfaces.
 The prevalence of non-biological hydrocarbons in the early stages of our solar system is evidenced by the chemistry of carbonaceous meteorites, which represent fragments of ancient asteroids, unchanged since shortly after the birth of the solar system.
-Carbonaceous meteorites contain percentage levels of organic matter that were generated in the absence of biology .
+Carbonaceous meteorites contain percentage levels of organic matter that were generated in the absence of biology (Sephton 2002).
 The widespread presence of organic matter in the Cosmos suggests that no exotic mechanism therefore need be invoked to propose abiogenic hydrocarbons on Earth.
 In fact the biogenic origin of some hydrocarbons on Earth is, thus far, a unique observation in a hydrocarbon-rich Universe.
 In contrast to our Cosmic environment, organic matter on Earth is associated primarily with biological processes.
 The distinction between biological and non-biological organic matter has held a long-term fascination for scientists and philosophers.
-For instance, all ancient mythologies invoke divine intervention and the use of some abstract vital force for the production of the organic compounds which constitute life .
+For instance, all ancient mythologies invoke divine intervention and the use of some abstract vital force for the production of the organic compounds which constitute life (Fry 2000).
 Following the 7th and 6th centuries BC, such vitalist theories were often challenged by more materialistic concepts that assumed only differences in levels of organization between living and non-living entities.
-A key moment for materialism came in 1828, when Friedrich Wöhler produced the organic chemical urea CO(NH2)2 from inorganic ammonium cyanate (NH4CNO), using a procedure now called the Wöhler synthesis .
-The generation of an organic compound from inorganic material reflects the ability of non-biological processes to produce organic materials and it is an unavoidable conclusion that the origin of life on Earth was by definition a process of abiotic organic synthesis, e.g., .
-In general, organic compounds generated by abiotic reactions such as those that produced meteoritic organic matter are characterized by complete structural diversity; biological organic compounds produced by synthetic reactions directed by enzymes are notably specific in structure .
+A key moment for materialism came in 1828, when Friedrich Wöhler produced the organic chemical urea CO(NH2)2 from inorganic ammonium cyanate (NH4CNO), using a procedure now called the Wöhler synthesis (Wöhler 1828).
+The generation of an organic compound from inorganic material reflects the ability of non-biological processes to produce organic materials and it is an unavoidable conclusion that the origin of life on Earth was by definition a process of abiotic organic synthesis, e.g., (Lahav 1999; Wills and Bada 2000; Hazen 2005).
+In general, organic compounds generated by abiotic reactions such as those that produced meteoritic organic matter are characterized by complete structural diversity; biological organic compounds produced by synthetic reactions directed by enzymes are notably specific in structure (Sephton and Botta 2005).
 Organic compounds in petroleum, by contrast, contain numerous structures in abundances that could not be produced by the random polymerization from methane.
 Experimental hydrocarbon synthesis: Hydrocarbon synthesis is achievable under laboratory conditions and in shallow geological environments and several key reactions are notable.
-1) The Fischer-Tropsch synthesis  involves the conversion of carbon monoxide or carbon dioxide to hydrocarbons:
+1) The Fischer-Tropsch synthesis (Fischer and Tropsch 1926) involves the conversion of carbon monoxide or carbon dioxide to hydrocarbons:
 nCO+ (2n + 1)H2 à CnH2n+2 +  nH2O
 nCO2 + (3n + 1)H2 à  CnH2n+2 +  2nH2O
-The products of the Fischer-Tropsch synthesis are low molecular weight hydrocarbons and often form a Schulz-Flory distribution, where the log of the hydrocarbon concentration decreases linearly with increasing carbon numbers .
-The Fischer-Tropsch process has been proposed as a generator of hydrocarbons in hydrothermal vent settings .
-2) Simple thermal metamorphism of carbonates such as calcite (CaCO3), dolomite [CaMg(CO3)2], and siderite (FeCO3) at 400°C in the presence of H2 can produce low molecular weight hydrocarbons .
+The products of the Fischer-Tropsch synthesis are low molecular weight hydrocarbons and often form a Schulz-Flory distribution, where the log of the hydrocarbon concentration decreases linearly with increasing carbon numbers (Salvi and Williams-Jones 1997).
+The Fischer-Tropsch process has been proposed as a generator of hydrocarbons in hydrothermal vent settings (Horita and Berndt 1999; Foustoukos and Seyfried 2004; McCollom and Seewald 2006; Proskurowski et al.
+2008).
+2) Simple thermal metamorphism of carbonates such as calcite (CaCO3), dolomite [CaMg(CO3)2], and siderite (FeCO3) at 400°C in the presence of H2 can produce low molecular weight hydrocarbons (Giardini and Salotti 1969).
 FeO +  CaCO3 + H2O à Fe3O4 + CH4 + CaO
-3) Thermal metamorphism of carbonates and graphite below 300-400°C may generate methane .
+3) Thermal metamorphism of carbonates and graphite below 300-400°C may generate methane (Holloway 1984).
 Mg3Si4O10(OH)2 + CaCO3 + Cgraphite + H2O à  CaMg(CO3)2 + SiO2 + CH4
-4) Methane is common at mid-ocean ridges and serpentinization reactions are implicated (   2005).
-Hydrogen forms during the hydration of olivine and can combine with carbon dioxide to form methane .
+4) Methane is common at mid-ocean ridges and serpentinization reactions are implicated (McCollom and Seewald 2001; Charlou et al.
+2002; Kelley et al.
+2001, 2005).
+Hydrogen forms during the hydration of olivine and can combine with carbon dioxide to form methane (Abrajano et al.
+1990).
 (Fe,Mg)2SiO4 + H2O  + CO2 à Mg3Si2O5(OH)4 + Fe3O4 + CH4
 In addition, for those reactions that proceed under conditions relevant to Earth’s near-surface, the influence of pressure may be an important factor for synthesis.
 This environmental control is especially pertinent to the theories of deep gas and a number of experimental studies at elevated temperatures and pressures relevant to deep crust and mantle conditions point to the possibility of deep abiotic hydrocarbon synthesis.
-1) The generation of petroleum hydrocarbons up to C10H22 was demonstrated using solid iron oxide, marble and water at temperatures of 1,500 °C and pressures above 3 GPa, corresponding to a depth of more than 100 km .
-2) A heated diamond-anvil cell has been employed to explore the calcite-iron oxide-water system at mantle pressures and temperatures .
+1) The generation of petroleum hydrocarbons up to C10H22 was demonstrated using solid iron oxide, marble and water at temperatures of 1,500 °C and pressures above 3 GPa, corresponding to a depth of more than 100 km (Kenney et al.
+2002; Kutcherov et al.
+2002).
+2) A heated diamond-anvil cell has been employed to explore the calcite-iron oxide-water system at mantle pressures and temperatures (Scott et al.
+2004).
 Based on Raman spectroscopic and x-ray diffraction evidence, they successfully synthesized methane and possibly other light hydrocarbon species through the reaction:
 CaCO3 + FeO + H2O à CH4 + CaO + Fe3O4
 However, the lack of a redox buffer, coupled with the significant thermal gradients inherent in the diamond cell experiment, raise questions regarding the relevance of this experiment to any plausible mantle environment.
-Additional experiments on methane production from calcite and iron oxide may help to clarify the relevance of this reaction .
-3) Pressures above 2 GPa and temperatures from 1000-1500 K appear to induce polymerization of methane to hydrocarbons (ethane, propane, and butane), molecular hydrogen, and graphite; the reaction is reversible under these conditions .
+Additional experiments on methane production from calcite and iron oxide may help to clarify the relevance of this reaction (Chen et al.
+2008).
+3) Pressures above 2 GPa and temperatures from 1000-1500 K appear to induce polymerization of methane to hydrocarbons (ethane, propane, and butane), molecular hydrogen, and graphite; the reaction is reversible under these conditions (Kolesnikov et al.
+2009).
 Although elegant and efficient reactions exist that can produce substantial amounts of hydrocarbons from simple precursors in the absence of biology, care must be taken when extrapolating data to natural settings.
 Convincing evidence must be found that the production mechanism is contributing.
-Lessons can be learned from meteoritic organic matter studies, where the attractive Fischer-Tropsch mechanism was supported even though ample evidence was available that this reaction was not contributing quantitatively significant amounts of material to the organic inventory .
-Hydrocarbons in minerals: Evidence has been presented for organic “protomolecule assembly” in igneous rocks .
+Lessons can be learned from meteoritic organic matter studies, where the attractive Fischer-Tropsch mechanism was supported even though ample evidence was available that this reaction was not contributing quantitatively significant amounts of material to the organic inventory (Sephton et al.
+2001).
+Hydrocarbons in minerals: Evidence has been presented for organic “protomolecule assembly” in igneous rocks (Freund et al., 2001).
 According to Freund’s hypothesis, igneous melts inevitably incorporate carbon and other impurities at high temperatures.
 As minerals crystallize, they also incorporate a small amount of carbon, which concentrates along linear crystal defects and form alkanes.
-However, these results have been challenged by other workers (  see also  ).
-Abiotic hydrocarbons from hydrothermal vents: A number of authors have presented experimental, theoretical, and field evidence for the possible release of abiotic hydrocarbon species from hydrothermal vents ( see ).
-Hydrocarbons have been collected from numerous field sites (    2006;     ).
+However, these results have been challenged by other workers (Keppler et al.
+2003; Shcheka et al.
+2006; see also Hazen 2005; Ni and Keppler 2013).
+Abiotic hydrocarbons from hydrothermal vents: A number of authors have presented experimental, theoretical, and field evidence for the possible release of abiotic hydrocarbon species from hydrothermal vents (Simoneit et al.
+2004; see McCollum 2013).
+Hydrocarbons have been collected from numerous field sites (Tingle et al.
+1991; Holm and Charlou 2001; Charlou et al.
+2002; Sherwood-Lollar et al.
+2002, 2006; Simoneit et al.
+2004; Loncke et al.
+2004; Proskurowski et al.
+2008; Konn et al.
+2009; Lang et al.
+2010).
 Observations of gas chemistry, abundance, and fluxes in various vent settings have provided an opportunity to assess quantitatively the relevance of proposed abiotic species to commercial oil and gas resources.
-Mean values of molar CH4/3He in mantle-derived fluids imply that less than 200 ppm of abiotic gas is present in economically relevant reservoirs .
+Mean values of molar CH4/3He in mantle-derived fluids imply that less than 200 ppm of abiotic gas is present in economically relevant reservoirs (Jenden et al.
+1993).
 These field observations of hydrocarbons from hydrothermal systems have been complemented by experimental studies that attempt to replicate natural conditions.
 A number of these experiments have demonstrated abiotic formation of methane and other organic compounds, particularly in studies that mimic serpentinization.
-These experiments underscore the importance of transition elements (i.e., Fe, Ni, Co, Cr, V, and Mn) in the hydrothermal synthesis of organic molecules by Fischer-Tropsch-type reactions (    2006, 2007;  ).
-These results suggest an intriguing connection between mineral-mediated organic synthesis and biological catalysts, many of which incorporate transition metal atoms at their active sites .
+These experiments underscore the importance of transition elements (i.e., Fe, Ni, Co, Cr, V, and Mn) in the hydrothermal synthesis of organic molecules by Fischer-Tropsch-type reactions (Heinen and Lauwers 1996; McCollom et al.
+1999; Seewald 2001; McCollom and Seewald 2001, 2006, 2007; Cody 2004; Foustoukos and Seyfried 2004).
+These results suggest an intriguing connection between mineral-mediated organic synthesis and biological catalysts, many of which incorporate transition metal atoms at their active sites (Adams 1992; Beinert et al.
+1997).
 Biochemical reactions promoted by enzymes that incorporate transition metals may thus represent reaction pathways that have survived and evolved from the prebiotic geochemical world.
 DETERMINING SOURCE—CHEMICAL EVIDENCE
 Pyrolysis experiments
 The concept that petroleum could be generated by the thermal degradation of sedimentary organic matter is supported by centuries of shale utilization and experimentation.
 Shale with high organic carbon contents has been heated to produce oil for lighting since the 19th century, leading to inevitable suggestions that petroleum was formed from an analogous process in the subsurface.
-The hypothesis was confirmed by experiments revealing that substances similar to petroleum can be produced by pyrolysis (thermal decomposition without combustion) of a variety of animal substances .
+The hypothesis was confirmed by experiments revealing that substances similar to petroleum can be produced by pyrolysis (thermal decomposition without combustion) of a variety of animal substances (Engler 1912).
 Modern experiments create conditions that simulate subsurface maturation more closely by heating shale in the presence of water.
-These hydrous pyrolysis experiments generate products from potential source rocks that are physically and chemically similar to natural crude oils .
+These hydrous pyrolysis experiments generate products from potential source rocks that are physically and chemically similar to natural crude oils (Lewan et al.
+1979).
 Molecular biomarkers
 Petroleum contains biomarkers that are the organic chemical remnants of once living organisms.
 The presence of biomarkers is a key indicator for an ultimately biological source of petroleum.
-Recognition of the first biomarker arose from the structural correlation between the biological pigment chlorophyll and its porphyrin degradation products in sediments and petroleum .
-Counter arguments have suggested that biomarkers are either contaminants introduced by microbes in the reservoir or by the solvation of biological structures during the upward migration of hydrocarbons originating from mantle sourced methane .
+Recognition of the first biomarker arose from the structural correlation between the biological pigment chlorophyll and its porphyrin degradation products in sediments and petroleum (Treibs 1934).
+Counter arguments have suggested that biomarkers are either contaminants introduced by microbes in the reservoir or by the solvation of biological structures during the upward migration of hydrocarbons originating from mantle sourced methane (Gold 1985).
 Yet such interpretations fail to account for the maturity information contained in the relative abundance of biomarker isomers.
-The maturity parameter concept relies on the relative instability of biological structures once buried and heated in the subsurface; the biological isomers are progressively transformed to a more geologically stable configuration .
+The maturity parameter concept relies on the relative instability of biological structures once buried and heated in the subsurface; the biological isomers are progressively transformed to a more geologically stable configuration (Mackenzie et al.
+1982).
 Such biomarker maturity parameters in petroleum are consistent with temperatures at which thermal degradation of kerogen would occur; migrating fluids that extract biomarkers from multiple depths would result in mixed maturity signals that do not correspond to the predicted maturity of the putative source rock.
-Moreover, the biomarker inventory in petroleum is not exclusively derived from Bacteria or Archaea that may survive in the subsurface and molecular fossils of surface-living eukaryotes are common, including those from algae (e.g.
-dinosterol from dinoflagellates; ) and land plants (e.g.
-oleanane from angiosperms; ).
+Moreover, the biomarker inventory in petroleum is not exclusively derived from Bacteria or Archaea that may survive in the subsurface and molecular fossils of surface-living eukaryotes are common, including those from algae (e.g. dinosterol from dinoflagellates; Boon et al.
+1979) and land plants (e.g. oleanane from angiosperms; Moldowan et al.
+1994).
 Optical activity: A substance is said to be optically active if it rotates the plane of linearly polarized light.
 For rotation to occur the substance must contain chiral centres in which carbon atoms have four different groups attached.
 Differing arrangements of groups around the chiral carbon can produce mirror images that are non-superimposable.
 Optically pure compounds contain only one isomeric form and rotate plane-polarized light.
 The enzymatically directed synthesis of biological compounds leads to optically pure forms.
 Racemic mixtures contain more than one isomeric form in equal proportions and do not rotate plane-polarized light.
-The random synthesis associated with non-biological reactions typically leads to racemic mixtures, whereas petroleum tends to be optically active , reflecting contributions from preferred isomerical forms derived from biologically mediated reactions, specifically steranes and triterpenoids .
-As may be expected, the optical activity of petroleum increases during biodegradation as the relatively resistant chiral steranes and triterpenoids are concentrated , and negatively correlates with thermal maturity as chiral centres are lost at high temperatures  as the compound mixtures become racemic.
-The detection of optically active compounds in meteorites , which contain non-biological organic matter, has been used as a criticism of the assignment of biology as a source of optically active compounds in petroleum.
-Yet some meteorite observations were subsequently attributed to analytical artefacts ( 1966; ) and more recent analyses on better curated samples implied racemic or near racemic mixtures ( 1971).
-Modern analyses have recognized some isomeric preference but not to the extent seen in biological materials and the observation is limited to certain compound classes, namely the structurally related amino and hydroxyl acids and amino acid precursors ( 2008).
+The random synthesis associated with non-biological reactions typically leads to racemic mixtures, whereas petroleum tends to be optically active (Oakwood et al.
+1952), reflecting contributions from preferred isomerical forms derived from biologically mediated reactions, specifically steranes and triterpenoids (Silverman 1971).
+As may be expected, the optical activity of petroleum increases during biodegradation as the relatively resistant chiral steranes and triterpenoids are concentrated (Winters and Williams 1969), and negatively correlates with thermal maturity as chiral centres are lost at high temperatures (Williams 1974) as the compound mixtures become racemic.
+The detection of optically active compounds in meteorites (Nagy et al.
+1964; Nagy 1966), which contain non-biological organic matter, has been used as a criticism of the assignment of biology as a source of optically active compounds in petroleum.
+Yet some meteorite observations were subsequently attributed to analytical artefacts (Hayatsu 1965, 1966; Meinschein et al.
+1966) and more recent analyses on better curated samples implied racemic or near racemic mixtures (Kvenvolden et al.
+1970, 1971).
+Modern analyses have recognized some isomeric preference but not to the extent seen in biological materials and the observation is limited to certain compound classes, namely the structurally related amino and hydroxyl acids and amino acid precursors (Pizzarello et al.
+2000, 2008).
 Compound-specific studies of carbon isotopes: The carbon atoms that make up the skeleton of hydrocarbons contain two stable isotopes, 12C and 13C.
 The lighter carbon isotope is more reactive than its heavier counterpart and takes part in reactions more readily.
 The preferential incorporation of the lighter carbon isotope in reaction product leads to isotope fractionation and can reveal synthetic mechanisms.
-Abiotic hydrocarbons generally reveal an increase in 12C with carbon number in accord with the kinetically controlled synthesis of higher molecular weight homologues from simpler precursors .
-Such trends are observed for gases released by the freeze thaw disaggregation of meteorites  and by those produced in methane spark discharge experiments .
-By contrast the thermal cracking of high molecular weight biologically-derived hydrocarbons produces the opposite trend where a decrease in 12C with carbon number is observed .
+Abiotic hydrocarbons generally reveal an increase in 12C with carbon number in accord with the kinetically controlled synthesis of higher molecular weight homologues from simpler precursors (Sephton and Gilmour 2001).
+Such trends are observed for gases released by the freeze thaw disaggregation of meteorites (Yuen et al.
+1984) and by those produced in methane spark discharge experiments (DesMarais et al.
+1981).
+By contrast the thermal cracking of high molecular weight biologically-derived hydrocarbons produces the opposite trend where a decrease in 12C with carbon number is observed (DesMarais et al.
+1981).
 Such patterns are common to the thermal cracking products of hydrocarbons in the laboratory and the gases emitted by hydrothermal systems.
-The gases recovered from petroleum reservoirs follow the cracking trend and do not support an origin by methane polymerization .
-The two trends are often proposed as a means of discriminating between gases generated by ultimately abiotic or biotic (followed by thermal degradation) processes and their utility is demonstrated in  Carbon (and hydrogen) isotope ratios for hydrocarbons in the crystalline rocks of the Canadian Shield do imply an abiogenic source from the polymerization of methane, but the distinction between these and commercially relevant petroleum deposits have led the authors to rule out the presence of a globally significant abiogenic source of hydrocarbons .
-The diagnostic potential of the carbon isotope with carbon number trends has been qualified, however, with recognized difficulties arising from gas mixing, diffusion, or oxidation  alongside variable fractionation owing to different reaction pressures ; biodegradation can also induce modifications to the original carbon isotope versus carbon number isotope profile (e.g.
-Figure 1).
-Thermochemical calculations of hydrocarbon stability: Thermodynamic calculations have been used to suggest that only methane and elemental carbon are stable at the relatively shallow depths and lower temperatures and pressures associated with petroleum reservoirs .
+The gases recovered from petroleum reservoirs follow the cracking trend and do not support an origin by methane polymerization (Chung et al.
+1988).
+The two trends are often proposed as a means of discriminating between gases generated by ultimately abiotic or biotic (followed by thermal degradation) processes and their utility is demonstrated in  Carbon (and hydrogen) isotope ratios for hydrocarbons in the crystalline rocks of the Canadian Shield do imply an abiogenic source from the polymerization of methane, but the distinction between these and commercially relevant petroleum deposits have led the authors to rule out the presence of a globally significant abiogenic source of hydrocarbons (Sherwood-Lollar et al.
+2002).
+The diagnostic potential of the carbon isotope with carbon number trends has been qualified, however, with recognized difficulties arising from gas mixing, diffusion, or oxidation (Burruss and Laughrey 2010; Sherwood-Lollar et al.
+2008) alongside variable fractionation owing to different reaction pressures (Wei et al.
+2012); biodegradation can also induce modifications to the original carbon isotope versus carbon number isotope profile (e.g. Prinzhofer et al.
+2012; Figure 1).
+Thermochemical calculations of hydrocarbon stability: Thermodynamic calculations have been used to suggest that only methane and elemental carbon are stable at the relatively shallow depths and lower temperatures and pressures associated with petroleum reservoirs (Kenney et al.
+2002).
 In contrast, depths of 100 km, pressures above 3 GPa, and  temperatures of 900° C have been proposed as conducive to hydrocarbon formation.
 To produce petroleum deposits the products need to be rapidly quenched requiring vertical migration at unlikely speed.
 Thermodynamic equilibrium is not inevitable and biology uses energy from processes such as photosynthesis to constantly maintain organic matter that is in thermodynamic disequilibrium with its environment.
 It is an aliquot of this organic matter, dominated by the lipid components, that survives diagenesis and enters the geosphere to form kerogen.
-Many industrial processes  and experimental studies  have demonstrated how heating rocks rich in kerogens can produce petroleum.
+Many industrial processes (Cook and Sherwood 1991) and experimental studies (Lewan et al.
+1979) have demonstrated how heating rocks rich in kerogens can produce petroleum.
 Helium: The association of helium with hydrocarbons has been used to assess contributions from the mantle.
 Helium is often found in high concentrations in petroleum relative to the host rock.
-There are two significant sources of helium in crustal fluids: 3He is a primordial isotope that was created in the Big Bang and incorporated into Earth as it formed, whereas 4He is produced by radioactive decay of decay of uranium and thorium and is constantly added to Earth’s helium inventory .
+There are two significant sources of helium in crustal fluids: 3He is a primordial isotope that was created in the Big Bang and incorporated into Earth as it formed, whereas 4He is produced by radioactive decay of decay of uranium and thorium and is constantly added to Earth’s helium inventory (Mackintosh and Ballentine 2012).
 Helium isotopes can thus help to discriminate between sources.
-It has been controversially proposed that upwardly migrating hydrocarbons will entrain helium from uranium- and thorium-rich source rocks, resulting in its accumulation in petroleum reservoirs .
-Yet constant 3He/C ratios have been observed at mid-ocean ridges, reflecting mantle values .
-Helium is particularly evident near active fault systems .
+It has been controversially proposed that upwardly migrating hydrocarbons will entrain helium from uranium- and thorium-rich source rocks, resulting in its accumulation in petroleum reservoirs (Gold 1999).
+Yet constant 3He/C ratios have been observed at mid-ocean ridges, reflecting mantle values (Marty et al.
+1989).
+Helium is particularly evident near active fault systems (O'Nions and Oxburgh 1988; Hooker et al.
+1985; Marty et al.
+1992).
 Different 3He/C values in petroleum reservoirs suggest that the main source of economic hydrocarbon accumulations is not the mantle.
-Hence, helium isotope ratios in petroleum reservoirs indicate a predominantly mantle provenance for this noble gas and flux calculations suggest that any associated mantle hydrocarbons would represent a minimal proportion of the total hydrocarbon reservoir (  Ballentine and Sherwood ).
+Hence, helium isotope ratios in petroleum reservoirs indicate a predominantly mantle provenance for this noble gas and flux calculations suggest that any associated mantle hydrocarbons would represent a minimal proportion of the total hydrocarbon reservoir (Jenden et al.
+1993; Ballentine et al.
+1991; Ballentine and Sherwood Lollar 2002).
 DETERMINING SOURCE—GEOLOGIC EVIDENCE
 Association with temperature and source rocks
 Petroleum deposits are associated with areas in which source rocks have been subjected to elevated temperatures in the subsurface.
-This correlation was first recognized by a coal geologist who related the thermal transformation of coal deposits in a region with the appearance of petroleum reservoirs .
+This correlation was first recognized by a coal geologist who related the thermal transformation of coal deposits in a region with the appearance of petroleum reservoirs (Hunt 1853).
 The implication was that organic matter in fine grained rocks would have been heated to similar extents as the coals and petroleum produced.
-Decades of subsequent research have led to the recognition of geochemical fingerprints; petroleum seeping from reservoirs to thermally matured source rocks reveal stable isotope ratios and molecular biomarkers .
-As petroleum leaves the source rock and begins migration it retains a molecular inheritance from the source rock, enabling the two to be correlated .
-Moreover, under thermal stress, the biological configurations of entrained molecules are transferred to more thermally stable forms .
+Decades of subsequent research have led to the recognition of geochemical fingerprints; petroleum seeping from reservoirs to thermally matured source rocks reveal stable isotope ratios and molecular biomarkers (Seifert and Moldowan 1978).
+As petroleum leaves the source rock and begins migration it retains a molecular inheritance from the source rock, enabling the two to be correlated (Peters et al.
+2005).
+Moreover, under thermal stress, the biological configurations of entrained molecules are transferred to more thermally stable forms (Mackenzie et al.
+1982).
 The progress of transformation from biological to geological isomers can be monitored and correlated to temperature.
 Such maturity parameters indicate that oil can be related to source rocks that have achieved temperatures above 60 °C.
-Exploration in places where geochemical data points to a mature source rock down-dip of the target area provides the greatest chance of success .
-Faults and plate margins: A consequence of the abiogenic theory of hydrocarbon formation would be an association of petroleum deposits with the putative conduits for upward migration, namely convergent plate margins and major fault zones .
+Exploration in places where geochemical data points to a mature source rock down-dip of the target area provides the greatest chance of success (Demaison 1984).
+Faults and plate margins: A consequence of the abiogenic theory of hydrocarbon formation would be an association of petroleum deposits with the putative conduits for upward migration, namely convergent plate margins and major fault zones (Gold and Soter 1980).
 Where petroleum is present at plate boundaries however its presence can be attributed to other factors.
-In particular, plate boundaries are associated with high geothermal gradients that enhance the formation, migration, and entrapment of oil and gas .
+In particular, plate boundaries are associated with high geothermal gradients that enhance the formation, migration, and entrapment of oil and gas (Klemme 1975).
 Crystalline rock reservoirs: The association of hydrocarbons with igneous rocks has been taken as prima facie evidence for abiogenic synthesis.
-A number reservoirs are situated in igneous rocks and, although most are relatively small, some giant fields (recoverable reserves > 500 million barrels of oil equivalent) do exist .
-Yet the location of petroleum within igneous rocks is only circumstantial evidence because fluids can migrate over great distances .
+A number reservoirs are situated in igneous rocks and, although most are relatively small, some giant fields (recoverable reserves > 500 million barrels of oil equivalent) do exist (Schutter 2003).
+Yet the location of petroleum within igneous rocks is only circumstantial evidence because fluids can migrate over great distances (Bredehoeft and Norton 1990).
 Fundamentally, the accumulation of migrated petroleum in igneous rocks only requires the necessary porosity permeability.
-Although pore spaces are not normally associated with igneous rocks, there are many ways to develop porosity and permeability and in some cases, they may be more porous and permeable than the adjacent sediments .
+Although pore spaces are not normally associated with igneous rocks, there are many ways to develop porosity and permeability and in some cases, they may be more porous and permeable than the adjacent sediments (Schutter 2003).
 For instance, igneous rocks may have primary porosity, such as that associated with extrusive rocks.
 Igneous rocks may also develop secondary porosity from retrograde metamorphism or alteration by hydrothermal activity and fracturing as the rocks are cooled or weathered.
 Porosity in igneous rocks is remarkably robust and once produced resists compaction relatively well compared to sedimentary rock.
 When crystalline rock reservoirs are considered in a global context, it becomes clear that they represent less than 1% of the world’s petroleum deposits.
-The remaining 99% points to an overwhelming correlation of petroleum with sedimentary rocks, indicating a likely origin from sedimentary organic matter .
+The remaining 99% points to an overwhelming correlation of petroleum with sedimentary rocks, indicating a likely origin from sedimentary organic matter (Ulmishek and Klemme 1991).
 Perhaps the most celebrated example of a crystalline rock reservoir is the Siljin Ring Complex of Sweden, a 368 Ma meteorite impact site that features fractured granite county rock with hydrocarbon veins and methane seeps.
-to 1992, Gold convinced the Swedish State Power Board to drill two exploratory wells in the granite—a 7-year, $40 million project that yielded a small, though tantalizing quantity of oil-like hydrocarbons.
-Proponents of deep abiotic origins for petroleum were convinced that these results vindicated the hypothesis .
-Others disagreed and pointed to the extensive quantities of drilling oils and nearby sedimentary formations as the source of the recovered hydrocarbons, while many disappointed Swedish investors saw the project as a failure .
+From 1986 to 1992, Gold convinced the Swedish State Power Board to drill two exploratory wells in the granite—a 7-year, $40 million project that yielded a small, though tantalizing quantity of oil-like hydrocarbons.
+Proponents of deep abiotic origins for petroleum were convinced that these results vindicated the hypothesis (Gold 1999).
+Others disagreed and pointed to the extensive quantities of drilling oils and nearby sedimentary formations as the source of the recovered hydrocarbons, while many disappointed Swedish investors saw the project as a failure (Brown 1999; Hazen 2005).
 Additional evidence my result from renewed drilling in the late 2000s.
 Mantle oxidation state: For abiogenic hydrocarbons to be produced from the mantle, conditions must be reducing to prevent the oxidation of hydrogen-rich organic compounds such as methane.
 It has been suggested that the compositions of ultrabasic rocks, meteorites, comets, and planets indicate that Earth’s mantle should be sufficiently reducing in nature.
 The presence of reducing agents such as hydrogen and metallic iron-nickel would enable the production and survival of hydrocarbons such as methane.
 Yet data suggest that Earth’s upper mantle is too oxidized to allow the persistence of more than small amounts of methane or hydrogen.
-Within surface geological features that communicate with the mantle, mid-ocean ridges tend to be relatively reduced compared to subduction zones , but the dominant gases observed are carbon dioxide and water.
-Major forms of carbon in the upper mantle are diamonds and carbonate  and methane is a minor constituent in fluid inclusions from the upper mantle ( Apps and van der ).
+Within surface geological features that communicate with the mantle, mid-ocean ridges tend to be relatively reduced compared to subduction zones (Wood et al.
+1990), but the dominant gases observed are carbon dioxide and water.
+Major forms of carbon in the upper mantle are diamonds and carbonate (Wood et al.
+1996) and methane is a minor constituent in fluid inclusions from the upper mantle (Roedder 1984; Apps and van der Kamp 1993).
 Gases from the mantle are transported to Earth’s surface and mainly dissolved in magmas and gases released are composed of carbon dioxide, water, and sulfur dioxide or hydrogen sulfide.
 The concentrations of methane in mantle-derived gases thus cannot be the source of commercial gas fields.
 SELECTED CASE STUDIES
 The controversy surrounding the origins of hydrocarbon gases can be placed in context by reference to a number of case studies.
-The Lost City deep-sea hydrothermal vent is discussed by  and the Siljin Ring Complex is reviewed above, but the two very different case studies of Mountsorrel in the United Kingdom and the Songliao Basin of China are summarized below.
+The Lost City deep-sea hydrothermal vent is discussed by Schrenk et al.
+(2013) and the Siljin Ring Complex is reviewed above, but the two very different case studies of Mountsorrel in the United Kingdom and the Songliao Basin of China are summarized below.
 Mountsorrel, United Kingdom
 A classic case of abiotic-biotic hydrocarbon controversy is provided by the presence of hydrocarbons discovered in igneous rocks at Mountsorrel, Leicestershire, UK.
 Ordovician granodiorite rocks are cut by Carboniferous basaltic dikes.
-Liquid and solid hydrocarbons are observed along joints and fractures occurring parallel to the granodiorite-basalt contact but also cross cut the dykes in places indicating that they postdate both intrusions .
+Liquid and solid hydrocarbons are observed along joints and fractures occurring parallel to the granodiorite-basalt contact but also cross cut the dykes in places indicating that they postdate both intrusions (King 1959).
 Researchers used organic geochemical techniques to assign an abiotic source to the hydrocarbons based on the presence of an unresolved complex mixture during gas chromatographic analysis.
-This mixture displayed structural diversity in the molecular compounds in the organic material from igneous host rocks —data that were used to support the abiogenic hydrocarbon theory .
-However, subsequent organic geochemical investigations point to the ability of biodegradation to remove alkanes and isoprenboidal alkanes, thus leaving an unresolved complex mixture behind .
-More recent analyses of the Mountsorrel hydrocarbons revealed that the unresolved complex mixture contained abundant hopanes and steranes, pointing to an ultimately biological source probably from organic-rich Carboniferous rocks and likely introduced by hydrothermal fluids associated with the intrusion .
-believed this biodegradation mechanism to be a common occurrence and that effectively all hydrocarbons in igneous rocks in the UK were from sedimentary sources.
+This mixture displayed structural diversity in the molecular compounds in the organic material from igneous host rocks (Ponnamperuma and Pering 1966)—data that were used to support the abiogenic hydrocarbon theory (Gold and Soter 1982).
+However, subsequent organic geochemical investigations point to the ability of biodegradation to remove alkanes and isoprenboidal alkanes, thus leaving an unresolved complex mixture behind (Wenger et al.
+2002).
+More recent analyses of the Mountsorrel hydrocarbons revealed that the unresolved complex mixture contained abundant hopanes and steranes, pointing to an ultimately biological source probably from organic-rich Carboniferous rocks and likely introduced by hydrothermal fluids associated with the intrusion (Gou et al.
+1987).
+Parnell (1988) believed this biodegradation mechanism to be a common occurrence and that effectively all hydrocarbons in igneous rocks in the UK were from sedimentary sources.
 The Songliao Basin, China
 The Songliao Basin in eastern China is amongst the largest Cretaceous rift basins in the world.
-Basement rocks comprise Precambrian to Palaeozoic metamorphic and igneous rocks and Paleozoic to Mesozoic granites .
-Mesozoic and Cenozoic sedimentary rocks overlie the basement  and include petroleum source rocks generated by two substantial lacustrine anoxic events .
+Basement rocks comprise Precambrian to Palaeozoic metamorphic and igneous rocks and Paleozoic to Mesozoic granites (Pei et al.
+2007).
+Mesozoic and Cenozoic sedimentary rocks overlie the basement (Gao et al.1994) and include petroleum source rocks generated by two substantial lacustrine anoxic events (Hou et al.
+2000).
 Significant attention has been paid to the presence of a reversed order for carbon isotope compositions of alkanes in natural gases in the Chinese gas reservoirs.
 It has been proposed that gases pass through faults in the crust, assisted by earthquakes, to accumulate in the Songliao basin.
-Data have been used to suggest that abiotic gases can contribute significantly to commercial gas reservoirs .
-However, although these reversed trends can result from the presence of abiotic gas, alternative mechanisms are available, including the mixing of humic and sapropelic gases, the mixing of gases from source rocks of different maturity, and the influence of biodegradation .
+Data have been used to suggest that abiotic gases can contribute significantly to commercial gas reservoirs (Guo et al.
+1997).
+However, although these reversed trends can result from the presence of abiotic gas, alternative mechanisms are available, including the mixing of humic and sapropelic gases, the mixing of gases from source rocks of different maturity, and the influence of biodegradation (Dai et al.
+2004).
 CONCLUSIONS: UNRESOLVED QUESTIONS
 IN THE ORIGINS OF DEEP HYDROCARBONS
 This survey of the origins of deep hydrocarbons demonstrates that much is known regarding both the biotic origins of petroleum and the abiotic origins of some light hydrocarbons, notably methane.
@@ -231,19 +303,22 @@ Nevertheless, uncertainties persist and much remains to learn.
 What is the source of methane in clathrate hydrates?
 The methane concentrated in clathrate hydrates might come from several different sources, including microbial methanogenesis, thermal cracking of biomass, and abiotic synthesis under varied conditions from relatively shallow serpentinization zones to the mantle.
 Is there a way to distinguish among these sources?
-Several workers  have suggested that the temperature of formation of methane and other light hydrocarbons might be deduced from the ratio of isotopologs, which are chemically identical molecules that differ in their combination of isotopes.
+Several workers (Wang and Frenklach 1994; Eiler and Schauble 2004; Ghosh et al.
+2006) have suggested that the temperature of formation of methane and other light hydrocarbons might be deduced from the ratio of isotopologs, which are chemically identical molecules that differ in their combination of isotopes.
 Methane has two doubly substituted isotopologs: 12CH2D2 and 13CH3D.
 Theoretical calculations suggest that measurements of the ratio of these two isotopologs could provide a sensitive indicator of the temperature at which a sample of methane formed—data that might distinguish between low-temperature methanogenesis, moderate temperature thermal cracking of biomass, or high-temperature abiotic synthesis in the mantle.
-Such data is imminent and will be provided by newly developed mass spectrometers .
+Such data is imminent and will be provided by newly developed mass spectrometers (Jones 2012).
 2.
 How can we better interrogate gases?
 Stable isotope methods have provided valuable insights into the formation mechanisms of methane and its higher homologues, but can new methods uncover more information locked within deep gases?
 In contrast to the higher molecular weight hydrocarbon biomarkers, gases contain little structural information that can signpost origin.
-Dual isotopic methods  and position specific methods  can cast light onto the synthetic mechanisms which produced deep gas.
+Dual isotopic methods (Butterworth et al.
+2004) and position specific methods (Corso and Brenna 1997) can cast light onto the synthetic mechanisms which produced deep gas.
 3.
 What associations can reveal the source and history of deep gases?
 The presence of gaseous consorts can often reveal the origin of hydrocarbons.
-The isotopic measurement of noble gases and hydrocarbons  illustrate how combined techniques can constrain the possible histories of gas mixtures.
+The isotopic measurement of noble gases and hydrocarbons (Ballentine et al.
+2002; Sherwood-Lollar and Ballentine 2009) illustrate how combined techniques can constrain the possible histories of gas mixtures.
 What new associations and chemical signals can be combined to build a body of circumstantial evidence to provide the most plausible interpretations.
 4.
 How will unconventional gas reservoirs change our understanding?
@@ -252,5 +327,7 @@ Yet the natural gas industry is undergoing a revolution following technological 
 This particular type of natural gas is hosted in a tight reservoir and has not appreciably migrated from its biogenic organic-rich source.
 The obscuring nature of processes such as biodegradation and source mixing will, presumably, be absent in such deposits.
 The chemical investigation of shale gas reservoirs will provide new and valuable baseline data to which previously acquired conventional reservoir information can be compared.
- Carbon isotope ratio values plotted against carbon number for straight chian hydrocarbons from meteorites  and commercial gas fields .
+ Carbon isotope ratio values plotted against carbon number for straight chian hydrocarbons from meteorites (Yuen et al.
+1984) and commercial gas fields (Prinzhofer et al.
+2000).
 The trends for abiogenic and thermogenic hydrocarbons are almost mirror images, processes such as biodegradation can, however, disrupt these diagnostic patterns.

@@ -22,7 +22,8 @@ class RelationExtractor(object):
     _pos_tags = {
         'nn': 'NN',
         'vb': 'VB',
-        'jj': 'JJ'
+        'jj': 'JJ',
+        'wdt': 'WDT'
     }
 
     def __init__(self, sentence, debug=False):
@@ -95,8 +96,9 @@ class RelationExtractor(object):
                 obj_list = self.__get_dependents(self._dependencies['pobj'], prep['index'])
                 if obj_list:
                     for o in obj_list:
-                        obj = self.__get_object(o)
-                        pobj_phrases.append(self.__concatenate([prep['word'], obj]))
+                        if not o['pos'] == self._pos_tags['wdt']:
+                            obj = self.__get_object(o)
+                            pobj_phrases.append(self.__concatenate([prep['word'], obj]))
         return pobj_phrases
 
     def __get_subject(self, subj_dict):
@@ -215,8 +217,8 @@ class RelationExtractor(object):
 
 if __name__ == '__main__':
     sentences = u"""
-        Carbon, element 6, displays remarkable chemical flexibility and thus is unique in the diversity of its mineralogical roles. Carbon has the ability to bond to itself and to more than 80 other elements in a variety of bonding topologies, most commonly in 2-, 3-, and 4-coordination. With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties. This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element.
-        """
+       Predicted structures of stable high-pressure phases of MgCO3: a) post-magnesite phase II; b) phase III; c) Pna21-20 structure.
+    """
 
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
