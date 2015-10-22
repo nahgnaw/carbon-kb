@@ -5,6 +5,80 @@ import jsonrpclib
 import nltk
 
 
+class WordUnit(object):
+
+    def __init__(self, index, word, lemma, pos):
+        self.__index = index
+        self.__word = word
+        self.__lemma = lemma
+        self. __pos = pos
+
+    def __str__(self):
+        return self.__word
+
+    @property
+    def index(self):
+        return self.__index
+
+    @property
+    def word(self):
+        return self.__word
+
+    @property
+    def lemma(self):
+        return self.__lemma
+
+    @property
+    def pos(self):
+        return self.__pos
+
+    def more_info(self):
+        return '({})'.format(' '.join([str(self.__index), self.__word, self.__pos]))
+
+
+class WordUnitSequence(object):
+
+    def __init__(self, word_unit_list=None):
+        if word_unit_list:
+            if not type(word_unit_list) is list:
+                word_unit_list = [word_unit_list]
+            self.__seq = word_unit_list
+            self.__sort()
+        else:
+            self.__seq = []
+
+    def __str__(self):
+        return ' '.join([wn.word for wn in self.__seq])
+
+    def __nonzero__(self):
+        return len(self.__seq)
+
+    def __sort(self):
+        if self.__seq:
+            self.__seq = sorted(self.__seq, key=lambda wn: wn.index)
+
+    def lemmatized(self):
+        return ' '.join(wn.lemma for wn in self.__seq)
+
+    def extend(self, seq):
+        if type(seq) is list:
+            self.__seq.extend(seq)
+        else:
+            self.__seq.extend(seq.sequence)
+        self.__sort()
+
+    def add_word_unit(self, word_unit):
+        self.__seq.append(word_unit)
+        self.__sort()
+
+    def print_lemma(self):
+        print ' '.join([wn.lemma for wn in self.__seq])
+
+    @property
+    def sequence(self):
+        return self.__seq
+
+
 class DependencyGraph(object):
 
     def __init__(self, sentence, parser_server_url=None):
@@ -34,29 +108,33 @@ class DependencyGraph(object):
         words = self.__tree['words']
         tagged_text = []
         for dep in dependencies:
+            index = dep[0]
             word = dep[1]
             lemma = dep[2]
-            tag = dep[3]
+            pos = dep[3]
             head_index = int(dep[4])
-            head = words[head_index - 1][0]
-            head_tag = words[head_index - 1][1]["PartOfSpeech"]
+            head_word = words[head_index - 1][0]
+            head_lemma = words[head_index - 1][1]['Lemma']
+            head_pos = words[head_index - 1][1]['PartOfSpeech']
             rel = dep[5]
             self.__words.append(word)
             self.__lemmas.append(lemma)
-            self.__tags.append(tag)
-            tagged_text.append(nltk.tree.Tree(tag, [word]))
+            self.__tags.append(pos)
+            tagged_text.append(nltk.tree.Tree(pos, [word]))
             if not rel == 'root':
-                triple = ((head_index, head, head_tag), rel, (dep[0], dep[1], dep[3]))
+                head = WordUnit(head_index, head_word, head_lemma, head_pos)
+                dependent = WordUnit(index, word, lemma, pos)
+                triple = (head, rel, dependent)
                 self.__dep_triples.append(triple)
         self.__tagged_text = nltk.tree.Tree('S', tagged_text)
 
     def __dependencies(self):
-        for rel, _, head, word, n in self.__tree['dependencies']:
-            n = int(n)
-            word_info = self.__tree['words'][n - 1][1]
-            tag = word_info['PartOfSpeech']
+        for rel, _, head, word, index in self.__tree['dependencies']:
+            index = int(index)
+            word_info = self.__tree['words'][index - 1][1]
+            pos = word_info['PartOfSpeech']
             lemma = word_info['Lemma']
-            yield n, word, lemma, tag, head, rel
+            yield index, word, lemma, pos, head, rel
 
     @property
     def dep_triples(self):
@@ -84,7 +162,13 @@ class DependencyGraph(object):
 
     def print_dep_triples(self):
         for t in self.__dep_triples:
-            print t
+            print t[0].more_info(), t[1], t[2].more_info()
 
     def print_raw(self):
         print json.dumps(self.__raw, ensure_ascii=False, indent=4)
+
+
+if __name__ == '__main__':
+    sentence = 'The article is reviewed by Tom.'
+    dg = DependencyGraph(sentence)
+    dg.print_dep_triples()

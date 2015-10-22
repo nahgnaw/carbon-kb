@@ -1,8 +1,49 @@
 # -*- coding: utf8 -*-
 
+import os
 import codecs
+import traceback
+
 from nltk.tokenize import sent_tokenize
-from dependency_graph import DependencyGraph
+from dependency_graph import WordUnitSequence, DependencyGraph
+
+
+class Relation(object):
+
+    def __init__(self, subj=None, pred=None, obj=None):
+        self.__subj = subj
+        self.__pred = pred
+        self.__obj = obj
+
+    def __str__(self):
+        return str((str(self.__subj), str(self.__pred), str(self.__obj)))
+
+    def lemmatized(self):
+        return self.__subj.lemmatized(), self.__pred.lemmatized(), self.__obj.lemmatized()
+
+    @property
+    def subject(self):
+        return self.__subj
+
+    @subject.setter
+    def subject(self, subj):
+        self.__subj = subj
+
+    @property
+    def predicate(self):
+        return self.__pred
+
+    @predicate.setter
+    def predicate(self, pred):
+        self.__pred = pred
+
+    @property
+    def object(self):
+        return self.__obj
+
+    @object.setter
+    def object(self, obj):
+        self.__obj = obj
 
 
 class RelationExtractor(object):
@@ -17,7 +58,9 @@ class RelationExtractor(object):
         'vmod': 'vmod',
         'prep': 'prep',
         'pobj': 'pobj',
-        'conj:and': 'conj:and'
+        'conj:and': 'conj:and',
+        'cc': 'cc',
+        'aux': 'aux'
     }
 
     _pos_tags = {
@@ -44,170 +87,157 @@ class RelationExtractor(object):
                 if dep not in self.__dep_triple_dict:
                     self.__dep_triple_dict[dep] = []
                 self.__dep_triple_dict[dep].append({
-                    'head': {
-                        'index': triple[0][0],
-                        'word': triple[0][1],
-                        'pos': triple[0][2]
-                    },
-                    'dependent': {
-                        'index': triple[2][0],
-                        'word': triple[2][1],
-                        'pos': triple[2][2]
-                    }
+                    'head': triple[0],
+                    'dependent': triple[2]
                 })
 
     @staticmethod
     def __concatenate(words, separator=' '):
         return separator.join(words)
 
-    def __get_dependents(self, dependency, head_index, dependent=None):
+    def __get_dependents(self, dependency_relation, head, dependent=None):
         dependents = []
-        if dependency in self.__dep_triple_dict:
+        if dependency_relation in self.__dep_triple_dict:
             if dependent:
-                dependents = [t['dependent'] for t in self.__dep_triple_dict[dependency]
-                              if head_index == t['head']['index'] and dependent == t['dependent']['word']]
+                dependents = [t['dependent'] for t in self.__dep_triple_dict[dependency_relation]
+                              if head.index == t['head'].index and dependent.word == t['dependent'].word]
             else:
                 dependents = [t['dependent']
-                              for t in self.__dep_triple_dict[dependency] if head_index == t['head']['index']]
+                              for t in self.__dep_triple_dict[dependency_relation] if head.index == t['head'].index]
         return dependents
 
-    def __get_noun_compound(self, head_index):
-        nn = ''
-        nn_list = self.__get_dependents(self._dependencies['nn'], head_index)
-        if nn_list:
-            nn = ' '.join([nn['word'] for nn in sorted(nn_list, key=lambda e: e['index'])])
-        return nn
+    # Return: a WordUnitSequence. Each element is a component of the noun compound.
+    def __get_noun_compound(self, head):
+        nn = self.__get_dependents(self._dependencies['nn'], head)
+        if nn:
+            nn.append(head)
+            return WordUnitSequence(nn)
+        return WordUnitSequence(head)
 
-    def __get_conjunctions(self, head_index):
-        conjunctions = []
-        conj_list = self.__get_dependents(self._dependencies['conj:and'], head_index)
-        for conj in conj_list:
-            nn = self.__get_noun_compound(conj['index'])
-            if nn:
-                conjunctions.append(self.__concatenate([nn, conj['word']]))
-            else:
-                conjunctions.append(conj['word'])
+    # Return: a WordUnitSequence including the conjunctions of noun compounds of the head.
+    def __get_conjunctions(self, head):
+        conjunctions = WordUnitSequence()
+        conj_list = self.__get_dependents(self._dependencies['conj:and'], head)
+        if conj_list:
+            for conj in conj_list:
+                conjunctions.extend(self.__get_noun_compound(conj))
+        cc_list = self.__get_dependents(self._dependencies['cc'], head)
+        if cc_list:
+            for cc in cc_list:
+                conjunctions.add_word_unit(cc)
         return conjunctions
 
-    def __get_pobj_phrase(self, head_index):
-        pobj_phrases = []
-        prep_list = self.__get_dependents(self._dependencies['prep'], head_index)
+    # Return: a WordUnitSequence including the prepositional object phrase of the head.
+    def __get_pobj_phrase(self, head):
+        pobj_phrase = WordUnitSequence()
+        prep_list = self.__get_dependents(self._dependencies['prep'], head)
         if prep_list:
             for prep in prep_list:
-                obj_list = self.__get_dependents(self._dependencies['pobj'], prep['index'])
+                obj_list = self.__get_dependents(self._dependencies['pobj'], prep)
                 if obj_list:
-                    for o in obj_list:
-                        if not o['pos'] == self._pos_tags['wdt']:
-                            obj = self.__get_object(o)
-                            pobj_phrases.append(self.__concatenate([prep['word'], obj]))
-        return pobj_phrases
+                    for obj in obj_list:
+                        if not obj.pos == self._pos_tags['wdt']:
+                            obj_seq = self.__expand_head(obj)
+                            obj_seq.add_word_unit(prep)
+                            pobj_phrase.extend(obj_seq)
+        return pobj_phrase
 
-    def __get_subject(self, subj_dict):
-        subj_index = subj_dict['index']
-        subj = subj_dict['word']
-        # If the subject is a compound noun, use the noun compound
-        subj_nn = self.__get_noun_compound(subj_index)
-        if subj_nn:
-            subj = self.__concatenate([subj_nn, subj])
-        # Find out if the subject has conjunctions
-        subj_conj = self.__get_conjunctions(subj_index)
-        if subj_conj:
-            subj = self.__concatenate([subj, ' '.join(subj_conj)], ' & ')
-        return subj
-
-    def __get_object(self, obj_dict):
-        obj_index = obj_dict['index']
-        obj = obj_dict['word']
-        # if the object is a compound noun, use the noun compound
-        obj_nn = self.__get_noun_compound(obj_index)
-        if obj_nn:
-            obj = self.__concatenate([obj_nn, obj])
-        # Find out if the object has prepositional object
-        obj_pobj_phrases = self.__get_pobj_phrase(obj_index)
-        if obj_pobj_phrases:
-            obj = self.__concatenate([obj, obj_pobj_phrases[0]])
-        # Find out if the object has conjunctions
-        obj_conj = self.__get_conjunctions(obj_index)
-        if obj_conj:
-            obj = self.__concatenate([obj, ' '.join(obj_conj)], ' & ')
-        # Find out if the object has vmod
-        vmod_list = self.__get_dependents(self._dependencies['vmod'], obj_index)
+    def __get_vmod_phrase(self, head):
+        vmod_phrase = WordUnitSequence()
+        vmod_list = self.__get_dependents(self._dependencies['vmod'], head)
         if vmod_list:
-            vmod_phrases = []
             for vmod in vmod_list:
-                pobj_phrases = self.__get_pobj_phrase(vmod['index'])
-                if pobj_phrases:
-                    for pobj_phrase in pobj_phrases:
-                        vmod_phrases.append(self.__concatenate([vmod['word'], pobj_phrase]))
-                dobj_list = self.__get_dependents(self._dependencies['dobj'], vmod['index'])
+                vmod_phrase.add_word_unit(vmod)
+                aux_list = self.__get_dependents(self._dependencies['aux'], vmod)
+                if aux_list:
+                    for aux in aux_list:
+                        vmod_phrase.add_word_unit(aux)
+                pobj_phrase = self.__get_pobj_phrase(vmod)
+                if pobj_phrase:
+                    vmod_phrase.extend(pobj_phrase)
+                dobj_list = self.__get_dependents(self._dependencies['dobj'], vmod)
                 if dobj_list:
                     for dobj in dobj_list:
-                        vmod_phrases.append(self.__concatenate([vmod['word'], dobj['word']]))
-            if vmod_phrases:
-                vmod_phrases = '(' + self.__concatenate(vmod_phrases) + ')'
-                obj = self.__concatenate([obj, vmod_phrases])
-        return obj
+                        obj_seq = self.__expand_head(dobj)
+                        vmod_phrase.extend(obj_seq)
+        return vmod_phrase
+
+    # Return: a WordUnitSequence.
+    def __expand_head(self, head):
+        # Find out if the head is in a compound noun
+        expanded_head = self.__get_noun_compound(head)
+        # Find out if the head has pobj phrase
+        pobj_phrase = self.__get_pobj_phrase(head)
+        if pobj_phrase:
+            expanded_head.extend(pobj_phrase)
+        # Find out if the head has vmod phrase
+        vmod_phrase = self.__get_vmod_phrase(head)
+        if vmod_phrase:
+            expanded_head.extend(vmod_phrase)
+        # Find out if the head has conjunctions
+        conj = self.__get_conjunctions(head)
+        if conj:
+            expanded_head.extend(conj)
+        return expanded_head
 
     def extract_nsubj(self):
         if self._dependencies['nsubj'] in self.__dep_triple_dict:
             for triple in self.__dep_triple_dict['nsubj']:
+                head = triple['head']
+                dependent = triple['dependent']
+                relation = Relation()
                 # The subject is the dependent
-                subj = self.__get_subject(triple['dependent'])
+                relation.subject = self.__expand_head(dependent)
                 # If the dependency relation is a verb:
-                if triple['head']['pos'].startswith(self._pos_tags['vb']):
+                if head.pos.startswith(self._pos_tags['vb']):
                     # The predicate is the head
-                    pred_index = triple['head']['index']
-                    pred = triple['head']['word']
+                    pred = head
+                    relation.predicate = WordUnitSequence([pred])
                     # Object for 'dobj'
-                    obj_list = self.__get_dependents(self._dependencies['dobj'], pred_index)
+                    obj_list = self.__get_dependents(self._dependencies['dobj'], pred)
                     if obj_list:
                         for o in obj_list:
-                            obj = self.__get_object(o)
-                            self.__relations.append((subj, pred, obj))
+                            obj = self.__expand_head(o)
+                            relation.object = obj
+                            self.relations.append(relation)
                     # If there is no direct objects, look for prepositional objects
                     else:
-                        pobj_phrases = self.__get_pobj_phrase(pred_index)
-                        if pobj_phrases:
-                            for pp in pobj_phrases:
-                                self.__relations.append((subj, pred, pp))
+                        pobj_phrase = self.__get_pobj_phrase(pred)
+                        if pobj_phrase:
+                            relation.object = pobj_phrase
+                            self.relations.append(relation)
                     # TODO: 'iobj' (is it necessary?)
+                    # TODO: 'xcomp'  e.g. The objective of this chapter is to review the mineralogy and crystal chemistry of carbon.
                 # if the dependency relation is a copular verb:
-                elif triple['head']['pos'].startswith(self._pos_tags['nn']) \
-                        or triple['head']['pos'].startswith(self._pos_tags['jj']):
+                elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
                     # The object is the head
-                    obj_index = triple['head']['index']
-                    obj = self.__get_object(triple['head'])
+                    obj = head
+                    relation.object = self.__expand_head(obj)
                     # Predicate
-                    pred_list = self.__get_dependents(self._dependencies['cop'], obj_index)
+                    pred_list = self.__get_dependents(self._dependencies['cop'], obj)
                     if pred_list:
-                        for p in pred_list:
-                            pred = p['word']
-                            self.__relations.append((subj, pred, obj))
+                        for pred in pred_list:
+                            relation.predicate = WordUnitSequence([pred])
+                            self.__relations.append(relation)
 
     def extract_nsubjpass(self):
         if self._dependencies['nsubjpass'] in self.__dep_triple_dict:
             for triple in self.__dep_triple_dict['nsubjpass']:
+                head = triple['head']
+                dependent = triple['dependent']
+                relation = Relation()
                 # The subject is the dependent
-                subj = self.__get_subject(triple['dependent'])
-                # If there is a "by" following the VBN, VBN + "by" should be the predicate, and
-                # the pobj of "by" should be the object
-                vbn_index = triple['head']['index']
-                vbn = triple['head']['word']
-                pred_list = self.__get_dependents(self._dependencies['auxpass'], vbn_index)
+                relation.subject = self.__expand_head(dependent)
+                vbn = head
+                pred_list = self.__get_dependents(self._dependencies['auxpass'], vbn)
                 if pred_list:
-                    pred = pred_list[0]['word']
-                    pobj_list = self.__get_dependents(self._dependencies['prep'], vbn_index, 'by')
-                    if pobj_list:
-                        for p in pobj_list:
-                            pred = self.__concatenate([pred, vbn, 'by'])
-                            obj_list = self.__get_dependents(self._dependencies['pobj'], p['index'])
-                            if obj_list:
-                                for o in obj_list:
-                                    obj = self.__get_object(o)
-                                    self.__relations.append((subj, pred, obj))
-                    else:
-                        obj = vbn
-                        self.__relations.append((subj, pred, obj))
+                    for pred in pred_list:
+                        relation.predicate = WordUnitSequence([pred])
+                        relation.object = WordUnitSequence([vbn])
+                        pobj_phrase = self.__get_pobj_phrase(vbn)
+                        if pobj_phrase:
+                            relation.object.extend(pobj_phrase)
+                        self.__relations.append(relation)
 
     # TODO: pattern: has the ability to ...
 
@@ -216,33 +246,52 @@ class RelationExtractor(object):
         return self.__relations
 
 
-if __name__ == '__main__':
+def batch_test():
+    data_dir = 'data/RiMG75/tmp/'
+    for root, _, files in os.walk(data_dir):
+        for fn in files:
+            if fn.endswith('.txt'):
+                filename = os.path.join(root, fn)
+                output_filename = os.path.join(root, fn + '.relations')
+                f_in = codecs.open(filename, encoding='utf-8')
+                f_out = codecs.open(output_filename, 'w', encoding='utf-8')
+                for line in f_in:
+                    sent = line.strip()
+                    f_out.write(u'{}\n'.format(sent))
+                    try:
+                        extractor = RelationExtractor(sent, debug=False)
+                    except:
+                        print 'Failed to parse the sentence.'
+                    else:
+                        extractor.extract_nsubj()
+                        extractor.extract_nsubjpass()
+                        for relation in extractor.relations:
+                            print sent
+                            print relation
+                            f_out.write(u'{}\n'.format(relation))
+                        f_out.write('\n')
+                f_in.close()
+                f_out.close()
 
-    file_path = 'data/RiMG75/processed/RiMG75-02.txt'
-    f = codecs.open(file_path, encoding='utf-8')
-    for line in f:
-        sent = line.strip()
+
+def test():
+    sentences = u"""
+       The objective of this chapter is to review the mineralogy and crystal chemistry of carbon.
+    """
+    for sent in sent_tokenize(sentences):
+        sent = sent.strip()
         print sent
         try:
-            extractor = RelationExtractor(sent, debug=False)
+            extractor = RelationExtractor(sent, debug=True)
         except:
             print 'Failed to parse the sentence.'
+            print(traceback.format_exc())
         else:
             extractor.extract_nsubj()
             extractor.extract_nsubjpass()
             print extractor.relations
 
-    # sentences = u"""
-    #    But carbon commonly forms double bonds with itself, for example in ethene (H2C=CH2), oxygen in carbon dioxide (O=C=O), or sulfur in carbon disulfide (S=C=S), and it can form triple bonds with itself, as in ethylene (commonly known as acetylene; HC≡CH), or with nitrogen, as in hydrogen cyanide (HC≡N).
-    # """
-    # for sent in sent_tokenize(sentences):
-    #     sent = sent.strip()
-    #     print sent
-    #     try:
-    #         extractor = RelationExtractor(sent, debug=True)
-    #     except:
-    #         print 'Failed to parse the sentence.'
-    #     else:
-    #         extractor.extract_nsubj()
-    #         extractor.extract_nsubjpass()
-    #         print extractor.relations
+
+if __name__ == '__main__':
+    # test()
+    batch_test()
