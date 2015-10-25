@@ -61,6 +61,8 @@ class Sentences(object):
         return line
 
 if __name__ == '__main__':
-    RAW_TEXT_DIR = './data/RiMG75/raw'
-    sents = Sentences(RAW_TEXT_DIR)
-    sents.save('./data/RiMG75/processed', debug=True)
+    dataset = 'RiMG75'
+    raw_text_dir = 'data/{}/raw'.format(dataset)
+    processed_text_dir = 'data/{}/processed'.format(dataset)
+    sents = Sentences(raw_text_dir)
+    sents.save(processed_text_dir, debug=True)
