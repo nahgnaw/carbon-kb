@@ -275,7 +275,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-       This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element .
+       The increase in free Ca2+ and DAG could activate more PKC in a positive feedback mechanism.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
