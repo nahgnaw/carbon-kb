@@ -91,10 +91,6 @@ class RelationExtractor(object):
                     'dependent': triple[2]
                 })
 
-    @staticmethod
-    def __concatenate(words, separator=' '):
-        return separator.join(words)
-
     def __get_dependents(self, dependency_relation, head, dependent=None):
         dependents = []
         if dependency_relation in self.__dep_triple_dict:
@@ -106,7 +102,6 @@ class RelationExtractor(object):
                               for t in self.__dep_triple_dict[dependency_relation] if head.index == t['head'].index]
         return dependents
 
-    # Return: a WordUnitSequence. Each element is a component of the noun compound.
     def __get_noun_compound(self, head):
         nn = self.__get_dependents(self._dependencies['nn'], head)
         if nn:
@@ -114,7 +109,6 @@ class RelationExtractor(object):
             return WordUnitSequence(nn)
         return WordUnitSequence(head)
 
-    # Return: a WordUnitSequence including the conjunctions of noun compounds of the head.
     def __get_conjunctions(self, head):
         conjunctions = WordUnitSequence()
         conj_list = self.__get_dependents(self._dependencies['conj:and'], head)
@@ -127,7 +121,6 @@ class RelationExtractor(object):
                 conjunctions.add_word_unit(cc)
         return conjunctions
 
-    # Return: a WordUnitSequence including the prepositional object phrase of the head.
     def __get_pobj_phrase(self, head):
         pobj_phrase = WordUnitSequence()
         prep_list = self.__get_dependents(self._dependencies['prep'], head)
@@ -162,7 +155,6 @@ class RelationExtractor(object):
                         vmod_phrase.extend(obj_seq)
         return vmod_phrase
 
-    # Return: a WordUnitSequence.
     def __expand_head(self, head):
         # Find out if the head is in a compound noun
         expanded_head = self.__get_noun_compound(head)
@@ -179,6 +171,9 @@ class RelationExtractor(object):
         if conj:
             expanded_head.extend(conj)
         return expanded_head
+
+    # TODO: negation
+    # TODO: modal
 
     def extract_nsubj(self):
         if self._dependencies['nsubj'] in self.__dep_triple_dict:
@@ -245,7 +240,8 @@ class RelationExtractor(object):
 
 
 def batch_test():
-    data_dir = 'data/RiMG75/tmp/'
+    dataset = 'genes-cancer'
+    data_dir = 'data/{}/tmp/'.format(dataset)
     for root, _, files in os.walk(data_dir):
         for fn in files:
             if fn.endswith('.txt'):
@@ -293,5 +289,5 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
-    # batch_test()
+    # test()
+    batch_test()
