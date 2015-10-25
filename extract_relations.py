@@ -239,8 +239,6 @@ class RelationExtractor(object):
                             relation.object.extend(pobj_phrase)
                         self.__relations.append(relation)
 
-    # TODO: pattern: has the ability to ...
-
     @property
     def relations(self):
         return self.__relations
@@ -262,6 +260,7 @@ def batch_test():
                         extractor = RelationExtractor(sent, debug=False)
                     except:
                         print 'Failed to parse the sentence.'
+                        print(traceback.format_exc())
                     else:
                         extractor.extract_nsubj()
                         extractor.extract_nsubjpass()
@@ -276,7 +275,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-       The objective of this chapter is to review the mineralogy and crystal chemistry of carbon.
+       This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element .
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -289,9 +288,10 @@ def test():
         else:
             extractor.extract_nsubj()
             extractor.extract_nsubjpass()
-            print extractor.relations
+            for relation in extractor.relations:
+                print relation
 
 
 if __name__ == '__main__':
-    # test()
-    batch_test()
+    test()
+    # batch_test()
