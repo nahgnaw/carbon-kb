@@ -14,6 +14,7 @@ class Sentences(object):
         extra_abbr = ['dr', 'vs', 'mr', 'mrs', 'prof', 'inc', 'i.e', 'fig', 'figs', 'p', 'et al', 'e.g', 'etc', 'eq']
         self.sent_detector._params.abbrev_types.update(extra_abbr)
 
+    # TODO: some text files have misplaced line separators, need remove them.
     def __iter__(self):
         for root, _, files in os.walk(self.raw_data_dir):
             for fn in files:
