@@ -38,7 +38,7 @@ class WordUnit(object):
 
 class WordUnitSequence(object):
 
-    def __init__(self, word_unit_list=None):
+    def __init__(self, word_unit_list=None, head=None):
         if word_unit_list:
             if not type(word_unit_list) is list:
                 word_unit_list = [word_unit_list]
@@ -46,11 +46,16 @@ class WordUnitSequence(object):
             self.__sort()
         else:
             self.__seq = []
+        if head:
+            self.__head = head
 
     def __str__(self):
         return ' '.join([wn.word for wn in self.__seq])
 
     def __nonzero__(self):
+        return len(self.__seq)
+
+    def __len__(self):
         return len(self.__seq)
 
     def __sort(self):
@@ -77,6 +82,14 @@ class WordUnitSequence(object):
     @property
     def sequence(self):
         return self.__seq
+
+    @property
+    def head(self):
+        return self.__head
+
+    @head.setter
+    def head(self, head):
+        self.__head = head
 
 
 class DependencyGraph(object):

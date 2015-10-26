@@ -61,7 +61,8 @@ class RelationExtractor(object):
         'conj:and': 'conj:and',
         'cc': 'cc',
         'aux': 'aux',
-        'neg': 'neg'
+        'neg': 'neg',
+        'xcomp': 'xcomp'
     }
 
     _pos_tags = {
@@ -69,7 +70,8 @@ class RelationExtractor(object):
         'vb': 'VB',
         'jj': 'JJ',
         'wdt': 'WDT',
-        'dt': 'DT'
+        'dt': 'DT',
+        'prp': 'PRP'
     }
 
     def __init__(self, sentence, debug=False):
@@ -178,30 +180,48 @@ class RelationExtractor(object):
             expansion.extend(conj)
         return expansion
 
+    # Expand predicate with auxiliary and negation
+    def __expand_predicate(self, pred, aux_head=None, neg_head=None):
+        predicate = WordUnitSequence(word_unit_list=[pred], head=pred)
+        if aux_head:
+            # Find out if there is any aux
+            aux = self.__get_dependents(self._dependencies['aux'], aux_head)
+            if aux:
+                predicate.add_word_unit(aux[0])
+        if neg_head:
+            # Find out if there is any negation
+            neg = self.__get_dependents(self._dependencies['neg'], neg_head)
+            if neg:
+                predicate.add_word_unit(neg[0])
+        # Find out if there is any xcomp
+        xcomp_list = self.__get_dependents(self._dependencies['xcomp'], pred)
+        if xcomp_list:
+            for xcomp in xcomp_list:
+                predicate.add_word_unit(xcomp)
+                # Use the xcomp as the "head" instead of the original head
+                predicate.head = xcomp
+                aux = self.__get_dependents(self._dependencies['aux'], xcomp)
+                if aux:
+                    predicate.add_word_unit(aux[0])
+        return predicate
+
     def extract_nsubj(self):
         if self._dependencies['nsubj'] in self.__dep_triple_dict:
             for triple in self.__dep_triple_dict['nsubj']:
                 head = triple['head']
                 dependent = triple['dependent']
-                if not dependent.pos == 'PRP':
+                # PRP and WDT cannot be subject for now
+                # TODO: check if WDT leads a clause
+                if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt']]:
                     relation = Relation()
                     # The subject is the dependent
                     relation.subject = self.__expand_head_word(dependent)
-                    # Find out if there is negation
-                    negation = self.__get_dependents(self._dependencies['neg'], head)
-                    negation = negation[0] if negation else None
                     # If the dependency relation is a verb:
                     if head.pos.startswith(self._pos_tags['vb']):
                         # The predicate is the head
                         pred = head
-                        relation.predicate = WordUnitSequence([pred])
-                        # Find out if there is any aux
-                        auxiliary = self.__get_dependents(self._dependencies['aux'], pred)
-                        if auxiliary:
-                            relation.predicate.add_word_unit(auxiliary[0])
-                        # Add negation word if there is any
-                        if negation:
-                            relation.predicate.add_word_unit(negation)
+                        relation.predicate = self.__expand_predicate(pred, pred, head)
+                        pred = relation.predicate.head
                         # Object for 'dobj'
                         obj_list = self.__get_dependents(self._dependencies['dobj'], pred)
                         if obj_list:
@@ -216,7 +236,6 @@ class RelationExtractor(object):
                                 relation.object = pobj_phrase
                                 self.relations.append(relation)
                         # TODO: 'iobj' (is it necessary?)
-                        # TODO: 'xcomp'  e.g. The objective of this chapter is to review the mineralogy and crystal chemistry of carbon.
                         # TODO: 'ccomp' e.g. It was unclear what muscle function is maintained in these cancer cells.
                     # if the dependency relation is a copular verb:
                     elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
@@ -227,14 +246,7 @@ class RelationExtractor(object):
                         pred_list = self.__get_dependents(self._dependencies['cop'], obj)
                         if pred_list:
                             for pred in pred_list:
-                                relation.predicate = WordUnitSequence([pred])
-                                # Find out if there is any aux
-                                auxiliary = self.__get_dependents(self._dependencies['aux'], head)
-                                if auxiliary:
-                                    relation.predicate.add_word_unit(auxiliary[0])
-                                # Add negation word if there is any
-                                if negation:
-                                    relation.predicate.add_word_unit(negation)
+                                relation.predicate = self.__expand_predicate(pred, head, head)
                                 self.__relations.append(relation)
 
     def extract_nsubjpass(self):
@@ -249,15 +261,7 @@ class RelationExtractor(object):
                 pred_list = self.__get_dependents(self._dependencies['auxpass'], vbn)
                 if pred_list:
                     for pred in pred_list:
-                        relation.predicate = WordUnitSequence([pred])
-                        # Find out if there is any auxiliary
-                        auxiliary = self.__get_dependents(self._dependencies['aux'], head)
-                        if auxiliary:
-                            relation.predicate.add_word_unit(auxiliary[0])
-                        # Find out if there is any negation
-                        negation = self.__get_dependents(self._dependencies['neg'], head)
-                        if negation:
-                            relation.predicate.add_word_unit(negation[0])
+                        relation.predicate = self.__expand_predicate(pred, head, head)
                         relation.object = WordUnitSequence([vbn])
                         pobj_phrase = self.__get_pobj_phrase(vbn)
                         if pobj_phrase:
@@ -301,7 +305,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-       Mirk G0 function may not be significant in skeletal muscle development..
+       The objective of this chapter is to review the mineralogy and crystal chemistry of carbon.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -319,5 +323,5 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
-    # batch_test()
+    # test()
+    batch_test()
