@@ -159,6 +159,10 @@ class RelationExtractor(object):
     def __expand_head_word(self, head):
         # Find out if the head is in a compound noun
         expansion = self.__get_noun_compound(head)
+        # Find out if there is any negation
+        neg = self.__get_dependents(self._dependencies['neg'], head)
+        if neg:
+            expansion.add_word_unit(neg[0])
         # Find out if the head has pobj phrase
         pobj_phrase = self.__get_pobj_phrase(head)
         if pobj_phrase:
@@ -172,9 +176,6 @@ class RelationExtractor(object):
         if conj:
             expansion.extend(conj)
         return expansion
-
-    # TODO: negation
-    # TODO: modal
 
     def extract_nsubj(self):
         if self._dependencies['nsubj'] in self.__dep_triple_dict:
@@ -215,6 +216,7 @@ class RelationExtractor(object):
                                 self.relations.append(relation)
                         # TODO: 'iobj' (is it necessary?)
                         # TODO: 'xcomp'  e.g. The objective of this chapter is to review the mineralogy and crystal chemistry of carbon.
+                        # TODO: 'ccomp' e.g. It was unclear what muscle function is maintained in these cancer cells.
                     # if the dependency relation is a copular verb:
                     elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
                         # The object is the head
@@ -294,8 +296,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-       Mirk is not an essential gene because embryonic knockout of Mirk/dyrk1B caused no evident phenotype in mice.
-       The decision should not be made by Jim.
+       embryonic knockout of Mirk/dyrk1B caused no evident phenotype in mice.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
