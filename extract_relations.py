@@ -68,7 +68,8 @@ class RelationExtractor(object):
         'nn': 'NN',
         'vb': 'VB',
         'jj': 'JJ',
-        'wdt': 'WDT'
+        'wdt': 'WDT',
+        'dt': 'DT'
     }
 
     def __init__(self, sentence, debug=False):
@@ -161,7 +162,7 @@ class RelationExtractor(object):
         expansion = self.__get_noun_compound(head)
         # Find out if there is any negation
         neg = self.__get_dependents(self._dependencies['neg'], head)
-        if neg:
+        if neg and neg[0].pos == self._pos_tags['dt']:
             expansion.add_word_unit(neg[0])
         # Find out if the head has pobj phrase
         pobj_phrase = self.__get_pobj_phrase(head)
@@ -227,6 +228,10 @@ class RelationExtractor(object):
                         if pred_list:
                             for pred in pred_list:
                                 relation.predicate = WordUnitSequence([pred])
+                                # Find out if there is any aux
+                                auxiliary = self.__get_dependents(self._dependencies['aux'], head)
+                                if auxiliary:
+                                    relation.predicate.add_word_unit(auxiliary[0])
                                 # Add negation word if there is any
                                 if negation:
                                     relation.predicate.add_word_unit(negation)
@@ -296,7 +301,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-       embryonic knockout of Mirk/dyrk1B caused no evident phenotype in mice.
+       Mirk G0 function may not be significant in skeletal muscle development..
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
