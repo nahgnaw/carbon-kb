@@ -60,7 +60,8 @@ class RelationExtractor(object):
         'pobj': 'pobj',
         'conj:and': 'conj:and',
         'cc': 'cc',
-        'aux': 'aux'
+        'aux': 'aux',
+        'neg': 'neg'
     }
 
     _pos_tags = {
@@ -130,7 +131,7 @@ class RelationExtractor(object):
                 if obj_list:
                     for obj in obj_list:
                         if not obj.pos == self._pos_tags['wdt']:
-                            obj_seq = self.__expand_head(obj)
+                            obj_seq = self.__expand_head_word(obj)
                             obj_seq.add_word_unit(prep)
                             pobj_phrase.extend(obj_seq)
         return pobj_phrase
@@ -151,26 +152,26 @@ class RelationExtractor(object):
                 dobj_list = self.__get_dependents(self._dependencies['dobj'], vmod)
                 if dobj_list:
                     for dobj in dobj_list:
-                        obj_seq = self.__expand_head(dobj)
+                        obj_seq = self.__expand_head_word(dobj)
                         vmod_phrase.extend(obj_seq)
         return vmod_phrase
 
-    def __expand_head(self, head):
+    def __expand_head_word(self, head):
         # Find out if the head is in a compound noun
-        expanded_head = self.__get_noun_compound(head)
+        expansion = self.__get_noun_compound(head)
         # Find out if the head has pobj phrase
         pobj_phrase = self.__get_pobj_phrase(head)
         if pobj_phrase:
-            expanded_head.extend(pobj_phrase)
+            expansion.extend(pobj_phrase)
         # Find out if the head has vmod phrase
         vmod_phrase = self.__get_vmod_phrase(head)
         if vmod_phrase:
-            expanded_head.extend(vmod_phrase)
+            expansion.extend(vmod_phrase)
         # Find out if the head has conjunctions
         conj = self.__get_conjunctions(head)
         if conj:
-            expanded_head.extend(conj)
-        return expanded_head
+            expansion.extend(conj)
+        return expansion
 
     # TODO: negation
     # TODO: modal
@@ -180,40 +181,54 @@ class RelationExtractor(object):
             for triple in self.__dep_triple_dict['nsubj']:
                 head = triple['head']
                 dependent = triple['dependent']
-                relation = Relation()
-                # The subject is the dependent
-                relation.subject = self.__expand_head(dependent)
-                # If the dependency relation is a verb:
-                if head.pos.startswith(self._pos_tags['vb']):
-                    # The predicate is the head
-                    pred = head
-                    relation.predicate = WordUnitSequence([pred])
-                    # Object for 'dobj'
-                    obj_list = self.__get_dependents(self._dependencies['dobj'], pred)
-                    if obj_list:
-                        for o in obj_list:
-                            obj = self.__expand_head(o)
-                            relation.object = obj
-                            self.relations.append(relation)
-                    # If there is no direct objects, look for prepositional objects
-                    else:
-                        pobj_phrase = self.__get_pobj_phrase(pred)
-                        if pobj_phrase:
-                            relation.object = pobj_phrase
-                            self.relations.append(relation)
-                    # TODO: 'iobj' (is it necessary?)
-                    # TODO: 'xcomp'  e.g. The objective of this chapter is to review the mineralogy and crystal chemistry of carbon.
-                # if the dependency relation is a copular verb:
-                elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
-                    # The object is the head
-                    obj = head
-                    relation.object = self.__expand_head(obj)
-                    # Predicate
-                    pred_list = self.__get_dependents(self._dependencies['cop'], obj)
-                    if pred_list:
-                        for pred in pred_list:
-                            relation.predicate = WordUnitSequence([pred])
-                            self.__relations.append(relation)
+                if not dependent.pos == 'PRP':
+                    relation = Relation()
+                    # The subject is the dependent
+                    relation.subject = self.__expand_head_word(dependent)
+                    # Find out if there is negation
+                    negation = self.__get_dependents(self._dependencies['neg'], head)
+                    negation = negation[0] if negation else None
+                    # If the dependency relation is a verb:
+                    if head.pos.startswith(self._pos_tags['vb']):
+                        # The predicate is the head
+                        pred = head
+                        relation.predicate = WordUnitSequence([pred])
+                        # Find out if there is any aux
+                        auxiliary = self.__get_dependents(self._dependencies['aux'], pred)
+                        if auxiliary:
+                            relation.predicate.add_word_unit(auxiliary[0])
+                        # Add negation word if there is any
+                        if negation:
+                            relation.predicate.add_word_unit(negation)
+                        # Object for 'dobj'
+                        obj_list = self.__get_dependents(self._dependencies['dobj'], pred)
+                        if obj_list:
+                            for o in obj_list:
+                                obj = self.__expand_head_word(o)
+                                relation.object = obj
+                                self.relations.append(relation)
+                        # If there is no direct objects, look for prepositional objects
+                        else:
+                            pobj_phrase = self.__get_pobj_phrase(pred)
+                            if pobj_phrase:
+                                relation.object = pobj_phrase
+                                self.relations.append(relation)
+                        # TODO: 'iobj' (is it necessary?)
+                        # TODO: 'xcomp'  e.g. The objective of this chapter is to review the mineralogy and crystal chemistry of carbon.
+                    # if the dependency relation is a copular verb:
+                    elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
+                        # The object is the head
+                        obj = head
+                        relation.object = self.__expand_head_word(obj)
+                        # Predicate
+                        pred_list = self.__get_dependents(self._dependencies['cop'], obj)
+                        if pred_list:
+                            for pred in pred_list:
+                                relation.predicate = WordUnitSequence([pred])
+                                # Add negation word if there is any
+                                if negation:
+                                    relation.predicate.add_word_unit(negation)
+                                self.__relations.append(relation)
 
     def extract_nsubjpass(self):
         if self._dependencies['nsubjpass'] in self.__dep_triple_dict:
@@ -222,12 +237,20 @@ class RelationExtractor(object):
                 dependent = triple['dependent']
                 relation = Relation()
                 # The subject is the dependent
-                relation.subject = self.__expand_head(dependent)
+                relation.subject = self.__expand_head_word(dependent)
                 vbn = head
                 pred_list = self.__get_dependents(self._dependencies['auxpass'], vbn)
                 if pred_list:
                     for pred in pred_list:
                         relation.predicate = WordUnitSequence([pred])
+                        # Find out if there is any auxiliary
+                        auxiliary = self.__get_dependents(self._dependencies['aux'], head)
+                        if auxiliary:
+                            relation.predicate.add_word_unit(auxiliary[0])
+                        # Find out if there is any negation
+                        negation = self.__get_dependents(self._dependencies['neg'], head)
+                        if negation:
+                            relation.predicate.add_word_unit(negation[0])
                         relation.object = WordUnitSequence([vbn])
                         pobj_phrase = self.__get_pobj_phrase(vbn)
                         if pobj_phrase:
@@ -271,7 +294,8 @@ def batch_test():
 
 def test():
     sentences = u"""
-       The increase in free Ca2+ and DAG could activate more PKC in a positive feedback mechanism.
+       Mirk is not an essential gene because embryonic knockout of Mirk/dyrk1B caused no evident phenotype in mice.
+       The decision should not be made by Jim.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -289,5 +313,5 @@ def test():
 
 
 if __name__ == '__main__':
-    # test()
-    batch_test()
+    test()
+    # batch_test()
