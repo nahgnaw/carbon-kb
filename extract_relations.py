@@ -277,13 +277,21 @@ class RelationExtractor(object):
                 pred_list = self._get_dependents(self._dependencies['auxpass'], vbn)
                 if pred_list:
                     for pred in pred_list:
-                        relation.predicate = self._expand_predicate(pred, head, head)
-                        relation.predicate.add_word_unit(vbn)
-                        pobj_phrase = self._get_pobj_phrase(vbn)
-                        if pobj_phrase:
-                            relation.predicate.add_word_unit(pobj_phrase[0])
-                            relation.object = WordUnitSequence(pobj_phrase[1:])
-                            self._relations.append(relation)
+                        relation.predicate = self._expand_predicate(vbn, vbn, vbn)
+                        relation.predicate.add_word_unit(pred)
+                        pred = relation.predicate.head
+                        obj_list = self._get_dependents(self._dependencies['dobj'], pred)
+                        if obj_list:
+                            for o in obj_list:
+                                obj = self._expand_head_word(o)
+                                relation.object = obj
+                                self.relations.append(relation)
+                        else:
+                            pobj_phrase = self._get_pobj_phrase(vbn)
+                            if pobj_phrase:
+                                relation.predicate.add_word_unit(pobj_phrase[0])
+                                relation.object = WordUnitSequence(pobj_phrase[1:])
+                                self._relations.append(relation)
 
     @property
     def relations(self):
@@ -322,7 +330,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-      It was unclear what muscle function is maintained in these cancer cells.
+      The C2C12 in vitro model of myogenesis was used to characterize the functions of Mirk kinase in normal diploid cells[], [].
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -340,5 +348,5 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
-    # batch_test()
+    # test()
+    batch_test()
