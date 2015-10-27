@@ -116,7 +116,6 @@ class RelationExtractor(object):
             return WordUnitSequence(nn)
         return WordUnitSequence(head)
 
-    # TODO: punctuations in conjunctions
     def _get_conjunctions(self, head):
         conjunctions = WordUnitSequence()
         conj_list = self._get_dependents(self._dependencies['conj:and'], head)
@@ -230,7 +229,6 @@ class RelationExtractor(object):
                 head = triple['head']
                 dependent = triple['dependent']
                 # PRP and WDT cannot be subject for now
-                # TODO: check if WDT leads a clause
                 if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt']]:
                     relation = Relation()
                     # The subject is the dependent
@@ -255,8 +253,6 @@ class RelationExtractor(object):
                                 relation.predicate.add_word_unit(pobj_phrase[0])
                                 relation.object = WordUnitSequence(pobj_phrase[1:])
                                 self.relations.append(relation)
-                        # TODO: 'iobj' (is it necessary?)
-                        # TODO: 'ccomp' e.g. It was unclear what muscle function is maintained in these cancer cells.
                     # if the dependency relation is a copular verb:
                     elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
                         # The object is the head
@@ -278,7 +274,6 @@ class RelationExtractor(object):
                 # The subject is the dependent
                 relation.subject = self._expand_head_word(dependent)
                 vbn = head
-                # TODO: conjunction of vbn
                 pred_list = self._get_dependents(self._dependencies['auxpass'], vbn)
                 if pred_list:
                     for pred in pred_list:
@@ -327,7 +322,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-      Mirk has greatest abundance and activity in normal diploid cells and in cancer cells transiently arrested in G0, or in early G1, with up to 10-fold lower levels in cycling cells [].
+      It was unclear what muscle function is maintained in these cancer cells.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -345,5 +340,5 @@ def test():
 
 
 if __name__ == '__main__':
-    # test()
-    batch_test()
+    test()
+    # batch_test()
