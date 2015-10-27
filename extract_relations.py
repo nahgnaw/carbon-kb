@@ -59,10 +59,12 @@ class RelationExtractor(object):
         'prep': 'prep',
         'pobj': 'pobj',
         'conj:and': 'conj:and',
+        'conj:or': 'conj:or',
         'cc': 'cc',
         'aux': 'aux',
         'neg': 'neg',
-        'xcomp': 'xcomp'
+        'xcomp': 'xcomp',
+        'ccomp': 'ccomp'
     }
 
     _pos_tags = {
@@ -113,9 +115,11 @@ class RelationExtractor(object):
             return WordUnitSequence(nn)
         return WordUnitSequence(head)
 
+    # TODO: punctuations in conjunctions
     def __get_conjunctions(self, head):
         conjunctions = WordUnitSequence()
         conj_list = self.__get_dependents(self._dependencies['conj:and'], head)
+        conj_list.extend(self.__get_dependents(self._dependencies['conj:or'], head))
         if conj_list:
             for conj in conj_list:
                 conjunctions.extend(self.__get_noun_compound(conj))
@@ -230,6 +234,7 @@ class RelationExtractor(object):
                                 relation.object = obj
                                 self.relations.append(relation)
                         # If there is no direct objects, look for prepositional objects
+                        # TODO: prep should stay with verbs
                         else:
                             pobj_phrase = self.__get_pobj_phrase(pred)
                             if pobj_phrase:
@@ -258,6 +263,7 @@ class RelationExtractor(object):
                 # The subject is the dependent
                 relation.subject = self.__expand_head_word(dependent)
                 vbn = head
+                # TODO: conjunction of vbn
                 pred_list = self.__get_dependents(self._dependencies['auxpass'], vbn)
                 if pred_list:
                     for pred in pred_list:
@@ -305,7 +311,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-       The objective of this chapter is to review the mineralogy and crystal chemistry of carbon.
+       In the current study we show that Mirk kinase depletion and Mirk kinase inhibition increase the amount of toxic ROS induced in differentiating C2C12 myoblasts and in postmitotic cultures of fused, contractile myotubes that model skeletal muscle.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -323,5 +329,5 @@ def test():
 
 
 if __name__ == '__main__':
-    # test()
-    batch_test()
+    test()
+    # batch_test()
