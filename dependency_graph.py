@@ -8,32 +8,32 @@ import nltk
 class WordUnit(object):
 
     def __init__(self, index, word, lemma, pos):
-        self.__index = index
-        self.__word = word
-        self.__lemma = lemma
-        self. __pos = pos
+        self._index = index
+        self._word = word
+        self._lemma = lemma
+        self. _pos = pos
 
     def __str__(self):
-        return self.__word
+        return self._word
 
     @property
     def index(self):
-        return self.__index
+        return self._index
 
     @property
     def word(self):
-        return self.__word
+        return self._word
 
     @property
     def lemma(self):
-        return self.__lemma
+        return self._lemma
 
     @property
     def pos(self):
-        return self.__pos
+        return self._pos
 
     def more_info(self):
-        return '({})'.format(' '.join([str(self.__index), self.__word, self.__pos]))
+        return '({})'.format(' '.join([str(self._index), self._word, self._pos]))
 
 
 class WordUnitSequence(object):
@@ -42,49 +42,46 @@ class WordUnitSequence(object):
         if word_unit_list:
             if not type(word_unit_list) is list:
                 word_unit_list = [word_unit_list]
-            self.__seq = word_unit_list
-            self.__sort()
+            self._seq = word_unit_list
+            self._sort()
         else:
-            self.__seq = []
+            self._seq = []
         if head:
             self.__head = head
 
     def __str__(self):
-        return ' '.join([wn.word for wn in self.__seq])
+        return ' '.join([wn.word for wn in self._seq])
 
     def __nonzero__(self):
-        return len(self.__seq)
+        return len(self._seq)
 
     def __len__(self):
-        return len(self.__seq)
+        return len(self._seq)
 
     def __getitem__(self, i):
-        return self.__seq[i]
+        return self._seq[i]
 
-    def __sort(self):
-        if self.__seq:
-            self.__seq = sorted(self.__seq, key=lambda wn: wn.index)
+    def _sort(self):
+        if self._seq:
+            self._seq = sorted(self._seq, key=lambda wn: wn.index)
 
     def lemmatized(self):
-        return ' '.join(wn.lemma for wn in self.__seq)
+        return ' '.join(wn.lemma for wn in self._seq)
 
     def extend(self, seq):
         if type(seq) is list:
-            self.__seq.extend(seq)
+            self._seq.extend(seq)
         else:
-            self.__seq.extend(seq.sequence)
-        self.__sort()
+            self._seq.extend(seq.sequence)
+        self._sort()
 
     def add_word_unit(self, word_unit):
-        self.__seq.append(word_unit)
-        self.__sort()
-
-    def print_lemma(self):
-        print ' '.join([wn.lemma for wn in self.__seq])
+        self._seq.append(word_unit)
+        self._sort()
 
     @property
     def sequence(self):
-        return self.__seq
+        return self._seq
 
     @property
     def head(self):
@@ -98,30 +95,30 @@ class WordUnitSequence(object):
 class DependencyGraph(object):
 
     def __init__(self, sentence, parser_server_url=None):
-        self.__sentence = sentence
-        self.__raw = {}
-        self.__tree = {}
-        self.__words = []
-        self.__lemmas = []
-        self.__tags = []
-        self.__tagged_text = None
-        self.__dep_triples = []
+        self._sentence = sentence
+        self._raw = {}
+        self._tree = {}
+        self._words = []
+        self._lemmas = []
+        self._tags = []
+        self._tagged_text = None
+        self._dep_triples = []
 
         if not parser_server_url:
             parser_server_url = 'http://localhost:8080'
 
         parser = jsonrpclib.Server(parser_server_url)
-        self.__raw = json.loads(parser.parse(self.__sentence))
-        self.__tree = self.__raw['sentences'][0]
-        if self.__tree:
-            self.__parse_tree()
+        self._raw = json.loads(parser.parse(self._sentence))
+        self._tree = self._raw['sentences'][0]
+        if self._tree:
+            self._parse_tree()
 
-    def __parse_tree(self):
+    def _parse_tree(self):
         dependencies = []
-        for dep in self.__dependencies():
+        for dep in self._dependencies():
             dependencies.append(dep)
         dependencies = sorted(dependencies)
-        words = self.__tree['words']
+        words = self._tree['words']
         tagged_text = []
         for dep in dependencies:
             index = dep[0]
@@ -133,55 +130,55 @@ class DependencyGraph(object):
             head_lemma = words[head_index - 1][1]['Lemma']
             head_pos = words[head_index - 1][1]['PartOfSpeech']
             rel = dep[5]
-            self.__words.append(word)
-            self.__lemmas.append(lemma)
-            self.__tags.append(pos)
+            self._words.append(word)
+            self._lemmas.append(lemma)
+            self._tags.append(pos)
             tagged_text.append(nltk.tree.Tree(pos, [word]))
             if not rel == 'root':
                 head = WordUnit(head_index, head_word, head_lemma, head_pos)
                 dependent = WordUnit(index, word, lemma, pos)
                 triple = (head, rel, dependent)
-                self.__dep_triples.append(triple)
-        self.__tagged_text = nltk.tree.Tree('S', tagged_text)
+                self._dep_triples.append(triple)
+        self._tagged_text = nltk.tree.Tree('S', tagged_text)
 
-    def __dependencies(self):
-        for rel, _, head, word, index in self.__tree['dependencies']:
+    def _dependencies(self):
+        for rel, _, head, word, index in self._tree['dependencies']:
             index = int(index)
-            word_info = self.__tree['words'][index - 1][1]
+            word_info = self._tree['words'][index - 1][1]
             pos = word_info['PartOfSpeech']
             lemma = word_info['Lemma']
             yield index, word, lemma, pos, head, rel
 
     @property
     def dep_triples(self):
-        return self.__dep_triples
+        return self._dep_triples
 
     @property
     def text(self):
-        return self.__words
+        return self._words
 
     @property
     def raw(self):
-        return self.__raw
+        return self._raw
 
     @property
     def lemmas(self):
-        return self.__lemmas
+        return self._lemmas
 
     @property
     def tags(self):
-        return self.__tags
+        return self._tags
 
     @property
     def tagged_text(self):
-        return self.__tagged_text
+        return self._tagged_text
 
     def print_dep_triples(self):
-        for t in self.__dep_triples:
+        for t in self._dep_triples:
             print t[0].more_info(), t[1], t[2].more_info()
 
     def print_raw(self):
-        print json.dumps(self.__raw, ensure_ascii=False, indent=4)
+        print json.dumps(self._raw, ensure_ascii=False, indent=4)
 
 
 if __name__ == '__main__':

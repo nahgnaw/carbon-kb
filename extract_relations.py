@@ -11,39 +11,39 @@ from dependency_graph import WordUnitSequence, DependencyGraph
 class Relation(object):
 
     def __init__(self, subj=None, pred=None, obj=None):
-        self.__subj = subj
-        self.__pred = pred
-        self.__obj = obj
+        self._subj = subj
+        self._pred = pred
+        self._obj = obj
 
     def __str__(self):
-        return str((str(self.__subj), str(self.__pred), str(self.__obj)))
+        return str((str(self._subj), str(self._pred), str(self._obj)))
 
     def lemmatized(self):
-        return self.__subj.lemmatized(), self.__pred.lemmatized(), self.__obj.lemmatized()
+        return self._subj.lemmatized(), self._pred.lemmatized(), self._obj.lemmatized()
 
     @property
     def subject(self):
-        return self.__subj
+        return self._subj
 
     @subject.setter
     def subject(self, subj):
-        self.__subj = subj
+        self._subj = subj
 
     @property
     def predicate(self):
-        return self.__pred
+        return self._pred
 
     @predicate.setter
     def predicate(self, pred):
-        self.__pred = pred
+        self._pred = pred
 
     @property
     def object(self):
-        return self.__obj
+        return self._obj
 
     @object.setter
     def object(self, obj):
-        self.__obj = obj
+        self._obj = obj
 
 
 class RelationExtractor(object):
@@ -77,142 +77,156 @@ class RelationExtractor(object):
     }
 
     def __init__(self, sentence, debug=False):
-        self.__sentence = sentence
-        self.__dep_triple_dict = {}
-        self.__make_dep_triple_dict()
-        self.__relations = []
-        self.__debug = debug
+        self._sentence = sentence
+        self._debug = debug
+        self._dep_triple_dict = {}
+        self._make_dep_triple_dict()
+        self._relations = []
 
-    def __make_dep_triple_dict(self):
-        dg = DependencyGraph(self.__sentence)
+    def _make_dep_triple_dict(self):
+        dg = DependencyGraph(self._sentence)
         triples = dg.dep_triples
-        if self.__debug:
+        if self._debug:
             dg.print_dep_triples()
         for triple in triples:
             dep = triple[1]
             if dep in self._dependencies.values():
-                if dep not in self.__dep_triple_dict:
-                    self.__dep_triple_dict[dep] = []
-                self.__dep_triple_dict[dep].append({
+                if dep not in self._dep_triple_dict:
+                    self._dep_triple_dict[dep] = []
+                self._dep_triple_dict[dep].append({
                     'head': triple[0],
                     'dependent': triple[2]
                 })
 
-    def __get_dependents(self, dependency_relation, head, dependent=None):
+    def _get_dependents(self, dependency_relation, head, dependent=None):
         dependents = []
-        if dependency_relation in self.__dep_triple_dict:
+        if dependency_relation in self._dep_triple_dict:
             if dependent:
-                dependents = [t['dependent'] for t in self.__dep_triple_dict[dependency_relation]
+                dependents = [t['dependent'] for t in self._dep_triple_dict[dependency_relation]
                               if head.index == t['head'].index and dependent.word == t['dependent'].word]
             else:
                 dependents = [t['dependent']
-                              for t in self.__dep_triple_dict[dependency_relation] if head.index == t['head'].index]
+                              for t in self._dep_triple_dict[dependency_relation] if head.index == t['head'].index]
         return dependents
 
-    def __get_noun_compound(self, head):
-        nn = self.__get_dependents(self._dependencies['nn'], head)
+    def _get_noun_compound(self, head):
+        nn = self._get_dependents(self._dependencies['nn'], head)
         if nn:
             nn.append(head)
             return WordUnitSequence(nn)
         return WordUnitSequence(head)
 
     # TODO: punctuations in conjunctions
-    def __get_conjunctions(self, head):
+    def _get_conjunctions(self, head):
         conjunctions = WordUnitSequence()
-        conj_list = self.__get_dependents(self._dependencies['conj:and'], head)
-        conj_list.extend(self.__get_dependents(self._dependencies['conj:or'], head))
+        conj_list = self._get_dependents(self._dependencies['conj:and'], head)
+        conj_list.extend(self._get_dependents(self._dependencies['conj:or'], head))
         if conj_list:
             for conj in conj_list:
-                conjunctions.extend(self.__get_noun_compound(conj))
-        cc_list = self.__get_dependents(self._dependencies['cc'], head)
+                conjunctions.extend(self._get_noun_compound(conj))
+        cc_list = self._get_dependents(self._dependencies['cc'], head)
         if cc_list:
             for cc in cc_list:
                 conjunctions.add_word_unit(cc)
         return conjunctions
 
-    def __get_pobj_phrase(self, head):
+    def _get_pobj_phrase(self, head):
         pobj_phrase = WordUnitSequence()
-        prep_list = self.__get_dependents(self._dependencies['prep'], head)
+        prep_list = self._get_dependents(self._dependencies['prep'], head)
         if prep_list:
             for prep in prep_list:
-                obj_list = self.__get_dependents(self._dependencies['pobj'], prep)
+                obj_list = self._get_dependents(self._dependencies['pobj'], prep)
                 if obj_list:
                     for obj in obj_list:
                         if not obj.pos == self._pos_tags['wdt']:
-                            obj_seq = self.__expand_head_word(obj)
+                            obj_seq = self._expand_head_word(obj)
                             obj_seq.add_word_unit(prep)
                             pobj_phrase.extend(obj_seq)
         return pobj_phrase
 
-    def __get_vmod_phrase(self, head):
+    def _get_vmod_phrase(self, head):
         vmod_phrase = WordUnitSequence()
-        vmod_list = self.__get_dependents(self._dependencies['vmod'], head)
+        vmod_list = self._get_dependents(self._dependencies['vmod'], head)
         if vmod_list:
             for vmod in vmod_list:
                 vmod_phrase.add_word_unit(vmod)
-                aux_list = self.__get_dependents(self._dependencies['aux'], vmod)
+                aux_list = self._get_dependents(self._dependencies['aux'], vmod)
                 if aux_list:
                     for aux in aux_list:
                         vmod_phrase.add_word_unit(aux)
-                pobj_phrase = self.__get_pobj_phrase(vmod)
+                pobj_phrase = self._get_pobj_phrase(vmod)
                 if pobj_phrase:
                     vmod_phrase.extend(pobj_phrase)
-                dobj_list = self.__get_dependents(self._dependencies['dobj'], vmod)
+                dobj_list = self._get_dependents(self._dependencies['dobj'], vmod)
                 if dobj_list:
                     for dobj in dobj_list:
-                        obj_seq = self.__expand_head_word(dobj)
+                        obj_seq = self._expand_head_word(dobj)
                         vmod_phrase.extend(obj_seq)
         return vmod_phrase
 
-    def __expand_head_word(self, head):
+    def _expand_head_word(self, head):
         # Find out if the head is in a compound noun
-        expansion = self.__get_noun_compound(head)
+        expansion = self._get_noun_compound(head)
         # Find out if there is any negation
-        neg = self.__get_dependents(self._dependencies['neg'], head)
+        neg = self._get_dependents(self._dependencies['neg'], head)
         if neg and neg[0].pos == self._pos_tags['dt']:
             expansion.add_word_unit(neg[0])
+            if self._debug:
+                print '[DEBUG] "{}" head expansion with negation: "{}"'.format(head, neg)
         # Find out if the head has pobj phrase
-        pobj_phrase = self.__get_pobj_phrase(head)
+        pobj_phrase = self._get_pobj_phrase(head)
         if pobj_phrase:
             expansion.extend(pobj_phrase)
+            if self._debug:
+                print '[DEBUG] "{}" head expansion with pobj phrase: "{}"'.format(head, pobj_phrase)
         # Find out if the head has vmod phrase
-        vmod_phrase = self.__get_vmod_phrase(head)
+        vmod_phrase = self._get_vmod_phrase(head)
         if vmod_phrase:
             expansion.extend(vmod_phrase)
+            if self._debug:
+                print '[DEBUG] "{}" head expansion with vmod phrase: "{}"'.format(head, vmod_phrase)
         # Find out if the head has conjunctions
-        conj = self.__get_conjunctions(head)
+        conj = self._get_conjunctions(head)
         if conj:
             expansion.extend(conj)
+            if self._debug:
+                print '[DEBUG] "{}" head expansion with conjunction: "{}"'.format(head, conj)
         return expansion
 
     # Expand predicate with auxiliary and negation
-    def __expand_predicate(self, pred, aux_head=None, neg_head=None):
+    def _expand_predicate(self, pred, aux_head=None, neg_head=None):
         predicate = WordUnitSequence(word_unit_list=[pred], head=pred)
         if aux_head:
             # Find out if there is any aux
-            aux = self.__get_dependents(self._dependencies['aux'], aux_head)
+            aux = self._get_dependents(self._dependencies['aux'], aux_head)
             if aux:
                 predicate.add_word_unit(aux[0])
+                if self._debug:
+                    print '[DEBUG] "{}" predicate expansion with auxiliary: "{}"'.format(pred, aux)
         if neg_head:
             # Find out if there is any negation
-            neg = self.__get_dependents(self._dependencies['neg'], neg_head)
+            neg = self._get_dependents(self._dependencies['neg'], neg_head)
             if neg:
                 predicate.add_word_unit(neg[0])
+                if self._debug:
+                    print '[DEBUG] "{}" predicate expansion with negation: "{}"'.format(pred, neg)
         # Find out if there is any xcomp
-        xcomp_list = self.__get_dependents(self._dependencies['xcomp'], pred)
+        xcomp_list = self._get_dependents(self._dependencies['xcomp'], pred)
         if xcomp_list:
             for xcomp in xcomp_list:
                 predicate.add_word_unit(xcomp)
                 # Use the xcomp as the "head" instead of the original head
                 predicate.head = xcomp
-                aux = self.__get_dependents(self._dependencies['aux'], xcomp)
+                if self._debug:
+                    print '[DEBUG] "{}" predicate expansion with xcomp: "{}"'.format(pred, xcomp)
+                aux = self._get_dependents(self._dependencies['aux'], xcomp)
                 if aux:
                     predicate.add_word_unit(aux[0])
         return predicate
 
     def extract_nsubj(self):
-        if self._dependencies['nsubj'] in self.__dep_triple_dict:
-            for triple in self.__dep_triple_dict['nsubj']:
+        if self._dependencies['nsubj'] in self._dep_triple_dict:
+            for triple in self._dep_triple_dict['nsubj']:
                 head = triple['head']
                 dependent = triple['dependent']
                 # PRP and WDT cannot be subject for now
@@ -220,23 +234,23 @@ class RelationExtractor(object):
                 if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt']]:
                     relation = Relation()
                     # The subject is the dependent
-                    relation.subject = self.__expand_head_word(dependent)
+                    relation.subject = self._expand_head_word(dependent)
                     # If the dependency relation is a verb:
                     if head.pos.startswith(self._pos_tags['vb']):
                         # The predicate is the head
                         pred = head
-                        relation.predicate = self.__expand_predicate(pred, pred, head)
+                        relation.predicate = self._expand_predicate(pred, pred, head)
                         pred = relation.predicate.head
                         # Object for 'dobj'
-                        obj_list = self.__get_dependents(self._dependencies['dobj'], pred)
+                        obj_list = self._get_dependents(self._dependencies['dobj'], pred)
                         if obj_list:
                             for o in obj_list:
-                                obj = self.__expand_head_word(o)
+                                obj = self._expand_head_word(o)
                                 relation.object = obj
                                 self.relations.append(relation)
                         # If there is no direct objects, look for prepositional objects
                         else:
-                            pobj_phrase = self.__get_pobj_phrase(pred)
+                            pobj_phrase = self._get_pobj_phrase(pred)
                             if pobj_phrase:
                                 relation.predicate.add_word_unit(pobj_phrase[0])
                                 relation.object = WordUnitSequence(pobj_phrase[1:])
@@ -247,38 +261,38 @@ class RelationExtractor(object):
                     elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
                         # The object is the head
                         obj = head
-                        relation.object = self.__expand_head_word(obj)
+                        relation.object = self._expand_head_word(obj)
                         # Predicate
-                        pred_list = self.__get_dependents(self._dependencies['cop'], obj)
+                        pred_list = self._get_dependents(self._dependencies['cop'], obj)
                         if pred_list:
                             for pred in pred_list:
-                                relation.predicate = self.__expand_predicate(pred, head, head)
-                                self.__relations.append(relation)
+                                relation.predicate = self._expand_predicate(pred, head, head)
+                                self._relations.append(relation)
 
     def extract_nsubjpass(self):
-        if self._dependencies['nsubjpass'] in self.__dep_triple_dict:
-            for triple in self.__dep_triple_dict['nsubjpass']:
+        if self._dependencies['nsubjpass'] in self._dep_triple_dict:
+            for triple in self._dep_triple_dict['nsubjpass']:
                 head = triple['head']
                 dependent = triple['dependent']
                 relation = Relation()
                 # The subject is the dependent
-                relation.subject = self.__expand_head_word(dependent)
+                relation.subject = self._expand_head_word(dependent)
                 vbn = head
                 # TODO: conjunction of vbn
-                pred_list = self.__get_dependents(self._dependencies['auxpass'], vbn)
+                pred_list = self._get_dependents(self._dependencies['auxpass'], vbn)
                 if pred_list:
                     for pred in pred_list:
-                        relation.predicate = self.__expand_predicate(pred, head, head)
+                        relation.predicate = self._expand_predicate(pred, head, head)
                         relation.predicate.add_word_unit(vbn)
-                        pobj_phrase = self.__get_pobj_phrase(vbn)
+                        pobj_phrase = self._get_pobj_phrase(vbn)
                         if pobj_phrase:
                             relation.predicate.add_word_unit(pobj_phrase[0])
                             relation.object = WordUnitSequence(pobj_phrase[1:])
-                            self.__relations.append(relation)
+                            self._relations.append(relation)
 
     @property
     def relations(self):
-        return self.__relations
+        return self._relations
 
 
 def batch_test():
@@ -331,5 +345,5 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
-    # batch_test()
+    # test()
+    batch_test()
