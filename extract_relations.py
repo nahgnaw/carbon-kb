@@ -79,13 +79,14 @@ class RelationExtractor(object):
     def __init__(self, sentence, debug=False):
         self.__sentence = sentence
         self.__dep_triple_dict = {}
-        self.__make_dep_triple_dict(debug)
+        self.__make_dep_triple_dict()
         self.__relations = []
+        self.__debug = debug
 
-    def __make_dep_triple_dict(self, debug):
+    def __make_dep_triple_dict(self):
         dg = DependencyGraph(self.__sentence)
         triples = dg.dep_triples
-        if debug:
+        if self.__debug:
             dg.print_dep_triples()
         for triple in triples:
             dep = triple[1]
@@ -234,11 +235,11 @@ class RelationExtractor(object):
                                 relation.object = obj
                                 self.relations.append(relation)
                         # If there is no direct objects, look for prepositional objects
-                        # TODO: prep should stay with verbs
                         else:
                             pobj_phrase = self.__get_pobj_phrase(pred)
                             if pobj_phrase:
-                                relation.object = pobj_phrase
+                                relation.predicate.add_word_unit(pobj_phrase[0])
+                                relation.object = WordUnitSequence(pobj_phrase[1:])
                                 self.relations.append(relation)
                         # TODO: 'iobj' (is it necessary?)
                         # TODO: 'ccomp' e.g. It was unclear what muscle function is maintained in these cancer cells.
@@ -268,11 +269,12 @@ class RelationExtractor(object):
                 if pred_list:
                     for pred in pred_list:
                         relation.predicate = self.__expand_predicate(pred, head, head)
-                        relation.object = WordUnitSequence([vbn])
+                        relation.predicate.add_word_unit(vbn)
                         pobj_phrase = self.__get_pobj_phrase(vbn)
                         if pobj_phrase:
-                            relation.object.extend(pobj_phrase)
-                        self.__relations.append(relation)
+                            relation.predicate.add_word_unit(pobj_phrase[0])
+                            relation.object = WordUnitSequence(pobj_phrase[1:])
+                            self.__relations.append(relation)
 
     @property
     def relations(self):
@@ -311,7 +313,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-       In the current study we show that Mirk kinase depletion and Mirk kinase inhibition increase the amount of toxic ROS induced in differentiating C2C12 myoblasts and in postmitotic cultures of fused, contractile myotubes that model skeletal muscle.
+      Mirk has greatest abundance and activity in normal diploid cells and in cancer cells transiently arrested in G0, or in early G1, with up to 10-fold lower levels in cycling cells [].
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()

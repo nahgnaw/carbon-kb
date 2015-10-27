@@ -58,6 +58,9 @@ class WordUnitSequence(object):
     def __len__(self):
         return len(self.__seq)
 
+    def __getitem__(self, i):
+        return self.__seq[i]
+
     def __sort(self):
         if self.__seq:
             self.__seq = sorted(self.__seq, key=lambda wn: wn.index)
