@@ -312,6 +312,7 @@ class RelationExtractor(object):
 
 def batch_test():
     dataset = 'genes-cancer'
+    # dataset = 'RiMG75'
     data_dir = 'data/{}/tmp/'.format(dataset)
     for root, _, files in os.walk(data_dir):
         for fn in files:
