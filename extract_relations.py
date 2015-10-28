@@ -64,7 +64,8 @@ class RelationExtractor(object):
         'aux': 'aux',
         'neg': 'neg',
         'xcomp': 'xcomp',
-        'ccomp': 'ccomp'
+        'ccomp': 'ccomp',
+        'acomp': 'acomp'
     }
 
     _pos_tags = {
@@ -248,10 +249,15 @@ class RelationExtractor(object):
                                 self.relations.append(relation)
                         # If there is no direct objects, look for prepositional objects
                         else:
+                            acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
+                            if acomp_list:
+                                for acomp in acomp_list:
+                                    relation.predicate.add_word_unit(acomp)
                             pobj_phrase = self._get_pobj_phrase(pred)
                             if pobj_phrase:
                                 relation.predicate.add_word_unit(pobj_phrase[0])
                                 relation.object = WordUnitSequence(pobj_phrase[1:])
+                            if relation.object:
                                 self.relations.append(relation)
                     # if the dependency relation is a copular verb:
                     elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
@@ -330,7 +336,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-      The C2C12 in vitro model of myogenesis was used to characterize the functions of Mirk kinase in normal diploid cells[], [].
+      Mirk becomes restricted to the cytoplasm during myogenesis
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -348,5 +354,5 @@ def test():
 
 
 if __name__ == '__main__':
-    # test()
-    batch_test()
+    test()
+    # batch_test()
