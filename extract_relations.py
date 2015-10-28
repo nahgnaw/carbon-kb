@@ -229,6 +229,8 @@ class RelationExtractor(object):
             for triple in self._dep_triple_dict['nsubj']:
                 head = triple['head']
                 dependent = triple['dependent']
+                if not head.word.isalpha() or not dependent.word.isalpha():
+                    continue
                 # PRP and WDT cannot be subject for now
                 if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt']]:
                     relation = Relation()
@@ -276,28 +278,32 @@ class RelationExtractor(object):
             for triple in self._dep_triple_dict['nsubjpass']:
                 head = triple['head']
                 dependent = triple['dependent']
-                relation = Relation()
-                # The subject is the dependent
-                relation.subject = self._expand_head_word(dependent)
-                vbn = head
-                pred_list = self._get_dependents(self._dependencies['auxpass'], vbn)
-                if pred_list:
-                    for pred in pred_list:
-                        relation.predicate = self._expand_predicate(vbn, vbn, vbn)
-                        relation.predicate.add_word_unit(pred)
-                        pred = relation.predicate.head
-                        obj_list = self._get_dependents(self._dependencies['dobj'], pred)
-                        if obj_list:
-                            for o in obj_list:
-                                obj = self._expand_head_word(o)
-                                relation.object = obj
-                                self.relations.append(relation)
-                        else:
-                            pobj_phrase = self._get_pobj_phrase(vbn)
-                            if pobj_phrase:
-                                relation.predicate.add_word_unit(pobj_phrase[0])
-                                relation.object = WordUnitSequence(pobj_phrase[1:])
-                                self._relations.append(relation)
+                if not head.word.isalpha() or not dependent.word.isalpha():
+                    continue
+                # PRP and WDT cannot be subject for now
+                if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt']]:
+                    relation = Relation()
+                    # The subject is the dependent
+                    relation.subject = self._expand_head_word(dependent)
+                    vbn = head
+                    pred_list = self._get_dependents(self._dependencies['auxpass'], vbn)
+                    if pred_list:
+                        for pred in pred_list:
+                            relation.predicate = self._expand_predicate(vbn, vbn, vbn)
+                            relation.predicate.add_word_unit(pred)
+                            pred = relation.predicate.head
+                            obj_list = self._get_dependents(self._dependencies['dobj'], pred)
+                            if obj_list:
+                                for o in obj_list:
+                                    obj = self._expand_head_word(o)
+                                    relation.object = obj
+                                    self.relations.append(relation)
+                            else:
+                                pobj_phrase = self._get_pobj_phrase(vbn)
+                                if pobj_phrase:
+                                    relation.predicate.add_word_unit(pobj_phrase[0])
+                                    relation.object = WordUnitSequence(pobj_phrase[1:])
+                                    self._relations.append(relation)
 
     @property
     def relations(self):
@@ -316,7 +322,7 @@ def batch_test():
                 f_out = codecs.open(output_filename, 'w', encoding='utf-8')
                 for line in f_in:
                     sent = line.strip()
-                    f_out.write(u'{}\n'.format(sent))
+                    # f_out.write(u'{}\n'.format(sent))
                     try:
                         extractor = RelationExtractor(sent, debug=False)
                     except:
@@ -328,15 +334,16 @@ def batch_test():
                         for relation in extractor.relations:
                             print sent
                             print relation
-                            f_out.write(u'{}\n'.format(relation))
-                        f_out.write('\n')
+                            if relation:
+                                f_out.write(u'{}\n'.format(relation))
+                        # f_out.write('\n')
                 f_in.close()
                 f_out.close()
 
 
 def test():
     sentences = u"""
-      Mirk becomes restricted to the cytoplasm during myogenesis
+      Roughly 85% of lung cancers are caused by smoking, with the remaining related to factors such as individual genetics, and radon gas, asbestos, and air pollution exposures [-].
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -354,5 +361,5 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
-    # batch_test()
+    # test()
+    batch_test()
