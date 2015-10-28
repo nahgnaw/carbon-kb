@@ -231,8 +231,8 @@ class RelationExtractor(object):
                 dependent = triple['dependent']
                 if not head.word.isalpha() or not dependent.word.isalpha():
                     continue
-                # PRP and WDT cannot be subject for now
-                if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt']]:
+                 # PRP, WDT, and DT cannot be subject for now
+                if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt'], self._pos_tags['dt']]:
                     relation = Relation()
                     # The subject is the dependent
                     relation.subject = self._expand_head_word(dependent)
@@ -280,8 +280,8 @@ class RelationExtractor(object):
                 dependent = triple['dependent']
                 if not head.word.isalpha() or not dependent.word.isalpha():
                     continue
-                # PRP and WDT cannot be subject for now
-                if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt']]:
+                # PRP, WDT, and DT cannot be subject for now
+                if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt'], self._pos_tags['dt']]:
                     relation = Relation()
                     # The subject is the dependent
                     relation.subject = self._expand_head_word(dependent)
@@ -322,7 +322,7 @@ def batch_test():
                 f_out = codecs.open(output_filename, 'w', encoding='utf-8')
                 for line in f_in:
                     sent = line.strip()
-                    # f_out.write(u'{}\n'.format(sent))
+                    f_out.write(u'{}\n'.format(sent))
                     try:
                         extractor = RelationExtractor(sent, debug=False)
                     except:
@@ -334,16 +334,15 @@ def batch_test():
                         for relation in extractor.relations:
                             print sent
                             print relation
-                            if relation:
-                                f_out.write(u'{}\n'.format(relation))
-                        # f_out.write('\n')
+                            f_out.write(u'{}\n'.format(relation))
+                        f_out.write('\n')
                 f_in.close()
                 f_out.close()
 
 
 def test():
     sentences = u"""
-      Roughly 85% of lung cancers are caused by smoking, with the remaining related to factors such as individual genetics, and radon gas, asbestos, and air pollution exposures [-].
+      Little is known about normal physiologic ALK function and ALK−/− mice show age-related increases in hippocampal progenitor cells, mild behavioral alterations, full viability, and have a normal lifespan [,].
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
