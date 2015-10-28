@@ -1,4 +1,4 @@
-Sample output:
+## Sample output:
 
 _Lung cancer is the leading cause of cancer deaths world-wide._
 ```
@@ -16,7 +16,9 @@ _The Mirk protein contains a bipar4te nuclear localiza4on sequence and during my
 ('Mirk', 'targets', 'effector molecules in nucleus')
 ```
 
-
+==========
 To start the parser server:
+```
 source activate stanford
 corenlp -S stanford-corenlp
+```
