@@ -72,10 +72,17 @@ class RelationExtractor(object):
         'nn': 'NN',
         'vb': 'VB',
         'jj': 'JJ',
+        'jjr': 'JJR',
+        'jjs': 'JJS',
         'wdt': 'WDT',
         'dt': 'DT',
         'prp': 'PRP'
     }
+
+    _subject_pos_blacklist = [
+        _pos_tags['wdt'], _pos_tags['dt'], _pos_tags['prp'],
+        _pos_tags['jj'], _pos_tags['jjr'], _pos_tags['jjs']
+    ]
 
     def __init__(self, sentence, debug=False):
         self._sentence = sentence
@@ -231,8 +238,8 @@ class RelationExtractor(object):
                 dependent = triple['dependent']
                 if not head.word.isalpha() or not dependent.word.isalpha():
                     continue
-                 # PRP, WDT, and DT cannot be subject for now
-                if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt'], self._pos_tags['dt']]:
+                # PRP, WDT, and DT cannot be subject for now
+                if dependent.pos not in self._subject_pos_blacklist:
                     relation = Relation()
                     # The subject is the dependent
                     relation.subject = self._expand_head_word(dependent)
@@ -281,7 +288,7 @@ class RelationExtractor(object):
                 if not head.word.isalpha() or not dependent.word.isalpha():
                     continue
                 # PRP, WDT, and DT cannot be subject for now
-                if dependent.pos not in [self._pos_tags['prp'], self._pos_tags['wdt'], self._pos_tags['dt']]:
+                if dependent.pos not in self._subject_pos_blacklist:
                     relation = Relation()
                     # The subject is the dependent
                     relation.subject = self._expand_head_word(dependent)
@@ -343,7 +350,7 @@ def batch_test():
 
 def test():
     sentences = u"""
-      Little is known about normal physiologic ALK function and ALK−/− mice show age-related increases in hippocampal progenitor cells, mild behavioral alterations, full viability, and have a normal lifespan [,].
+      Approximately 85% are non-small cell lung cancers (NSCLC), consisting mainly of squamous cell, adenocarcinoma, adenosquamous carcinoma, and large-cell anaplastic carcinoma, with most being adenocarcinomas [,].
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -361,5 +368,5 @@ def test():
 
 
 if __name__ == '__main__':
-    # test()
-    batch_test()
+    test()
+    # batch_test()
