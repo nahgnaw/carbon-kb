@@ -3,6 +3,7 @@
 import os
 import codecs
 import traceback
+import MySQLdb
 
 from nltk.tokenize import sent_tokenize
 from dependency_graph import WordUnitSequence, DependencyGraph
@@ -44,6 +45,12 @@ class Relation(object):
     @object.setter
     def object(self, obj):
         self._obj = obj
+
+    def generate_sql(self, table_name='relations'):
+        return """
+            INSERT INTO {} (subject, predicate, object)
+            VALUES ("{}", "{}", "{}");
+        """.format(table_name, self._subj, self._pred, self._obj)
 
 
 class RelationExtractor(object):
@@ -318,6 +325,14 @@ class RelationExtractor(object):
 
 
 def batch_test():
+    mysql_config = {
+        'host': 'localhost',
+        'user': 'root',
+        'passwd': 'root',
+        'db': 'sci-kb'
+    }
+    db = MySQLdb.connect(**mysql_config)
+    cur = db.cursor()
     dataset = 'genes-cancer'
     # dataset = 'RiMG75'
     data_dir = 'data/{}/tmp/'.format(dataset)
@@ -342,15 +357,25 @@ def batch_test():
                         for relation in extractor.relations:
                             print sent
                             print relation
+                            try:
+                                cur.execute(relation.generate_sql())
+                                db.commit()
+                            except MySQLdb.Error, e:
+                                try:
+                                    print "MySQL Error [%d]: %s" % (e.args[0], e.args[1])
+                                except IndexError:
+                                    print "MySQL Error: %s" % str(e)
                             f_out.write(u'{}\n'.format(relation))
                         f_out.write('\n')
                 f_in.close()
                 f_out.close()
+    cur.close()
+    db.close()
 
 
 def test():
     sentences = u"""
-      Approximately 85% are non-small cell lung cancers (NSCLC), consisting mainly of squamous cell, adenocarcinoma, adenosquamous carcinoma, and large-cell anaplastic carcinoma, with most being adenocarcinomas [,].
+      Most NSCLCs are diagnosed at an advanced stage, are clinically aggressive, and have a high metastatic potential.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -368,5 +393,5 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
-    # batch_test()
+    # test()
+    batch_test()
