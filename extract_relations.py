@@ -56,34 +56,34 @@ class Relation(object):
 class RelationExtractor(object):
 
     _dependencies = {
-        'nsubj': 'nsubj',
-        'nsubjpass': 'nsubjpass',
-        'dobj': 'dobj',
-        'cop': 'cop',
+        'acomp': 'acomp',
+        'aux': 'aux',
         'auxpass': 'auxpass',
-        'nn': 'nn',
-        'vmod': 'vmod',
-        'prep': 'prep',
-        'pobj': 'pobj',
+        'cc': 'cc',
+        'ccomp': 'ccomp',
         'conj:and': 'conj:and',
         'conj:or': 'conj:or',
-        'cc': 'cc',
-        'aux': 'aux',
+        'cop': 'cop',
+        'dobj': 'dobj',
         'neg': 'neg',
+        'nn': 'nn',
+        'nsubj': 'nsubj',
+        'nsubjpass': 'nsubjpass',
+        'pobj': 'pobj',
+        'prep': 'prep',
+        'vmod': 'vmod',
         'xcomp': 'xcomp',
-        'ccomp': 'ccomp',
-        'acomp': 'acomp'
     }
 
     _pos_tags = {
+        'dt': 'DT',
         'nn': 'NN',
-        'vb': 'VB',
         'jj': 'JJ',
         'jjr': 'JJR',
         'jjs': 'JJS',
+        'prp': 'PRP',
+        'vb': 'VB',
         'wdt': 'WDT',
-        'dt': 'DT',
-        'prp': 'PRP'
     }
 
     _subject_pos_blacklist = [
@@ -112,6 +112,16 @@ class RelationExtractor(object):
                     'head': triple[0],
                     'dependent': triple[2]
                 })
+
+    @property
+    def relations(self):
+        return self._relations
+
+    def generate_relation_sql(self, relation, table_name='relations'):
+        return u"""
+            INSERT INTO {} (subject, predicate, object, sentence)
+            VALUES ("{}", "{}", "{}", "{}");
+        """.format(table_name, relation.subject, relation.predicate, relation.object, self._sentence)
 
     def _get_dependents(self, dependency_relation, head, dependent=None):
         dependents = []
@@ -208,184 +218,183 @@ class RelationExtractor(object):
         return expansion
 
     # Expand predicate with auxiliary and negation
-    def _expand_predicate(self, pred):
+    def _expand_predicate(self, predicate, pred_head):
 
-        def expand_predicate(predicate, pred_head, dep, debug=False):
+        def expand_predicate(pred_head, dep, debug=False):
             dep_wn = self._get_dependents(dep, pred_head)
             if dep_wn:
                 predicate.add_word_unit(dep_wn[0])
                 if debug:
-                    print '[DEBUG] "{}" predicate expansion with {}: "{}"'.format(pred, dep, dep_wn[0])
+                    print '[DEBUG] "{}" predicate expansion with {}: "{}"'.format(pred_head, dep, dep_wn[0])
 
-        predicate = WordUnitSequence(word_unit_list=[pred], head=pred)
         # Find out if there is any aux
-        expand_predicate(predicate, pred, self._dependencies['aux'], self._debug)
+        expand_predicate(pred_head, self._dependencies['aux'], self._debug)
         # Find out if there is any auxpass
-        expand_predicate(predicate, pred, self._dependencies['auxpass'], self._debug)
+        expand_predicate(pred_head, self._dependencies['auxpass'], self._debug)
         # Find out if there is any negation
-        expand_predicate(predicate, pred, self._dependencies['neg'], self._debug)
+        expand_predicate(pred_head, self._dependencies['neg'], self._debug)
         # Find out if there is any xcomp
-        xcomp_list = self._get_dependents(self._dependencies['xcomp'], pred)
+        xcomp_list = self._get_dependents(self._dependencies['xcomp'], pred_head)
         if xcomp_list:
             for xcomp in xcomp_list:
                 predicate.add_word_unit(xcomp)
                 # Use the xcomp as the "head" instead of the original head
                 predicate.head = xcomp
                 if self._debug:
-                    print '[DEBUG] "{}" predicate expansion with xcomp: "{}"'.format(pred, xcomp)
-                expand_predicate(predicate, xcomp, self._dependencies['aux'], self._debug)
+                    print '[DEBUG] "{}" predicate expansion with xcomp: "{}"'.format(pred_head, xcomp)
+                expand_predicate(xcomp, self._dependencies['aux'], self._debug)
         return predicate
 
     def _extracting_condition(self, head, dependent):
         return head.word.isalpha() and dependent.word.isalpha() and dependent.pos not in self._subject_pos_blacklist
 
-    def extract_nsubj(self):
-        if self._dependencies['nsubj'] in self._dep_triple_dict:
-            for triple in self._dep_triple_dict['nsubj']:
-                head = triple['head']
-                dependent = triple['dependent']
-                if not self._extracting_condition(head, dependent):
-                    continue
-                relation = Relation()
-                # The subject is the dependent
-                relation.subject = self._expand_head_word(dependent)
-                # If the dependency relation is a verb:
-                if head.pos.startswith(self._pos_tags['vb']):
-                    # The predicate is the head
-                    pred = head
-                    relation.predicate = self._expand_predicate(pred)
-                    pred = relation.predicate.head
-                    # Object for 'dobj'
-                    obj_list = self._get_dependents(self._dependencies['dobj'], pred)
-                    if obj_list:
-                        for o in obj_list:
-                            obj = self._expand_head_word(o)
-                            relation.object = obj
-                            self.relations.append(relation)
-                    # If there is no direct objects, look for prepositional objects
-                    else:
-                        acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
-                        if acomp_list:
-                            for acomp in acomp_list:
-                                relation.predicate.add_word_unit(acomp)
-                        pobj_phrase = self._get_pobj_phrase(pred)
-                        if pobj_phrase:
-                            relation.predicate.add_word_unit(pobj_phrase[0])
-                            relation.object = WordUnitSequence(pobj_phrase[1:])
-                        if relation.object:
-                            self.relations.append(relation)
-                # if the dependency relation is a copular verb:
-                elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
-                    # The object is the head
-                    obj = head
-                    relation.object = self._expand_head_word(obj)
-                    # Predicate
-                    pred_list = self._get_dependents(self._dependencies['cop'], obj)
-                    if pred_list:
-                        for pred in pred_list:
-                            relation.predicate = self._expand_predicate(pred)
-                            self._relations.append(relation)
+    # def extract_nsubj(self):
+    #     if self._dependencies['nsubj'] in self._dep_triple_dict:
+    #         for triple in self._dep_triple_dict['nsubj']:
+    #             head = triple['head']
+    #             dependent = triple['dependent']
+    #             if not self._extracting_condition(head, dependent):
+    #                 continue
+    #             relation = Relation()
+    #             # The subject is the dependent
+    #             relation.subject = self._expand_head_word(dependent)
+    #             # If the dependency relation is a verb:
+    #             if head.pos.startswith(self._pos_tags['vb']):
+    #                 # The predicate is the head
+    #                 pred = head
+    #                 relation.predicate = WordUnitSequence([pred], pred)
+    #                 self._expand_predicate(relation.predicate, pred)
+    #                 pred = relation.predicate.head
+    #                 # Object for 'dobj'
+    #                 obj_list = self._get_dependents(self._dependencies['dobj'], pred)
+    #                 if obj_list:
+    #                     for o in obj_list:
+    #                         obj = self._expand_head_word(o)
+    #                         relation.object = obj
+    #                         self.relations.append(relation)
+    #                 # If there is no direct objects, look for prepositional objects
+    #                 else:
+    #                     acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
+    #                     if acomp_list:
+    #                         for acomp in acomp_list:
+    #                             relation.predicate.add_word_unit(acomp)
+    #                     pobj_phrase = self._get_pobj_phrase(pred)
+    #                     if pobj_phrase:
+    #                         relation.predicate.add_word_unit(pobj_phrase[0])
+    #                         relation.object = WordUnitSequence(pobj_phrase[1:])
+    #                     if relation.object:
+    #                         self.relations.append(relation)
+    #             # if the dependency relation is a copular verb:
+    #             elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
+    #                 # The object is the head
+    #                 obj = head
+    #                 relation.object = self._expand_head_word(obj)
+    #                 # Predicate
+    #                 pred_list = self._get_dependents(self._dependencies['cop'], obj)
+    #                 if pred_list:
+    #                     for pred in pred_list:
+    #                         relation.predicate = WordUnitSequence([pred], pred)
+    #                         self._expand_predicate(relation.predicate, pred)
+    #                         self._relations.append(relation)
+    #
+    # def extract_nsubjpass(self):
+    #     if self._dependencies['nsubjpass'] in self._dep_triple_dict:
+    #         for triple in self._dep_triple_dict['nsubjpass']:
+    #             head = triple['head']
+    #             dependent = triple['dependent']
+    #             if not self._extracting_condition(head, dependent):
+    #                 continue
+    #             relation = Relation()
+    #             # The subject is the dependent
+    #             relation.subject = self._expand_head_word(dependent)
+    #             vbn = head
+    #             relation.predicate = WordUnitSequence([vbn], vbn)
+    #             self._expand_predicate(relation.predicate, vbn)
+    #             # relation.predicate.add_word_unit(pred)
+    #             pred = relation.predicate.head
+    #             obj_list = self._get_dependents(self._dependencies['dobj'], pred)
+    #             if obj_list:
+    #                 for o in obj_list:
+    #                     obj = self._expand_head_word(o)
+    #                     relation.object = obj
+    #                     self.relations.append(relation)
+    #             else:
+    #                 pobj_phrase = self._get_pobj_phrase(vbn)
+    #                 if pobj_phrase:
+    #                     relation.predicate.add_word_unit(pobj_phrase[0])
+    #                     relation.object = WordUnitSequence(pobj_phrase[1:])
+    #                     self._relations.append(relation)
 
-    def extract_nsubjpass(self):
-        if self._dependencies['nsubjpass'] in self._dep_triple_dict:
-            for triple in self._dep_triple_dict['nsubjpass']:
-                head = triple['head']
-                dependent = triple['dependent']
-                if not self._extracting_condition(head, dependent):
-                    continue
-                relation = Relation()
-                # The subject is the dependent
-                relation.subject = self._expand_head_word(dependent)
-                vbn = head
-                pred_list = self._get_dependents(self._dependencies['auxpass'], vbn)
+    def extract_svo(self):
+        dependencies = [self._dependencies['nsubj'], self._dependencies['nsubjpass']]
+        for dep in dependencies:
+            if dep in self._dep_triple_dict:
+                self._extract_svo(dep)
+
+    def _extract_svo(self, dependency):
+        for triple in self._dep_triple_dict[dependency]:
+            head = triple['head']
+            dependent = triple['dependent']
+            if not self._extracting_condition(head, dependent):
+                continue
+            relation = Relation()
+            # The subject is the dependent
+            relation.subject = self._expand_head_word(dependent)
+            # If the dependency relation is a verb:
+            if head.pos.startswith(self._pos_tags['vb']):
+                # The predicate is the head
+                pred = head
+                relation.predicate = WordUnitSequence([pred], pred)
+                self._expand_predicate(relation.predicate, pred)
+                pred = relation.predicate.head
+                # Check if there is any direct object
+                obj_list = self._get_dependents(self._dependencies['dobj'], pred)
+                if obj_list:
+                    for o in obj_list:
+                        obj = self._expand_head_word(o)
+                        relation.object = obj
+                        self.relations.append(relation)
+                # If there is no direct objects, look for prepositional objects
+                else:
+                    acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
+                    if acomp_list:
+                        for acomp in acomp_list:
+                            relation.predicate.add_word_unit(acomp)
+                    pobj_phrase = self._get_pobj_phrase(pred)
+                    if pobj_phrase:
+                        relation.predicate.add_word_unit(pobj_phrase[0])
+                        relation.object = WordUnitSequence(pobj_phrase[1:])
+                    if relation.object:
+                        self.relations.append(relation)
+            # if the dependency relation is a copular verb:
+            elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
+                # The object is the head
+                obj = head
+                relation.object = self._expand_head_word(obj)
+                # Predicate
+                pred_list = self._get_dependents(self._dependencies['cop'], obj)
                 if pred_list:
                     for pred in pred_list:
-                        relation.predicate = self._expand_predicate(vbn)
-                        relation.predicate.add_word_unit(pred)
-                        pred = relation.predicate.head
-                        obj_list = self._get_dependents(self._dependencies['dobj'], pred)
-                        if obj_list:
-                            for o in obj_list:
-                                obj = self._expand_head_word(o)
-                                relation.object = obj
-                                self.relations.append(relation)
-                        else:
-                            pobj_phrase = self._get_pobj_phrase(vbn)
-                            if pobj_phrase:
-                                relation.predicate.add_word_unit(pobj_phrase[0])
-                                relation.object = WordUnitSequence(pobj_phrase[1:])
-                                self._relations.append(relation)
-
-    def extract(self, dependency):
-        if dependency in self._dep_triple_dict:
-            for triple in self._dep_triple_dict[dependency]:
-                head = triple['head']
-                dependent = triple['dependent']
-                if not self._extracting_condition(head, dependent):
-                    continue
-                relation = Relation()
-                # The subject is the dependent
-                relation.subject = self._expand_head_word(dependent)
-                # If the dependency relation is a verb:
-                if head.pos.startswith(self._pos_tags['vb']):
-                    # The predicate is the head
-                    pred = head
-                    relation.predicate = self._expand_predicate(pred)
-                    pred = relation.predicate.head
-                    # Object for 'dobj'
-                    obj_list = self._get_dependents(self._dependencies['dobj'], pred)
-                    if obj_list:
-                        for o in obj_list:
-                            obj = self._expand_head_word(o)
-                            relation.object = obj
-                            self.relations.append(relation)
-                    # If there is no direct objects, look for prepositional objects
-                    else:
-                        acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
-                        if acomp_list:
-                            for acomp in acomp_list:
-                                relation.predicate.add_word_unit(acomp)
-                        pobj_phrase = self._get_pobj_phrase(pred)
-                        if pobj_phrase:
-                            relation.predicate.add_word_unit(pobj_phrase[0])
-                            relation.object = WordUnitSequence(pobj_phrase[1:])
-                        if relation.object:
-                            self.relations.append(relation)
-                # if the dependency relation is a copular verb:
-                elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
-                    # The object is the head
-                    obj = head
-                    relation.object = self._expand_head_word(obj)
-                    # Predicate
-                    pred_list = self._get_dependents(self._dependencies['cop'], obj)
-                    if pred_list:
-                        for pred in pred_list:
-                            relation.predicate = self._expand_predicate(pred)
-                            self._relations.append(relation)
-
-    @property
-    def relations(self):
-        return self._relations
-
-    def generate_relation_sql(self, relation, table_name='relations'):
-        return u"""
-            INSERT INTO {} (subject, predicate, object, sentence)
-            VALUES ("{}", "{}", "{}", "{}");
-        """.format(table_name, relation.subject, relation.predicate, relation.object, self._sentence)
+                        relation.predicate = WordUnitSequence([pred], pred)
+                        self._expand_predicate(relation.predicate, pred)
+                        self._relations.append(relation)
 
 
-def batch_test():
-    mysql_config = {
-        'host': 'localhost',
-        'user': 'root',
-        'passwd': 'root',
-        'db': 'sci-kb'
-    }
-    db = MySQLdb.connect(**mysql_config)
-    cur = db.cursor()
-    dataset = 'genes-cancer'
-    # dataset = 'RiMG75'
-    data_dir = 'data/{}/processed/'.format(dataset)
+def batch_extraction(write_to_mysql=False):
+    # dataset = 'genes-cancer'
+    dataset = 'RiMG75'
+    data_dir = 'data/{}/tmp/'.format(dataset)
+
+    if write_to_mysql:
+        mysql_config = {
+            'host': 'localhost',
+            'user': 'root',
+            'passwd': 'root',
+            'db': 'sci-kb'
+        }
+        db = MySQLdb.connect(**mysql_config)
+        cur = db.cursor()
+
     for root, _, files in os.walk(data_dir):
         for fn in files:
             if fn.endswith('.txt'):
@@ -396,36 +405,38 @@ def batch_test():
                 for line in f_in:
                     sent = line.strip()
                     f_out.write(u'{}\n'.format(sent))
+                    # print sent
                     try:
                         extractor = RelationExtractor(sent, debug=False)
                     except:
-                        print 'Failed to parse the sentence.'
-                        print(traceback.format_exc())
+                        print u'\n[ERROR] {}'.format(sent)
+                        print traceback.format_exc()
                     else:
-                        extractor.extract_nsubj()
-                        extractor.extract_nsubjpass()
+                        extractor.extract_svo()
                         for relation in extractor.relations:
-                            print sent
                             print relation
-                            try:
-                                cur.execute(extractor.generate_relation_sql(relation))
-                                db.commit()
-                            except MySQLdb.Error, e:
-                                try:
-                                    print "MySQL Error [%d]: %s" % (e.args[0], e.args[1])
-                                except IndexError:
-                                    print "MySQL Error: %s" % str(e)
                             f_out.write(u'{}\n'.format(relation))
+                            if write_to_mysql:
+                                try:
+                                    cur.execute(extractor.generate_relation_sql(relation))
+                                    db.commit()
+                                except MySQLdb.Error, e:
+                                    try:
+                                        print "MySQL Error [{}]: {}".format(e.args[0], e.args[1])
+                                    except IndexError:
+                                        print "MySQL Error: {}".format(str(e))
                         f_out.write('\n')
                 f_in.close()
                 f_out.close()
-    cur.close()
-    db.close()
+
+    if write_to_mysql:
+        cur.close()
+        db.close()
 
 
-def test():
+def single_extraction():
     sentences = u"""
-      Carbides, along with diamond, may not thus represent Earth’s deepest surviving minerals, and may prove a relatively unexplored window on the nature of the deep mantle environment and the deep carbon cycle.
+        Carbon also frequently displays a range of intermediate oxidation number states from +2 in carbon monoxide (CO) or -2 in methanol (CH3OH), as well as occurring in its neutral state  in a variety of carbon allotropes.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -434,14 +445,15 @@ def test():
             extractor = RelationExtractor(sent, debug=True)
         except:
             print 'Failed to parse the sentence.'
-            print(traceback.format_exc())
+            print traceback.format_exc()
         else:
-            extractor.extract_nsubj()
-            extractor.extract_nsubjpass()
+            # extractor.extract_nsubj()
+            # extractor.extract_nsubjpass()
+            extractor.extract_svo()
             for relation in extractor.relations:
                 print relation
 
 
 if __name__ == '__main__':
-    test()
-    # batch_test()
+    # single_extraction()
+    batch_extraction()
