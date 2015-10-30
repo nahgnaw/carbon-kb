@@ -91,6 +91,11 @@ class RelationExtractor(object):
         _pos_tags['jj'], _pos_tags['jjr'], _pos_tags['jjs']
     ]
 
+    _conjunction_dependencies = [
+            _dependencies['conj:and'],
+            _dependencies['conj:or']
+        ]
+
     def __init__(self, sentence, debug=False):
         self._sentence = sentence
         self._debug = debug
@@ -136,19 +141,8 @@ class RelationExtractor(object):
 
     def _get_conjunction(self, head):
         conjunction = [head]
-        conj_deps = [
-            self._dependencies['conj:and'],
-            self._dependencies['conj:or']
-        ]
-        for dep in conj_deps:
+        for dep in self._conjunction_dependencies:
             conjunction.extend(self._get_dependents(dep, head))
-        # if conj_list:
-        #     for conj in conj_list:
-        #         conjunction.extend(self._get_noun_compound(conj))
-        # cc_list = self._get_dependents(self._dependencies['cc'], head)
-        # if cc_list:
-        #     for cc in cc_list:
-        #         conjunction.add_word_unit(cc)
         return conjunction
 
     def _get_noun_compound(self, head):
@@ -213,12 +207,6 @@ class RelationExtractor(object):
             expansion.extend(vmod_phrase)
             if self._debug:
                 print '[DEBUG] "{}" head expansion with vmod phrase: "{}"'.format(head, vmod_phrase)
-        # # Find out if the head has conjunctions
-        # conj = self._get_conjunctions(head)
-        # if conj:
-        #     expansion.extend(conj)
-        #     if self._debug:
-        #         print '[DEBUG] "{}" head expansion with conjunction: "{}"'.format(head, conj)
         return expansion
 
     # Expand predicate with auxiliary and negation
@@ -269,9 +257,9 @@ class RelationExtractor(object):
             for dependent in dependent_conjunction:
                 # The subject is the dependent
                 subject = self._expand_head_word(dependent)
-                # If the dependency relation is a verb:
-                if head.pos.startswith(self._pos_tags['vb']):
-                    for head in head_conjunction:
+                for head in head_conjunction:
+                    # If the dependency relation is a verb:
+                    if head.pos.startswith(self._pos_tags['vb']):
                         # The predicate is the head
                         predicate = WordUnitSequence([head], head)
                         self._expand_predicate(predicate, head)
@@ -296,14 +284,13 @@ class RelationExtractor(object):
                                 if object:
                                     relation = Relation(subject, predicate, object)
                                     self.relations.append(relation)
-                # If the dependency relation is a copular verb
-                elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
-                    # The predicate is the copular verb
-                    pred_list = self._get_dependents(self._dependencies['cop'], head)
-                    if pred_list:
-                        predicate = WordUnitSequence([pred_list[0]], pred_list[0])
-                        self._expand_predicate(predicate, pred_list[0])
-                        for head in head_conjunction:
+                    # If the dependency relation is a copular verb
+                    elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
+                        # The predicate is the copular verb
+                        pred_list = self._get_dependents(self._dependencies['cop'], head)
+                        if pred_list:
+                            predicate = WordUnitSequence([pred_list[0]], pred_list[0])
+                            self._expand_predicate(predicate, pred_list[0])
                             # The object is the head
                             object = self._expand_head_word(head)
                             relation = Relation(subject, predicate, object)
@@ -366,7 +353,7 @@ def batch_extraction(write_to_mysql=False):
 
 def single_extraction():
     sentences = u"""
-        My wife and I went to the market today.
+        Carbon, element 6, displays remarkable chemical flexibility and thus is unique in the diversity of its mineralogical roles.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -385,5 +372,5 @@ def single_extraction():
 
 
 if __name__ == '__main__':
-    single_extraction()
-    # batch_extraction()
+    # single_extraction()
+    batch_extraction()
