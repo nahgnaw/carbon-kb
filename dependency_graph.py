@@ -16,6 +16,9 @@ class WordUnit(object):
     def __str__(self):
         return self._word
 
+    def __repr__(self):
+        return self._word
+
     @property
     def index(self):
         return self._index
