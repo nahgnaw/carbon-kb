@@ -122,7 +122,7 @@ class RelationExtractor(object):
     def relations(self):
         return self._relations
 
-    def generate_relation_sql(self, relation, table_name='relations'):
+    def generate_relation_sql(self, relation, table_name='svo'):
         return u"""
             INSERT INTO {} (subject, predicate, object, sentence)
             VALUES ("{}", "{}", "{}", "{}");
@@ -297,17 +297,17 @@ class RelationExtractor(object):
                             self._relations.append(relation)
 
 
-def batch_extraction(write_to_mysql=False):
+def batch_extraction(mysql_db=None):
     # dataset = 'genes-cancer'
     dataset = 'RiMG75'
     data_dir = 'data/{}/tmp/'.format(dataset)
 
-    if write_to_mysql:
+    if mysql_db:
         mysql_config = {
             'host': 'localhost',
             'user': 'root',
             'passwd': 'root',
-            'db': 'sci-kb'
+            'db': mysql_db
         }
         db = MySQLdb.connect(**mysql_config)
         cur = db.cursor()
@@ -333,7 +333,7 @@ def batch_extraction(write_to_mysql=False):
                         for relation in extractor.relations:
                             print relation
                             f_out.write(u'{}\n'.format(relation))
-                            if write_to_mysql:
+                            if mysql_db:
                                 try:
                                     cur.execute(extractor.generate_relation_sql(relation))
                                     db.commit()
@@ -346,7 +346,7 @@ def batch_extraction(write_to_mysql=False):
                 f_in.close()
                 f_out.close()
 
-    if write_to_mysql:
+    if mysql_db:
         cur.close()
         db.close()
 
