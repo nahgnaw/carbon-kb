@@ -172,10 +172,11 @@ class RelationExtractor(object):
         if vmod_list:
             for vmod in vmod_list:
                 vmod_phrase.add_word_unit(vmod)
-                aux_list = self._get_dependents(self._dependencies['aux'], vmod)
-                if aux_list:
-                    for aux in aux_list:
-                        vmod_phrase.add_word_unit(aux)
+                # aux_list = self._get_dependents(self._dependencies['aux'], vmod)
+                # if aux_list:
+                #     for aux in aux_list:
+                #         vmod_phrase.add_word_unit(aux)
+                self._expand_predicate(vmod_phrase, vmod)
                 pobj_phrase = self._get_pobj_phrase(vmod)
                 if pobj_phrase:
                     vmod_phrase.extend(pobj_phrase)
@@ -185,6 +186,25 @@ class RelationExtractor(object):
                         obj_seq = self._expand_head_word(dobj)
                         vmod_phrase.extend(obj_seq)
         return vmod_phrase
+
+    def _get_verb_object(self, predicate, vb):
+        object = None
+        # Check if there is any direct object
+        obj_list = self._get_dependents(self._dependencies['dobj'], vb)
+        if obj_list:
+            for obj in obj_list:
+                object = self._expand_head_word(obj)
+        # If there is no direct objects, look for prepositional objects
+        else:
+            acomp_list = self._get_dependents(self._dependencies['acomp'], vb)
+            if acomp_list:
+                for acomp in acomp_list:
+                    predicate.add_word_unit(acomp)
+            pobj_phrase = self._get_pobj_phrase(vb)
+            if len(pobj_phrase) > 2:
+                predicate.add_word_unit(pobj_phrase[0])
+                object = WordUnitSequence(pobj_phrase[1:])
+        return object
 
     def _expand_head_word(self, head):
         # Find out if the head is in a compound noun
@@ -264,26 +284,9 @@ class RelationExtractor(object):
                         predicate = WordUnitSequence([head], head)
                         self._expand_predicate(predicate, head)
                         pred = predicate.head
-                        # Check if there is any direct object
-                        obj_list = self._get_dependents(self._dependencies['dobj'], pred)
-                        if obj_list:
-                            for obj in obj_list:
-                                object = self._expand_head_word(obj)
-                                relation = Relation(subject, predicate, object)
-                                self.relations.append(relation)
-                        # If there is no direct objects, look for prepositional objects
-                        else:
-                            acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
-                            if acomp_list:
-                                for acomp in acomp_list:
-                                    predicate.add_word_unit(acomp)
-                            pobj_phrase = self._get_pobj_phrase(pred)
-                            if pobj_phrase:
-                                predicate.add_word_unit(pobj_phrase[0])
-                                object = WordUnitSequence(pobj_phrase[1:])
-                                if object:
-                                    relation = Relation(subject, predicate, object)
-                                    self.relations.append(relation)
+                        object = self._get_verb_object(predicate, pred)
+                        if object:
+                            self.relations.append(Relation(subject, predicate, object))
                     # If the dependency relation is a copular verb
                     elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
                         # The predicate is the copular verb
@@ -353,7 +356,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        Carbon, element 6, displays remarkable chemical flexibility and thus is unique in the diversity of its mineralogical roles.
+        With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
