@@ -69,6 +69,7 @@ class RelationExtractor(object):
         'nn': 'nn',
         'nsubj': 'nsubj',
         'nsubjpass': 'nsubjpass',
+        'pcomp': 'pcomp',
         'pobj': 'pobj',
         'prep': 'prep',
         'vmod': 'vmod',
@@ -156,23 +157,35 @@ class RelationExtractor(object):
             return WordUnitSequence(nn)
         return WordUnitSequence(head)
 
-    def _get_pobj_phrase(self, head):
-        pobj_phrase = WordUnitSequence()
+    def _get_prep_phrase(self, head):
+        prep_phrase = WordUnitSequence()
         prep_list = self._get_dependents(self._dependencies['prep'], head)
         if prep_list:
             for prep in prep_list:
                 # Ignore those prepositions that are far away from the head
                 if abs(prep.index - head.index) < 2:
+                    # Look for pobj
                     obj_list = self._get_dependents(self._dependencies['pobj'], prep)
                     if obj_list:
                         for obj in obj_list:
                             if not obj.pos == self._pos_tags['wdt']:
                                 obj_seq = self._expand_head_word(obj)
                                 obj_seq.add_word_unit(prep)
-                                pobj_phrase.extend(obj_seq)
-                                if self._debug:
-                                    self._print_expansion_debug_info(head, 'pobj phrase', pobj_phrase)
-        return pobj_phrase
+                                prep_phrase.extend(obj_seq)
+                    # Look for pcomp
+                    pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
+                    if pcomp_list:
+                        for pcomp in pcomp_list:
+                            prep_phrase.add_word_unit(prep)
+                            prep_phrase.add_word_unit(pcomp)
+                            pcomp_obj_list = self._get_dependents(self._dependencies['dobj'], pcomp)
+                            if pcomp_obj_list:
+                                for pcomp_obj in pcomp_obj_list:
+                                    pcomp_obj_seq = self._expand_head_word(pcomp_obj)
+                                    prep_phrase.extend(pcomp_obj_seq)
+                    if self._debug:
+                                    self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
+        return prep_phrase
 
     def _get_vmod_phrase(self, head):
         vmod_phrase = WordUnitSequence()
@@ -181,7 +194,7 @@ class RelationExtractor(object):
             for vmod in vmod_list:
                 vmod_phrase.add_word_unit(vmod)
                 self._expand_predicate(vmod_phrase, vmod)
-                pobj_phrase = self._get_pobj_phrase(vmod)
+                pobj_phrase = self._get_prep_phrase(vmod)
                 if pobj_phrase:
                     vmod_phrase.extend(pobj_phrase)
                 dobj_list = self._get_dependents(self._dependencies['dobj'], vmod)
@@ -204,7 +217,7 @@ class RelationExtractor(object):
             if acomp_list:
                 for acomp in acomp_list:
                     predicate.add_word_unit(acomp)
-            pobj_phrase = self._get_pobj_phrase(vb)
+            pobj_phrase = self._get_prep_phrase(vb)
             if len(pobj_phrase) > 2:
                 predicate.add_word_unit(pobj_phrase[0])
                 object = WordUnitSequence(pobj_phrase[1:])
@@ -220,11 +233,9 @@ class RelationExtractor(object):
             if self._debug:
                 self._print_expansion_debug_info(head, 'negation', neg)
         # Find out if the head has pobj phrase
-        pobj_phrase = self._get_pobj_phrase(head)
+        pobj_phrase = self._get_prep_phrase(head)
         if pobj_phrase:
             expansion.extend(pobj_phrase)
-            # if self._debug:
-            #     self._print_expansion_debug_info(head, 'pobj phrase', pobj_phrase)
         # Find out if the head has vmod phrase
         vmod_phrase = self._get_vmod_phrase(head)
         if vmod_phrase:
