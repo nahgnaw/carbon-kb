@@ -130,7 +130,7 @@ class RelationExtractor(object):
 
     @staticmethod
     def _print_expansion_debug_info(head_word, dep, added):
-        print '[DEBUG] "{}" head expansion with {}: "{}"'.format(head_word, dep, added)
+        print '[DEBUG] "{}" expanded with {}: "{}"'.format(head_word, dep, added)
 
     def _get_dependents(self, dependency_relation, head, dependent=None):
         dependents = []
@@ -161,13 +161,17 @@ class RelationExtractor(object):
         prep_list = self._get_dependents(self._dependencies['prep'], head)
         if prep_list:
             for prep in prep_list:
-                obj_list = self._get_dependents(self._dependencies['pobj'], prep)
-                if obj_list:
-                    for obj in obj_list:
-                        if not obj.pos == self._pos_tags['wdt']:
-                            obj_seq = self._expand_head_word(obj)
-                            obj_seq.add_word_unit(prep)
-                            pobj_phrase.extend(obj_seq)
+                # Ignore those prepositions that are far away from the head
+                if abs(prep.index - head.index) < 2:
+                    obj_list = self._get_dependents(self._dependencies['pobj'], prep)
+                    if obj_list:
+                        for obj in obj_list:
+                            if not obj.pos == self._pos_tags['wdt']:
+                                obj_seq = self._expand_head_word(obj)
+                                obj_seq.add_word_unit(prep)
+                                pobj_phrase.extend(obj_seq)
+                                if self._debug:
+                                    self._print_expansion_debug_info(head, 'pobj phrase', pobj_phrase)
         return pobj_phrase
 
     def _get_vmod_phrase(self, head):
@@ -219,8 +223,8 @@ class RelationExtractor(object):
         pobj_phrase = self._get_pobj_phrase(head)
         if pobj_phrase:
             expansion.extend(pobj_phrase)
-            if self._debug:
-                self._print_expansion_debug_info(head, 'pobj phrase', pobj_phrase)
+            # if self._debug:
+            #     self._print_expansion_debug_info(head, 'pobj phrase', pobj_phrase)
         # Find out if the head has vmod phrase
         vmod_phrase = self._get_vmod_phrase(head)
         if vmod_phrase:
@@ -356,7 +360,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
+        In sharp contrast to the pancellular distribution of Mirk in cycling myoblasts, a dramatic shift in the localization of Mirk to a solely cytoplasmic location was seen in differentiating G1-arrested myotubes within 2 days of shift to differentiation medium.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
