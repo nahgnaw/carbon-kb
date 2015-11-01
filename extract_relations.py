@@ -184,7 +184,7 @@ class RelationExtractor(object):
                                     pcomp_obj_seq = self._expand_head_word(pcomp_obj)
                                     prep_phrase.extend(pcomp_obj_seq)
                     if self._debug:
-                                    self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
+                        self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
         return prep_phrase
 
     def _get_vmod_phrase(self, head):
@@ -193,7 +193,7 @@ class RelationExtractor(object):
         if vmod_list:
             for vmod in vmod_list:
                 vmod_phrase.add_word_unit(vmod)
-                self._expand_predicate(vmod_phrase, vmod)
+                vmod_phrase.expand(self._expand_predicate(vmod))
                 pobj_phrase = self._get_prep_phrase(vmod)
                 if pobj_phrase:
                     vmod_phrase.extend(pobj_phrase)
@@ -245,7 +245,8 @@ class RelationExtractor(object):
         return expansion
 
     # Expand predicate with auxiliary and negation
-    def _expand_predicate(self, predicate, pred_head):
+    def _expand_predicate(self, head):
+        predicate = WordUnitSequence([head], head)
 
         def expand_predicate(pred_head, dep, debug=False):
             dep_wn = self._get_dependents(dep, pred_head)
@@ -255,20 +256,20 @@ class RelationExtractor(object):
                     self._print_expansion_debug_info(pred_head, dep, dep_wn[0])
 
         # Find out if there is any aux
-        expand_predicate(pred_head, self._dependencies['aux'], self._debug)
+        expand_predicate(head, self._dependencies['aux'], self._debug)
         # Find out if there is any auxpass
-        expand_predicate(pred_head, self._dependencies['auxpass'], self._debug)
+        expand_predicate(head, self._dependencies['auxpass'], self._debug)
         # Find out if there is any negation
-        expand_predicate(pred_head, self._dependencies['neg'], self._debug)
+        expand_predicate(head, self._dependencies['neg'], self._debug)
         # Find out if there is any xcomp
-        xcomp_list = self._get_dependents(self._dependencies['xcomp'], pred_head)
+        xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
             for xcomp in xcomp_list:
                 predicate.add_word_unit(xcomp)
                 # Use the xcomp as the "head" instead of the original head
                 predicate.head = xcomp
                 if self._debug:
-                    self._print_expansion_debug_info(pred_head, 'xcomp', xcomp)
+                    self._print_expansion_debug_info(head, 'xcomp', xcomp)
                 expand_predicate(xcomp, self._dependencies['aux'], self._debug)
         return predicate
 
@@ -296,8 +297,7 @@ class RelationExtractor(object):
                     # If the dependency relation is a verb:
                     if head.pos.startswith(self._pos_tags['vb']):
                         # The predicate is the head
-                        predicate = WordUnitSequence([head], head)
-                        self._expand_predicate(predicate, head)
+                        predicate = self._expand_predicate(head)
                         pred = predicate.head
                         object = self._get_verb_object(predicate, pred)
                         if object:
@@ -307,8 +307,7 @@ class RelationExtractor(object):
                         # The predicate is the copular verb
                         pred_list = self._get_dependents(self._dependencies['cop'], head)
                         if pred_list:
-                            predicate = WordUnitSequence([pred_list[0]], pred_list[0])
-                            self._expand_predicate(predicate, pred_list[0])
+                            predicate = self._expand_predicate(pred_list[0])
                             # The object is the head
                             object = self._expand_head_word(head)
                             relation = Relation(subject, predicate, object)
