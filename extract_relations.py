@@ -128,6 +128,10 @@ class RelationExtractor(object):
             VALUES ("{}", "{}", "{}", "{}");
         """.format(table_name, relation.subject, relation.predicate, relation.object, self._sentence)
 
+    @staticmethod
+    def _print_expansion_debug_info(head_word, dep, added):
+        print '[DEBUG] "{}" head expansion with {}: "{}"'.format(head_word, dep, added)
+
     def _get_dependents(self, dependency_relation, head, dependent=None):
         dependents = []
         if dependency_relation in self._dep_triple_dict:
@@ -172,10 +176,6 @@ class RelationExtractor(object):
         if vmod_list:
             for vmod in vmod_list:
                 vmod_phrase.add_word_unit(vmod)
-                # aux_list = self._get_dependents(self._dependencies['aux'], vmod)
-                # if aux_list:
-                #     for aux in aux_list:
-                #         vmod_phrase.add_word_unit(aux)
                 self._expand_predicate(vmod_phrase, vmod)
                 pobj_phrase = self._get_pobj_phrase(vmod)
                 if pobj_phrase:
@@ -214,19 +214,19 @@ class RelationExtractor(object):
         if neg and neg[0].pos == self._pos_tags['dt']:
             expansion.add_word_unit(neg[0])
             if self._debug:
-                print '[DEBUG] "{}" head expansion with negation: "{}"'.format(head, neg)
+                self._print_expansion_debug_info(head, 'negation', neg)
         # Find out if the head has pobj phrase
         pobj_phrase = self._get_pobj_phrase(head)
         if pobj_phrase:
             expansion.extend(pobj_phrase)
             if self._debug:
-                print '[DEBUG] "{}" head expansion with pobj phrase: "{}"'.format(head, pobj_phrase)
+                self._print_expansion_debug_info(head, 'pobj phrase', pobj_phrase)
         # Find out if the head has vmod phrase
         vmod_phrase = self._get_vmod_phrase(head)
         if vmod_phrase:
             expansion.extend(vmod_phrase)
             if self._debug:
-                print '[DEBUG] "{}" head expansion with vmod phrase: "{}"'.format(head, vmod_phrase)
+                self._print_expansion_debug_info(head, 'vmod phrase', vmod_phrase)
         return expansion
 
     # Expand predicate with auxiliary and negation
@@ -237,7 +237,7 @@ class RelationExtractor(object):
             if dep_wn:
                 predicate.add_word_unit(dep_wn[0])
                 if debug:
-                    print '[DEBUG] "{}" predicate expansion with {}: "{}"'.format(pred_head, dep, dep_wn[0])
+                    self._print_expansion_debug_info(pred_head, dep, dep_wn[0])
 
         # Find out if there is any aux
         expand_predicate(pred_head, self._dependencies['aux'], self._debug)
@@ -253,7 +253,7 @@ class RelationExtractor(object):
                 # Use the xcomp as the "head" instead of the original head
                 predicate.head = xcomp
                 if self._debug:
-                    print '[DEBUG] "{}" predicate expansion with xcomp: "{}"'.format(pred_head, xcomp)
+                    self._print_expansion_debug_info(pred_head, 'xcomp', xcomp)
                 expand_predicate(xcomp, self._dependencies['aux'], self._debug)
         return predicate
 
@@ -375,5 +375,5 @@ def single_extraction():
 
 
 if __name__ == '__main__':
-    # single_extraction()
-    batch_extraction()
+    single_extraction()
+    # batch_extraction()
