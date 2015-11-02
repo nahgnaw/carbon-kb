@@ -85,11 +85,13 @@ class RelationExtractor(object):
         'prp': 'PRP',
         'vb': 'VB',
         'wdt': 'WDT',
+        'wp': 'WP',
     }
 
     _subject_pos_blacklist = [
         _pos_tags['wdt'], _pos_tags['dt'], _pos_tags['prp'],
-        _pos_tags['jj'], _pos_tags['jjr'], _pos_tags['jjs']
+        _pos_tags['jj'], _pos_tags['jjr'], _pos_tags['jjs'],
+        _pos_tags['wp']
     ]
 
     _conjunction_dependencies = [
