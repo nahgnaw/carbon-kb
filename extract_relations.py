@@ -177,7 +177,7 @@ class RelationExtractor(object):
                     if pcomp_list:
                         for pcomp in pcomp_list:
                             prep_phrase.add_word_unit(prep)
-                            prep_phrase.add_word_unit(pcomp)
+                            prep_phrase.extend(self._expand_predicate(pcomp))
                             pcomp_obj_list = self._get_dependents(self._dependencies['dobj'], pcomp)
                             if pcomp_obj_list:
                                 for pcomp_obj in pcomp_obj_list:
@@ -193,7 +193,7 @@ class RelationExtractor(object):
         if vmod_list:
             for vmod in vmod_list:
                 vmod_phrase.add_word_unit(vmod)
-                vmod_phrase.expand(self._expand_predicate(vmod))
+                vmod_phrase.extend(self._expand_predicate(vmod))
                 pobj_phrase = self._get_prep_phrase(vmod)
                 if pobj_phrase:
                     vmod_phrase.extend(pobj_phrase)
@@ -202,25 +202,26 @@ class RelationExtractor(object):
                     for dobj in dobj_list:
                         obj_seq = self._expand_head_word(dobj)
                         vmod_phrase.extend(obj_seq)
+            if self._debug:
+                self._print_expansion_debug_info(head, 'vmod', vmod_phrase)
         return vmod_phrase
 
     def _get_verb_object(self, predicate, vb):
-        object = None
-        # Check if there is any direct object
+        object = WordUnitSequence()
+        # Look for direct object
         obj_list = self._get_dependents(self._dependencies['dobj'], vb)
         if obj_list:
             for obj in obj_list:
-                object = self._expand_head_word(obj)
-        # If there is no direct objects, look for prepositional objects
-        else:
-            acomp_list = self._get_dependents(self._dependencies['acomp'], vb)
-            if acomp_list:
-                for acomp in acomp_list:
-                    predicate.add_word_unit(acomp)
-            pobj_phrase = self._get_prep_phrase(vb)
-            if len(pobj_phrase) > 2:
-                predicate.add_word_unit(pobj_phrase[0])
-                object = WordUnitSequence(pobj_phrase[1:])
+                object.extend(self._expand_head_word(obj))
+        # Look for prepositional objects
+        acomp_list = self._get_dependents(self._dependencies['acomp'], vb)
+        if acomp_list:
+            for acomp in acomp_list:
+                object.add_word_unit(acomp)
+        prep_phrase = self._get_prep_phrase(vb)
+        if len(prep_phrase) > 2:
+            predicate.add_word_unit(prep_phrase[0])
+            object.extend(WordUnitSequence(prep_phrase[1:]))
         return object
 
     def _expand_head_word(self, head):
@@ -240,8 +241,6 @@ class RelationExtractor(object):
         vmod_phrase = self._get_vmod_phrase(head)
         if vmod_phrase:
             expansion.extend(vmod_phrase)
-            if self._debug:
-                self._print_expansion_debug_info(head, 'vmod phrase', vmod_phrase)
         return expansion
 
     # Expand predicate with auxiliary and negation
@@ -338,28 +337,28 @@ def batch_extraction(mysql_db=None):
                 f_out = codecs.open(output_filename, 'w', encoding='utf-8')
                 for line in f_in:
                     sent = line.strip()
-                    f_out.write(u'{}\n'.format(sent))
-                    # print sent
-                    try:
-                        extractor = RelationExtractor(sent, debug=False)
-                    except:
-                        print u'\n[ERROR] {}'.format(sent)
-                        print traceback.format_exc()
-                    else:
-                        extractor.extract_svo()
-                        for relation in extractor.relations:
-                            print relation
-                            f_out.write(u'{}\n'.format(relation))
-                            if mysql_db:
-                                try:
-                                    cur.execute(extractor.generate_relation_sql(relation))
-                                    db.commit()
-                                except MySQLdb.Error, e:
+                    if sent:
+                        f_out.write(u'{}\n'.format(sent))
+                        try:
+                            extractor = RelationExtractor(sent, debug=False)
+                        except:
+                            print u'\n[ERROR] {}'.format(sent)
+                            print traceback.format_exc()
+                        else:
+                            extractor.extract_svo()
+                            for relation in extractor.relations:
+                                print relation
+                                f_out.write(u'{}\n'.format(relation))
+                                if mysql_db:
                                     try:
-                                        print "MySQL Error [{}]: {}".format(e.args[0], e.args[1])
-                                    except IndexError:
-                                        print "MySQL Error: {}".format(str(e))
-                        f_out.write('\n')
+                                        cur.execute(extractor.generate_relation_sql(relation))
+                                        db.commit()
+                                    except MySQLdb.Error, e:
+                                        try:
+                                            print "MySQL Error [{}]: {}".format(e.args[0], e.args[1])
+                                        except IndexError:
+                                            print "MySQL Error: {}".format(str(e))
+                            f_out.write('\n')
                 f_in.close()
                 f_out.close()
 
@@ -370,7 +369,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        In sharp contrast to the pancellular distribution of Mirk in cycling myoblasts, a dramatic shift in the localization of Mirk to a solely cytoplasmic location was seen in differentiating G1-arrested myotubes within 2 days of shift to differentiation medium.
+        With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -381,13 +380,11 @@ def single_extraction():
             print 'Failed to parse the sentence.'
             print traceback.format_exc()
         else:
-            # extractor.extract_nsubj()
-            # extractor.extract_nsubjpass()
             extractor.extract_svo()
             for relation in extractor.relations:
                 print relation
 
 
 if __name__ == '__main__':
-    single_extraction()
-    # batch_extraction()
+    # single_extraction()
+    batch_extraction()
