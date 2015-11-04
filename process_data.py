@@ -23,7 +23,7 @@ class Sentences(object):
                     f = codecs.open(filename, encoding='utf-8')
                     text = f.read()
                     if text:
-                        text = text.replace('\n', ' ')
+                        # text = text.replace('\n', ' ')
                         # text = self.text_process(text)
                         for sent in split_multi(text):
                             yield fn, sent
@@ -63,8 +63,8 @@ class Sentences(object):
         return line
 
 if __name__ == '__main__':
-    dataset = 'test'
-    # dataset = 'genes-cancer'
+    # dataset = 'test'
+    dataset = 'genes-cancer'
     raw_text_dir = 'data/{}/raw'.format(dataset)
     processed_text_dir = 'data/{}/processed'.format(dataset)
     sents = Sentences(raw_text_dir)

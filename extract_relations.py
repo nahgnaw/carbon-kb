@@ -194,16 +194,8 @@ class RelationExtractor(object):
         vmod_list = self._get_dependents(self._dependencies['vmod'], head)
         if vmod_list:
             for vmod in vmod_list:
-                vmod_phrase.add_word_unit(vmod)
                 vmod_phrase.extend(self._expand_predicate(vmod))
-                pobj_phrase = self._get_prep_phrase(vmod)
-                if pobj_phrase:
-                    vmod_phrase.extend(pobj_phrase)
-                dobj_list = self._get_dependents(self._dependencies['dobj'], vmod)
-                if dobj_list:
-                    for dobj in dobj_list:
-                        obj_seq = self._expand_head_word(dobj)
-                        vmod_phrase.extend(obj_seq)
+                vmod_phrase.extend(self._get_verb_object(vmod_phrase, vmod))
             if self._debug:
                 self._print_expansion_debug_info(head, 'vmod', vmod_phrase)
         return vmod_phrase
@@ -214,7 +206,9 @@ class RelationExtractor(object):
         obj_list = self._get_dependents(self._dependencies['dobj'], vb)
         if obj_list:
             for obj in obj_list:
-                object.extend(self._expand_head_word(obj))
+                obj_conjunction = self._get_conjunction(obj)
+                for o in obj_conjunction:
+                    object.extend(self._expand_head_word(o))
         # Look for prepositional objects
         acomp_list = self._get_dependents(self._dependencies['acomp'], vb)
         if acomp_list:
@@ -316,8 +310,8 @@ class RelationExtractor(object):
 
 
 def batch_extraction(mysql_db=None):
-    # dataset = 'genes-cancer'
-    dataset = 'RiMG75'
+    dataset = 'genes-cancer'
+    # dataset = 'RiMG75'
     data_dir = 'data/{}/tmp/'.format(dataset)
 
     if mysql_db:
@@ -371,7 +365,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties.
+        a correlation has failed to materialize in clinical trials involving EGFR inhibitors, leaving a gap in our understanding of tumor dependency on EGFR signaling.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -388,5 +382,5 @@ def single_extraction():
 
 
 if __name__ == '__main__':
-    # single_extraction()
-    batch_extraction()
+    single_extraction()
+    # batch_extraction()
