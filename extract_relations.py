@@ -215,11 +215,12 @@ class RelationExtractor(object):
                     object.add_word_unit(acomp)
             # Look for prepositional objects
             prep_phrase = self._get_prep_phrase(pred)
-            if len(prep_phrase) > 2:
+            if len(prep_phrase) > 1:
                 pred_seq.add_word_unit(prep_phrase[0])
                 object.extend(WordUnitSequence(prep_phrase[1:]))
 
             if object:
+                # If there are multiple predicate words that have objects, only take the first one.
                 if pred_seq:
                     predicate = WordUnitSequence(predicate[:ind+1])
                     predicate.extend(pred_seq)
@@ -237,7 +238,7 @@ class RelationExtractor(object):
         if neg and neg[0].pos == self._pos_tags['dt']:
             expansion.add_word_unit(neg[0])
             if self._debug:
-                self._print_expansion_debug_info(head, 'negation', neg)
+                self._print_expansion_debug_info(head, 'negation', neg[0])
         # Find out if the head has pobj phrase
         pobj_phrase = self._get_prep_phrase(head)
         if pobj_phrase:
@@ -305,17 +306,21 @@ class RelationExtractor(object):
                     # If the dependency relation is a verb:
                     if head.pos.startswith(self._pos_tags['vb']):
                         # The predicate is the head
-                        pred = head
-                    elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
-                        # The predicate is the copular verb
+                        predicate, object = self._get_predicate_object(head)
+                    elif head.pos.startswith(self._pos_tags['nn']):
                         pred_list = self._get_dependents(self._dependencies['cop'], head)
                         if pred_list:
-                            pred = pred_list[0]
+                            predicate = self._expand_predicate(pred_list[0])
+                            object = self._expand_head_word(head)
                         else:
                             continue
+                    elif head.pos.startswith(self._pos_tags['jj']):
+                        pred_list = self._get_dependents(self._dependencies['cop'], head)
+                        if pred_list:
+                            predicate, object = self._get_predicate_object(head)
+                            predicate.add_word_unit(pred_list[0])
                     else:
                         continue
-                    predicate, object = self._get_predicate_object(pred)
                     if predicate and object:
                         self.relations.append(Relation(subject, predicate, object))
 
@@ -376,7 +381,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        However, while a correlation exists between the HER2 overexpression status in breast tumors and their sensitivity to HER2 inhibitors, such a correlation has failed to materialize in clinical trials involving EGFR inhibitors, leaving a gap in our understanding of tumor dependency on EGFR signaling.
+        It is certainly possible that the mTORC2-mediated phosphorylation events on DUSP10 or additional post-translational modifications are able to regulate substrate specificity.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -393,5 +398,5 @@ def single_extraction():
 
 
 if __name__ == '__main__':
-    # single_extraction()
-    batch_extraction()
+    single_extraction()
+    # batch_extraction()
