@@ -179,12 +179,8 @@ class RelationExtractor(object):
                     if pcomp_list:
                         for pcomp in pcomp_list:
                             prep_phrase.add_word_unit(prep)
-                            prep_phrase.extend(self._expand_predicate(pcomp))
-                            pcomp_obj_list = self._get_dependents(self._dependencies['dobj'], pcomp)
-                            if pcomp_obj_list:
-                                for pcomp_obj in pcomp_obj_list:
-                                    pcomp_obj_seq = self._expand_head_word(pcomp_obj)
-                                    prep_phrase.extend(pcomp_obj_seq)
+                            for seq in self._get_predicate_object(pcomp):
+                                prep_phrase.extend(seq)
                     if self._debug:
                         self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
         return prep_phrase
@@ -194,33 +190,46 @@ class RelationExtractor(object):
         vmod_list = self._get_dependents(self._dependencies['vmod'], head)
         if vmod_list:
             for vmod in vmod_list:
-                vmod_phrase.extend(self._expand_predicate(vmod))
-                vmod_phrase.extend(self._get_verb_object(vmod_phrase, vmod))
+                for seq in self._get_predicate_object(vmod):
+                    vmod_phrase.extend(seq)
             if self._debug:
                 self._print_expansion_debug_info(head, 'vmod', vmod_phrase)
         return vmod_phrase
 
-    def _get_verb_object(self, predicate, vb):
+    def _get_predicate_object(self, pred_head):
+        predicate = self._expand_predicate(pred_head)
         object = WordUnitSequence()
-        # Look for direct object
-        obj_list = self._get_dependents(self._dependencies['dobj'], vb)
-        if obj_list:
-            for obj in obj_list:
-                obj_conjunction = self._get_conjunction(obj)
-                for o in obj_conjunction:
-                    object.extend(self._expand_head_word(o))
-        # Look for prepositional objects
-        acomp_list = self._get_dependents(self._dependencies['acomp'], vb)
-        if acomp_list:
-            for acomp in acomp_list:
-                object.add_word_unit(acomp)
-        prep_phrase = self._get_prep_phrase(vb)
-        if len(prep_phrase) > 2:
-            predicate.add_word_unit(prep_phrase[0])
-            object.extend(WordUnitSequence(prep_phrase[1:]))
-        return object
+        for ind, pred in predicate:
+            pred_seq = WordUnitSequence()
+            # Look for direct object
+            obj_list = self._get_dependents(self._dependencies['dobj'], pred)
+            if obj_list:
+                for obj in obj_list:
+                    obj_conjunction = self._get_conjunction(obj)
+                    for o in obj_conjunction:
+                        object.extend(self._expand_head_word(o))
+            # Look for adjective compliment
+            acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
+            if acomp_list:
+                for acomp in acomp_list:
+                    object.add_word_unit(acomp)
+            # Look for prepositional objects
+            prep_phrase = self._get_prep_phrase(pred)
+            if len(prep_phrase) > 2:
+                pred_seq.add_word_unit(prep_phrase[0])
+                object.extend(WordUnitSequence(prep_phrase[1:]))
+
+            if object:
+                if pred_seq:
+                    predicate = WordUnitSequence(predicate[:ind+1])
+                    predicate.extend(pred_seq)
+                return predicate, object
+        return predicate, None
 
     def _expand_head_word(self, head):
+        """
+            Return a WordUnitSequence including the original head.
+        """
         # Find out if the head is in a compound noun
         expansion = self._get_noun_compound(head)
         # Find out if there is any negation
@@ -239,33 +248,37 @@ class RelationExtractor(object):
             expansion.extend(vmod_phrase)
         return expansion
 
-    # Expand predicate with auxiliary and negation
     def _expand_predicate(self, head):
-        predicate = WordUnitSequence([head], head)
+        """
+            Return a WordUnitSequence including the original head.
+        """
+        predicate = WordUnitSequence(head)
 
-        def expand_predicate(pred_head, dep, debug=False):
-            dep_wn = self._get_dependents(dep, pred_head)
-            if dep_wn:
-                predicate.add_word_unit(dep_wn[0])
-                if debug:
-                    self._print_expansion_debug_info(pred_head, dep, dep_wn[0])
+        def __expand_predicate(pred_head, debug=False):
+            predicate = WordUnitSequence()
+            dep_list = [
+                self._dependencies['aux'],
+                self._dependencies['auxpass'],
+                self._dependencies['neg']
+            ]
+            for dep in dep_list:
+                dep_wn = self._get_dependents(dep, pred_head)
+                if dep_wn:
+                    predicate.add_word_unit(dep_wn[0])
+                    if debug:
+                        self._print_expansion_debug_info(pred_head, dep, dep_wn[0])
+            return predicate
 
-        # Find out if there is any aux
-        expand_predicate(head, self._dependencies['aux'], self._debug)
-        # Find out if there is any auxpass
-        expand_predicate(head, self._dependencies['auxpass'], self._debug)
-        # Find out if there is any negation
-        expand_predicate(head, self._dependencies['neg'], self._debug)
+        # Find out if there is any aux, auxpass, and neg
+        predicate.extend(__expand_predicate(head, self._debug))
         # Find out if there is any xcomp
         xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
             for xcomp in xcomp_list:
                 predicate.add_word_unit(xcomp)
-                # Use the xcomp as the "head" instead of the original head
-                predicate.head = xcomp
                 if self._debug:
                     self._print_expansion_debug_info(head, 'xcomp', xcomp)
-                expand_predicate(xcomp, self._dependencies['aux'], self._debug)
+                predicate.extend(__expand_predicate(xcomp, self._debug))
         return predicate
 
     def _extracting_condition(self, head, dependent):
@@ -292,21 +305,19 @@ class RelationExtractor(object):
                     # If the dependency relation is a verb:
                     if head.pos.startswith(self._pos_tags['vb']):
                         # The predicate is the head
-                        predicate = self._expand_predicate(head)
-                        pred = predicate.head
-                        object = self._get_verb_object(predicate, pred)
-                        if object:
-                            self.relations.append(Relation(subject, predicate, object))
-                    # If the dependency relation is a copular verb
+                        pred = head
                     elif head.pos.startswith(self._pos_tags['nn']) or head.pos.startswith(self._pos_tags['jj']):
                         # The predicate is the copular verb
                         pred_list = self._get_dependents(self._dependencies['cop'], head)
                         if pred_list:
-                            predicate = self._expand_predicate(pred_list[0])
-                            # The object is the head
-                            object = self._expand_head_word(head)
-                            relation = Relation(subject, predicate, object)
-                            self._relations.append(relation)
+                            pred = pred_list[0]
+                        else:
+                            continue
+                    else:
+                        continue
+                    predicate, object = self._get_predicate_object(pred)
+                    if predicate and object:
+                        self.relations.append(Relation(subject, predicate, object))
 
 
 def batch_extraction(mysql_db=None):
@@ -365,7 +376,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        a correlation has failed to materialize in clinical trials involving EGFR inhibitors, leaving a gap in our understanding of tumor dependency on EGFR signaling.
+        However, while a correlation exists between the HER2 overexpression status in breast tumors and their sensitivity to HER2 inhibitors, such a correlation has failed to materialize in clinical trials involving EGFR inhibitors, leaving a gap in our understanding of tumor dependency on EGFR signaling.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
@@ -382,5 +393,5 @@ def single_extraction():
 
 
 if __name__ == '__main__':
-    single_extraction()
-    # batch_extraction()
+    # single_extraction()
+    batch_extraction()

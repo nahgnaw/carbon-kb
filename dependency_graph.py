@@ -19,6 +19,9 @@ class WordUnit(object):
     def __repr__(self):
         return self._word
 
+    def __eq__(self, other):
+        return self._index == other._index
+
     @property
     def index(self):
         return self._index
@@ -49,8 +52,7 @@ class WordUnitSequence(object):
             self._sort()
         else:
             self._seq = []
-        if head:
-            self.__head = head
+        self._head = head if head else None
 
     def __str__(self):
         return ' '.join([wn.word for wn in self._seq])
@@ -64,6 +66,10 @@ class WordUnitSequence(object):
     def __getitem__(self, i):
         return self._seq[i]
 
+    def __iter__(self):
+        for ind, wn in enumerate(self._seq):
+            yield ind, wn
+
     def _sort(self):
         if self._seq:
             self._seq = sorted(self._seq, key=lambda wn: wn.index)
@@ -72,15 +78,17 @@ class WordUnitSequence(object):
         return ' '.join(wn.lemma for wn in self._seq)
 
     def extend(self, seq):
-        if type(seq) is list:
-            self._seq.extend(seq)
-        else:
-            self._seq.extend(seq.sequence)
-        self._sort()
+        if seq:
+            if type(seq) is list:
+                self._seq.extend(seq)
+            else:
+                self._seq.extend(seq.sequence)
+            self._sort()
 
     def add_word_unit(self, word_unit):
-        self._seq.append(word_unit)
-        self._sort()
+        if word_unit:
+            self._seq.append(word_unit)
+            self._sort()
 
     @property
     def sequence(self):
@@ -88,11 +96,11 @@ class WordUnitSequence(object):
 
     @property
     def head(self):
-        return self.__head
+        return self._head
 
     @head.setter
     def head(self, head):
-        self.__head = head
+        self._head = head
 
 
 class DependencyGraph(object):
