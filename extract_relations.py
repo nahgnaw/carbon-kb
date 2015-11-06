@@ -213,6 +213,8 @@ class RelationExtractor(object):
             if acomp_list:
                 for acomp in acomp_list:
                     object.add_word_unit(acomp)
+                    acomp_prep_phrase = self._get_prep_phrase(acomp)
+                    object.extend(acomp_prep_phrase)
             # Look for prepositional objects
             prep_phrase = self._get_prep_phrase(pred)
             if len(prep_phrase) > 1:
@@ -241,12 +243,10 @@ class RelationExtractor(object):
                 self._print_expansion_debug_info(head, 'negation', neg[0])
         # Find out if the head has pobj phrase
         pobj_phrase = self._get_prep_phrase(head)
-        if pobj_phrase:
-            expansion.extend(pobj_phrase)
+        expansion.extend(pobj_phrase)
         # Find out if the head has vmod phrase
         vmod_phrase = self._get_vmod_phrase(head)
-        if vmod_phrase:
-            expansion.extend(vmod_phrase)
+        expansion.extend(vmod_phrase)
         return expansion
 
     def _expand_predicate(self, head):
@@ -326,9 +326,10 @@ class RelationExtractor(object):
 
 
 def batch_extraction(mysql_db=None):
-    dataset = 'genes-cancer'
+    # dataset = 'genes-cancer'
     # dataset = 'RiMG75'
-    data_dir = 'data/{}/tmp/'.format(dataset)
+    dataset = 'test'
+    data_dir = 'data/{}/processed/'.format(dataset)
 
     if mysql_db:
         mysql_config = {
@@ -381,7 +382,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        It is certainly possible that the mTORC2-mediated phosphorylation events on DUSP10 or additional post-translational modifications are able to regulate substrate specificity.
+        However, while a correlation exists between the HER2 overexpression status in breast tumors and their sensitivity to HER2 inhibitors, such a correlation has failed to materialize in clinical trials involving EGFR inhibitors, leaving a gap in our understanding of tumor dependency on EGFR signaling.
     """
     for sent in sent_tokenize(sentences):
         sent = sent.strip()
