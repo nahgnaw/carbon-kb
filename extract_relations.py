@@ -386,7 +386,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        Here, we report that liver tumors from human HGF (hHGF) transgenic
+        In contrast, at the same timepoint the survival of ethanol and LPS-treated mice had declined to 66.7% (Smad3+/−), 92.8% (Sptbn1+/−) and 81.82% (Smad3+/−; Sptbn1+/−), respectively, while the survival of the wild type mice remained 100%.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
@@ -403,5 +403,5 @@ def single_extraction():
 
 
 if __name__ == '__main__':
-    # single_extraction()
-    batch_extraction('bio-kb')
+    single_extraction()
+    # batch_extraction('bio-kb')
