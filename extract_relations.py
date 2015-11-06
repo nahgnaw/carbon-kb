@@ -6,6 +6,7 @@ import traceback
 import MySQLdb
 
 from nltk.tokenize import sent_tokenize
+from segtok.segmenter import split_single, split_multi
 from dependency_graph import WordUnitSequence, DependencyGraph
 
 
@@ -46,7 +47,7 @@ class Relation(object):
     def object(self, obj):
         self._obj = obj
 
-    def generate_sql(self, table_name='relations'):
+    def generate_sql(self, table_name='svo'):
         return """
             INSERT INTO {} (subject, predicate, object)
             VALUES ("{}", "{}", "{}");
@@ -319,6 +320,8 @@ class RelationExtractor(object):
                         if pred_list:
                             predicate, object = self._get_predicate_object(head)
                             predicate.add_word_unit(pred_list[0])
+                        else:
+                            continue
                     else:
                         continue
                     if predicate and object:
@@ -326,9 +329,9 @@ class RelationExtractor(object):
 
 
 def batch_extraction(mysql_db=None):
-    # dataset = 'genes-cancer'
+    dataset = 'genes-cancer'
     # dataset = 'RiMG75'
-    dataset = 'test'
+    # dataset = 'test'
     data_dir = 'data/{}/processed/'.format(dataset)
 
     if mysql_db:
@@ -350,6 +353,7 @@ def batch_extraction(mysql_db=None):
                 f_out = codecs.open(output_filename, 'w', encoding='utf-8')
                 for line in f_in:
                     sent = line.strip()
+                    print sent
                     if sent:
                         f_out.write(u'{}\n'.format(sent))
                         try:
@@ -382,9 +386,9 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        However, while a correlation exists between the HER2 overexpression status in breast tumors and their sensitivity to HER2 inhibitors, such a correlation has failed to materialize in clinical trials involving EGFR inhibitors, leaving a gap in our understanding of tumor dependency on EGFR signaling.
+        Here, we report that liver tumors from human HGF (hHGF) transgenic
     """
-    for sent in sent_tokenize(sentences):
+    for sent in split_multi(sentences):
         sent = sent.strip()
         print sent
         try:
@@ -399,5 +403,5 @@ def single_extraction():
 
 
 if __name__ == '__main__':
-    single_extraction()
-    # batch_extraction()
+    # single_extraction()
+    batch_extraction('bio-kb')

@@ -26,7 +26,8 @@ class Sentences(object):
                         # text = text.replace('\n', ' ')
                         # text = self.text_process(text)
                         for sent in split_multi(text):
-                            yield fn, sent
+                            if len(sent) < 1000:
+                                yield fn, sent
                     f.close()
 
     def save(self, dir, debug=False):
