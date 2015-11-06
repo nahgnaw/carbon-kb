@@ -51,7 +51,7 @@ nosetests.xml
 .idea
 .stat
 
-.bin
+*.bin
 data/*
 reverb/*
 topicalPhrases/*
