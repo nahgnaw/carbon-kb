@@ -353,8 +353,8 @@ def batch_extraction(mysql_db=None):
                 f_out = codecs.open(output_filename, 'w', encoding='utf-8')
                 for line in f_in:
                     sent = line.strip()
-                    print sent
                     if sent:
+                        print sent
                         f_out.write(u'{}\n'.format(sent))
                         try:
                             extractor = RelationExtractor(sent, debug=False)
@@ -386,20 +386,21 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        In contrast, at the same timepoint the survival of ethanol and LPS-treated mice had declined to 66.7% (Smad3+/−), 92.8% (Sptbn1+/−) and 81.82% (Smad3+/−; Sptbn1+/−), respectively, while the survival of the wild type mice remained 100%.
+    we found that treating 6-week-old RT2 mice with EGFR inhibitors (erlotinib or CI-1033) for 3 weeks resulted in a ~30% decrease in the number of islets undergoing angiogenic switching (), indicating that Egfr activity also contributes to this pathological transition.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
-        print sent
-        try:
-            extractor = RelationExtractor(sent, debug=True)
-        except:
-            print 'Failed to parse the sentence.'
-            print traceback.format_exc()
-        else:
-            extractor.extract_svo()
-            for relation in extractor.relations:
-                print relation
+        if sent:
+            print sent
+            try:
+                extractor = RelationExtractor(sent, debug=True)
+            except:
+                print 'Failed to parse the sentence.'
+                print traceback.format_exc()
+            else:
+                extractor.extract_svo()
+                for relation in extractor.relations:
+                    print relation
 
 
 if __name__ == '__main__':

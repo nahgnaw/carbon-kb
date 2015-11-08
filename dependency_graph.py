@@ -193,6 +193,6 @@ class DependencyGraph(object):
 
 
 if __name__ == '__main__':
-    sentence = 'The article is reviewed by Tom.'
+    sentence = u'we found that treating 6-week-old RT2 mice with EGFR inhibitors (erlotinib or CI-1033) for 3 weeks resulted in a ~30% decrease in the number of islets undergoing angiogenic switching (), indicating that Egfr activity also contributes to this pathological transition.'
     dg = DependencyGraph(sentence)
     dg.print_dep_triples()
