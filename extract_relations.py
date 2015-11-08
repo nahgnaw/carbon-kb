@@ -5,8 +5,8 @@ import codecs
 import traceback
 import MySQLdb
 
-from nltk.tokenize import sent_tokenize
-from segtok.segmenter import split_single, split_multi
+from ConfigParser import SafeConfigParser
+from segtok.segmenter import split_multi
 from dependency_graph import WordUnitSequence, DependencyGraph
 
 
@@ -46,12 +46,6 @@ class Relation(object):
     @object.setter
     def object(self, obj):
         self._obj = obj
-
-    def generate_sql(self, table_name='svo'):
-        return """
-            INSERT INTO {} (subject, predicate, object)
-            VALUES ("{}", "{}", "{}");
-        """.format(table_name, self._subj, self._pred, self._obj)
 
 
 class RelationExtractor(object):
@@ -335,10 +329,12 @@ def batch_extraction(mysql_db=None):
     data_dir = 'data/{}/processed/'.format(dataset)
 
     if mysql_db:
+        parser = SafeConfigParser()
+        parser.read('config.ini')
         mysql_config = {
-            'host': 'localhost',
-            'user': 'root',
-            'passwd': 'root',
+            'host': parser.get('MySQL', 'host'),
+            'user': parser.get('MySQL', 'user'),
+            'passwd': parser.get('MySQL', 'passwd'),
             'db': mysql_db
         }
         db = MySQLdb.connect(**mysql_config)
