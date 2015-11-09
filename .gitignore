@@ -54,6 +54,7 @@ nosetests.xml
 *.bin
 *.vec
 *.ini
-data/*
-reverb/*
-topicalPhrases/*
+data
+reverb
+topicalPhrases
+pyxmeans
