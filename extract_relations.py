@@ -5,47 +5,10 @@ import codecs
 import traceback
 import MySQLdb
 
+from relation import Relation
 from ConfigParser import SafeConfigParser
 from segtok.segmenter import split_multi
 from dependency_graph import WordUnitSequence, DependencyGraph
-
-
-class Relation(object):
-
-    def __init__(self, subj=None, pred=None, obj=None):
-        self._subj = subj
-        self._pred = pred
-        self._obj = obj
-
-    def __str__(self):
-        return str((str(self._subj), str(self._pred), str(self._obj)))
-
-    def lemmatized(self):
-        return self._subj.lemmatized(), self._pred.lemmatized(), self._obj.lemmatized()
-
-    @property
-    def subject(self):
-        return self._subj
-
-    @subject.setter
-    def subject(self, subj):
-        self._subj = subj
-
-    @property
-    def predicate(self):
-        return self._pred
-
-    @predicate.setter
-    def predicate(self, pred):
-        self._pred = pred
-
-    @property
-    def object(self):
-        return self._obj
-
-    @object.setter
-    def object(self, obj):
-        self._obj = obj
 
 
 class RelationExtractor(object):
