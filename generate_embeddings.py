@@ -11,10 +11,10 @@ def select_sql(table_name='svo', limit=10):
     return 'SELECT subject, predicate, object FROM {} ORDER BY id'.format(table_name)
 
 
-dataset = 'genes-cancer'
-# dataset = 'RiMG75'
-mysql_db = 'bio-kb'
-# mysql_db = 'earth-kb'
+# dataset = 'genes-cancer'
+dataset = 'RiMG75'
+# mysql_db = 'bio-kb'
+mysql_db = 'earth-kb'
 
 # Connect to MySQL
 parser = SafeConfigParser()
@@ -54,6 +54,8 @@ else:
         for word in word_list:
             word = word.strip()
             if word:
+                if mysql_db == 'bio-kb':
+                    word = word.lower()
                 word_count += 1
                 if word in model:
                     vec += model[word]

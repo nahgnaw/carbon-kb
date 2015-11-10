@@ -54,7 +54,6 @@ nosetests.xml
 *.bin
 *.vec
 *.ini
-data
 reverb
 topicalPhrases
 pyxmeans

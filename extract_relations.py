@@ -286,8 +286,8 @@ class RelationExtractor(object):
 
 
 def batch_extraction(mysql_db=None):
-    dataset = 'genes-cancer'
-    # dataset = 'RiMG75'
+    # dataset = 'genes-cancer'
+    dataset = 'RiMG75'
     # dataset = 'test'
     data_dir = 'data/{}/processed/'.format(dataset)
 
@@ -345,7 +345,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-    we found that treating 6-week-old RT2 mice with EGFR inhibitors (erlotinib or CI-1033) for 3 weeks resulted in a ~30% decrease in the number of islets undergoing angiogenic switching (), indicating that Egfr activity also contributes to this pathological transition.
+    Can we quantitatively characterize the relation and interaction between preterm birth, physical growth, and brain development?
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
@@ -364,4 +364,4 @@ def single_extraction():
 
 if __name__ == '__main__':
     single_extraction()
-    # batch_extraction('bio-kb')
+    # batch_extraction('earth-kb')
