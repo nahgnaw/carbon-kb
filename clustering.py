@@ -55,12 +55,12 @@ def error(actual, test):
 
 
 if __name__ == "__main__":
-    print "Creating data"
+    # print "Creating data"
     # N = 10000
     # D = 2
     k = 32
     max_iter = 100
-    n_samples = k * 10
+    n_samples = k * 5
 
     dataset = 'RiMG75'
     embedding_file = 'data/{}/subj_obj_embeddings.txt'.format(dataset)
