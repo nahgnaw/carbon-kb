@@ -1,0 +1,734 @@
+INTRODUCTION
+
+Patients with glioblastoma have a poor prognosis.
+('Patients with glioblastoma', 'have', 'prognosis')
+
+[, ] Thus far, maximally safe surgical resection and radiation therapy (RTx) with adjuvant temozolomide (TMZ) gives a median survival of 14.7 months.[] The O6-Methylguanine-DNA methyltransferase (MGMT) promoter methylation status is the most important biomarker that predicts response to current therapy.
+
+[] Some of the causes of poor outcome lie in the heterogeneity of the tumor and the multiple escape pathways glioblastoma harbors.[, ] Specifically targeting these resistance pathways using combination therapies can be an approach to achieve better treatment results.
+
+A novel therapy in glioblastoma is the epigenetic modulatory treatment with histone deacetylase inhibitors (HDACi).
+('therapy in glioblastoma', 'is', 'treatment with histone deacetylase inhibitors')
+
+These drugs affect multiple pathways including apoptosis, autophagy and DNA damage repair.[] We reported earlier that a subset of patient-derived glioblastoma stem-like cell cultures (GSC cultures) showed resistance to the combination of RTx with the HDACi SAHA or LBH589.
+('drugs', 'affect', 'pathways including apoptosis')
+
+[] Both over-expression of Bcl-XL proteins as well as the maintained Bcl-2 proteins post-HDACi treatment were related to this resistance.[] Thus, regulation of Bcl-2 family members may be an important mechanism in the resistance to HDACi as radiosensitizers.
+
+Others have already shown that these proteins are related to resistance to HDACi as single agents.[] The Bcl-2 family members regulates the intrinsic cell death pathway by controlling permeability of the outer mitochondrial membrane.[] In addition, by binding the endoplasmic reticulum, these proteins regulate autophagy by binding to Beclin-1.[] Inhibiting these Bcl-2 family proteins may provide an effective strategy in overcoming resistance to HDACi.[] A recent study has shown efficacy of the Bcl-2 inhibitor ABT-737 and SAHA in an immortalized glioma model.
+('proteins', 'are related to', 'resistance to HDACi')
+
+Efficacy was only observed in cell lines with an intact phosphatase and tensin homolog (PTEN) status.
+('Efficacy', 'was observed in', 'cell lines with phosphatase')
+
+In our study, we aim to inhibit the anti-apoptotic Bcl-2 pathway by using Obatoclax, to enhance the efficacy of SAHA and LBH589 as both single agents and as radiosensitizers in the PTEN deleted patient-derived GSC model.[, ] Obatoclax is a Bcl-2 family inhibitor which has higher affinity than ABT-737 to inhibit Bcl-XL, Mcl-1 and to induce autophagy.[, , ] Obatoclax reduces Bak/Mcl-1-binding, up-regulates Bim and subsequently induces cytochrome-C release and caspase-3-activity.
+
+[] The drug is currently being tested in clinical trials for hematological cancers, non-small cell lung carcinoma and extensive-stage small-cell lung carcinoma.[-] Our study provides novel insights into the efficacy of inhibiting the Bcl-2 family pathway by Obatoclax in overcoming resistance to HDACi as radiosensitizers.
+('drug', 'is being tested in', 'trials for cancers cell lung carcinoma lung carcinoma')
+
+In addition, we identify gene expression prediction profiles for response to the various treatment modalities.
+
+RESULTS
+
+Patient-derived GSC cultures show differential sensitivity to Obatoclax
+('GSC cultures', 'show', 'sensitivity to Obatoclax')
+
+The IC50 values of Obatoclax were determined in three patient-derived GSC cultures and in U373 glioma cells in order to find the right concentrations for further screening.
+('IC50 values of Obatoclax', 'were determined in', 'GSC cultures')
+
+Then, fourteen patient-derived glioblastoma cultures were screened for the combination treatments, after which validation of the results was performed in another five cultures.
+('glioblastoma cultures', 'were screened for', 'combination treatments')
+('validation of results', 'was performed in', 'cultures')
+
+If the cultures were highly sensitive to Obatoclax, lower concentrations (10 and 30 nM) were used.
+('cultures', 'were sensitive to', 'Obatoclax')
+
+Since the MGMT promoter methylation status is the most established predictive marker of glioblastoma survival[], we evaluated whether treatment efficacy was related to this factor.
+('MGMT promoter methylation status', 'is', 'marker of glioblastoma survival')
+('treatment efficacy', 'was related to', 'factor')
+
+Also we investigated the relation of response with recurrence status.
+
+Also, the relation between the IC50 values and Bcl-2/Bcl-XL protein levels was investigated (Figure , Table ).
+
+The results show that Obatoclax reduced viability in the nanomolar range.
+('Obatoclax', 'reduced', 'viability in range')
+
+The IC50 values as approached by median effect equation, ranged from 17 – 562nM, varying per GSC culture.
+
+In total, eleven of nineteen GSC cultures had a methylated MGMT promoter status and seven cultures were derived from recurrent tumors.
+('eleven of GSC cultures', 'had', 'MGMT promoter status cultures')
+
+Neither of these parameters correlated to the IC50 values of Obatoclax (p&lt;0.05).
+
+The protein levels of these cultures were retrieved from previous research.[] The protein levels were categorized as high or low.
+('protein levels of cultures', 'were retrieved from', 'research')
+
+In cultures with high levels of Bcl-2, the mean IC50 value is significantly higher than in other cultures (p=0.017).
+('mean IC50 value', 'is higher than', 'in')
+
+For Bcl-XL, we observed a trend that higher IC50 values occurred in cultures with lower Bcl-XL protein levels (p=0.09).
+('IC50 values', 'occurred in', 'that cultures with protein levels')
+
+Sensitivity of patient-derived GSC cultures to Obatoclax treatment
+
+(A) The immortalized glioma cell line U373 and the GSC cultures GS102, GS79 and GS257 were incubated with a concentration-range of Obatoclax and the IC50 values were calculated based on viability on day eight by median equation.
+('A', 'were calculated based', 'on')
+
+We show the viable percentage of cells compared to non-treated controls with standard errors.
+
+(B) Cells of patient-derived GSC cultures were treated with at least three different concentrations of Obatoclax in the nanomolar range.
+('B Cells of GSC cultures', 'were treated with', 'concentrations of Obatoclax')
+
+After eight days, viability was measured by CellTiter-Glo assay and the IC50 values were calculated by median equation.
+('viability', 'was measured by', 'assay')
+
+The graph shows the results of nineteen screened patient-derived GSC cultures.
+('graph', 'shows', 'results of GSC cultures')
+
+(C) MGMT promoter methylation and recurrence status of the patient-derived GSC cultures were related to the IC50 values of Obatoclax.
+('C MGMT promoter methylation', 'were related to', 'IC50 values of Obatoclax')
+('recurrence status', 'were related to', 'IC50 values of Obatoclax')
+
+(D) The Bcl-2 and Bcl-XL protein levels were related to IC50 values of the cultures for which this status was known.
+
+The combination of treatments of Obatoclax with either SAHA, LBH589 or RTx (3Gy), gave differetial responses in different patient-derived GSC cultures.
+('combination of treatments of Obatoclax', 'gave', 'responses in GSC cultures')
+
+Red = non-responsive to the proposed treatment; blue = responsive to the proposed treatment.
+
+Obatoclax synergizes with HDAC inhibitors culture-dependently in patient-derived GSC cultures
+('Obatoclax', 'synergizes with', 'HDAC inhibitors')
+
+To determine synergy between Obatoclax and the HDACi SAHA or LBH589, the Chou Talalay method was used in the patient-derived GSC cultures GS79 and GS257.
+('Chou Talalay method', 'was used in', 'GSC cultures')
+
+Next, the panel of fourteen and five patient-derived GSC cultures were screened with the previously mentioned concentrations of Obatoclax, combined with SAHA and LBH589, and with or without RTx.
+('panel of GSC cultures', 'were screened with', 'concentrations of Obatoclax')
+('panel of GSC cultures', 'combined with', 'SAHA')
+
+Also, the MGMT promoter methylation and recurrence status of the tumors were related to responses to treatment.
+('MGMT promoter methylation', 'were related to', 'responses to treatment')
+('recurrence status', 'were related to', 'responses to treatment')
+
+For both cultures GS79 and GS257, Obatoclax showed synergistic effects with SAHA and LBH589 with combination indices &lt; 1 (Figure ).
+('Obatoclax', 'showed', 'effects with SAHA')
+
+The combination efficacy widely varied in the panel of patient-derived GSC cultures: responders and non-responders were identified for all combination treatments (Table , Figure ).
+('combination efficacy', 'varied in', 'panel of GSC cultures')
+('responders', 'were identified for', 'combination treatments')
+
+In the first set of glioblastoma cultures (n=14) eight cultures responded to SAHA/Obatoclax treatment.
+('cultures', 'responded to', 'SAHA/Obatoclax treatment')
+
+In the validation set (n=5) four cultures responded to treatment.
+('cultures', 'responded to', 'treatment')
+
+Enhancement factors ranged from 1.2 – 14.3 with effect sizes ranging from 5% - 35%.
+('Enhancement factors', 'ranged from', '1.2')
+
+Seven of the fourteen cultures responded to LBH589/Obatoclax treatment and three of the five cultures in the validation set responded to treatment.
+('Seven of cultures', 'responded to', 'LBH589/Obatoclax treatment')
+
+The enhancement factors ranged from 0.9 – 4.9 with effect sizes of −6% – 26%.
+('enhancement factors', 'ranged from', '0.9')
+
+Obatoclax sensitized seven of fourteen GSC cultures to radiation, and all the GSC cultures in the validation set responded to this treatment.
+('Obatoclax', 'sensitized', 'seven of GSC cultures')
+('Obatoclax', 'responded to', 'treatment')
+('GSC cultures in validation set', 'responded to', 'treatment')
+
+The enhancement factors ranged from 0.9–3.6 with effect sizes ranging from −5% – 26%.
+('enhancement factors', 'ranged from', '0.9')
+
+The MGMT promoter methylation and recurrence status were not related to the effect sizes of the tested combination treatments (p&gt;0.05) (Figure ).
+('MGMT promoter methylation', 'were not related to', 'effect sizes of combination treatments')
+('recurrence status', 'were not related to', 'effect sizes of combination treatments')
+
+The effect of Obatoclax on HDACi and radiation treatment in patient-derived GSC cultures
+
+(A) Left: Concentration-range assays were performed to determine synergy between Obatoclax and the HDACi SAHA and LBH589 on patient-derived GSC culture GS79 (sensitive to HDACi/RTx treatment) and GS257 (resistant to HDACi/RTx).
+('assays', 'were performed to determine', 'synergy between Obatoclax')
+
+After eight days of incubation, the viability and synergy were determined by CellTiter-Glo assay and median equation calculation.
+('viability', 'were determined by', 'assay')
+('synergy', 'were determined by', 'assay')
+
+Means of triplicate tests were shown with the standard errors.
+('Means of triplicate tests', 'were shown with', 'errors')
+
+Right: The combination indices corresponding to the viability graphs in Figure  were calculated according to the Chou Talalay method determining synergism between the two drugs.
+('combination indices corresponding to viability graphs in Figure', 'were calculated according', 'to')
+
+Synergistic effects were observed in the two patient-derived GSC cultures for both HDACi and Obatoclax, with combination indices (CI) lower than 1 (CI&lt;1 is considered as synergy, CI=1 is considered additive effects, CI&gt;1 is considered as antagonism).
+('effects', 'were observed in', 'GSC cultures for HDACi')
+('effects', 'is considered as', 'antagonism')
+
+(B) The MGMT promoter methylation and recurrence status of the patient-derived GSC cultures were related to the effect sizes of the SAHA/Obatoclax, LBH589/Obatoclax or RTx/Obatoclax treatments.
+('B MGMT promoter methylation', 'were related to', 'effect sizes of SAHA/Obatoclax')
+('recurrence status', 'were related to', 'effect sizes of SAHA/Obatoclax')
+
+No significant relations were found between responses to treatment and those important prognostic parameters.
+('No relations', 'were found between', 'responses to treatment')
+
+(C) The results on viability at day eight, of two patient-derived GSC cultures treated with Obatoclax combined with SAHA or LBH589, RTx and all possible combinations.
+
+RTx = radiation.
+
+* Indicates significance at p&lt;0.05 for the different combination treatments compared to as indicated in the graphs by the vertical lines.
+
+The effects of Obatoclax on HDACi in patient-derived GSC cultures
+
+(A) Nine (left, high concentrations) and five (right, low concentrations) patient-derived GSC cultures were treated with two different concentrations of Obatoclax and SAHA (1μM).
+('A Nine', 'were treated with', 'concentrations of Obatoclax')
+('GSC cultures', 'were treated with', 'concentrations of Obatoclax')
+
+After eight days viability was measured by CellTiter-Glo assay.
+
+Responders (green bars) and non-responders (red bars) were identified.
+
+The color blue indicates significance at the p&lt;0.05 level for one of the concentrations.
+
+(B) Nine (left, high concentrations) and five (right, low concentrations) patient-derived GSC cultures were treated with two different concentrations of Obatoclax and LBH589 (20nM).
+('B left', 'were treated with', 'concentrations of Obatoclax')
+('GSC cultures', 'were treated with', 'concentrations of Obatoclax')
+
+After eight days viability was measured by CellTiter-Glo assay.
+
+Responders (green bars) and non-responders (red bars) were identified.
+
+The color blue indicates significance at the p&lt;0.05 level.
+
+(C) Nine (left, high concentrations) and five (right, low concentrations) patient-derived glioblastoma cultures were treated with two different concentrations of Obatoclax (Oba) and RTx (3Gy).
+('C Nine', 'were treated with', 'concentrations of Obatoclax')
+('glioblastoma cultures', 'were treated with', 'concentrations of Obatoclax')
+
+After eight days viability was measured by CellTiter-Glo assay.
+
+Responders (green bars) and non-responders (red bars) were identified.
+
+The color blue indicates significance at the p&lt;0.05 level.
+
+Obatoclax overcomes resistance to HDAC inhibitors as radiosensitizers in patient-derived GSC cultures
+('Obatoclax', 'overcomes', 'resistance to HDAC inhibitors')
+
+To evaluate whether treatment with Obatoclax sensitizes patient-derived GSC cultures to HDACi as radiosensitizers, the nineteen patient-derived GSC cultures were evaluated (Figure ).
+('treatment with Obatoclax', 'sensitizes', 'GSC cultures')
+
+The co-treatment with Obatoclax resulted in a significant reduction in cell viability compared to the combination treatment of RTx and SAHA without Obatoclax.
+
+However the effect sizes of triple treatment were small, since the ATP-levels at day eight show that either HDACi/Obatoclax, Obatoclax/RTx or HDACi/RTx already inhibited the largest part of the cell population.
+
+In the patient-derived GSC cultures GS257, GS274, GS224 and GS401, the effect sizes ranged from 5-9% and the enhancement factor ranged from 1.1 – 2.2 (GS257 and GS274 shown in Figure ).
+('effect sizes', 'ranged from', '%')
+('effect sizes', 'ranged from', '1.1')
+('enhancement factor', 'ranged from', '1.1')
+
+The addition of Obatoclax to the combination treatment of LBH589/RTx did not result in significant additional treatment effects.
+('addition of Obatoclax', 'did not result in', 'treatment effects')
+
+Obatoclax triggers apoptosis and induces autophagy in both HDAC inhibitor and HDACi/RTx combination treatment
+('Obatoclax', 'triggers', 'apoptosis')
+('Obatoclax', 'induces', 'autophagy')
+
+The CellTiter-Glo assay at day eight may have underestimated the effects of triple treatment due to the lack of differentiation between the effective treatments at this time point.
+('assay at day', 'may underestimated', 'effects of treatment')
+
+We hypothesized that early treatment differences could be observed by studying the important cell death mechanisms of the Bcl-2 pathway: apoptosis and autophagy.[] We studied early caspase-3/7 activation, which could provide more insights into the difference in efficacy between triple and combination treatment.
+('treatment differences', 'could be observed by', 'studying cell death mechanisms of pathway')
+
+The activated caspase-3/7 levels were monitored over time for SAHA concentrations at which additional effects were observed after triple treatment in the viability assay.
+('effects', 'were observed after', 'treatment in viability assay')
+
+The HDACi SAHA and the Bcl-2 family inhibitor Obatoclax activated the caspase-3/7 activity at both 48 and 60 hours post-treatment (Figure ).
+
+There was no additional caspase-3/7 activation in case of the combination treatment of SAHA and RTx, in comparison to single agents alone.
+
+Combination treatment of RTx/Obatoclax did not increase caspase-3/7 activity in comparison to single agent treatment either.
+
+In both SAHA/Obatoclax and SAHA/Obatoclax/RTx treated cells, increased caspase-3/7 activity was observed at 48 and 60 hours (p&lt;0.05), with SAHA/Obatoclax/RTx being significantly more effective than SAHA/Obatoclax (p&lt;0.05).
+
+As well as inducing caspase-dependent apoptosis, the Bcl-2 family proteins play a crucial role in autophagy and autophagosome formation which can be studied by conversion of LC3BI/II proteins.
+('family proteins', 'play', 'role')
+
+Treatment of GS257 cells with either SAHA, RTx and SAHA/RTx did not result in conversion of LC3I/LC3II at 48 and 72 hours post-treatment (Figure ).
+('Treatment of GS257 cells', 'did not result in', 'conversion of LC3I/LC3II')
+
+On the contrary, treatment with Obatoclax strongly induced autophagy at 48 hours post-treatment.
+('treatment with Obatoclax', 'induced', 'autophagy')
+
+Obatoclax increased both LC3I and LC3II in combination with RTx.
+('Obatoclax', 'increased', 'LC3I LC3II')
+
+In the SAHA/Obatoclax and Obatoclax/SAHA/RTx treated cells, LC3BI/II conversion (LC3II divided by LC3I) was observed at both 48 and 72 hours post-treatment.
+
+The triple treatment showed a higher ratio of LC3BI/II conversion.
+('treatment', 'showed', 'ratio of conversion')
+
+The mechanisms involved in the efficacy of the combination treatments
+
+(A) Cells of the GSC culture GS257 were treated with Obatoclax (225nM), SAHA (1μM) and all possible combinations.
+('A Cells of GSC culture GS257', 'were treated with', 'Obatoclax')
+
+After 24 hours, cells were radiated or not (controls) with 3Gy.
+
+Caspase-3/7 reagent was added to the wells, the plates were placed in an IncuCyte and followed for 60 consecutive hours.
+('plates', 'were placed in', 'IncuCyte')
+('plates', 'followed for', 'hours')
+
+Fluorescence was measured using the IncuCyte software.
+('Fluorescence', 'was measured using', 'IncuCyte software')
+
+*Indicates significance at p&lt;0.05 compared to non-treated controls.
+
+**/***Indicate significance at p&lt;0.05 of the treatments, compared to the treatments as indicated by the vertical bars (compared to either 2 or 3 treatments).
+
+(B) The GSC cultures GS257 were treated as in Figure . Cells were collected either 24 or 48 hours post-treatment with RTx.
+
+The conversion of LC3BI/II, indicating autophagy was studied by using the Western blot analysis.
+('autophagy', 'was studied by', 'using Western blot analysis')
+
+(C) The cells of the GSC culture GS257 were treated as in Figure . Cells were collected either 24 or 48 hours post-treatment with RTx.
+('C cells of GSC culture GS257', 'were treated as', 'in')
+
+The anti-apoptotic Bcl-2 family proteins Bcl-Xl and Mcl-1 were studied by using the Western blot analysis.
+('family proteins', 'were studied by', 'using Western blot analysis')
+
+Obatoclax combined with HDACi and HDACi/RTx effectively decreases Bcl-XL and Mcl-1
+
+As increased autophagy and apoptosis were observed in both the combination and triple treatment, we related these effects to altered levels of the anti-apoptotic Bcl-2 proteins Bcl-XL and Mcl-1 in the patient-derived glioblastoma culture GS257 (Figure ).
+('autophagy', 'were observed in', 'combination')
+('apoptosis', 'were observed in', 'combination')
+
+The protein levels of Bcl-XL were decreased by Obatoclax at 48 hours post-treatment, but after 72 hours the levels were similar to controls.
+('levels', 'were similar to', 'controls')
+('protein levels', 'were decreased by', 'Obatoclax')
+
+The HDACi SAHA even induced Bcl-XL protein levels at 48 hours, whereas at 72 hours, these levels were again similar to controls.
+('HDACi SAHA', 'induced', 'protein levels')
+('levels', 'were similar to', 'controls')
+
+The combination treatments of SAHA/RTx and Obatoclax/RTx did not affect Bcl-XL protein levels, whereas SAHA/Obatoclax and SAHA/Obatoclax/RTx completely eliminated Bcl-XL protein levels after both 48 and 72 hours.
+('combination treatments of SAHA/RTx', 'did not affect', 'protein levels')
+
+For Mcl-1, the most important effects were observed 48 hours after RTx: the levels were decreased by Obatoclax/RTx, Obatoclax/SAHA and to a larger extent by Obatoclax/SAHA/RTx.
+('effects', 'were observed', 'hours after RTx')
+('levels', 'were decreased by', 'Obatoclax/RTx')
+
+All these treatments induced additional Mcl-1 bands on the Western blot at both 37kDa and 25 kDa.
+('treatments', 'induced', 'bands')
+
+The Mcl-1 protein levels (37 and 40 kDa) of cells treated by the latter two treatments were relatively low compared to the other combination treatments at 72 hours.
+('protein levels', 'were low compared', 'to')
+
+In addition, the two additional Mcl-1 bands were induced by these treatments at both 15 and 17 kDa.
+('bands', 'were induced by', 'treatments')
+
+These bands may correspond to cleaved Mcl-1, which has been associated with activation of apoptosis.
+
+Levels of specific genes correlate with response of GSC cultures to combination treatments with Obatoclax
+('Levels of genes', 'correlate with', 'response of GSC cultures')
+
+In order to identify predictive markers for treatment response, the gene expression levels of the original tumor were related the treatment response of the fourteen patient-derived GSC cultures.
+('gene expression levels of tumor', 'were related', 'treatment response of GSC cultures')
+
+The quality assessment of the gene expression array data showed that data of thirteen samples could be used for the analysis (GS102 was excluded).
+('data of samples', 'could be used for', 'analysis')
+
+The validation of the identified genes that correlated with treatment response was performed in an independent set of five patient-derived GSC cultures.
+('validation of genes', 'was performed in', 'set of GSC cultures')
+
+This resulted in a specific set of genes of which levels were related to treatment response in both the initial and validation set.
+('levels', 'were related to', 'treatment response in set')
+
+For selection, at least a 1.5-fold change (log-2 scale) was the minimum difference in gene expression between the most and the least responsive patient-derived glioblastoma culture.
+('change', 'was', 'minimum difference in gene expression between glioblastoma culture')
+
+The functions of the identified genes were analyzed using the QIAGEN's Ingenuity® Pathway Analysis.
+('functions of genes', 'were analyzed using', 'Ingenuity Pathway Analysis')
+
+We focused on the functions and networks of the genes which were associated with the combination responses.
+
+Table  shows the gene lists per treatment, the correlation coefficient with the treatment effects and the fold-change difference in gene expression levels between the most and least sensitive corresponding glioblastoma culture.
+('Table', 'shows', 'correlation coefficient with treatment effects')
+('gene', 'lists per', 'treatment')
+
+The responses to LBH589/Obatoclax treatment were related to gene expression levels of ten genes, being the non-coding RNA NCRNA00086, transmembrane protease serine 3 (TMPRSS3), proto-cadherin gamma-subfamily B6 (PCDHGB6), small integral membrane protein 21 (LOC284274 or SMIM21), forkhead box K1 (LOC642782 or FOXK1), vasoactive intestinal peptide (VIP), zinc finger and SCAN domain containing 23 (ZSCAN23), F-box and WD repeat domain containing 7, E3 ubiquitin protein ligase (FBXW7), microRNA 325 (MIR325), and G protein-coupled receptor 52 (GPR52) (Figure ).
+('responses to LBH589/Obatoclax treatment', 'were related to', 'gene expression levels of genes')
+
+This set genes were found to be functioning in processes of cell cycle (FBXW7, VIP, FOXK1), cell death and survival (VIP, FBXW7, PCDHGB6) and cell morphology (FBXW7, VIP) as top three gene functions (Table ).
+('set genes', 'were found to functioning', 'cell death survival cell morphology')
+
+Another group recently showed that mutations in FBXW7 were related to SAHA-induced cell death and Bcl-2 inhibition.[] The genes that were related to responses to Obatoclax/RTx treatment were ST6 (alpha-N-acetyl-neuraminyl-2,3-beta-galactosyl-1,3)-N-acetylgalactosaminide alpha-2,6-sialyltransferase 5 (ST6GALNAC5), EGF-like, fibronectin type III and laminin G domains (EGFLAM), ABI family member 3 (NESH) binding protein (ABI3BP), beta-carotene oxygenase 1 (BCO1) and DIRAS family GTP-binding RAS-like 1 (DIRAS1) (Figure ).
+('mutations in FBXW7', 'were related to', 'cell death')
+
+These genes were involved in cellular development and cellular growth and proliferation (DIRAS1), as well as lipid metabolism (BCO1, ST6GALNAC5).
+('genes', 'were involved in', 'development')
+
+Moreover, all the five genes were found to function in the same network, namely a cell cycle network (Table ).
+('genes', 'were found to function in', 'network')
+
+The responses to SAHA/Obatoclax treatment were related to one gene, namely ubiquilin 1 (UBQLN1) (Figure ).
+('responses to SAHA/Obatoclax treatment', 'were related to', 'gene')
+
+This gene is involved in cell morphology, cellular compromise and cell death and survival according to the functional analysis.
+('gene', 'is involved in', 'cell morphology compromise cell death survival')
+
+In summary, we present a number of genes that is related to the responses of patient-derived GSC cultures to combination treatments with Obatoclax, RTx and HDACi.
+
+Functional analysis showed that most of these genes were related to cell regulatory aspects including cell death and survival, as well as cycle regulatory processes.
+
+Genes that are related to the response to Obatoclax combination treatments in vitro
+
+Gene		Corr.
+
+Chrom.
+
+The criteria were p-value of &lt;0.05, a correlation coefficient of &gt;0.5 or &lt;-0.5.
+
+The gene expression intensity levels are displayed on log-2 scale.
+('gene expression intensity levels', 'are displayed on', 'scale')
+
+FC = fold change between the least and most sensitive patient-derived GSC cultures.
+
+(B) The functions and networks of the specific genes derived from the Ingenuity Pathway Analysis.
+
+Gene expression profiling of the response to treatments with Obatoclax
+
+(A) The gene expression levels that were associated with the effect sizes to LBH589/Obatoclax treatment.
+
+Criteria were a p-value of &lt;0.05, and a correlation coefficient of &gt;0.5 or &lt;-0.5.
+
+The gene expression intensity levels are displayed on log-2 scale.
+('gene expression intensity levels', 'are displayed on', 'scale')
+
+(B) The gene expression levels that are associated with the effect sizes to RTx/Obatoclax treatment.
+
+Criteria were a p-value of &lt;0.05, and a correlation coefficient of &gt;0.5 or &lt;-0.5.
+
+The gene expression intensity levels are displayed on log-2 scale.
+('gene expression intensity levels', 'are displayed on', 'scale')
+
+(C) The gene expression levels that are associated with the effect sizes to SAHA/Obatoclax treatment.
+
+Criteria were a p-value of &lt;0.05, and a correlation coefficient of &gt;0.5 or &lt;-0.5.
+
+The gene expression intensity levels are displayed on log-2 scale.
+('gene expression intensity levels', 'are displayed on', 'scale')
+
+(D,E) Heat map of the genes that correlated to the effect sizes of the combination treatments of LBH589/Obatoclax, RTx/Obatoclax and SAHA/Obatoclax Gene expression levels: red, up-regulated genes compared with the geometric mean; blue, down-regulated genes compared with the geometric mean.
+
+The color intensity correlates with the degree of change.
+('color intensity', 'correlates with', 'degree of change')
+
+The green-to-red intensity bar correlates with the degree of change in effect sizes of the corresponding GSC cultures based on the viability assays.
+('intensity bar', 'correlates with', 'degree of change')
+
+DISCUSSION
+
+The present study emphasizes the efficacy of the Bcl-2 family pathway inhibition by Obatoclax in sensitizing patient-derived GSC cultures to HDACi/RTx, and hereby provides a circumvention for a tumor-related resistance mechanism to treatment.
+('study', 'emphasizes', 'efficacy of family pathway')
+('study', 'provides', 'circumvention for resistance mechanism to treatment')
+
+The Bcl-2 family proteins are heterogeneously expressed in glioblastoma as about 30%[] to 60%[] shows over-representation of these proteins.[-] Moreover, Bcl-XL levels in patient-derived GSC cultures have shown a relationship with resistance to HDACi/RTx response.[] Here, we demonstrate that Obatoclax acted synergistically with HDACi and show efficacy in a large set of patient-derived glioblastoma cultures.
+('family proteins', 'are expressed in', 'glioblastoma')
+
+Hereby we confirm that this pathway is an adequate target to obtain treatment responses.
+('pathway', 'is', 'target to obtain treatment responses')
+
+The use of the serum-free patient-derived GSC culture model allowed to study resistance and tumor response mechanisms in a more representative manner than in immortalized glioma cell lines.[] Importantly, this model provides a tool to develop predictive profiles of treatment response.
+('use of GSC culture model', 'allowed to study', 'resistance tumor response mechanisms')
+
+The efficacy of down-regulation of Bcl-2 and Bcl-XL in inducing spontaneous cell death was already shown before.[] This efficacy depended on neither MGMT promoter methylation status nor recurrence.
+
+A number of genes was found to be related to treatment response of patient-derived GSC cultures to combination treatments.
+('number of genes', 'was found to be related to', 'treatment response of GSC cultures')
+
+Others showed that the gene FBXW7 was related to SAHA-induced cell death and Bcl-2 inhibition.[] This points to a biological rationale in Mcl-1 functioning to be predictive of treatment response to LBH589/Obatoclax.
+
+The use of these genes as potential markers for patient stratification or the functionality of these genes in sensitivity to combination treatments should be explored in future studies.
+('use of genes', 'should be explored in', 'studies')
+
+Others have studied the relationship between HDACi and Bcl-2 family proteins before.
+('Others', 'have studied', 'relationship between HDACi family proteins')
+
+A recent study has shown that the intact PTEN immortalized malignant glioma cell lines are susceptible to the combination of SAHA and the Bcl-2 inhibitors ABT-737, whereas PTEN mutations were not.[] They also showed that inhibition of the PTEN/PI3K pathway by BKM-120 sensitized glioma cells for ABT-737.[] The patient-derived GSC model we used in this study is known to harbor PTEN deletions due to loss of chromosome 10q [, ], and ensures that we tested the treatment efficacy in a setting of hyper-activation of the PIK3-pathway.
+('PTEN glioma cell lines', 'are susceptible to', 'combination of SAHA')
+
+Therefore, this suggests that Obatoclax is a more potent combination partner for HDACi in PTEN deleted tumors than ABT-737.
+('Obatoclax', 'is', 'combination partner for HDACi in PTEN tumors')
+
+The main differences between Obatoclax and ABT-737 are the stronger induction of autophagy[] and the stronger inhibition of Mcl-1 by the first drug.
+('differences between Obatoclax', 'are', 'induction of autophagy')
+
+Both can be underlying the efficacy in PTEN deleted tumors.[] Earlier, the efficacy of SAHA was related to Mcl-1 levels in acute myeloid leukemia.[] Another study showed that in diffuse large B-cell lymphoma, over-expression of Bcl-2 and Bcl-XL triggered resistance to the HDACi SAHA and Trichostatin A, whereas the Bcl-2 family inhibitor ABT-737 increased sensitivity to SAHA treatment.
+
+Also, this study showed that the least sensitive cells to SAHA showed up-regulation of Bcl-XL and Mcl-1 proteins.[] The loss of pro-apoptotic Bcl-2 family proteins Bax or Bax/Bak ratios are related to insensitivity to HDACi in Burkitt's lymphoma in a predictive and functional sense.
+
+[] In mantle cell lymphoma, the efficacy of SAHA was enhanced by the BH-3 mimetic ABT-263.[] In contrast, another study did not find HDACi efficacy to be related to Bcl-2 family proteins.[] Thus, these relationships between Bcl-2 family proteins and HDACi responses are either tumor type or HDACi specific.
+
+Our study shows that inhibition of the Bcl-XL and Mcl-1 proteins by Obatoclax is related to efficacy of SAHA alone or in combination with RTx.
+('inhibition of proteins', 'is related to', 'efficacy of SAHA')
+
+We observed restored levels of Bcl-2 family proteins Bcl-XL and Mcl-1, occurring at 72 hours after Obatoclax, HDACi and HDACi/RTx treatments.
+
+This observation indicates that Bcl-2 family members are restored within this time frame, if these are not inhibited effectively.
+('family members', 'are restored within', 'time frame')
+
+This in turn can contribute to resistance to treatment.
+
+As a mechanism of action, HDACi have shown to be able to down-regulate Bcl-2 family members, however not in all heterogeneous tumors including glioblastoma.
+
+[] Others suggest that the up-regulation of pro-apoptotic members by HDACi are neutralized by high levels of anti-apoptotic members such as Bcl-2 and Bcl-XL.[] In squamous cell carcinoma Mcl-1 was related to resistance to the BH3-mimetic ABT-737.
+
+The HDACi SAHA has the ability to synergize with this drug by shuttling the Bcl-2 family protein Bim from Mcl-1 to Bcl-2/Bcl-XL.[]
+('HDACi SAHA', 'has', 'ability to synergize with drug')
+
+Not only does Obatoclax enhance the efficacy of HDACi/RTx, it also enhanced the efficacy of RTx as treatment alone.
+('Obatoclax', 'does enhance', 'efficacy of HDACi/RTx')
+
+Thus, in many treatment modalities, including conventional glioblastoma treatment such as RTx, the Bcl-2 family members may play a crucial role.
+('family members', 'may play', 'role')
+
+Others have shown already that Bcl-2 family members are determinants of responsiveness to treatment in glioblastoma.
+('family members', 'are', 'determinants of responsiveness to treatment in glioblastoma')
+
+Bcl-XL levels were related to radioresistance in glioma [] and Mcl-1 proteins regulate temozolomide efficacy in glioma independently of MGMT promoter methylation status.[] Here, we found that MGMT promoter methylation status and tumor recurrence, which normally determine patient overall outcome[], were not related to the applied treatments either.
+('proteins', 'regulate', 'temozolomide efficacy in glioma')
+('levels', 'were related to', 'radioresistance in glioma')
+
+Thus, our results are unlikely to be determined by these tumor statuses a priori.
+('results', 'are unlikely to be determined by', 'tumor statuses')
+
+The effect sizes of both SAHA and LBH589 in combination with Obatoclax correlated to expression levels of specific genes.
+('effect sizes of SAHA', 'correlated to', 'expression levels of genes')
+
+Gene profiles may provide an opportunity to include predictive decision variables in treatment and patient selection.
+('Gene profiles', 'may provide', 'opportunity to include decision variables in treatment')
+
+This may be of clinical relevance specifically for the MGMT un-methylated tumors.
+
+We need to point out immediately that these gene sets need further exploration in in vivo settings to be validated.
+('gene', 'sets', 'need to be validated')
+
+Although these gene sets do not necessarily implicate mechanisms of action of the proposed treatments, they may provide insight into resistance mechanisms.
+('gene sets', 'do not implicate', 'mechanisms of action of treatments')
+
+FBXW7, the gene associated with LBH589/Obatoclax response, was shown to have a relationship with response to SAHA before, as well as to Bcl-2 inhibition.
+
+Both FBXW7 and Bcl-2 inhibition were predictive for efficacy of SAHA in squamous cell carcinoma.
+
+Mutated FBXW7 sensitized cells to HDACi and stabilized Mcl-1.[] FBXW7 encodes for the protein ubiquitin protein ligase and is positively related with the effect size of LBH589/Obatoclax in our study.
+
+Obatoclax has the potency to inhibit Mcl-1, and is more effective in combination with LBH589 in tumors that highly express FBXW7.
+('Obatoclax', 'has', 'potency to inhibit')
+('Obatoclax', 'is effective in', 'combination with LBH589 in tumors')
+
+Moreover, the whole gene set which was related to LBH589/Obatoclax response was associated with cell cycle and cell death and survival mechanisms, represented by the four genes FBXW7, VIP, FOXK1 and PCDHGB6.
+('gene', 'was associated with', 'cell cycle')
+
+This was also true for the gene ubiquilin 1 (UBQLN1), which was associated to SAHA/Obatoclax response.
+
+This gene functions in cell death and survival as well.
+('gene', 'functions in', 'cell death')
+
+In addition, response to RTx/Obatoclax was associated to genes that function in the cell cycle and cellular proliferation as well.
+('response to RTx/Obatoclax', 'was associated to', 'genes')
+
+Basic studies should be performed to assess the direct relationship between the function of these genes and the success rate of Obatoclax, but the genes provide insights into the process of cellular responses.
+('genes', 'provide', 'insights into process of responses')
+('studies', 'should be performed to assess', 'relationship between function of genes')
+
+Our data on cell regulation by caspase-3/7 and autophagy are therefore potentially important mechanisms of action in the response to combination treatment.
+('data on cell regulation', 'are', 'mechanisms of action')
+
+In summary, this study underlines the potential of inhibiting the Bcl-2 family proteins in combination treatment with HDACi and HDACi/RTx.
+('study', 'underlines', 'potential of inhibiting family proteins')
+
+Potential toxicities of combination therapies which may limit clinical use should be explored further.
+
+Examples could be thrombocytopenia by inhibition of Bcl-XL[] and HDACi.[] Furthermore, we obtained predictive gene profiles that are associated with cellular regulatory functions for the combination treatments with Obatoclax.
+('Examples', 'be', 'thrombocytopenia by inhibition')
+
+These gene sets may aid in selecting the tumors most responsive to treatment.
+('gene sets', 'may aid in', 'selecting tumors')
+
+MATERIALS &amp; METHODS
+
+Chemicals
+
+Stocks of 50mM SAHA (Cayman chemicals, MI, USA), 200μM LBH589 (Biovision, CA, USA) and 60mM Obatoclax (Selleck Chemicals, Texas, USA) were prepared in dimethyl sulfoxide (DMSO, Sigma-Aldrich, MO, USA) and stored at −20°C.
+('Stocks of SAHA', 'were prepared in', 'sulfoxide')
+('Stocks of SAHA', 'stored at', 'C.')
+('200mM LBH589', 'were prepared in', 'sulfoxide')
+('200mM LBH589', 'stored at', 'C.')
+('60mM Obatoclax', 'were prepared in', 'sulfoxide')
+('60mM Obatoclax', 'stored at', 'C.')
+
+Staurosporin was obtained from BioMol, Germany.
+('Staurosporin', 'was obtained from', 'BioMol')
+
+Patient-derived glioblastoma stem-like cell cultures
+
+Fresh glioblastoma tissue was obtained from patients undergoing surgery at the Department of Neurosurgery, ErasmusMC (Rotterdam, The Netherlands) after informed consent and approval by the institution's medical ethical board.
+('glioblastoma tissue', 'was obtained from', 'patients undergoing surgery')
+
+The tissue was dissociated mechanically and enzymatically, after which the patient-derived GSC cultures were cultured under serum-free conditions in DMEM/F12 medium supplemented with 2% B27 (Life Technologies, UK), 20ng/ml bFGF, 20ng/ml EGF (Tebu-Bio, France), 5ug/ml heparin (Sigma-Aldrich, MO, USA) as was described previously.[] These patient-derived GSC cultures, which were characterized and validated as previously reported.[] The U373 cells were cultures under 10% serum conditions in DMEM medium.
+('GSC cultures', 'were cultured under', 'conditions in DMEM/F12 medium supplemented with B27')
+
+The cultures were stored at 37 °C in a humid 95% air/5% CO2 chamber.
+('cultures', 'were stored at', 'C')
+
+In total, nineteen patient-derived GSC cultures were used for the experiments.
+('GSC cultures', 'were used for', 'experiments')
+
+Viability assay
+
+Concentration-response assays were performed in order to determine IC50 values of Obatoclax.
+
+The cells of various GSC cultures were plated at 1×103 cells/well in 96-wells plates.
+('cells of GSC cultures', 'were plated at', 'x')
+
+After incubation overnight, various drug concentrations in three-fold increments were applied to the cells.
+('drug concentrations in increments', 'were applied to', 'cells')
+
+At five and eight days post-treatment cell viability was measured using the CellTiter-Glo assay (Promega, WI, USA).
+
+The results were plotted and the IC50 values were computed using the median effect equation.[] The IC50 values of the HDACi SAHA and LBH59 in the GSC cultures GS79 and GS257 were derived from previous research.[] Subsequently, Chou-Talalay assays were performed on the GSC cultures GS79 and GS257 for Obatoclax in combination with the HDACi to determine synergy.[] After assessment of the combination effects in these two cultures, either two or four concentrations (10, 30, 100 and 225nM) were applied to the panel of patient-derived GSC cultures to determine the combination effects.
+('results', 'were computed using', 'effect equation')
+('IC50 values', 'were computed using', 'effect equation')
+
+From these concentrations, an estimated IC50 was calculated for each glioblastoma culture.
+
+The HDACi concentrations were always kept similar at 1μM SAHA and 20nM LBH589.
+('HDACi concentrations', 'were kept similar at', '1mM SAHA')
+
+The DMSO concentration was never above 1% in the dilutions.
+
+RTx (3Gy) was applied as single-fraction treatment from a Cesium-137 source 24 hours after drug application.
+('RTx', 'was applied as', 'treatment from source')
+
+Western blot
+
+Alteration of specific proteins post-treatment was determined by seeding cells of the GSC culture GS257 in culture flasks with 225nM Obatoclax, 1 μM SAHA and the combination.
+('Alteration of proteins', 'was determined by', 'seeding cells of GSC culture GS257 in culture flasks')
+
+After 24 hours, the cells were irradiated with 3Gy.
+('cells', 'were irradiated with', '3Gy')
+
+At 24 and 48 hours post-RTx, the cells were harvested, washed with PBS and collected in a 1% Triton-X100 (Sigma-Aldrich) buffer for protein isolation.
+('cells', 'washed with', 'PBS')
+
+Protein concentrations were measured with the BCA Protein Assay Reagent Kit (Thermo Fisher Scientific, MA, USA).
+('Protein concentrations', 'were measured with', 'BCA Protein Assay Reagent Kit')
+
+Protein separation was performed on a 4-15% pre-casted gel (Bio-Rad, CA, USA), and blotted onto a PVDF membrane (Immobilon-P, Millipore, MA, USA) using the Mini-Protean Tetra Cell system (Bio-Rad).
+('Protein separation', 'was performed on', 'gel')
+('Protein separation', 'blotted onto', 'PVDF membrane')
+
+After blocking the membranes with 5% non-fatty milk solution for 30 minutes at room temperature, the blots were incubated with primary antibodies against Bcl-XL, LC3BI/II, Mcl-1 (1:375, Cell Signalling, MA, USA) and anti-β-actin (1:5,000, Millipore) in 5% BSA/TBS-T overnight.
+('blots', 'were incubated with', 'antibodies')
+
+Membranes were washed with TBS-T 0.2% and incubated with secondary antibodies, anti-rabbit-HRP and anti-mouse-HRP (1:2000, Dako Denmark A/S, Denmark) 1½h at room temperature and detected by chemiluminescence using the Pierce ECL substrate (Thermo Fisher Scientific) and the ChemiDoc MP system (BioRad).
+('Membranes', 'were washed with', '%')
+('Membranes', 'incubated with', 'antibodies')
+
+The data were analyzed using the ImageLab software (Bio-rad).
+('data', 'were analyzed using', 'ImageLab software')
+
+Caspase-3/7 assay
+
+The GS257 GSC cultures were seeded at 5×103 cells/well in a black 96-wells plate and incubated with the treatment as performed in the viability and Western blot experiments (SAHA, Obatoclax, after 24 hours RTx).
+('GS257 GSC cultures', 'were seeded at', 'x')
+('GS257 GSC cultures', 'incubated with', 'treatment')
+
+Immediately after RTx, the cells were incubated with 5μM of the kinetic apoptosis reagent of the CellPlayer 96-Well Kinetic Caspase-3/7 Apoptosis Assay (Essen Bioscience) and were live imaged by using the IncuCyte system (Essen BioScience) with a 10X objective at 37°C in a humid 95% air/5% CO2 chamber.
+('cells', 'were incubated with', '5mM of apoptosis reagent')
+
+The apoptosis-inducer staurosporin (20nM) was used as a positive control.
+('staurosporin', 'was used as', 'control')
+
+Three fluorescent images/well were collected up to 60 hours post-RTx.
+
+The caspase-3/7 activity was presented as counted objects/mm2 as measured by the IncuCyte software.
+
+Gene expression analysis
+
+The RNA of the original glioblastoma tissue corresponding with the glioblastoma cultures was isolated with the RNeasy Mini kit (#74104, Qiagen Inc., CA, USA).
+('RNA of glioblastoma tissue corresponding with glioblastoma cultures', 'was isolated with', 'RNeasy Mini kit')
+
+The mRNA expression levels of were analysed by the HumanHT-12 v4 Expression BeadChip microarray (Illumina, CA, USA).
+('mRNA expression levels', 'were analysed by', 'v4 Expression BeadChip microarray')
+
+The raw intensity values of all the samples were normalized using quantile normalization with the Partek software, version 6.6 (Partek Inc., St. Louis, MO, USA).
+('intensity values of samples', 'were normalized using', 'normalization')
+
+Subsequently, the Partek Batch Remover was used to remove the effect of the differences between the batches.
+('Partek Batch Remover', 'was used to remove', 'effect of differences between batches')
+
+The effect sizes of HDACi/Obatoclax, and RTx/Obatoclax in n=13 GSC cultures (mRNA expression data of GS102 did not meet quality standards) were correlated to the gene expression levels.
+('mRNA expression data of GS102', 'did not meet', 'quality standards')
+('effect sizes of HDACi/Obatoclax', 'were correlated to', 'gene expression levels')
+('RTx/Obatoclax in n GSC cultures', 'were correlated to', 'gene expression levels')
+
+The data were analyzed using the linear model function in R package ‘stats’ (version 2.15.3) to identify genes that correlate to treatment responses (Pearson's R correlations).
+('data', 'were analyzed using', 'model function in package stats')
+
+The p-values were adjusted for multiple comparisons using the method of Benjamini &amp; Hochberg.
+
+[] The cut-off values for significantly expressed genes were the adjusted p-values (p&lt;0.05).
+
+The initially identified genes that significantly correlated with response were validated using a sample set of five additionally treated GSC cultures (p&lt;0.05).
+('genes', 'were validated using', 'sample set of GSC cultures')
+
+Heat maps of the genes were constructed by the OmniViz Treescape software.
+('Heat maps of genes', 'were constructed by', 'OmniViz Treescape software')
+
+The functional and network analyses of the identified genes were performed using the QIAGEN's Ingenuity® Pathway Analysis (IPA®, QIAGEN Redwood City, www.qiagen.com/ingenuity).
+('analyses of genes', 'were performed using', 'Ingenuity Pathway Analysis')
+
+Quantitative PCR on MGMT promoter methylation
+
+The DNA of the various patient-derived GSC cultures was isolated and 100ng was used for the quantitative polymerase chain reaction (PCR).
+('DNA of GSC cultures', 'was used for', 'polymerase chain reaction')
+
+The DNAsamples were modified with sodium bisulphite using the EZ DNA Methylation GoldTM kit (Zymo Research, Baseclear, The Netherlands) Primers specific for methylated and un-methylated MGMT promoter DNA were used as described by others.[] Methylation specific primers were F: TTTCGACGTTCGTAGGTTTTCGC and R: GCACTCTTCCGAAAACGAAACG.
+('DNAsamples', 'were modified with', 'sodium bisulphite using EZ DNA Methylation GoldTM kit')
+
+The un-methylated specific primers were F: TTTGTGTTTTGATGTTTGTAGGTTTTTGT and R: AACTCCACACTCTTCCAAAAACAAAACAQ.
+('primers', 'were', 'F')
+
+The PCR conditions were used as described by others[], with annealing temperature of 59°C and 40 cycles of amplification yielding PCR products for methylated and un-methylated DNA of 80 and 93 base pairs, respectively.
+
+The PCR products were separated on a routine 2% agarose gel.
+('PCR products', 'were separated on', 'agarose gel')
+
+As a methylated control the DNA isolated from FFPE human colorectal cancer cell line SW48 was used and FFPE human tonsil DNA was used as an un-methylated control.
+('DNA isolated from FFPE cancer cell line SW48', 'was used as', 'control')
+('FFPE tonsil DNA', 'was used as', 'control')
+
+In addition, in each experiment a H2O sample without DNA was used as a negative contamination control.
+('H2O sample without DNA', 'was used as', 'contamination control')
+
+Statistical analysis
+
+For the viability and caspase-3/7 assay experiments, the means of triplicates were plotted with the standard deviations.
+('assay experiments', 'were plotted with', 'deviations')
+
+The Western blots were performed in singlicate.
+('Western blots', 'were performed in', 'singlicate')
+
+The results were presented as a percentage of non-treated controls.
+('results', 'were presented as', 'percentage of controls')
+
+The differences between treatment effects were analyzed using the one-way ANOVA and the Tukey Post-Test for multiple conditions.
+('differences between treatment effects', 'were analyzed using', 'ANOVA')
+
+The statistical significance was defined as p&lt;0.05.
+('significance', 'was defined as', 'p')
+
+The differences in mean cell viability between combinations were presented as effect sizes.
+('differences in cell viability between combinations', 'were presented as', 'effect sizes')
+
+In addition, we calculated the enhancement factor of combination treatments, as was described by Chou.[] In case of an enhancement factors &gt; 1 in combination with p&lt;0.05, the combination was considered effective and the GSC was defined as a responder.
+

@@ -1,0 +1,392 @@
+﻿Nature and Extent of the Deep Biosphere
+INTRODUCTION
+In the last three decades we have learned a great deal about microbes in subsurface environments.
+Once, these habitats were rarely examined, perhaps because so much of the life that we are concerned with exists at the surface and seems to pace its metabolic and evolutionary rhythms with the overt planetary, solar, and lunar cycles that dictate our own lives.
+And it certainly remains easier to identify with living beings that are in our midst, most obviously struggling with us or against us for survival over time scales that are easiest to track using diurnal, monthly or annual periods.
+Yet, research efforts are drawn again and again to the subsurface to consider life there.
+No doubt this has been due to our parochial interests in the resources that exist there (the water, minerals, and energy) that our society continues to require and that in some cases are created or modified by microbes.
+However, we also continue to be intrigued by the scientific curiosities that might only be solved by going underground and examining life where it does and does not exist.
+But really, is life underground just a peculiarity of most life on the planet and only a recently discovered figment of life?
+Or is it actually a more prominent and fundamental, if unseen, theme for life on our planet?
+Our primary purpose in this chapter is to provide an incremental assembly of knowledge of subsurface life with the aim of moving us towards a more complete conceptual model of deep life on the planet.
+We aim to merge the consideration of the subseafloor and the continental subsurface because it is only through such a unified treatment that we can reach a comprehensive view of this underground life.
+We also provide some thoughts on a way forward with what we consider to be interesting new research areas, along with the methods by which they might be addressed as we seek new knowledge about life in this Stygian realm.
+EARLY STUDIES AND COMPREHENSIVE REVIEWS
+The earliest studies attempted to tease out the nature of subsurface life, albeit in qualitative ways.
+Edson Sunderland Bastin and his team, intrigued by the formation of sulfides in oil wells, examined oil and water pumped from wells in eastern Illinois .
+Using classical methods of cultivating and detecting sulfate-reducing microbes, they established that cells were present in fluids produced from oil reservoirs even if their original provenance could not be ascertained.
+These land-based studies only preceded Claude ZoBell’s first look into the seafloor by a few years.
+Even with short core lengths, ZoBell and Anderson discerned a trend towards increasing numbers of anaerobes relative to aerobes as the samples came from deeper and deeper in the top two meters of sediment .
+Of course, much detail has been laid atop these early observations but this glimpse of the effect of plummeting redox still holds as a principle of subsurface studies.
+A number of useful reviews of progress in the science of subsurface microbiology should be consulted to grasp the origin of this field and some of the important directions.
+Early work was described in a special issue of the journal Microbial Ecology (c.f.,  and other papers in this volume) and an update to these findings was reported with a distinctive emphasis on continental habitats in the deep subsurface .
+Shortly thereafter, two books similarly focused on terrestrial systems .
+Perhaps prompted by the estimates presented by Whitman and colleagues  and the first microbiological findings reported by scientists associated with the Ocean Drilling Program (ODP; c.f.,  ) the last ten years has seen an upswing in papers published on the microbiology of subsurface of marine systems .
+Recent overview papers consider past research progress and directions for the future and begin to express the need to bind together our consideration of deep terrestrial and deep seafloor life in a more inclusive light (   2013;   ).
+These works were all paralleled by the five editions of the book Geomicrobiology (c.f., ), now completed by the publication of H.L.
+Ehrlich’s memoir .
+WHERE WE ARE NOW –THE TERROIR OF SUBSURFACE LIFE
+And what do we know now?
+In a broad sense we might start by examining the range of chemical and physical processes that sustain gradients in Earth and therefore may allow the establishment of microbial communities at depth.
+Regardless of where it exists, metabolically active life—as we know it—seems to require a gradient .
+Living cells may transit places where there is no gradient and manage to survive if these cells can make the passage through harsh conditions.
+Cells that are locked in a permanent deep freeze , although some manage activity under frigid conditions , or encased within materials such as amber  or in halite  may be unwitting travelers through a hostile geological medium that is thermodynamically static.
+However, if cells are shown to be active in any sense then they must be taking advantage of a thermodynamic disequilibrium within their geological setting (c.f., ) even if detection of such disequilibria is beyond our current methods of measure and may only be computationally modeled.
+Thermodynamic disequilibria are established in any environment by one or several chemical or physical regimes that determine the presence of some even furtive supply of electron donors and acceptors.
+Under such conditions microbes can make a living.
+And if conditions are ample in a large volume of earth then there may be enough active cells in such pockets to make a biogeochemical difference through their collective activities.
+Numerous events or processes in and on Earth permit the conditions under which life has found or might find a way to be active (Fig. 1).
+Research has confirmed many of the processes depicted here; however, many of the processes are conjectural (e.g., that microbes respond to the long cycles of glacial compression and rebound).
+In addition to the type of event or process we might consider the time over which the respective phenomenon occurs or the spatial extent of its influence as additional attributes pertinent to any microbes exploiting a subsurface niche.
+For example, the acute effect of a meteorite impact or nuclear test would be followed by a chronic stage of alteration of the surrounding medium that plays out over millennia as the system stabilizes.
+By comparison, processes governed by the diurnal sighing of tidal action or (on a much longer period) the compression and rebound associated with advance and retreat of continental glaciers are related in a temporally cyclic manner and lack a concussive onset.
+The spatial boundaries over which these phenomena occur range from submicron perturbations that any of these processes could impose on individual cells to continental- or global-scale processes or events such as sea level rise or seismicity.
+Natural processes that are reasonably well studied and that have been demonstrated to stimulate life include hydrothermal vent systems, geothermal activity or volcanism, and serpentinized environments.
+Noteworthy here is that many of these sites have been sampled at the surface, as windows to the subsurface; however, deep coring rarely occurs either because of the expense of seagoing expeditions or because the fragility and aesthetic value of sites like the thermal features of Yellowstone National Park is too much to risk.
+It is also exceedingly difficult to collect competent cores of representative quality from deep within porous and fractured rocks of volcanic provenance and where thermal fluids circulate, because the same properties that make these fluidically active habitats also lead to the likelihood that drilling fluids will contaminate the interiors of these cores.
+For a number of the natural processes we can only speculate that there are microbes in the subsurface that are managing to use to their benefit the chemical or physical energy inherent to the system.
+These processes would include roll front development for various ore bodies (e.g., uranium), plate subduction, hydrate formation and decomposition.
+Receiving attention recently, some in deep subsurface environments, are processes that include permafrost thawing , infrared radiation , seismic activity , and asteroid or comet impact .
+And now, in the Anthropocene, many human-induced processes intentionally or unintentionally have manipulated the subsurface to favor microbial activity and survival.
+Probably the most prominent example is the remediation of contaminants in the subsurface with resulting changes in microbial activities.
+With thirty years of experimentation, scientists and engineers have encouraged bioremediation of numerous human-introduced chemicals by introducing to the subsurface nutrients, electron acceptors, and electron donors and by altering the direction and rates of groundwater flow .
+Numerous refinements of these processes include organic destruction, metal redox changes, and precipitation in mineral form, and even so-called natural attenuation in which the contaminants are monitored as they disappear in the presence of naturally occurring microbes shown to adapt and degrade the waste.
+Other purposeful geomicrobial processes include microbial enhanced oil recovery, which aims to alter the mobility of hydrocarbons in porous media, and biohydrometallurgy, whereby oxygenated acidic fluids circulated through crushed metal ore bodies stimulate microbes that oxidize the iron and sulfide minerals and thereby leach metals from the decomposing rocks.
+Human-induced processes that are conducted irrespective of whether they alter subsurface microbial activities almost certainly do alter such activities.
+Little research has been performed to determine how underground microbes respond to our engineering of repositories for nuclear or carbon-based wastes, hydrocarbon retort, nuclear weapons testing, unconventional oil and gas recovery, or geothermal energy exploitation.
+In these cases, the array of geotechnical phenomena that overwhelmingly relate to our extraction of energy from Earth or our storage of waste products of energy production also quite appropriately relate to the ways in which microbial processes can derive energy in the Earth.
+By engineering Earth, humans have imposed redox stratification, fluid movement, fracturing, seismicity, and groundwater fluctuation some of which are mirrored by natural phenomena; these changes most likely reform subsurface deserts into oases for microbial life.
+Whether life pre-existed in these deep settings may not ever be discovered.
+However, it has almost certainly become richer in these locations due to our efforts.
+THE TOOLS THAT WE NEED
+Over thirty years of concerted, effort scientists have examined different locations of the planet’s subsurface and have adapted and acquired a range of tools for conducting this research (Table 1).
+As for many system-science disciplines today, a step back to examine the approaches used for sample collection, characterization, and description reveals impressive progress.
+Because access to the subsurface is a necessity in order to study it, scientists should consider how they can obtain deep samples.
+Once sample depths are beyond the reach of simple push cores or augers, coring while using circulating drilling fluids is required.
+Although this process is expensive and dirty it cannot be avoided if certain environments are to be explored.
+Coring remains a mainstay of subsurface sampling and numerous reviews summarize the approaches that should be used (c.f., ).
+When sea- or land-based coring is used, researchers encounter the dual problems of low sample quantity and high cost per quantity of sample material recovered.
+To avoid drilling, many new sampling efforts have turned to new means of getting underground or maintaining a lasting sampling opportunity in the form of observatories or long-term sampling devices.
+Many researchers have taken advantage of deep mines that reach into Earth for minerals or to find secure geological strata that serve as repositories .
+This approach means that some of our surveys of deep-Earth microbes are canted toward formations that are rich in economic minerals or are proximal to such formations, or else are abnormally quiescent (i.e., locations likely to be undisturbed as required for waste repositories).
+Elsewhere, sampling devices are placed into drill holes or squeezed into casing and allowed to incubate in place in order to sample indigenous microbes.
+So-called CORKs or SCIMPIs  are used in the seafloor and parallel the multi-level samplers , in-situ flow cells , and flow through in situ reactors (FTISR)  used in the continental subsurface.
+Hybrids of these technologies and ingenious smaller systems that are deployed using clever means by which to sample microbes and chemistry include passive gas samplers , U-tube systems , and the ever-changing osmosampler .
+And, with pressure-coring tools becoming more common, there are opportunities to collect deep cores, return them to the surface while maintaining in-situ pressure, and then transfer these samples into analysis systems without decompression.
+Still, only limited work has been done with such equipment ; however, along with other methods of restricting pressure , the chance to examine microbial activities as they may actually occur in-situ has been expanded.
+Despite our ability to obtain samples over extended periods, it is important to note the bias associated with such samples.
+This concern was first considered in the late 1980s with observations of altered microbial communities following the coring of holes .
+Lehman summarized the limitations of samplers incubated in-situ with a guarded appraisal of the technologies .
+It is important to bear these cautions in mind when analyzing the chemistry and microbiology of subsurface samples so obtained.
+Direct and rapid characterization of freshly acquired core and porewaters appears to be the best means by which to investigate native microbes in rocks.
+In some cases, direct field methods of analysis or manipulation of microbial communities can provide essential data to understand the fundamental ecology of the subsurface or to determine the outcome of engineered processes in the subsurface.
+The new discipline of biogeophysics, an expansion from several geophysical methods of examining geological strata, keys on microbially-induced alterations of geological materials and how these alterations influence underground electrical signals in order to image the presence or activity of microbial communities .
+At this stage of development, these remote sensing strategies are mainly able to detect profound changes in such properties as electrical conductivity or specific conductance and are used mostly in places where purposeful stimulation of the microbiological characteristics of formations has occurred.
+Microbiologists and hydrologists have also experimented with a miniaturized version of the macro-ecologist’s “mark and recapture” experiment.
+In such investigations, microbes from the environment are collected and then cultivated in the presence of a 13C-labelled substrate.
+The result is a population that is uniquely tagged with the heavy isotope and that can then be released in a well-field and hopefully collected down gradient to determine the degree to which microbes may be transported in the aquifer .
+This method is similar to stable isotope probing that uses a heavy isotope label to determine the most active communities in a sample based on their ability to take up the label and deposit the label in their DNA .
+Push-pull tests are another ingenious method of examining in-situ activities and, if done with discretion, can provide useful information about the real metabolic capabilities of microbes in Earth .
+Scientists also now possess a range of tools that can be used for biological characterization once samples have been recovered from the subsurface and are returned to the lab.
+Significant advances have been made in the ability to characterize the molecular capabilities of cells (i.e., genomics, transcriptome, proteome, metabolome, lipidome) that allow many of the same diagnostic tools as used in modern medicine.
+The Richmond Mine site has provided a wealth of information related to the function of highly constrained microbial communities of limited diversity.
+In a classic application of metagenomic information, the researchers investigating this site gained enough genomic data of the simple communities present that they were able to devise appropriate cultivation methods of uncultured members of the microbial assemblage .
+The same communities have assisted the understanding of ecological divergence of similar but slightly distinct microbes according to the genomic and proteomic patterns detected in these cells .
+These relatively simple systems are teaching us how best to transfer this skill to environments that are intrinsically more biologically complex or where a limited number of samples may be available.
+It is acknowledged that few microbes can be nurtured using traditional cultivation-based approaches.
+However, startling progress has been made in culturing pelagic marine microorganisms by taking advantage of high-throughput robotic systems to handle samples, parsing them into numerous novel media formulations, and then recognizing that populations of these cells simply do not achieve high density .
+Along with the aforementioned metagenomic approach applied in the Richmond Mine, the approach used for pelagic microbes could be applied to microbes from Earth’s subsurface.
+Matching these cultivation approaches with single-cell manipulation techniques  may tease geologically inclined microbes into culture and also help to minimize the influence that PCR-based amplification has on our view of microbial diversity.
+When these approaches are combined with imaging techniques that hinge on fluorescence microscopy , synchrotron-based characterization , interferometry , atomic force microscopy , and different electron microscopy techniques, we gain new resolution of the relationships between these microbes and the minerals on which they depend.
+To complete our ability to comprehend life underground, there are new opportunities in the sciences that are not directly associated with the field and lab.
+Collectively, computational and simulation sciences have made advances that enable rapid and detailed modeling of porous media, where microbes participate in the alteration and dissolution of mineral species.
+Reactive transport models  are now merged with in-silico models and bioinformatics approaches  to yield simulations that explain or predict the active microbial taxa in a given subsurface setting under a given set of environmental conditions .
+Thermodynamic modeling has been pacing these studies and also can provide essential insight into what microbial processes are likely to be active and when they are active  and, when combined with kinetic models, how rapidly the activities may occur .
+Finally, advances in data science and in visualization are poised to help scientists who study the subsurface with their task of communicating the results of their findings.
+Web science and its new ways of using the internet  will allow a binding together of disparate disciplines such that the data acquired by scientists in different fields can begin to sketch relationships between the living and non-living in the subsurface, as is happening in other fields.
+We can now take advantage of work done to explore interwoven features of the oceans , or of the cosmos  and proteins , to do the same for places inside Earth.
+This visualization capability should lead us to the point of greater interaction with the public where engagement through websites and museums, and possibly problem-solving through crowdsourcing will draw our knowledge and questions about the subsurface into the vernacular of non-scientists.
+THERE’S NO PLACE LIKE HOME
+As already noted, the earliest intensive investigations of underground life often targeted locations of known resource prospects for fossil energy or metals (e.g., Taylorsville Basin, South African Gold mines), sites where groundwater or soils were contaminated (e.g., numerous U.S. Department of Energy [DOE] and other sites), planned nuclear waste repositories (e.g., Äspö, Yucca Mountain, Waste Isolation Pilot Plant), or simply where it was convenient to collect subsurface material (e.g., ODP sites).
+This pragmatic approach has surely biased our understanding of subsurface life.
+Many of the more recent sites that have been investigated were selected in order to test hypotheses grounded in prior knowledge of life in the subsurface and what appear to be the limits of the biosphere.
+The Early studies and comprehensive reviews section identifies papers (especially,    2013; ) that highlight different locations where subsurface research has been conducted.
+We will not reiterate the reports of these papers but rather point to some selected studies that have helped us to understand the range of underground locations already investigated.
+Within the next few years, the newly initiated Census of Deep Life is expected to provide a catalog of subsurface life and the disparate geological settings where it has been detected.
+The DOE is responsible for waste released into a range of subsurface environments over 40 years following World War II .
+Despite this very practical concern, the DOE Office of Science supported research paths to understand the basic properties of life underground.
+Initially, DOE-funded scientists were unfettered with the need to examine actual waste sites; rather, they “cut their teeth” at pristine locations where the limits of subterranean life could be explored.
+This freedom led to reports of microbial life in deep and shallow coastal plain sediments and rocks on the southeastern coastal plain of the U.S. , in Oyster, Virginia , and in the Taylorsville Triassic Basin ; thick sedimentary zones in arid regions  and in thick flood deposits  in southwestern Washington state; unsaturated and saturated fractured basalts of the Snake River Plain Aquifer  and the Columbia River Basalt Group ; hot methane-charged fractured sandstones in the Piceance Basin ; volcanic tuffs in the Great Basin ; and ancient marine sediments into which volcanic dikes impinged in New Mexico .
+Studies of deep seafloor locations for the presence of microbes have now reached well beyond the original skin of sediment examined by the first marine microbiologists.
+The ODP and later the Integrated Ocean Drilling Program (IODP), using the drilling platforms JOIDES Resolution and the Chikyu, catalyzed the first seagoing coring expeditions aimed at answering questions about the deep marine biosphere.
+Microbiologists participated in earlier drilling legs and continue to be opportunistically involved in expeditions.
+Through targeted drilling and coring studies of different subseafloor environments, we are slowly accumulating information about subsurface communities in a broader range of environments.
+The ODP Leg 201 was the first dedicated microbiology drilling leg.
+Leg 201 scientists used procedures to control contamination  that helped to reach out to a new scientific community.
+This sampling cruise occurred off the west coast of South America and explored deep sediment in near shore and pelagic sites .
+More recent dedicated microbiology investigations sponsored by the IODP have explored the eastern flank of the Juan de Fuca Ridge, a hydrologically active basalt aquifer ; the South Pacific Gyre, in which sediment and basalt underlie waters of extremely low productivity ; a hydrothermal field in the Okinawa Trough ; and basalt and sediment of North Pond, a sediment-filled basin off the main axis of the Mid-Atlantic Ridge (Expedition 336 ).
+One of the curiosities of subsurface microbiology studies is that only rarely do these subsurface environments lack measureable life.
+Teams of scientists are typically able to tease evidence of life out of most subsurface rock or sediment that is within a temperature regime that embraces the known limits of life and that has enough connected pore space.
+Even environments contaminated with high levels of radioactive elements contain microbes .
+Exceptions include the dry and thick unsaturated zone in the Eastern Snake River Plain  and some sections of the deep, massive sandstones of the Piceance Basin .
+It is possible that where life appears to be missing from moderate temperature regimes at moderate depths, the problem is either detection limit (with life present but not detectable) or inability to survey large enough samples due to the limited amount of material collected by coring.
+Of course, our inquiries of the subsurface for microbes remain inadequate to survey the life there.
+Much of the field research has an exploratory element.
+We rarely acquire true replicate samples because drilling identical holes in the same location and sampling the same depths is both difficult and expensive.
+Furthermore, innumerable subsurface environments have thus far been ignored or simply been too difficult or expensive to reach.
+More sampling along lengthy, confined horizontal flow paths, similar to past studies on the southeastern coastal plain of the U.S. , would provide excellent data about microbes limited by geological constraints.
+Notably static environments  will offer insight into how long cells can last and possibly the adaptations that they require in order to last on timescales of thousands to millions of years .
+Arctic and Antarctic deep-Earth environments remain under-sampled, though we are gradually accumulating examples .
+Deep samples from thick vadose zones are lacking in general as are studies that examine microbes present near faults in seismically active areas.
+IS DIVERSITY THE SPICE OF SUBSURFACE LIFE?
+Biologists, other scientists, and even non-scientists are justifiably attracted to the incredible diversity of life at Earth’s surface and the essential aspect of surface life’s diversity to the health of ecosystems is well recognized .
+Certainly, the amazing diversity of life at the surface is almost harrowing to those who must reach into the subsurface to get samples where biomass is typically low.
+We have devised ways of keeping our precious deep samples isolated from surface samples and also ways of determining whether surface contamination has occurred .
+By relying on new methods of molecular characterization and accumulating enough information from the relatively rare sampling events, the nature of life’s diversity underground is becoming clearer.
+Bacteria and archaea are the common targets of investigations that aim to study subsurface diversity.
+Eukarya are rarely targeted.
+Subsurface studies often show that bacteria are more abundant in some subsurface environments than archaea , but others show that archaea predominate  and some indicate more equal representation of the two domains .
+Microbiologists are now familiar with subsurface habitats like the sulfate-methane transition zone in the subseafloor, where the supply of sulfate from seawater and methane from deeper sediments dictate that both bacteria and archaea will be present.
+But this environment is now well defined and frequently sampled.
+While bacterial (vs. archaeal) abundance seems to be a common theme in the subsurface, more work is required to determine the relative abundance of these groups.
+Before we can describe the patterns of abundance of these two domains in the subsurface, some technical hurdles associated with the methods of analysis must be overcome.
+Extraction of DNA from archaeal cells in deep sediments is difficult  and, relative to bacteria, archaea typically have poorer representation in the gene databases that are required for construction of the amplification primers.
+Polymerase chain reaction (PCR) based amplification depends on these primers and some version of PCR is often used to assess microbial diversity.
+As usual, a robust approach using multiple methods of analysis (e.g., fluorescence in-situ hybridization, DNA sequencing, and intact polar lipid characterization) is the best way to present a detailed description of an environmental microbial community.
+And new methods like single-cell sorting followed by whole genome amplification can help to explain where partiality associated with typical primer-based amplification has occurred.
+Clone library-based investigations of the 16S rRNA and other genes obtained from DNA extracted from a number of samples find evidence of many taxa in the subsurface (c.f.,  and examples as reported in ).
+It is not unusual to detect “new” microbes in these surveys based on the presence of unique genes in the libraries.
+The results of diversity studies can be influenced by the manner of sampling and the types of sample used.
+That attached subsurface communities are different than free-living subsurface communities has been understood for some time  but surveys of large volumes of subsurface space (e.g., pumping and filtering or concentrating aquifer samples for free-living microbial cells) may yield different findings than surveys based on a few grams of solid material.
+Examinations of subsurface microbial diversity rarely seem to address the question of how much of the subsurface was queried; however, adhering to guidelines for how diversity is reported relative to the amount of material and the type material sampled (i.e., water, solids, or both) would help to develop our view of subsurface variations in communities (c.f.,  ).
+That microbial diversity in the subsurface is typically lower than in surface systems is not necessarily surprising.
+Unique niches occur in the subsurface though certainly not as many as in surface systems.
+It seems that microbes that survive in the subsurface often need to overcome certain barriers that may not be unheard of at the surface (e.g., pressure, temperature, confinement) but may be more severe and persistent in the subsurface.
+Thus, species that can last at depth have been winnowed by the chemical and physical realities of their habitat once they arrive in the subsurface.
+Investigations of a low-pH system in the Richmond Mine at Iron Mountain in California attest to the stable presence of five dominant microbes making up most of the community .
+Microbial communities obtained from deeply occurring fractures in the Mponeng Mine in South Africa provide another such example.
+There, a single suflate-reducing microbe represents over 99.9% of the community ; microbial ecosystems where diversity is so low are not commonly reported.
+Given the conditions of that environment and the genomic characteristics of this solo microbe, it seems to have the functional attributes needed in order to survive there, and indeed appears to be well distributed in the deep environment of the Witwatersrand Basin .
+While both sites mentioned here are mine environments that are subject to unnatural forces during their creation, it seems plausible that similar low diversity communities can be found in utterly pristine locations of the subsurface.
+Relatively low biomass and relatively low diversity may be the norm in much of the subsurface; however, some locations may not be so biologically depleted.
+Recent studies in the ocean crust at the East Pacific Rise reveal notable diversity .
+These samples were not from the subsurface but might contain microbes representative of deeper crustal materials.
+While not as diverse as such well-studied surface systems as farm soils, these basaltic communities are considerably more complex than pelagic marine microbial communities .
+Similar places that exhibit much milder geothermal gradients and probably milder flux through the system may foster simpler communities .
+More open subsurface environments like those crustal basalts that benefit from a porous and fractured architecture and fluid circulation driven by geothermal processes  could be as abundant in the subsurface as the distribution of large igneous provinces around the planet  and volumetrically may be a significant source of the planet’s underground diversity.
+The search for eukarya was often a part of early investigations of aquifers ; however, many surveys of life underground may not even look for eukarya.
+The obvious spatial constraints in porous media prevent the occurrence of larger cells or multicellular organisms.
+However, we now have an example of a nematode that lives in deep fractures, apparently managing to subsist through grazing on microbes , and evidence of Collembola that exist in deep limestone caves .
+These studies promote the idea that any deep system with cavities large enough (several microns?)
+such as the aforementioned crustal systems or fractured rocks may also be open enough to support eukarya if adequate unicellular biomass can be generated to provide food for the higher organisms.
+However, it should be noted that sterols, a key structural component of the membranes of eukarya, are difficult to make anaerobically and this may limit the extent to which these cells might penetrate anoxic zones.
+Early considerations of the presence of viruses in the subsurface focused largely on shallow systems with considerable contact with surface environments .
+Certainly, in the subsurface viruses confront several factors such as low host biomass , generally patchy, disconnected microbial communities , and limited fluid exchange between communities.
+These factors could minimize the effectiveness by which phages can infect bacteria or archaea.
+Some subsurface environments might be more likely to contain viruses (i.e., where microbes are abundant) and sand columns have been used to examine their distribution .
+In recent years, studies in different environmental settings with new methods have revealed huge numbers of viruses .
+These small packages of genetic information are now believed to provide significant paths for moving molecular information among microbial hosts and represent a massive means of turnover for living biomass (c.f.,   2013).
+Accordingly, there have been more studies of viruses in the subsurface.
+A metagenomic study conducted on marine sediments found highly diverse, largely unrecognized phage populations and identified marine sediments as a massive “reservoir of sequence space” .
+Finding more temperate than lytic phage suggests that an important infection strategy for subsurface viruses might be incorporation into the host genome rather than destroying the host.
+Shallow sediments worldwide contain large numbers of phage and collectively these have profound impact on biogeochemical cycles, at least as pelagic microbes are buried in the uppermost sediment layers .
+Microbial cell death due to phage in benthic systems of deep waters may significantly haze the viable microbes that are buried and increase the amount of organic detritus in the uppermost centimeters and alter the disposition of buried organic matter.
+Recent identification of a “microbial immune system”, the so-called clustered regularly interspaced short palindromic repeat or CRISPRs, found within host genomes offers a new means of detecting phage populations and connecting them to their respective hosts .
+The CRISPR approach was applied to hydrothermal vent samples and the results indicate that large numbers of microbial hosts are infected with viruses and that the hosts represent a diverse range of microbes .
+These vent fluids speak to the processes and populations in the subsurface and naturally lead to considering how phage may play a role in the transfer of genetic information in subsurface environments other than vents.
+That phages dictate the genetic diversity and evolution of microbial communities in vent systems of the shallow subsurface  suggests that microbial communities in other subsurface locations where fluids are actively moving may benefit from the enhanced genetic fitness and functional capacities that are conferred by prophages and that may assist subsurface survival.
+BIOMASS OF SUBSURFACE LIFE
+The pioneering study of global biomass by Whitman and colleagues  proposed that subsurface bacteria and archaea comprise 35 to 47% of Earth’s total biomass, nearly equal to plants in their total carbon content.
+Microbes in subseafloor sediment comprised nearly 1/3 of their global biomass estimate.
+Microbes in terrestrial subsurface sediment comprised between 1/50 and 1/5 of their global biomass estimate.
+Their study was a great starting point for estimates of global microbial biomass.
+However, it was based on the relatively sparse data that were available in the mid 1990s.
+Estimates of subsurface biomass are changing as more data become available.
+Cell abundance data for terrestrial subsurface sediment have not significantly improved since 1998.
+However, data for subseafloor sediment have improved greatly.
+Subsequent studies have generally yielded lower estimates than  for subseafloor sedimentary biomass .
+The most recent studies show that cell concentrations in the broad expanses of open-ocean sediment beneath the Pacific gyres are orders of magnitude lower than earlier counts from subseafloor sediment, which were largely limited to organic-rich sediment that underlies oceanic upwelling zones .
+Consequently, total microbial abundance varies between sites by five orders of magnitude .
+This variation strongly co-varies with mean sedimentation rate and distance from shore.
+Based on these correlations, total cell abundance in subseafloor sediment is ~3 x 1029 cells, corresponding to ~4 petagram C and ~0.6% of Earth’s total biomass .
+Most estimates of subseafloor sedimentary biomass are based on visual cell counts, which do not include spores (the fluorescent dyes used for cell counts generally do not penetrate spores).
+However, a recent study of dipicolinic acid and muramic acid concentrations indicate that bacterial endospores are approximately as abundant as counted cells in deep subseafloor sediment of the Peru Margin ( dipicolinic acid is limited to endospores and muramic acid is much more abundant in endospores than in vegetative cells).
+Because endospore abundance is not yet known for other subsurface habitats (or even for most sediment of the world ocean), this will be an intriguing avenue of research in the near future.
+A further complication for global estimates of subsurface biomass is that the biomass resident in large subsurface habitats is not yet known.
+For example, biomass in the vast volume of fractured igneous basement in continents and oceans cannot yet be quantified, because the data do not yet exist.
+Discussions of subsurface biomass to date have relied on counts of stained cells (e.g., (  2000;  2009) or abundance of intact biomarkers .
+These are powerful techniques that census overlapping, but non-identical subsets of a microbial community.
+Counts of cells stained with non-specific DNA-binding compounds (e.g., acridine orange or SYBR-Green) include intact vegetative bacteria and intact archaea, but do not include bacterial endospores.
+Molecular probes [fluorescence in-situ hybridization (FISH) probes] specific to RNA in bacteria, archaea or more narrowly defined phylogenetic groups have also been used, albeit much less frequently (e.g.,  ).
+Intact biomarker assays have focused on archaeal biomarkers and consequently estimate subsurface archaeal biomass, not total subsurface biomass.
+The results of these techniques (cell counts and biomarker assays) beg discussion of the distinction between “intact” and living cells.
+It is not yet certain how long cell membranes, their included nucleic acids, or their diagnostic phospholipids remain intact after cell death in deep subsurface environments.
+This said, RNA-based FISH counts are generally interpreted to suggest that a large fraction of counted subseafloor sedimentary cells are living or at least recently alive; RNA is widely recognized to degrade far more readily than DNA and RNA-based FISH counts constitute several percent to several tens of percent of DNA-based counts in subsurface environments .
+Compelling independent evidence that the majority of counted subseafloor cells in individual samples are alive was recently provided by experiments with radiolabeled organic substrates and sediment from hundreds of meters beneath the seafloor in the Japan Sea (Morono and al.
+2011); in these experiments, as many as 76% of the counted cells assimilated the isotope-labeled substrates.
+PHYSIOLOGICAL PROCESSES OF SUBSURFACE LIFE
+Subsurface microorganisms include both heterotrophs (which consume organic matter) and lithoautotrophs (which consume inorganic compounds).
+Electron donors in subsurface environments include buried organic matter, reduced chemicals (such as reduced iron and reduced sulfur), and reduced compounds created by water-rock interactions; examples include H2 from radioactive splitting of water  and H2 and CH4 from serpentinization reactions .
+All of these electron donors occur in a broad range of subsurface environments.
+For example, organic matter that was photosynthesized in the overlying ocean is the principal electron donor for microbes in subseafloor sediment  and also circulates in dissolved form with seawater through oceanic basalt.
+The primary electron donors in subseafloor basaltic aquifers include reduced chemicals in mineral phases (e.g., ), which also commonly occur in both terrestrial and marine sediment.
+Hydrogen produced by natural radioactive splitting of water appears to sustain microbial in deep continental aquifers  and may also be a significant electron donor in very organic-poor marine sediment .
+Rates of subsurface microbial respiration have been most commonly quantified for subsurface sedimentary communities.
+Calculations based on concentration profiles of dissolved electron acceptors and products of microbial respiration indicate that the subsurface microbes of both terrestrial sedimentary aquifers  and subseafloor sediment ( 2004; ) respire orders of magnitude more slowly than microbes in the surface world .
+Given the extraordinarily low rates of microbial respiration in many subsurface environments, subsurface microbes are generally assumed to reproduce very slowly, if at all.
+speculated that most subseafloor sedimentary microbes are either inactive (dormant) or adapted for extraordinarily low metabolic activity.
+suggested that subsurface sedimentary microbes exhibit survival metabolism (sufficient to repair macromolecular damage but insufficient to sustain growth or motility).
+Whether they are actually growing or merely repairing macromolecular damage, amino acid racemization ratios indicate that subseafloor sedimentary biomass turns over very slowly, on timescales of hundreds to thousands of years .
+We do not yet know whether the microbes of these subsurface environments reproduce at these slow rates of biomass turnover or live without dividing for millions to tens of millions of years.
+These extraordinarily slow rates of respiration and biomass turnover beg consideration of the factor that control rates of microbial activity in subsurface ecosystems.
+Where electron acceptors are present, areal or volumetric rates of subsurface microbial activities (e.g., activity in a square-meter sediment column or in a cubic meter of sediment or rock) are broadly related to electron donor availability.
+For example, areal rates of microbial respiration are orders of magnitude higher in subseafloor sediment rich in organic matter  than in subseafloor sediment where organic matter is extremely dilute .
+However, where electron acceptors are vanishingly rare, electron donors can build to extraordinarily high concentrations.
+For example, in some fractures intersected by deep South African gold mines, dissolved hydrogen from water radiolysis is present in millimolar concentrations but electron acceptors are scarce, indicating that microbial activity in those fractures is far too low to keep up with very low rates of hydrogen production on timescales of tens to hundreds of millions of years .
+Such examples suggest that, in a broad sense, subsurface rates of bulk microbial activities are controlled by energy availability.
+However, the situation is much more problematic at closer inspection.
+For example, why don’t sedimentary microbial communities oxidize all available organic matter within the first few centimeters of the seafloor?
+In other words, how does buried organic matter survive microbial activity to sustain slow rates of activity for millions to hundreds of millions of years?
+Why don’t rapidly respiring cells outcompete the slowly respiring cells by oxidizing all available organic matter over a much shorter interval of geologic time?
+The situation is also perplexing on a per-cell basis.
+For example, aerobic microbial communities of subseafloor sediment in the North Pacific Gyre exhibit per-cell rates of microbial activity  that are not vastly different from per-cell rates in anaerobic communities of subseafloor sediment in the Peru Margin and the equatorial Pacific Ocean ( 2004, although areal rates of activity differ by orders of magnitude between the oxic gyre sediment and the anoxic Peru Margin sediments.
+In both environments, mean per-cell rates of respiration are orders of magnitude lower than per-cell rates in surface sediment or laboratory cultures.
+What are the limits to survival that allow microbial hunger artists to eke out a living at such extraordinarily slow rates in both environments?
+Finally, the extent to which subsurface organisms are  microbial zombies, incapable of being revived to a normal state, or (ii) capable of metabolism, growth, and reproduction at rates typical of the surface world is not yet known for many subsurface ecosystems.
+Isolation of many microbial strains from deep subsurface environments (e.g.,  has demonstrated that at least some deep subsurface microbes can emerge into the surface world, grow, and multiply.
+However, these few hundreds of laboratory isolates may not represent the majority of subsurface microbes.
+A recent study by  sheds light on this issue.
+In short, Morono and colleagues demonstrated that many microbes from sediment hundreds of meters beneath the seafloor take up measurable quantities of radio-labeled substrates.
+In doing so, they effectively showed that many deeply-buried organisms maintain the potential to metabolize and grow, regardless of what they are doing deep beneath the seafloor .
+This result effectively demonstrates that the metabolic potential of long-buried microbes can be activated at much higher rates when they emerge into a moderate environment.
+WHERE AND WHEN DOES LIFE IN THE SUBSURFACE REALLY MATTER TO US?
+It is fair to ask when and where deep life matters to the life and processes at Earth’s surface?
+Can we identify ecosystem services that are provided by life underground?
+The question might be considered for both naturally occurring subsurface microbes and those that are a part of a human-engineered process.
+A number of engineered systems that utilize or involve microbes and their activities are the result of stimulation of subsurface life.
+Microbes underground are responsible for numerous variations on the general theme of bioremediation.
+Where wastes have been carelessly released into aquifers, we now depend upon microbial communities to decontaminate these freshwater resources.
+The processes can take decades to be complete; however, it is usually far more economical to track these in-situ reactors over time as they eliminate contaminants than it is to dig the waste out of the ground.
+Perhaps this situation is similar to how we depend upon subsurface microbes and the biogeochemical processes that they carry out to purify tainted water that enters the subsurface prior to our use of the water when it is collected down gradient.
+The mingled biological, chemical, and physical processes that are inherent to deep Earth can eliminate the human pathogens that are simply not able to survive.
+Similar processes have been conceived for conducting in-situ mining or biohydrometallurgy, where low-grade ores may be attacked by well-understood microbial processes under controlled conditions to extract the metals within .
+This approach is conducted worldwide in managed “heap leach” operations, where the rubblized rock is piled onto a large impermeable pad, irrigation networks trickle the “lixiviant” fluid through the system, and the metal-rich liquid that results is collected .
+This biologically driven process is responsible for the recovery of most of the world’s copper , as well as uranium and gold, and is contemplated for manganese extraction .
+Microbes and their astounding metabolic activities have been considered also for processes that would convert hydrocarbons deep in Earth into products that can more readily be extracted.
+Studies of anaerobic modification of hydrocarbons are relatively new as many aliphatic and aromatic structures were long considered to be inert .
+A better understanding of the distribution of microbes in hydrocarbon-rich geological formations and the constraints under which they survive and modify the organic matter therein  has also led to considering ways by which microbes might alter hydrocarbons in place where oxygen is absent.
+Oxygen-free reactions, including hydroxylation, methylation, fumarate addition, and reverse methanogenesis (anaerobic methane oxidation), allow microbes metabolic access to complex hydrocarbons and broaden our view of how organic matter can be converted in the subsurface .
+Many subsurface environments are used not for their resources but rather for their remoteness, stability, or controllability.
+Such subsurface settings are ideal repositories for nuclear waste, carbon dioxide, or as artificial reservoirs for natural gas.
+In each case, microbial activities may play a role in the security of the materials deposited therein.
+The microbiology of nuclear waste storage locations has been investigated to determine the degree to which biological activity may alter the waste in a range of geological environments designated as candidate underground repositories .
+Locations close to the waste canisters shortly after enclosure may create conditions that are outside the range of microbial survival due to high-temperature or high-radiation fields of the newly deposited waste.
+But at some distance away from the waste, and over time as the radioactivity decays, these extreme conditions will moderate and microbes may recolonize the geologic niches.
+Deep-Earth storage of carbon dioxide as a means to remove it from the atmosphere has received considerable attention.
+Most studies have focused on the physical or chemical controls on carbon dioxide stability in the subsurface ; however, microbes can survive in many environments suitable for CO2 storage and for these settings we must also consider biogeochemical aspects of stability.
+To date, few studies have examined microbial communities where CO2 would be secured or the conditions to which these cells would be exposed.
+These investigations make it clear that some microbes—likely as spores—can survive in the presence of supercritical CO2 ( 2009; ).
+Native communities in several geological habitats may resist the solvent properties of the supercritical CO2 or survive proximal to the highest concentrations of the solvent .
+Geochemical modeling suggests that subsurface microbes in some environments where CO2 could be disposed (e.g., basalts) might be able to alter the disposition of the carbon .
+Assurance of the stability of deeply sequestered CO2 is important and so there should be an effort to understand the biogeochemistry where life can survive.
+Even though these microbial reactions occur only on the dimensions of single microbial cells or microcolonies or minerals or dissolved compounds, the large size of the biomass, its ability to permeate living space, and the relentless nature of this metabolism mean that the effects can translate to scales of hundreds of kilometers over millennia.
+An example that displays the cumulative effect of pervasive, sustained microbial activity is the accumulation of biogenic methane in continental shelf sediments where conditions are met for methanogenesis and capture of the methane in the form of hydrates .
+The release of methane from this “large, dynamic microbially-mediated gas hydrate capacitor”  is one explanation for how massive quantities of isotopically-light carbon were injected into the Earth system at the Paleocene-Eocene thermal maximum and possibly at other times in Earth’s history.
+Computational modeling of how microbially-generated methane accumulates in sediments as hydrates, free-gas, or dissolved gas; how it is oxidized by microbes under normal conditions of leakage; and how it may escape from sediment and enter the overlying water or atmosphere and act as a greenhouse gas have matched the observed δ13C excursions in the sediment records .
+Although Earth-system models indicate that the current phase of planetary warming is unlikely to cause large-scale release of methane present as hydrates , modeling efforts that focus on high-latitude sediment suggest that more immediate release of methane from hydrates is possible .
+It seems that sediment and deep permafrost containing accumulations of biologically-produced methane are perhaps especially precarious .
+That methane plumes can transition from the seafloor, through the water column, and then to the atmosphere is notable .
+Polar field sites may be excellent places to observe how subsurface biota and their processes respond to the surface system (and how humans are changing it) and may be responsible for accelerating (i.e., by making methane) or quenching (i.e., by consuming the methane) the changes that are underway on the planet’s skin.
+Another example of microbes in their native state that may contribute significantly to processes of concern at the surface are those present in deep aquifers covered by the oceans and contained within large igneous provinces or proximal to spreading centers or seamounts ( 2013).
+By virtue of their activity, these cells likely play an important role in planetary elemental cycling.
+These regions of considerable fluid movement are driven by advection of seawater into the crustal materials at the seafloor and by thermal convection cells generated when geothermally-heated waters circulate through the porous geological structure .
+Life in the crust consists of microbes that form complete ecosystems with lithoauthotrophy and heterotrophy present (c.f.,    ).
+It has been estimated that ca.
+1 x 1012 g C/yr of primary biomass may accumulate based on the volume of accessible crustal material; the amount of water cycling through these sponge-like materials; and the iron-, sulfur- and hydrogen-based metabolisms upon which these ecosystems rely .
+Thus, crustal communities mediate the flux of crucial elements from the mantle to the overlying water, where chemical energy is converted into microbial cells .
+The surface (seafloor) exposures of these deep aquifers are windows through which the geochemical and microbiological fluxes may shine into the overlying water.
+These surface windows exhibit diverse and complex accumulations of life based on interaction of the released fluids and the microbes with the seawater into which they emerge .
+And because of their distance from us, we have not yet completely seen deeply into these windows where there may be complex ecosystems projecting into the crustal materials.
+Also of some importance is the concept that the subsurface was once a refuge for life when the surface was too harsh to allow survival .
+Early in the planet’s history, perhaps after life started, but still when surface conditions were austere, the subsurface might have been relatively stable, perhaps even much as it is today.
+Bolide impacts might have routinely sterilized the surface proximal to the impact; however, at some distance the resultant fractures and fluid movement  might have provided conditions that would enhance survival.
+The same might have been true in some regions that sustained ice cover.
+Here, at some depth (as is the case in present high-latitude locations), the balance between low surface temperatures and high subsurface temperatures would offer thermally optimal conditions for long-term stability of microbial communities.
+It is sobering to think that billions of years from now, as the Sun sears the surface of Earth, life may make its final stand in the refugial depths of the planet.
+PROJECTIONS AND PRIORITIES FOR FUTURE STUDIES
+The future of subsurface microbiology research is rich with opportunities to understand the peculiarities of this environment and how these characteristics define it as an important component of the biosphere.
+The priorities for future studies can be divided into topics that deal with how the subsurface is sampled and envisioned and also into topics that relate to traits of subsurface microbes or the ecology, diversity, biomass, activity, and constraints of microbial communities.
+Imagining how we might sample and visualize deep life
+Numerous research tools are available to those who would study microbes in the subsurface; however, new tools would enable even more information to be gleaned from our deep investigations.
+New experiments could help to address the bias that is expected to occur associated with sampling.
+Although there are few examples of such experiments (c.f., ), we can expect that the mere act of coring, pumping, or excavating in an underground environment may stimulate microbes in an otherwise quiescent setting.
+The creation of open boreholes that serve as a vertical conduits for fluids where none existed before, or of hydrologic gradients associated with the strenuous pumping of aquifers, are certain stimuli to microflora that are used to stasis.
+Crustal systems are notoriously difficult geological environments to sample because of their inherent porosity and the tendency for fluid imbibition that can carry drilling materials into the rocks.
+Equally delicate conditions are those required for studies that would manipulate the subsurface and determine the biogeochemical responses.
+Numerous examples reveal how microbes respond to purposeful changes in their environment in shallow or accessible systems derived from bioremediation research, but fewer studies have been conducted in deep or hard to access habitats and experimental alterations in such places are more complicated.
+Observatories such as CORKS and SCIMPIs in the subseafloor have yielded exciting results, but even these devices are not always straightforward to deploy.
+As an example, settings where methane concentration, pressures, and temperatures are conducive to gas hydrate formation are not yet amenable to the observatory approach because hydrate formation prevents easy recovery of the samplers.
+Elsewhere, in methane-rich sediments with increased leakage of the gas, where fractures are important in distributing microbes, where shale gas is extracted, or in formations designated as CO2 repositories, we can envision that sampling systems such as CORKS, osmosamplers, or FTISR will be essential for puzzling out the implications of microbial activity.
+Advances are pending in the ways that we see or imagine the subsurface.
+From a computational perspective, new modeling approaches will strengthen the relationships of scientists dwelling on the disciplinary boundaries and drive new studies that can be approached using experimental work or field collections.
+The coupling of genome-scale models to reactive transport models has been accomplished in soils systems (c.f., ) and even in boutique subsurface settings like the Rifle uranium mill tailing cleanup site in western Colorado .
+The Rifle research sets a splendid example for other researchers, who must explain the biogeochemistry of their target environment underground.
+We eagerly anticipate the application of the same visualization and engagement tools that have been used for developing visual observatories in astronomy , mapping human proteins , detecting new evolutionary relationships in a spatiotemporal context , seeing the biogeographical distribution of large species , and observing how disease propagates through time .
+By using data science and visualization approaches, we can move towards conceptual models of subsurface life that will help us to realize principles of that life comparable to how progress has been made in Earth system models, simulations of deep astronomical time, and human behavior .
+Perhaps just beyond the computational models of subsurface life will be the physical models, the holograms and GeoWalls, that allow us to see in our museums or auditoriums the inside of a living Earth.
+Unexplored adaptations of subsurface microbes
+Because the subsurface presents such extreme conditions for microbial life compared to life at the surface where most of our studies of life occur, it is a challenge to understand how processes that we recognize as essential for life, or even routine for life, can occur in the subsurface.
+We have already noted the records for long-term survival that life underground appears to sustain; and subsurface cells may depend substantially on the formation of inert endospores .
+However, if cells remain marginally vegetative in some sense their protracted temporal survival evokes new questions:
+• Do such vegetative cells grow at all or do they exercise some sort of contact inhibition when they lie in such intimate space with minerals?
+• Can these living cells evolve—and if so, at what rate—without undergoing the cell division that normally seems so essential to introducing genetic change to a population?
+Might new evolutionary mechanisms be discovered such as CRISPRS  or the apparent importance of viruses ( 2013) in these deep dwelling cells?
+• Are there specific adaptations (e.g., efficient nucleic acid repair) associated with survival proximal to minerals that may be undergoing radioactive decay ?
+• For cells that enter into extended dormancy, how do they muster the bare metabolic activity to repair damaged (i.e., oxidized or racemized) molecules that are associated with survival in aqueous media?
+• Have these cells found new ways to resist high temperatures, as would appear to be true for some that live under the dual stress of high temperatures and pressures ?
+• As some may be fixed in place for millennia, have these cells devised structures such as “nanowires” or pili to explore neighboring pores and fractures for the thermodynamic disequilibria that are essential for gaining energy ?
+Unstudied physiologies and genotypes for the subsurface
+The demands of life in Earth’s deep reaches appear to invoke as-yet unstudied strategies by which microbes achieve the necessary energy.
+These strategies may not be new to life, but certainly may be new to science simply because they are discreet compared to the physiological capabilities that blare in surface systems that have been well investigated.
+What evocative new approaches to survival are awaiting discovery?
+• What is the relative importance of “latent” redox systems in subsurface environments where microbes cling to life ?
+An example is the radiolytic splitting of molecules to generate transient reactive species.
+Such metastable oxidants (e.g., peroxides, oxidized Mn, Fe, or S species) could allow incremental metabolic activity in systems that are otherwise deprived of oxidants .
+Another example is dehalorespiration, whereby chlorinated organics that are buried in the sediments may serve as oxidants .
+The means by which these halogenated species (of human origin) serve as electron acceptors have been understood for years ; however, we have not fully explored the process by which low concentrations of naturally occurring versions of these organics may be accessed by microbial communities in seafloor settings.
+Is the anoxic production of oxygen at the expense of methane and nitrite  common in subsurface systems given the correct chemistry and might this be another reasonable oxidant source for cells that do not require much?
+Collectively, are these just metabolic eddies and mere curios or bona fide survival strategies by which microbes can and do survive the subsurface in broad measure?
+• Are there strategies that would appear to be thermodynamically insurmountable that have been solved by subsurface microbes?
+These capabilities might be analogues to the still incompletely understood anaerobic oxidation of methane, where life manages to exist at the extreme edge of thermodynamic probability.
+For example, methanogens appear to exist, albeit not in high numbers, in sediment where methane levels are high enough to make additional methane production exceedingly difficult.
+Is it possible that hydrates may serve as a sink for additional methane production for proximal methanogens?
+Could questions like these be solved by cultivation studies that creatively determined how to cultivate seawater microbes that resisted normal laboratory media ?
+• Does the subsurface have a “rare” biosphere just as was found in the surface oceans ?
+If there are numerous rare taxa in samples from the subsurface then what does this say about functional resilience of the subsurface?
+Do keystone taxa exist in the subsurface; that is, microbes that are hallmarks of the subsurface and therefore playing some fundamental roles underground?
+The Census of Deep Life, currently underway and a part of the Deep Carbon Observatory, may inform us.
+Subsurface coupling of the living and the non-living
+We now understand new ways that abiotic and biotic systems of our planet are inextricably linked to each other and to human systems .
+The subsurface is no different.
+As we learn more about the ways in which life survives underground, the activities and identities of these cells, questions arise related to how deep Earth changes life and, in reciprocity, is changed as a result of the life therein.
+What are the various connections between large-scale Earth processes and subsurface microbes that require thermodynamic disequilibria to conserve energy for metabolic activity, however slim that activity might be (Fig. 1)?
+• Does the fluid movement associated with tidal forces  influence subsurface microbial communities?
+And to include another large-scale phenomenon, if earthquakes influence tidal activity , how then are these seismic events tied to microbial community activity?
+• We understand that hydrogen may be key to microbial survival in the subsurface .
+Does hydrogen production from seismic activity represent yet another way that microbes in the subsurface can be kept alive by Earth movements ?
+• Besides hydrogen, what other microbial provisions might be generated by seismic energy release?
+Can new space in the subsurface in the form of fractures and porosity, as well as access to oxidants from newly cracked surfaces, be supplied to deep microbes that are otherwise so limited in this regard?
+• Are continental margins, where tectonics dictate the adjustment of plates and promote fluid movement  by opening fractures and by changing the stability of gas hydrates within the sediments, also places where blooms of subsurface microbial activity can be expected?
+• How do annual planetary cycles determine what may occur in the subsurface?
+For example, does the seasonal accumulation and then melting of snow, which loads and unloads Earth’s surface in places like northeastern Japan and causes deformation at the land surface , also simulate a subterranean bellows opening and closing on an annual cycle that microbes might take advantage of?
+• Do global events with longer cyclic periods, such as the current change in climate at Earth’s surface, cause changes realized by life underground?
+In high latitudes, where warming processes appear to have provoked the incipient thaw of permafrost and degeneration of methane hydrates (c.f.,   Walter ), will changes eventually translate into the subsurface sediments and prompt microbial activity as a result of renewed fluid movement in long-frozen materials?
+How will the microbes in these systems, as they become more active as they can in more surficial Arctic settings , impose themselves on the fluxes of greenhouse gases that we are so concerned with?
+SUMMARY
+As investigators of life underground, we anticipate the chance to learn more about the unseen world of small life deep in Earth, but only if we continue to engage in essential collaborations with all those who possess complementary knowledge of the planet’s history and systems.
+Soon, we hope, there will be more complete synthetic models of how the living and non-living aspects of Earth’s uppermost layers function and integrate with one another.
+These models will guide our search for new deep life, its niches, capabilities, and adaptations.
+We look forward to new explanations for how the subsurface biosphere is sustained and how its expression matters to life at the surface.
+ Subsurface phenomena that create chemical, physical, or mixed chemical-physical gradients within which microbial metabolic activity is known to occur or might occur.
+Various processes are plotted along an arbitrary axis that defines whether the process is primarily chemical or physical in origin.
+Processes are classified according to whether they are mainly natural associated with Earth (non-bold), mainly human-induced (bold), or best described as being either natural or human-induced (shaded).

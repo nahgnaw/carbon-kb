@@ -1,0 +1,141 @@
+INTRODUCTION
+Despite the significant improvements in the early detection and treatment, cancer still remains a major public health burden worldwide, with approximately 12.7 million new cases and 7.6 million new deaths in 2008 [].
+Cancer is a multi-step complex disease involving both genetic and environmental factors [].
+Extensive evidence has indicated the important roles of polymorphisms in the key genes during the process of carcinogenesis [-].
+Screening and identification of single nucleotide polymorphisms (SNPs) which are related to cancer susceptibility would greatly benefit individuals at high risk for cancer in the early prevention and treatment settings.
+Genome-wide association studies (GWASs) which interrogate a large number of tagging SNPs in a high density across the whole genome, have provided a robust tool to discover novel cancer susceptibility loci or genes [].
+Over the past decade, GWAS has successfully identified hundreds of genetic markers that are related to the susceptibility to a wide spectrum of diseases including cancers [].
+In a two-stage GWAS on gastric cancer conducted in Japanese and Korean population, two SNPs (rs2294008 C&gt;T and rs2976392 G&gt;A) in the prostate stem cell antigen (PSCA) gene were found to be significantly associated with increased stomach cancer risk [].
+Wu et al.
+[] also found the PSCA rs2294008 C&gt;T polymorphism was a bladder cancer susceptibility locus in a three-stage GWAS.
+The PSCA gene is located on chromosome 8q24.2, encoding a 123-amino acid glycoprotein, a cell surface antigen.
+PSCA was first identified as a prostate-specific antigen that is over-expressed in prostate cancer [], and plays an important role in cell adhesion, proliferation, and survival [].
+It is also expressed in other solid tumors, including ovarian mucinous, pancreatic cancer, renal-cell carcinoma and bladder cancer [, ].
+In contrast with observations in prostate cancer, PSCA expression is down-regulated in several cancers including bladder cancer and gastric cancer [].
+The associations of the PSCA rs2294008 C&gt;T and rs2976392 G&gt;A polymorphisms and cancer susceptibility have been widely investigated.
+The significant associations were reported and validated in some studies among different ethnic populations and different types of cancers [, , -]; however, others failed to replicate such association.
+The controversy is probably due to different ethnicities, histology types, and relatively small sample size in individual studies.
+The previous meta-analysis mainly focus on gastric cancer [-] and bladder cancer [].
+Until now, few meta-analysis has been performed to investigate the association of PSCA rs2294008 C&gt;T and rs2976392 G&gt;A polymorphisms with overall cancer risk.
+With this in mind we conducted the present meta-analysis to clarify the role of these two polymorphisms in carcinogenesis.
+RESULTS
+Study characteristics
+As shown in Figure , a total of 136 publications were indentified from PubMed and Embase.
+Moreover, 10 additional publications were indentified from CBM database.
+After reviewing the titles and abstracts of the potential available articles, 105 publications were excluded, mainly due to no relevance, reviews, or functional studies.
+Forty one full-text articles that met the crude inclusion criteria were further evaluated for eligibility.
+Of them, two studies written in Chinese were excluded because of the overlap of study subjects [, ].
+Moreover, one investigation was excluded for only focused on gastric survival not case-control study [], three publications were excluded due to lack of genotyping data [-], one was not focused on cancer [], and another two that did not pertain to either of these two polymorphism were also excluded [, ].
+Eventually, 32 publications were included in the final meta-analysis.
+Flow diagram of included studies for the association between PSCA polymorphisms and overall cancer susceptibility
+Forest plot for overall cancer risk associated with the PSCA rs2294008 C&gt;T polymorphism by dominant model (CT/TT vs. CC)
+For each study, the estimation of OR and its 95% CI are plotted with a box and a horizontal line.
+◇, pooled ORs and its 95% CIs.
+Investigations with multiple source of subjects and multiple types of cancers [, ] were considered as multiple studies.
+Overall, there were 32 studies investigating the association between PSCA rs2294008 C&gt;T polymorphism and cancer susceptibility, consisting of 30028 cases and 38765 controls [, , -, -], and 14 studies performed on the relation between PSCA rs2976392 G&gt;A polymorphism and overall cancer susceptibility, with 8190 cases and 7176 controls [, -, , , , -, ].
+For the PSCA rs2294008 C&gt;T polymorphism, the number of cases varied from 44 to 5393 while the range of controls fell between 125 and 9363 among studies.
+The studied cancer type included gastric cancer [, -, -, , , , , , , -], bladder cancer [, , , , , ], prostate cancer [], esophageal cancer [, ], breast cancer [], colorectal cancer [], and gallbladder cancer [, ].
+In term of ethnicity, 21 studies were performed among Asians, 10 studies among Caucasians, and one study among Africans.
+Of these studies, 19 were hospital-based, 13 were population-based.
+Intriguingly, in the studies focused on gastric cancer, 13 studies provided detailed genotype frequency data by the gastric cancer subtypes, and six studies by sites.
+For the PSCA rs2976392 G&gt;A polymorphism, the number of cases ranged from 44 to 1525 while varying control sample sizes (from 60 to 1397) were also observed among selected studies.
+The studied cancer type included gastric cancer [, -, -, ], prostate cancer [], breast cancer [], and gallbladder cancer [].
+Of them, 13 studies were performed among Asians and one among Caucasians.
+Eleven of them were hospital-based, while three were population-based.
+Meta-analysis results
+Results of the association between these two polymorphisms and cancer risk were summarized in Table . We found that the PSCA rs2294008 C&gt;T polymorphism was associated with an increased overall cancer risk (homozygous: OR = 1.41, 95% CI = 1.23-1.61; heterozygous: OR = 1.31, 95% CI = 1.19-1.43, recessive: OR = 1.19, 95% CI = 1.10-1.29, dominant: OR = 1.34, 95% CI = 1.21-1.48, and allele comparison: OR = 1.20, 95% CI = 1.13-1.28).
+The stratification analyses by cancer types found that carriers of PSCA rs2294008 T had a significantly increased risk of gastric cancer (homozygous: OR = 1.64, 95% CI = 1.32-2.03; heterozygous: OR = 1.44, 95% CI = 1.26-1.64, recessive: OR = 1.28, 95% CI = 1.12-1.46, dominant: OR = 1.51, 95% CI = 1.30-1.75, and allele comparison: OR = 1.29, 95% CI = 1.18-1.41) and increased risk of bladder cancer (homozygous: OR = 1.29, 95% CI = 1.21-1.38; heterozygous: OR = 1.25, 95% CI = 1.18-1.32, recessive: OR = 1.13, 95% CI = 1.07-1.19, dominant: OR = 1.26, 95% CI = 1.20-1.32, and allele comparison: OR = 1.14, 95% CI = 1.11-1.18).
+Stratification analyses also elucidated that this polymorphism increased cancer risk among Asians, Caucasians as well as Africans by ethnicity.
+Moreover, increased cancer risk associated with the SNP was also observed in population-based and hospital-based studies by the source of controls.
+When studies were stratified by subtypes of gastric cancer, we found the increased risk was more pronounced for diffuse type (homozygous: OR = 2.45, 95% CI = 1.68-3.57; heterozygous: OR = 1.72, 95% CI = 1.28-2.30, recessive: OR = 1.67, 95% CI = 1.37-2.03, dominant: OR = 1.93, 95% CI = 1.41-2.63, and allele comparison: OR = 1.52, 95% CI = 1.31-1.78) than intestinal type (homozygous: OR = 1.42, 95% CI = 1.05-1.92; heterozygous: OR = 1.36, 95% CI = 1.13-1.62, recessive: OR = 1.19, 95% CI = 0.98-1.44, dominant: OR = 1.39, 95% CI = 1.13-1.71, and allele comparison: OR = 1.22, 95% CI = 1.06-1.41).
+We also observed that PSCA rs2294008 polymorphism conferred higher susceptibility to NGCA than the GCA subtype.
+Similarly, we also found that PSCA rs2976392 G&gt;A polymorphism was associated with increased overall cancer risk (heterozygous model: OR = 1.32, 95% CI = 1.10-1.58, dominant model: OR = 1.35, 95% CI = 1.09-1.66, and allele comparing: OR = 1.19, 95% CI = 1.03-1.37).
+In the stratification analyses, the significant association was observed for gastric cancer (heterozygous model: OR = 1.40, 95% CI = 1.14-1.71, dominant model: OR = 1.44, 95% CI = 1.13-1.83, and allele comparing: OR = 1.24, 95% CI = 1.06-1.46), Asians, hospital-based studies, population-based studies as well as both the diffuse and intestinal types.
+Interestingly, the risk effect of the SNP on the diffuse type was more evident than the intestinal type.
+Heterogeneity and sensitivity analyses
+As shown in Table , we observed that there existed statistically significant between-study heterogeneity for both of these two polymorphisms, thus the random-effect model was chosen for all the analysis to generated wider CIs for all genetics models.
+We subsequently conducted sensitivity analysis to investigate the influence of individual study on the pooled risk estimates by omitting studies from the pooled analysis individually.
+Omitting each of studies did not qualitatively influence the corresponding pooled ORs in overall analysis and subgroups, suggesting that the results were statistically robust (data not shown).
+Publication bias
+The Begg's funnel test and Egger's linear regression test were performed to quantitatively evaluate the publication bias of the meta-analysis.
+The shape of the funnel plots did not reveal any evidence of obvious asymmetry, and the Egger's test for PSCA rs2294008 C&gt;T indicated that there was no publication bias in the current meta-analysis (homozygous: P = 0.616, heterozygous: P = 0.209, recessive: P = 0.930, dominant: P = 0.186, and allele comparison: P = 0.385).
+Likely, no publication bias was found for the PSCA rs2976392 G&gt;A polymorphism (homozygous: P = 0.564, heterozygous: P = 0.733, recessive: P = 0.263, dominant: P = 0.623, and allele comparison: P = 0.747).
+DISCUSSION
+In the current updated meta-analysis, we comprehensively evaluated the association of PSCA rs2294008 C&gt;T and rs2976392 G&gt;A polymorphisms with overall cancer susceptibility by pooling together 32 studies with 30028 cases and 38765 controls for the rs2294008 C&gt;T polymorphism, and 14 studies with 8190 cases and 7176 controls for the rs2976392 G&gt;A polymorphism.
+We found both of the PSCA rs2294008T and rs2976392A carriers were associated with increased risk of overall cancer, especially the former.
+We also confirmed that the associations were more obvious for gastric cancer and bladder cancer, especially diffuse type and NGCA for gastric cancer.
+Forest plot for overall cancer risk associated with the PSCA rs2976392 G&gt;A polymorphism by dominant model (AG/AA vs. GG)
+For each study, the estimation of OR and its 95% CI are plotted with a box and a horizontal line.◇, pooled ORs and its 95% CIs.
+The PSCA gene, located on chromosome 8q24.2, encodes a PSCA protein that is a cell surface antigen.
+PSCA belongs to the LY-6/Thy-1 family and is highly expressed in normal prostate and further up-regulated in prostate cancer [], which is also found in non-prostatic malignancies including gastric cancer [].
+This protein plays a critical role in multiple important cellular events, such as adhesion, proliferation, and survival [].
+In 2010, a two-stage gastric cancer GWAS conducted among Japanese and Korean subjects demonstrated that the rs2976392 G&gt;A and rs2294008 C&gt;T polymorphisms in the PSCA gene significantly increased stomach cancer risk [].
+Further in vitro experiments revealed that the PSCA rs2294008T variant might decrease the transcriptional activity transcription of the host gene by modulating its upstream fragment [].
+Moreover, the PSCA gene rs2294008 C&gt;T polymorphism was also found to be associated with increased bladder cancer risk by a three-stage GWAS with a total of 5038 cases and 9363 controls [].
+The association between PSCA polymorphisms and cancer risk discovered by previous GWASs were extensively validated among different ethnic populations and different types of cancers.
+For example, Wu et al.
+[] reported that the association of the PSCA rs2294008 C&gt;T polymorphism and gastric cancer risk was more prominent among patients with non-cardia gastric cancer than cardia gastric cancer with a total of 1736 cases and 1020 controls.
+The significant association was also validated by studies conducted among different ethnicities worldwide [, , , , , , -].
+However, some studies failed to replicate the association [, ].
+To resolve the controversy, six meta-analyses have been performed to evaluate the relationship between PSCA polymorphisms and gastric cancer susceptibility [-], to date.
+Qiao et al.
+[] included eight studies from seven publications with a total of 9738 gastric cancer cases and 7054 controls, and concluded that rs2294008 T allele and rs2976392 A allele were significantly associated with increased gastric cancer risk.
+These findings were confirmed by other meta-analysis [-].
+The most recent meta-analysis by Gu et al.
+[] involved 16 studies.
+They found that the PSCA rs2294008T carriers had a 1.46-fold increased gastric cancer risk when compared to the rs2294008C carriers.
+They also found the rs2976392A carriers had a 1.49-fold increased cancer risk when compared to non-carriers.
+Only one of the previous meta-analyses explored the association between polymorphisms of PSCA gene and bladder cancer [], which included a total of four studies with 9617 cases and 16323 controls.
+They found that the rs2294008 C&gt;T polymorphism was associated with increased bladder cancer under all the genetic models.
+In the current meta-analysis, we included all the studies investigating the association between PSCA polymorphisms and cancer risk, i.e., a total of 32 studies with 30028 cases and 38765 controls for the PSCA rs2294008 C&gt;T polymorphism, and 14 studies with 8190 cases and 7176 controls for the PSCA rs2976392 G&gt;A polymorphism.
+To the best of our knowledge, this is the largest and most comprehensive meta-analysis for the association of interest.
+We found the PSCA rs2294008 C&gt;T polymorphism was associated with overall cancer risk, and the association remained significant among all studies ethnicities and subgroups by source of controls.
+We also confirmed that this risk was more predominant for bladder cancer and gastric cancer, especially the diffuse gastric cancer and non-gastric cardia adenocarcinoma.
+The PSCA rs2976392 G&gt;A polymorphism was found to associate with overall cancer risk mainly under heterozygous model and dominant model.
+The association was also valid for gastric cancer, Asians and population-based studies, and was more evident for diffuse subtype.
+The PSCA rs2294008 C&gt;T polymorphism was associated with gastric cancer and bladder cancer, which may be ascribed to cancer specificity.
+Intestinal type may be caused by excessive salt intake, alcohol consumption, and deficiency of fresh fruit and vegetable, while the diffuse type may be associated with gastroesophageal reflux disease and obesity [].
+Gastric cardia cancer arises from the gastroesophageal junction and may differ from non-gastric cardia cancer regarding epidemiological characteristics and clinical features [].
+Susceptibility to different subtypes of cancer may vary [, ].
+Therefore, the association with diffuse subtype and non-gastric cardia cancer appeared to be biology plausible.
+Moreover, the association with the PSCA rs2976392 G&gt;A polymorphism was only found for gastric cancer, Asians and population-based controls, which might be ascribed to the limited number of investigations, since all the 12 studies were performed among Asian and nine of them investigated gastric cancer.
+So the findings for this polymorphism should be interpreted cautiously.
+Several limitations should be stated in this meta-analysis.
+First, substantial between-study heterogeneity, not explained by sensitivity analysis, was observed in the current meta-analysis, which might due to limited study number.
+Thus, we chose random-effects model for all genetic models to produce wider CIs.
+Second, although we had included 32 publications, the sample size remained relatively small for certain cancer types and ethnicities in subgroup analyses.
+Third, for the lacking of original data such as age, gender, family history and environment factors, our results were based on unadjusted estimates of ORs.
+Finally, since not all the investigations provided genotype counts separately by gastric cancer subtype, the pooled results derived from only a fraction of available studies may suffer from selection bias.
+In conclusion, this meta-analysis indicated that the PSCA rs2294008 C&gt;T and rs2976392 G&gt;A polymorphisms might confer increased genetic susceptibility to cancer, especially bladder cancer and gastric cancer.
+However, due to the limitations of the meta-analysis, further prospective investigations with large sample size involving different ethnicities and gastric cancer subtypes are required to confirm these findings.
+MATERIALS AND METHODS
+Identification and eligibility of relevant studies
+We systematically searched potential molecular epidemiology studies which investigated the association of PSCA gene polymorphisms with cancer risk through the electronic databases of Medline and Embase, using the following search terms: “PSCA or prostate stem cell antigen”, “polymorphism or variant or variation”, and “cancer or carcinoma or tumor or neoplasms'' (The last search was updated on April 18, 2015).
+We also searched additional publications written in Chinese from Chinese Biomedical (CBM) database to expand the coverage of our study.
+References cited in each of identified literatures were further searched manually for potential eligible studies.
+If studies had overlapped subjects, only the largest or latest one was adopted.
+Inclusion and exclusion criteria
+Studies included had to meet the following criteria: (1) evaluating the association of PSCA rs2294008 C&gt;T and/or rs2976392 G&gt;A polymorphisms with cancer risk; (2) case-control or cohort designed; (3) sufficient genotype data provided for estimating odds ratios (ORs) and their corresponding 95% confidence interval (CIs); (4) written in English or in Chinese; (5) the control group of the studies should be in accordance with Hardy Weinberg Equilibrium (HWE).
+The excluding criteria were as follows: (1) not relevant or not human subjects; (2) reviews or conference abstracts; (3) case only or survival only studies; (4) not written in English or Chinese; (5) providing duplicate data or overlapping with others.
+Data extraction
+The following data were extracted from each eligible investigation: surname of first author, year of publication, country of origin, ethnicity, source of controls, cancer type, and subtype (intestinal or diffuse type for gastric cancer), cancer site [gastric cardia adenocarcinoma (GCA) or non-gastric cardia adenocarcinoma (NGCA) for gastric cancer], genotyping methods, total numbers of cases and controls, and the genotype counts for the PSCA rs2294008 C&gt;T (CC/CT/TT) and the PSCA rs2976392 G&gt;A (GG/AG/AA) polymorphism.
+Data were extracted independently by two investigators (Y.G. and R.-X. H.).
+A third investigator (P.-H. L.) would join to adjudicate any disagreement as needed.
+Ultimately, consensuses were reached on all the extracted information.
+Statistical methods
+Based on the genotype frequency distribution in cases and controls, the associations of PSCA rs2294008 C&gt;T and rs2976392 G&gt;A polymorphism with cancer risk were measured by crude ORs and their corresponding 95% CIs for each study.
+The crude ORs and 95% CIs under the homozygous (TT vs. CC), heterozygous (CT vs. CC), recessive (TT vs. CT/CC), and dominant models (CT/TT vs. CC), as well as allele comparison model (T vs. C) were calculated for the rs2294008 C&gt;T polymorphism, while homozygous model (AA vs. GG), heterozygous model (AG vs. GG), recessive model (AA vs. AG/GG), dominant model (AG/AA vs. GG), and allele comparison model (A vs. G) for the rs2976392 G&gt;A polymorphism.
+Goodness-of-fit chi-square test was conducted to check deviation from HWE among controls, and the deviation was significant at the 0.05 level.
+Between-study heterogeneity was assessed using chi-square-based Q statistical test.
+Generally, the fixed-effects model (Mantel–Haenszel method) [] was adopted in the absence of heterogeneity.
+If P &lt; 0.10, the random-effects model (DerSimonian–Laird method) [], was chosen to calculate the pooled OR, since it takes the heterogeneity into account and yields wider CIs.
+Subgroup analyses were conducted by cancer type (less than three studies were categorized as others), ethnicity (Caucasians, Asians and Africans), source of control (hospital-based and population-based), subtypes (intestinal and diffuse) and sites (GCA and NGCA) if relevant data were available.
+An evaluation of publication bias was carried out using Egger's regression asymmetry test, Begg's rank correlation test and by visual inspection of the funnel plot [].
+In sensitivity analysis, each study was excluded at a time and the pooled ORs and 95% CIs were recalculated to determine the effect of each study on the summary risk estimate.
+The statistical analysis was performed by using STATA version 11.0 (Stata Corporation, College Station, TX).
+All P values were two-sided, and P &lt; 0.05 was considered as statistically significant.
+CONFLICTS OF INTEREST
+The authors declare no competing financial interests.
+GRANT SUPPORT
+This study was supported by grants from the Natural Science Foundation of Guangdong Province (No. S2012010008827), Science and Technology Projects Foundation of Guangdong Province (No. 2012B031800501 and 2013B021800252) and the Medical Research Foundation of Guangdong Province (No. A2014226).
+

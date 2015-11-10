@@ -1,0 +1,451 @@
+INTRODUCTION
+
+Temozolomide has been a mainstay of chemotherapy for glioblastoma (GBM) for the past decade but still produces unsatisfactory clinical outcomes.
+('Temozolomide', 'been', 'mainstay of chemotherapy for glioblastoma')
+
+Most GBM patients who are treated with standard therapy incorporating temozolomide eventually experience progression, and only 11% of patents remain progression free at 2 years [].
+('GBM patients', 'remain', 'free')
+('% of patents', 'remain', 'free')
+
+The inescapable early treatment failure rate of standard treatment largely depends on temozolomide resistance.
+('treatment failure rate of treatment', 'depends on', 'temozolomide resistance')
+
+From the perspective of the drug mechanism of temozolomide, O6-methylguanine DNA methyltransferase (MGMT) has been proven to be associated with the prediction of the treatment effect [].
+
+However, there are further steps that lead the cancer cells to death after temozolomide treatment in relation to the DNA repair pathway, such as mismatch repair (MMR) and homologous recombination (HR) [, ].
+
+Temozolomide cytotoxicity is initially mediated by the generation of O6-methylguanine from guanine, which can be repaired by MGMT [].
+('Temozolomide cytotoxicity', 'is mediated by', 'generation')
+
+However, unrepaired O6- methylguanine successively results in thymine mispairing during DNA replication, and these mispairs result in futile cycles of the repair process by the MMR system due to the persistence of O6-methylguanine in the template strand [].
+('methylguanine', 'results in', 'thymine mispairing')
+('methylguanine', 'result in', 'cycles of repair process')
+('mispairs', 'result in', 'cycles of repair process')
+
+These futile cycles of the DNA repair process eventually cause double-strand DNA breaks, leading to cell apoptosis if the HR system functions inadequately [].
+('cycles of DNA repair process', 'cause', 'DNA breaks')
+
+Therefore, temozolomide resistance can be induced if MGMT is activated, MMR function is defective, or HR is normal.
+
+In addition to the established mechanism of temozolomide resistance by MGMT, reports have been published concerning inactivating mutations of MSH6 among MMR genes contributing to temozolomide resistance in GBM [-].
+('reports', 'have been published concerning', 'mutations of MSH6')
+
+However, the incidence of MMR alterations in GBM is infrequent; thus, it is considered to be less important for temozolomide resistance [, ].
+
+Otherwise, the contribution of HR to temozolomide resistance has been rarely studied, and little is known.
+
+We investigated temozolomide resistance and mechanisms to restore temozolomide sensitivity, focusing simultaneously on MGMT and HR.
+
+To identify plausible targets for temozolomide resistance, we considered homeobox (HOX) genes, which showed a significant relationship between its dichotomized sub-classification with MGMT and survival in gene expression profiling studies, as previously reported [].
+
+HOX genes are a group of essential regulatory genes that normally control embryonic development and that should be in the silenced state in the adult central nervous system [-].
+('HOX genes', 'are', 'group of genes')
+('that', 'should be in', 'state')
+
+Recent studies have shown evidence of the aberrant expression of HOX genes in diverse cancers, including gliomas [-].
+('studies', 'have shown', 'evidence of expression of HOX genes')
+
+Although solid evidence exists concerning the role of HOX genes in oncogenesis and therapeutic resistance in gliomas, the exact mechanism remains unclear, and only a small number of recent studies have been published [, , ].
+('evidence', 'exists concerning', 'role of HOX genes')
+('mechanism', 'remains', 'unclear')
+
+In the present study, we investigated the mechanism of HOXA10 regarding its role in temozolomide resistance using glioblastoma cell lines and tested the therapeutic implication of temozolomide resistance in conjunction with MGMT status.
+
+The result of the present study suggests a possible hypothesis for the temozolomide non-responders in MGMT-inactive GBM patients.
+('result of study', 'suggests', 'hypothesis')
+
+RESULTS
+
+HOXA10 mediates temozolomide resistance independent of MGMT
+
+The MGMT methylation status of the LN18 and LN229 glioma cell lines as measured by MSP revealed an unmethylated MGMT promoter (MGMT active) for LN18 cells and a methylated MGMT promoter (MGMT inactive) for LN229 cells (Figure ).
+('MGMT methylation status of LN18', 'revealed', 'MGMT promoter MGMT promoter')
+
+Both cell lines displayed intact HOXA10 expression, which was successfully knocked down with iHOXA10.
+('cell lines', 'displayed', 'HOXA10 expression')
+
+When the cell lines were treated with TMZ in combination with O6- BG and/or iHOXA10, significant differences in the cell death ratio were observed when iHOXA10 was added (Figure ).
+('cell lines', 'were treated with', 'TMZ')
+
+This additive effect of iHOXA10 on cell viability was independent of the MGMT status and created an added effect over MGMT inhibition.
+('effect of iHOXA10', 'was independent of', 'MGMT status')
+('effect of iHOXA10', 'created', 'effect over MGMT inhibition')
+
+A. MGMT promoter methylation-specific polymerase chain reaction results.
+
+Each lane with an asterisk indicates control DNA for no methylation and methylation.
+('lane with asterisk', 'indicates', 'control DNA for no methylation')
+
+The MGMT promoter is unmethylated in LN18 cells and methylated in LN229 cells.
+('MGMT promoter', 'is unmethylated in', 'LN18 cells')
+('MGMT promoter', 'methylated in', 'LN229 cells')
+
+B. Cell viability results presented as the relative cell death ratio.
+
+Inhibition of HOXA10 shows an additive effect with temozolomide treatment in both cell lines, even after the inhibition of MGMT in LN18 cells.
+('Inhibition of HOXA10', 'shows', 'effect with temozolomide treatment in cell lines')
+
+Screening for effectors of HOXA10
+
+To identify HOXA10-regulated genes, we transduced LN18 cells with control siRNA or HOXA10-silencing siRNA (iHOXA10) and carried out microarray gene expression profiling.
+
+We compared the expression values of selected probe sets displaying average fold-changes of at least 2.0-fold, yielding 124 probe sets as being differentially expressed (15 up- and 109 down-regulated).
+
+Among them, only selected genes with RefSeq identifiers (NCBI Reference Sequence Database; http://www.ncbi.nlm.nih.gov/refseq/) are listed (Table ).
+
+We then used the functional annotation tools within DAVID Bioinformatics Resources (http://david.abcc.ncifcrf.gov/home.jsp) to perform gene annotation enrichment [].
+
+This analysis indicated that early growth response protein 1 (EGR1) is a mediator for the functional category of transcription/cell division and chromosome partitioning among the listed genes.
+('growth response protein', 'is', 'mediator for category of transcription/cell division')
+
+EGR1 showed a -3.09-fold change after iHOXA10 treatment.
+
+After thorough review of the functions of EGR1, we focused on previous reports indicating that EGR1 induces phosphatase and tensin homolog (PTEN) by regulating its promoter [-].
+
+Moreover, evidence has shown that PTEN has novel nuclear functions, including transcriptional regulation of the Rad51 gene, whose product is essential for HR repair of DNA breaks [, ].
+('PTEN', 'has', 'functions')
+('product', 'is essential for', 'HR repair of DNA breaks')
+
+Therefore, we hypothesized that HOXA10 can regulate the HR system mediated by EGR1 and PTEN.
+
+HOXA10 selectively regulates the nuclear function of PTEN through EGR1
+
+After knockdown with iHOXA10, RT-PCR data showed significant suppression of EGR1 and PTEN in both LN18 (93% and 30% suppression) and LN229 (25% and 58% suppression) cells (Figure ).
+
+These results suggested that EGR1 and PTEN are the mediators regulated by HOXA10 status.
+
+However, suppression of PTEN induced by iHOXA10 did not affect the phosphoinositide 3-kinase (PI3K) pathway.
+('suppression of PTEN induced by iHOXA10', 'did not affect', 'pathway')
+
+The protein expression of total Akt and phosphorylated Akt showed no change, although PTEN was suppressed by iHOXA10 (Figure ).
+('protein expression of Akt', 'showed', 'no change')
+('PTEN', 'was suppressed by', 'iHOXA10')
+
+This finding implies that HOXA10 regulates only the nuclear function of PTEN without affecting its cytoplasmic function.
+
+This finding was also supported by the result of the cell viability test involving inhibition of PTEN directly with siRNA (iPTEN) that suppresses the cytoplasmic function of PTEN.
+('finding', 'was supported by', 'result of cell viability test involving inhibition of PTEN')
+
+No significant difference in cell death rate was noted whether iPTEN was added or not to TMZ, although significant differences were observed with the iHOXA10 and TMZ combination (Figure ).
+('differences', 'were observed with', 'iHOXA10 combination')
+
+A. RT-PCR results after HOXA10 knockdown by siRNA.
+
+Reduced expression of EGR1 and PTEN is shown.
+
+B. Western blotting results after HOXA10 knockdown by siRNA.
+('B. Western blotting', 'results after', 'HOXA10 knockdown by siRNA')
+
+Despite the suppression of PTEN, the expression of both total Akt and phosphorylated Akt remained unchanged.
+('expression of Akt', 'remained', 'unchanged')
+
+C. Cell viability results presented as the relative cell death ratio.
+
+Direct inhibition of PTEN (inhibition of the cytoplasmic function of PTEN) had no influence on the anticancer effect of temozolomide, although inhibition of HOXA10 (indirect inhibition of the nuclear function of PTEN) had an additive anticancer effect with temozolomide in both cell lines.
+('inhibition of PTEN inhibition of function of PTEN', 'had', 'no influence on effect of temozolomide')
+('inhibition of HOXA10 inhibition of function of PTEN', 'had', 'effect with temozolomide')
+
+Primers used for PCR amplification
+
+Forward (5'→3')	Reverse (5'→3')	Amplicon length (bp)
+
+HOXA10	AGGTGGACGCTGCGGCTAATCTCTA	GCCCCTTCCGAGAGCAGCAAAG	209
+
+EGR1	CTGCACGCTTCTCAGTGTTCC	CGAGTGAGGAAAGGATCCGA	210
+
+PTEN	TGGAAAGGGACGAACTGGTG	CACCTTTAGCTGGCAGACCA	289
+
+Rad51b	TGTGGTGAAACACCCATCGT	TGTTCCACGAACACACAACCCA	255
+
+Rad51c	TTTGGTGAGTTTCCCGCTGT	ACCCACCCTTAAAAGGAGAACA	399
+
+Rad51d	GAATGGCGCTGATCTCTACGA	TCTCCTGGAAACCTGTTGGC	725
+
+GAPDH	GCAGGGGGGAGCCAAAAGGG	TGCCAGCCCCAGCGTCAAAG	450
+
+Impairment of the HR system was observed with HOXA10 inhibition
+('Impairment of HR system', 'was observed with', 'HOXA10 inhibition')
+
+We further validated the association of the regulatory activity of HOXA10 with the nuclear function of PTEN—namely, the maintenance of the HR system via the positive transcriptional regulation of Rad51 genes.
+
+Significant downregulation of all Rad51b, Rad51c, and Rad51d genes was found after HOXA10 knockdown (Figure ).
+('downregulation of Rad51b', 'was found after', 'HOXA10 knockdown')
+
+Next, the formation of γ-H2AX at the site of double-strand DNA damage was checked.
+
+The kinetics of γ-H2AX foci is a well-accepted surrogate marker of the function of the HR system, which repairs DNA-double strand breakage [].
+('kinetics of foci', 'is', 'marker of function of HR system')
+
+A significant increase in the number of γ-H2AX foci was demonstrated in iHOXA10-treated cells (Figure ), indicating that inhibition of HOXA10 impairs the HR DNA repair system, potentially keeping cancer cells from escaping death after anticancer treatment.
+('inhibition of HOXA10', 'impairs', 'HR DNA repair system')
+('increase in number of foci', 'was demonstrated in', 'cells')
+
+The apoptosis assay confirmed that a significantly increased number of cancer cells undergo apoptosis after treatment with both iHOXA10 and temozolomide (Figure ).
+('number of cancer cells', 'undergo', 'apoptosis')
+
+A. RT-PCR results after HOXA10 knockdown by siRNA.
+
+Reduced expression of Rad51b, Rad51c, and Rad51d is shown.
+
+B. Immunofluorescence image of γ-H2AX foci indicating double-strand DNA breakage.
+
+Increased numbers of γ-H2AX foci are observed with HOXA10 inhibition.
+('numbers of foci', 'are observed with', 'HOXA10 inhibition')
+
+C. Annexin V apoptosis assay shows a significant increase in apoptosis in the cancer cell lines by HOXA10 inhibition in combination with temozolomide.
+('C. Annexin V apoptosis assay', 'shows', 'increase in apoptosis in cancer cell lines')
+
+DISCUSSION
+
+Homeobox genes are essential developmental regulators, some of which are normally expressed during embryogenesis but are frequently up-regulated in cancer cells [].
+('Homeobox genes', 'are', 'regulators')
+
+In the normal adult brain, most HOX genes are not expressed at all or are expressed at very low levels [].
+('genes', 'are not expressed at', 'all')
+('genes', 'are expressed at', 'levels')
+
+However, reports have demonstrated increased expression of HOX genes in brain tumors as well as other cancers from various organs [, -].
+('reports', 'have demonstrated', 'expression of HOX genes')
+
+Murat et al. reported coordinated data of HOX genes and treatment resistance in GBM samples [].
+
+They found that high HOXA10 expression was predictive of resistance of treatment, including TMZ treatment, independent of the MGMT methylation status of the tumor [].
+('HOXA10 expression', 'was predictive of', 'resistance of treatment')
+
+The HOX genes aberrantly expressed in cancer cells are considered to be tumor modulators rather than tumor suppressor genes or oncogenes [].
+
+Recent studies concerning the functional analysis of HOX genes in glioblastoma also corroborate this assertion [, ].
+('studies concerning analysis of HOX genes', 'corroborate', 'assertion')
+
+Costa et al. demonstrated that HOXA9 plays oncogenic effects in GBM, such as inhibiting apoptosis and increasing cell proliferation, both of which can be reversed by inhibiting the PI3K pathway through an epigenetic mechanism involving histone H3K27 trimethylation [].
+
+They also showed that HOXA9 is an independent negative prognostic factor of survival; interestingly, HOXA9 expression remained a valid prognostic factor in the methylated MGMT promoter subgroup [].
+('HOXA9 expression', 'remained', 'factor in MGMT promoter subgroup')
+
+They suggested that the suppression of oncogenic HOXA expression by mTOR- or PI3K-targeted therapies can be a possible anticancer therapy for GBM patients [].
+('suppression of HOXA expression', 'be', 'therapy for GBM patients')
+
+Gaspar et al. reported a similar study with a more specific focus on treatment resistance [].
+
+They found high expression levels of the HOXA9/HOXA10 genes in pediatric GBM patient samples as well as a TMZ-resistant pediatric GBM cell line; high HOXA9/HOXA10 levels were related to shorter survival [].
+('HOXA9/HOXA10 levels', 'were related to', 'survival')
+
+Temozolomide resistance in the high HOXA9/HOXA10-expressing GBM cell line was independent of MGMT status, and the PI3K pathway was considered to be an upstream regulator of HOX genes that can be targeted to overcome the resistance [].
+('Temozolomide resistance in GBM cell line', 'was independent of', 'MGMT status')
+('Temozolomide resistance in GBM cell line', 'was considered to regulator of', 'HOX genes')
+('PI3K pathway', 'was considered to regulator of', 'HOX genes')
+
+However, neither study investigated the downstream mechanism of temozolomide resistance induced by HOX genes.
+('study', 'investigated', 'mechanism of temozolomide resistance induced by HOX genes')
+
+Identification of HOXA10-regulated genes in LN18 cells
+
+HOXA10-silencing siRNA versus control siRNA transduced cells are compared using Affymetrix GeneChip Human Gene 1.0ST Arrays.
+('siRNA', 'are compared using', 'Affymetrix GeneChip Human Gene Arrays')
+
+Probe sets with fold-changes of more than 2-fold are shown (3 up and 54 down probe sets).
+
+In summary, HOXA10 induces transcription of EGR1, which sequentially results in PTEN expression.
+
+PTEN in the nucleus then acts as a positive transcriptional regulator of Rad51 paralogs, which are essential for the maintenance of the HR DNA repair system, which can protect cancer cells from temozolomide-induced cytotoxicity.
+('PTEN in nucleus', 'acts as', 'regulator of Rad51 paralogs')
+
+Thus, inhibition of HOXA10 can downregulate EGR1, PTEN, and Rad51 paralogs in serial order to interfere with the HR system of cancer cells, making the cancer cell more vulnerable to temozolomide treatment.
+('inhibition of HOXA10', 'can downregulate', 'EGR1 PTEN Rad51 paralogs')
+
+These processes occur at the nuclear level, and thus, the inhibition of HOXA10 does not affect the tumor suppressor function of PTEN that occurs in the cytoplasm.
+('processes', 'occur at', 'level')
+('processes', 'does not affect', 'tumor suppressor function of PTEN')
+('inhibition of HOXA10', 'does not affect', 'tumor suppressor function of PTEN')
+
+Studies have proposed novel nuclear functions of PTEN, including transcription regulation, other than its classical role of repressing the PI3K/Akt pathway [, , ].
+('Studies', 'have proposed', 'functions of PTEN')
+
+McEllin et al. have also shown that PTEN has a novel nuclear function of transcriptional regulation of the Rad51 gene [].
+('PTEN', 'has', 'function of regulation of Rad51 gene')
+
+They also mentioned that downregulation of HR due to PTEN loss would result in sensitivity to DNA alkylating agents or PARP inhibitors [].
+('downregulation of HR', 'would result in', 'sensitivity to DNA alkylating agents')
+
+The role of EGR1 as a mediator of PTEN regulation has been proposed in multiple studies [-, ].
+('role of EGR1', 'has been proposed in', 'studies')
+
+The PTEN pathway is regulated at multiple different levels.
+('PTEN pathway', 'is regulated at', 'levels')
+
+Among them, p53, IGF2, PPARγ, and EGR1 are molecules that can directly act on the promoter of PTEN to activate transcription [].
+
+Taken together, all the above lines of evidence, including our results, support the integrity of the EGR1-PTEN-Rad51 axis for HR system regulation initiated by HOXA10.
+('lines of evidence', 'support', 'integrity of axis')
+
+TMZ has been reported to be a strong double-strand DNA break inducer with a potency more than 10-fold that of ionizing radiation [].
+('TMZ', 'has been reported to inducer with', 'potency')
+
+Although studies have indicated that molecules comprising the HR system can be potential modulators of temozolomide cytotoxicity, the importance of the HR system for temozolomide resistance was not highlighted until recently [-].
+('molecules comprising HR system', 'be', 'modulators of temozolomide cytotoxicity')
+
+Therefore, the status of HR system in cancer cells may likely be used a biomarker or target to determine the clinical response to TMZ treatment.
+('status of HR system', 'may be used', 'biomarker target')
+
+Moreover, it is also important to consider the MGMT status together with the HR system status because the concepts of oncogenic addiction and synthetic lethality can be applied [].
+
+For example, the possibility exists for the augmentation of MMR and the HR system in cancer cells with MGMT in an inactive state, such as in GBM with a methylated MGMT promoter, which has potential to interfere with TMZ cytotoxicity.
+('possibility', 'exists for', 'augmentation of MMR')
+
+In that case, inhibition of the HR system itself may show an enhanced anticancer effect through sensitization to TMZ treatment.
+('inhibition of HR system', 'may show', 'effect')
+
+Our study indicates that the HOXA10 can be a good therapeutic target as well as a biomarker to overcome TMZ resistance in the management of GBM patients.
+
+MATERIALS AND METHODS
+
+Cell lines
+
+The human glioma LN18 and LN229 cell lines were obtained and cultured in DMEM containing 10% fetal bovine serum and 5% antibiotics (streptomycin) in a humidified atmosphere of 5% CO2 and 95% air at 37°C.
+
+Both cell lines express wild-type phosphatase and tensin homolog (PTEN) as described previously [].
+('cell lines', 'express', 'phosphatase tensin homolog')
+
+We performed methylation-specific polymerase chain reaction (MSP) to confirm the methylation status of the MGMT promoter after DNA isolation and bisulfite treatment in these cell lines as described previously [].
+
+mRNA expression
+
+The primers used were designed using the primer-BLAST tool available on-line (http://www.ncbi.nlm.nih.gov/tools/primer-blast/).
+('primers used', 'were designed using', 'tool')
+
+The primer sequence of HOXA10, EGR1, PTEN, Rad51b, Rad51c, Rad51d, and GAPDH are summarized (Table ).
+
+Using these primers, reverse transcription-polymerase chain reaction (RT-PCR) was performed to evaluate their expression.
+('chain reaction', 'was performed to evaluate', 'expression')
+
+Cell lines were lysed with TRIzol (Life technologies), and RNA isolation was performed using an RNeasy Mini Kit (QIAGEN, #74104).
+('Cell lines', 'were lysed with', 'TRIzol')
+('Cell lines', 'was performed using', 'RNeasy Mini Kit')
+('RNA isolation', 'was performed using', 'RNeasy Mini Kit')
+
+Total RNA was treated with DNase and then quantified by spectrophotometry.
+('RNA', 'was treated with', 'DNase')
+('RNA', 'quantified by', 'spectrophotometry')
+
+Additionally, cDNA was synthesized from 1 µg of total RNA using a reverse transcription kit (QIAGEN, #205311) according to the manufacturer's procedure.
+('cDNA', 'was synthesized from', 'ug of RNA')
+
+The RT-PCR reaction was carried out for 35 cycles, comprising 95°C for 5 min, 95°C for 30 sec, and 58°C for 30 sec with each primer set.
+('reaction', 'was carried comprising', 'deg C')
+
+RT-PCR products were resolved by 2% agarose gel electrophoresis, and the bands were quantified using image analyzing software (ImageJ v1.47; http://rsb.info.nih.gov/ij/).
+('products', 'were resolved by', 'agarose gel electrophoresis')
+('products', 'were quantified using', 'image analyzing software')
+('bands', 'were quantified using', 'image analyzing software')
+
+RNA interference
+
+For small interfering RNA (siRNA) experiments, commercially available sequences targeting HOXA10 (iHOX; Sigma Aldrich, #SASI_Hs01_00172491) and PTEN (iPTEN; Dharmacon, #L-003023-00-0005) as well as nontargeting control siRNAs (Dharmacon, #D-001610-01-05) were used.
+
+At 70–80% confluence, the cells were transfected with siRNAs at the most efficient transfection condition determined by the NEON® Transfection system (Life Technologies, #MPK5000).
+('confluence', 'were transfected with', 'siRNAs')
+
+The cells were cultured in media without antibiotics to increase the siRNA transfection efficiency for 24 hours.
+('cells', 'were cultured in', 'media')
+
+Drug treatment and cell viability analysis
+
+Normal and transfected cells were grown on 96-well plates at a density of 4×103 cells per well for 24 hours.
+('cells', 'were grown on', 'plates')
+
+Temozolomide (TMZ; Enzo, #420-044-M100) and O6-benzylguanine (O6-BG; Sigma Aldrich, #B2292-50MG) were treated with a final concentration of 1000 µg/ml and 300 µg/ml for 24 hours, respectively.
+('Temozolomide', 'were treated with', 'concentration of ug')
+
+Cell viability analysis was performed using a Colorimetric Cell Counting kit-8 (CCK; Dojindo Molecular Technologies).
+('Cell viability analysis', 'was performed using', 'Colorimetric Cell Counting')
+
+Quantification of viable cells was performed by the reading of ultraviolet (UV) absorption spectra at 450 nm on a microplate 2 hours after adding 10 µl of CCK solution per well according to the manufacturer's instructions.
+('Quantification of cells', 'was performed by', 'reading of ultraviolet absorption spectra')
+
+All experiments were conducted in triplicate.
+('experiments', 'were conducted in', 'triplicate')
+
+Gene expression profiling
+
+Samples of the LN18 cell line transduced with siHOXA10 as well as control siRNA for 24 hours were analyzed using Affymetrix GeneChip Human Gene 1.0ST Arrays (Affymetrix) to identify the gene expression changes before and after HOXA10 knockdown.
+('Samples of LN18 cell line transduced with siHOXA10', 'were analyzed using', 'Affymetrix GeneChip Human Gene Arrays')
+
+Expression data were normalized using the robust multi-array average (RMA) method.
+('Expression data', 'were normalized using', 'average method')
+
+Affymetrix Expression Console Version 1.1 (Affymetrix) was used to compare the group signals, and data were log-transformed (base 2) for parametric analysis.
+('Affymetrix Expression Console Version', 'was used to compare', 'group signals')
+
+Differentially expressed genes were identified using significance analysis of microarrays (SAM) with the R package ‘samr’ (R 2.11.1).
+('genes', 'were identified using', 'significance analysis of microarrays')
+
+Protein detection
+
+Whole protein extracts of the cells for western blotting were prepared using PRO-PREP lysis buffer (Intron, #17081), and protein concentrations were determined using the BCA protein assay (Thermo Fisher Scientific, #23227).
+('protein extracts of cells', 'were prepared using', 'lysis buffer')
+('protein extracts of cells', 'were determined using', 'BCA protein assay')
+('protein concentrations', 'were determined using', 'BCA protein assay')
+
+Proteins were separated by 10% SDS-PAGE, blotted onto nitrocellulose membranes, and then probed with antibodies against total AKT (Genetex, #GTX121937, 1:3000 dilution), phosphorylated AKT (Genetex #GTX61708, 1:2000 dilution), total PTEN (Genetex, #GTX101025, 1:500 dilution), and phosphorylated PTEN (Genetex, #GTX61780, 1:1000 dilution).
+('Proteins', 'probed with', 'antibodies against AKT')
+
+The membranes were then incubated with a goat anti-rabbit IgG secondary antibody (Jackson, #003318367, 1:4000 dilution) for 1 hour.
+('membranes', 'were incubated with', 'goat IgG antibody')
+
+The membranes were incubated in ECL-prime solution (GE Healthcare Amersham, #RPN2232) in the dark for 1 minute and then exposed under a fluorchemHD2 (Cell biosciences) for visualization.
+('membranes', 'were incubated in', 'solution')
+('membranes', 'exposed under', 'fluorchemHD2')
+
+DNA double-strand break assay
+
+The DNA double-strand break (DSB) rates were assessed by quantifying the rates of γ-H2AX foci.
+('break rates', 'were assessed by', 'quantifying rates of foci')
+
+Approximately 5×104 cells were seeded on coverslips after drug treatment and were cultured overnight in a 37°C incubator without antibiotics.
+('x cells', 'were seeded on', 'coverslips')
+('x cells', 'were cultured', 'overnight in deg C incubator without antibiotics')
+
+The following day, cells were fixed with 100% cold methanol for 5 minutes and then permeabilized with 0.25% PBST for 20 minutes.
+('cells', 'were fixed with', 'methanol')
+
+Next, the cells were incubated in 5% skim milk to block non-specific protein-protein interactions and immunostained with a γ-H2AX primary antibody (Abcam, #ab22551) and an FITC-conjugated rabbit anti-mouse secondary antibody (Invitrogen, #A11029).
+('cells', 'were incubated in', 'skim milk')
+
+The number of γ-H2AX foci with DAPI was determined using a fluorescence microscope (100× objective).
+('number of foci with DAPI', 'was determined using', 'fluorescence microscope')
+
+Disrupted cells were excluded from the analysis.
+('cells', 'were excluded from', 'analysis')
+
+Foci counting was performed for an average of 50 cells.
+('Foci counting', 'was performed for', 'average of cells')
+
+The mean number of foci per cell was scored, and the standard error of the mean was calculated.
+
+Apoptosis assay
+
+For apoptosis assays, cells were harvested and suspended in annexin V-binding buffer (BD Biosciences, #556570) at a concentration of 1×105 cells/100 µl.
+
+Next, 5 µl of annexin V-FITC and 5 µl of propidium iodide (PI) were added to each sample, and the samples were incubated in the dark at room temperature for 15 min.
+('ul', 'were added to', 'sample')
+('ul', 'were incubated in', 'dark')
+('samples', 'were incubated in', 'dark')
+
+The samples were run through a FACScan flow cytometer (BD-FACSCalibur-2, #633488), and annexin V positive and PI negative cells were designated apoptotic.
+('samples', 'were run through', 'FACScan flow cytometer')
+
+Statistical analysis
+
+ANOVA and Student's t test were used to identify significant differences in the cell death rate, DSB assay, and apoptosis experiments.
+('ANOVA', 'were used to identify', 'differences in cell death rate DSB assay apoptosis experiments')
+('t test', 'were used to identify', 'differences in cell death rate DSB assay apoptosis experiments')
+
+The results were analyzed using IBM SPSS Statistics software (version 19.0; SPSS, Inc.).
+('results', 'were analyzed using', 'IBM SPSS Statistics software')
+
+Data are presented as the mean ± standard deviation (SD) of three or more separate experiments, and a P value of 0.05 was considered to be statistically significant.
+('Data', 'are presented as', 'deviation')
+
+This research was supported by the Basic Science Research Program through the National Research Foundation of Korea (NRF) funded by the Ministry of Education, Science and Technology (2012R1A1A2003779) and by a grant from the Seoul National University Research Fund (800-20130069).
+('research', 'was supported by', 'Science Research Program')
+

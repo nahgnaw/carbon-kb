@@ -1,0 +1,903 @@
+abelsonite
+abiotic hydrocarbon synthesis
+accretion
+accumulation chamber method
+acetate
+acetone
+acetyl-CoA pathway
+achondrites
+acidophiles
+Actinobacteria
+asymptotic giant branch stars
+AGB stars
+albite glass
+albite melts
+algae
+alkalinity
+alkaliphiles
+alkanes
+alkylthiols
+Alphaproteobacteria
+amino acids
+anaerobic methanotrophic archaea
+ANME
+ancylite group
+andesite
+ankerite
+annealing experiments
+anthracite
+anthropogenic processes
+Aquificae
+Aquificales spp.
+aragonite
+aragonite group carbonates
+arc volcanism
+archaea
+Archean Eon
+Argon isotopic dating
+Argyle diamond mine
+artinite
+Atlantis Massif
+attenuated total reflection FTIR
+ATR-FTIR
+aurichalcite
+AVIRIS hyperspectral imagers
+Avorinskii Placer
+awaruite
+azurite
+Bacillus subtilis
+bacteria
+Bacteroidetes
+Banda Sunda arc
+banded iron formations
+BIF
+barophily
+basalt melts
+bastnasite group
+bct-C4
+β-track autoradiography
+Betaproteobacteria
+Big Bang
+membranes
+nonlamellar phases
+biofilms
+biogeochemical cycles
+biogeophysics
+biohydrometallurgy
+biomarkers
+biomass
+biomineralization
+bioremediation
+biosphere
+bituminous coal
+black smokers
+bolide impacts
+brachyspira spp.
+brucite
+bulk silicate Earth
+BSE
+burial metamorphism
+Burkholderiales
+butene
+butschliite
+caklinsite
+calc-silicate skarns
+calcite
+calcite-aragonite sea intervals
+calcite group carbonates
+calcium carbonates
+Calvin-Benson-Bassham pathway
+CBB pathway
+Cambrian Period
+capsid
+carbides
+carbon dioxide
+abiotic hydrocarbon formation
+spectroscopic analysis
+C-H-O-N-S fluids
+carbon isotopes
+abiogenesis
+biogenesis
+carbon K-edge spectroscopy
+carbon monoxide
+C-O-H fluid
+C-O-H melts
+carbonaceous chondrites
+carbonaceous dust
+carbonado diamonds
+carbonate glasses
+carbonate groups
+carbonate melts
+carbonated peridotite solidus
+carbonates
+equilibrium speciation
+rhombohedral
+serpentinization
+carbonatites
+carbonic acid
+carbonic anhydrase
+carbothermal residua
+carborundum
+carboxylic acids
+abiotic hydrocarbon
+carbynes
+Carnobacterium sp.
+catalysis
+enzymes
+cathodoluminescence
+Caudovirales
+cellular membranes
+cementite
+cerussite
+Central Indian Ridge
+Chapman-Enskog kinetic theory approach
+charnockitization
+allotropes
+chemolithoautotrophs
+chibaite
+chlorophyll
+CHNOSZ program
+cholesterol
+chondrites
+chondritic Earth model
+chromite
+chromium-in-Cpx barometer
+Chromohalobacter spp.
+CI chondrites
+Clapeyron equation
+clathrate hydrates
+clay minerals
+CLAYFF force field
+Clifford’s Rule
+clinopyroxene
+closed-chamber method
+Clostridiales
+Clostridium perfringens
+cloudy diamonds
+CNO cycle
+coal
+coated diamonds
+coesite
+cohenite
+Collembola
+Colwellia sp.
+comets
+compound eyes
+computational sciences
+computed tomography
+codensation sequence
+condensing effect
+constant-diversity model
+contamination
+continental margins
+continents
+convection
+cordylite
+density and phase diagram
+equilibrium fractionation
+CORKs
+cratons
+Crenarchaeota
+CRISPR
+clustered regulary interspaced short palindromic repeats
+critical depletion effect
+crust
+crystallization
+cultivation methods
+cyanobacteria
+cytoplasm
+dacite glass
+Darwinian threshold
+DCDD
+dolomite-coesite-diopside-diamond
+DCO buffer
+diamond-carbon-oxygen buffer
+decarboxylation reactions
+decompression melting
+deep-Earth gas hypothesis
+Deep Hot Biosphere theory
+degassing
+volcanic emissions
+degree of polymerization
+dehalorespiration
+Deinococcus spp.
+Deltaproteobacteriaa
+dense molecular clouds
+depleted mantle
+desorption
+Desulfotomaculum
+Desulfovibrio spp.
+deuterium burning
+diagenesis
+diamond anvil cells
+DAC
+diamond stability field
+diamondite
+diamonds
+nanodiamonds
+geodynamics
+carbon motility
+carbon reservoirs
+lithospheric
+monocrystalline
+polycrystalline
+diffusion
+diopsides
+dipicolinic acid concentrations
+deoxyribonucleic acid
+DNA
+DNA libraries
+dolomite group carbonates
+dolomites
+dry ice
+dsrAB genes
+E-type diamonds
+East African Carbonatite Line
+EACL
+East Pacific Rise
+electron backscatter diffraction
+EBSD
+eddy correlation
+eclogites
+oxygen fugacity
+electron energy loss spectroscopy
+EELS
+eicosapentaenoic acid
+EPA
+elastic methods
+electrical conductivity
+electrochemical gradients
+electron acceptors
+electron diffraction
+electron donors
+electronegativity
+near-edge structures
+enstatite-magnesite-olivine-diamond emulsification
+endospore abundance
+enstatite-in-Cpx thermometer
+Enterococus faecalis
+epigenetic inclusions
+Epsilonproteobacteria
+escape hypothesis
+Escherichia coli
+Eukarya
+Eureka diamond
+Euryarchaeota
+eutectic fluids
+evenkite
+evolution
+galactic chemical
+evolutionary metadynamics
+excess mantle carbon paradox
+extracellular polymeric substances
+Faint Young Sun Paradox
+fayalite-magnetite-quartz benchmark
+FMQ benchmark
+fermentation
+Fermi diad
+focused ion beam
+FIB
+fibrous diamonds
+Firmicutes
+Fischer-Tropsch synthesis
+Fischer-Tropsch-type synthesis
+FTT synthesis
+fluorescence in situ hybridization
+fitness factors
+flagellar motility
+flow through in situ reactors
+FTISR
+fluid-rock interfaces
+fore-arc degassing
+formate
+formic acid
+fossil fuels
+fossil record
+Fourier transform infrared spectroscopy
+FTIR
+carbon dioxide diffusivity
+carbon speciation
+volcanic carbon dioxide emissions
+framboids
+fugacity
+fullerenes
+fungi
+Fuselloviridae
+galactic chemical evolution
+GCE
+Galathea expedition
+Gammaproteobacteria
+garnet-olivine-orthopyroxene
+GOO
+garnet peridotite xenoliths
+gas hydrates
+gramicidin D
+gene transfer
+gene transfer agents
+GTA
+generalized gradient approximation
+GGA
+generalized transduction
+genomics
+geochemical evolution
+meta-generalized gradient approximation
+granodiorite-granite-monzogranite
+GGM
+Gibbs free energy
+Gibbs-Thomson equation
+Giggenbach bottle sampling
+glaciation
+glassy carbon
+Great Oxidation Event
+GOE
+goethite
+gradients
+Grand Tack model
+granitization
+granitoids
+graphene
+graphite
+graphite-to-diamond transition
+graphite-to-lonsdaleite transition
+gregoryite
+high-angle annular dark-field STEM
+HAADF STEM
+Hadean Eon
+Halley comet
+hallmark genes
+Halobacterium spp.
+harzburgitic garnet
+Hawley equation
+haxonite
+high-temperature configuration-space exploration method
+HCTE method
+heap leach operations
+helium
+helium burning
+herringbone calcite
+heterotrophs
+high-resolution transmission electron microscopy
+HRTEM
+highly-siderophile elements
+HSEs
+HIMU-EM1
+homeostasis
+homogenization
+HorA
+hot springs
+huanghoite
+huntite
+hydrocarbons
+hydrogen burning
+hydromagnesite
+hydrotalcite
+hydrothermal circulation
+hydrothermal conditions
+hydrothermal vents
+hydrous carbonates
+hydroxyapatite
+hyperspectral radiometry
+interplanetary dust particles
+IDPs
+ikaite
+impact diamonds
+impact shock metamorphism
+in situ flow cells
+in situ mining
+infectivity paradox
+infrared spectroscopy
+ingassing
+insoluble organic matter
+IOM
+integrases
+Integrated Ocean Drilling Program
+IODP
+interstellar medium
+ISM
+ionic liquids
+iridium anomalies
+iron carbides
+iron-carbon alloy
+graphite fractionation
+iron carbonates
+iron silicides
+iron sulfide bubbles
+isotope ratio mass spectroscopy
+IRMS
+isotopic fractionation
+isotopic signatures
+isovite
+jadeite glass
+Jouravskite
+Jupiter
+Jurassic Period
+Kaapvaal craton
+Kairei Field
+Katmai-Novarupta volcano emission
+keels
+Kerguelen Archipelago
+keystone taxa
+Kimberley block
+kimberlites
+komatiite
+Krakatua volcano emission
+kratochvilite
+kutnohorite
+laser ablation inductively coupled plasma mass spectrometry
+LA-ICPMS
+Lactobacillus plantarum
+Lactococcus lactis
+Lambert Beer law
+lamellar lipids
+lamproites
+lamprophyres
+lanthanite group
+Late Veneer
+latent redox systems
+lateral flagellum gene cluster
+lateral gene transfer
+lawsonite
+Lost City Hydrothermal Field
+LCHF
+local density approximation approaches
+light rare earth elements
+LREE
+lignin
+lignite
+limestone
+lipids
+lithium burning
+lithoautotrophs
+lithosphere
+lixiviant fluid
+LmrA
+Logatchev vent field
+long-chain carboxylic acids
+lonsdaleite
+Lost City Methosarcinales
+low-field NMR
+Luobusha ophiolite complex
+lysogenic viruses
+lytic viruses
+M carbon
+magic angle spinning method
+MAS method
+magma ocean
+magmas
+magnesite
+magnesium
+magnesium carbonate
+magnetite
+majorite
+malachite
+manasseite
+manganese carbonate
+mantle
+mantle keels
+Marianas Forearc
+Mars
+mass angle spinning NMR
+MAS NMR
+mass spectrometry
+molten carbon fuel cells
+MCFC
+melanophlogite
+melt inclusion measurements
+melting
+melts
+Mengyin kimberlite field
+Mesoproterozoic Era
+Mesozoic Era
+metabolism
+metadynamics
+metagenomic analysis
+metal-silicate fractionation
+metamorphism
+metasomatism
+metastability
+metastable oxidants
+meteorites
+micrometeorites
+methane
+methane hydrates
+methane ice
+Methanococcales
+methanogens
+Methanopyrus kandleri
+methanotrophs
+mordenite framework inverted
+MFI
+microbial zombies
+microdiamonds
+microorganisms
+microRaman spectroscopy
+Mid-Atlantic Ridge
+Mid-Cayman Rise
+mid-ocean ridge basalt
+MORB
+mid-ocean ridges
+MOR
+Milnesium tardigradum
+Mimivirus
+mineral evolution
+minrecordite
+miscibility
+moissanite
+molar-tooth crystal structure
+molar volume
+molecular biomarkers
+molecular clouds
+molecular dynamics studies
+molybdenum
+monocrystalline diamonds
+monohydrocalcite
+Moritella spp.
+Mponeng Mine
+mud volcanoes
+Murad-Gubbins model
+muramic acid concentrations
+Myoviridae
+nanopores
+nanoscale samples
+nanotubes
+nanoXCT
+X-ray computed tomography
+natrocarbonatite
+NBO/T parameter
+ELNES
+nematodes
+Neoarchean Era
+neon
+neutron scattering
+Nice model
+NiFe-alloys
+nifH genes
+niobium
+niobocarbide
+nitrogen
+nitrogenase genes
+niveolanite
+nuclear magnetic resonance
+NMR
+noble gases
+North Pacific Gyre
+nuclear waste storage
+nucleation
+nucleosynthesis
+nutrient sources
+serpentinite settings
+nyerereite
+oligarchic growth
+olivines
+ophiolites
+optical activity
+hydrocarbon origins
+orbital migration
+organic molecules
+organosulfur pathways
+orthopyroxene
+oscillator model theory
+outgassing
+oxalates
+oxidation
+oxidation states
+redox systems
+oxygen
+oxygen fugacities
+oxygen isotopes
+polycyclic aromatic hydrocarbons
+PAH
+palladium/silver ratio
+Pangea
+panspermia
+parasites
+partition function
+polymerase chain reaction
+PCR
+pegmatites
+pelagic marine microorganisms
+pentlandite
+peptides
+percolative fractionation
+peridotic melts
+peridotites
+diamond carriers
+diamond inclusions
+syngenesis
+permafrost thawing
+permeability
+perovskite
+polar flagellum cluster
+pulsed field gradient NMR
+PFG-NMR
+phages
+Phalaborwa carbonatite
+Phanerozoic Eon
+phase transitions
+metastable
+ultrahigh-pressure
+phenotype switching
+phonolite glass
+phosphate pumps
+phosphates
+phosphatidylcholines
+phosphides
+phosphorous
+photoautotrophs
+Photobacterium spp.
+photosynthesis
+piezophilic bacteria
+Pilbara Craton
+planetary cycles
+planetary embryos
+planetesimals
+plate tectonics
+tectonics
+plumes
+proton motive force
+PMF
+pmoA genes
+Podoviridae
+polycrystalline diamonds
+polymerization
+polypeptides
+polyunsaturated fatty acids
+PUFA
+Popigai impact crater
+pores
+Precambrian Era
+Precambrian shields
+Preliminary Earth Reference Model
+PREM
+pressure-temperature stability fields
+primary carbonatites
+primary igneous carbonatite
+primordial origins of carbon
+Prochlorococcus spp.
+propane
+prophage
+proteins
+Proterozoic Era
+protogenic inclusions
+protomolecule assembly
+protoplanetary disks
+protosolar nebula
+Pseudomonas aeruginosa
+Psychromonas sp.
+CNPT-3
+Psychromonas spp.
+psychrophilic bacteria
+psychrotolerant bacteria
+Puerto Rico Trench
+push-pull tests
+Pyrococcus spp.
+pyrolite
+pyrolysis experiments
+pyroxenes
+pyrrhotite
+quasielastic neutron scattering
+QENS
+qusongite
+radiolytic splitting
+Rainbow vent field
+rare earth elements
+REE
+rarefaction curves
+Rayleigh isotopic fractionation
+Rayleigh-Taylor instabilities
+RecA protein
+recombinases
+recombination
+red giant branch stars
+redox melting
+reduction hypothesis
+remediation
+remnant pressure
+residual pressure
+respiration
+retrograde metamorphism
+reverse tricarboxylic acid cycle
+rhenium-osmium isotopic dating
+Rhizobiales
+Rhizobium radiobacter
+Rhodobacter spp.
+rhodochrosite
+Rhodococcus spp.
+rhombohedral carbonates
+rhyolite melts
+rift volcanoes
+ribonucleic acid
+RNA
+RNA viruses
+RNA world theory
+Rodinia supercontinent
+roll front development
+Roseobacter sp.
+RpoE sigma factor
+RuBisCO
+Rudiviridae
+ruthenium
+Sabatier-type reactions
+Saccharomyces cerevisae
+Samail ophiolite
+small-angle neutron scattering
+SANS
+Saturn
+scanning electron microscopy
+SEM
+scanning transmission electron microscopy
+STEM
+scanning transmission X-ray microscopy
+STXM
+SCIMPIs
+secondary ion mass spectroscopy
+SIMS
+seismic activity
+self-replicating networks
+sequestration
+sum-frequency generation
+SFG
+shale
+shale gas
+Shewanella spp.
+shock conditions
+shock metamorphism
+SiC
+siderite-ankerite deposition
+siderites
+siderophile elements
+Sierra Leone
+silica
+silica aerogels
+silica-based pores
+silicate carbonates
+silicate glasses
+silicate melts
+silicates
+silicon carbide
+single-crystal X-ray diffraction analysis
+single-stranded DNA viruses
+ssDNA viruses
+Siphoviridae
+smectites
+smithsonite
+snow line
+snowball Earth
+sodium chloride
+solar system
+solar wind
+solid-ordered phase
+solubility
+soluble organic matter
+SOM
+soot line
+sorption
+sound velocity measurements
+Southwest Indian Ridge
+specialized transduction
+speciation
+carbon K-edge
+isotope ratio mass
+X-ray energy dispersive
+XEDS
+spontaneous polymerization
+Sputnik virus
+Staphylococcus spp.
+Star of South Africa diamond
+Stardust mission
+Steelmaking data sourcebook
+stellar envelopes
+Stichtite
+strain birefringence analysis
+stromatolites
+Stromboli volcano
+strontianite
+sub-lithospheric diamonds
+subduction
+subduction zones
+sulfate reducers
+sulfides
+Sulfolobus spp.
+sulfur
+supercontinent formation
+superhard graphite
+syenite-granite
+synchysite
+Synechococcus spp.
+syngenetic inclusions
+syntrophy
+Tambora volcano eruption
+Tanco pegmatite
+tantalocarbide
+tar line
+transmission electron microscopy
+TEM
+ternary diagrams
+tetracarbonates
+tetrahedral coordination
+Thaumarchaea
+thermal decomposition
+thermobarometry
+thermodynamics
+Thiomicrospira crunogena
+tholeiites
+tidal forces
+Titan
+tonalite-trondhjemite-granodiorite
+TTG
+tongbaite
+ToxR
+trace elements
+tracer gases
+transduction
+transition state ensemble
+TSE
+transition zone
+transposases
+trapping
+travertine
+trigonal coordination
+trilobites
+Tse-Klein-McDonald model
+tungsten
+type 2 migration
+unmanned aerial vehicles
+UAV
+UHPM
+ultra-high-pressure metamorphic
+ur-minerals
+Uranium-lead dating
+uranyl carbonates
+ureilites
+uricite
+valeric acid
+Vanuatu island chain
+vapor-liquid equilibria
+vaterite
+Venetia kimberlite
+Vesta
+Vibrio cholerae
+viral shunt
+virus first hypothesis
+virus-like RNA molecules
+viscosity
+volatile elements
+VOLCALPUFF model
+volcanic lakes
+volcanism
+W carbon
+waste repositories
+water maximum
+websterites
+weddellite
+white dwarfs
+Wild 2 comet
+Wilson Cycle
+witherite
+Witwatersrand Basin
+WM buffer
+wustite-magnetite buffer
+Wolf-Rayet stars
+WR stars
+Wood-Ljungdahl pathway
+X carbon
+XCT
+X-ray crystallography
+X-ray diffraction studies
+XRD studies
+X-ray energy dispersive spectroscopy
+X-ray Raman spectroscopy
+XRS
+xenon
+Xenon-HL
+xenon paradox
+Y carbon
+yarlongite
+yimengite
+Z carbon
+zabuyelite
+zemkorite
+zeolites
+Zimbabwe craton
+zircon
+Zygosaccharomyces bailii

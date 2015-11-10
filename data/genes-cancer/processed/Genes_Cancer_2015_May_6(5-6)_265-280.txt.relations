@@ -1,0 +1,587 @@
+INTRODUCTION
+
+Prostate cancer accounts for almost one third of all cancer deaths in the United States and is the second highest cause of cancer-related death in males [].
+
+Most prostate tumours are initially androgen-dependent (AD).
+
+However, a large contingent will progress to an aggressive androgen-independent (AI) form, which are more drug-resistant and lead to increased morbidity and mortality among patients.
+('contingent', 'will progress to', 'form')
+
+Currently, prostate cancer is treated with a combination of radiotherapy, chemical castration, androgen receptor (AR) antagonists (hydroxyflutamide, bicalutamide), or inhibitors of steroidogenesis (abiraterone).
+('prostate cancer', 'is treated with', 'combination of radiotherapy')
+
+Patients treated with hydroxyflutamide or bicalutamide often suffer from severe side-effects as a result of the anti-androgenic therapy [, ], necessitating the search for novel chemotherapeutic agents with fewer deleterious effects.
+
+Moreover, it is imperative to search for novel therapeutic targets which may aid the development of a new generation of drugs effective in the elimination of AI prostate tumours.
+
+3,3′-Diindolylmethane (DIM) is a natural small molecule produced in the stomach after ingestion of vegetables of the Brassica family containing high amounts of indole-3-carbinol (I3C).
+('Diindolylmethane', 'is', 'molecule produced in stomach')
+
+I3C is converted via acid-catalyzed reactions in the stomach to various condensation products, of which DIM is considered its most biologically active metabolite [, ].
+
+DIM has been studied extensively as an anticancer agent due to its ability to inhibit the growth of a multitude of cancer cell types in vitro and in vivo [, ] and has produced positive responses in clinical trials for the treatment of prostate cancer when applied in an absorption-enhanced formulation [].
+
+DIM affects a number of distinct yet overlapping pathways, leading to the inhibition of cancer cell proliferation.
+('DIM', 'affects', 'number of distinct pathways leading to inhibition of cancer cell proliferation')
+
+For example, DIM down-regulates AR transcriptional activity, thereby reducing AR-mediated gene expression [-].
+
+DIM also inhibits pro-survival cell signaling pathways such as phosphatidylinositide 3-kinase (PI3K), Akt, mammalian target of rapamycin (mTOR) and c-Met, and also activates pro-apoptotic pathways such as Hippo and glycogen synthase kinase 3-beta (GSK-3β), resulting in inhibition of cancer cell proliferation [-].
+('DIM', 'inhibits', 'cell signaling pathways')
+('DIM', 'activates', 'pathways')
+
+DIM activates the pro-apoptotic proteins Fas, FasL and death receptor 5 (DR5), leading to caspase-dependent apoptosis [, , , ].
+('DIM', 'activates', 'proteins')
+
+DIM also increases the intracellular flux of calcium ions, resulting in the induction of endoplasmic reticulum (ER) stress genes [-], in addition to decreasing mitochondrial function through inhibition of ATP synthase [-], which in turn induces AMP-activated protein kinase-(AMPK)-dependent autophagy [].
+('DIM', 'increases', 'flux of calcium ions')
+
+DIM also exerts effects on DNA methyltranferases, resulting in modified methylation patterns of genes involved in inflammation, cell signaling, cell motility and apoptosis [].
+('DIM', 'exerts', 'effects on DNA methyltranferases')
+
+However, the specific molecular targets that directly interact with DIM to cause ER stress, mitochondrial dysfunction, autophagy, and ultimately cell death have yet to be discerned.
+
+We have previously shown that several halogenated analogs of DIM, termed ring-DIMs, act as anti-androgenic compounds that inhibit AD proliferation of LNCaP human prostate cancer cells and induce apoptosis and necrosis of AD as well as AI prostate cancer cells with greater potencies than DIM [, ].
+('analogs of DIM termed', 'act as', 'compounds')
+
+Cell death induced only by the most potent ring-DIM, 4,4′-Br2DIM, was partially dependent on activation of caspase-3, which occurred concomitant with increases in Fas, FasL, DR4 and DR5 expression.
+
+The objective of the present study was to determine the early events that ultimately result in cell death induced by 4,4′- and 7,7′-dibromo- and dichloro-substituted ring-DIMs and DIM by determining their concentration- and time-dependent effects on mitochondrial stability, ER stress and autophagy.
+('objective of study', 'was to determine', 'events effects on stability')
+
+We also performed an in silico docking affinity analysis to identify proteins that could potentially interact with ring-DIMs and DIM.
+
+RESULTS
+
+Ring-DIMs kill LNCaP, C42B and DU145 prostate cancer cells, but not RWPE-1 immortalized normal prostate epithelial cells
+
+We tested the ability of the ring-DIMs to kill prostate cancer cells that express a DHT-responsive AR (LNCaP), a constitutively active AR (C42B) and cells lacking AR (DU145).
+
+In LNCaP and C42B cells, 4,4′-Br2DIM (IC50 = 13.1 μM, 16.7 μM, respectively), 4,4′-Cl2DIM (IC50 = 20.2 μM, 29.3), 7,7′-Br2DIM (IC50 = 19.5 μM, 25.3 μM) and 7,7′-Cl2DIM (IC50 = 15.8 μM, 25.7 μM) were all significantly more potent at killing cells than DIM (IC50 = 23.3, 46.1 μM), (Fig. ). The most cytotoxic ring-DIM, 4,4′-Br2DIM, killed AR-negative DU145 cells with the same potency as C42B cells with an IC50 of 20 μM ().
+
+At concentrations that were toxic to the prostate cancer cells neither the ring-DIMs nor DIM induced cell death in RWPE-1 cells (Fig. ).
+
+Ring-DIMs kill LNCaP and C42B prostate cancer cells, but not RPWE-1 immortalized normal prostate epithelial cells
+
+The percentage of intact LNCaP (A) and C42B (B) cells that do not have fragmented nuclei, condensed chromatin or propidium iodide staining was determined after a 24 hour exposure to increasing concentrations of 4,4′-Br2DIM, 7,7′-Br2DIM, 4,4′-Cl2DIM, 7,7′-Cl2DIM or DIM.
+('percentage of LNCaP', 'was determined after', 'hour exposure to concentrations of Br2DIM')
+
+(C) Percentage of intact RWPE-1 cells after a 48 hour exposure to the ring-DIMs or DIM.
+
+Mitochondrial dysfunction and ER stress are early events in ring-DIM induced cell death
+('dysfunction', 'are', 'events')
+('ER stress', 'are', 'events')
+
+To further investigate the mechanism of ring-DIM-induced toxicity, we looked at MMP, mitochondrial ATP generation and ER stress in response to ring-DIM exposure.
+
+After only 1 hour of exposure to the 4,4′-dihaloDIMs, MMP decreased by 36-40% in LNCaP and 54-60% in C42B cells, whereas MMP decreased by only 30% in LNCaP and 36 % in C42B cells after a 1 hour treatment with DIM.
+
+The 7,7′-dihaloDIMs (Fig. ) decreased MMP by only 15-18% in LNCaP and 16-24% in C42B cells.
+
+The observed decreases in MMP were sustained for at least 8 hours.
+('decreases in MMP', 'were sustained for', 'hours')
+
+DIM and all ring-DIMs, except 7,7′-Br2DIM, significantly decreased mitochondrial ATP generation in both cell lines by up to 80% (Fig. ). In DU145 cells treated with 4,4-Br2DIM, we observed decreases in MMP by 63% and ATP generation by 45% compared to controls ().
+('DIM', 'decreased', 'ATP generation in cell lines')
+
+Mitochondrial dysfunction and ER stress are early events in ring-DIM- and DIM-mediated prostate cancer cell death
+('dysfunction', 'are', 'events')
+('ER stress', 'are', 'events')
+
+Tetramethylrhodamine ethyl ester (TMRE) fluorescence of LNCaP (A) and C42B (B) cells after 0, 1, 4, and 8 hrs of exposure to 4,4′-Br2DIM, 7,7′-Br2DIM, 4,4′-Cl2DIM, 7,7′-Cl2DIM or DIM.
+
+Relative mitochondrial ATP levels of LNCaP (C) and C42B (D) cells treated with 5 mM 2-deoxy-D-glucose after a 1 h exposure to 4,4′-Br2DIM, 7,7′-Br2DIM, 4,4′-Cl2DIM, 7,7′-Cl2DIM or DIM.
+
+Phosphorylation of eIF2α, and levels of ER stress proteins were assayed by immunoblot of LNCaP (E) and C42B (F) cells after 0, 1, 4, and 8 hrs of exposure to 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM.
+('Phosphorylation of eIF2a', 'were assayed by', 'immunoblot of LNCaP cells')
+('levels of ER stress proteins', 'were assayed by', 'immunoblot of LNCaP cells')
+
+Treatment of LNCaP and C42B cells with 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM also caused a significant increase in the levels of expression of ER stress-related proteins CHOP and ATF4 and the phosporylation of eIF2α between 1 and 8 hours of exposure (Fig. ). These results were also observed in DU145 cells using 4,4-Br2DIM, which also increased ATF4 and CHOP levels after treatment for 1 to 8 hours ().
+('Treatment of LNCaP cells', 'caused', 'increase in levels of expression of ER proteins')
+
+Ring-DIM-induced cell death is dependent on mitochondrial dysfunction
+('cell death', 'is dependent on', 'dysfunction')
+
+We next assessed whether CsA, an inhibitor of the mitochondrial permeability transition pore, could abrogate the toxicity of cells exposed to the ring-DIMs or DIM.
+('CsA', 'could abrogate', 'toxicity of cells exposed')
+
+We found that pre-treatment with 5 μM of CsA prevented ring-DIM-mediated loss of cell viability, but did not affect DIM-induced death of LNCaP or C42B cells (Fig. ). In LNCaP and C42B cells, CsA prevented the loss of MMP caused by the 4,4′-dihaloDIMs and, to a lesser extent, DIM, but had no effect on the loss of MMP mediated by the 7,7′-dihaloDIMs (Fig. ). We confirmed that CsA also prevented 4,4′-Br2DIM-mediated cell death and loss of MMP in AI DU145 cells ().
+
+However, CsA had no effect on the phosphorylation status of eIF2α or the expression levels of CHOP and ATF4 in LNCaP or C42B cells treated with either of the three compounds (Fig. ); this was confirmed using only 4,4′- Br2DIM in DU145 cells ().
+('CsA', 'had', 'no effect')
+
+Treatment with CsA alone did not affect cell viability or eIF2α phosphorylation in LNCaP, C42B or DU145 cells (); nor did it significantly affect MMP ().
+('Treatment with CsA', 'did not affect', 'cell viability eIF2a phosphorylation')
+
+Ring-DIM mediated cell death is dependent on the mitochondrial permeability transition pore (mPTP)
+
+Percentage of intact LNCaP (A) and C42B (B) cells after a 24 h exposure to 4,4′-Br2DIM, 7,7′-Br2DIM, 4,4′-Cl2DIM, 7,7′-Cl2DIM, or DIM with or without a 4 h pre-treatment with cyclosporin A (CsA).
+
+TMRE fluorescence of LNCaP (C) or C42B (D) cells after a 4 h exposure to 4,4′-Br2DIM, 7,7′-Br2DIM, 4,4′-Cl2DIM, 7,7′-Cl2DIM, or DIM with or without a 4 h pre-treatment with cyclosporin A (CsA).
+
+Phosphorylation of eIF2α, and levels of ER stress proteins in LNCaP and C42B cell extracts after a 24 hour exposure to 4,4′-Br2DIM (E), 7,7′-Cl2DIM (F) or DIM (G) with or without a 4 hour pre-treatment with CsA.
+
+Salubrinal inhibits cell death and loss of MMP but not ER stress mediated by 4,4′-Br2DIM
+
+Salubrinal is an inhibitor of ER stress that blocks dephosphorylation of eIF2α, and we investigated the effects of this compound on the cytotoxicity of the ring-DIMs and DIM.
+('Salubrinal', 'is', 'inhibitor of ER stress')
+('Salubrinal', 'investigated', 'effects of compound')
+
+Pre-treatment of LNCaP and C42B cells with 20 μM of salubrinal inhibited cell death caused by 4,4′-dihaloDIMs, but not 7,7′-dihaloDIMs or DIM (Fig ); in DU145 cells salubrinal pre-treatment also completely prevented 4,4′-Br2DIM-induced cell death ().
+
+Salubrinal modulates mitochondrial activity in prostate cancer cells treated with 4,4′-dihaloDIMs
+
+The percentage of intact LNCaP (A) and C42B (B) cells was calculated after a 24 hour exposure to toxic concentrations of 4,4′-Br2DIM, 7,7′-Br2DIM, 4,4′-Cl2DIM, 7,7′-Cl2DIM, DIM with or without a 4 h pre-treatment with salubrinal.
+('percentage of LNCaP', 'was calculated after', 'hour exposure to concentrations of Br2DIM')
+
+TMRE fluorescence of LNCaP (C) and C42B (D) cells after a 4 hour exposure to 4,4′-Br2DIM or 4,4′-Cl2DIM with or without a 4 h pre-treatment with salubrinal.
+
+(E) Phosphorylation of eIF2α, and levels of ER stress proteins after a 24 hour exposure to 4,4′-Br2DIM with or without a 4 hour pre-treatment with salubrinal.
+
+In cells exposed to 4,4′-Br2DIM or 4,4′-Cl2DIM, pre-treatment with salubrinal attenuated the 4,4′-dihaloDIM-mediated decrease in MMP (Fig ) ().
+
+Salubrinal pre-treatment alone did not significantly affect MMP in LNCaP, C42B or DU145 cells ().
+
+Using the most toxic of the 4,4′-dihaloDIMs as prototype, the 4,4′-Br2DIM-mediated increase in phosphorylation of eIF2α was inhibited by pre-treatment with salubrinal in all three cell lines (Fig.  and ).
+
+However, in LNCaP and C42B cells, pre-treatment with salubrinal did not consistently abrogate the 4,4′-Br2DIM-induced levels of CHOP or ATF4 (Fig. ), and in DU145 cells salubrinal only partially reduced the 4,4′-Br2DIM-induced expression of these markers of ER stress ().
+
+Salubrinal alone did not affect cell viability or eIF2α phosphorylation in either of the three cell lines ().
+
+Salubrinal potentiates 7,7′-dihaloDIM- and DIM-mediated toxicity via loss of MMP
+
+Next, we asked if salubrinal could sensitize prostate cancer cells to cell death induced by the 7,7′-dihaloDIMs and DIM.
+('salubrinal', 'could sensitize', 'prostate cancer cells')
+
+Pre-treatment of LNCaP and C42B cells with salubrinal enhanced the loss of cell viability caused by concentrations of the 7,7′-dihaloDIMs or DIM that are otherwise sub-toxic (defined as all cells being intact and not visibly Hoechst- or PI-stained) in cells that are exposed to the 7,7′-dihaloDIMs alone.
+
+Loss of viability mediated by co-treatment of LNCaP or C42B cells with salubrinal and sub-toxic concentrations of 7,7′-dihaloDIMs was attenuated by pre-treatment with CsA (Fig. ). Consistent with the lack of abrogation of the cytotoxicity of DIM by CsA alone (Fig ) CsA was also incapable of abrogating the cytotoxicity of DIM that was potentiated by pre-treatment with salubrinal (Fig. )
+
+Cyclosporin A (CsA) abrogates salubrinal-mediated sensitization of prostate cancer cells to mitochondrial dysfunction using sub-toxic concentrations of 7,7′-dihaloDIMs or DIM
+('Cyclosporin A', 'abrogates using', 'sensitization of prostate cancer cells')
+
+The percentage of intact LNCaP (A) and C42B (B) cells pre-treated for 4 hours with salubrinal, salubrinal and CsA, or 0.3% DMSO, followed by a 24 hour exposure to mildly toxic concentrations of 7,7′-Br2DIM, 7,7′-Cl2DIM or DIM.
+
+TMRE fluorescence of LNCaP (C) and C42B (D) cells pre-treated for 4 hours with salubrinal and cyclosporin A (CsA), or 0.3% DMSO followed by a 4 hour exposure to 7,7′-Br2DIM or 7,7′-Cl2DIM.
+
+(E) Phosphorylation of eIF2α in C42B cell extracts after a 24 hour exposure to mildly toxic concentrations of 7,7′-Br2DIM, 7,7′-Cl2DIM or DIM with or without a 4 hour pre-treatment with salubrinal, salubrinal and CsA, or 0.3 % DMSO.
+
+LNCaP and C42B cells pre-treated with salubrinal and treated with either 7,7′-Br2DIM, 7,7′-Cl2DIM or DIM, exhibited a sharp decrease in MMP after 4 hours (Fig. ). Combined pre-treatment of cells with salubrinal and CsA partially or fully restored the loss of MMP caused by 7,7′-Cl2DIM, 7,7′-Br2DIM and DIM (Fig ).
+
+Neither salubrinal nor combined salubrinal and CsA pre-treatments affected eIF2α phosphorylation in response to sub-toxic concentrations of 7,7′-dihaloDIMs or DIM as determined in C42B cells (Fig. ).
+
+Ring-DIMs and DIM induce protective autophagy in prostate cancer cells
+
+We investigated the potential of DIM and the ring-DIMs to induce autophagy in prostate cancer cells.
+
+A dose-dependent increase in LC3B conversion was observed in LNCaP and C42B cells, but not in autophagy-deficient DU145 cells, exposed to sub-toxic concentrations of 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM for 24 hours (Fig. ). Pre-treatment of cells with autophagy inhibitors bafilomycin A1 (Fig. ) or 3-MA (Fig. ) sensitized LNCaP and C42B cells, but not DU145 cells, to sub-toxic concentrations of 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM.
+('increase in LC3B conversion', 'was observed in', 'LNCaP cells')
+
+We next silenced the LC3B gene in LNCaP and C42B cells using siRNA and then exposed them to sub-toxic concentrations of 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM.
+
+We observed significant decreases in viability of cells treated with the LC3B-selective siRNA, but not control siRNA, with each of the three compounds (Fig. ). We confirmed the effectiveness of the LC3B-selective siRNA in decreasing the expression of LC3B in LNCaP and C42B cells to almost undetectable levels relative to control siRNA (Fig. ).
+
+Ring-DIMs and DIM induce protective autophagy
+
+(A) Levels of LC3B I and II protein in LNCaP, C42B and DU145 cells after a 24 hr exposure to 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM.
+
+Percentage of intact LNCaP (B, E),C42B (C, F) and DU145 (D, G) cells after a 24 h exposure to 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM with or without a 4 hour pre-treatment with bafilomycin A1 (BafA1) or 3-methyladenine (3-MA).
+
+Percentage of intact LNCaP (H) and C42B (I) cells after a 24 hour exposure to 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM with or without a 24 hour pre-treatment with LC3B siRNA.
+
+(J) Protein levels of LC3B I and II in LNCaP and C42B cells after treatment with or without LC3B siRNA.
+
+In silico identification of protein targets for ring-DIMs and DIM
+
+To identify potential molecular targets for the ring-DIMs and DIM, we performed in silico 3-D affinity docking studies of 61 proteins with known 3-D crystal structures and which are involved in cell survival or death and mitochondrial function, to determine possible high-affinity interactions with the 4,4′-dihaloDIMs, 7,7′-dihaloDIMs and DIM.
+
+We identified CaMKII subunits alpha, beta and gamma, but not delta as possible high-affinity targets common to all five compounds (Table ).
+
+Each compound had in silico docking affinities for each of the subunits with free energy values less than −8.5 kcal/mol, with a value lower than −8.0 kcal/mol considered a high-affinity interaction.
+('compound', 'had in', 'silico docking affinities')
+
+Docking affinities (kcal/mol) of DIM and its derivatives for the four isoforms of the calmodulin-dependent kinase II protein involved in mitochondrial metabolism and signaling pathways
+
+Short name	Pathway	PDB ID	Docking affinity (kcal/mol)
+
+4,4′-dibromo DIM	4,4′dichloroDIM	7,7′-dibromo DIM	7,7′-dichloro DIM	diindolylmethane (DIM)
+
+CaMK-II subunit α	Signal transduction	2VZ6/Q9UQM7	−8.8±0.0	−9.0±0.0	−8.8±0.1	−8.9±0.1	−9.2±0.0
+
+CaMK-II subunit β	Signal transduction	3BHH/Q13554	−9.5±0.0	−9.5±0.0	−9.0±0.0	−8.9±0.1	−9.1±0.0
+
+CaMK-II subunit γ	Signal transduction	2V7O/Q13555	−8.9±0.1	−9.1±0.0	−9.1±0.7	−8.6±0.8	−9.2±0.1
+
+CaMK-II subunit δ	Signal transduction	2WEL/Q13557	−7.4±0.0	−7.6±0.0	−7.4±0.1	−7.7±0.1	−7.5±0.0
+
+KN93 abrogates cell death induced by 4,4′-Br2DIM
+
+The involvement of the various CaMKII subunits in DIM or ring-DIM-mediated toxicity in prostate cancer cells was assessed using a selective CaMKII inhibitor, KN93.
+('involvement of CaMKII subunits', 'was assessed using', 'CaMKII inhibitor')
+
+In LNCaP, C42B and DU145 cells, a 4 hour pre-treatment with KN93 resulted in a marked reduction of cell death caused by 4,4′-Br2DIM, but not 7,7′-Cl2DIM or DIM (Fig. , ).
+('C42B cells', 'resulted in', 'reduction of cell death caused by 4,4')
+
+Additionally, KN92, an inactive derivative of KN93, did not abrogate cell death induced by 4,4′-Br2DIM (Fig. , ).
+
+Pre-treatment with KN93 restored the loss of MMP caused by 4,4′-Br2DIM in all three prostate cancer cell lines (Fig. , ).
+
+Pre-treatment of LNCaP and C42B cells with KN93 reduced 4,4′-Br2DIM-mediated eIF2α phosphorylation, but it did not affect 4,4′-Br2DIM-mediated increases in CHOP and ATF4 levels (Fig. ). In DU-145 cells, pre-treatment with KN93 did not alter the increases in eIF2α phosphorylation or levels of ATF4 and CHOP caused by 4,4′-Br2DIM ().
+
+In addition, the expression of the beta and gamma subunits of CaMKII in LNCaP C42B, and DU145 cells was confirmed (Fig. ). The alpha and delta subunits of CaMKII were not found (data not shown).
+
+KN93 abrogates 4,4′-Br2DIM mediated cell death
+
+Percentage of intact LNCaP (A) and C42B (B) cells after a 24 hour exposure to 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM with or without a 4 hour pre-treatment with KN92 or KN93.
+
+(C) TMRE fluorescence of LNCaP and C42B cells after a 4 hour exposure to 4,4′-Br2DIM with or without a 4 hour pre-treatment with KN93.
+
+(D) Phosphorylation of eIF2α, and levels of ER stress proteins in LNCaP and C42B cells after a 24 hour exposure to 4,4′-Br2DIM with or without a 4 hour pre-treatment with KN93.
+
+(E) Protein levels of Ca2+/calmodulin-dependent protein kinase (CaMKII) beta and gamma subunits in LNCaP, C42B and DU145 cells.
+
+DISCUSSION
+
+Ring-DIMs kill AD and AI prostate cancer cells but not non-tumourigenic RWPE-1 cells
+
+We have previously reported that ring-DIMs and DIM induce apoptosis and necrosis in androgen receptor-positive (AR+) AD LNCaP and in androgen receptor-negative (AR-) AI PC-3 prostate cancer cells.
+
+Similar to our previous report [], 4,4′-Br2DIM induced cell death in AD AR+ LNCaP, AI AR+ C42B and AI AR- DU145 cells with the greatest potency of all five compounds tested.
+
+Concentrations of ring-DIMs that killed 100% of prostate cancer cells after 24 hours (20 μM for 4,4′-Br2DIM, 30 μM for 7,7′-Br2DIM, 30 μM for 7,7′-Cl2DIM, 50 μM for 4,4′-Cl2DIM and 50 μM for DIM) were not toxic to non-tumourigenic RWPE-1 prostate epithelial cells (Fig. ). This confirms that DIM and its 4,4′- and 7,7′- ring-substituted analogs selectively affect processes and pathways that are dysregulated in cancerous tissues, and are not toxic to normal cells.
+('Concentrations', 'were not toxic to', 'prostate cells')
+
+Cell death induced by the ring-DIMs is dependent on mitochondrial dysfunction but not ER stress or autophagy
+
+In our previous study, we hypothesized that 4,4′-Br2DIM induces cell death by independently activating both intrinsic and extrinsic apoptosis pathways based on the observation that this derivative activated caspases-8 and -9, but did not increase Bid cleavage.
+
+We further hypothesized that ER stress plays a role in ring-DIM-induced cell death, as both 4,4′-Br2DIM and 7,7′-Cl2DIM induced increased expression of DR4 and DR5, and 4,4′-Br2DIM also increased Fas receptor and Fas ligand (FasL) [].
+('ER stress', 'plays', 'role')
+
+Here, we show that ER stress and mitochondrial dysfunction are early events in ring-DIM- and DIM-induced prostate cancer cell death.
+('ER stress', 'are', 'events')
+('dysfunction', 'are', 'events')
+
+ATF4 expression was increased by 4,4′-Br2DIM within 1 hour of exposure, while 7,7′-Cl2DIM and DIM increased ATF4 expression after 4 hours.
+('ATF4 expression', 'was increased by', '4,4')
+
+We observed a significant decrease in MMP in cells treated with 4,4′-dihaloDIMs and DIM, but only a slight decrease in mitochondrial activity of cells treated with 7,7′-dihaloDIMs (Fig. ). CsA, a potent inhibitor of the mitochondrial permeability transition pore (mPTP) complex, completely abrogated ring-DIM-induced death of LNCaP and C42B cells, but could not prevent DIM-induced cell death (Fig. ). CsA also abrogated the toxicity of 4,4′-Br2DIM in DU-145 cells ().
+
+The loss of MMP was inhibited by CsA in cells treated with the ring-DIMs as well as DIM, suggesting that mitochondrial dysfunction is necessary for cell death caused by the ring-DIMs but not DIM.
+('dysfunction', 'is necessary for', 'cell death caused')
+('loss of MMP', 'was inhibited by', 'CsA')
+
+However, pre-treatment with CsA did not abrogate eIF2α phosphorylation or cause a decline in the levels of ATF4 or CHOP in cells treated with either 4,4′-Br2DIM, 7,7′-Cl2DIM or DIM (Fig. ). Therefore, our results suggest that ring-DIM-mediated ER stress is activated in parallel, and not downstream, of mitochondrial dysfunction.
+
+It has been reported previously that eIF2α could play a role in the survival of tumourigenic cells in response to Akt inhibition [], and DIM has been shown to be a potent inhibitor of the Akt pathway [, ].
+('DIM', 'has been shown to inhibitor of', 'Akt pathway')
+
+Our in silico data support the notion that DIM may act as a direct Akt inhibitor, as Akt showed a significant binding affinity to DIM and the ring-DIMs ().
+('Our in silico data', 'support', 'notion')
+('DIM', 'may act as', 'Akt inhibitor')
+('Akt', 'showed', 'binding affinity to DIM')
+
+Therefore, the observed induction of ER stress may be a pro-survival response to the mitochondrial disruption caused by the ring-DIMs and DIM, and is not necessary for ring-DIM-induced toxicity.
+('induction of ER stress', 'be', 'response to disruption caused')
+('induction of ER stress', 'is not necessary for', 'toxicity')
+
+Although ER stress does not appear to be responsible for ring-DIM-induce cell death, we wished to confirm this using salubrinal, a compound commonly used to inhibit ER stress by blocking dephosphorylation of eIF2α.
+('ER stress', 'does not appear to responsible for', 'cell death')
+
+Pre-treatment with 20 μM of salubrinal inhibited cell death caused by 4,4′-Br2DIM and 4,4′-Cl2DIM in LNCaP and C42B cells, and by 4,4′-Br2DIM in DU145 cells.
+
+In contrast, pre-treatment with salubrinal sensitized LNCaP and C42B cells to the toxicity of 7,7′-Br2DIM, 7,7′-Cl2DIM and DIM (Fig. ). Interestingly, the increased phosphorylation of eIF2α mediated by 4,4′-Br2DIM was abrogated by pre-treatment with salubrinal in all three cell lines (Fig. ; ).
+
+However, in LNCaP and C42B cells, pre-treatment with salubrinal did not consistently abrogate the 4,4′-Br2DIM-induced levels of CHOP or ATF4 (Fig. ), and in DU145 cells salubrinal only partially reduced the 4,4′-Br2DIM-induced expression of these markers of ER stress ().
+
+Moreover, salubrinal alone did not affect phosphorylation of eIF2α in all three cell lines (), suggesting that, in prostate cancer cells, salubrinal does not directly modify the phosphorylation status of eIF2α; nor does it significantly inhibit the onset of ring-DIM-mediated ER stress.
+('salubrinal', 'does not modify', 'phosphorylation status of eIF2a')
+
+These results are consistent with two other reports showing that salubrinal did not modify the phosphorylation status of eIF2α, and interacted directly with Bcl-2 [, ].
+('results', 'are consistent with', 'reports showing')
+('salubrinal', 'did not modify', 'phosphorylation status of eIF2a')
+
+We propose that the mitochondrion is a novel target of salubrinal which differentially modulates the disruption of mitochondrial stability caused by the ring-DIMs: whereas salubrinal abrogates 4,4′- Br2DIM-mediated loss of MMP (Fig. ), it exacerbates the loss of MMP induced by 7,7′-dihaloDIMs and DIM (Fig. ). Furthermore, it appears that salubrinal's ability to modulate the cell death caused by the ring-DIMs is dependent on the loss of MMP, as pre-treatment with CsA negated the synergistic cytotoxic effects of co-treatment with salubrinal and 7,7′-dihaloDIMs or DIM (Fig. ). Future studies will investigate the mitochondrial target(s) affected by salubrinal, and how they may be utilized to further increase the cytotoxic potency of the 7,7′-dihaloDIMs and DIM in prostate cancer cells.
+('mitochondrion', 'is', 'target of salubrinal')
+('salubrinal', 'abrogates', '4,4')
+
+DIM has been shown to induce ER stress-dependent autophagy in ovarian cancer cells, with the autophagic response being partially responsible for DIM-mediated cell death in vitro and in vivo [].
+('response', 'being responsible for', 'cell death')
+('DIM', 'has been shown to induce', 'ER autophagy in cancer cells')
+
+In contrast, our studies show that DIM- and ring-DIM-mediated autophagy is cytoprotective, since pre-treatment with either bafilomycin A1, 3-MA or transcriptional silencing of LC3B sensitized both LNCaP and C42B cells to cell death induced by DIM or the ring-DIMs.
+
+However, in DU145 cells, which are autophagy-deficient due to a mutation in the ATG5 gene leading to the premature termination of ATG5 transcripts [], bafilomycin A1 and 3-MA had no effect (Fig. ). Additionally, Kandala and Srivastava [] provided evidence that DIM mediated autophagy was dependent on CHOP signalling.
+
+However, in LNCaP, C42B and DU145 cells, ER stress was not sufficient to induce cell death in prostate cancer cells.
+('ER stress', 'was not sufficient to induce', 'cell death in prostate cancer cells')
+
+Thus, it is possible that the onset of ER stress might also serve a cytoprotective function in prostate cancer cells by activating autophagy via CHOP signaling.
+('onset of ER stress', 'might serve', 'function in prostate cancer cells')
+
+Is Ca2+/calmodulin-dependent protein kinase (CaMKII) involved in 4,4′-Br2DIM-mediated mitochondrial dysfunction?
+
+Our in silico docking experiments revealed CaMKII as a potential high affinity target for the ring-DIMs and DIM (Table ).
+('Our in silico docking experiments', 'revealed', 'CaMKII')
+
+In prostate cancer cells, CaMKII activity has been implicated in cell survival and loss of androgen-dependence [].
+('CaMKII activity', 'has been implicated in', 'cell survival')
+
+However, in a variety of cases, CaMKII can be pro-apoptotic and in hepatocellular carcinoma cells CaMKII is necessary for melittin-induced apoptosis [], and CaMKII activation has been linked to sustained c-Jun N-terminal kinase and p38 mitogen-activated kinase stress signaling [, , ].
+('CaMKII', 'is necessary for', 'apoptosis')
+('CaMKII activation', 'has been linked to', 'kinase')
+
+Moreover, CaMKII has been shown to play a role in the simultaneous induction of ER stress and mitochondrial dysfunction [].
+('CaMKII', 'has been shown to play', 'role')
+
+We observed that KN93, a selective inhibitor of CaMKII, but not its inactive form KN92, prevented the death of cells treated with 4,4′-Br2DIM, but not 7,7′-Cl2DIM or DIM (Fig. ). In addition, KN93 abrogated the loss of MMP observed after exposure to 4,4′-Br2DIM and decreased eIF2α phosphorylation, but did not significantly prevent expression of ATF4 or CHOP (Fig. ). Thus, CaMKII activation may directly initiate the intrinsic pathway of apoptosis in prostate cancer cells, and this effect is independent of induction of ER stress.
+
+Interestingly, we found protein expression of only the beta and gamma subunits of CaMKII in the three prostate cancer cell lines tested (Fig. ), with both subunits exhibiting high docking affinity values for 4,4′-Br2DIM (Table ).
+
+The crystal structure of CaMKII-beta and the docking site of each ring-DIM and DIM are shown in . C42B cells have been shown to transcriptionally express all four subunits of CaMKII (alpha, beta, gamma, delta), whereas LNCaP and DU145 cells only expressed the beta, gamma and delta transcripts [].
+
+Our study confirms that the CaMKII-beta and -gamma proteins are indeed produced from these transcripts, but that protein levels of the CaMKII-alpha and -delta subunits are undetectable in each of the three cell lines.
+('gamma proteins', 'are produced from', 'transcripts')
+
+These data suggest that CaMKII may be a selective upstream target of 4,4′-Br2DIM that is responsible for the early onset of mitochondrial dysfunction and ER stress in prostate cancer cells.
+('CaMKII', 'be', 'target of Br2DIM')
+
+Although our in silico analysis identified a potential interaction between CaMKII and 7,7′-Cl2DIM and between CaMKII and DIM, it appears that CaMKII activity is not necessary for 7,7′-Cl2DIM- or DIM-mediated cell death.
+('our in silico analysis', 'identified', 'interaction between CaMKII')
+('CaMKII activity', 'is not necessary for', '7,7')
+
+This differential response between the 4,4′-dihalo- and 7,7′-dihaloDIMs to inhibition of CaMKII by KN93 provides further evidence that the mechanisms of action of the ring-DIMs is highly structure-dependent.
+
+We previously showed that the 4,4′-dihaloDIMs, but not the 7,7′-dihaloDIMs induced the Fas receptor and FasL in LNCaP cells []; additionally, the 7,7′-dihaloDIMs were shown to be more potent inhibitors of DHT-mediated LNCaP cell proliferation than the 4,4′-dihalo-DIMs [].
+
+In the present study we also show that the 4,4′- and 7,7′-dihaloDIMs elicit opposite responses in prostate cancer cells pre-treated with salubrinal, but that these effects are unrelated to ER stress.
+('dihaloDIMs', 'elicit', 'responses in prostate cancer cells')
+('effects', 'are unrelated to', 'ER stress')
+
+Moreover, pre-treatment of all three cell lines with KN93 did not prevent the increase in expression of either CHOP or ATF4, further confirming that ER stress is not a key contributor to 4,4′-Br2DIM-mediated cell death.
+('ER stress', 'is', 'contributor to 4,4')
+
+CONCLUSION
+
+We have confirmed that ring-substituted dihaloDIMs act via distinct, structure-dependent, yet overlapping mechanisms (Figure ) to induce potent cytotoxic effects in AD and AI prostate cancer cells, but not normal prostate epithelium.
+('dihaloDIMs', 'act via', 'mechanisms to induce effects')
+
+We have shown that cell death mediated by the most potent ring-DIM, 4,4′-Br2DIM, is dependent on CaMKII activation and subsequent mitochondrial dysfunction, and that ER stress is insufficient to induce cell death in response to either the ring-DIMs or DIM.
+('cell death mediated', 'is dependent on', 'CaMKII activation')
+('cell death mediated', 'is insufficient to induce', 'cell death')
+('ER stress', 'is insufficient to induce', 'cell death')
+
+We also show that the ring-DIMs and DIM induce protective autophagy in prostate cancer cells.
+
+Future studies will concentrate on the relationship between 4,4′-Br2DIM, CaMKII and mitochondrial dysfunction, the effectiveness of this potent anti-cancer compound in animal models of prostate cancer, and the potential for targeting the ER stress and autophagy pathways in order to increase the effectiveness of the ring-DIMs and DIM as anti-neoplastic agents.
+('studies', 'will concentrate on', 'relationship between 4,4')
+
+A schematic representation of the differential pathways activated by the 4,4′- and 7,7′-dihalogenated ring-DIMs and their role in ring-DIM-induced prostate cancer cell death
+
+MATERIALS AND METHODS
+
+Cell lines and reagents
+
+LNCaP, and DU145 human prostate cancer cells as well as RWPE-1 immortalized normal prostate epithelial cells were purchased from the American Type Culture Collection (Manassas, VA).
+('LNCaP', 'were purchased from', 'Type Culture Collection')
+('DU145 prostate cancer cells', 'were purchased from', 'Type Culture Collection')
+
+LNCaP C4-2B (C42B) cells were purchased from the MD Anderson Cancer Center (Houston, TX).
+('cells', 'were purchased from', 'MD Anderson Cancer Center')
+
+LNCaP, C42B, DU145, and RWPE-1 cells were grown in RPMI 1640 supplemented with 10% fetal bovine serum, 2 mM L-glutamine, 1% HEPES, 1% sodium-pyruvate and 10ml/L of 100x antibiotic-antimycotic solution (Sigma-Aldrich, St-Louis, MO).
+('LNCaP', 'were grown in', 'RPMI')
+('C42B', 'were grown in', 'RPMI')
+('DU145', 'were grown in', 'RPMI')
+('cells', 'were grown in', 'RPMI')
+
+Cells were maintained in a humidified atmosphere (5% CO2) at 37oC.
+('Cells', 'were maintained in', 'atmosphere')
+
+Ring-substituted 4,4′- and 7,7′-dihaloDIMs were synthesized in our laboratories at &gt;95% purity and were dissolved in 100% dimethyl sulfoxide (DMSO) to obtain 100 mM stock solutions.
+('dihaloDIMs', 'were synthesized in', 'laboratories')
+('dihaloDIMs', 'were dissolved in', 'sulfoxide')
+
+Dihydrotestosterone (DHT; Steraloids Inc., Newport, RI) was dissolved in DMSO to make a 100 mM stock solution.
+('Dihydrotestosterone', 'was dissolved in', 'DMSO')
+
+Cyclosporin A (CsA; Cell Signaling, Beverly, MA), salubrinal (Enzo Life Sciences, Farmingdale, NY), KN92, KN93 (Millipore, Billerica, MA) and bafilomycin A1 (Sigma Aldrich) were dissolved in DMSO as 1000-fold concentrated stock solutions.
+('Cyclosporin A', 'were dissolved in', 'DMSO')
+('KN93', 'were dissolved in', 'DMSO')
+('bafilomycin A1', 'were dissolved in', 'DMSO')
+
+The final concentration of DMSO in culture medium was 0.1% for single exposures and not greater than 0.3% for combined exposures.
+
+Treatment of cells with ring-DIMs, pharmacological inhibitors and siRNA
+
+LNCaP, C42B, and DU145 cells were exposed to the ring-DIMs at the indicated final concentrations in their respective culture medium, supplemented with 2% dextran-coated charcoal-stripped FBS.
+
+DHT was added to LNCaP cells after serial dilution in DMSO to a working stock solution of 100 nM, resulting in a final DHT concentration of 0.1 nM in culture medium.
+('DHT', 'was added to', 'LNCaP cells')
+
+CsA, KN92 and KN93, salubrinal, bafilomycin A1 were added to cell cultures 4 hours prior to treatment with either ring-DIMs, DIM or DMSO vehicle control.
+('CsA', 'were added to', 'cell cultures')
+('KN92', 'were added to', 'cell cultures')
+('KN93', 'were added to', 'cell cultures')
+('salubrinal', 'were added to', 'cell cultures')
+('bafilomycin A1', 'were added to', 'cell cultures')
+
+3-Methyladenine was dissolved directly in water and added freshly to the cells 4 hours prior to exposure to the diindolylmethane compounds.
+
+For siRNA experiments, LNCaP or C42B cells were transfected with SMARTpool ON-TARGETplus siRNA oligonucleotide for LC3B (Dharmacon, USA) using lipofectamine RNAiMAX (Life Technologies, USA) in serum free Opti-MEM according to manufacturer's protocols.
+('LNCaP cells', 'were transfected with', 'SMARTpool siRNA oligonucleotide for LC3B')
+
+ON-TARGETplus Non-targeting Control siRNAs was used a negative control.
+('Control siRNAs', 'was used', 'control')
+
+After a 24-hour incubation, transfected cells were exposed to the ring DIMs, DIM or vehicle control for a further 24 hours.
+('cells', 'were exposed to', 'ring DIMs')
+
+Cell death and mitochondrial membrane potential (MMP)
+
+For cell death measurements, LNCaP, C42B, and DU145 cells were seeded in 24-well plates in 2% stripped FBS.
+('LNCaP', 'were seeded in', 'plates')
+('C42B', 'were seeded in', 'plates')
+('DU145 cells', 'were seeded in', 'plates')
+
+Cells were then treated with (LNCaP) or without (C42B, DU145) 0.1 nM DHT and several concentrations of ring-DIMs, DIM or vehicle control (DMSO).
+('Cells', 'were treated with', 'LNCaP')
+
+After 24 hours, Hoechst 33342 (Sigma-Aldrich) and propidium iodide (PI; Invitrogen, Carlsbad, CA) stains were both added to each well at a concentration of 1 μg/ml (in water) after which the plates were incubated for 15 minutes at 37oC.
+('PI', 'were added to', 'each')
+('plates', 'were incubated for', 'minutes at 37oC')
+
+Hoechst- and PI-positive cells were then counted under a Nikon Eclipse (TE-2000U) inverted fluorescence microscope at 20x magnification using filter cubes with excitation wavelengths of 330-380 and 532-587 nm, respectively.
+('Hoechst', 'were counted under', 'Nikon Eclipse fluorescence microscope')
+('cells', 'were counted under', 'Nikon Eclipse fluorescence microscope')
+
+Intact cells were counted as exhibiting neither chromatin condensation, chromatin fragmentation nor PI staining.
+('cells', 'were counted as', 'exhibiting chromatin condensation')
+
+To measure MMP, tetramethylrhodamine ethyl ester (TMRE) was added to each well at a final concentration of 50 nM for 15 minutes at 37oC.
+('MMP', 'was added to', 'each')
+
+TMRE is a cell permeable, positively charged dye that accumulates in active negatively charged mitochondria.
+
+In inactive or (partially) depolarized mitochondria, membranes have decreased potential and fail to sequester TMRE.
+('membranes', 'have decreased', 'potential')
+('membranes', 'fail to sequester', 'TMRE')
+
+Cells were then observed under an inverted fluorescence microscope using a filter cube with an excitation wavelength of 532-587 nm.
+('Cells', 'were observed under', 'fluorescence microscope')
+
+The photos of cells treated with either TMRE, Hoechst 33342 or PI were analyzed using ImageJ image processing software [].
+('photos of cells treated with TMRE', 'were analyzed using', 'ImageJ image processing software')
+
+ATP measurements
+
+LNCaP, C42B, and DU145 cells were seeded in 96-well plates in 2% stripped-FBS.
+('LNCaP', 'were seeded in', 'plates')
+('C42B', 'were seeded in', 'plates')
+('DU145 cells', 'were seeded in', 'plates')
+
+Cells were then treated with (LNCaP) or without (C42B, DU145) 0.1 nM DHT and several concentrations of ring-DIMs, DIM or DMSO alone.
+('Cells', 'were treated with', 'LNCaP')
+
+A 0.5 M stock solution of 2-deoxy-D-glucose (Sigma-Aldrich) was prepared in water and added to the wells at a final concentration of 5 mM 4 hours prior to addition of ring-DIMs, DIM or DMSO alone.
+('stock solution', 'was prepared in', 'water')
+('stock solution', 'added to', 'wells')
+
+Mitochondrial ATP levels were measured 1 hour later using a ViaLight Plus kit (Lonza, Basel, Switzerland).
+('ATP levels', 'were measured using', 'ViaLight Plus kit')
+
+Briefly, cells were treated for 10 minutes with lysis buffer, after which a bioluminescent ATP monitoring reagent was added to each well for 2 minutes.
+('cells', 'were treated for', 'minutes')
+('ATP monitoring reagent', 'was added to', 'each')
+
+The bioluminescent signal was measured using a SpectroMax M5 microplate reader (Molecular Devices, Sunnydale, CA).
+('signal', 'was measured using', 'SpectroMax M5 microplate reader')
+
+SDS-PAGE and immunoblotting
+
+Crude protein extracts (50 μg) were resolved by electrophoresis in 10% sodium dodecyl sulfate-polyacrylamide gels and then transferred to PVDF Immobilon-P membranes (Bio-Rad, Mississauga, ON).
+('protein extracts', 'were resolved by', 'electrophoresis')
+('protein extracts', 'transferred to', 'PVDF membranes')
+
+Blots were blocked using 5% milk powder (Selection brand, Marché Jean-Talon, Montréal, QC) and incubated with antibodies using a dilution of 1:500 for anti-β-actin, a 1:250 dilution for anti-CaMKII beta subunit and anti-CaMKII gamma subunit (Santa Cruz Biotechnology, Santa Cruz, CA), a 1:500 dilution for anti-CHOP, a 1:1000 dilution for anti-LC3B, anti-ATF4, anti-phospho eIF2α (Ser51), and a 1:10000 dilution for anti-eIF2α (Cell Signaling).
+('Blots', 'were blocked using', 'milk powder incubated with antibodies using dilution of 1:500')
+
+Immunoreactive proteins were exposed to anti-rabbit or anti-mouse horseradish peroxidise-conjugated secondary antibodies (Millipore) that were diluted 1:5000.
+('proteins', 'were exposed to', 'horseradish antibodies')
+
+Antigen-antibody complexes were detected using Immobilon ECL Western Chemiluminescent HRP Substrate (Millipore) and recorded with a VersaDoc imaging system (Bio-Rad).
+('complexes', 'were detected using', 'Immobilon ECL Western Chemiluminescent HRP Substrate recorded with VersaDoc imaging system')
+
+In Silico 3-D affinity docking analyses
+
+The structures of DIM and the ring-DIMs were optimized in a Gaussian 09 program package (Frisch et al., 2004) by the Density Functional Theory (DFT) method at the B3LYP/6-31G level.
+('structures of DIM', 'were optimized in', '09 program package')
+
+The output file was translated to pdb and pdbqt formats using Open Babel [] and AutoDock Tools [], respectively.
+('output file', 'was translated to', 'pdb formats using Open Babel')
+
+The 3-D structures of the proteins were downloaded from the Protein Data Bank (PDB) in pdb format [].
+('structures of proteins', 'were downloaded from', 'Protein Data Bank')
+
+The structure of TrailR1 was obtained from ModBase because its crystal structure was not reported in PDB.
+('structure of TrailR1', 'was obtained from', 'ModBase')
+('crystal structure', 'was not reported in', 'PDB')
+
+Protein structures were then prepared using Sybyl-X 2.0 (Tripos, St. Louis, MO).
+('Protein structures', 'were prepared using', '2.0')
+
+In this process, all ions, water molecules and other substructures were removed [].
+
+We also fixed all side-chains, backbones and protonation types.
+
+Once prepared, proteins underwent a two-step optimization procedure using Sybyl-X 2.0.
+('proteins', 'underwent using', 'optimization procedure')
+
+The first step included the Powell method applying Kollman”s united force field AMBER (Assisted Model Building with Energy Refinement) charges, dielectric constant 1.0, NB cutoff 8.0, maximum interactions 1000 and termination gradient 0.001 kcal/mol.
+('step', 'included', 'Powell method applying AMBER charges 1.0 NB cutoff maximum interactions termination gradient kcal/mol')
+
+The second step utilized Kollman's All Atom approach with the same parameters.
+('step', 'utilized', 'approach with parameters')
+
+The resultant structures were saved as pdb files and then converted to pdbqt format using AutoDock Tools [].
+('structures', 'were saved as', 'pdb files')
+('structures', 'converted to pdbqt', 'format')
+
+Kollman charges and polar hydrogen atoms were added to the 3-D structures of the proteins using the same software [].
+('Kollman charges', 'were added to', 'structures of proteins')
+('hydrogen atoms', 'were added to', 'structures of proteins')
+
+Docking and docking-refinement experiments were carried out through a blind docking strategy by AutoDock Vina [] to allow inclusion of the whole protein surface and all possible binding sites.
+
+The 3-D docking grid was centered on the macromolecule [] and coordinates were calculated with a resolution of 0.357 Å using AutoDock Tools [].
+('docking grid', 'was centered on', 'macromolecule')
+
+Docking analyses were performed with the AutoDock Vina 1.1 molecular docking and virtual screening program [] running on a Linux operating system using the following settings: energy range = 1.5, number of modes = 20 and exhaustiveness = 25.
+('Docking analyses', 'were performed with', 'AutoDock Vina docking')
+
+The docking models of protein/DIM and protein/ring-DIM complexes with high-affinity scores (less than −8.0 kcal/mol) were refined with repetitions of 100 runs to increase accuracy and identify alternative in silico binding sites for each compound.
+('docking models of protein/DIM complexes', 'were refined with', 'repetitions of runs')
+
+Protein/compound complexes underwent conformational analyses to determine the contact residues and interaction type using LigandScout 3.1 software with default settings [].
+('Protein/compound complexes', 'underwent', 'analyses to determine contact residues interaction type using LigandScout software')
+
+The interaction cutoff threshold of the pdb interpretation, which defines a sphere around the ligand, was set at 7.0 Å.
+('interaction cutoff threshold of pdb interpretation', 'was set at', 'A')
+
+The atoms of the protein found inside the ligand-sphere were considered to be able to interact with the ligand [].
+
+Statistical analyses
+
+All experiments were performed in at least triplicate and results presented as mean ± SEM.
+('experiments', 'were performed in', 'triplicate')
+
+Statistically significant differences (* P &lt; 0.05, ** P &lt; 0.01, *** P &lt; 0.005) were calculated using a two-tailed Student t-test.
+
+IC50 values were calculated using nonlinear curve-fit analysis.
+('IC50 values', 'were calculated using', 'analysis')
+
+All analyses were performed using GraphPad Prism v5.03 (GraphPad Software, San Diego, CA).
+('analyses', 'were performed using', 'GraphPad Prism v5')
+
+SUPPLEMENTARY MATERIAL AND FIGURES
+

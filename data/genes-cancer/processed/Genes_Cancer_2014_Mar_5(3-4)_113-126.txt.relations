@@ -1,0 +1,714 @@
+INTRODUCTION
+
+The phosphatidylinoisitol 3'-kinase (PI3K) signaling pathway can be activated by a variety of extracellular signals and is involved in cellular processes such as survival, proliferation, migration and protein synthesis [].
+('signaling pathway', 'can be activated by', 'variety of signals')
+('signaling pathway', 'is involved in', 'processes')
+
+Aberrant activation of this pathway has been widely implicated in cancers.
+('activation of pathway', 'has been implicated in', 'cancers')
+
+Two major hot spot mutations in the PI3K catalytic subunit have been reported, one in the helical domain (E545K) and the other in the kinase domain (H1047R).
+('spot mutations in PI3K subunit', 'have been reported', 'one in domain other in kinase domain')
+
+Both mutations are transforming and result in increased pathway signaling [-].
+
+The tumor suppressor protein phosphatase and tensin homologue (PTEN) acts to inhibit PI3K pathway signaling and is commonly mutated, deleted or epigenetically repressed in human cancers [, ].
+('tumor suppressor protein phosphatase', 'acts to inhibit', 'PI3K pathway signaling')
+('tensin homologue', 'acts to inhibit', 'PI3K pathway signaling')
+
+Due to the dysregulation of the PI3K pathway in many cancers, there are increasing efforts in the development of PI3K pathway inhibitors as potential therapeutics with reports of efficacy being reported [].
+
+Although PI3K inhibitors offer an additional line of treatment, as with other targeted therapies, acquired resistance is likely to arise.
+('PI3K inhibitors', 'offer', 'line of treatment')
+
+To investigate resistance to PI3K inhibitors, it is important to examine mechanisms that are upstream of PI3K signaling.
+
+The PI3K pathway can be activated by mutations or overexpression of upstream signaling molecules in the ErbB family of receptor tyrosine kinases, such as EGFR/ErbB1, HER2/ErbB2, and HER3/ErbB3 [-].
+('PI3K pathway', 'can be activated by', 'mutations')
+
+EGFR ligands bind and activate the EGF receptor and include EGF, amphiregulin (AREG), βcellulin (BTC), epiregulin (EPR), transforming growth factor α (TGFα), heparin-binding EGFR-like growth factor (HB-EGF), and epigen [].
+('EGFR ligands', 'bind', 'EGF receptor')
+('EGFR ligands', 'include', 'EGF amphiregulin bcellulin epiregulin growth factor a growth factor epigen')
+
+The activation of EGFR is prevalent in cancer signaling and not only activates PI3K by recruiting the regulatory subunit, p85 [], but also induces activation of the mitogen-activated protein kinase (MAPK) pathway by either Grb2 or Shc adaptor proteins [].
+
+EGFR signaling has been implicated as a mechanism of resistance to several targeted cancer therapies, such as crizotinib [], trastuzumab [, ], and vemurafenib [].
+('EGFR signaling', 'has been implicated as', 'mechanism of resistance to cancer therapies')
+
+Not only has dysregulation of EGFR conferred drug resistance, but stimulation by EGF ligands has been shown to subvert inhibition of targeted inhibitors as well [].
+('dysregulation of EGFR', 'has conferred', 'drug resistance')
+('stimulation by EGF ligands', 'has been shown to subvert', 'inhibition of inhibitors')
+
+Despite the amount of activity in the development of PI3K inhibitors, less is known about acquired resistance to these inhibitors.
+
+Engineered mouse models that express an activating H1047R mutation in PIK3CA have found up-regulation of c-Myc to be involved in PI3K inhibitor resistance [].
+
+In these studies, MET amplified tumors remained dependent on endogenous PI3K, while c-Myc amplified tumors became pathway independent.
+('tumors', 'remained', 'dependent on PI3K')
+
+Additional studies using engineered cancer cells have also identified increases in c-Myc as well as eI4FE and Notch1 as potential mechanisms of resistance [, ].
+('studies using cancer cells', 'have identified', 'increases')
+
+GDC-0941 is an orally bioavailable inhibitor of Class I PI3K that is in clinical development for several solid tumor indications [-].
+
+In these studies we investigate mechanisms of resistance to GDC-0941 in the SW48 CRC line that is wild-type for PI3Kα or harbors an oncogenic H1047R PI3Kα mutation.
+
+Parental SW48 and SW48 H1047R cells are able to overcome growth suppression by GDC-0941 by the addition of EGFR ligands.
+
+In addition, SW48 cell lines that have acquired resistance to GDC-0941 initiate secretion of the EGFR ligand AREG, which allows the cells to continue to grow and survive in the presence of GDC-0941.
+
+We also found that resistant cells lose PTEN after long-term culture, thereby increasing PI3K pathway signaling.
+('cells', 'lose', 'PTEN')
+
+These results may provide guidance on potential clinical treatment regimens.
+('results', 'may provide', 'guidance on treatment regimens')
+
+RESULTS
+
+EGFR ligands confer resistance to GDC-0941 in SW48 isogenic cells
+('EGFR ligands', 'confer', 'resistance')
+
+A CRC cell line, SW48, and a version of this cell line with a knock-in H1047R PI3Kα mutation at one of the endogenous loci were used to investigate cellular changes associated with oncogenic PI3K.
+('CRC cell line', 'were used to investigate', 'changes associated with PI3K')
+('version of cell line', 'were used to investigate', 'changes associated with PI3K')
+
+The introduction of the H1047R mutation to the SW48 cell line resulted in increased cell growth and increased PI3K pathway signaling as measured by pAKTT308, pAKTS473, pPRAS40T246, pp70S6T389, and pS6S235/236 ( and [].
+('introduction of H1047R mutation', 'resulted in', 'cell growth')
+('introduction of H1047R mutation', 'increased', 'PI3K pathway signaling')
+
+We found the parental and PI3K mutant cell lines were sensitive to the PI3K inhibitor, GDC-0941 ().
+('cell lines', 'were sensitive to', 'PI3K inhibitor')
+
+To investigate the potential role of soluble ligands in resistance to GDC-0941 we utilized a screen of commercially available factors to identify candidates that rescue GDC-0941-induced growth inhibition.
+
+For the screen, SW48 and SW48 H1047R cells were dosed with a 90% maximum inhibitory concentration (IC90) of GDC-0941 (1 uM) as well as 50 ng/ml of one of 418 soluble ligands for 72 hours ().
+('SW48 H1047R cells', 'were dosed with', 'maximum concentration')
+
+We found 11 factors (3% of total) were able to rescue GDC-0941-induced growth inhibition greater than 25%.
+('factors', 'were able to', 'rescue growth inhibition')
+
+Of the 11 factors, 8 belonged to the epidermal growth factor receptor (EGFR) ligand family: AREG, Bcellulin, EGF, Epigen, Epiregulin, HB-EGF, HRG-11, and TGFα (Figure ).
+
+To confirm the ability of EGFR ligands to overcome GDC-0941 growth inhibition, the EGFR ligands AREG, EGF and TGFα were tested for their effect on GDC-0941 cellular potency.
+('EGFR ligands', 'were tested for', 'effect on potency')
+
+In the SW48 line, AREG, EGF, and TGFα were able to decrease GDC-0941 sensitivity, 2.5-fold, 4.2-fold, and 7.5-fold respectively (Figure ).
+('AREG', 'were able to decrease', 'sensitivity')
+('EGF', 'were able to decrease', 'sensitivity')
+('TGFa', 'were able to decrease', 'sensitivity')
+
+The effects were comparable in SW48 H1047R cells, where GDC-0941 inhibition was reduced 2-fold by AREG, 3.3-fold by EGF, and 5.2-fold by TGFα.
+('effects', 'were comparable in', 'SW48 H1047R cells')
+
+Characterization of the effects of secreted ligands on GDC-0941 potency.
+
+(A) SW48 and SW48 H1047R cells treated with DMSO, GDC-0941 alone, or GDC-0941 plus 50 ng/ml of one of 418 secreted ligands, and assayed for viability.
+
+Controls in the absence of secreted factors and in the presence or absence of GDC-0941 are shown at bottom.
+('Controls', 'are shown at', 'bottom')
+('in', 'are shown at', 'bottom')
+('absence', 'are shown at', 'bottom')
+
+(B) SW48 and SW48 H1047R cells treated with GDC-0941 alone, or GDC-0941 plus 50 ng/ml of AREG, EGF, or TGFα, and assayed for viability.
+
+(C) SW48 and SW48 H1047R cells simulated with 50 ng/ml of AREG, EGF, or TGFα and treated with either DMSO or 1.5 uM of GDC-0941.
+
+After 1 hr, cell lysates were prepared and analyzed by immunoblotting for pERKT202/Y204 and pAKTT308.
+('cell lysates', 'analyzed by', 'immunoblotting for pERKT202/Y204')
+
+(D) Six colorectal cancer cell lines simulated with 50 ng/ml of EGF and treated with either DMSO or 1.5 uM of GDC-0941.
+
+After 1 hr, cell lysates were prepared and analyzed by immunoblotting for pERKT202/Y204 and pAKTT308.
+('cell lysates', 'analyzed by', 'immunoblotting for pERKT202/Y204')
+
+To find the underlying mechanism of EGFR ligand ability to decrease GDC-0941 sensitivity, we investigated downstream signaling in the PI3K and MAPK pathways.
+
+All three ligands tested (AREG, EGF, and TGFα were shown to increase pERK1/2T202/Y204 in both cell lines irrespective of the presence of GDC-0941, suggesting the cells could use MAPK pathway activation under conditions of ligand stimulation (Figure ).
+('ligands tested suggesting cells', 'could use', 'MAPK pathway activation')
+('AREG', 'were shown to increase', 'pERK1/2T202/Y204')
+('EGF', 'were shown to increase', 'pERK1/2T202/Y204')
+('TGFa', 'were shown to increase', 'pERK1/2T202/Y204')
+
+To confirm this effect was not specific to the SW48 line, an additional 6 colorectal cancer cell lines were screened for the ability of EGF to negatively impact the cellular potency of GDC-0941.
+('cancer cell lines', 'were screened for', 'ability of EGF to impact potency')
+
+Of the 7 total lines (including SW48), 5 showed decreased sensitivity to GDC-0941 in the presence of EGF that was greater than 1.7-fold ().
+
+We investigated PI3K and MAPK pathway signaling in these cell lines.
+
+In the two lines where GDC-0941 potency was minimally influenced by EGF (HCT116 and SW620), stimulation with EGFR ligands (AREG, EGF, and TGFα did not effect levels of pERK1/2T202/Y204 in the presence of GDC-0941 (, Figure  and ).
+('potency', 'was influenced by', 'EGF')
+
+It is important to note that of the 6 additional cell lines only SW620 did not have detectable levels of EGFR by western blot ().
+
+This suggested that these cells could not use MAPK pathway activation under EGFR ligand stimulation conditions.
+('cells', 'could not use', 'MAPK pathway activation')
+
+The four cell lines where GDC-0941 potency was most affected by the presence of EGF were shown to increase pERK1/2T202/Y204 irrespective of the presence of GDC-0941, suggesting the cells could activate the MAPK pathway under conditions of EGFR ligand stimulation.
+('cells', 'could activate', 'MAPK pathway')
+('cell lines', 'were shown to increase suggesting', 'pERK1/2T202/Y204')
+('potency', 'was affected by', 'presence of EGF')
+
+The results in these four cell lines are similar to those observed with SW48 cells.
+('results in cell lines', 'are similar to', 'those observed with SW48 cells')
+
+GDC-0941 resistant cells exhibit increased PI3K pathway signaling when GDC-0941 is removed
+('cells', 'exhibit', 'PI3K pathway signaling')
+
+In addition to investigating the role of EGFR ligands in acute or innate PI3K inhibitor resistance, we sought to examine factors involved in acquired GDC-0941 resistance.
+
+Pools of SW48 or SW48 H1047R cells were treated at increasing doses of GDC-0941 over 6 months.
+('Pools of SW48 H1047R cells', 'were treated at', 'doses')
+
+At the end of dose escalation, the cells were able to grow at a GDC-0941 concentration 10-fold higher (1.5 uM) than the initial EC50 dose (0.15 uM).
+('cells', 'were able to grow at', 'higher')
+
+In a viability assay, the SW48 resistant pool was 10-fold less sensitive than the parental SW48 cell line to GDC-0941 while the SW48 H1047R resistant pool was 13-fold less sensitive than parental SW48 H1047R cells ().
+('SW48 pool', 'was sensitive than', 'SW48 cell line')
+('SW48 H1047R pool', 'was sensitive than', 'SW48 H1047R cells')
+
+Clones from GDC-0941 resistant pools were generated by plating single cells of each line in the presence of 1.5 uM GDC-0941 and isolating proliferating clones.
+('Clones from pools', 'were generated by', 'plating cells of line')
+
+Two resistant clones of each cell type were assessed and characterized for SW48 (clones 2F and 2G) and SW48 H1047R (clones 10A and 10B).
+('clones of cell type', 'characterized for', 'SW48')
+
+SW48 resistant clones 2F and 2G had a 120- and 36-fold decrease in GDC-0941 sensitivity, respectively, compared to the SW48 parental line.
+('SW48 clones', 'had', 'decrease in sensitivity')
+
+SW48 H1047R resistant clones 10A and 10B had a 22- and 12-fold decreased sensitivity to GDC-0941, respectively, compared to the SW48 H1047R parental line (Figure ).
+
+To confirm that the observed resistance was not specific to GDC-0941, the potency of another PI3K inhibitor, GDC-0980 (27), was evaluated in resistant clones.
+('potency of PI3K inhibitor', 'was evaluated in', 'clones')
+
+We found the resistant clones were also not sensitive to GDC-0980 ().
+
+Characterization of SW48 GDC-0941 resistant clones.
+
+(A) SW48 and SW48 H1047R GDC-0941 parental and resistant clones treated with a dose escalation of GDC-0941 and assayed for viability 96 hrs post dosing.
+
+(B) GDC-0941 parental (P) and resistant clones grown for 48 hrs either in the presence of DMSO or 1.5 uM of GDC-0941.
+
+After 48 hrs, cell lysates were prepared and analyzed by immunoblotting.
+('cell lysates', 'analyzed by', 'immunoblotting')
+
+(C) GDC-0941 parental and resistant clones (2F top, 10A bottom) were plated at 15,000 cells/ well and allowed to adhere overnight.
+
+The following day, cells were treated with DMSO or 1.5 uM of GDC-0941 and percent confluence was monitored by digital imaging.
+('cells', 'were treated with', 'DMSO')
+
+(D) LS 180 parental (P) and 21 GDC-0941 resistant clones analyzed by immunoblotting for PTEN protein.
+
+Once resistant pools and clones were confirmed to retain resistance to GDC-0941, signaling downstream of PI3K was assessed by reverse phase protein array (RPPA) and western blot.
+('pools', 'were confirmed to retain', 'resistance')
+('clones', 'were confirmed to retain', 'resistance')
+('signaling', 'was assessed by', 'phase protein array')
+
+Both resistant pools and all four resistant clones were shown to have increased levels of pAKT at both the T308 and S473 phosphorylation sites, which was strongly enhanced when clones were released from the 1.5 uM dose of GDC-0941 (Figure , ).
+('pools', 'were shown to increased', 'levels of pAKT')
+('clones', 'were shown to increased', 'levels of pAKT')
+('clones', 'were released from', 'uM dose')
+
+Further exploration of PI3K pathway members revealed that all resistant cell lines had lost the tumor suppressor, PTEN, which helps to explain the observed pAKT increase.
+('cell lines', 'had lost', 'tumor suppressor')
+
+The PTEN protein loss observed by western blot was confirmed with a PTEN expression decrease by microarray ().
+('PTEN protein loss observed by western blot', 'was confirmed with', 'PTEN expression decrease by microarray')
+
+To assess how these cells grow due to PTEN loss, cells were imaged every 4 hours for 140 hours.
+('cells', 'grow', 'due to PTEN loss')
+('cells', 'were imaged', 'hours for hours')
+
+In the SW48 line, the parental line did not grow in the presence of GDC-0941 while the resistant clone grew at the same rate as the parental line in the presence or absence of GDC-0941 (Figure ).
+('line', 'did not grow in', 'presence')
+('clone', 'grew at', 'rate as line')
+
+Comparably, the SW48 H1047R parental line was growth arrested in the presence of GDC-0941, while the SW48 H1047R resistant clone grew in the presence of GDC-0941 (Figure ).
+('SW48 H1047R clone', 'grew in', 'presence')
+('SW48 H1047R line', 'was arrested in', 'presence')
+('growth', 'was arrested in', 'presence')
+
+While the loss of PTEN and corresponding increase of phosphorylated AKT may play a role in the resistant clones becoming insensitive to GDC-0941, we also found muted GDC-0941 responses in clones with respect to both pERK1/2T202/Y204 and pS6S235/236 when compared to sensitive clones, suggesting alternate pathways may be playing a role in the resistance (Figure ).
+('loss of PTEN', 'may play', 'role in clones becoming insensitive')
+('pathways', 'may playing', 'role in resistance')
+
+ERK Inhibition has been observed with other PI3K inhibitors, but the mechanism is unknown (28).
+('ERK Inhibition', 'has been observed with', 'PI3K inhibitors')
+
+To confirm that loss of PTEN was not exclusive to SW48 cell lines, four additional colorectal CRC lines, DLD-1, HCT-116, LS 180, and SW620 were made resistant to GDC-0941 and cloned as described for SW48 cells ().
+('loss of PTEN', 'was not exclusive to', 'SW48 cell lines')
+('CRC lines', 'were made', 'resistant')
+
+All clones were assessed for PTEN protein expression (Figure  and ).
+('clones', 'were assessed for', 'PTEN protein expression')
+
+We discovered that 13 out of 21 LS 180 resistant clones had PTEN protein absent.
+
+GDC-0941 resistant clones from DLD-1, HCT-116, and SW620 lines expressed normal PTEN protein levels.
+('clones', 'expressed', 'PTEN protein levels')
+
+GDC-0941 resistant clones secrete AREG that activates the MAPK pathway in the presence or absence of GDC-0941
+('clones', 'secrete', 'AREG')
+
+Since EGFR ligands were able to overcome GDC-0941 sensitivity in both SW48 and SW48 H1047R cell lines (Figure ), resistant clones from these lines were assayed for a possible increase in EGFR ligand secretion.
+('EGFR ligands', 'were able to overcome', 'sensitivity in SW48')
+
+Levels of AREG, βcellulin, HRG-β1, EGF, HB-EGF, and TGFα were all assayed in resistant clone media and only AREG was detected.
+
+AREG levels in cell supernatants increased over time and were unchanged with PI3K inhibition in resistant clones, while no increase was observed in parental lines (Figure ).
+('AREG levels in cell supernatants', 'increased over', 'time')
+('AREG levels in cell supernatants', 'were unchanged with', 'PI3K inhibition in clones')
+('no increase', 'was observed in', 'lines')
+
+We previously discovered that AREG was able to activate the MAPK pathway in SW48 and SW48 H1047R cells in the presence of GDC-0941 (Figure ).
+('AREG', 'was able to activate', 'MAPK pathway in SW48 H1047R cells')
+
+Treatment of the cells with erlotinib under these conditions, however, was able to block signaling to pERK1/2T202/Y204 (Figure ).
+('Treatment of cells', 'was able to block', 'signaling to pERK1/2T202/Y204')
+
+MAPK signaling was assessed in parental and resistant clones in normal cell culture conditions and we found that pERK1/2T202/Y204 increased over time, likely due to entry of cells into the cell cycle after plating (Figure ).
+('MAPK signaling', 'was assessed in', 'clones in cell culture conditions')
+
+A dose of 1.5 μM of GDC-0941 prevented the pERK1/2T202/Y204 increase in parental lines, while it had a muted effect in resistant clones, but erlotinib was able block the increase in all lines (Figure ).
+('dose of mM', 'prevented', 'increase in lines')
+('erlotinib', 'was', 'block')
+
+Resistant clones were assayed for GDC-0941 sensitivity with and without the presence of erlotinib (Figure  and ).
+('clones', 'were assayed for', 'sensitivity with presence of erlotinib')
+
+Sensitivity to GDC-0941 was increased by addition of erlotinib 3.2-fold in SW48-R clone 2F and 3.6-fold in SW48 H1047R-R clone 10A, suggesting that EGFR inhibition may aid in overcoming resistance (Figure ).
+('EGFR inhibition', 'may aid in', 'overcoming resistance')
+('Sensitivity', 'was increased by', 'addition of erlotinib')
+
+Similar results were obtained for Cetuximab, a monoclonal antibody that blocks EGFR and is approved for metastatic colorectal cancer ().
+('Cetuximab', 'is approved for', 'cancer')
+
+GDC-0941 resistant clones secrete AREG and can be re-sensitized by EGFR inhibition.
+('clones', 'secrete', 'AREG')
+
+(A) Media collected from SW48 and SW48 H1047R GDC-0941 parental and resistant clones assessed for AREG levels after treatment with DMSO or 1.5 uM of GDC-0941 at 24, 48, and 72 hrs post treatment.
+
+(B) Parental cells simulated with 50 ng/ml of AREG, treated with either DMSO or 1.0 uM of erlotinib for 1 hr.
+
+After 1 hr, cell lysates were prepared and analyzed by immunoblotting for the markers indicated.
+('cell lysates', 'analyzed by', 'immunoblotting for markers')
+
+(C) SW48 and SW48 H1047R parental and GDC-0941 resistant clones dosed with DMSO, 1.5 uM of GDC-0941 or 1 uM of erlotinib and collected at 1, 24, 48, and 72 hrs post treatment.
+
+Cell lysates were prepared and analyzed by immunoblotting for pERKT202/Y204.
+('Cell lysates', 'analyzed by', 'immunoblotting for pERKT202/Y204')
+
+(D) SW48 and SW48 H1047R GDC-0941 resistant clones were treated with a dose escalation of GDC-0941 with and without a constant 1 uM dose of erlotinib and assayed for viability 96 hrs post dosing.
+
+PTEN loss alone does not cause PI3K inhibitor resistance
+('PTEN loss', 'does not cause', 'PI3K inhibitor resistance')
+
+Changes in the production of AREG and PTEN expression were observed in clones made resistant to GDC-0941.
+('Changes in production of AREG expression', 'were observed in', 'clones made resistant')
+
+To determine how these changes contributed to GDC-0941 resistance, we assessed AREG production and PTEN loss independently.
+('changes', 'contributed to', 'resistance')
+
+We have already shown that AREG and other EGFR ligands subvert growth inhibition by GDC-0941 in SW48 and SW48 H1047R parental lines (Figure ).
+('AREG', 'subvert', 'growth inhibition')
+('EGFR ligands', 'subvert', 'growth inhibition')
+
+To investigate the consequence of PTEN loss on SW48 and SW48 H1047R lines, PTEN levels were reduced by siRNA in parental lines and tested for sensitivity to GDC-0941 (Figure ).
+('PTEN levels', 'were reduced by', 'siRNA')
+('PTEN levels', 'tested for', 'sensitivity')
+
+In both cell lines PTEN knockdown failed to change GDC-0941 sensitivity when compared to the same cell lines transfected with a non-targeting control siRNA (Figure ).
+('PTEN knockdown', 'failed to change', 'sensitivity')
+
+Levels of PTEN knockdown were assessed by western blot 24 hrs after transfection, at the time when cells were dosed with GDC-0941 () and at 72 hrs, the same time viability assays were performed (Figure ).
+('Levels of PTEN knockdown', 'were assessed by', 'western blot')
+
+To confirm the siRNA data, a matched set of isogenic SW48 cell lines that included parental cells and a clone altered to have deletion of PTEN were assessed for sensitivity to GDC-0941 (Figure ).
+('set of SW48 cell lines', 'were assessed for', 'sensitivity')
+
+Complete PTEN loss in SW48 lines did not change the response to GDC-0941, which is in agreement with our findings with PTEN siRNA knockdown.
+('PTEN loss in SW48 lines', 'did not change', 'response')
+
+(Figure ).
+
+PTEN loss is not responsible for GDC-0941 resistance, but does enhance resistance due to secretion of AREG.
+('PTEN loss', 'is not responsible for', 'resistance')
+
+(A) SW48 and SW48 H1047R cells transfected with either a non-targeting or PTEN siRNA for 24 hrs before being treated with a dose escalation of GDC-0941.
+
+At 72 hrs post dosing cells were assayed for viability and lysates were collected for immunoblotting.
+
+(B) SW48 and SW48 PTEN−/− cells treated with a dose escalation of GDC-0941 and assayed for viability 96 hrs after dosing.
+
+(C) SW48 cells assessed for PTEN protein expression and pAKTT308 levels by immunoblotting after GDC-0941 culture for 2, 3 or 6 months (Top).
+
+The same cells assessed for AREG levels by ELISA at 24, 48, and 72 hrs after plating (bottom).
+
+(D) SW48 parental and SW48 PTEN−/− cells treated with a dose titration of GDC-0941 with and without 50 ng/ml of AREG and assayed for viability 96 hrs after dosing.
+
+While resistant pools were being generated, they were frozen and stored at various times (2, 3, and 6 months).
+
+These cells were utilized to establish the time at which PTEN was lost and AREG secretion was initiated (Figure ).
+('cells', 'were utilized to establish', 'time')
+
+PTEN loss and increased pAKTT308 were not observed until the 6-month time point.
+('PTEN loss', 'were not observed until', 'time point')
+('increased', 'were not observed until', 'time point')
+
+However, AREG secretion was observed in resistant pools at 2 months (Figure ).
+('AREG secretion', 'was observed in', 'pools')
+
+PTEN loss did not appear to cause GDC-0941 resistance, but we found that it enhances the resistance generated when SW48 cells are stimulated by EGFR ligands (Figure ).
+('PTEN loss', 'did not appear to cause', 'resistance')
+('SW48 cells', 'are stimulated by', 'EGFR ligands')
+
+When the decrease in GDC-0941 sensitivity in both SW48 cells and SW48 PTEN−/− cells are compared in the presence of AREG, the SW48 PTEN−/− cells are 5-fold more resistant than parental SW48 cells (Figure ).
+('SW48 PTEN', 'are resistant than', 'SW48 cells')
+('decrease in sensitivity in SW48 cells', 'are compared in', 'presence of AREG')
+
+Other EGFR ligands, EGF and TGFα were 4.5-fold, and 3-fold, respectively, more resistant in the SW48 PTEN −/− line ().
+
+Resistant clones are sensitive to GDC-0941 in combination with MAPK pathway inhibitors
+
+We next wanted to determine how to treat tumor cells once they acquired GDC-0941 resistance.
+
+In standard cell culture conditions, we found evidence of MAPK pathway activation (Figure ), which suggested they might be sensitive to inhibitors of this pathway.
+
+For these studies we utilized an allosteric MEK inhibitor, G-573 [] and an ERK inhibitor, G-824 [].
+
+When SW48 and SW48 H1047R GDC-0941 resistant clones were tested for response to these inhibitors all clones tested were highly resistant (Figures , ).
+('clones', 'were tested for', 'response to inhibitors')
+
+Notably, both G-573 and G-824 were able to suppress MAPK signaling in resistant clones as measured by pERKT202/Y204 and pRSKT359/S363 (Figure , ).
+
+Even when the MAPK pathway was reduced with these treatments, the resistant clones still retained high phosphorylated AKT levels due, in part, to PTEN absence (Figures  and , ).
+('clones', 'retained', 'AKT levels')
+('MAPK pathway', 'was reduced with', 'treatments')
+
+When the same GDC-0941 resistant clones were dosed with G-573 or G-824 in media containing a 1.5 uM dose of GDC-0941, sensitivity to both MAPK inhibitors was restored (Figure , ).
+
+For SW48 resistant clones (2F and 2G), sensitivity to both the MEKi and ERKi was greater than in the parental line (Figure , ).
+('sensitivity to MEKi', 'was greater than', 'in')
+
+We also found that S6 phosphorylation was only fully repressed when resistant clones were treated with GDC-0941 in combination with G-573 or G-824 (Figure , ).
+
+GDC-0941 resistant clones are sensitive to inhibitors of the MAPK pathway in the presence of GDC-0941.
+('clones', 'are sensitive to', 'inhibitors of MAPK pathway')
+
+(A) SW48 and SW48 H1047R parental and GDC-0941 resistant clones treated with a dose escalation of a MEK inhibitor (G-573) with and without a constant 1.5 uM dose of GDC-0941 and assayed for viability 96 hrs after dosing.
+
+(B) SW48 and SW48 H1047R parental and GDC-0941 resistant clones treated with a dose escalation of an ERK inhibitor (G-824) with and without a constant 1.5 uM dose of GDC-0941 and assayed for viability 96 hrs after dosing.
+
+(C) SW48 and SW48 H1047R GDC-0941 resistant clones dosed with DMSO, GDC-0941 (1.5 uM), G-573 (1.0 uM), G-824 (1.0 uM) or combinations of these inhibitors at these concentrations.
+
+Lysates were collected 24 hrs post treatment.
+('Lysates', 'were collected', 'hrs post treatment')
+
+Cell lysates were prepared and analyzed by immunoblotting.
+('Cell lysates', 'analyzed by', 'immunoblotting')
+
+Resistant clone is less responsive to GDC-0941 in vivo
+
+To confirm our in vitro findings, GDC-0941 potency against sensitive (9A) and resistant (10A) SW48 H1047R clones was evaluated in vivo.
+
+Both models were dosed daily with 50 mg/kg of GDC-0941 for 17 days and assayed for GDC-0941 resistance ().
+('models', 'assayed for', 'resistance')
+
+At 50 mg/kg of GDC-0941 no loss of body weight was observed ().
+
+Consistent with in vitro results, SW48 H1047R (10A) tumors were more resistant to GDC-0941 when compared to the SW48 H1047R (9A) model, with tumor growth inhibition (TGI) of 6% and 42%, respectively.
+
+We also evaluated PI3K and MAPK pathway markers in 9A and 10A vehicle treated tumors that were collected 1 hr post-final dose.
+
+We found that SW48 H1047R (9A) tumors retained PTEN protein expression, while SW48 H1047R (10A) did not have detectable PTEN protein levels ().
+('H1047R tumors', 'retained', 'PTEN protein expression')
+
+Clone 10A tumors also had substantially elevated AKT phosphorylation compared to clone 9A ().
+('Clone 10A tumors', 'had', 'AKT phosphorylation compared to clone 9A')
+
+Resistant clone efficacy can be restored by MAPK inhibition
+('clone efficacy', 'can be restored by', 'MAPK inhibition')
+
+To further confirm our in vitro findings, the resistant SW48 H1047R clone (10A) was evaluated in xenografts in combination with a MEK inhibitor, G-573 (Figure ).
+('SW48 H1047R clone', 'was evaluated in', 'xenografts')
+
+Animals were dosed daily for 21 days with 75 mg/kg of GDC-0941, 50 mg/kg of G-573, or a combination of both drugs.
+
+No body weight loss was observed, and the fitted tumor volumes were used to calculate percent tumor growth inhibition (TGI) (Figure ).
+('No body weight loss', 'were used to calculate', 'percent tumor growth inhibition')
+('tumor volumes', 'were used to calculate', 'percent tumor growth inhibition')
+
+Single agent treatment with GDC-0941 and G-573 showed decreased tumor growth relative to vehicle, with 48% and 33% TGI, respectively.
+('agent treatment', 'showed', 'tumor growth')
+
+However, consistent with in vitro modeling, the combination showed an increase in efficacy when compared to either single treatment alone, with a TGI of 77% (Figure ).
+('combination', 'showed', 'increase in efficacy')
+
+Tumors were collected 1 hr after the final dose was administered and assayed for pathway signaling.
+('Tumors', 'were collected', 'hr')
+('dose', 'assayed for', 'pathway signaling')
+
+GDC-0941 treatment decreased levels of phosphorylated AKT; while G-573 treatment decreased phosphorylated ERK.
+('treatment', 'decreased', 'levels of AKT')
+('treatment', 'decreased', 'ERK')
+
+The drugs in combination decreased phosphorylated AKT and ERK, as well as phosphorylated S6 (Figure ).
+('drugs in combination', 'decreased', 'AKT ERK')
+
+Combination efficacy of PI3K and MEK inhibition in GDC-0941 resistant xenografts.
+
+(A) SW48 H1047R resistant (clone 10A) tumor-bearing mice were treated orally and daily with vehicle (0.5% methylcellulose, 0.2% tween-80 + 7.5% captisol), 75 mg/kg GDC-0941, 50 mg/kg G-573, or GDC-0941 and G-573 in combination.
+
+Mean tumor volumes (mm3) and percent body weight change of SW48 H1047R resistant (clone 10A) tumor-bearing mice measured twice weekly for 21 days.
+
+(B) PI3K and MAPK pathway markers were assessed after 21 days of treatment.
+
+Five tumors are represented in each group.
+('tumors', 'are represented in', 'group')
+
+(C) SW48 H1047R resistant (clone 10A) tumor-bearing mice were treated orally and daily with vehicle (0.5% methylcellulose, 0.2% tween-80 + 7.5% captisol), 75 mg/kg GDC-0941, 25 mg/kg erlotinib, or GDC-0941 and erlotinib in combination.
+
+Mean tumor volumes (mm3) and percent body weight change of SW48 H1047R resistant (clone 10A) tumor-bearing mice measured twice weekly for 21 days.
+
+(D) PI3K and MAPK pathway markers were assessed after 21 days of treatment.
+
+Five tumors are represented in each group.
+('tumors', 'are represented in', 'group')
+
+We observed similar efficacy results in clone 10A xenografts treated with the combination of GDC-0941 and erlotinib (Figure ).
+('efficacy', 'results in', 'clone 10A xenografts treated with combination')
+
+While erlotinib did not show any single agent activity, the GDC-0941 and erlotinib combination resulted in an 89% TGI, which was a substantial increase over single agent GDC-0941 and erlotinib treatment (TGI of 48% and −3%, respectively).
+('erlotinib', 'did not show', 'agent activity')
+('combination', 'resulted in', 'TGI')
+
+Some weight loss was observed with the GDC-0941 and erlotinib combination, however all mice were otherwise healthy and remained on study throughout.
+('mice', 'remained on', 'study')
+('weight loss', 'was observed with', 'combination')
+
+A reduction in phosphorylated S6 was also detected in tumors collected 1 hr after the final GDC-0941 and erlotinib combination dose (Figure ).
+('reduction in S6', 'was detected in', 'tumors hr')
+
+DISCUSSION
+
+With the emergence of several PI3K inhibitors in clinical trials, it has become increasingly important to study molecular mechanisms that cancer cells may utilize to resist the beneficial effects of these inhibitors [].
+('cancer cells', 'may utilize to resist', 'that')
+
+Here we describe the role of EGFR ligands and loss of PTEN in acquired GDC-0941 resistance.
+
+By using SW48, SW48 H1047R and a panel of CRC cell lines, we have shown that GDC-0941 growth inhibition can be overcome with the addition of EGFR ligands through MAPK pathway activation.
+('growth inhibition', 'can be overcome with', 'addition of EGFR ligands')
+
+In addition, SW48 and SW48 H1047R cells with acquired resistance to GDC-0941 begin to secrete AREG to bypass suppression of the PI3K pathway.
+('SW48 H1047R cells with resistance', 'begin to secrete', 'AREG')
+
+To drive PI3K pathway signaling, resistant cells eventually lose PTEN, which results in increased levels of phosphorylated AKT in the absence of GDC-0941.
+('cells', 'lose', 'PTEN')
+
+The loss of PTEN alone is not able to induce resistance to GDC-0941, but it enhances the resistance induced by EGFR stimulation.
+('loss of PTEN', 'is not able to induce', 'resistance')
+
+AREG has been implicated in resistance to other therapies [, ].
+('AREG', 'has been implicated in', 'resistance to therapies')
+
+Consistent with our findings linking signaling upstream of the PI3K pathway and PI3K inhibitor resistance, other studies have implicated MET in mouse models of acquired resistance and KRAS as a marker for intrinsic resistance [].
+('studies', 'have implicated', 'MET in mouse models of resistance')
+
+Due to its location downstream of EGFR, the MAPK pathway remains active despite PI3K inhibition.
+('MAPK pathway', 'remains', 'active')
+
+This is consistent with described mechanisms of PI3K inhibitor resistance that demonstrate a reliance on other pathways such as, c-MYC, eIF4E, Notch1, and RSK3/4 [-].
+
+It is also worth noting that a gatekeeper resistance mutation has not been described in the PI3K enzymes [].
+('gatekeeper resistance mutation', 'has not been described in', 'PI3K enzymes')
+
+In our studies, we sequenced the PIKC3A exons and found no mutations in SW48 sensitive or resistant models.
+
+The parental SW48 isogenic lines are initially sensitive to GDC-0941.
+
+Thus, the cells have reliance on the PI3K pathway that is changed over time in culture in the presence of GDC-0941.
+('cells', 'have', 'reliance on PI3K pathway')
+
+MAPK pathway activation through AREG and EGFR allow the cells to grow and survive while the PI3K pathway is blocked by GDC-0941.
+('MAPK pathway activation through AREG', 'allow to grow', 'cells')
+
+However, it appears that SW48 cells in culture with GDC-0941 may attempt to maintain signaling through the PI3K pathway through loss of PTEN (Figure ).
+('SW48 cells in culture', 'may attempt to maintain', 'signaling through PI3K pathway')
+
+Autocrine signaling through AREG and EGFR activation would activate the PI3K pathway in the absence of GDC-0941.
+('Autocrine signaling through AREG activation', 'would activate', 'PI3K pathway')
+
+The observed loss of PTEN in resistant clones also supports a mechanism for resistant clones to continue PI3K pathway signaling, especially since PTEN loss did not appear to have a substantial role in GDC-0941 resistance.
+('loss of PTEN', 'supports', 'mechanism for clones to continue PI3K pathway signaling')
+('PTEN loss', 'did not appear to have', 'role in resistance')
+
+In the absence of GDC-0941, PTEN null resistant clones continue to secrete AREG and stimulate the EGFR activating the MAPK and PI3K pathways (Figure ).
+('PTEN clones', 'continue to secrete', 'AREG')
+('PTEN clones', 'stimulate', 'EGFR activating MAPK PI3K pathways')
+
+Signaling changes that are observed with GDC-0941 resistance in SW48 cells.
+
+(A) SW48 cells are initially sensitive to GDC-0941.
+
+GDC-0941 resistance develops with autocrine (AREG/EGFR) signaling and activation of the MAPK pathway.
+('resistance', 'develops with', 'autocrine signaling')
+
+Cells eventually lose PTEN protein as resistance develops.
+('Cells', 'lose', 'PTEN protein')
+
+(B) Resistant cells must be maintained on GDC-0941 to prevent signaling flare.
+('B cells', 'must be maintained to prevent', 'signaling flare')
+
+In the absence of GDC-0941, resistant cells signal strongly through the PI3K pathway.
+
+Without a significant role in GDC-0941 resistance, the PTEN loss remains important because it may influence treatment decisions for patients in the clinical setting once resistance occurs.
+('PTEN loss', 'remains', 'important')
+
+We have shown that once PI3K inhibition is removed, cells that have acquired GDC-0941 resistance also become resistant to MEK or ERK inhibition.
+('removed', 'become', 'resistant to MEK inhibition')
+('PI3K inhibition', 'is removed', 'cells')
+
+The resistance to MAPK pathway inhibition is likely linked to PTEN absence and subsequent hyper-activation of the PI3K/AKT pathway that is observed with the increase in AKT phosphorylation upon release of GDC-0941.
+('resistance to MAPK pathway inhibition', 'is likely linked to', 'PTEN absence')
+
+The loss of sensitivity to ERK and MEK inhibition can be restored if GDC-0941 is retained in the media, which prevents PI3K/AKT pathway activation.
+
+Taken together, these findings may suggest maintenance therapy in the clinic for patients that become resistant to PI3K inhibitors.
+('findings', 'may suggest', 'maintenance therapy in clinic')
+
+MATERIALS AND METHODS
+
+Cell culture
+
+Cell lines were cultured McCoy's 5A supplemented with 10% fetal bovine serum, 100 units/ml penicillin, and 100 μg/ml streptomycin at 37°C under 5% CO2.
+
+SW48 Parental, SW48 H1047R, and SW48 PTEN (−/−) were licensed from Horizon Discovery Ltd.
+
+Compounds and reagents
+
+GDC-0941, erlotinib, G-573, and G-824 were all obtained from Genentech.
+
+Cetuximab was produced by ImClone Systems, Inc.
+('Cetuximab', 'was produced by', 'ImClone Systems')
+
+Secreted factor screen
+
+Recombinant purified secreted factors were purchased from Peprotech and R&amp;D Systems and were reconstituted in PBS/0.1% BSA ().
+('factors', 'were purchased from', 'Peprotech')
+('factors', 'were reconstituted in', 'PBS/0 BSA')
+
+Secreted factors were transferred into 96-well plates at a concentration of 1 ug/ml, and subsequently diluted to 100 ng/ml in media containing no drug or 1 uM of GDC-0941.
+('factors', 'were transferred into', 'plates')
+('factors', 'diluted to', 'ng/ml in media containing no drug uM')
+
+Equal volumes of diluted factor (50 ng/ml final) were arrayed into 384 well plates pre-seeded with cells (2000 cells/well seeded the day before) using an Oasis liquid handler.
+
+After 72 hrs, cell viability was determined using CellTiter-Glo (Promega).
+
+Resistant cell line selection
+
+SW48 and SW48 H1047R cells were grown in increasing concentrations of GDC-0941 until they grew normally in 1.5 umol/L.
+('SW48 H1047R cells', 'were grown in', 'concentrations')
+
+Resistant clones were isolated by fluorescence-activated cell sorting of individual cells into 96-well plates.
+('clones', 'were isolated by', 'cell sorting of cells')
+
+Western blot and ELISA analyses
+
+Equal amounts of protein were separated by electrophoresis through NuPage Bis-Tris 4-12% gradient gels (Invitrogen), proteins were transferred onto nitrocellulose pore membranes using the iBlot system and protocol from Invitrogen (Carlsbad, CA).
+('Equal amounts of protein', 'were separated by', 'electrophoresis')
+('proteins', 'were transferred onto', 'nitrocellulose pore membranes')
+
+PTEN, pAKT (T308), pAkt (Ser473), pERK (T202/Y204), Total EGFR, pEGFR (Y1068), and pS6 (S235/236) antibodies were obtained from Cell Signaling Technology (Danvers, MA).
+('PTEN antibodies', 'were obtained from', 'Cell Signaling Technology')
+
+pRSK (T359/S363) antibody was obtained from EMD Millipore (Billerica, Massachusetts).
+('pRSK antibody', 'was obtained from', 'EMD Millipore')
+
+ELISA kits for AREG, βcellulin, HRG-1, EGF, HB-EGF, and TGFα, were obtained from R&amp;D systems (Minneapolis, MN) and carried out according to provided instructions.
+('ELISA kits for AREG', 'were obtained from', 'R&D systems')
+
+cell viability assays
+
+Cells were seeded (1500 cells/well) in 384-well plates for 16 h.
+
+On day two, nine serial 1:2 compound dilutions were made in DMSO in a 96 well plate.
+('serial compound dilutions', 'were made in', 'DMSO')
+
+The compounds were further diluted into growth media using a Rapidplate robot (Zymark Corp., Hopkinton, MA).
+
+The diluted compounds were added to quadruplicate wells in the 384-well cell plate and incubated at 37 C and 5% CO2.
+('compounds', 'were added to quadruplicate', 'wells')
+
+After 4 days, relative numbers of viable cells were measured by luminescence using CellTiter-Glo (Promega) according to the manufacturer's instructions and read on a Wallac Multilabel Reader (PerkinElmer, Foster City).
+('numbers of cells', 'were measured by', 'luminescence')
+('numbers of cells', 'read on', 'Wallac Multilabel Reader')
+
+EC50 values were calculated using Prism 4.0 software (Graphpad, San Diego).
+('EC50 values', 'were calculated using', 'Prism software')
+
+siRNAs and transfections
+
+PTEN and the non-targeting control siRNAs were from Dharmacon.
+('PTEN', 'were from', 'Dharmacon')
+('control siRNAs', 'were from', 'Dharmacon')
+
+Transfection of siRNAs was accomplished by Amaxa Nucleofector Kit as described by the manufacturer for solution kit R program T-020.
+('Transfection of siRNAs', 'was accomplished by', 'Amaxa Nucleofector Kit')
+
+In Vivo Methods
+
+All in vivo efficacy and pharmacodynamic studies were reviewed and approved by the Institutional Animal Care and Use Committee (IACUC) at Genentech, and mice were maintained according to the ILAR Guide for the Care and Use of Laboratory Animals.
+('efficacy', 'approved by', 'Animal Care')
+('efficacy', 'were maintained according', 'to')
+('studies', 'approved by', 'Animal Care')
+('studies', 'were maintained according', 'to')
+('mice', 'were maintained according', 'to')
+
+Twelve to sixteen week old naïve female C.B-17 SCID beige mice (Charles River Laboratories, San Diego, CA) were inoculated subcutaneously with either 1 million SW48 H1074R clone 9A cells or 5 million SW48 H1074R-R clone 10A cells suspended 1:1 in HBSS:matrigel.
+
+Once tumors were established, mice with similarly sized tumors (mean volume of 200-300 mm3) were randomized into treatment cohorts.
+('mice with tumors', 'were randomized into', 'treatment cohorts')
+
+All mice were dosed daily for 17 or 21 days, orally, with vehicle [0.5% methylcellulose/0.2% tween-80 (MCT)], GDC-0941 at 50 or 75 mg/kg, G-573 at 75 mg/kg, or erlotinib at 25 mg/kg.
+
+Combination drugs were dosed in succession at the single agent doses indicated.
+('Combination drugs', 'were dosed in', 'succession')
+
+Length (l) and width (w) of each tumor were measured using digital calipers (Fred V.
+('Length', 'were measured using', 'calipers')
+('width', 'were measured using', 'calipers')
+
+Fowler Company, Inc., Newton, MA) and tumor volumes were calculated (V = lw2 × 0.5).
+
+A linear mixed modeling approach was used to analyze repeated measurement of tumor volumes from the same animals over time.
+('modeling approach', 'was used to analyze', 'measurement of tumor volumes')
+
+Curve fitting was applied to Log2 transformed individual tumor volume data using a linear mixed-effects (LME) model with the R package nlme, version 3.1-97 in R v2.13.0 (R Development Core Team 2008; R Foundation for Statistical Computing; Vienna, Austria).
+('Curve fitting', 'was applied to', 'Log2')
+
+Tumor growth inhibition (%TGI) was calculated as the percentage of the area under the fitted curve (AUC) for the respective dose group/day in relation to the vehicle, such that %TGI = 100 × (1 – (AUCtreatment/day)/(AUCvehicle/day)).
+('Tumor growth inhibition', 'was calculated as', 'percentage of area')
+
+Tumor sizes and body weights were recorded twice weekly over the course of the study.
+
+Mice with tumor volumes ≥ 2000 mm3 or with body weight losses ≥ 20% from their weight at the start of treatment were euthanized per IACUC guidelines.
+
+For pharmacodynamic marker analysis, xenograft tumors (n=5) were excised from animals one hour post-final dose and immediately snap frozen in LN2.
+('xenograft tumors', 'were excised from', 'animals')
+
+Frozen tumors were weighed and processed using a pestle (Scienceware; Pequannock, NJ) in 1x Cell Extraction Buffer.
+('tumors', 'processed using', 'pestle')
+
+Serum samples were also collected from the same five mice per group one hour following the final dose to determine AREG levels.
+('Serum samples', 'were collected from', 'mice per group')
+
+SUPPLEMENTAL FIGURES AND TABLES
+
+All authors are employed at Genentech, Inc.
+('authors', 'are employed at', 'Genentech')
+
+We thank Genentech chemists for GDC-0941 and GDC-0980.
+
+We also thank Wei Lin for useful discussions.
+

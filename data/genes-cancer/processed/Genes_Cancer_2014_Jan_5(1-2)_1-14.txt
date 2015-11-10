@@ -1,0 +1,236 @@
+INTRODUCTION
+Lung cancer is the leading cause of cancer deaths world-wide [].
+Approximately 85% are non-small cell lung cancers (NSCLC), consisting mainly of squamous cell, adenocarcinoma, adenosquamous carcinoma, and large-cell anaplastic carcinoma, with most being adenocarcinomas [,].
+Roughly 85% of lung cancers are caused by smoking, with the remaining related to factors such as individual genetics, and radon gas, asbestos, and air pollution exposures [-].
+Most NSCLCs are diagnosed at an advanced stage, are clinically aggressive, and have a high metastatic potential.
+Thus NSCLC has a poor prognosis, with the majority of newly diagnosed individuals surviving less than one year and the five year survival rate being 16% [].
+Additionally, current NSCLC chemotherapeutic regimens have low efficacy.
+For example, patients with untreated advanced NSCLC have a median survival of 7.15 months, while those treated with current platinum-based doubled chemotherapy regimens have an 8-12 month median survival [,].
+Over the past ten years intense research into the mechanisms of carcinogenesis and malignant progression has revealed that ~140 genes are altered in human malignancies, functioning as “driver mutations” that initiate and maintain malignancy [].
+While most adult malignancies carry 33-66 driver mutations, NSCLCs carry ~200 mutations, probably due to their arising in a background of cigarette smoke mutagen exposure [].
+Not surprisingly, lung cancers in non-smokers have 10-fold fewer mutations than those in smokers [].
+Presently, at least eighteen different driver mutations have been identified in NSCLC [-].
+Thus, tumors once viewed as common “generic histologic types” are by molecular analysis composed of many tumor subtypes with similar histologies, but different molecular mechanisms of carcinogenesis and possible treatment modalities [].
+For example, epidermal growth factor receptor (EGFR]) gene mutations are found in 15-30% in NSCLCs and are an indication for tyrosine kinase inhibitor (TKI, erlotinib or gefitinib) therapy [,].
+Several NSCLC mutations, such as the V600E and G479A BRAF mutations, are found in only 1-3% of NSCLCs and are tested for less frequently [,].
+Most current molecular NSCLC testing is directed at EGFR, KRAS, and ALK mutation detection [].
+Specific therapeutic regimens exist for NSCLCs with EGFR, BRAF, and ALK mutations [,,].
+Presently KRAS mutations are undruggable, although benzimidazole compounds are being developed which inhibit oncogenic RAS signaling and suppress the in vivo and in vitro growth of pancreatic adenocarcinoma cells at nM concentrations [].
+Typically, the TKIs are used for locally advanced or metastatic NSCLC, or for NSCLC treatments that have failed standard chemotherapeutic regimens [,].
+TKI therapy has little effect on malignancies lacking the driver mutation for specific TKI targets.
+For example, in patient populations with NSCLC unselected for EGFR mutations, the response rate to EGFR mutation-directed TKI therapy is ~9% [,].
+In NSCLC patients with EGFR mutations the response rates to erlotinib or gefitinib are greater than 70% [,].
+Based on this, molecular diagnostic testing for ALK and EGFR mutations is now recommended for NSCLCs to guide therapy [,].
+Here we review the basic molecular pathology of ALK gene function in NSCLC, current testing methods, and review the current treatment strategies directed at ALK-mutation positive NSCLC.
+Anaplastic Lymphoma Kinase Gene Signaling
+The anaplastic lymphoma kinase (ALK) gene is found at 2p23, spans 29 exons, and encodes a 1,620 amino acid, 220 kDa classical insulin superfamily tyrosine kinase.
+The mature ALK protein undergoes post-translational N-linked glycosylation and consists of an extracellular ligand-binding domain, a transmembrane domain, and a single intracellular tyrosine kinase domain.
+ALK is activated by dimerization with subsequent trans-autophosphorylation of three tyrosine moieties [].
+ALK is expressed in central and peripheral nervous systems, testes, skeletal muscle, basal layer keratinocytes, and small intestine.
+ALK appears to function in neuronal development and differentiation during embyrogenesis and its expression falls to low-levels at age three weeks and remains low throughout adult life [-].
+Little is known about normal physiologic ALK function and ALK−/− mice show age-related increases in hippocampal progenitor cells, mild behavioral alterations, full viability, and have a normal lifespan [,].
+In D. melanogaster and C. elegans the ALK-activating ligands Jelly belly and hesitation behavior have been identified, respectively [,].
+In humans the heparin-binding growth factors Midkine and Pleiotrophin bind ALK have been reported to be the mammalian activating ligands [,].
+However multiple studies have failed to confirm these results, so the endogenous ALK ligand remains controversial [,-].
+Activated ALK initiates several signal transduction pathways, including the Janus kinase, mammalian target of rapamycin, sonic hedgehog, phosphoinositide 3-kinase/protein kinase B, hypoxia-inducible factor-1α, JUNB, and phospholipase Cγ signaling.
+ALK signaling also regulates miR135b, mi29a, and miR-16, while Alk itself is regulated by miR-96 [].
+Analyses of ALK-signaling are complicated by the fact that different studies have employed different models, some of which examined wild-type ALK activity and others examining different ALK fusion protein activities.
+Thus, it's likely that some fusion protein targets do not represent “wild-type” or legitimate ALK phosphorylation targets [].
+ALK Mutations in Cancer
+ALK was first identified by Morris et al.
+(66) in anaplastic non-Hodgkin's lymphoma (ALCL), where it's fused to nucleophosmin, forming a t(2;5)(p23;q35) chromosomal translocation with constitutively active ALK kinase activity.
+Since this study activating ALK kinase mutations/translocations have been identified in a number of malignancies (Table ) [,,,,-].
+For many of these tumors, only a low percent are ALK positive [,].
+ALK activation occurs largely through three different mechanisms: 1) fusion protein formation, 2) ALK over-expression, and 3) activating ALK point mutations [].
+While most histologically-defined tumor types have one of these mutation types, a few like the inflammatory myofibroblastic tumor (IMT) and NSCLC can have ALK mutations in two categories (Table ).
+In the ALK translocations, the fusion partner regulates ALK expression levels, its subcellular location, and when it's expressed.
+Presently, there are 22 known different translocation partners that form fusion proteins with ALK [].
+In many cases, such as the echinoderm microtubule-associated protein-like 4 (EML4)-ALK fusion found in NSCLC, there are multiple fusion variants with different molecular weights, frequencies in NSCLC, protein stabilities (t1/2), and ALK inhibitor sensitivities [,,,] (Table ).
+Rare individuals with non-functioning kinase ALK mutations have been identified.
+Presently it is unclear if these ALK “kinase dead” mutations promote tumor growth or are “passenger mutations” that do not effect cell proliferation [].
+Activating ALK point mutations are also occur.
+[, -]	
+Diffuse large B-Cell Lymphoma	Several ALK fusion proteins	Rare, with ~50 cases described.
+The most common fusions partners are CLTC and NPM.
+[,].
+Rikova et al.
+[] used global phosphotyrosine analysis to examine 41 NSCLC cell lines and 150 NSCLC tumors.
+Phospho-tyrosine peptides from these samples were purified and analyzed for specific phosphotyrosine kinase patterns.
+Patterns were detected for EGFR, c-Met, PDGFR-α, ROS, DDR1, and EML4-ALK and TGF-ALK fusion protein activities, with 4.4% of the NSCLCs being ALK fusion protein positive.
+Soda et al.
+[] employed a retroviral cDNA expression library derived from a lung adenocarcinoma specimen which was infected into murine fibroblasts.
+One clone corresponded to the amino portion of EML4 and the carboxy portion of human ALK.
+Of 75 NSCLCs later examined 5 (6.7%) carried this open reading frame [].
+The EML4-ALK fusion results from an inversion in the short arm of chromosome two, fusing the N-terminal domain of EML4 to the intracellular kinase domain of ALK (3' gene region), resulting in a constitutively active ALK tryrosine kinase [].
+ALK translocation positive lung tumors are often adenocarcinomas with a solid or acinar histology, and focal signet-ring cell features, that often occur in younger patients who are never or former/light smokers [,-].
+Although ALK fusion proteins can coexist with other lung cancer driver mutations, these molecular double-hits are rare [,-].
+This observation is not surprising as small interfering RNA silencing of the EML4-Alk fusion in cell lines inhibits cell growth more than 50%, indicating that the EML4-ALK fusion, by itself, is sufficient as a malignancy driver mutation [].
+Due to the high world-wide lung cancer incidence (1.4 million deaths/year), ALK fusion positive lung cancers constitute the largest ALK positive patient population, comprising ~70,000 individuals [].
+Retrospective studies indicate that ALK fusion positivity was not a favorable prognostic factor in NSCLC prior to crizotinib based therapy [].
+Interestingly, Kim et al.
+[] found ALK expression in 11.9% (8/67) of primary NSCLCs and 25.4% (17/67) of metastatic lesions, indicating that metastatic progression can be associated changes in ALK expression.
+Last, advanced stage ALK-positive lung cancers may have a higher propensity for pleural and pericardial disease than lung cancers lacking ALK, KRAS, or EGFR mutations [].
+Molecular Diagnostic Testing Methods for ALK-Fusions in NSCLC
+Since the introduction of crizotinib based chemotherapy, ALK mutation testing is now recommended for all NSCLCs [].
+There are several molecular ALK mutation testing methods; the most common are immunohistochemistry (IHC), fluorescent in situ hybridization (FISH), and polymerase chain reaction based techniques (PCR).
+Here we will briefly review these methods and their relative advantages and disadvantages.
+FISH
+FISH analysis is considered the Gold Standard for ALK NSCLC mutation testing.
+In 2011 FDA approved the Abbot Vysis ALK Break Apart FISH Probe Kit for molecular diagnostic testing [,].
+For the Vysis ALK procedure unstained tissue hybridized overnight with the ALK probe and is evaluated by fluorescence microscopy [,,,].
+An ALK translocation is present when the ALK probe shows separated red and green fluorophores, or has loss of the green signal, in 15% or more of the cells examined.
+The green fluorophore binds the region 5' to ALK, while red binds to the 3' ALK kinase encoding region [,].
+FISH analysis for EML4-ALK translocations can be challenging as: 1) it has a high cost, 2) its accurate interpretation requires expertise and experience, 3) it does not identify specific translocation types, and 4) often has a lengthy turn-around time [,,,].
+The advantages of FISH are that it should detect all ALK rearrangements regardless of the fusion partner and is accurate and reliable.
+ALK IHC
+IHC readily identifies ALK in ALCL [,].
+However, ALK protein levels in ALK-rearranged NSCLCs are comparatively low, making the ALK IHC detection methods used for ALCL inadequate [].
+Additionally, there is currently no standard protocol for using IHC to detect ALK in NSCLC ([,].
+Antibodies used with some success have been D5F3 (Cell Signaling Technology, Danvers, MA, USA), 5A4 (Novocastra, Newcastle, UK), and ALK clone ZAL4 (Invitrogen, Carlsbad, CA, USA) [,,,].
+Thunnissen et al.
+[] pointed out that the current challenges in developing IHC for ALK detection in NSCLC are: 1) tissue preparation, 2) antibody choice, 3) signal enhancement systems, and 4) the optimal scoring system.
+The main advantages of IHC are: 1) low cost, 2) relative ease of implementation, 3) ease of interpretation by the general pathologist, 4) retention of histologic information, and 5) a short turn-around time.
+Currently the clinical application ALK IHC in NSCLC requires further analysis and validation [,,-].
+PCR
+PCR-based techniques can detect ALK expression in NSCLC, with protocols including reverse-transcriptase multiplexed PCR and analyses of the relative expression of the 5' and 3' portions of the ALK gene transcript by RT-PCR [,,,,].
+
+a. Reverse-Transcriptase PCR (RT-PRC)
+RT-PCR is a precise, sensitive, and reproducible technique that can detect EML4-ALK fusion transcripts.
+Additionally, the amplicons can be sequenced to identify the specific fusion variants [,,].
+In this procedure RNA is converted into cDNA by reverse transcriptase and the cDNA is PCR amplified with specific primers.
+Amplification requires primer sets specific for each translocation [,,].
+Commercial kits are available which usually have primers to most or all of the EML4-ALK fusions transcripts [,,,,].
+The amplicons are identified by a variety of methods, including sequencing, fluorescent probe degradation, electrophoresis, and NanoString nCounter capture technology [,,,,].
+
+b. 5'-Rapid Amplification of cDNA Ends (RACE) Analysis
+All EML4-ALK fusion proteins carry the tyrosine kinase domain encoded by exon 20 and following distal 3' exons [].
+Wang et al.
+[] used RACE analysis to quantify relative 5' and 3' ALK mRNA levels in NSCLCs.
+EML4-ALK mRNA was reverse transcribed into cDNA and different portions of the cDNA were amplified with primer sets specific to exons between E13-E18 and E22-E27.
+The E22-E27 domains where increased in 22.6% (40/177) of NSCLCs, ranging from 32.2 to 1573.7-fold increased expression when normalized to 5' ALK mRNA expression.
+PCR ALK analysis in NSCLC: 1) is specific and sensitive, 2) can detect the EML4-ALK fusion transcript diluted in over 90% wild-type RNA, and 3) is less expensive than FISH.
+The disadvantages of PCR are that: 1) it misses rare or novel translocations, 2) it can have contamination issues, and 3) RNA degradation/poor sample quality can prevent detection [,,,,].
+Other Methods of EML4-ALK Detection in NSCLC
+The EML4-ALK translocation has been detected by other less commonly employed molecular diagnostic methods, including:
+a. Next Generation Sequencing
+Peled et al.
+[] used comprehensive genomic profiling by second generation sequencing to identify a complex ALK rearrangement in a lung adenocarcinoma previously found to be EML4-ALK negative by the Vysis FISH assay.
+Sequencing revealed a complex ALK rearrangement involving at least five different genomic loci.
+Sequencing the cDNA derived from the complex rearrangement did reveal the canonical EML4-ALK breakpoint.
+The authors hypothesized that the EML4 and ALK genes were separated by small rearrangements that prevented detection by FISH assay.
+The tumor was also ALK positive by IHC and the patient responded to crizotinib therapy.
+The authors suggested that second generation sequencing may be useful for NSCLC patients with a high likelihood of harboring driver mutations not detected by other methods.
+
+b. Exon Array Profiling for EML4-ALK Fusions
+Lin et al.
+[] used exon array profiling (Affymetrix Human Exon 1.0 Arrays) to detect ALK rearrangements in breast, colorectal, and NSCLCs.
+Potential gene fusion candidates showed discordant 5' and 3' ALK transcript expression.
+Bioinformatic analysis revealed some tumors with differences between 5' and 3' ALK exon expression.
+Examination of these samples revealed EML4-ALK fusions in 2.4% of breast cancers (5/209), 2.4% of colorectal (2/83), and 11.3% of NSCLCs (12/106).
+Thus, while a complex, expensive, and technically challenging method, exon array profiling detects EML4-ALK fusions.
+Alk-Inhibitor-Specific Therapy for NSCLC
+Following identification of the NSCLC EML4-Alk fusion, a search for effective inhibitors with clinical applications began.
+The first clinically useful inhibitor PF-2341066 (crizotinib), is now in widespread use for treating EML4-ALK fusion positive NSCLC [,].
+Crizotinib is an orally active aminopyridine derived small-molecule ATP-competitive inhibitor with dual actions on the c-Met and ALK kinases.
+It was first identified as an ALK inhibitor in cell-based selectivity assays, where it exerts a half maximal inhibitory concentration at 24 nmol/L in NPM-ALK positive ALCL cell lines and showed a nearly 20-fold increased selectivity for the ALK and MET kinases compared to a panel of more than 120 different kinases [].
+Crizotinib induces a G1/S phase cell cycle checkpoint and apoptosis in ALK-rearrangement positive, but not negative lymphoma cells.
+SCID-Beige mice xenografted subcutaneously with NPM-ALK positive cells treated with crizotinib at 100mg/kg/day showed complete tumor regression within fifteen days, a significant tumor apoptosis induction, and a concomitant reduction in NPM-ALK phosphorylation and downstream signaling events [-].
+The pharmacokinetics of crizotinib was first determined in humans in a Phase I clinical trial involving 167 patients who received an FDA-approved 250 mg dose BID [].
+Peak drug plasma concentrations were achieved in 4-6 hours and steady-state concentrations were reached in fifteen days.
+Crizotinib was widely distributed to most tissues, but exhibited poor the blood-brain barrier penetration.
+Its bioavailability was 43%, with 91% being protein bound.
+The side effects of crizotinib were documented in a different Phase I study began in May, 2006.
+Thirty-seven patients with advanced stage tumors including colorectal, pancreatic, sarcoma, ALCL, and NSCLCs, were enrolled in dose-escalation testing.
+Crizotinib was administered under fasting conditions QD or BID on a continuous schedule to the patients in successive dose-escalating cohorts, at doses ranging from 50 mg QD to 300 mg BID.
+Dose-limiting toxicities included grade 3 increased alanine aminotransferase and grade 3 fatigue.
+The most common mild (grade 1 or 2) side effects were nausea, emesis, fatigue and diarrhea, reversed with drug cessation [].
+One of the first large trials examining the effectiveness of crizotinib was a multicenter trial of 82 ALK-rearrangement positive advanced NSCLCs screened from 1,500 patients with NSCLC.
+Most of the patients had received prior treatment.
+They were treated with a 250mg BID crizotinib dose in 28-day cycles.
+The patients were assessed for therapy response and adverse drug effects.
+The overall response rate was 57% (47/82 patients) with 46 confirmed partial responses and one confirmed complete response.
+Twenty-seven (33%) patients had stable disease.
+The estimated progression-free survival was 72% and the majority of the side effects were grade 1 or 2.
+The authors concluded that crizotinib treatment resulted in tumor shrinkage in the majority of ALK-positive NSCLCs [].
+In a later study crizotinib treatment was compared to second line chemotherapy (docetaxel and pemetrexed) [].
+Three hundred and forty-seven patients with locally advanced or metastatic ALK-positive lung cancers who had received one prior treatment, were given 250 mg oral crizotinib BID or intravenous chemotherapy with either pemetrexed or docetaxel every three weeks.
+The median progression-free survival was 7.7 months in the crizotinib group and three months in the pemetrexed or docetaxel-based treatment group.
+The response rate was 65% in the crizotinib group and 19.5% in the second line chemotherapy group.
+The patients receiving crizotinib reported a greater quality of life improvement and reduction in lung cancer symptoms compared to the chemotherapy group.
+The authors concluded that crizotinib is superior to standard chemotherapy for the treatment of advanced NSCLC with ALK-rearrangements.
+Possibly, NSCLCs carrying different EML-ALK translocations may respond to ALK inhibitor therapy with different sensitivities, patient response rates, and tumor burden reduction characteristics.
+Presently these studies have not been performed.
+Crizotinib was Federal Food and Drug Administration (FDA) approved on August 26, 2011 - the first FDA-approved NSCLC personalized therapy in which treatment is determined by clinically validated ALK testing [,,].
+Approval came five years after the initial clinical trails, with accelerated approval based on the surrogate endpoint of overall response rate.
+Post-marketing requirements include in vitro studies to evaluating its effects on the CYP2B and CYP2C enzymes and further clinical trials further evaluate its side-effects [].
+The European Medical Agency (EMA) approved crizotinib on 7/19/2012 following further analysis of randomized data [].
+FDA and EMA drug approval guidelines are similar in their relative efficacy of drug analysis, risk evaluation, and analysis of the drug once it's entered clinical use [].
+Molecular Mechanisms of Crizotinib Resistance
+Although ALK-positive tumors generally respond to critzotinib therapy, most patients relapse due to the development of resistance.
+In two small studies consisting of 12 and 18 ALK-positive, critzotinib-treated relapsed individuals, the average time of relapse was 8.9 and 10.5 months, with ranges from 3.5 to 21.1, and 4 to 34 months, respectively [,].
+Resistance mechanisms are usually alterations in the EML-ALK fusion sequence, increased rearranged ALK gene copy number, or the activation of other driver mutations [,].
+In some cases two or more resistance mechanisms are found in the same tumor [].
+Interestingly, in these studies only 36 and 28% of the critzotinib resistance was due to secondary rearranged ALK gene mutations not found in the tumor at the initial diagnosis [,, respectively].
+Most resistance mechanisms involve the increased activity of other driver mutations [,].
+Examples of some of the known mechanisms of critzotinib resistance are summarized in Table  (Table ) [--].
+Comparison of the initial diagnostic tumor biopsy to the resistant tumor often, but not always, revealed that the resistance mechanism was not present in the diagnostic biopsy [,].
+Doebele et al.
+[] identified two initially ALK-positive tumors which became negative following critzotinib therapy.
+Several studies demonstrated that critzotinib resistant cells had increased markers of cell growth and division compared to critzotinib sensitive cells, including increased Ki-67 and phosphorylated EGFR, ALK, ERK, and STAT3 [,,].
+Interestingly, increased autophagy may also play a role in critzotinib resistance [].
+Different mechanisms of crizotinib resistance
+“pm” denotes a point mutation.
+Phase I studies have been completed on several of these drugs and Phase 11 and III studies are ongoing [-].
+One drug, LDK378 (Novartis), has received breakthrough FDA approval [].
+AP26113
+AP26113 (Ariad) is an orally-active TKI that inhibits native and rearranged EML-ALK fusion proteins and the T790M (but not native) EGFR protein [].
+In vitro studies revealed that AP26113 inhibited the native and F1174C, L1196M, S1206R, E1210K, F1245C, and G1269S EML-ALK fusions at IC50's of 14-269 nM [].
+In the BaF3 xenograft model AP26113 induced tumor regression in cells expressing the native, G1269S, and L1196M fusion proteins at 25, 50, and 50 mg/kg, respectively [].
+In one study of 15 patients, 8 with NSCLC (4 ALK+ critzotinib-resistant and 4 with TKI-refectory EGFR mutations) were treated with AP26113.
+No serious adverse events were seen at 120 mg/day [].
+Partial responses were seen in 4 of 4 ALK-positive patients in the Phase II expansion study [].
+Further Phase II studies on other molecular cohorts, such as individuals with ALK-positive critzotinib-resistant NSCLCs and T790M EGFR-positive NSCLCs are being planned [].
+LDK378
+LDK378 is an orally active ALK inhibitor which induced EML-ALK positive tumor regression in xenograft models and exhibited a minimally 70-fold greater ALK inhibition when compared to other kinases [].
+In a Phase I study of 59 patients, 50 of which had ALK-positive NSCLC, of which 37 of these had received critzotinib therapy and 26 of which had progressed on this therapy, 81% of this group (21/26) responded to &gt; 400 mg/day LDK378 [].
+The maximum tolerated LDK378 dose was 750 mg/day, with the side effects being diarrhea, vomiting, nausea, dehydration, and ALT elevation [].
+Phase II trails are underway with this compound [].
+RO5424802
+RO5424802 (Roche) is an orally active ALK-specific kinase inhibitor which binds the ALK binding domain, inhibiting ALK at nM concentrations [,].
+RO5424802 treatment inhibited the growth of cells expressing the native, and L1196M and C1156Y EML-ALK mutants and inhibited ALK and STAT3 phosphorylation, and lowered the levels of the STAT3-regulated proteins BCL3 and NNMT [,].
+In a Phase I and II dose escalation study 70 Japanese patients with ALk-positive NSCLCs were treated with RO5424802 [].
+In Phase I of this study 24 patients received 20-300 mg RO5424802 twice daily.
+No dose-limiting toxicities or grade 4 adverse events were seen at 300 mg twice daily.
+In Phase II of this study 46 patients were treated with this dose and 43 (93.5%) of patients achieved an objective response, including 2 complete responses (4.3%) and 41 (89.1%) partial responses [].
+Serious side effects occurred in 5 patients (11%) which included decreased neutrophils and increased blood creatine phosphokinase [].
+Interestingly, cell lines expressing the EML-ALK fusion exposed in vitro to RO5424802 develop resistance-conferring mutations, suggesting that RO5424802-resistant tumors may appear in treated individuals [].
+HSP90 Inhibitors and EML-ALK Positive Lung Cancer
+Heat shock proteins (HSP) function as part of normal cellular stress responses that protect cells from lethal damage and in cancer their increased expression contributes to increased tumor growth, metastasis, and a worse prognosis [,].
+HSP90 has been extensively studied in cancer and is required for the correct folding and stability of multiple oncogenic proteins, including EML-ALK [].
+Inhibition of normal HSP90 function induces fusion protein misfolding and subsequent degradation by the proteasome system [,].
+Several HSP90 inhibitors, AUY922, IPI 504, and Ganetespib (Norvartis, Infinity, and Synta Pharmaceuticals, respectively) have shown some efficacy suppressing the growth of EML-ALK fusion expressing cell lines and in treating ALK-positive NSCLC patients in Phase II trials [-].
+CONCLUSION
+EML4-ALK fusions are found in a low percentage of NSCLCs [,].
+However, since lung cancer is a common malignancy, an estimated 70,000 cases of ALK positive NSCLC occur world-wide each year, comprising the most common ALK-positive human malignancy [-,,,].
+Currently crizotinib is the “drug of choice” for the NSCLCs [,,].
+The clinical response rates with crizotinib and the newer ALK inhibitors are roughly 30% more effective than conventional chemotherapeutic treatments [-,-].
+Thus, although ALK-rearrangement targeted treatments offer a better treatment regimen, advanced ALK-rearranged NSCLC still carries a poor prognosis.
+Several improvements that are likely to be implemented to improve targeted ALK-positive NSCLC include:
+1.Implementation of low cost, reliable, and sensitive ALK detections methods
+ALK detection by FISH is an expensive, slow, and cumbersome detection method [,,,].
+ALK detection by IHC will likely replace FISH, as it is easier to implement, costs less, requires less expertise to perform, and has a rapid turn-around time [,].
+It's also likely that second and third generation DNA sequencing will become more common in molecular diagnostics, as the cost of sequencing continues to fall [].
+Whole-exon or whole-genome sequencing could identify most or all changes NSCLC DNA.
+As the number of “actionable” (treatable) mutations increases, sequencing would be a more efficient and cost-effective molecular testing method than multiple tests analyzing a single gene alteration.
+2.The development of new inhibitors in lung cancer treatment
+New ALK inhibitors which overcome crizotinib resistance will soon enter clinical use.
+[-].
+Additionally, KRAS mutations are found in 15-30% of lung cancers and are presently undruggable, although KRAS inhibitor are being developed [,].
+New driver mutation specific inhibitors would significantly improve lung cancer treatment options.
+3.The use of multiple inhibitors and/or multi-targeted inhibitors
+Katayama et al.
+[] found that one crizotinib resistant tumor which carried three different molecular resistance mechanisms.
+Molecular diagnostics defining the specific constellation of molecular alterations characterizing each NSCLC (especially for resistant tumors), could allow a specific directed cancer treatment with the least amount of damage to non-neoplastic tissue [,].
+Taken together, these developments would significantly increase NSCLC patient survival while lowering treatment-associated morbidity.
+We would like to thank Lisa LaChance for proof reading and help with organizing this manuscript.
+

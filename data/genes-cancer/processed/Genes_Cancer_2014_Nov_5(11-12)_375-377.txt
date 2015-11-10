@@ -1,0 +1,52 @@
+On July 11, 2014, scientists, clinical oncologists, and students from across the region convened for the fifth annual Origins of Cancer Symposium at the Van Andel Research Institute in Grand Rapids, MI.
+An adaptation of the original Oncogene meetings established by the Foundation for Advanced Cancer Studies in the 1980s, this one-day symposium was organized by senior Ph.D. students as part of their professional development training at the Van Andel Institute Graduate School [-].
+The symposium showcased eight world-renowned scientists who discussed their novel findings related to this year's theme, Beyond the Tumor Cell, which focused on the complex influences coming from the environment in which the cancer cell exists.
+The symposium began with talks highlighting the role of systemic inflammation in both health and disease.
+In his talk on inflammatory mediators, immune modulation and cancer progression, Raymond Dubois (The Biodesign Institute at Arizona State University) introduced the role of inflammation in cancer focusing on how NSAIDs are used to treat colorectal cancer.
+He outlined how anti-inflammatory therapy such as aspirin or celecoxib can be used to prevent progression in preclinical models of colon cancer [-].
+Dr. Dubois described the mechanism by which immune cells are recruited to the tumor microenvironment and showed that blocking CXCR2 subverted tumor-induced immunosuppression and slowed cancer progression [].
+Susan Erdman (Massachusetts Institute of Technology) expanded the scope of inflammation and proposed that healthful longevity relies on microbial homeostasis, which properly conditions the immune system.
+In her talk about gut microbes and the cancer macroenvironment, Dr. Erdman suggested that early in utero, beneficial environmental microbes stimulate integrated immune and neuroendocrine factors throughout the body [, ].
+Dr. Erdman focused on beneficial gut microbes and proposed that modulation of regulatory T-lymphocyte phenotypes through all stages of life may determine the fate of pre-neoplastic lesions [].
+She discussed microbial engineering strategies using food-grade bacteria as a biologically safe and efficient adjunctive approach to treating or preventing cancer progression.
+Johanna Joyce (Memorial Sloan-Kettering Cancer Center) described her recent and exciting work targeting innate immunity in glioblastoma.
+After determining a strong correlation between tumor-associated macrophages and tumor progression, metastasis, and therapeutic resistance in her earlier work, the Joyce Lab has systematically proved that the colony stimulating factor-1 receptor is a viable therapeutic target in preclinical models of cancer, especially glioblastoma [, ].
+Therapies based on this target were able to prevent glioma formation, shrink established tumors, and extend overall life span by reeducating macrophages and microglia in the tumor microenvironment from a tumor-promoting phenotype to a tumor-killing phenotype [].
+Drew Pardoll (Sidney Kimmel Comprehensive Cancer Center) highlighted his work on immunotherapy in his lecture about adaptive crosstalk between cancer and the immune system.
+He told the audience that immune checkpoint ligands and their receptors block the anti-tumor activity of cytotoxic T-cells in spite of tumor-specific immunity.
+These ligands are up-regulated in cancer and prevent cytotoxic T-cells from infiltrating the tumor.
+In support of this, he showed that patients treated with checkpoint blockade therapies have shown significant and persistent responses for even refractory melanomas [, ].
+Additionally, preclinical models have shown that combinations of anti-checkpoint therapies are even more efficacious than monotherapies [].
+Shifting focus to the extracellular matrix (ECM) surrounding cancer cells, the symposium's afternoon speakers challenged the audience to continue to look beyond the intrinsic causes of cancer.
+Zena Werb (University of California, San Francisco) talked about the insights into cancer she gained by studying ECM proteolysis during development.
+Her studies of normal breast-ductal cells invading local tissue during development have led Dr. Werb to identify key factors involved in breast tumor cell invasion, such as the metastasis suppressor GATA3.
+She showed how GATA3 regulates miR29b expression, which in turn alters the expression of proteins that regulate angiogenesis and collagen proteolysis.
+Loss of GATA3 causes microenvironment remodeling that favors metastasis [, ].
+In his lecture, Andrei Seluanov (University of Rochester) described his research on a collection of atypical rodent models that led to his discovery of novel anticancer mechanisms in long-lived mole rat species [].
+He demonstrated that adult naked mole rat fibroblasts undergo strong contact inhibition at less confluent numbers than mice or human fibroblasts [].
+The early contact inhibition is caused by a mutation in hyaluronic acid synthase II that allows the cells to autonomously produce large amounts of long-chain hyaluronic acid.
+Breaking down the hyaluronic acid with hyaluronase eliminates the early contact inhibition seen in culture and allows the cells to be transformed, which opens up the possibility of using these inhibitors therapeutically.
+Patrick Moore (University of Pittsburgh Cancer Institute) shifted the focus to microbes in cancer development and progression in his talk about Merkel cell polyomavirus (MCV) and Merkel cell carcinoma.
+There have been only seven well-established and characterized tumor viruses, and none of the seven are similar.
+The Moore-Chang laboratory discovered MCV as the causative agent of Merkel cell carcinomas using a novel technique they developed called digital transcriptome subtraction [].
+MCV causes an asymptomatic infection of the skin and is actually very common, with 80% of those over 50 years of age having been exposed.
+In just four years, the molecular dissection of how this common virus causes Merkel cell carcinomas has led to new diagnostics and clinical trials [].
+Moore left the audience with the intriguing suggestion that, like the human microbiome, a human “virome” likely has both beneficial and disease-causing potentials that are worth exploring.
+With new technologies like digital transcriptome subtraction, more molecular success stories are likely.
+Crislyn D'Souza-Schorey (University of Notre Dame) switched the focus back to the ECM with an intriguing story about how cancer cells release microvesicles to modify the ECM for cancer cell invasion [].
+Her talk emphasized that it is not just the microenvironment itself that has influence on the tumor, but that tumor cells are directly communicating with both the immediate environment and perhaps distant sites.
+She emphasized that the cargo within microvesicles (proteins, RNA, microRNA, and/or DNA) is selectively sorted and not randomly “pinched” into the microenvironment [].
+A regulated invasive mechanism of cancer that involves released particles has huge implications for biomarkers clinically.
+By detecting a microvesicle signature, doctors might enhance diagnostic and prognostic tools for specific cancers [].
+In selecting this year's theme, our objective was to focus discussion on tumor cell extrinsic factors that promote cancer.
+We wanted to learn about the ways the tumor stroma and the immune system interact with tumor cells to influence cancer progression.
+What crystallized for us was the astounding concept that a tumor cell has no true autonomy; it is functionally integrated into and actively communicating with its host environment.
+And what happens to that host environment, locally or distantly in space and time, can profoundly influence disease progression.
+Dr. DuBois emphasized it best in stating, “Focus on the tumor microenvironment is critical now… . Cells interact in ways you can't understand by studying the tumor alone.”
+This new concept raises many interesting questions on the origins of cancer that we look forward to answering as we embark on our own careers in science.
+We thank Nick Duesbery and George Vande Woude for their mentorship, guidance, and manuscript revisions.
+Our event coordinator, Beth Resau, was invaluable throughout the entire year.
+The Van Andel Institute graciously hosted this event, and financial support was provided by the Foundation for Advanced Cancer Studies (FACS), Ferris State University, the Lacks Cancer Center through Mercy Health, Calvin College, Aquinas College, and the Van Andel Institute Graduate School.
+Finally, we would like to thank the engaging speakers and attentive audience for making this symposium a success.
+We look forward to the sixth annual Origins of Cancer symposium, focused on posttranslational modifications in cancer, which will be held July 10, 2015, at the Van Andel Institute.
+
