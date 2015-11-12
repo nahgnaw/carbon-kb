@@ -58,9 +58,9 @@ if __name__ == "__main__":
     # print "Creating data"
     # N = 10000
     # D = 2
-    k = 32
+    k = 5
     max_iter = 100
-    n_samples = k * 5
+    n_samples = k * 10
 
     dataset = 'RiMG75'
     embedding_file = 'data/{}/subj_obj_embeddings.txt'.format(dataset)

@@ -116,7 +116,7 @@ class DependencyGraph(object):
         self._dep_triples = []
 
         if not parser_server_url:
-            parser_server_url = 'http://localhost:8080'
+            parser_server_url = 'http://localhost:8084'
 
         parser = jsonrpclib.Server(parser_server_url)
         self._raw = json.loads(parser.parse(self._sentence))
