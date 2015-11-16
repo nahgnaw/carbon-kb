@@ -1,121 +1,112 @@
 # -*- coding: utf8 -*-
 
-# import numpy as np
-# from pyxmeans import XMeans as xmeans
-
-
-# dataset = 'genes-cancer'
-# dataset = 'RiMG75'
-
-# embedding_file = 'data/{}/subj_obj_embeddings.txt'.format(dataset)
-# data = np.loadtxt(embedding_file)
-# print data.shape
-# print data
-# x_means = xmeans(2)
-# x_means.fit(data)
-
-
+import MySQLdb
+import gensim
 import numpy as np
-import random
-import time
-from contextlib import contextmanager
-from pyxmeans import _minibatch
-from pyxmeans.mini_batch import MiniBatch
-from pyxmeans.xmeans import XMeans
 
-try:
-    from sklearn.cluster import MiniBatchKMeans
-except ImportError:
-    MiniBatchKMeans = None
+from ConfigParser import SafeConfigParser
 
 
-@contextmanager
-def TimerBlock(name):
-    start = time.time()
-    yield
-    end = time.time()
-    print "%s took %fs" % (name, end-start)
+def generate_embedding_file(dataset, mysql_config):
+
+    def select_sql(table_name='svo'):
+        return 'SELECT subject, predicate, object FROM {} ORDER BY id'.format(table_name)
+
+    db = MySQLdb.connect(**mysql_config)
+    cur = db.cursor()
+
+    try:
+        cur.execute(select_sql())
+    except MySQLdb.Error, e:
+        try:
+            print "MySQL Error [{}]: {}".format(e.args[0], e.args[1])
+        except IndexError:
+            print "MySQL Error: {}".format(str(e))
+    else:
+        sql_results = cur.fetchall()
+
+        embedding_dim = 200
+        model_file = 'data/{}/word2vec.bin'.format(dataset['dataset'])
+        model = gensim.models.Word2Vec.load_word2vec_format(model_file, binary=True)
+        subj_obj_embeddings = np.zeros((len(sql_results), embedding_dim))
+
+        result_count = 0
+        oov_count = 0
+        word_count = 0
+        for row in sql_results:
+            # print row
+            subj, pred, obj = row
+            vec = np.zeros(embedding_dim)
+            word_list = subj.split() + pred.split() + obj.split()
+            for word in word_list:
+                word = word.strip()
+                if word:
+                    # if dataset['db'] == 'earth-kb':
+                    word = word.lower()
+                    word_count += 1
+                    if word in model:
+                        vec += model[word]
+                    else:
+                        print u'[OOV]: {}'.format(word)
+                        oov_count += 1
+            subj_obj_embeddings[result_count] = vec
+            result_count += 1
+        embedding_file = 'data/{}/triple_embeddings.txt'.format(dataset['dataset'])
+        np.savetxt(embedding_file, subj_obj_embeddings)
+        print 'Out of vocabulary result_count: {}'.format(str(oov_count))
+        print 'Total word result_count: {}'.format(str(word_count))
+    finally:
+        cur.close()
+        db.close()
 
 
-def generate_data(N, D, k, sigma=0.1):
-    data = np.empty((N, D))
-    distributions = [{"mean" : np.random.rand(D), "cov" : np.eye(D) * np.random.rand() * sigma} for i in xrange(k)]
-    for i in xrange(N):
-        params = random.choice(distributions)
-        data[i, :] = np.random.multivariate_normal(**params)
-    return data, distributions
+def write_cluster_to_db(dataset, mysql_config):
+
+    def update_cluster_sql(relation, cluster, table_name='svo'):
+        return 'UPDATE {} SET cluster={} WHERE id={}'.format(table_name, str(cluster), str(relation))
+
+    db = MySQLdb.connect(**mysql_config)
+    cur = db.cursor()
+
+    try:
+        cluster_file = 'data/{}/clusters.txt'.format(dataset['dataset'])
+        with open(cluster_file) as f:
+            cluster_count = 0
+            for line in f:
+                line = line.strip() if line else None
+                if line:
+                    clusters = line.split()
+                    for ind in clusters:
+                        ind = int(ind)
+                        cur.execute(update_cluster_sql(dataset['db_offset'] + ind, cluster_count))
+                        db.commit()
+                        print ind, cluster_count
+                    cluster_count += 1
+    except MySQLdb.Error, e:
+        db.rollback()
+        try:
+            print "MySQL Error [{}]: {}".format(e.args[0], e.args[1])
+        except IndexError:
+            print "MySQL Error: {}".format(str(e))
+    finally:
+        cur.close()
+        db.close()
 
 
-def error(actual, test):
-    err = 0.0
-    for t in test:
-        v = np.square(actual - test[:, np.newaxis]).sum(axis=1).min()
-        err += v
-    return err / float(len(test))
+if __name__ == '__main__':
 
+    dataset = {'dataset': 'genes-cancer', 'db': 'bio-kb', 'db_offset': 6037}
+    # dataset = {'dataset': 'RiMG75', 'db': 'earth-kb', 'db_offset': 0}
 
-if __name__ == "__main__":
-    # print "Creating data"
-    # N = 10000
-    # D = 2
-    k = 5
-    max_iter = 100
-    n_samples = k * 10
+    # Connect to MySQL
+    parser = SafeConfigParser()
+    parser.read('config.ini')
+    mysql_config = {
+        'host': parser.get('MySQL', 'host'),
+        'user': parser.get('MySQL', 'user'),
+        'passwd': parser.get('MySQL', 'passwd'),
+        'db': dataset['db']
+    }
 
-    dataset = 'RiMG75'
-    embedding_file = 'data/{}/subj_obj_embeddings.txt'.format(dataset)
-    data = np.loadtxt(embedding_file)
-    N, D = data.shape
-
-    # data, actual = generate_data(N, D, k, sigma=0.001)
-    # actual_data = np.asarray([x["mean"] for x in actual])
-    clusters = _minibatch.kmeanspp_multi(data, np.empty((k, D), dtype=np.double), N / 100, 20, 4)
-    print "Number of points: ", N
-    print "Number of dimensions: ", D
-    print "Number of clusters: ", k
-    print "initial BIC: ", _minibatch.bic(data, clusters)
-    print "initial variance: ", _minibatch.model_variance(data, clusters)
-    # print "initial RMS Error: ", error(actual_data, clusters)
-    print
-
-    # print "Clustering with single-threaded pyxmeans"
-    # clusters_pymeans_single = clusters.copy()
-    # with TimerBlock("singlethreaded pyxmeans"):
-    #     mbst = MiniBatch(k, n_samples=n_samples, max_iter=max_iter, n_runs=1, init=clusters_pymeans_single, n_jobs=1, compute_labels=False).fit(data)
-    #     clusters_pymeans_single = mbst.cluster_centers_
-    # print "BIC: ", _minibatch.bic(data, clusters_pymeans_single)
-    # print "Variance: ", _minibatch.model_variance(data, clusters_pymeans_single)
-    # print "RMS Error: ", error(actual_data, clusters_pymeans_single)
-    # print
-    #
-    # print "Clustering with multi-threaded pyxmeans"
-    # clusters_pymeans_multi = clusters.copy()
-    # with TimerBlock("multithreaded pyxmeans"):
-    #     mbmt = MiniBatch(k, n_samples=n_samples, max_iter=max_iter, n_runs=4, init=clusters_pymeans_multi, n_jobs=0, compute_labels=False).fit(data)
-    #     clusters_pymeans_multi = mbmt.cluster_centers_
-    # print "BIC: ", _minibatch.bic(data, clusters_pymeans_multi)
-    # print "Variance: ", _minibatch.model_variance(data, clusters_pymeans_multi)
-    # print "RMS Error: ", error(actual_data, clusters_pymeans_multi)
-    # print
-
-    k_init = int(k * 0.65)
-    print "Clustering with multi-threaded pyxmeans (starting k at {})".format(k_init)
-    with TimerBlock("multithreaded pyxmeans"):
-        mxmt = XMeans(k_init, verbose=False).fit(data)
-        clusters_xmeans = mxmt.cluster_centers_
-    print "Num Clusters: ", len(clusters_xmeans)
-    print "BIC: ", _minibatch.bic(data, clusters_xmeans)
-    print "Variance: ", _minibatch.model_variance(data, clusters_xmeans)
-    # print "RMS Error: ", error(actual_data, clusters_xmeans)
-    print
-
-    # print "Clustering with sklearn"
-    # if MiniBatchKMeans:
-    #     clusters_sklearn = clusters.copy()
-    #     with TimerBlock("scikitlearn"):
-    #         mbkmv = MiniBatchKMeans(k, max_iter=max_iter, batch_size=n_samples, init=clusters_sklearn, reassignment_ratio=0, compute_labels=False, max_no_improvement=None).fit(data)
-    #     print "BIC: ", _minibatch.bic(data, mbkmv.cluster_centers_)
-    #     print "Variance: ", _minibatch.model_variance(data, mbkmv.cluster_centers_)
-    #     print "RMS Error: ", error(actual_data, clusters_sklearn)
-    # else:
-    #     print "sklearn not found"
+    generate_embedding_file(dataset, mysql_config)
+    # write_cluster_to_db(dataset, mysql_config)
