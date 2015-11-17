@@ -38,6 +38,7 @@ def generate_embedding_file(dataset, mysql_config):
             subj, pred, obj = row
             vec = np.zeros(embedding_dim)
             word_list = subj.split() + obj.split()
+            row_word_count = 0
             for word in word_list:
                 word = word.strip()
                 if word:
@@ -46,15 +47,16 @@ def generate_embedding_file(dataset, mysql_config):
                     word_count += 1
                     if word in model:
                         vec += model[word]
+                        row_word_count += 1
                     else:
                         print u'[OOV]: {}'.format(word)
                         oov_count += 1
-            subj_obj_embeddings[result_count] = vec
+            subj_obj_embeddings[result_count] = vec / float(row_word_count)
             result_count += 1
         embedding_file = 'data/{}/subj_obj_embeddings.txt'.format(dataset['dataset'])
         np.savetxt(embedding_file, subj_obj_embeddings)
-        print 'Out of vocabulary result_count: {}'.format(str(oov_count))
-        print 'Total word result_count: {}'.format(str(word_count))
+        print 'Out of vocabulary words: {}'.format(str(oov_count))
+        print 'Total words: {}'.format(str(word_count))
     finally:
         cur.close()
         db.close()
@@ -101,8 +103,8 @@ def write_cluster_to_db(dataset, mysql_config):
 
 if __name__ == '__main__':
 
-    # dataset = {'dataset': 'genes-cancer', 'db': 'bio-kb', 'db_offset': 6037}
-    dataset = {'dataset': 'RiMG75', 'db': 'earth-kb', 'db_offset': 1}
+    dataset = {'dataset': 'genes-cancer', 'db': 'bio-kb', 'db_offset': 6037}
+    # dataset = {'dataset': 'RiMG75', 'db': 'earth-kb', 'db_offset': 1}
 
     # Connect to MySQL
     parser = SafeConfigParser()
