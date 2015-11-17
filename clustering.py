@@ -37,12 +37,12 @@ def generate_embedding_file(dataset, mysql_config):
             # print row
             subj, pred, obj = row
             vec = np.zeros(embedding_dim)
-            word_list = subj.split() + pred.split() + obj.split()
+            word_list = subj.split() + obj.split()
             for word in word_list:
                 word = word.strip()
                 if word:
-                    # if dataset['db'] == 'earth-kb':
-                    word = word.lower()
+                    if dataset['db'] == 'earth-kb':
+                        word = word.lower()
                     word_count += 1
                     if word in model:
                         vec += model[word]
@@ -51,7 +51,7 @@ def generate_embedding_file(dataset, mysql_config):
                         oov_count += 1
             subj_obj_embeddings[result_count] = vec
             result_count += 1
-        embedding_file = 'data/{}/triple_embeddings.txt'.format(dataset['dataset'])
+        embedding_file = 'data/{}/subj_obj_embeddings.txt'.format(dataset['dataset'])
         np.savetxt(embedding_file, subj_obj_embeddings)
         print 'Out of vocabulary result_count: {}'.format(str(oov_count))
         print 'Total word result_count: {}'.format(str(word_count))
@@ -65,10 +65,16 @@ def write_cluster_to_db(dataset, mysql_config):
     def update_cluster_sql(relation, cluster, table_name='svo'):
         return 'UPDATE {} SET cluster={} WHERE id={}'.format(table_name, str(cluster), str(relation))
 
+    def reset_cluster_sql(table_name='svo'):
+        return 'UPDATE {} SET cluster=NULL'.format(table_name)
+
     db = MySQLdb.connect(**mysql_config)
     cur = db.cursor()
 
     try:
+        cur.execute(reset_cluster_sql())
+        db.commit()
+
         cluster_file = 'data/{}/clusters.txt'.format(dataset['dataset'])
         with open(cluster_file) as f:
             cluster_count = 0
@@ -95,8 +101,8 @@ def write_cluster_to_db(dataset, mysql_config):
 
 if __name__ == '__main__':
 
-    dataset = {'dataset': 'genes-cancer', 'db': 'bio-kb', 'db_offset': 6037}
-    # dataset = {'dataset': 'RiMG75', 'db': 'earth-kb', 'db_offset': 0}
+    # dataset = {'dataset': 'genes-cancer', 'db': 'bio-kb', 'db_offset': 6037}
+    dataset = {'dataset': 'RiMG75', 'db': 'earth-kb', 'db_offset': 1}
 
     # Connect to MySQL
     parser = SafeConfigParser()
@@ -108,5 +114,5 @@ if __name__ == '__main__':
         'db': dataset['db']
     }
 
-    generate_embedding_file(dataset, mysql_config)
-    # write_cluster_to_db(dataset, mysql_config)
+    # generate_embedding_file(dataset, mysql_config)
+    write_cluster_to_db(dataset, mysql_config)
