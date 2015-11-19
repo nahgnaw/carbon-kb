@@ -118,3 +118,4 @@ if __name__ == '__main__':
 
     # generate_embedding_file(dataset, mysql_config)
     write_cluster_to_db(dataset, mysql_config)
+
