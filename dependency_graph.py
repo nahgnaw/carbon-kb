@@ -22,6 +22,9 @@ class WordUnit(object):
     def __eq__(self, other):
         return self._index == other._index
 
+    def __len__(self):
+        return len(self._word)
+
     @property
     def index(self):
         return self._index

@@ -211,6 +211,13 @@ class RelationExtractor(object):
         """
             Return a WordUnitSequence including the original head.
         """
+
+        def _clean(word_unit_seq):
+            # If the sequence is a single letter, ignore it
+            if len(word_unit_seq) == 1 and len(word_unit_seq[0]) == 1:
+                word_unit_seq = None
+            return word_unit_seq
+
         # Find out if the head is in a compound noun
         expansion = self._get_noun_compound(head)
         # Find out if there is any numeric modifier
@@ -225,6 +232,8 @@ class RelationExtractor(object):
         # Find out if the head has vmod phrase
         vmod_phrase = self._get_vmod_phrase(head)
         expansion.extend(vmod_phrase)
+        # Cleaning
+        expansion = _clean(expansion)
         return expansion
 
     def _expand_predicate(self, head):
@@ -280,29 +289,30 @@ class RelationExtractor(object):
             for dependent in dependent_conjunction:
                 # The subject is the dependent
                 subject = self._expand_head_word(dependent)
-                for head in head_conjunction:
-                    # If the dependency relation is a verb:
-                    if head.pos.startswith(self._pos_tags['vb']):
-                        # The predicate is the head
-                        predicate, object = self._get_predicate_object(head)
-                    elif head.pos.startswith(self._pos_tags['nn']):
-                        pred_list = self._get_dependents(self._dependencies['cop'], head)
-                        if pred_list:
-                            predicate = self._expand_predicate(pred_list[0])
-                            object = self._expand_head_word(head)
-                        else:
-                            continue
-                    elif head.pos.startswith(self._pos_tags['jj']):
-                        pred_list = self._get_dependents(self._dependencies['cop'], head)
-                        if pred_list:
+                if subject:
+                    for head in head_conjunction:
+                        # If the dependency relation is a verb:
+                        if head.pos.startswith(self._pos_tags['vb']):
+                            # The predicate is the head
                             predicate, object = self._get_predicate_object(head)
-                            predicate.add_word_unit(pred_list[0])
+                        elif head.pos.startswith(self._pos_tags['nn']):
+                            pred_list = self._get_dependents(self._dependencies['cop'], head)
+                            if pred_list:
+                                predicate = self._expand_predicate(pred_list[0])
+                                object = self._expand_head_word(head)
+                            else:
+                                continue
+                        elif head.pos.startswith(self._pos_tags['jj']):
+                            pred_list = self._get_dependents(self._dependencies['cop'], head)
+                            if pred_list:
+                                predicate, object = self._get_predicate_object(head)
+                                predicate.add_word_unit(pred_list[0])
+                            else:
+                                continue
                         else:
                             continue
-                    else:
-                        continue
-                    if predicate and object:
-                        self.relations.append(Relation(subject, predicate, object))
+                        if predicate and object:
+                            self.relations.append(Relation(subject, predicate, object))
 
 
 def batch_extraction(mysql_db=None):
@@ -365,8 +375,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-    No GBM patients who are treated with standard therapy incorporating temozolomide eventually experience progression, and only 11% of patents remain progression free at 2 years
-    """
+        Genes were selected that (A) repress MAPK signaling (PP2AC, PEA-15, DUSP7, DUSP14, PKIA) and (B) are associated with activated MAPK signaling (RSK2, RAC1, k-RAS, FADD, KSR1, MAP3K14, MAP3K10) (C) qPCR for MCF-7-miR-155 cell line expression of RSK2 isoform variant 4 and 5."""
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
