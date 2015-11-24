@@ -27,6 +27,7 @@ class RelationExtractor(object):
         'nn': 'nn',
         'nsubj': 'nsubj',
         'nsubjpass': 'nsubjpass',
+        'num': 'num',
         'pcomp': 'pcomp',
         'pobj': 'pobj',
         'prep': 'prep',
@@ -117,6 +118,25 @@ class RelationExtractor(object):
             return WordUnitSequence(nn)
         return WordUnitSequence(head)
 
+    def _get_num_modifier(self, head):
+        num_mod = WordUnitSequence()
+        num_list = self._get_dependents(self._dependencies['num'], head)
+        if num_list:
+            for num in num_list:
+                num_mod.add_word_unit(num)
+                if self._debug:
+                    self._print_expansion_debug_info(head, 'numeric modifier', num)
+        return num_mod
+
+    def _get_neg_modifier(self, head):
+        neg_mod = WordUnitSequence()
+        neg_list = self._get_dependents(self._dependencies['neg'], head)
+        if neg_list and neg_list[0].pos == self._pos_tags['dt']:
+            neg_mod.add_word_unit(neg_list[0])
+            if self._debug:
+                self._print_expansion_debug_info(head, 'negation', neg_list[0])
+        return neg_mod
+
     def _get_prep_phrase(self, head):
         prep_phrase = WordUnitSequence()
         prep_list = self._get_dependents(self._dependencies['prep'], head)
@@ -193,12 +213,12 @@ class RelationExtractor(object):
         """
         # Find out if the head is in a compound noun
         expansion = self._get_noun_compound(head)
+        # Find out if there is any numeric modifier
+        num_mod = self._get_num_modifier(head)
+        expansion.extend(num_mod)
         # Find out if there is any negation
-        neg = self._get_dependents(self._dependencies['neg'], head)
-        if neg and neg[0].pos == self._pos_tags['dt']:
-            expansion.add_word_unit(neg[0])
-            if self._debug:
-                self._print_expansion_debug_info(head, 'negation', neg[0])
+        neg_mod = self._get_neg_modifier(head)
+        expansion.extend(neg_mod)
         # Find out if the head has pobj phrase
         pobj_phrase = self._get_prep_phrase(head)
         expansion.extend(pobj_phrase)
@@ -345,7 +365,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-    Can we quantitatively characterize the relation and interaction between preterm birth, physical growth, and brain development?
+    No GBM patients who are treated with standard therapy incorporating temozolomide eventually experience progression, and only 11% of patents remain progression free at 2 years
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
