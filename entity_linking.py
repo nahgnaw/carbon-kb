@@ -6,9 +6,9 @@ import urllib
 
 class EntityLinker(object):
 
-    def __init__(self, api='http://el.tw.rpi.edu/bio_qcv/linking?query=', debug=False):
+    def __init__(self, logger, api='http://el.tw.rpi.edu/bio_qcv/linking?query='):
         self._api = api
-        self.debug = debug
+        self.logger = logger
 
     def query(self, query, delimiter=','):
         if isinstance(query, list):
@@ -18,8 +18,7 @@ class EntityLinker(object):
             query = query.replace(delimiter, ',')
 
         query_url = self._api + urllib.quote(query)
-        if self.debug:
-            print 'Entity linking url: ', query_url
+        self.logger.debug('Entity linking url: {}'.format(query_url))
         r = requests.get(query_url)
         if r.status_code == requests.codes.ok:
             results = r.json()['results'][0]['annotations']

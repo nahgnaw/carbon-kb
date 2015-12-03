@@ -2,8 +2,10 @@
 
 import os
 import codecs
-import traceback
+import logging
+import logging.config
 import MySQLdb
+import yaml
 
 from relation import Relation
 from ConfigParser import SafeConfigParser
@@ -60,19 +62,18 @@ class RelationExtractor(object):
             _dependencies['conj:or']
         ]
 
-    def __init__(self, sentence, entity_linking=False, debug=False):
+    def __init__(self, sentence, logger, entity_linking=False):
         self._sentence = sentence
+        self.logger = logger
         self.entity_linking = entity_linking
-        self.debug = debug
         self._dep_triple_dict = {}
         self._make_dep_triple_dict()
         self._relations = []
 
     def _make_dep_triple_dict(self):
-        dg = DependencyGraph(self._sentence)
+        dg = DependencyGraph(self._sentence, self.logger)
         triples = dg.dep_triples
-        if self.debug:
-            dg.print_dep_triples()
+        dg.print_dep_triples()
         for triple in triples:
             dep = triple[1]
             if dep in self._dependencies.values():
@@ -94,9 +95,8 @@ class RelationExtractor(object):
         """.format(table_name, relation.subject, relation.subject_el, relation.predicate,
                    relation.object, relation.object_el, self._sentence)
 
-    @staticmethod
-    def _print_expansion_debug_info(head_word, dep, added):
-        print '[DEBUG] "{}" expanded with {}: "{}"'.format(head_word, dep, added)
+    def _print_expansion_debug_info(self, head_word, dep, added):
+        self.logger.debug('"{}" expanded with {}: "{}"'.format(head_word, dep, added))
 
     def _get_dependents(self, dependency_relation, head, dependent=None):
         dependents = []
@@ -121,8 +121,7 @@ class RelationExtractor(object):
         if nn_list:
             for nn in nn_list:
                 nc.add_word_unit(nn)
-                if self.debug:
-                    self._print_expansion_debug_info(head, 'noun compound', nn)
+                self._print_expansion_debug_info(head, 'noun compound', nn)
         return nc
 
     def _get_num_modifier(self, head):
@@ -131,8 +130,7 @@ class RelationExtractor(object):
         if num_list:
             for num in num_list:
                 num_mod.add_word_unit(num)
-                if self.debug:
-                    self._print_expansion_debug_info(head, 'numeric modifier', num)
+                self._print_expansion_debug_info(head, 'numeric modifier', num)
         return num_mod
 
     def _get_neg_modifier(self, head):
@@ -140,8 +138,7 @@ class RelationExtractor(object):
         neg_list = self._get_dependents(self._dependencies['neg'], head)
         if neg_list and neg_list[0].pos == self._pos_tags['dt']:
             neg_mod.add_word_unit(neg_list[0])
-            if self.debug:
-                self._print_expansion_debug_info(head, 'negation', neg_list[0])
+            self._print_expansion_debug_info(head, 'negation', neg_list[0])
         return neg_mod
 
     def _get_prep_phrase(self, head):
@@ -168,8 +165,7 @@ class RelationExtractor(object):
                             prep_phrase.add_word_unit(prep)
                             for seq in self._get_predicate_object(pcomp):
                                 prep_phrase.extend(seq)
-                    if self.debug:
-                        self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
+                    self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
         return prep_phrase
 
     def _get_vmod_phrase(self, head):
@@ -179,8 +175,7 @@ class RelationExtractor(object):
             for vmod in vmod_list:
                 for seq in self._get_predicate_object(vmod):
                     vmod_phrase.extend(seq)
-            if self.debug:
-                self._print_expansion_debug_info(head, 'vmod', vmod_phrase)
+            self._print_expansion_debug_info(head, 'vmod', vmod_phrase)
         return vmod_phrase
 
     def _get_predicate_object(self, pred_head):
@@ -258,7 +253,7 @@ class RelationExtractor(object):
         """
         predicate = WordUnitSequence(head)
 
-        def __expand_predicate(pred_head, debug=False):
+        def __expand_predicate(pred_head):
             predicate = WordUnitSequence()
             dep_list = [
                 self._dependencies['aux'],
@@ -269,27 +264,25 @@ class RelationExtractor(object):
                 dep_wn = self._get_dependents(dep, pred_head)
                 if dep_wn:
                     predicate.add_word_unit(dep_wn[0])
-                    if debug:
-                        self._print_expansion_debug_info(pred_head, dep, dep_wn[0])
+                    self._print_expansion_debug_info(pred_head, dep, dep_wn[0])
             return predicate
 
         # Find out if there is any aux, auxpass, and neg
-        predicate.extend(__expand_predicate(head, self.debug))
+        predicate.extend(__expand_predicate(head))
         # Find out if there is any xcomp
         xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
             for xcomp in xcomp_list:
                 predicate.add_word_unit(xcomp)
-                if self.debug:
-                    self._print_expansion_debug_info(head, 'xcomp', xcomp)
-                predicate.extend(__expand_predicate(xcomp, self.debug))
+                self._print_expansion_debug_info(head, 'xcomp', xcomp)
+                predicate.extend(__expand_predicate(xcomp))
         return predicate
 
     def _extracting_condition(self, head, dependent):
         return head.word.isalpha() and dependent.word.isalpha() and dependent.pos not in self._subject_pos_blacklist
 
     def extract_spo(self):
-        linker = EntityLinker(debug=self.debug) if self.entity_linking else None
+        linker = EntityLinker(self.logger) if self.entity_linking else None
         dependencies = [self._dependencies['nsubj'], self._dependencies['nsubjpass']]
         for dep in dependencies:
             if dep in self._dep_triple_dict:
@@ -347,6 +340,7 @@ class RelationExtractor(object):
 
 
 def batch_extraction(mysql_db=None):
+    logger = logging.getLogger('background')
     dataset = 'genes-cancer'
     # dataset = 'RiMG75'
     # dataset = 'test'
@@ -354,7 +348,7 @@ def batch_extraction(mysql_db=None):
 
     if mysql_db:
         parser = SafeConfigParser()
-        parser.read('config.ini')
+        parser.read('mysql_config.ini')
         mysql_config = {
             'host': parser.get('MySQL', 'host'),
             'user': parser.get('MySQL', 'user'),
@@ -374,13 +368,12 @@ def batch_extraction(mysql_db=None):
                 for line in f_in:
                     sent = line.strip()
                     if sent:
-                        print sent
+                        logger.debug('SENTENCE: {}'.format(sent))
                         f_out.write(u'{}\n'.format(sent))
                         try:
-                            extractor = RelationExtractor(sent, entity_linking=True, debug=False)
+                            extractor = RelationExtractor(sent, logger, entity_linking=True)
                         except:
-                            print u'\n[ERROR] {}'.format(sent)
-                            print traceback.format_exc()
+                            logger.error('Failed to extract relations.', exc_info=True)
                         else:
                             extractor.extract_spo()
                             for relation in extractor.relations:
@@ -392,9 +385,10 @@ def batch_extraction(mysql_db=None):
                                         db.commit()
                                     except MySQLdb.Error, e:
                                         try:
-                                            print "MySQL Error [{}]: {}".format(e.args[0], e.args[1])
+                                            logger.error('MySQL Error [{}]: {}'.format(e.args[0], e.args[1]),
+                                                         exc_info=True)
                                         except IndexError:
-                                            print "MySQL Error: {}".format(str(e))
+                                            logger.error('MySQL Error: {}'.format(str(e)), exc_info=True)
                             f_out.write('\n')
                 f_in.close()
                 f_out.close()
@@ -405,29 +399,34 @@ def batch_extraction(mysql_db=None):
 
 
 def single_extraction():
+    logger = logging.getLogger('foreground')
     sentences = u"""
-10004000 cells were seeded per well in 6-8 repeats in a 96-well plate.        """
+        However, we predict R-Smad-TMEPAI- Akt mediated proliferation of cancer cells may depend more on the suppression of p27 than of p21, since Smad3 is a cofactor for p21 transcription [] and Smad3 knockdown would inhibit p21 induction.
+    """
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
-            print sent
+            logger.debug('SENTENCE: {}'.format(sent))
             try:
-                extractor = RelationExtractor(sent, entity_linking=True, debug=True)
+                extractor = RelationExtractor(sent, logger, entity_linking=True)
             except:
-                print 'Failed to parse the sentence.'
-                print traceback.format_exc()
+                logger.error('Failed to parse the sentence', exc_info=True)
             else:
                 extractor.extract_spo()
                 for relation in extractor.relations:
-                    print relation
-                    print 'Subject head: ', relation.subject.head
+                    logger.debug('RELATION: {}'.format(relation))
+                    logger.debug('SUBJECT HEAD: {}'.format(relation.subject.head))
                     if extractor.entity_linking:
-                        print 'Subject EL: ', relation.subject_el
-                    print 'Object head: ', relation.object.head
+                        logger.debug('SUBJECT EL: {}'.format(relation.subject_el))
+                    logger.debug('OBJECT HEAD: {}'.format(relation.object.head))
                     if extractor.entity_linking:
-                         print 'Object EL: ', relation.object_el
+                        logger.debug('OBJECT EL: {}'.format(relation.object_el))
 
 
 if __name__ == '__main__':
+    # Logging
+    with open('logging_config.yaml') as f:
+        logging.config.dictConfig(yaml.load(f))
+
     single_extraction()
     # batch_extraction('bio-kb')

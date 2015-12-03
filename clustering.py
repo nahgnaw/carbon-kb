@@ -108,7 +108,7 @@ if __name__ == '__main__':
 
     # Connect to MySQL
     parser = SafeConfigParser()
-    parser.read('config.ini')
+    parser.read('mysql_config.ini')
     mysql_config = {
         'host': parser.get('MySQL', 'host'),
         'user': parser.get('MySQL', 'user'),

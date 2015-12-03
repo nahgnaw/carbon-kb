@@ -108,7 +108,7 @@ class WordUnitSequence(object):
 
 class DependencyGraph(object):
 
-    def __init__(self, sentence, parser_server_url=None):
+    def __init__(self, sentence, logger, parser_server_url=None):
         self._sentence = sentence
         self._raw = {}
         self._tree = {}
@@ -117,6 +117,7 @@ class DependencyGraph(object):
         self._tags = []
         self._tagged_text = None
         self._dep_triples = []
+        self.logger = logger
 
         if not parser_server_url:
             parser_server_url = 'http://localhost:8084'
@@ -189,10 +190,10 @@ class DependencyGraph(object):
 
     def print_dep_triples(self):
         for t in self._dep_triples:
-            print t[0].more_info(), t[1], t[2].more_info()
+            self.logger.debug('{} {} {}'.format(t[0].more_info(), t[1], t[2].more_info()))
 
     def print_raw(self):
-        print json.dumps(self._raw, ensure_ascii=False, indent=4)
+        self.logger.debug(json.dumps(self._raw, ensure_ascii=False, indent=4))
 
 
 if __name__ == '__main__':
