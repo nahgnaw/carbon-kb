@@ -9,6 +9,7 @@ from relation import Relation
 from ConfigParser import SafeConfigParser
 from segtok.segmenter import split_multi
 from dependency_graph import WordUnitSequence, DependencyGraph
+from entity_linking import EntityLinker
 
 
 class RelationExtractor(object):
@@ -37,6 +38,7 @@ class RelationExtractor(object):
 
     _pos_tags = {
         'dt': 'DT',
+        'in': 'IN',
         'nn': 'NN',
         'jj': 'JJ',
         'jjr': 'JJR',
@@ -50,7 +52,7 @@ class RelationExtractor(object):
     _subject_pos_blacklist = [
         _pos_tags['wdt'], _pos_tags['dt'], _pos_tags['prp'],
         _pos_tags['jj'], _pos_tags['jjr'], _pos_tags['jjs'],
-        _pos_tags['wp']
+        _pos_tags['wp'], _pos_tags['in']
     ]
 
     _conjunction_dependencies = [
@@ -58,9 +60,10 @@ class RelationExtractor(object):
             _dependencies['conj:or']
         ]
 
-    def __init__(self, sentence, debug=False):
+    def __init__(self, sentence, entity_linking=False, debug=False):
         self._sentence = sentence
-        self._debug = debug
+        self.entity_linking = entity_linking
+        self.debug = debug
         self._dep_triple_dict = {}
         self._make_dep_triple_dict()
         self._relations = []
@@ -68,7 +71,7 @@ class RelationExtractor(object):
     def _make_dep_triple_dict(self):
         dg = DependencyGraph(self._sentence)
         triples = dg.dep_triples
-        if self._debug:
+        if self.debug:
             dg.print_dep_triples()
         for triple in triples:
             dep = triple[1]
@@ -85,10 +88,13 @@ class RelationExtractor(object):
         return self._relations
 
     def generate_relation_sql(self, relation, table_name='svo'):
+        subj_el = ','.join(relation.subject_el) if relation.subject_el else None
+        obj_el = ','.join(relation.object_el) if relation.object_el else None
         return u"""
-            INSERT INTO {} (subject, predicate, object, sentence)
-            VALUES ("{}", "{}", "{}", "{}");
-        """.format(table_name, relation.subject, relation.predicate, relation.object, self._sentence)
+            INSERT INTO {} (subject, subject_el, predicate, object, object_el, sentence)
+            VALUES ("{}", "{}", "{}", "{}", "{}", "{}");
+        """.format(table_name, relation.subject, subj_el, relation.predicate,
+                   relation.object, obj_el, self._sentence)
 
     @staticmethod
     def _print_expansion_debug_info(head_word, dep, added):
@@ -112,11 +118,14 @@ class RelationExtractor(object):
         return conjunction
 
     def _get_noun_compound(self, head):
-        nn = self._get_dependents(self._dependencies['nn'], head)
-        if nn:
-            nn.append(head)
-            return WordUnitSequence(nn)
-        return WordUnitSequence(head)
+        nc = WordUnitSequence()
+        nn_list = self._get_dependents(self._dependencies['nn'], head)
+        if nn_list:
+            for nn in nn_list:
+                nc.add_word_unit(nn)
+                if self.debug:
+                    self._print_expansion_debug_info(head, 'noun compound', nn)
+        return nc
 
     def _get_num_modifier(self, head):
         num_mod = WordUnitSequence()
@@ -124,7 +133,7 @@ class RelationExtractor(object):
         if num_list:
             for num in num_list:
                 num_mod.add_word_unit(num)
-                if self._debug:
+                if self.debug:
                     self._print_expansion_debug_info(head, 'numeric modifier', num)
         return num_mod
 
@@ -133,7 +142,7 @@ class RelationExtractor(object):
         neg_list = self._get_dependents(self._dependencies['neg'], head)
         if neg_list and neg_list[0].pos == self._pos_tags['dt']:
             neg_mod.add_word_unit(neg_list[0])
-            if self._debug:
+            if self.debug:
                 self._print_expansion_debug_info(head, 'negation', neg_list[0])
         return neg_mod
 
@@ -152,6 +161,7 @@ class RelationExtractor(object):
                                 obj_seq = self._expand_head_word(obj)
                                 obj_seq.add_word_unit(prep)
                                 prep_phrase.extend(obj_seq)
+                                prep_phrase.head = obj
                     # Look for pcomp
                     pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
                     if pcomp_list:
@@ -159,7 +169,7 @@ class RelationExtractor(object):
                             prep_phrase.add_word_unit(prep)
                             for seq in self._get_predicate_object(pcomp):
                                 prep_phrase.extend(seq)
-                    if self._debug:
+                    if self.debug:
                         self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
         return prep_phrase
 
@@ -170,7 +180,7 @@ class RelationExtractor(object):
             for vmod in vmod_list:
                 for seq in self._get_predicate_object(vmod):
                     vmod_phrase.extend(seq)
-            if self._debug:
+            if self.debug:
                 self._print_expansion_debug_info(head, 'vmod', vmod_phrase)
         return vmod_phrase
 
@@ -186,6 +196,7 @@ class RelationExtractor(object):
                     obj_conjunction = self._get_conjunction(obj)
                     for o in obj_conjunction:
                         object.extend(self._expand_head_word(o))
+                        object.head = o
             # Look for adjective compliment
             acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
             if acomp_list:
@@ -198,6 +209,8 @@ class RelationExtractor(object):
             if len(prep_phrase) > 1:
                 pred_seq.add_word_unit(prep_phrase[0])
                 object.extend(WordUnitSequence(prep_phrase[1:]))
+                if not object.head:
+                    object.head = prep_phrase.head
 
             if object:
                 # If there are multiple predicate words that have objects, only take the first one.
@@ -218,8 +231,10 @@ class RelationExtractor(object):
                 word_unit_seq = None
             return word_unit_seq
 
+        expansion = WordUnitSequence(head, head)
         # Find out if the head is in a compound noun
-        expansion = self._get_noun_compound(head)
+        noun_compound = self._get_noun_compound(head)
+        expansion.extend(noun_compound)
         # Find out if there is any numeric modifier
         num_mod = self._get_num_modifier(head)
         expansion.extend(num_mod)
@@ -258,27 +273,40 @@ class RelationExtractor(object):
             return predicate
 
         # Find out if there is any aux, auxpass, and neg
-        predicate.extend(__expand_predicate(head, self._debug))
+        predicate.extend(__expand_predicate(head, self.debug))
         # Find out if there is any xcomp
         xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
             for xcomp in xcomp_list:
                 predicate.add_word_unit(xcomp)
-                if self._debug:
+                if self.debug:
                     self._print_expansion_debug_info(head, 'xcomp', xcomp)
-                predicate.extend(__expand_predicate(xcomp, self._debug))
+                predicate.extend(__expand_predicate(xcomp, self.debug))
         return predicate
 
     def _extracting_condition(self, head, dependent):
         return head.word.isalpha() and dependent.word.isalpha() and dependent.pos not in self._subject_pos_blacklist
 
-    def extract_svo(self):
+    def extract_spo(self):
+        linker = EntityLinker() if self.entity_linking else None
         dependencies = [self._dependencies['nsubj'], self._dependencies['nsubjpass']]
         for dep in dependencies:
             if dep in self._dep_triple_dict:
-                self._extract_svo(dep)
+                self._extract_spo(dep)
+                if self.entity_linking:
+                    for relation in self._relations:
+                        subj_head = relation.subject.head
+                        subj_el_query = [str(subj_head)]
+                        for w in [str(wn) for i, wn in relation.subject if not str(wn) == str(subj_head)]:
+                            subj_el_query.append(w)
+                        relation._subj_el = linker.query(subj_el_query)
+                        obj_head = relation.object.head
+                        obj_el_query = [str(obj_head)]
+                        for w in [str(wn) for i, wn in relation.object if not str(wn) == str(obj_head)]:
+                            obj_el_query.append(w)
+                        relation._obj_el = linker.query(obj_el_query)
 
-    def _extract_svo(self, dependency):
+    def _extract_spo(self, dependency):
         for triple in self._dep_triple_dict[dependency]:
             head = triple['head']
             dependent = triple['dependent']
@@ -316,8 +344,8 @@ class RelationExtractor(object):
 
 
 def batch_extraction(mysql_db=None):
-    # dataset = 'genes-cancer'
-    dataset = 'RiMG75'
+    dataset = 'genes-cancer'
+    # dataset = 'RiMG75'
     # dataset = 'test'
     data_dir = 'data/{}/processed/'.format(dataset)
 
@@ -346,12 +374,12 @@ def batch_extraction(mysql_db=None):
                         print sent
                         f_out.write(u'{}\n'.format(sent))
                         try:
-                            extractor = RelationExtractor(sent, debug=False)
+                            extractor = RelationExtractor(sent, entity_linking=True, debug=False)
                         except:
                             print u'\n[ERROR] {}'.format(sent)
                             print traceback.format_exc()
                         else:
-                            extractor.extract_svo()
+                            extractor.extract_spo()
                             for relation in extractor.relations:
                                 print relation
                                 f_out.write(u'{}\n'.format(relation))
@@ -375,22 +403,29 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        Genes were selected that (A) repress MAPK signaling (PP2AC, PEA-15, DUSP7, DUSP14, PKIA) and (B) are associated with activated MAPK signaling (RSK2, RAC1, k-RAS, FADD, KSR1, MAP3K14, MAP3K10) (C) qPCR for MCF-7-miR-155 cell line expression of RSK2 isoform variant 4 and 5."""
+        Carbon, a non-metal that typically forms covalent bonds with a variety of other elements, is the most chemically adaptable element of the periodic table.
+    """
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
             print sent
             try:
-                extractor = RelationExtractor(sent, debug=True)
+                extractor = RelationExtractor(sent, entity_linking=True, debug=True)
             except:
                 print 'Failed to parse the sentence.'
                 print traceback.format_exc()
             else:
-                extractor.extract_svo()
+                extractor.extract_spo()
                 for relation in extractor.relations:
                     print relation
+                    print 'Subject head: ', relation.subject.head
+                    if extractor.entity_linking:
+                        print 'Subject EL: ', relation.subject_el
+                    print 'Object head: ', relation.object.head
+                    if extractor.entity_linking:
+                         print 'Object EL: ', relation.object_el
 
 
 if __name__ == '__main__':
-    single_extraction()
-    # batch_extraction('earth-kb')
+    # single_extraction()
+    batch_extraction('bio-kb')
