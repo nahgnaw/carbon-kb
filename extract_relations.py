@@ -88,13 +88,11 @@ class RelationExtractor(object):
         return self._relations
 
     def generate_relation_sql(self, relation, table_name='svo'):
-        subj_el = ','.join(relation.subject_el) if relation.subject_el else None
-        obj_el = ','.join(relation.object_el) if relation.object_el else None
         return u"""
             INSERT INTO {} (subject, subject_el, predicate, object, object_el, sentence)
             VALUES ("{}", "{}", "{}", "{}", "{}", "{}");
-        """.format(table_name, relation.subject, subj_el, relation.predicate,
-                   relation.object, obj_el, self._sentence)
+        """.format(table_name, relation.subject, relation.subject_el, relation.predicate,
+                   relation.object, relation.object_el, self._sentence)
 
     @staticmethod
     def _print_expansion_debug_info(head_word, dep, added):
@@ -291,7 +289,7 @@ class RelationExtractor(object):
         return head.word.isalpha() and dependent.word.isalpha() and dependent.pos not in self._subject_pos_blacklist
 
     def extract_spo(self):
-        linker = EntityLinker() if self.entity_linking else None
+        linker = EntityLinker(debug=self.debug) if self.entity_linking else None
         dependencies = [self._dependencies['nsubj'], self._dependencies['nsubjpass']]
         for dep in dependencies:
             if dep in self._dep_triple_dict:
@@ -408,8 +406,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        In addition, data from two studies of NSCLC patients show that no EGFR mutation was detected in tumor samples from 6 of 31 patients presenting an objective clinical response to EGFR inhibitors., In metastatic colorectal cancer (mCRC) patients, the objective response rate to anti-EGFR antibody therapy of ~10% and the additional stable disease rate of ~30% cannot be predicted by chromosomal amplification of the EGFR locus observed in ~2% of mCRC patients and do not correlate with mutations in EGFR, observed in only 0.34% of CRC samples.- These results collectively indicate that many patients with wild-type EGFR alleles respond to EGFR inhibitors, and research is ongoing regarding the factors that contribute to EGFR inhibitor tumor sensitivity, other than mutations in EGFR in NSCLC or chromosomal amplification of EGFR in colon cancer.
-    """
+10004000 cells were seeded per well in 6-8 repeats in a 96-well plate.        """
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
@@ -432,5 +429,5 @@ def single_extraction():
 
 
 if __name__ == '__main__':
-    # single_extraction()
-    batch_extraction('bio-kb')
+    single_extraction()
+    # batch_extraction('bio-kb')
