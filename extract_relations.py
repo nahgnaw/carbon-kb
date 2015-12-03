@@ -159,9 +159,10 @@ class RelationExtractor(object):
                         for obj in obj_list:
                             if not obj.pos == self._pos_tags['wdt']:
                                 obj_seq = self._expand_head_word(obj)
-                                obj_seq.add_word_unit(prep)
-                                prep_phrase.extend(obj_seq)
-                                prep_phrase.head = obj
+                                if obj_seq:
+                                    obj_seq.add_word_unit(prep)
+                                    prep_phrase.extend(obj_seq)
+                                    prep_phrase.head = obj
                     # Look for pcomp
                     pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
                     if pcomp_list:
@@ -195,8 +196,10 @@ class RelationExtractor(object):
                 for obj in obj_list:
                     obj_conjunction = self._get_conjunction(obj)
                     for o in obj_conjunction:
-                        object.extend(self._expand_head_word(o))
-                        object.head = o
+                        expanded_obj = self._expand_head_word(o)
+                        if expanded_obj:
+                            object.extend(expanded_obj)
+                            object.head = o
             # Look for adjective compliment
             acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
             if acomp_list:
@@ -296,15 +299,17 @@ class RelationExtractor(object):
                 if self.entity_linking:
                     for relation in self._relations:
                         subj_head = relation.subject.head
-                        subj_el_query = [str(subj_head)]
-                        for w in [str(wn) for i, wn in relation.subject if not str(wn) == str(subj_head)]:
-                            subj_el_query.append(w)
-                        relation._subj_el = linker.query(subj_el_query)
+                        if subj_head:
+                            subj_el_query = [str(subj_head)]
+                            for w in [str(wn) for i, wn in relation.subject if not str(wn) == str(subj_head)]:
+                                subj_el_query.append(w)
+                            relation.subject_el = linker.query(subj_el_query)
                         obj_head = relation.object.head
-                        obj_el_query = [str(obj_head)]
-                        for w in [str(wn) for i, wn in relation.object if not str(wn) == str(obj_head)]:
-                            obj_el_query.append(w)
-                        relation._obj_el = linker.query(obj_el_query)
+                        if obj_head:
+                            obj_el_query = [str(obj_head)]
+                            for w in [str(wn) for i, wn in relation.object if not str(wn) == str(obj_head)]:
+                                obj_el_query.append(w)
+                            relation.object_el = linker.query(obj_el_query)
 
     def _extract_spo(self, dependency):
         for triple in self._dep_triple_dict[dependency]:
@@ -403,7 +408,7 @@ def batch_extraction(mysql_db=None):
 
 def single_extraction():
     sentences = u"""
-        Carbon, a non-metal that typically forms covalent bonds with a variety of other elements, is the most chemically adaptable element of the periodic table.
+        In addition, data from two studies of NSCLC patients show that no EGFR mutation was detected in tumor samples from 6 of 31 patients presenting an objective clinical response to EGFR inhibitors., In metastatic colorectal cancer (mCRC) patients, the objective response rate to anti-EGFR antibody therapy of ~10% and the additional stable disease rate of ~30% cannot be predicted by chromosomal amplification of the EGFR locus observed in ~2% of mCRC patients and do not correlate with mutations in EGFR, observed in only 0.34% of CRC samples.- These results collectively indicate that many patients with wild-type EGFR alleles respond to EGFR inhibitors, and research is ongoing regarding the factors that contribute to EGFR inhibitor tumor sensitivity, other than mutations in EGFR in NSCLC or chromosomal amplification of EGFR in colon cancer.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
