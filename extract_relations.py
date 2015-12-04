@@ -340,7 +340,8 @@ class RelationExtractor(object):
 
 
 def batch_extraction(mysql_db=None):
-    logger = logging.getLogger('background')
+    logger = logging.getLogger('batch_relation_extraction')
+
     dataset = 'genes-cancer'
     # dataset = 'RiMG75'
     # dataset = 'test'
@@ -377,7 +378,7 @@ def batch_extraction(mysql_db=None):
                         else:
                             extractor.extract_spo()
                             for relation in extractor.relations:
-                                print relation
+                                logger.debug('RELATION: {}'.format(relation))
                                 f_out.write(u'{}\n'.format(relation))
                                 if mysql_db:
                                     try:
@@ -399,7 +400,7 @@ def batch_extraction(mysql_db=None):
 
 
 def single_extraction():
-    logger = logging.getLogger('foreground')
+    logger = logging.getLogger('single_relation_extraction')
     sentences = u"""
         However, we predict R-Smad-TMEPAI- Akt mediated proliferation of cancer cells may depend more on the suppression of p27 than of p21, since Smad3 is a cofactor for p21 transcription [] and Smad3 knockdown would inhibit p21 induction.
     """
