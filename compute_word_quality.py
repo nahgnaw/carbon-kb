@@ -32,15 +32,13 @@ class WordQuality(object):
                     self.logger.info('Processing file {}'.format(filename))
                     f_in = codecs.open(filename, encoding='utf-8')
                     text = f_in.read()
-                    # Remove carriage returns
-                    text = text.replace('\n', ' ').lower()
-                    # Remove punctuations and digits
-                    regex = re.compile('[%s\d]' % re.escape(string.punctuation))
+                    # Remove carriage returns, punctuations and digits
+                    regex = re.compile('\- |[%s\d\n]' % re.escape(string.punctuation))
                     text = regex.sub('', text)
                     # Lemmatize
-                    blob = TextBlob(text)
+                    blob = TextBlob(text.lower())
                     for word, tag in blob.tags:
-                        if word not in self._stopwords:
+                        if word not in self._stopwords and len(word) > 2:
                             if tag.startswith('VB'):
                                 doc.append(word.lemmatize('v'))
                             elif tag.startswith('JJ') or tag.startswith('RB'):
@@ -75,20 +73,44 @@ class WordQuality(object):
 
     @staticmethod
     def _idf(word, doc_list):
-        return math.log(1 + float(len(doc_list)) / WordQuality._n_containing(word, doc_list))
+        num_doc = len(doc_list)
+        num_word_doc = WordQuality._n_containing(word, doc_list)
+        return math.log(1 + float(num_doc) / num_word_doc)
 
 
-if __name__ == '__main__':
-    # Logging
-    with open('logging_config.yaml') as f:
-        logging.config.dictConfig(yaml.load(f))
-    logger = logging.getLogger('word_quality')
-
-    dataset = 'genes-cancer'
+def generate_idf_dict(logger):
+    # dataset = 'genes-cancer'
+    dataset = 'acl'
     # dataset = 'RiMG75'
     # dataset = 'test'
     data_dir = 'data/{}/raw'.format(dataset)
-    model_file = 'data/{}/idf.bin'.format(dataset)
+    model_file = 'data/{}/idf.pkl'.format(dataset)
+
     wq = WordQuality(logger)
     model = wq.generate_model(data_dir)
     wq.save_model(model, model_file)
+
+
+def generate_ignored_word_dict(logger):
+    idf_diff_threshold = 1.5
+    dataset_1 = 'genes-cancer'
+    dataset_2 = 'acl'
+
+    wq = WordQuality(logger)
+    ignored_words = {}
+    model_1 = wq.load_model('data/{}/idf.pkl'.format(dataset_1))
+    model_2 = wq.load_model('data/{}/idf.pkl'.format(dataset_2))
+    for word in model_1:
+        if word in model_2 and abs(model_2[word] - model_1[word]) < idf_diff_threshold:
+            logger.debug(u'{}: {}'.format(word, model_1[word]))
+            ignored_words[word] = model_1[word]
+    wq.save_model(ignored_words, 'data/{}/ignored_words.pkl'.format(dataset_1))
+
+
+if __name__ == '__main__':
+    with open('config/logging_config.yaml') as f:
+        logging.config.dictConfig(yaml.load(f))
+    logger = logging.getLogger('word_quality')
+
+    # generate_idf_dict(logger)
+    generate_ignored_word_dict(logger)

@@ -5,7 +5,7 @@ temp
 archive
 .cache
 *.save
-config/*.json
+config/*.ini
 *.new
 *.diff
 doc/_build
@@ -51,11 +51,6 @@ nosetests.xml
 .idea
 .stat
 
-*.log
-*.bin
-*.vec
-
-mysql_config.ini
 data
 reverb
 topicalPhrases

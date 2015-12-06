@@ -349,7 +349,7 @@ def batch_extraction(mysql_db=None):
 
     if mysql_db:
         parser = SafeConfigParser()
-        parser.read('mysql_config.ini')
+        parser.read('config/mysql_config.ini')
         mysql_config = {
             'host': parser.get('MySQL', 'host'),
             'user': parser.get('MySQL', 'user'),
@@ -425,8 +425,7 @@ def single_extraction():
 
 
 if __name__ == '__main__':
-    # Logging
-    with open('logging_config.yaml') as f:
+    with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
 
     single_extraction()
