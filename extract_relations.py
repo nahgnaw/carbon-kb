@@ -12,6 +12,7 @@ from ConfigParser import SafeConfigParser
 from segtok.segmenter import split_multi
 from dependency_graph import WordUnitSequence, DependencyGraph
 from entity_linking import EntityLinker
+from utils import timeit
 
 
 class RelationExtractor(object):
@@ -339,6 +340,7 @@ class RelationExtractor(object):
                             self.relations.append(Relation(subject, predicate, object))
 
 
+@timeit
 def batch_extraction(mysql_db=None):
     logger = logging.getLogger('batch_relation_extraction')
 
@@ -359,6 +361,7 @@ def batch_extraction(mysql_db=None):
         db = MySQLdb.connect(**mysql_config)
         cur = db.cursor()
 
+    extraction_counter = 0
     for root, _, files in os.walk(data_dir):
         for fn in files:
             if fn.endswith('.txt'):
@@ -369,7 +372,7 @@ def batch_extraction(mysql_db=None):
                 for line in f_in:
                     sent = line.strip()
                     if sent:
-                        logger.debug(u'SENTENCE: {}'.format(sent))
+                        logger.info(u'SENTENCE: {}'.format(sent))
                         f_out.write(u'{}\n'.format(sent))
                         try:
                             extractor = RelationExtractor(sent, logger, entity_linking=True)
@@ -378,8 +381,9 @@ def batch_extraction(mysql_db=None):
                         else:
                             extractor.extract_spo()
                             for relation in extractor.relations:
-                                logger.debug(u'RELATION: {}'.format(relation))
+                                logger.info(u'RELATION: {}'.format(relation))
                                 f_out.write(u'{}\n'.format(relation))
+                                extraction_counter += 1
                                 if mysql_db:
                                     try:
                                         cur.execute(extractor.generate_relation_sql(relation))
@@ -398,11 +402,13 @@ def batch_extraction(mysql_db=None):
         cur.close()
         db.close()
 
+    logger.info("{} relations were extracted.".format(extraction_counter))
+
 
 def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     sentences = u"""
-        Differential interaction of CtBP cofactors may contribute to the functional difference between CtBP1 and CtBP2.
+        The expression and activities of YY1 are reported in both normal and cancerous cells.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
