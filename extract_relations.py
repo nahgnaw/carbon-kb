@@ -90,13 +90,13 @@ class RelationExtractor(object):
 
     def generate_relation_sql(self, relation, table_name='svo'):
         return u"""
-            INSERT INTO {} (subject, subject_el, predicate, object, object_el, sentence)
-            VALUES ("{}", "{}", "{}", "{}", "{}", "{}");
-        """.format(table_name, relation.subject, relation.subject_el, relation.predicate,
-                   relation.object, relation.object_el, self._sentence)
+            INSERT INTO {} (subject_head, subject, subject_el, predicate, object_head, object, object_el, sentence)
+            VALUES ("{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}");
+        """.format(table_name, relation.subject.head, relation.subject, relation.subject_el, relation.predicate,
+                   relation.object.head, relation.object, relation.object_el, self._sentence)
 
     def _print_expansion_debug_info(self, head_word, dep, added):
-        self.logger.debug('"{}" expanded with {}: "{}"'.format(head_word, dep, added))
+        self.logger.debug(u'"{}" expanded with {}: "{}"'.format(head_word, dep, added))
 
     def _get_dependents(self, dependency_relation, head, dependent=None):
         dependents = []
@@ -369,16 +369,16 @@ def batch_extraction(mysql_db=None):
                 for line in f_in:
                     sent = line.strip()
                     if sent:
-                        logger.debug('SENTENCE: {}'.format(sent))
+                        logger.debug(u'SENTENCE: {}'.format(sent))
                         f_out.write(u'{}\n'.format(sent))
                         try:
                             extractor = RelationExtractor(sent, logger, entity_linking=True)
                         except:
-                            logger.error('Failed to extract relations.', exc_info=True)
+                            logger.error(u'Failed to extract relations.', exc_info=True)
                         else:
                             extractor.extract_spo()
                             for relation in extractor.relations:
-                                logger.debug('RELATION: {}'.format(relation))
+                                logger.debug(u'RELATION: {}'.format(relation))
                                 f_out.write(u'{}\n'.format(relation))
                                 if mysql_db:
                                     try:
@@ -386,10 +386,10 @@ def batch_extraction(mysql_db=None):
                                         db.commit()
                                     except MySQLdb.Error, e:
                                         try:
-                                            logger.error('MySQL Error [{}]: {}'.format(e.args[0], e.args[1]),
+                                            logger.error(u'MySQL Error [{}]: {}'.format(e.args[0], e.args[1]),
                                                          exc_info=True)
                                         except IndexError:
-                                            logger.error('MySQL Error: {}'.format(str(e)), exc_info=True)
+                                            logger.error(u'MySQL Error: {}'.format(str(e)), exc_info=True)
                             f_out.write('\n')
                 f_in.close()
                 f_out.close()
@@ -402,31 +402,31 @@ def batch_extraction(mysql_db=None):
 def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     sentences = u"""
-        Coated diamond b from the Congo is a catholuminescence image from Kopylova et al..
+        Differential interaction of CtBP cofactors may contribute to the functional difference between CtBP1 and CtBP2.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
-            logger.debug('SENTENCE: {}'.format(sent))
+            logger.debug(u'SENTENCE: {}'.format(sent))
             try:
                 extractor = RelationExtractor(sent, logger, entity_linking=True)
             except:
-                logger.error('Failed to parse the sentence', exc_info=True)
+                logger.error(u'Failed to parse the sentence', exc_info=True)
             else:
                 extractor.extract_spo()
                 for relation in extractor.relations:
-                    logger.debug('RELATION: {}'.format(relation))
-                    logger.debug('SUBJECT HEAD: {}'.format(relation.subject.head))
+                    logger.debug(u'RELATION: {}'.format(relation))
+                    logger.debug(u'SUBJECT HEAD: {}'.format(relation.subject.head))
                     if extractor.entity_linking:
-                        logger.debug('SUBJECT EL: {}'.format(relation.subject_el))
-                    logger.debug('OBJECT HEAD: {}'.format(relation.object.head))
+                        logger.debug(u'SUBJECT EL: {}'.format(relation.subject_el))
+                    logger.debug(u'OBJECT HEAD: {}'.format(relation.object.head))
                     if extractor.entity_linking:
-                        logger.debug('OBJECT EL: {}'.format(relation.object_el))
+                        logger.debug(u'OBJECT EL: {}'.format(relation.object_el))
 
 
 if __name__ == '__main__':
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
 
-    single_extraction()
-    # batch_extraction('bio-kb')
+    # single_extraction()
+    batch_extraction('bio-kb')

@@ -37,7 +37,7 @@ loggers:
         handlers: [console]
         propagate: False
     batch_relation_extraction:
-        level: INFO
+        level: DEBUG
         handlers: [console, info_file_handler, error_file_handler]
         propagate: False
     word_quality:

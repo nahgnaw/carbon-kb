@@ -77,8 +77,8 @@ if __name__ == '__main__':
     logger = logging.getLogger('preprocess')
 
     # dataset = 'test'
-    dataset = 'genes-cancer'
-    # dataset = 'RiMG75'
+    # dataset = 'genes-cancer'
+    dataset = 'RiMG75'
 
     sents = Sentences(dataset, logger)
     sents.save()
