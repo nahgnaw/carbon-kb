@@ -295,13 +295,13 @@ class RelationExtractor(object):
                             subj_el_query = [str(subj_head)]
                             for w in [str(wn) for i, wn in relation.subject if not str(wn) == str(subj_head)]:
                                 subj_el_query.append(w)
-                            relation.subject_el = linker.query(subj_el_query)
+                            relation.subject_el = linker.link(subj_el_query)
                         obj_head = relation.object.head
                         if obj_head:
                             obj_el_query = [str(obj_head)]
                             for w in [str(wn) for i, wn in relation.object if not str(wn) == str(obj_head)]:
                                 obj_el_query.append(w)
-                            relation.object_el = linker.query(obj_el_query)
+                            relation.object_el = linker.link(obj_el_query)
 
     def _extract_spo(self, dependency):
         for triple in self._dep_triple_dict[dependency]:
@@ -434,5 +434,5 @@ if __name__ == '__main__':
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
 
-    # single_extraction()
-    batch_extraction('bio-kb')
+    single_extraction()
+    # batch_extraction('bio-kb')

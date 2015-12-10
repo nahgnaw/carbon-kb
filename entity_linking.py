@@ -2,6 +2,9 @@
 
 import requests
 import urllib
+import logging
+import logging.config
+import yaml
 
 
 class EntityLinker(object):
@@ -10,7 +13,7 @@ class EntityLinker(object):
         self._api = api
         self.logger = logger
 
-    def query(self, query, delimiter=','):
+    def link(self, query, delimiter=','):
         if isinstance(query, list):
             query = ','.join(query)
 
@@ -28,7 +31,11 @@ class EntityLinker(object):
 
 
 if __name__ == '__main__':
-    el = EntityLinker()
-    query = 'ability'
-    res = el.query(query)
+    with open('config/logging_config.yaml') as f:
+        logging.config.dictConfig(yaml.load(f))
+    logger = logging.getLogger('entity_linking')
+
+    el = EntityLinker(logger)
+    query = 'progression'
+    res = el.link(query)
     print res
