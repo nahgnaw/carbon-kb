@@ -363,7 +363,7 @@ def batch_extraction(mysql_db=None):
         for fn in files:
             if fn.endswith('.txt'):
                 filename = os.path.join(root, fn)
-                output_filename = os.path.join(root, fn + '.relations')
+                output_filename = os.path.join(root, fn).replace('processed', 'extractions')
                 f_in = codecs.open(filename, encoding='utf-8')
                 f_out = codecs.open(output_filename, 'w', encoding='utf-8')
                 for line in f_in:
@@ -402,7 +402,7 @@ def batch_extraction(mysql_db=None):
 def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     sentences = u"""
-        However, we predict R-Smad-TMEPAI- Akt mediated proliferation of cancer cells may depend more on the suppression of p27 than of p21, since Smad3 is a cofactor for p21 transcription [] and Smad3 knockdown would inhibit p21 induction.
+        Coated diamond b from the Congo is a catholuminescence image from Kopylova et al..
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
