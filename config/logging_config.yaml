@@ -52,6 +52,10 @@ loggers:
         level: DEBUG
         handlers: [console]
         propagate: False
+    clustering:
+        level: DEBUG
+        handlers: [console]
+        propagate: False
 
 root:
     level: INFO

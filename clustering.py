@@ -2,12 +2,15 @@
 
 import MySQLdb
 import gensim
+import yaml
+import logging
+import logging.config
 import numpy as np
 
 from ConfigParser import SafeConfigParser
 
 
-def generate_embedding_file(dataset, mysql_config):
+def generate_embedding_file(dataset, mysql_config, logger):
 
     def select_sql(table_name='svo'):
         return 'SELECT subject, predicate, object FROM {} ORDER BY id'.format(table_name)
@@ -19,9 +22,9 @@ def generate_embedding_file(dataset, mysql_config):
         cur.execute(select_sql())
     except MySQLdb.Error, e:
         try:
-            print "MySQL Error [{}]: {}".format(e.args[0], e.args[1])
+            logger.error("MySQL Error [{}]: {}".format(e.args[0], e.args[1]))
         except IndexError:
-            print "MySQL Error: {}".format(str(e))
+            logger.error("MySQL Error: {}".format(str(e)))
     else:
         sql_results = cur.fetchall()
 
@@ -55,14 +58,14 @@ def generate_embedding_file(dataset, mysql_config):
             result_count += 1
         embedding_file = 'data/{}/subj_obj_embeddings.txt'.format(dataset['dataset'])
         np.savetxt(embedding_file, subj_obj_embeddings)
-        print 'Out of vocabulary words: {}'.format(str(oov_count))
-        print 'Total words: {}'.format(str(word_count))
+        logger.debug('Out of vocabulary words: {}'.format(str(oov_count)))
+        logger.debug('Total words: {}'.format(str(word_count)))
     finally:
         cur.close()
         db.close()
 
 
-def write_cluster_to_db(dataset, mysql_config):
+def write_cluster_to_db(dataset, mysql_config, logger):
 
     def update_cluster_sql(relation, cluster, table_name='svo'):
         return 'UPDATE {} SET cluster={} WHERE id={}'.format(table_name, str(cluster), str(relation))
@@ -93,17 +96,20 @@ def write_cluster_to_db(dataset, mysql_config):
     except MySQLdb.Error, e:
         db.rollback()
         try:
-            print "MySQL Error [{}]: {}".format(e.args[0], e.args[1])
+            logger.error("MySQL Error [{}]: {}".format(e.args[0], e.args[1]))
         except IndexError:
-            print "MySQL Error: {}".format(str(e))
+            logger.error("MySQL Error: {}".format(str(e)))
     finally:
         cur.close()
         db.close()
 
 
 if __name__ == '__main__':
+    with open('config/logging_config.yaml') as f:
+        logging.config.dictConfig(yaml.load(f))
+    logger = logging.getLogger('clustering')
 
-    dataset = {'dataset': 'genes-cancer', 'db': 'bio-kb', 'db_offset': 6037}
+    dataset = {'dataset': 'genes-cancer', 'db': 'bio-kb', 'db_offset': 1}
     # dataset = {'dataset': 'RiMG75', 'db': 'earth-kb', 'db_offset': 1}
 
     # Connect to MySQL
@@ -116,6 +122,6 @@ if __name__ == '__main__':
         'db': dataset['db']
     }
 
-    # generate_embedding_file(dataset, mysql_config)
-    write_cluster_to_db(dataset, mysql_config)
+    # generate_embedding_file(dataset, mysql_config, logger)
+    write_cluster_to_db(dataset, mysql_config, logger)
 
