@@ -58,6 +58,10 @@ class RelationExtractor(object):
         _pos_tags['wp'], _pos_tags['in']
     ]
 
+    _prep_blacklist_for_prep_phrases = [
+        'including'
+    ]
+
     _conjunction_dependencies = [
             _dependencies['conj:and'],
             _dependencies['conj:or']
@@ -147,26 +151,27 @@ class RelationExtractor(object):
         prep_list = self._get_dependents(self._dependencies['prep'], head)
         if prep_list:
             for prep in prep_list:
-                # Ignore those prepositions that are far away from the head
-                if abs(prep.index - head.index) < 2:
-                    # Look for pobj
-                    obj_list = self._get_dependents(self._dependencies['pobj'], prep)
-                    if obj_list:
-                        for obj in obj_list:
-                            if not obj.pos == self._pos_tags['wdt']:
-                                obj_seq = self._expand_head_word(obj)
-                                if obj_seq:
-                                    obj_seq.add_word_unit(prep)
-                                    prep_phrase.extend(obj_seq)
-                                    prep_phrase.head = obj
-                    # Look for pcomp
-                    pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
-                    if pcomp_list:
-                        for pcomp in pcomp_list:
-                            prep_phrase.add_word_unit(prep)
-                            for seq in self._get_predicate_object(pcomp):
-                                prep_phrase.extend(seq)
-                    self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
+                if prep.word.lower() not in self._prep_blacklist_for_prep_phrases:
+                    # Ignore those prepositions that are far away from the head
+                    if abs(prep.index - head.index) < 2:
+                        # Look for pobj
+                        obj_list = self._get_dependents(self._dependencies['pobj'], prep)
+                        if obj_list:
+                            for obj in obj_list:
+                                if not obj.pos == self._pos_tags['wdt']:
+                                    obj_seq = self._expand_head_word(obj)
+                                    if obj_seq:
+                                        obj_seq.add_word_unit(prep)
+                                        prep_phrase.extend(obj_seq)
+                                        prep_phrase.head = obj
+                        # Look for pcomp
+                        pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
+                        if pcomp_list:
+                            for pcomp in pcomp_list:
+                                prep_phrase.add_word_unit(prep)
+                                for seq in self._get_predicate_object(pcomp):
+                                    prep_phrase.extend(seq)
+                        self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
         return prep_phrase
 
     def _get_vmod_phrase(self, head):
@@ -405,10 +410,11 @@ def batch_extraction(mysql_db=None):
     logger.info("{} relations were extracted.".format(extraction_counter))
 
 
+@timeit
 def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     sentences = u"""
-        The expression and activities of YY1 are reported in both normal and cancerous cells.
+        Growth arrest and DNA damage inducible 45α is a stress-inducible gene transcriptionally activated by growth-arrest-associated proteins including p53, FOXO3a, ATF4 and C/EBP, and repressed by growth stimulating factors such as c-Myc and AKT.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
