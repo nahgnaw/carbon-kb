@@ -26,7 +26,7 @@ class EntityLinker(object):
         if r.status_code == requests.codes.ok:
             results = r.json()['results'][0]['annotations']
             if len(results) and not results[0]['url'] == 'NIL':
-                return [res['url'] for res in results]
+                return [res['url'] for res in results if res['url'].startswith('<')]
         return None
 
 

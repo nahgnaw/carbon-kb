@@ -80,7 +80,7 @@ class WordUnitSequence(object):
 
     def extend(self, seq):
         if seq:
-            if type(seq) is list:
+            if isinstance(seq, list):
                 self._seq.extend(seq)
             else:
                 self._seq.extend(seq.sequence)

@@ -49,15 +49,16 @@ class RelationExtractor(object):
         'jjr': 'JJR',
         'jjs': 'JJS',
         'prp': 'PRP',
+        'prp$': 'PRP$',
         'vb': 'VB',
         'wdt': 'WDT',
         'wp': 'WP',
     }
 
-    _subject_pos_blacklist = [
+    _subject_object_pos_blacklist = [
         _pos_tags['wdt'], _pos_tags['dt'], _pos_tags['prp'],
         _pos_tags['jj'], _pos_tags['jjr'], _pos_tags['jjs'],
-        _pos_tags['wp'], _pos_tags['in']
+        _pos_tags['wp'], _pos_tags['in'], _pos_tags['prp$']
     ]
 
     _prep_blacklist_for_prep_phrases = [
@@ -116,10 +117,12 @@ class RelationExtractor(object):
         if dependency_relation in self._dep_triple_dict:
             if dependent:
                 dependents = [t['dependent'] for t in self._dep_triple_dict[dependency_relation]
-                              if head.index == t['head'].index and dependent.word == t['dependent'].word]
+                              if head.index == t['head'].index and dependent.word == t['dependent'].word and
+                              t['dependent'].word.isalnum()]
             else:
                 dependents = [t['dependent']
-                              for t in self._dep_triple_dict[dependency_relation] if head.index == t['head'].index]
+                              for t in self._dep_triple_dict[dependency_relation] if head.index == t['head'].index and
+                              t['dependent'].word.isalnum()]
         return dependents
 
     def _get_conjunction(self, head):
@@ -166,15 +169,14 @@ class RelationExtractor(object):
                         obj_list = self._get_dependents(self._dependencies['pobj'], prep)
                         if obj_list:
                             for obj in obj_list:
-                                if not self._head_extracting_condition(obj):
+                                if not self._head_extracting_condition(obj, pos=True):
                                     continue
-                                if not obj.pos == self._pos_tags['wdt']:
-                                    obj_seq = self._expand_head_word(obj)
-                                    if obj_seq:
-                                        obj_seq.add_word_unit(prep)
-                                        prep_phrase.extend(obj_seq)
-                                        prep_phrase.head = obj
-                                        prep_phrase.nn_head = obj_seq.nn_head
+                                obj_seq = self._expand_head_word(obj)
+                                if obj_seq:
+                                    obj_seq.add_word_unit(prep)
+                                    prep_phrase.extend(obj_seq)
+                                    prep_phrase.head = obj
+                                    prep_phrase.nn_head = obj_seq.nn_head
                         # # Look for pcomp
                         # pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
                         # if pcomp_list:
@@ -191,51 +193,13 @@ class RelationExtractor(object):
         vmod_list = self._get_dependents(self._dependencies['vmod'], head)
         if vmod_list:
             for vmod in vmod_list:
-                for seq in self._get_predicate_object(vmod):
-                    vmod_phrase.extend(seq)
-            self._print_expansion_debug_info(head, 'vmod', vmod_phrase)
+                predicate_object = self._get_predicate_object(vmod)
+                if predicate_object:
+                    predicate, object = predicate_object[0]
+                    vmod_phrase.extend(predicate)
+                    vmod_phrase.extend(object)
+                    self._print_expansion_debug_info(head, 'vmod', vmod_phrase)
         return vmod_phrase
-
-    def _get_predicate_object(self, pred_head):
-        predicate = self._expand_predicate(pred_head)
-        object = WordUnitSequence()
-        for ind, pred in predicate:
-            pred_seq = WordUnitSequence()
-            # Look for direct object
-            obj_list = self._get_dependents(self._dependencies['dobj'], pred)
-            if obj_list:
-                for obj in obj_list:
-                    if not self._head_extracting_condition(obj):
-                        continue
-                    obj_conjunction = self._get_conjunction(obj)
-                    for o in obj_conjunction:
-                        expanded_obj = self._expand_head_word(o)
-                        if expanded_obj:
-                            object.extend(expanded_obj)
-                            object.head = o
-                            object.nn_head = expanded_obj.nn_head
-            # # Look for adjective compliment
-            # acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
-            # if acomp_list:
-            #     for acomp in acomp_list:
-            #         object.add_word_unit(acomp)
-            #         acomp_prep_phrase = self._get_prep_phrase(acomp)
-            #         object.extend(acomp_prep_phrase)
-            # Look for prepositional objects
-            prep_phrase = self._get_prep_phrase(pred)
-            if len(prep_phrase) > 1:
-                pred_seq.add_word_unit(prep_phrase[0])
-                object.extend(WordUnitSequence(prep_phrase[1:]))
-                if not object.head:
-                    object.head = prep_phrase.head
-                    object.nn_head = prep_phrase.nn_head
-            if object:
-                # If there are multiple predicate words that have objects, only take the first one.
-                if pred_seq:
-                    predicate = WordUnitSequence(predicate[:ind+1])
-                    predicate.extend(pred_seq)
-                return predicate, object
-        return predicate, None
 
     def _expand_head_word(self, head):
 
@@ -267,6 +231,7 @@ class RelationExtractor(object):
         return expansion
 
     def _expand_predicate(self, head):
+        predicates = []
         predicate = WordUnitSequence(head)
 
         def __expand_predicate(pred_head):
@@ -289,15 +254,71 @@ class RelationExtractor(object):
         xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
             for xcomp in xcomp_list:
-                predicate.add_word_unit(xcomp)
+                pred = deepcopy(predicate)
+                pred.add_word_unit(xcomp)
                 self._print_expansion_debug_info(head, 'xcomp', xcomp)
-                predicate.extend(__expand_predicate(xcomp))
-        return predicate
+                pred.extend(__expand_predicate(xcomp))
+                predicates.append(pred)
+        else:
+            predicates.append(predicate)
+        return predicates
 
-    def _head_extracting_condition(self, head, subject=False):
+    def _get_predicate_object(self, pred_head):
+        predicate_object = []
+        predicates = self._expand_predicate(pred_head)
+        for predicate in predicates:
+            for ind, pred in predicate:
+                # Look for direct object
+                obj_list = self._get_dependents(self._dependencies['dobj'], pred)
+                if obj_list:
+                    for obj in obj_list:
+                        if not self._head_extracting_condition(obj, pos=True):
+                            continue
+                        obj_conjunction = self._get_conjunction(obj)
+                        for o in obj_conjunction:
+                            expanded_obj = self._expand_head_word(o)
+                            if expanded_obj:
+                                object = WordUnitSequence()
+                                object.extend(expanded_obj)
+                                object.head = o
+                                object.nn_head = expanded_obj.nn_head
+                                # If there are multiple predicate words that have objects, only take the first one.
+                                cur_predicate = WordUnitSequence(predicate[:ind+1])
+                                predicate_object.append((cur_predicate, object))
+                # Look for adjective compliment
+                acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
+                if acomp_list:
+                    for acomp in acomp_list:
+                        acomp_prep_phrase = self._get_prep_phrase(acomp)
+                        if len(acomp_prep_phrase) > 1:
+                            object = WordUnitSequence()
+                            object.extend(WordUnitSequence(acomp_prep_phrase[1:]))
+                            object.head = acomp_prep_phrase.head
+                            object.nn_head = acomp_prep_phrase.nn_head
+                            # If there are multiple predicate words that have objects, only take the first one.
+                            cur_predicate = WordUnitSequence(predicate[:ind+1])
+                            # Merge the acomp and prep into the predicate
+                            cur_predicate.add_word_unit(acomp)
+                            cur_predicate.add_word_unit(acomp_prep_phrase[0])
+                            predicate_object.append((cur_predicate, object))
+                # Look for prepositional objects
+                prep_phrase = self._get_prep_phrase(pred)
+                if len(prep_phrase) > 1:
+                    object = WordUnitSequence()
+                    object.extend(WordUnitSequence(prep_phrase[1:]))
+                    object.head = prep_phrase.head
+                    object.nn_head = prep_phrase.nn_head
+                    # If there are multiple predicate words that have objects, only take the first one.
+                    cur_predicate = WordUnitSequence(predicate[:ind+1])
+                    # Merge the prep into the predicate
+                    cur_predicate.add_word_unit(prep_phrase[0])
+                    predicate_object.append((cur_predicate, object))
+        return predicate_object
+
+    def _head_extracting_condition(self, head, pos=False):
         flag = head.word.isalnum()
-        if subject:
-            flag = flag and head.pos not in self._subject_pos_blacklist
+        if pos:
+            flag = flag and head.pos not in self._subject_object_pos_blacklist
         return flag
 
     def extract_spo(self):
@@ -329,7 +350,7 @@ class RelationExtractor(object):
             head = triple['head']
             dependent = triple['dependent']
             if not self._head_extracting_condition(head) \
-               and not self._head_extracting_condition(dependent, subject=True):
+               or not self._head_extracting_condition(dependent, pos=True):
                 continue
             head_conjunction = self._get_conjunction(head)
             dependent_conjunction = self._get_conjunction(dependent)
@@ -338,28 +359,26 @@ class RelationExtractor(object):
                 subject = self._expand_head_word(dependent)
                 if subject:
                     for head in head_conjunction:
-                        # If the dependency relation is a verb:
                         if head.pos.startswith(self._pos_tags['vb']):
                             # The predicate is the head
-                            predicate, object = self._get_predicate_object(head)
-                        elif head.pos.startswith(self._pos_tags['nn']):
+                            for predicate, object in self._get_predicate_object(head):
+                                if predicate and object:
+                                    self.relations.append(Relation(subject, predicate, object))
+                        if head.pos.startswith(self._pos_tags['nn']):
                             pred_list = self._get_dependents(self._dependencies['cop'], head)
                             if pred_list:
-                                predicate = self._expand_predicate(pred_list[0])
-                                object = self._expand_head_word(head)
-                            else:
-                                continue
-                        elif head.pos.startswith(self._pos_tags['jj']):
+                                predicates = self._expand_predicate(pred_list[0])
+                                for predicate in predicates:
+                                    object = self._expand_head_word(head)
+                                    if predicate and object:
+                                        self.relations.append(Relation(subject, predicate, object))
+                        if head.pos.startswith(self._pos_tags['jj']):
                             pred_list = self._get_dependents(self._dependencies['cop'], head)
                             if pred_list:
-                                predicate, object = self._get_predicate_object(head)
-                                predicate.add_word_unit(pred_list[0])
-                            else:
-                                continue
-                        else:
-                            continue
-                        if predicate and object:
-                            self.relations.append(Relation(subject, predicate, object))
+                                for predicate, object in self._get_predicate_object(head):
+                                    if predicate and object:
+                                        predicate.add_word_unit(pred_list[0])
+                                        self.relations.append(Relation(subject, predicate, object))
 
 
 @timeit
@@ -431,7 +450,7 @@ def batch_extraction(mysql_db=None):
 def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     sentences = u"""
-        In sharp contrast to the pancellular distribution of Mirk in cycling myoblasts, a dramatic shift in the localization of Mirk to a solely cytoplasmic location was seen in differentiating G1-arrested myotubes within 2 days of shift to differentiation medium.
+        The presence of 2 distinct pools of Egfr mRNA, one in cancer cells and one in perivascular cells, led us to explore Egfr function in both of these cellular compartments.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
