@@ -8,9 +8,11 @@ import MySQLdb
 import yaml
 
 from relation import Relation
+from copy import deepcopy
 from ConfigParser import SafeConfigParser
 from segtok.segmenter import split_multi
-from dependency_graph import WordUnitSequence, DependencyGraph
+from dependency_graph import DependencyGraph
+from word_unit import WordUnitSequence
 from entity_linking import EntityLinker
 from utils import timeit
 
@@ -164,6 +166,7 @@ class RelationExtractor(object):
                                         obj_seq.add_word_unit(prep)
                                         prep_phrase.extend(obj_seq)
                                         prep_phrase.head = obj
+                                        prep_phrase.nn_head = obj_seq.nn_head
                         # Look for pcomp
                         pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
                         if pcomp_list:
@@ -199,6 +202,7 @@ class RelationExtractor(object):
                         if expanded_obj:
                             object.extend(expanded_obj)
                             object.head = o
+                            object.nn_head = expanded_obj.nn_head
             # Look for adjective compliment
             acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
             if acomp_list:
@@ -213,6 +217,7 @@ class RelationExtractor(object):
                 object.extend(WordUnitSequence(prep_phrase[1:]))
                 if not object.head:
                     object.head = prep_phrase.head
+                    object.nn_head = prep_phrase.nn_head
 
             if object:
                 # If there are multiple predicate words that have objects, only take the first one.
@@ -223,9 +228,6 @@ class RelationExtractor(object):
         return predicate, None
 
     def _expand_head_word(self, head):
-        """
-            Return a WordUnitSequence including the original head.
-        """
 
         def _clean(word_unit_seq):
             # If the sequence is a single letter, ignore it
@@ -237,6 +239,7 @@ class RelationExtractor(object):
         # Find out if the head is in a compound noun
         noun_compound = self._get_noun_compound(head)
         expansion.extend(noun_compound)
+        expansion.nn_head = deepcopy(expansion)
         # Find out if there is any numeric modifier
         num_mod = self._get_num_modifier(head)
         expansion.extend(num_mod)
@@ -254,9 +257,6 @@ class RelationExtractor(object):
         return expansion
 
     def _expand_predicate(self, head):
-        """
-            Return a WordUnitSequence including the original head.
-        """
         predicate = WordUnitSequence(head)
 
         def __expand_predicate(pred_head):
@@ -421,7 +421,7 @@ def single_extraction():
         if sent:
             logger.debug(u'SENTENCE: {}'.format(sent))
             try:
-                extractor = RelationExtractor(sent, logger, entity_linking=True)
+                extractor = RelationExtractor(sent, logger, entity_linking=False)
             except:
                 logger.error(u'Failed to parse the sentence', exc_info=True)
             else:
@@ -429,9 +429,11 @@ def single_extraction():
                 for relation in extractor.relations:
                     logger.debug(u'RELATION: {}'.format(relation))
                     logger.debug(u'SUBJECT HEAD: {}'.format(relation.subject.head))
+                    logger.debug(u'SUBJECT NN HEAD: {}'.format(relation.subject.nn_head))
                     if extractor.entity_linking:
                         logger.debug(u'SUBJECT EL: {}'.format(relation.subject_el))
                     logger.debug(u'OBJECT HEAD: {}'.format(relation.object.head))
+                    logger.debug(u'OBJECT NN HEAD: {}'.format(relation.object.nn_head))
                     if extractor.entity_linking:
                         logger.debug(u'OBJECT EL: {}'.format(relation.object_el))
 
