@@ -74,7 +74,8 @@ class WordUnitSequence(object):
         if self._seq:
             self._seq = sorted(self._seq, key=lambda wn: wn.index)
 
-    def lemmatized(self):
+    @property
+    def lemma(self):
         return ' '.join(wn.lemma for wn in self._seq)
 
     def extend(self, seq):

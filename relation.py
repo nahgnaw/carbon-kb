@@ -13,8 +13,9 @@ class Relation(object):
     def __str__(self):
         return u'({}, {}, {})'.format(str(self._subj), str(self._pred), str(self._obj))
 
-    def lemmatized(self):
-        return self._subj.lemmatized(), self._pred.lemmatized(), self._obj.lemmatized()
+    @property
+    def lemma(self):
+        return u'({}, {}, {})'.format(self._subj.lemma, self._pred.lemma, self._obj.lemma)
 
     @property
     def subject(self):

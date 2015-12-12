@@ -97,10 +97,16 @@ class RelationExtractor(object):
 
     def generate_relation_sql(self, relation, table_name='svo'):
         return u"""
-            INSERT INTO {} (subject_head, subject, subject_el, predicate, object_head, object, object_el, sentence)
-            VALUES ("{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}");
-        """.format(table_name, relation.subject.head, relation.subject, relation.subject_el, relation.predicate,
-                   relation.object.head, relation.object, relation.object_el, self._sentence)
+            INSERT INTO {} (subject_head, subject_nn_head, subject, subject_el, predicate,
+                            object_head, object_nn_head, object, object_el, sentence)
+            VALUES ("{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}");
+        """.format(
+            table_name,
+            relation.subject.head.lemma, relation.subject.nn_head.lemma, relation.subject.lemma, relation.subject_el,
+            relation.predicate.lemma,
+            relation.object.head.lemma, relation.object.nn_head.lemma, relation.object.lemma, relation.object_el,
+            self._sentence
+        )
 
     def _print_expansion_debug_info(self, head_word, dep, added):
         self.logger.debug(u'"{}" expanded with {}: "{}"'.format(head_word, dep, added))
@@ -160,6 +166,8 @@ class RelationExtractor(object):
                         obj_list = self._get_dependents(self._dependencies['pobj'], prep)
                         if obj_list:
                             for obj in obj_list:
+                                if not self._head_extracting_condition(obj):
+                                    continue
                                 if not obj.pos == self._pos_tags['wdt']:
                                     obj_seq = self._expand_head_word(obj)
                                     if obj_seq:
@@ -167,14 +175,15 @@ class RelationExtractor(object):
                                         prep_phrase.extend(obj_seq)
                                         prep_phrase.head = obj
                                         prep_phrase.nn_head = obj_seq.nn_head
-                        # Look for pcomp
-                        pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
-                        if pcomp_list:
-                            for pcomp in pcomp_list:
-                                prep_phrase.add_word_unit(prep)
-                                for seq in self._get_predicate_object(pcomp):
-                                    prep_phrase.extend(seq)
-                        self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
+                        # # Look for pcomp
+                        # pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
+                        # if pcomp_list:
+                        #     for pcomp in pcomp_list:
+                        #         prep_phrase.add_word_unit(prep)
+                        #         for seq in self._get_predicate_object(pcomp):
+                        #             prep_phrase.extend(seq)
+                        if prep_phrase:
+                            self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
         return prep_phrase
 
     def _get_vmod_phrase(self, head):
@@ -196,6 +205,8 @@ class RelationExtractor(object):
             obj_list = self._get_dependents(self._dependencies['dobj'], pred)
             if obj_list:
                 for obj in obj_list:
+                    if not self._head_extracting_condition(obj):
+                        continue
                     obj_conjunction = self._get_conjunction(obj)
                     for o in obj_conjunction:
                         expanded_obj = self._expand_head_word(o)
@@ -203,13 +214,13 @@ class RelationExtractor(object):
                             object.extend(expanded_obj)
                             object.head = o
                             object.nn_head = expanded_obj.nn_head
-            # Look for adjective compliment
-            acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
-            if acomp_list:
-                for acomp in acomp_list:
-                    object.add_word_unit(acomp)
-                    acomp_prep_phrase = self._get_prep_phrase(acomp)
-                    object.extend(acomp_prep_phrase)
+            # # Look for adjective compliment
+            # acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
+            # if acomp_list:
+            #     for acomp in acomp_list:
+            #         object.add_word_unit(acomp)
+            #         acomp_prep_phrase = self._get_prep_phrase(acomp)
+            #         object.extend(acomp_prep_phrase)
             # Look for prepositional objects
             prep_phrase = self._get_prep_phrase(pred)
             if len(prep_phrase) > 1:
@@ -218,7 +229,6 @@ class RelationExtractor(object):
                 if not object.head:
                     object.head = prep_phrase.head
                     object.nn_head = prep_phrase.nn_head
-
             if object:
                 # If there are multiple predicate words that have objects, only take the first one.
                 if pred_seq:
@@ -284,10 +294,22 @@ class RelationExtractor(object):
                 predicate.extend(__expand_predicate(xcomp))
         return predicate
 
-    def _extracting_condition(self, head, dependent):
-        return head.word.isalpha() and dependent.word.isalpha() and dependent.pos not in self._subject_pos_blacklist
+    def _head_extracting_condition(self, head, subject=False):
+        flag = head.word.isalnum()
+        if subject:
+            flag = flag and head.pos not in self._subject_pos_blacklist
+        return flag
 
     def extract_spo(self):
+
+        def link_entity(linker, query, context):
+            if not isinstance(context, list):
+                context = context.split()
+            query_arr = [query]
+            for w in [wn for wn in context if not wn == query]:
+                query_arr.append(w)
+            return linker.link(query_arr)
+
         linker = EntityLinker(self.logger) if self.entity_linking else None
         dependencies = [self._dependencies['nsubj'], self._dependencies['nsubjpass']]
         for dep in dependencies:
@@ -297,22 +319,17 @@ class RelationExtractor(object):
                     for relation in self._relations:
                         subj_head = relation.subject.head
                         if subj_head:
-                            subj_el_query = [str(subj_head)]
-                            for w in [str(wn) for i, wn in relation.subject if not str(wn) == str(subj_head)]:
-                                subj_el_query.append(w)
-                            relation.subject_el = linker.link(subj_el_query)
+                            relation.subject_el = link_entity(linker, subj_head.lemma, relation.subject.lemma)
                         obj_head = relation.object.head
                         if obj_head:
-                            obj_el_query = [str(obj_head)]
-                            for w in [str(wn) for i, wn in relation.object if not str(wn) == str(obj_head)]:
-                                obj_el_query.append(w)
-                            relation.object_el = linker.link(obj_el_query)
+                            relation.object_el = link_entity(linker, obj_head.lemma, relation.object.lemma)
 
     def _extract_spo(self, dependency):
         for triple in self._dep_triple_dict[dependency]:
             head = triple['head']
             dependent = triple['dependent']
-            if not self._extracting_condition(head, dependent):
+            if not self._head_extracting_condition(head) \
+               and not self._head_extracting_condition(dependent, subject=True):
                 continue
             head_conjunction = self._get_conjunction(head)
             dependent_conjunction = self._get_conjunction(dependent)
@@ -414,14 +431,14 @@ def batch_extraction(mysql_db=None):
 def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     sentences = u"""
-        Growth arrest and DNA damage inducible 45α is a stress-inducible gene transcriptionally activated by growth-arrest-associated proteins including p53, FOXO3a, ATF4 and C/EBP, and repressed by growth stimulating factors such as c-Myc and AKT.
+        In sharp contrast to the pancellular distribution of Mirk in cycling myoblasts, a dramatic shift in the localization of Mirk to a solely cytoplasmic location was seen in differentiating G1-arrested myotubes within 2 days of shift to differentiation medium.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
             logger.debug(u'SENTENCE: {}'.format(sent))
             try:
-                extractor = RelationExtractor(sent, logger, entity_linking=False)
+                extractor = RelationExtractor(sent, logger, entity_linking=True)
             except:
                 logger.error(u'Failed to parse the sentence', exc_info=True)
             else:
@@ -442,5 +459,5 @@ if __name__ == '__main__':
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
 
-    single_extraction()
-    # batch_extraction('bio-kb')
+    # single_extraction()
+    batch_extraction('bio-kb')
