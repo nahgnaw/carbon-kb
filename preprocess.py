@@ -65,6 +65,9 @@ class Sentences(object):
         replacement_pattern = re.compile('|'.join(replacement), re.UNICODE | re.IGNORECASE)
         text = re.sub(replacement_pattern, '', text)
 
+        # Replace " ." with "." for the sake of sentence segmentation.
+        text = text.replace(' .', '.')
+
         if self._dataset == 'genes-cancer':
             text = text.replace('.-', '.').replace('.,', '.')
 
@@ -77,8 +80,8 @@ if __name__ == '__main__':
     logger = logging.getLogger('preprocess')
 
     # dataset = 'test'
-    # dataset = 'genes-cancer'
-    dataset = 'RiMG75'
+    dataset = 'genes-cancer'
+    # dataset = 'RiMG75'
 
     sents = Sentences(dataset, logger)
     sents.save()
