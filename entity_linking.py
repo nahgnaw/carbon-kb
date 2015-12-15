@@ -113,4 +113,4 @@ if __name__ == '__main__':
     logger = logging.getLogger('entity_linking')
 
     el = EntityLinker(logger)
-    el.write_to_db('bio-kb', 11078)
+    el.write_to_db('bio-kb', 7917)

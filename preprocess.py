@@ -55,7 +55,8 @@ class Sentences(object):
         replacement = [
             r'(\s*\([^()]*\))',    # Parentheses
             r'(\s*\[.*\])',    # Parentheses
-            r'(\b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))))',   # url
+            r'(\b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))))',   # urls
+            r'(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)',  # emails
             r'([A-Za-z0-9]\))',   # List item markers with just one parenthesis
             # r'((Fig\.?u?r?e?\s\d{1,3}\.?))',  # Figure caption
             # r'(Table\.?\s\d{1,3}\.?)',    # Table caption

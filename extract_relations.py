@@ -450,7 +450,7 @@ def batch_extraction(mysql_db=None):
 def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     sentences = u"""
-        The presence of 2 distinct pools of Egfr mRNA, one in cancer cells and one in perivascular cells, led us to explore Egfr function in both of these cellular compartments.
+        PCR reactions were carried out in final volumes of 25 μl using a StepOne™ System.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
@@ -463,7 +463,7 @@ def single_extraction():
             else:
                 extractor.extract_spo()
                 for relation in extractor.relations:
-                    logger.debug(u'RELATION: {}'.format(relation))
+                    logger.debug(u'RELATION: {}'.format(relation.lemma))
                     logger.debug(u'SUBJECT HEAD: {}'.format(relation.subject.head))
                     logger.debug(u'SUBJECT NN HEAD: {}'.format(relation.subject.nn_head))
                     if extractor.entity_linking:
