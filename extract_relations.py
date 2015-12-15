@@ -407,14 +407,14 @@ def batch_extraction(mysql_db=None):
         for fn in files:
             if fn.endswith('.txt'):
                 filename = os.path.join(root, fn)
-                output_filename = os.path.join(root, fn).replace('processed', 'extractions')
+                # output_filename = os.path.join(root, fn).replace('/processed/', '/extractions/')
                 f_in = codecs.open(filename, encoding='utf-8')
-                f_out = codecs.open(output_filename, 'w', encoding='utf-8')
+                # f_out = codecs.open(output_filename, 'w', encoding='utf-8')
                 for line in f_in:
                     sent = line.strip()
                     if sent:
                         logger.info(u'SENTENCE: {}'.format(sent))
-                        f_out.write(u'{}\n'.format(sent))
+                        # f_out.write(u'{}\n'.format(sent))
                         try:
                             extractor = RelationExtractor(sent, logger, entity_linking=False)
                         except:
@@ -423,7 +423,7 @@ def batch_extraction(mysql_db=None):
                             extractor.extract_spo()
                             for relation in extractor.relations:
                                 logger.info(u'RELATION: {}'.format(relation))
-                                f_out.write(u'{}\n'.format(relation))
+                                # f_out.write(u'{}\n'.format(relation))
                                 extraction_counter += 1
                                 if mysql_db:
                                     try:
@@ -435,9 +435,14 @@ def batch_extraction(mysql_db=None):
                                                          exc_info=True)
                                         except IndexError:
                                             logger.error(u'MySQL Error: {}'.format(str(e)), exc_info=True)
-                            f_out.write('\n')
+                            # f_out.write('\n')
                 f_in.close()
-                f_out.close()
+                # f_out.close()
+
+                done_filename = os.path.join(root, fn).replace('/processed/', '/processed_done/')
+                if not os.path.exists(os.path.dirname(done_filename)):
+                    os.makedirs(os.path.dirname(done_filename))
+                os.rename(filename, done_filename)
 
     if mysql_db:
         cur.close()

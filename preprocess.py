@@ -15,14 +15,14 @@ class Sentences(object):
     def __init__(self, dataset, logger):
         self.logger = logger
         self._dataset = dataset
-        self._raw_data_dir = 'data/{}/raw'.format(self._dataset)
+        self._raw_text_dir = 'data/{}/raw'.format(self._dataset)
         self._processed_text_dir = 'data/{}/processed'.format(self._dataset)
         # self.sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
         # extra_abbr = ['dr', 'vs', 'mr', 'mrs', 'prof', 'inc', 'i.e', 'fig', 'figs', 'p', 'et al', 'e.g', 'etc', 'eq']
         # self.sent_detector._params.abbrev_types.update(extra_abbr)
 
     def __iter__(self):
-        for root, _, files in os.walk(self._raw_data_dir):
+        for root, _, files in os.walk(self._raw_text_dir):
             for fn in files:
                 if fn.endswith('.txt'):
                     filename = os.path.join(root, fn)
@@ -34,20 +34,27 @@ class Sentences(object):
                             # Discard very long and very short sentences
                             if sent and len(sent) < 1000 and len(sent.split()) > 2:
                                 sent = sent.strip()
-                                yield fn, sent
+                                yield filename, sent
                     f.close()
+                    done_filename = filename.replace('/raw/', '/raw_done/')
+                    if not os.path.exists(os.path.dirname(done_filename)):
+                        os.makedirs(os.path.dirname(done_filename))
+                    os.rename(filename, done_filename)
 
-    def save(self, dir=None):
-        if not dir:
-            dir = self._processed_text_dir
-        # First empty dir
-        file_list = [f for f in os.listdir(dir) if f.endswith('.txt')]
-        for f in file_list:
-            os.remove(os.path.join(dir, f))
-        for fn, sent in self.__iter__():
-            self.logger.debug(u'{} {}'.format(fn, sent))
-            file_path = os.path.join(dir, fn)
-            f = codecs.open(file_path, 'a', encoding='utf-8')
+    def save(self):
+        # # First empty the processed dir
+        # file_list = [os.path.join(self._processed_text_dir, d) for d in os.listdir(self._processed_text_dir)
+        #              if os.path.isdir(os.path.join(self._processed_text_dir, d))]
+        # for d in file_list:
+        #     for f in os.listdir(d):
+        #         os.remove(os.path.join(d, f))
+
+        for filename, sent in self.__iter__():
+            filename = filename.replace('/raw/', '/processed/')
+            if not os.path.exists(os.path.dirname(filename)):
+                os.makedirs(os.path.dirname(filename))
+            self.logger.debug(u'{} {}'.format(filename, sent))
+            f = codecs.open(filename, 'a', encoding='utf-8')
             f.write(u'{}\n'.format(sent))
             f.close()
 
@@ -69,7 +76,7 @@ class Sentences(object):
         # Replace " ." with "." for the sake of sentence segmentation.
         text = text.replace(' .', '.')
 
-        if self._dataset == 'genes-cancer':
+        if self._dataset == 'pmc_c-h':
             text = text.replace('.-', '.').replace('.,', '.')
 
         return text
@@ -81,7 +88,8 @@ if __name__ == '__main__':
     logger = logging.getLogger('preprocess')
 
     # dataset = 'test'
-    dataset = 'genes-cancer'
+    # dataset = 'genes-cancer'
+    dataset = 'pmc_c-h'
     # dataset = 'RiMG75'
 
     sents = Sentences(dataset, logger)
