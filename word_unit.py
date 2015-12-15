@@ -31,7 +31,7 @@ class WordUnit(object):
 
     @property
     def lemma(self):
-        return self._lemma
+        return self._lemma.lower()
 
     @property
     def pos(self):

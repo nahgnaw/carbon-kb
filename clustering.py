@@ -15,8 +15,8 @@ def generate_embedding_file(dataset, mysql_config, logger):
     def select_sql(table_name='svo'):
         return 'SELECT subject, predicate, object FROM {} ORDER BY id'.format(table_name)
 
-    db = MySQLdb.connect(**mysql_config)
-    cur = db.cursor()
+    conn = MySQLdb.connect(**mysql_config)
+    cur = conn.cursor()
 
     try:
         cur.execute(select_sql())
@@ -62,7 +62,7 @@ def generate_embedding_file(dataset, mysql_config, logger):
         logger.debug('Total words: {}'.format(str(word_count)))
     finally:
         cur.close()
-        db.close()
+        conn.close()
 
 
 def write_cluster_to_db(dataset, mysql_config, logger):
@@ -73,12 +73,12 @@ def write_cluster_to_db(dataset, mysql_config, logger):
     def reset_cluster_sql(table_name='svo'):
         return 'UPDATE {} SET cluster=NULL'.format(table_name)
 
-    db = MySQLdb.connect(**mysql_config)
-    cur = db.cursor()
+    conn = MySQLdb.connect(**mysql_config)
+    cur = conn.cursor()
 
     try:
         cur.execute(reset_cluster_sql())
-        db.commit()
+        conn.commit()
 
         cluster_file = 'data/{}/clusters.txt'.format(dataset['dataset'])
         with open(cluster_file) as f:
@@ -90,18 +90,18 @@ def write_cluster_to_db(dataset, mysql_config, logger):
                     for ind in clusters:
                         ind = int(ind)
                         cur.execute(update_cluster_sql(dataset['db_offset'] + ind, cluster_count))
-                        db.commit()
+                        conn.commit()
                         print ind, cluster_count
                     cluster_count += 1
     except MySQLdb.Error, e:
-        db.rollback()
+        conn.rollback()
         try:
             logger.error("MySQL Error [{}]: {}".format(e.args[0], e.args[1]))
         except IndexError:
             logger.error("MySQL Error: {}".format(str(e)))
     finally:
         cur.close()
-        db.close()
+        conn.close()
 
 
 if __name__ == '__main__':

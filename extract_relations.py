@@ -416,7 +416,7 @@ def batch_extraction(mysql_db=None):
                         logger.info(u'SENTENCE: {}'.format(sent))
                         f_out.write(u'{}\n'.format(sent))
                         try:
-                            extractor = RelationExtractor(sent, logger, entity_linking=True)
+                            extractor = RelationExtractor(sent, logger, entity_linking=False)
                         except:
                             logger.error(u'Failed to extract relations.', exc_info=True)
                         else:
