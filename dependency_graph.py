@@ -5,7 +5,7 @@ import json
 import jsonrpclib
 import nltk
 
-from word_unit import WordUnit
+from word_unit_sequence import WordUnit
 
 
 class DependencyGraph(object):

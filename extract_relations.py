@@ -12,7 +12,7 @@ from copy import deepcopy
 from ConfigParser import SafeConfigParser
 from segtok.segmenter import split_multi
 from dependency_graph import DependencyGraph
-from word_unit import WordUnitSequence
+from word_unit_sequence import WordUnitSequence, Predicate
 from entity_linking import EntityLinker
 from utils import timeit
 
@@ -232,10 +232,10 @@ class RelationExtractor(object):
 
     def _expand_predicate(self, head):
         predicates = []
-        predicate = WordUnitSequence(head)
+        predicate = Predicate(head)
 
         def __expand_predicate(pred_head):
-            predicate = WordUnitSequence()
+            predicate = Predicate()
             dep_list = [
                 self._dependencies['aux'],
                 self._dependencies['auxpass'],
@@ -244,12 +244,19 @@ class RelationExtractor(object):
             for dep in dep_list:
                 dep_wn = self._get_dependents(dep, pred_head)
                 if dep_wn:
+                    if dep == self._dependencies['neg']:
+                        predicate.negation = dep_wn[0]
+                    if dep == self._dependencies['aux']:
+                        predicate.auxiliary = dep_wn[0]
                     predicate.add_word_unit(dep_wn[0])
                     self._print_expansion_debug_info(pred_head, dep, dep_wn[0])
             return predicate
 
         # Find out if there is any aux, auxpass, and neg
-        predicate.extend(__expand_predicate(head))
+        expanded_pred = __expand_predicate(head)
+        predicate.extend(expanded_pred)
+        predicate.negation = expanded_pred.negation
+        predicate.auxiliary = expanded_pred.auxiliary
         # Find out if there is any xcomp
         xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
@@ -283,7 +290,8 @@ class RelationExtractor(object):
                                 object.head = o
                                 object.nn_head = expanded_obj.nn_head
                                 # If there are multiple predicate words that have objects, only take the first one.
-                                cur_predicate = WordUnitSequence(predicate[:ind+1])
+                                cur_predicate = Predicate(
+                                    predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
                                 predicate_object.append((cur_predicate, object))
                 # Look for adjective compliment
                 acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
@@ -296,7 +304,8 @@ class RelationExtractor(object):
                             object.head = acomp_prep_phrase.head
                             object.nn_head = acomp_prep_phrase.nn_head
                             # If there are multiple predicate words that have objects, only take the first one.
-                            cur_predicate = WordUnitSequence(predicate[:ind+1])
+                            cur_predicate = Predicate(
+                                predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
                             # Merge the acomp and prep into the predicate
                             cur_predicate.add_word_unit(acomp)
                             cur_predicate.add_word_unit(acomp_prep_phrase[0])
@@ -309,7 +318,8 @@ class RelationExtractor(object):
                     object.head = prep_phrase.head
                     object.nn_head = prep_phrase.nn_head
                     # If there are multiple predicate words that have objects, only take the first one.
-                    cur_predicate = WordUnitSequence(predicate[:ind+1])
+                    cur_predicate = Predicate(
+                        predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
                     # Merge the prep into the predicate
                     cur_predicate.add_word_unit(prep_phrase[0])
                     predicate_object.append((cur_predicate, object))
@@ -385,7 +395,8 @@ class RelationExtractor(object):
 def batch_extraction(mysql_db=None):
     logger = logging.getLogger('batch_relation_extraction')
 
-    dataset = 'genes-cancer'
+    dataset = 'pmc_c-h'
+    # dataset = 'genes-cancer'
     # dataset = 'RiMG75'
     # dataset = 'test'
     data_dir = 'data/{}/processed/'.format(dataset)
@@ -455,20 +466,21 @@ def batch_extraction(mysql_db=None):
 def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     sentences = u"""
-        PCR reactions were carried out in final volumes of 25 μl using a StepOne™ System.
+        CDH1 germ line mutations and somatic alterations cause hereditary diffuse gastric cancer and have been extensively studied by Dr. Seruca and colleagues.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
             logger.debug(u'SENTENCE: {}'.format(sent))
             try:
-                extractor = RelationExtractor(sent, logger, entity_linking=True)
+                extractor = RelationExtractor(sent, logger, entity_linking=False)
             except:
                 logger.error(u'Failed to parse the sentence', exc_info=True)
             else:
                 extractor.extract_spo()
                 for relation in extractor.relations:
-                    logger.debug(u'RELATION: {}'.format(relation.lemma))
+                    logger.debug(u'RELATION LEMMA: {}'.format(relation.lemma))
+                    logger.debug(u'RELATION CANONICAL: {}'.format(relation.canonical_form))
                     logger.debug(u'SUBJECT HEAD: {}'.format(relation.subject.head))
                     logger.debug(u'SUBJECT NN HEAD: {}'.format(relation.subject.nn_head))
                     if extractor.entity_linking:
@@ -483,5 +495,5 @@ if __name__ == '__main__':
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
 
-    # single_extraction()
-    batch_extraction('bio-kb')
+    single_extraction()
+    # batch_extraction('bio-kb')

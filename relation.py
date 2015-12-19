@@ -18,6 +18,10 @@ class Relation(object):
         return u'({}, {}, {})'.format(self._subj.lemma, self._pred.lemma, self._obj.lemma)
 
     @property
+    def canonical_form(self):
+        return u'({}, {}, {})'.format(self._subj.lemma, self._pred.canonical_form, self._obj.lemma)
+
+    @property
     def subject(self):
         return self._subj
 

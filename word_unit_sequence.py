@@ -110,3 +110,31 @@ class WordUnitSequence(object):
     @nn_head.setter
     def nn_head(self, nn):
         self._nn_head = nn
+
+
+class Predicate(WordUnitSequence):
+
+    def __init__(self, word_unit_list=None, head=None, negation=None, auxiliary=None):
+        super(Predicate, self).__init__(word_unit_list, head)
+        self._negation = negation
+        self._auxiliary = auxiliary
+
+    @property
+    def negation(self):
+        return self._negation
+
+    @negation.setter
+    def negation(self, negation):
+        self._negation = negation
+
+    @property
+    def auxiliary(self):
+        return self._auxiliary
+
+    @auxiliary.setter
+    def auxiliary(self, auxiliary):
+        self._auxiliary = auxiliary
+
+    @property
+    def canonical_form(self):
+        return ' '.join(wn.lemma for wn in self._seq if not wn is self._negation and not wn is self._auxiliary)
