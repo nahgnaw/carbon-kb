@@ -10,7 +10,7 @@ from word_unit_sequence import WordUnit
 
 class DependencyGraph(object):
 
-    def __init__(self, sentence, logger, parser_server_url=None):
+    def __init__(self, sentence, logger, parser_server=None):
         self._sentence = sentence
         self._raw = {}
         self._tree = {}
@@ -21,10 +21,10 @@ class DependencyGraph(object):
         self._dep_triples = []
         self.logger = logger
 
-        if not parser_server_url:
-            parser_server_url = 'http://localhost:8084'
+        if not parser_server:
+            parser_server = 'http://localhost:8084'
 
-        parser = jsonrpclib.Server(parser_server_url)
+        parser = jsonrpclib.Server(parser_server)
         self._raw = json.loads(parser.parse(self._sentence))
         self._tree = self._raw['sentences'][0]
         if self._tree:
@@ -43,9 +43,9 @@ class DependencyGraph(object):
             lemma = dep[2]
             pos = dep[3]
             head_index = int(dep[4])
-            head_word = words[head_index - 1][0]
-            head_lemma = words[head_index - 1][1]['Lemma']
-            head_pos = words[head_index - 1][1]['PartOfSpeech']
+            head_word = words[head_index-1][0]
+            head_lemma = words[head_index-1][1]['Lemma']
+            head_pos = words[head_index-1][1]['PartOfSpeech']
             rel = dep[5]
             self._words.append(word)
             self._lemmas.append(lemma)
@@ -61,7 +61,7 @@ class DependencyGraph(object):
     def _dependencies(self):
         for rel, _, head, word, index in self._tree['dependencies']:
             index = int(index)
-            word_info = self._tree['words'][index - 1][1]
+            word_info = self._tree['words'][index-1][1]
             pos = word_info['PartOfSpeech']
             lemma = word_info['Lemma']
             yield index, word, lemma, pos, head, rel

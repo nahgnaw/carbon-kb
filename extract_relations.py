@@ -6,6 +6,7 @@ import logging
 import logging.config
 import MySQLdb
 import yaml
+import multiprocessing
 
 from relation import Relation
 from copy import deepcopy
@@ -70,16 +71,17 @@ class RelationExtractor(object):
             _dependencies['conj:or']
         ]
 
-    def __init__(self, sentence, logger, entity_linking=False):
+    def __init__(self, sentence, logger, parser_server, entity_linking=False):
         self._sentence = sentence
         self.logger = logger
+        self._parser_server = parser_server
         self.entity_linking = entity_linking
         self._dep_triple_dict = {}
         self._make_dep_triple_dict()
         self._relations = []
 
     def _make_dep_triple_dict(self):
-        dg = DependencyGraph(self._sentence, self.logger)
+        dg = DependencyGraph(self._sentence, self.logger, self._parser_server)
         triples = dg.dep_triples
         dg.print_dep_triples()
         for triple in triples:
@@ -96,17 +98,18 @@ class RelationExtractor(object):
     def relations(self):
         return self._relations
 
-    def generate_relation_sql(self, relation, table_name='svo'):
+    def insert_relation_sql(self, relation, table_name='svo'):
+        sentence = self._sentence.replace('"', '')
         return u"""
-            INSERT INTO {} (subject_head, subject_nn_head, subject, subject_el, predicate,
+            INSERT INTO {} (subject_head, subject_nn_head, subject, subject_el, predicate, predicate_canonical,
                             object_head, object_nn_head, object, object_el, sentence)
-            VALUES ("{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}");
+            VALUES ("{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}");
         """.format(
             table_name,
             relation.subject.head.lemma, relation.subject.nn_head.lemma, relation.subject.lemma, relation.subject_el,
-            relation.predicate.lemma,
+            relation.predicate.lemma, relation.predicate.canonical_form,
             relation.object.head.lemma, relation.object.nn_head.lemma, relation.object.lemma, relation.object_el,
-            self._sentence
+            sentence
         )
 
     def _print_expansion_debug_info(self, head_word, dep, added):
@@ -393,7 +396,57 @@ class RelationExtractor(object):
 
 @timeit
 def batch_extraction(mysql_db=None):
+
+    def single_file_extraction(filename, parser_server):
+        f_in = codecs.open(filename, encoding='utf-8')
+        # output_filename = os.path.join(root, fn).replace('/processed/', '/extractions/')
+        # f_out = codecs.open(output_filename, 'w', encoding='utf-8')
+        for line in f_in:
+            sent = line.strip()
+            if sent:
+                logger.info(u'{}: {}'.format(filename, sent))
+                # f_out.write(u'{}\n'.format(sent))
+                try:
+                    extractor = RelationExtractor(sent, logger, parser_server, entity_linking=False)
+                except:
+                    logger.error(u'Failed to extract relations.', exc_info=True)
+                else:
+                    extractor.extract_spo()
+                    for relation in extractor.relations:
+                        logger.info(u'RELATION: {}'.format(relation))
+                        # f_out.write(u'{}\n'.format(relation))
+                        if mysql_db:
+                            try:
+                                cur.execute(extractor.insert_relation_sql(relation))
+                                conn.commit()
+                            except MySQLdb.Error, e:
+                                try:
+                                    logger.error(u'MySQL Error [{}]: {}'.format(e.args[0], e.args[1]),
+                                                 exc_info=True)
+                                except IndexError:
+                                    logger.error(u'MySQL Error: {}'.format(str(e)), exc_info=True)
+                    # f_out.write('\n')
+
+        f_in.close()
+        # f_out.close()
+
+        done_filename = filename.replace('/processed/', '/processed_done/')
+        if not os.path.exists(os.path.dirname(done_filename)):
+            os.makedirs(os.path.dirname(done_filename))
+        os.rename(filename, done_filename)
+
     logger = logging.getLogger('batch_relation_extraction')
+
+    parser_servers = [
+        'http://localhost:8084',
+        'http://localhost:8085',
+        'http://localhost:8086',
+        'http://localhost:8087',
+        'http://localhost:8088',
+        'http://localhost:8089',
+        'http://localhost:8090',
+        'http://localhost:8091'
+    ]
 
     dataset = 'pmc_c-h'
     # dataset = 'genes-cancer'
@@ -410,70 +463,50 @@ def batch_extraction(mysql_db=None):
             'passwd': parser.get('MySQL', 'passwd'),
             'db': mysql_db
         }
-        db = MySQLdb.connect(**mysql_config)
-        cur = db.cursor()
+        conn = MySQLdb.connect(**mysql_config)
+        cur = conn.cursor()
 
-    extraction_counter = 0
+    processes = []
+    file_count = 0
     for root, _, files in os.walk(data_dir):
         for fn in files:
             if fn.endswith('.txt'):
                 filename = os.path.join(root, fn)
-                # output_filename = os.path.join(root, fn).replace('/processed/', '/extractions/')
-                f_in = codecs.open(filename, encoding='utf-8')
-                # f_out = codecs.open(output_filename, 'w', encoding='utf-8')
-                for line in f_in:
-                    sent = line.strip()
-                    if sent:
-                        logger.info(u'SENTENCE: {}'.format(sent))
-                        # f_out.write(u'{}\n'.format(sent))
-                        try:
-                            extractor = RelationExtractor(sent, logger, entity_linking=False)
-                        except:
-                            logger.error(u'Failed to extract relations.', exc_info=True)
-                        else:
-                            extractor.extract_spo()
-                            for relation in extractor.relations:
-                                logger.info(u'RELATION: {}'.format(relation))
-                                # f_out.write(u'{}\n'.format(relation))
-                                extraction_counter += 1
-                                if mysql_db:
-                                    try:
-                                        cur.execute(extractor.generate_relation_sql(relation))
-                                        db.commit()
-                                    except MySQLdb.Error, e:
-                                        try:
-                                            logger.error(u'MySQL Error [{}]: {}'.format(e.args[0], e.args[1]),
-                                                         exc_info=True)
-                                        except IndexError:
-                                            logger.error(u'MySQL Error: {}'.format(str(e)), exc_info=True)
-                            # f_out.write('\n')
-                f_in.close()
-                # f_out.close()
+                parser = parser_servers[file_count % len(parser_servers)]
+                processes.append(multiprocessing.Process(target=single_file_extraction, args=(filename, parser)))
+                file_count += 1
 
-                done_filename = os.path.join(root, fn).replace('/processed/', '/processed_done/')
-                if not os.path.exists(os.path.dirname(done_filename)):
-                    os.makedirs(os.path.dirname(done_filename))
-                os.rename(filename, done_filename)
+    # Run processes
+    for p in processes:
+        p.start()
 
-    if mysql_db:
-        cur.close()
-        db.close()
-
-    logger.info("{} relations were extracted.".format(extraction_counter))
+    # Exit the completed processes
+    try:
+        for p in processes:
+            p.join()
+    except KeyboardInterrupt:
+        for p in processes:
+            p.terminate()
+            p.join()
+    finally:
+        if mysql_db:
+            cur.close()
+            conn.close()
 
 
 @timeit
 def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
+    parser_server = 'http://localhost:8084'
     sentences = u"""
-        CDH1 germ line mutations and somatic alterations cause hereditary diffuse gastric cancer and have been extensively studied by Dr. Seruca and colleagues.
+        Our current working hypothesis is based on the assumption that the CCN proteins are "docking" proteins permitting a coordinated interaction of the various receptors and co-factors.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
             logger.debug(u'SENTENCE: {}'.format(sent))
             try:
-                extractor = RelationExtractor(sent, logger, entity_linking=False)
+                extractor = RelationExtractor(sent, logger, parser_server, entity_linking=False)
             except:
                 logger.error(u'Failed to parse the sentence', exc_info=True)
             else:
@@ -495,5 +528,5 @@ if __name__ == '__main__':
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
 
-    single_extraction()
-    # batch_extraction('bio-kb')
+    # single_extraction()
+    batch_extraction('bio-kb')
