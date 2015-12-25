@@ -46,18 +46,19 @@ def save_graph_to_file(graph, output_file, logger):
 # The edge weight is the count of the cooccurence of the two connected vertexes.
 def construct_simple_graph(mysql_db, logger):
     sql_query = u"""
-        SELECT subject_head, predicate, object_head
+        SELECT subject_head, predicate_canonical, object_head
         FROM svo
     """
     triples = read_triples_from_db(sql_query, mysql_db)
     graph = {}
     for triple in triples:
-        subject_head, predicate, object_head = triple
+        logger.debug(triple)
+        subject_head, predicate_canonical, object_head = triple
         subject_head = subject_head.strip().replace(' ', '_')
-        predicate = predicate.strip().replace(' ', '_')
+        predicate_canonical = predicate_canonical.strip().replace(' ', '_')
         object_head = object_head.strip().replace(' ', '_')
-        graph.setdefault(subject_head, []).append(predicate)
-        graph.setdefault(object_head, []).append(predicate)
+        graph.setdefault(subject_head, []).append(predicate_canonical)
+        graph.setdefault(object_head, []).append(predicate_canonical)
     return graph
 
 
@@ -66,8 +67,11 @@ if __name__ == '__main__':
         logging.config.dictConfig(yaml.load(f))
     logger = logging.getLogger('construct_graph')
 
-    dataset = 'genes-cancer'
+    dataset = 'pmc_c-h'
+    # dataset = 'genes-cancer'
     simple_graph_file = 'data/{}/simple_graph.txt'.format(dataset)
     mysql_db = 'bio-kb'
+    logger.info('Start reading triples from db ...')
     graph = construct_simple_graph(mysql_db, logger)
+    logger.info('Start constructing graph ...')
     save_graph_to_file(graph, simple_graph_file, logger)
