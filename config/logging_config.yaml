@@ -40,6 +40,10 @@ loggers:
         level: INFO
         handlers: [console, info_file_handler, error_file_handler]
         propagate: False
+    extraction_evaluation:
+        level: INFO
+        handlers: [console, info_file_handler, error_file_handler]
+        propagate: False
     word_quality:
         level: DEBUG
         handlers: [console, error_file_handler]
