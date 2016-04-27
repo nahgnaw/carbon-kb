@@ -10,7 +10,7 @@ config/*.ini
 *.diff
 doc/_build
 doc/*.rst
-log/
+log
 
 *.py[cod]
 
@@ -52,6 +52,4 @@ nosetests.xml
 .stat
 
 data
-reverb
-topicalPhrases
-clodhopper
+external
