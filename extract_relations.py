@@ -131,7 +131,10 @@ class RelationExtractor(object):
     def _get_conjunction(self, head):
         conjunction = [head]
         for dep in self._conjunction_dependencies:
-            conjunction.extend(self._get_dependents(dep, head))
+            conj_list = self._get_dependents(dep, head)
+            conjunction.extend(conj_list)
+            for conj in conj_list:
+                self._print_expansion_debug_info(head, 'conjunction', conj)
         return conjunction
 
     def _get_noun_compound(self, head):
@@ -395,17 +398,17 @@ class RelationExtractor(object):
 
 
 @timeit
-def batch_extraction(mysql_db=None):
+def batch_extraction(dataset, mysql_db=None):
 
     def single_file_extraction(filename, parser_server):
         f_in = codecs.open(filename, encoding='utf-8')
-        # output_filename = os.path.join(root, fn).replace('/processed/', '/extractions/')
-        # f_out = codecs.open(output_filename, 'w', encoding='utf-8')
+        output_filename = os.path.join(root, fn).replace('/processed/', '/extractions/')
+        f_out = codecs.open(output_filename, 'w', encoding='utf-8')
         for line in f_in:
             sent = line.strip()
             if sent:
                 logger.info(u'{}: {}'.format(filename, sent))
-                # f_out.write(u'{}\n'.format(sent))
+                f_out.write(u'{}\n'.format(sent))
                 try:
                     extractor = RelationExtractor(sent, logger, parser_server, entity_linking=False)
                 except:
@@ -414,7 +417,7 @@ def batch_extraction(mysql_db=None):
                     extractor.extract_spo()
                     for relation in extractor.relations:
                         logger.info(u'RELATION: {}'.format(relation))
-                        # f_out.write(u'{}\n'.format(relation))
+                        f_out.write(u'{} [{}]\n'.format(relation, relation.canonical_form))
                         if mysql_db:
                             try:
                                 cur.execute(extractor.insert_relation_sql(relation))
@@ -425,10 +428,10 @@ def batch_extraction(mysql_db=None):
                                                  exc_info=True)
                                 except IndexError:
                                     logger.error(u'MySQL Error: {}'.format(str(e)), exc_info=True)
-                    # f_out.write('\n')
+                    f_out.write('\n')
 
         f_in.close()
-        # f_out.close()
+        f_out.close()
 
         done_filename = filename.replace('/processed/', '/processed_done/')
         if not os.path.exists(os.path.dirname(done_filename)):
@@ -439,19 +442,15 @@ def batch_extraction(mysql_db=None):
 
     parser_servers = [
         'http://localhost:8084',
-        'http://localhost:8085',
-        'http://localhost:8086',
-        'http://localhost:8087',
-        'http://localhost:8088',
-        'http://localhost:8089',
-        'http://localhost:8090',
-        'http://localhost:8091'
+        # 'http://localhost:8085',
+        # 'http://localhost:8086',
+        # 'http://localhost:8087',
+        # 'http://localhost:8088',
+        # 'http://localhost:8089',
+        # 'http://localhost:8090',
+        # 'http://localhost:8091'
     ]
 
-    dataset = 'pmc_c-h'
-    # dataset = 'genes-cancer'
-    # dataset = 'RiMG75'
-    # dataset = 'test'
     data_dir = 'data/{}/processed/'.format(dataset)
 
     if mysql_db:
@@ -499,7 +498,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        Our current working hypothesis is based on the assumption that the CCN proteins are "docking" proteins permitting a coordinated interaction of the various receptors and co-factors.
+        Carbon, element 6, displays remarkable chemical flexibility and thus is unique in the diversity of its mineralogical roles. Carbon has the ability to bond to itself and to more than 80 other elements in a variety of bonding topologies, most commonly in 2-, 3-, and 4-coordination. With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties. This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element (Holland 1984; Berner 2004; Hazen et al. 2012). Therefore, any comprehensive survey of carbon in Earth must consider the broad range of carbon-bearing phases.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
@@ -528,5 +527,11 @@ if __name__ == '__main__':
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
 
-    # single_extraction()
-    batch_extraction('bio-kb')
+    # dataset = 'test'
+    # dataset = 'genes-cancer'
+    # dataset = 'pmc_c-h'
+    # dataset = 'RiMG75'
+    dataset = 'gates'
+
+    single_extraction()
+    # batch_extraction(dataset)
