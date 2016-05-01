@@ -38,6 +38,7 @@ class RelationExtractor(object):
         'pcomp': 'pcomp',
         'pobj': 'pobj',
         'prep': 'prep',
+        'prt': 'prt',
         'vmod': 'vmod',
         'xcomp': 'xcomp',
     }
@@ -237,31 +238,30 @@ class RelationExtractor(object):
         return expansion
 
     def _expand_predicate(self, head):
-        predicates = []
-        predicate = Predicate(head, head)
 
         def __expand_predicate(pred_head):
             predicate = Predicate()
             dep_list = [
                 self._dependencies['aux'],
                 self._dependencies['auxpass'],
-                self._dependencies['neg']
+                self._dependencies['neg'],
+                self._dependencies['prt'],
+                self._dependencies['cop']
             ]
             for dep in dep_list:
                 dep_wn = self._get_dependents(dep, pred_head)
                 if dep_wn:
-                    if dep == self._dependencies['neg']:
-                        for d in dep_wn:
+                    for d in dep_wn:
+                        predicate.add_word_unit(d)
+                        self._print_expansion_debug_info(pred_head, dep, d)
+                        if dep == self._dependencies['neg']:
                             predicate.negation.append(d)
-                            predicate.add_word_unit(d)
-                            self._print_expansion_debug_info(pred_head, dep, d)
-                    if dep == self._dependencies['aux']:
-                        for d in dep_wn:
+                        if dep == self._dependencies['aux']:
                             predicate.auxiliary.append(d)
-                            predicate.add_word_unit(d)
-                            self._print_expansion_debug_info(pred_head, dep, d)
             return predicate
 
+        predicates = []
+        predicate = Predicate(head, head)
         # Find out if there is any aux, auxpass, and neg
         expanded_pred = __expand_predicate(head)
         predicate.extend(expanded_pred)
@@ -300,11 +300,11 @@ class RelationExtractor(object):
                                 object.extend(expanded_obj)
                                 object.head = o
                                 object.nn_head = expanded_obj.nn_head
-                                # If there are multiple predicate words that have objects, only take the first one.
-                                cur_predicate = Predicate(
-                                    predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
+                                # # If there are multiple predicate words that have objects, only take the first one.
+                                # cur_predicate = Predicate(
+                                #     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
                                 dobj_flag = True
-                                predicate_object.append((cur_predicate, object))
+                                predicate_object.append((predicate, object))
                 # Look for adjective compliment
                 acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
                 if acomp_list:
@@ -315,14 +315,14 @@ class RelationExtractor(object):
                             object.extend(WordUnitSequence(acomp_prep_phrase[1:]))
                             object.head = acomp_prep_phrase.head
                             object.nn_head = acomp_prep_phrase.nn_head
-                            # If there are multiple predicate words that have objects, only take the first one.
-                            cur_predicate = Predicate(
-                                predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
+                            # # If there are multiple predicate words that have objects, only take the first one.
+                            # cur_predicate = Predicate(
+                            #     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
                             # Merge the acomp and prep into the predicate
-                            cur_predicate.add_word_unit(acomp)
-                            cur_predicate.add_word_unit(acomp_prep_phrase[0])
+                            predicate.add_word_unit(acomp)
+                            predicate.add_word_unit(acomp_prep_phrase[0])
                             acomp_flag = True
-                            predicate_object.append((cur_predicate, object))
+                            predicate_object.append((predicate, object))
                 # Look for prepositional objects
                 prep_phrase = self._get_prep_phrase(pred)
                 if len(prep_phrase) > 1:
@@ -330,13 +330,13 @@ class RelationExtractor(object):
                     object.extend(WordUnitSequence(prep_phrase[1:]))
                     object.head = prep_phrase.head
                     object.nn_head = prep_phrase.nn_head
-                    # If there are multiple predicate words that have objects, only take the first one.
-                    cur_predicate = Predicate(
-                        predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
+                    # # If there are multiple predicate words that have objects, only take the first one.
+                    # cur_predicate = Predicate(
+                    #     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
                     # Merge the prep into the predicate
-                    cur_predicate.add_word_unit(prep_phrase[0])
+                    predicate.add_word_unit(prep_phrase[0])
                     pobj_flag = True
-                    predicate_object.append((cur_predicate, object))
+                    predicate_object.append((predicate, object))
             # Also return the predicate if it has no object in case it is a conjunction of other predicates.
             if not dobj_flag and not acomp_flag and not pobj_flag:
                 predicate_object.append((predicate, None))
@@ -516,7 +516,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        More and more evidence suggests that TICs sustain cancer growth and cause tumor metastasis and recurrence after therapies.
+        TZN interpreted the stress echocardiogram and picked up the RV enlargement, pulmonary HTN and ST elevation.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
