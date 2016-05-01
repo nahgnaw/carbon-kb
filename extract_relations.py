@@ -238,7 +238,7 @@ class RelationExtractor(object):
 
     def _expand_predicate(self, head):
         predicates = []
-        predicate = Predicate(head)
+        predicate = Predicate(head, head)
 
         def __expand_predicate(pred_head):
             predicate = Predicate()
@@ -251,11 +251,15 @@ class RelationExtractor(object):
                 dep_wn = self._get_dependents(dep, pred_head)
                 if dep_wn:
                     if dep == self._dependencies['neg']:
-                        predicate.negation = dep_wn[0]
+                        for d in dep_wn:
+                            predicate.negation.append(d)
+                            predicate.add_word_unit(d)
+                            self._print_expansion_debug_info(pred_head, dep, d)
                     if dep == self._dependencies['aux']:
-                        predicate.auxiliary = dep_wn[0]
-                    predicate.add_word_unit(dep_wn[0])
-                    self._print_expansion_debug_info(pred_head, dep, dep_wn[0])
+                        for d in dep_wn:
+                            predicate.auxiliary.append(d)
+                            predicate.add_word_unit(d)
+                            self._print_expansion_debug_info(pred_head, dep, d)
             return predicate
 
         # Find out if there is any aux, auxpass, and neg
@@ -280,6 +284,7 @@ class RelationExtractor(object):
         predicate_object = []
         predicates = self._expand_predicate(pred_head)
         for predicate in predicates:
+            dobj_flag, acomp_flag, pobj_flag = False, False, False
             for ind, pred in predicate:
                 # Look for direct object
                 obj_list = self._get_dependents(self._dependencies['dobj'], pred)
@@ -298,6 +303,7 @@ class RelationExtractor(object):
                                 # If there are multiple predicate words that have objects, only take the first one.
                                 cur_predicate = Predicate(
                                     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
+                                dobj_flag = True
                                 predicate_object.append((cur_predicate, object))
                 # Look for adjective compliment
                 acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
@@ -315,6 +321,7 @@ class RelationExtractor(object):
                             # Merge the acomp and prep into the predicate
                             cur_predicate.add_word_unit(acomp)
                             cur_predicate.add_word_unit(acomp_prep_phrase[0])
+                            acomp_flag = True
                             predicate_object.append((cur_predicate, object))
                 # Look for prepositional objects
                 prep_phrase = self._get_prep_phrase(pred)
@@ -328,7 +335,11 @@ class RelationExtractor(object):
                         predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
                     # Merge the prep into the predicate
                     cur_predicate.add_word_unit(prep_phrase[0])
+                    pobj_flag = True
                     predicate_object.append((cur_predicate, object))
+            # Also return the predicate if it has no object in case it is a conjunction of other predicates.
+            if not dobj_flag and not acomp_flag and not pobj_flag:
+                predicate_object.append((predicate, None))
         return predicate_object
 
     def _head_extracting_condition(self, head, pos=False):
@@ -380,6 +391,13 @@ class RelationExtractor(object):
                             for predicate, object in self._get_predicate_object(head):
                                 if predicate and object:
                                     self.relations.append(Relation(subject, predicate, object))
+                                # Deal with conjunct predicates that have no objects.
+                                else:
+                                    for h in [h for h in head_conjunction if not h == head]:
+                                        for p, o in self._get_predicate_object(h):
+                                            if p and o:
+                                                self.relations.append(
+                                                    Relation(subject, Predicate(predicate.head, predicate.head), o))
                         if head.pos.startswith(self._pos_tags['nn']):
                             pred_list = self._get_dependents(self._dependencies['cop'], head)
                             if pred_list:
@@ -498,7 +516,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        Carbon, element 6, displays remarkable chemical flexibility and thus is unique in the diversity of its mineralogical roles. Carbon has the ability to bond to itself and to more than 80 other elements in a variety of bonding topologies, most commonly in 2-, 3-, and 4-coordination. With oxidation numbers ranging from -4 to +4, carbon is observed to behave as a cation, as an anion, and as a neutral species in phases with an astonishing range of crystal structures, chemical bonding, and physical and chemical properties. This versatile element concentrates in dozens of different Earth repositories, from the atmosphere and oceans to the crust, mantle, and core, including solids, liquids, and gases as both a major and trace element (Holland 1984; Berner 2004; Hazen et al. 2012). Therefore, any comprehensive survey of carbon in Earth must consider the broad range of carbon-bearing phases.
+        More and more evidence suggests that TICs sustain cancer growth and cause tumor metastasis and recurrence after therapies.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
