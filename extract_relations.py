@@ -393,7 +393,7 @@ class RelationExtractor(object):
                                     self.relations.append(Relation(subject, predicate, object))
                                 # Deal with conjunct predicates that have no objects.
                                 else:
-                                    for h in [h for h in head_conjunction if not h == head]:
+                                    for h in [h for h in head_conjunction if not h == head and h.pos == head.pos]:
                                         for p, o in self._get_predicate_object(h):
                                             if p and o:
                                                 self.relations.append(
@@ -516,7 +516,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        TZN interpreted the stress echocardiogram and picked up the RV enlargement, pulmonary HTN and ST elevation.
+        Portal vein thrombosis causes stenosis or occlusion of the portal vein; as a result, the blood supply to the liver parenchyma is decreased and further deterioration of liver function can occur.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()

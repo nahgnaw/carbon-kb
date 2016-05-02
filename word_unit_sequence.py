@@ -114,10 +114,10 @@ class WordUnitSequence(object):
 
 class Predicate(WordUnitSequence):
 
-    def __init__(self, word_unit_list=None, head=None, negation=[], auxiliary=[]):
+    def __init__(self, word_unit_list=None, head=None, negation=None, auxiliary=None):
         super(Predicate, self).__init__(word_unit_list, head)
-        self._negation = negation
-        self._auxiliary = auxiliary
+        self._negation = negation if negation else []
+        self._auxiliary = auxiliary if auxiliary else []
 
     @property
     def negation(self):
@@ -137,4 +137,4 @@ class Predicate(WordUnitSequence):
 
     @property
     def canonical_form(self):
-        return ' '.join(wn.lemma for wn in self._seq if not wn in self._negation and not wn in self._auxiliary)
+        return ' '.join(wn.lemma for wn in self._seq if wn not in self._negation and wn not in self._auxiliary)
