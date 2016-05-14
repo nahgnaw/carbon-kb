@@ -1,13 +1,16 @@
 # -*- coding: utf8 -*-
 
 import unicodecsv
+import codecs
 import yaml
 import logging
 import logging.config
 
+from collections import Counter
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
+from segtok.segmenter import split_multi
 
 
 class VerbExtractor(object):
@@ -47,6 +50,7 @@ class VerbExtractor(object):
     def __init__(self):
         self.lemmatizer = WordNetLemmatizer()
         self._invert_dict()
+        self.logger = logging.getLogger()
 
     def _invert_dict(self):
         self.inverted_bv = {}
@@ -54,41 +58,39 @@ class VerbExtractor(object):
             for verb in self.bloom_verbs[category]:
                 self.inverted_bv.setdefault(verb, []).append(category)
 
-    def extract(self, text):
-        results = set()
-        tokens = word_tokenize(text.lower())
+    def extract(self, sentence):
+        results = []
+        self.logger.debug(u'SENTENCE: {}'.format(sentence))
+        tokens = word_tokenize(sentence.lower())
         tokens_pos = pos_tag(tokens)
         for token in tokens_pos:
             if token[1].startswith('VB'):
                 lemma = self.lemmatizer.lemmatize(token[0], pos='v')
                 if lemma in self.inverted_bv:
                     for category in self.inverted_bv[lemma]:
-                        results.add((lemma, category))
+                        results.append((lemma, category))
+        self.logger.debug(u'VERBS: {}'.format(results))
         return results
 
 
 def extract_from_csv():
-    logger = logging.getLogger()
-
     verb_category_mapping = {
         'knowledge': 2, 'comprehension': 3, 'application': 4,
         'analysis': 5, 'synthesis': 6, 'evaluation': 7
     }
 
-    extractor = VerbExtractor()
-
-    input_file_path = 'data/gdot/learning_outcome.csv'
-    output_file_path = 'data/gdot/learning_outcome_verbs.csv'
+    input_file_path = 'data/gdot/learning-outcome/learning_outcome.csv'
+    output_file_path = '{}_verbs.csv'.format(input_file_path.split('.')[0])
     f_in = open(input_file_path)
     f_out = open(output_file_path, 'w')
     reader = unicodecsv.reader(f_in, encoding='utf-8')
     writer = unicodecsv.writer(f_out, encoding='utf-8')
 
+    extractor = VerbExtractor()
     for row in reader:
         course = row[0].strip()
         level = row[1].strip()
         text = ' '.join([cell.strip() for cell in row[2:]])
-        logger.debug(text)
         verbs = extractor.extract(text)
         if verbs:
             output_row = [[] for _ in xrange(8)]
@@ -97,11 +99,33 @@ def extract_from_csv():
                 output_row[verb_category_mapping[category]].append(verb)
             for i in xrange(len(output_row)):
                 if i > 1:
-                    output_row[i] = ', '.join(output_row[i])
-            logger.debug(output_row)
+                    counter = Counter(output_row[i])
+                    output_row[i] = ','.join([u'{}({})'.format(w, c) for w, c in counter.items()])
             writer.writerow(output_row)
 
     f_in.close()
+    f_out.close()
+
+
+def extract_from_txt():
+    extractor = VerbExtractor()
+    input_file_path = 'data/gdot/forum/mtle_4150_forum_2.txt'
+    f_in = codecs.open(input_file_path, encoding='utf-8')
+    text = f_in.read()
+    results = {}
+    for sent in split_multi(text):
+        verbs = extractor.extract(sent.lower())
+        if verbs:
+            for verb, category in verbs:
+                results.setdefault(category, []).append(verb)
+    f_in.close()
+
+    output_file_path = '{}_verbs.txt'.format(input_file_path.split('.')[0])
+    f_out = codecs.open(output_file_path, mode='w', encoding='utf-8')
+    for category in results:
+        counter = Counter(results[category])
+        output_str = [u'{}({})'.format(item[0], str(item[1])) for item in counter.items()]
+        f_out.write(u'{}: {}\n'.format(category, ', '.join(output_str)))
     f_out.close()
 
 
@@ -117,3 +141,4 @@ if __name__ == '__main__':
 
     # test()
     extract_from_csv()
+    # extract_from_txt()
