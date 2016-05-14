@@ -516,7 +516,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        Portal vein thrombosis causes stenosis or occlusion of the portal vein; as a result, the blood supply to the liver parenchyma is decreased and further deterioration of liver function can occur.
+        Dlg1, along with Dlg3 and Dlg4, has been shown to interact with the oncoprotein Net1
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
