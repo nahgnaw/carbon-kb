@@ -30,6 +30,7 @@ class RelationExtractor(object):
         'conj:or': 'conj:or',
         'conj:but': 'conj:but',
         'cop': 'cop',
+        'dep': 'dep',
         'dobj': 'dobj',
         'neg': 'neg',
         'nn': 'nn',
@@ -48,12 +49,20 @@ class RelationExtractor(object):
         'dt': 'DT',
         'in': 'IN',
         'nn': 'NN',
+        'nns': 'NNS',
+        'nnp': 'NNP',
+        'nnps': 'NNPS',
         'jj': 'JJ',
         'jjr': 'JJR',
         'jjs': 'JJS',
         'prp': 'PRP',
         'prp$': 'PRP$',
         'vb': 'VB',
+        'vbd': 'VBD',
+        'vbg': 'VBG',
+        'vbn': 'VBN',
+        'vbp': 'VBP',
+        'vbz': 'VBZ',
         'wdt': 'WDT',
         'wp': 'WP',
     }
@@ -71,7 +80,14 @@ class RelationExtractor(object):
     _conjunction_dependencies = [
         _dependencies['conj:and'],
         _dependencies['conj:or'],
-        _dependencies['conj:but']
+        _dependencies['conj:but'],
+        _dependencies['dep']
+    ]
+
+    _conjunction_pos_whitelist = [
+        _pos_tags['nn'], _pos_tags['nns'], _pos_tags['nnp'], _pos_tags['nnps'],
+        _pos_tags['vb'], _pos_tags['vbd'], _pos_tags['vbg'], _pos_tags['vbn'],
+        _pos_tags['vbp'], _pos_tags['vbz']
     ]
 
     def __init__(self, sentence, parser_server, logger=None, entity_linking=False):
@@ -135,9 +151,10 @@ class RelationExtractor(object):
         conjunction = [head]
         for dep in self._conjunction_dependencies:
             conj_list = self._get_dependents(dep, head)
-            conjunction.extend(conj_list)
             for conj in conj_list:
-                self._print_expansion_debug_info(head, 'conjunction', conj)
+                if conj.pos in self._conjunction_pos_whitelist:
+                    conjunction.append(conj)
+                    self._print_expansion_debug_info(head, 'conjunction', conj)
         return conjunction
 
     def _get_noun_compound(self, head):
@@ -418,7 +435,7 @@ class RelationExtractor(object):
                                             if p and o:
                                                 self.relations.append(
                                                     Relation(subject, Predicate(predicate.head, predicate.head), o))
-                        if head.pos.startswith(self._pos_tags['nn']):
+                        elif head.pos.startswith(self._pos_tags['nn']):
                             pred_list = self._get_dependents(self._dependencies['cop'], head)
                             if pred_list:
                                 predicates = self._expand_predicate(pred_list[0])
@@ -426,7 +443,7 @@ class RelationExtractor(object):
                                     object = self._expand_head_word(head)
                                     if predicate and object:
                                         self.relations.append(Relation(subject, predicate, object))
-                        if head.pos.startswith(self._pos_tags['jj']):
+                        elif head.pos.startswith(self._pos_tags['jj']):
                             pred_list = self._get_dependents(self._dependencies['cop'], head)
                             if pred_list:
                                 for predicate, object in self._get_predicate_object(head):
@@ -536,7 +553,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        C-complex asteroids are thought to be the sources of the carbonaceous chondrites, and of them CI and CM chondrites have compositions that most closely resemble the volatile elemental and isotopic composition of Earth .
+        We demonstrated that AgNP enhanced BPE in PC3 cells, that the emission increases with AgNP concentration, and that AgNP do not affect cell viability in concentrations used.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
