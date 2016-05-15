@@ -20,7 +20,7 @@ def evaluate_extraction(input_file, output_file):
         if line:
             logger.debug(line)
             try:
-                extractor = RelationExtractor(line, logger, parser_server, entity_linking=False)
+                extractor = RelationExtractor(line, parser_server, logger, entity_linking=False)
             except:
                 logger.error(u'Failed to parse the sentence', exc_info=True)
             else:

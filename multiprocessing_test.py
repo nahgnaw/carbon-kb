@@ -35,7 +35,7 @@ def process_file(filename, parser_server):
         if sent:
             logger.info(u'{}: {}'.format(filename, sent))
             try:
-                extractor = RelationExtractor(sent, logger, parser_server)
+                extractor = RelationExtractor(sent, parser_server, logger)
             except:
                 logger.error(u'Failed to extract relations.', exc_info=True)
             else:

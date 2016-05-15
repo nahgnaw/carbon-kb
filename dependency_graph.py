@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 
 import json
-
+import logging
 import jsonrpclib
 import nltk
 
@@ -10,8 +10,9 @@ from word_unit_sequence import WordUnit
 
 class DependencyGraph(object):
 
-    def __init__(self, sentence, logger, parser_server=None):
+    def __init__(self, sentence, logger=None, parser_server=None):
         self._sentence = sentence
+        self.logger = logger if logger else logging.getLogger()
         self._raw = {}
         self._tree = {}
         self._words = []
@@ -19,7 +20,6 @@ class DependencyGraph(object):
         self._tags = []
         self._tagged_text = None
         self._dep_triples = []
-        self.logger = logger
 
         if not parser_server:
             parser_server = 'http://localhost:8084'
