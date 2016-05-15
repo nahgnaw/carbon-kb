@@ -15,11 +15,11 @@ class Relation(object):
 
     @property
     def lemma(self):
-        return u'({}, {}, {})'.format(self._subj.lemma, self._pred.lemma, self._obj.lemma)
+        return self._subj.lemma, self._pred.lemma, self._obj.lemma
 
     @property
     def canonical_form(self):
-        return u'({}, {}, {})'.format(self._subj.lemma, self._pred.canonical_form, self._obj.lemma)
+        return self._subj.lemma, self._pred.canonical_form, self._obj.lemma
 
     @property
     def subject(self):

@@ -4,17 +4,19 @@ import logging
 import logging.config
 import yaml
 import codecs
+import unicodecsv
 
 from extract_relations import RelationExtractor
 
 
 def evaluate_extraction(input_file, output_file):
-    logger = logging.getLogger('extraction_evaluation')
+    logger = logging.getLogger()
     parser_server = 'http://localhost:8084'
     count = 0
 
     f_in = codecs.open(input_file, encoding='utf-8')
-    f_out = codecs.open(output_file, 'w', encoding='utf-8')
+    f_out = open(output_file, 'w')
+    writer = unicodecsv.writer(f_out)
     for line in f_in:
         line = line.strip()
         if line:
@@ -27,8 +29,11 @@ def evaluate_extraction(input_file, output_file):
                 count += 1
                 extractor.extract_spo()
                 for relation in extractor.relations:
-                    logger.debug(relation.canonical_form)
-                    f_out.write('{}\t{}\n'.format(count, relation.canonical_form))
+                    logger.debug(relation.lemma)
+                    row = [''] * 5
+                    row[0], row[1] = count, line
+                    row[2:5] = relation.lemma
+                    writer.writerow(row)
     f_in.close()
     f_out.close()
 
@@ -38,5 +43,5 @@ if __name__ == '__main__':
         logging.config.dictConfig(yaml.load(f))
 
     extraction_input_file = 'data/evaluation/sentences.txt'
-    extraction_outupt_file = 'data/evaluation/output.txt'
+    extraction_outupt_file = 'data/evaluation/output.csv'
     evaluate_extraction(extraction_input_file, extraction_outupt_file)
