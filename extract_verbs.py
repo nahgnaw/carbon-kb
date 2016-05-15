@@ -109,7 +109,8 @@ def extract_from_csv():
 
 def extract_from_txt():
     extractor = VerbExtractor()
-    input_file_path = 'data/gdot/forum/mtle_4150_forum_2.txt'
+    # input_file_path = 'data/gdot/forum/mtle_4150_forum_2.txt'
+    input_file_path = 'data/gdot/video-subtitles/2.txt'
     f_in = codecs.open(input_file_path, encoding='utf-8')
     text = f_in.read()
     results = {}
@@ -140,5 +141,5 @@ if __name__ == '__main__':
         logging.config.dictConfig(yaml.load(f))
 
     # test()
-    extract_from_csv()
-    # extract_from_txt()
+    # extract_from_csv()
+    extract_from_txt()

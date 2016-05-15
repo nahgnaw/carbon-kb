@@ -72,10 +72,10 @@ class RelationExtractor(object):
             _dependencies['conj:or']
         ]
 
-    def __init__(self, sentence, logger, parser_server, entity_linking=False):
+    def __init__(self, sentence, parser_server, logger=None, entity_linking=False):
         self._sentence = sentence
-        self.logger = logger
         self._parser_server = parser_server
+        self.logger = logger if logger else logging.getLogger()
         self.entity_linking = entity_linking
         self._dep_triple_dict = {}
         self._make_dep_triple_dict()
@@ -271,10 +271,21 @@ class RelationExtractor(object):
         xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
             for xcomp in xcomp_list:
-                pred = deepcopy(predicate)
-                pred.add_word_unit(xcomp)
+                # If the xcomp doesn't immediately follow its head, separate them
+                if xcomp.index - predicate.head.index > 2:
+                    pred = Predicate(xcomp, xcomp)
+                    pred.extend(__expand_predicate(xcomp))
+                    # Remove "to" preceding the comp
+                    for wn in pred.sequence:
+                        if wn.index < xcomp.index and wn.word == 'to':
+                            pred.remove_word_unit(wn)
+                    # Also add the head to predicates
+                    predicates.append(predicate)
+                else:
+                    pred = deepcopy(predicate)
+                    pred.add_word_unit(xcomp)
+                    pred.extend(__expand_predicate(xcomp))
                 self._print_expansion_debug_info(head, 'xcomp', xcomp)
-                pred.extend(__expand_predicate(xcomp))
                 predicates.append(pred)
         else:
             predicates.append(predicate)
@@ -428,7 +439,7 @@ def batch_extraction(dataset, mysql_db=None):
                 logger.info(u'{}: {}'.format(filename, sent))
                 f_out.write(u'{}\n'.format(sent))
                 try:
-                    extractor = RelationExtractor(sent, logger, parser_server, entity_linking=False)
+                    extractor = RelationExtractor(sent, parser_server, logger, entity_linking=False)
                 except:
                     logger.error(u'Failed to extract relations.', exc_info=True)
                 else:
@@ -516,14 +527,14 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        Dlg1, along with Dlg3 and Dlg4, has been shown to interact with the oncoprotein Net1
+        Integrins interact with scaffold and kinase proteins to generate intracellular signalling events.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
             logger.debug(u'SENTENCE: {}'.format(sent))
             try:
-                extractor = RelationExtractor(sent, logger, parser_server, entity_linking=False)
+                extractor = RelationExtractor(sent, parser_server, logger, entity_linking=False)
             except:
                 logger.error(u'Failed to parse the sentence', exc_info=True)
             else:

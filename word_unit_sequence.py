@@ -7,7 +7,7 @@ class WordUnit(object):
         self._index = index
         self._word = word
         self._lemma = lemma
-        self. _pos = pos
+        self._pos = pos
 
     def __str__(self):
         return self._word
@@ -90,6 +90,10 @@ class WordUnitSequence(object):
         if word_unit:
             self._seq.append(word_unit)
             self._sort()
+
+    def remove_word_unit(self, word_unit):
+        if word_unit in self._seq:
+            self._seq.remove(word_unit)
 
     @property
     def sequence(self):
