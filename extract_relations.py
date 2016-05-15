@@ -28,6 +28,7 @@ class RelationExtractor(object):
         'ccomp': 'ccomp',
         'conj:and': 'conj:and',
         'conj:or': 'conj:or',
+        'conj:but': 'conj:but',
         'cop': 'cop',
         'dobj': 'dobj',
         'neg': 'neg',
@@ -69,7 +70,8 @@ class RelationExtractor(object):
 
     _conjunction_dependencies = [
             _dependencies['conj:and'],
-            _dependencies['conj:or']
+            _dependencies['conj:or'],
+            _dependencies['conj:but']
         ]
 
     def __init__(self, sentence, parser_server, logger=None, entity_linking=False):
@@ -527,7 +529,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        Integrins interact with scaffold and kinase proteins to generate intracellular signalling events.
+        The eukaryotic DNA is wrapped around histone proteins to form nucleosomes, the fundamental repeating units of chromatin.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
