@@ -173,7 +173,7 @@ class RelationExtractor(object):
             for prep in prep_list:
                 if prep.word.lower() not in self._prep_blacklist_for_prep_phrases:
                     # Ignore those prepositions that are far away from the head
-                    if abs(prep.index - head.index) < 2:
+                    if abs(prep.index - head.index) < 3:
                         # Look for pobj
                         obj_list = self._get_dependents(self._dependencies['pobj'], prep)
                         if obj_list:
@@ -273,22 +273,23 @@ class RelationExtractor(object):
         xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
             for xcomp in xcomp_list:
-                # If the xcomp doesn't immediately follow its head, separate them
-                if xcomp.index - predicate.head.index > 2:
-                    pred = Predicate(xcomp, xcomp)
-                    pred.extend(__expand_predicate(xcomp))
-                    # Remove "to" preceding the comp
-                    for wn in pred.sequence:
-                        if wn.index < xcomp.index and wn.word == 'to':
-                            pred.remove_word_unit(wn)
-                    # Also add the head to predicates
-                    predicates.append(predicate)
-                else:
-                    pred = deepcopy(predicate)
-                    pred.add_word_unit(xcomp)
-                    pred.extend(__expand_predicate(xcomp))
-                self._print_expansion_debug_info(head, 'xcomp', xcomp)
-                predicates.append(pred)
+                if xcomp.pos.startswith('VB'):
+                    # If the xcomp doesn't immediately follow its head, separate them
+                    if xcomp.index - predicate.head.index > 2:
+                        pred = Predicate(xcomp, xcomp)
+                        pred.extend(__expand_predicate(xcomp))
+                        # Remove "to" preceding the comp
+                        for wn in pred.sequence:
+                            if wn.index < xcomp.index and wn.word == 'to':
+                                pred.remove_word_unit(wn)
+                        # Also add the head to predicates
+                        predicates.append(predicate)
+                    else:
+                        pred = deepcopy(predicate)
+                        pred.add_word_unit(xcomp)
+                        pred.extend(__expand_predicate(xcomp))
+                    self._print_expansion_debug_info(head, 'xcomp', xcomp)
+                    predicates.append(pred)
         else:
             predicates.append(predicate)
         return predicates
@@ -529,7 +530,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        The eukaryotic DNA is wrapped around histone proteins to form nucleosomes, the fundamental repeating units of chromatin.
+        C-complex asteroids are thought to be the sources of the carbonaceous chondrites, and of them CI and CM chondrites have compositions that most closely resemble the volatile elemental and isotopic composition of Earth .
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
@@ -542,8 +543,6 @@ def single_extraction():
             else:
                 extractor.extract_spo()
                 for relation in extractor.relations:
-                    logger.debug(u'RELATION LEMMA: {}'.format(relation.lemma))
-                    logger.debug(u'RELATION CANONICAL: {}'.format(relation.canonical_form))
                     logger.debug(u'SUBJECT HEAD: {}'.format(relation.subject.head))
                     logger.debug(u'SUBJECT NN HEAD: {}'.format(relation.subject.nn_head))
                     if extractor.entity_linking:
@@ -552,6 +551,8 @@ def single_extraction():
                     logger.debug(u'OBJECT NN HEAD: {}'.format(relation.object.nn_head))
                     if extractor.entity_linking:
                         logger.debug(u'OBJECT EL: {}'.format(relation.object_el))
+                    logger.debug(u'RELATION LEMMA: {}'.format(relation.lemma))
+                    logger.debug(u'RELATION CANONICAL: {}'.format(relation.canonical_form))
 
 
 if __name__ == '__main__':

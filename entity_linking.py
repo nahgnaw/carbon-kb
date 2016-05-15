@@ -12,9 +12,9 @@ from ConfigParser import SafeConfigParser
 
 class EntityLinker(object):
 
-    def __init__(self, logger, api='http://el.tw.rpi.edu/bio_qcv/linking?query='):
+    def __init__(self, logger=None, api='http://el.tw.rpi.edu/bio_qcv/linking?query='):
         self._api = api
-        self.logger = logger
+        self.logger = logger if logger else logging.getLogger()
 
     def link(self, query, delimiter=','):
         if isinstance(query, list):
