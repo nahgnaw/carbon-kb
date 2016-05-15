@@ -13,6 +13,12 @@ class Relation(object):
     def __str__(self):
         return u'({}, {}, {})'.format(str(self._subj), str(self._pred), str(self._obj))
 
+    def __hash__(self):
+        return hash(str(self))
+
+    def __eq__(self, other):
+        return str(self) == str(other)
+
     @property
     def lemma(self):
         return self._subj.lemma, self._pred.lemma, self._obj.lemma

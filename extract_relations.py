@@ -97,7 +97,7 @@ class RelationExtractor(object):
         self.entity_linking = entity_linking
         self._dep_triple_dict = {}
         self._make_dep_triple_dict()
-        self._relations = []
+        self._relations = set()
 
     def _make_dep_triple_dict(self):
         dg = DependencyGraph(self._sentence, self.logger, self._parser_server)
@@ -427,13 +427,13 @@ class RelationExtractor(object):
                             # The predicate is the head
                             for predicate, object in self._get_predicate_object(head):
                                 if predicate and object:
-                                    self.relations.append(Relation(subject, predicate, object))
+                                    self.relations.add(Relation(subject, predicate, object))
                                 # Deal with conjunct predicates that have no objects.
                                 else:
                                     for h in [h for h in head_conjunction if not h == head and h.pos == head.pos]:
                                         for p, o in self._get_predicate_object(h):
                                             if p and o:
-                                                self.relations.append(
+                                                self.relations.add(
                                                     Relation(subject, Predicate(predicate.head, predicate.head), o))
                         elif head.pos.startswith(self._pos_tags['nn']):
                             pred_list = self._get_dependents(self._dependencies['cop'], head)
@@ -442,14 +442,14 @@ class RelationExtractor(object):
                                 for predicate in predicates:
                                     object = self._expand_head_word(head)
                                     if predicate and object:
-                                        self.relations.append(Relation(subject, predicate, object))
+                                        self.relations.add(Relation(subject, predicate, object))
                         elif head.pos.startswith(self._pos_tags['jj']):
                             pred_list = self._get_dependents(self._dependencies['cop'], head)
                             if pred_list:
                                 for predicate, object in self._get_predicate_object(head):
                                     if predicate and object:
                                         predicate.add_word_unit(pred_list[0])
-                                        self.relations.append(Relation(subject, predicate, object))
+                                        self.relations.add(Relation(subject, predicate, object))
 
 
 @timeit
