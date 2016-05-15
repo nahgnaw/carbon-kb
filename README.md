@@ -24,6 +24,6 @@ _The Mirk protein contains a bipar4te nuclear localiza4on sequence and during my
 ==========
 To start the parser server:
 ```
-source activate stanford
+source activate nlp
 corenlp -S stanford-corenlp -p 8084
 ```

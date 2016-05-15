@@ -69,10 +69,10 @@ class RelationExtractor(object):
     ]
 
     _conjunction_dependencies = [
-            _dependencies['conj:and'],
-            _dependencies['conj:or'],
-            _dependencies['conj:but']
-        ]
+        _dependencies['conj:and'],
+        _dependencies['conj:or'],
+        _dependencies['conj:but']
+    ]
 
     def __init__(self, sentence, parser_server, logger=None, entity_linking=False):
         self._sentence = sentence
@@ -273,7 +273,7 @@ class RelationExtractor(object):
         xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
             for xcomp in xcomp_list:
-                if xcomp.pos.startswith('VB'):
+                if xcomp.pos.startswith(self._pos_tags['vb']):
                     # If the xcomp doesn't immediately follow its head, separate them
                     if xcomp.index - predicate.head.index > 2:
                         pred = Predicate(xcomp, xcomp)
@@ -288,6 +288,12 @@ class RelationExtractor(object):
                         pred = deepcopy(predicate)
                         pred.add_word_unit(xcomp)
                         pred.extend(__expand_predicate(xcomp))
+                    self._print_expansion_debug_info(head, 'xcomp', xcomp)
+                    predicates.append(pred)
+                elif xcomp.pos.startswith(self._pos_tags['nn']):
+                    pred = deepcopy(predicate)
+                    pred.add_word_unit(xcomp)
+                    pred.extend(__expand_predicate(xcomp))
                     self._print_expansion_debug_info(head, 'xcomp', xcomp)
                     predicates.append(pred)
         else:
