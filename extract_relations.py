@@ -87,7 +87,8 @@ class RelationExtractor(object):
     _conjunction_pos_whitelist = [
         _pos_tags['nn'], _pos_tags['nns'], _pos_tags['nnp'], _pos_tags['nnps'],
         _pos_tags['vb'], _pos_tags['vbd'], _pos_tags['vbg'], _pos_tags['vbn'],
-        _pos_tags['vbp'], _pos_tags['vbz']
+        _pos_tags['vbp'], _pos_tags['vbz'], _pos_tags['jj'], _pos_tags['jjr'],
+        _pos_tags['jjr']
     ]
 
     def __init__(self, sentence, parser_server, logger=None, entity_linking=False):
@@ -355,6 +356,8 @@ class RelationExtractor(object):
                             # # If there are multiple predicate words that have objects, only take the first one.
                             # cur_predicate = Predicate(
                             #     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
+                            # Make a copy of predicate in case it gets expanded
+                            predicate = deepcopy(predicate)
                             # Merge the acomp and prep into the predicate
                             predicate.add_word_unit(acomp)
                             predicate.add_word_unit(acomp_prep_phrase[0])
@@ -370,6 +373,8 @@ class RelationExtractor(object):
                     # # If there are multiple predicate words that have objects, only take the first one.
                     # cur_predicate = Predicate(
                     #     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
+                    # Make a copy of predicate in case it gets expanded
+                    predicate = deepcopy(predicate)
                     # Merge the prep into the predicate
                     predicate.add_word_unit(prep_phrase[0])
                     pobj_flag = True
@@ -448,7 +453,7 @@ class RelationExtractor(object):
                             if pred_list:
                                 for predicate, object in self._get_predicate_object(head):
                                     if predicate and object:
-                                        predicate.add_word_unit(pred_list[0])
+                                        # predicate.add_word_unit(pred_list[0])
                                         self.relations.add(Relation(subject, predicate, object))
 
 
@@ -553,7 +558,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        We demonstrated that AgNP enhanced BPE in PC3 cells, that the emission increases with AgNP concentration, and that AgNP do not affect cell viability in concentrations used.
+        Native ADMSCs alone were able to induce apoptosis in both LN18 and HepG2; in addition, the apoptotic effect was enhanced when the tumour cells were cultured with ADMSCs-TRAIL.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
