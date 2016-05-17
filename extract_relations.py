@@ -290,10 +290,14 @@ class RelationExtractor(object):
         # Find out if there is any xcomp
         xcomp_list = self._get_dependents(self._dependencies['xcomp'], head)
         if xcomp_list:
+            # Get xcomp conjunction first
+            xcomp_list_len = len(xcomp_list)
+            for i in xrange(xcomp_list_len):
+                xcomp_list.extend(self._get_conjunction(xcomp_list[i]))
             for xcomp in xcomp_list:
                 if xcomp.pos.startswith(self._pos_tags['vb']):
                     # If the xcomp doesn't immediately follow its head, separate them
-                    if xcomp.index - predicate.head.index > 2:
+                    if xcomp.index - predicate.head.index > 3:
                         pred = Predicate(xcomp, xcomp)
                         pred.extend(__expand_predicate(xcomp))
                         # Remove "to" preceding the comp
@@ -343,6 +347,7 @@ class RelationExtractor(object):
                                 #     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
                                 dobj_flag = True
                                 predicate_object.append((predicate, object))
+                    continue
                 # Look for adjective compliment
                 acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
                 if acomp_list:
@@ -363,6 +368,7 @@ class RelationExtractor(object):
                             predicate.add_word_unit(acomp_prep_phrase[0])
                             acomp_flag = True
                             predicate_object.append((predicate, object))
+                    continue
                 # Look for prepositional objects
                 prep_phrase = self._get_prep_phrase(pred)
                 if len(prep_phrase) > 1:
@@ -558,7 +564,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        Native ADMSCs alone were able to induce apoptosis in both LN18 and HepG2; in addition, the apoptotic effect was enhanced when the tumour cells were cultured with ADMSCs-TRAIL.
+        Total intracellular cholesterol and free fatty acid were extracted by homogenization with 1/2 volume of chloroform/isopropanol/NP-40 or chloroform-Triton X-100, respectively.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
