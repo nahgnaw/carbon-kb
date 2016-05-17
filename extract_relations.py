@@ -184,8 +184,8 @@ class RelationExtractor(object):
             self._print_expansion_debug_info(head, 'negation', neg_list[0])
         return neg_mod
 
-    def _get_prep_phrase(self, head):
-        prep_phrase = WordUnitSequence()
+    def _get_prep_phrases(self, head):
+        prep_phrases = []
         prep_list = self._get_dependents(self._dependencies['prep'], head)
         if prep_list:
             for prep in prep_list:
@@ -198,22 +198,19 @@ class RelationExtractor(object):
                             for obj in obj_list:
                                 if not self._head_extracting_condition(obj, pos=True):
                                     continue
-                                obj_seq = self._expand_head_word(obj)
-                                if obj_seq:
-                                    obj_seq.add_word_unit(prep)
-                                    prep_phrase.extend(obj_seq)
-                                    prep_phrase.head = obj
-                                    prep_phrase.nn_head = obj_seq.nn_head
-                        # # Look for pcomp
-                        # pcomp_list = self._get_dependents(self._dependencies['pcomp'], prep)
-                        # if pcomp_list:
-                        #     for pcomp in pcomp_list:
-                        #         prep_phrase.add_word_unit(prep)
-                        #         for seq in self._get_predicate_object(pcomp):
-                        #             prep_phrase.extend(seq)
-                        if prep_phrase:
-                            self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
-        return prep_phrase
+                                obj_conjunction = self._get_conjunction(obj)
+                                for o in obj_conjunction:
+                                    obj_seq = self._expand_head_word(o)
+                                    if obj_seq:
+                                        obj_seq.add_word_unit(prep)
+                                        prep_phrase = WordUnitSequence()
+                                        prep_phrase.extend(obj_seq)
+                                        prep_phrase.head = o
+                                        prep_phrase.nn_head = obj_seq.nn_head
+                                        if prep_phrase:
+                                            self._print_expansion_debug_info(head, 'prep phrase', prep_phrase)
+                                            prep_phrases.append(prep_phrase)
+        return prep_phrases
 
     def _get_vmod_phrase(self, head):
         vmod_phrase = WordUnitSequence()
@@ -248,8 +245,9 @@ class RelationExtractor(object):
         neg_mod = self._get_neg_modifier(head)
         expansion.extend(neg_mod)
         # Find out if the head has pobj phrase
-        pobj_phrase = self._get_prep_phrase(head)
-        expansion.extend(pobj_phrase)
+        pobj_phrases = self._get_prep_phrases(head)
+        if pobj_phrases:
+            expansion.extend(pobj_phrases[0])
         # Find out if the head has vmod phrase
         vmod_phrase = self._get_vmod_phrase(head)
         expansion.extend(vmod_phrase)
@@ -342,9 +340,6 @@ class RelationExtractor(object):
                                 object.extend(expanded_obj)
                                 object.head = o
                                 object.nn_head = expanded_obj.nn_head
-                                # # If there are multiple predicate words that have objects, only take the first one.
-                                # cur_predicate = Predicate(
-                                #     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
                                 dobj_flag = True
                                 predicate_object.append((predicate, object))
                     continue
@@ -352,39 +347,35 @@ class RelationExtractor(object):
                 acomp_list = self._get_dependents(self._dependencies['acomp'], pred)
                 if acomp_list:
                     for acomp in acomp_list:
-                        acomp_prep_phrase = self._get_prep_phrase(acomp)
-                        if len(acomp_prep_phrase) > 1:
-                            object = WordUnitSequence()
-                            object.extend(WordUnitSequence(acomp_prep_phrase[1:]))
-                            object.head = acomp_prep_phrase.head
-                            object.nn_head = acomp_prep_phrase.nn_head
-                            # # If there are multiple predicate words that have objects, only take the first one.
-                            # cur_predicate = Predicate(
-                            #     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
-                            # Make a copy of predicate in case it gets expanded
-                            predicate = deepcopy(predicate)
-                            # Merge the acomp and prep into the predicate
-                            predicate.add_word_unit(acomp)
-                            predicate.add_word_unit(acomp_prep_phrase[0])
-                            acomp_flag = True
-                            predicate_object.append((predicate, object))
+                        acomp_prep_phrases = self._get_prep_phrases(acomp)
+                        for acomp_prep_phrase in acomp_prep_phrases:
+                            if len(acomp_prep_phrase) > 1:
+                                object = WordUnitSequence()
+                                object.extend(WordUnitSequence(acomp_prep_phrase[1:]))
+                                object.head = acomp_prep_phrase.head
+                                object.nn_head = acomp_prep_phrase.nn_head
+                                # Make a copy of predicate in case it gets expanded
+                                predicate_copy = deepcopy(predicate)
+                                # Merge the acomp and prep into the predicate
+                                predicate_copy.add_word_unit(acomp)
+                                predicate_copy.add_word_unit(acomp_prep_phrase[0])
+                                acomp_flag = True
+                                predicate_object.append((predicate_copy, object))
                     continue
                 # Look for prepositional objects
-                prep_phrase = self._get_prep_phrase(pred)
-                if len(prep_phrase) > 1:
-                    object = WordUnitSequence()
-                    object.extend(WordUnitSequence(prep_phrase[1:]))
-                    object.head = prep_phrase.head
-                    object.nn_head = prep_phrase.nn_head
-                    # # If there are multiple predicate words that have objects, only take the first one.
-                    # cur_predicate = Predicate(
-                    #     predicate[:ind+1], predicate.head, predicate.negation, predicate.auxiliary)
-                    # Make a copy of predicate in case it gets expanded
-                    predicate = deepcopy(predicate)
-                    # Merge the prep into the predicate
-                    predicate.add_word_unit(prep_phrase[0])
-                    pobj_flag = True
-                    predicate_object.append((predicate, object))
+                prep_phrases = self._get_prep_phrases(pred)
+                for prep_phrase in prep_phrases:
+                    if len(prep_phrase) > 1:
+                        object = WordUnitSequence()
+                        object.extend(WordUnitSequence(prep_phrase[1:]))
+                        object.head = prep_phrase.head
+                        object.nn_head = prep_phrase.nn_head
+                        # Make a copy of predicate in case it gets expanded
+                        predicate_copy = deepcopy(predicate)
+                        # Merge the prep into the predicate
+                        predicate_copy.add_word_unit(prep_phrase[0])
+                        pobj_flag = True
+                        predicate_object.append((predicate_copy, object))
             # Also return the predicate if it has no object in case it is a conjunction of other predicates.
             if not dobj_flag and not acomp_flag and not pobj_flag:
                 predicate_object.append((predicate, None))
@@ -564,7 +555,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        Total intracellular cholesterol and free fatty acid were extracted by homogenization with 1/2 volume of chloroform/isopropanol/NP-40 or chloroform-Triton X-100, respectively.
+        In the context of cartilage repair procedures, the findings of this study suggest that chondrocytes from young donors would be superior to MSCs or adult chondrocytes for cartilage repair procedures because of their capacity to replicate and assist in the repair of a cartilage defect.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
