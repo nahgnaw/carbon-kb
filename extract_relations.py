@@ -46,6 +46,7 @@ class RelationExtractor(object):
     }
 
     _pos_tags = {
+        'cd': 'CD',
         'dt': 'DT',
         'in': 'IN',
         'nn': 'NN',
@@ -247,7 +248,12 @@ class RelationExtractor(object):
         # Find out if the head has pobj phrase
         pobj_phrases = self._get_prep_phrases(head)
         if pobj_phrases:
-            expansion.extend(pobj_phrases[0])
+            pobj_phrase = pobj_phrases[0]
+            expansion.extend(pobj_phrase)
+            # Transfer the head in the pattern "<num> of <noun>" from "<num>" to "<noun>"
+            if (head.pos == self._pos_tags['cd'] or head.word.isdigit()) and pobj_phrase[0].word == 'of':
+                expansion.head = pobj_phrase.head
+                expansion.nn_head = pobj_phrase.nn_head
         # Find out if the head has vmod phrase
         vmod_phrase = self._get_vmod_phrase(head)
         expansion.extend(vmod_phrase)
@@ -382,7 +388,7 @@ class RelationExtractor(object):
         return predicate_object
 
     def _head_extracting_condition(self, head, pos=False):
-        flag = head.word.isalnum() and not head.word.isdigit()
+        flag = head.word.isalnum()
         if pos:
             flag = flag and head.pos not in self._subject_object_pos_blacklist
         return flag
@@ -555,7 +561,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        In our cohort, among 26 patients who received HSCT at the first CR, 11 had MRD-negativity at the end of induction therapy, and two of the 11 patients relapsed after HSCT, while three of 15 patients with MRD-positivity at the end of induction suffered relapse after HSCT.
+        Since only 14 of the 32 mice on the control diet develop palpable tumors, it was the judgment of the investigators that there were an insufficient number of tumor-bearing mice to divide them into two groups and expect to get unambiguous data.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
