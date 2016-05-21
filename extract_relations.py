@@ -232,6 +232,9 @@ class RelationExtractor(object):
             # If the sequence is a single letter, ignore it
             if len(word_unit_seq) == 1 and len(word_unit_seq[0]) == 1:
                 word_unit_seq = None
+            # If the head of the sequence is a number, ignore it
+            if word_unit_seq.head.pos == self._pos_tags['cd']:
+                word_unit_seq = None
             return word_unit_seq
 
         expansion = WordUnitSequence(head, head)
@@ -561,7 +564,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        Since only 14 of the 32 mice on the control diet develop palpable tumors, it was the judgment of the investigators that there were an insufficient number of tumor-bearing mice to divide them into two groups and expect to get unambiguous data.
+        Conversely, 14 of the 16 patients with a positive FDG-PET at this time point relapsed or had PD.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
