@@ -238,9 +238,9 @@ class RelationExtractor(object):
         noun_compound = self._get_noun_compound(head)
         expansion.extend(noun_compound)
         expansion.nn_head = deepcopy(expansion)
-        # Find out if there is any numeric modifier
-        num_mod = self._get_num_modifier(head)
-        expansion.extend(num_mod)
+        # # Find out if there is any numeric modifier
+        # num_mod = self._get_num_modifier(head)
+        # expansion.extend(num_mod)
         # Find out if there is any negation
         neg_mod = self._get_neg_modifier(head)
         expansion.extend(neg_mod)
@@ -382,7 +382,7 @@ class RelationExtractor(object):
         return predicate_object
 
     def _head_extracting_condition(self, head, pos=False):
-        flag = head.word.isalnum()
+        flag = head.word.isalnum() and not head.word.isdigit()
         if pos:
             flag = flag and head.pos not in self._subject_object_pos_blacklist
         return flag
@@ -555,7 +555,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        In the context of cartilage repair procedures, the findings of this study suggest that chondrocytes from young donors would be superior to MSCs or adult chondrocytes for cartilage repair procedures because of their capacity to replicate and assist in the repair of a cartilage defect.
+        In our cohort, among 26 patients who received HSCT at the first CR, 11 had MRD-negativity at the end of induction therapy, and two of the 11 patients relapsed after HSCT, while three of 15 patients with MRD-positivity at the end of induction suffered relapse after HSCT.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()
