@@ -73,18 +73,19 @@ class VerbExtractor(object):
         return results
 
 
-def extract_from_csv():
+def extract_from_csv(input_file_path):
     verb_category_mapping = {
         'knowledge': 2, 'comprehension': 3, 'application': 4,
         'analysis': 5, 'synthesis': 6, 'evaluation': 7
     }
 
-    input_file_path = 'data/gdot/learning-outcome/learning_outcome.csv'
     output_file_path = '{}_verbs.csv'.format(input_file_path.split('.')[0])
     f_in = open(input_file_path)
     f_out = open(output_file_path, 'w')
     reader = unicodecsv.reader(f_in, encoding='utf-8')
     writer = unicodecsv.writer(f_out, encoding='utf-8')
+    writer.writerow(['dept', 'level', 'knowledge', 'comprehension',
+                     'application', 'analysis', 'synthesis', 'evaluation'])
 
     extractor = VerbExtractor()
     for row in reader:
@@ -107,10 +108,8 @@ def extract_from_csv():
     f_out.close()
 
 
-def extract_from_txt():
+def extract_from_txt(input_file_path):
     extractor = VerbExtractor()
-    # input_file_path = 'data/gdot/forum/mtle_4150_forum_2.txt'
-    input_file_path = 'data/gdot/video-subtitles/2.txt'
     f_in = codecs.open(input_file_path, encoding='utf-8')
     text = f_in.read()
     results = {}
@@ -141,5 +140,9 @@ if __name__ == '__main__':
         logging.config.dictConfig(yaml.load(f))
 
     # test()
-    # extract_from_csv()
-    extract_from_txt()
+
+    input_csv_path = 'data/gdot/learning-outcome/learning_outcome.csv'
+    extract_from_csv(input_csv_path)
+
+    input_txt_path = 'data/gdot/forum/mtle_4150_forum_2.txt'
+    extract_from_txt(input_txt_path)
