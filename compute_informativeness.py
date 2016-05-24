@@ -15,7 +15,7 @@ import cPickle
 from textblob import TextBlob
 
 
-class WordQuality(object):
+class WordInformativeness(object):
 
     def __init__(self, logger=None, stopwords=None):
         self.logger = logger if logger else logging.getLogger()
@@ -51,7 +51,7 @@ class WordQuality(object):
         self.logger.info('Computing idf ...')
         for word in list(itertools.chain.from_iterable(doc_list)):
             if word not in model:
-                word_idf = WordQuality._idf(word, doc_list)
+                word_idf = WordInformativeness._idf(word, doc_list)
                 model[word] = word_idf
                 self.logger.debug(u'{}: {}'.format(word, str(word_idf)))
         return model
@@ -74,44 +74,47 @@ class WordQuality(object):
     @staticmethod
     def _idf(word, doc_list):
         num_doc = len(doc_list)
-        num_word_doc = WordQuality._n_containing(word, doc_list)
+        num_word_doc = WordInformativeness._n_containing(word, doc_list)
         return math.log(1 + float(num_doc) / num_word_doc)
 
 
-def generate_idf_dict():
-    # dataset = 'genes-cancer'
+def compute_idf():
     dataset = 'acl'
+    # dataset = 'genes-cancer'
     # dataset = 'RiMG75'
-    # dataset = 'test'
     data_dir = 'data/{}/raw'.format(dataset)
     model_file = 'data/{}/idf.pkl'.format(dataset)
 
-    wq = WordQuality()
-    model = wq.generate_model(data_dir)
-    wq.save_model(model, model_file)
+    wi = WordInformativeness()
+    model = wi.generate_model(data_dir)
+    wi.save_model(model, model_file)
 
 
-def generate_ignored_word_dict():
+def generate_ignored_words():
     logger = logging.getLogger()
 
-    idf_diff_threshold = 1.5
+    informativeness_threshold = 1.0
     dataset_1 = 'genes-cancer'
     dataset_2 = 'acl'
 
-    wq = WordQuality()
-    ignored_words = {}
-    model_1 = wq.load_model('data/{}/idf.pkl'.format(dataset_1))
-    model_2 = wq.load_model('data/{}/idf.pkl'.format(dataset_2))
+    f_out = codecs.open('data/{}/ignored_words.txt'.format(dataset_1), 'w', encoding='utf-8')
+
+    wi = WordInformativeness()
+    model_1 = wi.load_model('data/{}/idf.pkl'.format(dataset_1))
+    model_2 = wi.load_model('data/{}/idf.pkl'.format(dataset_2))
     for word in model_1:
-        if word in model_2 and abs(model_2[word] - model_1[word]) < idf_diff_threshold:
-            logger.debug(u'{}: {}'.format(word, model_1[word]))
-            ignored_words[word] = model_1[word]
-    wq.save_model(ignored_words, 'data/{}/ignored_words.pkl'.format(dataset_1))
+        if word in model_2:
+            informativeness = (model_1[word] - model_2[word]) ** 2
+            logger.debug(u'Informativeness of {}: {}'.format(word, informativeness))
+            if informativeness < informativeness_threshold:
+                logger.debug(u'Ignored: {}'.format(word))
+                f_out.write(u'{}\n'.format(word))
+    f_out.close()
 
 
 if __name__ == '__main__':
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
 
-    # generate_idf_dict()
-    generate_ignored_word_dict()
+    # compute_idf()
+    generate_ignored_words()
