@@ -1,10 +1,10 @@
 # -*- coding: utf8 -*-
 
+import os
 import unicodecsv
 import codecs
-import yaml
 import logging
-import logging.config
+import begin
 
 from collections import Counter
 from nltk import pos_tag
@@ -73,6 +73,7 @@ class VerbExtractor(object):
         return results
 
 
+@begin.subcommand
 def extract_from_csv(input_file_path):
     verb_category_mapping = {
         'knowledge': 2, 'comprehension': 3, 'application': 4,
@@ -108,25 +109,39 @@ def extract_from_csv(input_file_path):
     f_out.close()
 
 
-def extract_from_txt(input_file_path):
-    extractor = VerbExtractor()
-    f_in = codecs.open(input_file_path, encoding='utf-8')
-    text = f_in.read()
-    results = {}
-    for sent in split_multi(text):
-        verbs = extractor.extract(sent.lower())
-        if verbs:
-            for verb, category in verbs:
-                results.setdefault(category, []).append(verb)
-    f_in.close()
+@begin.subcommand
+def extract_from_txt(input_dir):
+    if not input_dir.endswith('/'):
+        input_dir += '/'
 
-    output_file_path = '{}_verbs.txt'.format(input_file_path.split('.')[0])
-    f_out = codecs.open(output_file_path, mode='w', encoding='utf-8')
-    for category in results:
-        counter = Counter(results[category])
-        output_str = [u'{}({})'.format(item[0], str(item[1])) for item in counter.items()]
-        f_out.write(u'{}: {}\n'.format(category, ', '.join(output_str)))
-    f_out.close()
+    file_dir = input_dir + 'processed/'
+    output_dir = input_dir + 'verbs/'
+    if not os.path.exists(os.path.dirname(output_dir)):
+        os.makedirs(os.path.dirname(output_dir))
+
+    extractor = VerbExtractor()
+    for root, _, files in os.walk(file_dir):
+        for fn in files:
+            if fn.endswith('.txt'):
+                filename = os.path.join(root, fn)
+                logging.info('Reading {}'.format(filename))
+                f_in = codecs.open(filename, encoding='utf-8')
+                text = f_in.read()
+                results = {}
+                for sent in split_multi(text):
+                    verbs = extractor.extract(sent.lower())
+                    if verbs:
+                        for verb, category in verbs:
+                            results.setdefault(category, []).append(verb)
+                f_in.close()
+                output_file = filename.replace('processed', 'verbs').replace('.txt', '_verbs.txt')
+                logging.info('Writing to {}'.format(output_file))
+                f_out = codecs.open(output_file, mode='w', encoding='utf-8')
+                for category in results:
+                    counter = Counter(results[category])
+                    output_str = [u'{}({})'.format(item[0], str(item[1])) for item in counter.items()]
+                    f_out.write(u'{}: {}\n'.format(category, ', '.join(output_str)))
+                f_out.close()
 
 
 def test():
@@ -135,14 +150,7 @@ def test():
     print extractor.extract(text)
 
 
-if __name__ == '__main__':
-    with open('config/logging_config.yaml') as f:
-        logging.config.dictConfig(yaml.load(f))
-
-    # test()
-
-    input_csv_path = 'data/gdot/learning-outcome/learning_outcome.csv'
-    extract_from_csv(input_csv_path)
-
-    input_txt_path = 'data/gdot/forum/mtle_4150_forum_2.txt'
-    extract_from_txt(input_txt_path)
+@begin.start
+@begin.logging
+def run():
+    pass
