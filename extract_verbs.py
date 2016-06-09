@@ -111,6 +111,8 @@ def extract_from_csv(input_file_path):
 
 @begin.subcommand
 def extract_from_txt(input_dir):
+    verb_categories = ['knowledge', 'comprehension', 'application', 'analysis', 'synthesis', 'evaluation']
+
     if not input_dir.endswith('/'):
         input_dir += '/'
 
@@ -137,7 +139,7 @@ def extract_from_txt(input_dir):
                 output_file = filename.replace('processed', 'verbs').replace('.txt', '_verbs.txt')
                 logging.info('Writing to {}'.format(output_file))
                 f_out = codecs.open(output_file, mode='w', encoding='utf-8')
-                for category in results:
+                for category in verb_categories:
                     counter = Counter(results[category])
                     output_str = [u'{}({})'.format(item[0], str(item[1])) for item in counter.items()]
                     f_out.write(u'{}: {}\n'.format(category, ', '.join(output_str)))
