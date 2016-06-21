@@ -52,7 +52,7 @@ loggers:
         level: DEBUG
         handlers: [console]
         propagate: False
-    construct_graph:
+    construct_kb_graph:
         level: DEBUG
         handlers: [console, info_file_handler, error_file_handler]
         propagate: False
