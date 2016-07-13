@@ -24,8 +24,8 @@ def generate_input_embedding_file(logger, dataset, embedding_model_file, mysql_c
         return 'SELECT DISTINCT subject_head, predicate_canonical, object_head FROM {} ORDER BY id'.format(table_name)
 
     def generate_embedding_file(words, type):
-        embedding_file = 'data/{}/{}s.txt'.format(dataset, type)
-        embedding_label_file = 'data/{}/{}_labels.txt'.format(dataset, type)
+        embedding_file = 'data/{}/embeddings/{}s.txt'.format(dataset, type)
+        embedding_label_file = 'data/{}/embeddings/{}_labels.txt'.format(dataset, type)
         embedding_label_out = codecs.open(embedding_label_file, 'w', encoding='utf-8')
         embeddings = []
         for w in words:
@@ -75,7 +75,7 @@ def generate_input_embedding_file(logger, dataset, embedding_model_file, mysql_c
 
 
 def agglomerative_clustering(logger, dataset, type, cluster_n, method='ward', metric='euclidean', plot=False):
-    embedding_file = 'data/{}/{}s.txt'.format(dataset, type)
+    embedding_file = 'data/{}/embeddings/{}s.txt'.format(dataset, type)
     embeddings = np.loadtxt(embedding_file)
     logger.info('Loaded embeddings from {}'.format(embedding_file))
 
@@ -86,7 +86,7 @@ def agglomerative_clustering(logger, dataset, type, cluster_n, method='ward', me
     logger.info('Clustering time: {}s'.format(time() - t0))
 
     embedding_labels = []
-    embedding_label_file = 'data/{}/{}_labels.txt'.format(dataset, type)
+    embedding_label_file = 'data/{}/embeddings/{}_labels.txt'.format(dataset, type)
     embedding_label_in = codecs.open(embedding_label_file)
     for row in embedding_label_in:
         if row:
@@ -99,7 +99,7 @@ def agglomerative_clustering(logger, dataset, type, cluster_n, method='ward', me
     clusters_agg = {}
     for i in xrange(len(clusters)):
         clusters_agg.setdefault(clusters[i] - 1, []).append(i)
-    clustering_clusters_file = 'data/{}/{}_clusters.txt'.format(dataset, type)
+    clustering_clusters_file = 'data/{}/clustering/{}_clusters.txt'.format(dataset, type)
     cluster_out = codecs.open(clustering_clusters_file, 'w')
     for i in xrange(len(clusters_agg)):
         cluster_out.write(u'{}\n'.format(','.join([embedding_labels[j] for j in clusters_agg[i]])))
@@ -129,7 +129,7 @@ def agglomerative_clustering(logger, dataset, type, cluster_n, method='ward', me
 
 
 def kmeans(logger, dataset, type, cluster_n):
-    embedding_file = 'data/{}/{}s.txt'.format(dataset, type)
+    embedding_file = 'data/{}/embeddings/{}s.txt'.format(dataset, type)
     embeddings = np.loadtxt(embedding_file)
     logger.info('Loaded embeddings from {}'.format(embedding_file))
 
@@ -215,19 +215,19 @@ if __name__ == '__main__':
         'db': db
     }
 
-    embedding_model_file = 'data/{}/directed_embeddings.txt'.format(dataset)
+    embedding_model_file = 'data/{}/embeddings/directed_embeddings.txt'.format(dataset)
 
     # generate_input_embedding_file(logger, dataset, embedding_model_file, mysql_config)
     agglomerative_clustering(logger, dataset, 'relation_embedding', 2000, method='average', metric='cosine', plot=True)
     # kmeans(logger, dataset, 'relation_embedding', 1000)
 
     clustering_methods = ['single', 'complete', 'average', 'weighted', 'centroid', 'median', 'ward']
-    # entity_clustering_result_file = 'data/{}/entity_clustering_results.txt'.format(dataset)
+    # entity_clustering_result_file = 'data/{}/clustering/entity_clustering_results.txt'.format(dataset)
     # entity_clustering_cluster_numbers = [2, 5, 10, 20, 50, 100]
     # cross_validate(logger, dataset, 'entity_embedding', clustering_methods,
     #                entity_clustering_cluster_numbers, entity_clustering_result_file)
 
-    # relation_clustering_result_file = 'data/{}/relation_clustering_results.txt'.format(dataset)
+    # relation_clustering_result_file = 'data/{}/clustering/relation_clustering_results.txt'.format(dataset)
     # relation_clustering_cluter_numbers = [3000]
     # cross_validate(logger, dataset, 'relation_embedding', clustering_methods,
     #                relation_clustering_cluter_numbers, relation_clustering_result_file)

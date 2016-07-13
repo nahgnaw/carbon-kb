@@ -564,7 +564,7 @@ def single_extraction():
     logger = logging.getLogger('single_relation_extraction')
     parser_server = 'http://localhost:8084'
     sentences = u"""
-        IL-27 receptor is composed of IL-27Rα and glycoprotein 130, a common receptor subunit for the IL-6 family of cytokines.
+       Typhimurium selectively infects and preferentially colonizes solid tumors of cancer patients, making it potentially useful as a vehicle to target human tumors in vivo.
     """
     for sent in split_multi(sentences):
         sent = sent.strip()

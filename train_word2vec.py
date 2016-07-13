@@ -2,10 +2,11 @@
 
 import os
 import codecs
-import gensim
 import logging
 import logging.config
 import yaml
+
+from gensim.models import Word2Vec, Phrases
 
 
 class MySentences(object):
@@ -30,7 +31,9 @@ with open('config/logging_config.yaml') as f:
 logger = logging.getLogger()
 
 corpus_path = 'data/pmc_c-h/processed_done'
-model_path = 'data/pmc_c-h/word2vec.txt'
+model_path = 'data/pmc_c-h/embeddings/word2vec'
 sentences = MySentences(corpus_path)
-model = gensim.models.Word2Vec(sentences, size=200, workers=4)
-model.save_word2vec_format(model_path)
+# bigrams = Phrases(sentences, min_count=1)
+# trigrams = Phrases(bigrams[sentences], min_count=1)
+model = Word2Vec(sentences, size=200, workers=4, sg=1, hs=0, negative=5, min_count=1)
+model.save_word2vec_format(model_path, binary=True)
