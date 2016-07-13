@@ -66,7 +66,7 @@ def generate_input_embedding_file(logger, dataset, embedding_model_file, mysql_c
         logger.info('{} entities retrieved'.format(len(entities)))
         logger.info('{} relations retrieved'.format(len(relations)))
 
-        embedding_model = gensim.models.Word2Vec.load_word2vec_format(embedding_model_file, binary=False)
+        embedding_model = gensim.models.Word2Vec.load_word2vec_format(embedding_model_file, binary=True)
         generate_embedding_file(entities, 'entity_embedding')
         generate_embedding_file(relations, 'relation_embedding')
     finally:
