@@ -8,6 +8,7 @@ import unicodecsv
 import scipy.stats
 import numpy as np
 
+from cycler import cycler
 from matplotlib import pyplot as plt
 from gensim.models import Word2Vec
 from extract_relations import RelationExtractor
@@ -42,7 +43,7 @@ def evaluate_extraction(input_file, output_file):
     f_out.close()
 
 
-def similarity_benchmark(method_name, embedding_file):
+def evaluate_similarity(method_name, embedding_file):
     logger = logging.getLogger()
 
     logger.info('Loading embeddings from {}...'.format(embedding_file))
@@ -59,10 +60,10 @@ def similarity_benchmark(method_name, embedding_file):
     next(reader, None)
     for row in reader:
         score, _, term_1, term_2 = row[:4]
-        term_1, term_2 = term_1.lower(), term_2.lower()
+        term_1, term_2 = term_1.lower().replace(' ', '_'), term_2.lower().replace(' ', '_')
         score = float(score)
         if term_1 in embedding_model and term_2 in embedding_model:
-            sim_score = embedding_model.similarity(term_1, term_2)
+            sim_score = float(embedding_model.similarity(term_1, term_2))
             logger.debug('{}, {}: {}'.format(term_1, term_2, sim_score))
             writer.writerow([sim_score, term_1, term_2])
             benchmark_scores.append(score)
@@ -75,12 +76,25 @@ def similarity_benchmark(method_name, embedding_file):
     logger.debug('correlation coefficient: {}, p-value: {}'.format(rho, p))
 
     x = np.arange(len(benchmark_scores))
-    y1 = np.array(benchmark_scores)
+    y1 = np.array(method_scores)
     y1 = (y1 - y1.mean()) / y1.std()
-    y2 = np.array(method_scores)
+    y2 = np.array(benchmark_scores)
     y2 = (y2 - y2.mean()) / y2.std()
+
+    plt.rc('lines', linewidth=2)
+    plt.rc('axes', prop_cycle=(cycler('color', ['#E87F4D', '#9CB2B3'])))
+    plt.rc('font', **{'size': 24})
+    plt.subplot(121)
     plt.plot(x, y1, x, y2)
-    plt.legend(['benchmark', method_name])
+    plt.xlim([0, np.max(x)])
+    plt.xticks([])
+    plt.legend(['scikb', 'benchmark'])
+    plt.subplot(122)
+    plt.scatter(y1, y2, s=40, c='#E87F4D', edgecolors='face')
+    plt.xlabel('scikb')
+    plt.ylabel('benchmark')
+    plt.xticks([])
+    plt.yticks([])
     plt.show()
 
 
@@ -92,8 +106,9 @@ if __name__ == '__main__':
     # extraction_outupt_file = 'data/evaluation/extraction/output.csv'
     # evaluate_extraction(extraction_input_file, extraction_outupt_file)
 
+    # dataset = 'pmc_c-h'
     # method_name = 'scikb'
     # embedding_file = 'data/pmc_c-h/embeddings/scikb_directed'
-    method_name = 'word2vec'
-    embedding_file = 'data/pmc_c-h/embeddings/pmc_w2v'
-    similarity_benchmark(method_name, embedding_file)
+    # method_name = 'word2vec'
+    # embedding_file = 'data/{}/embeddings/word2vec_trigrams'.format(dataset)
+    # evaluate_similarity(method_name, embedding_file)
