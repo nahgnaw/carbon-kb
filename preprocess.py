@@ -58,15 +58,16 @@ class Sentences(object):
     @staticmethod
     def process_text(text):
         replacement = [
+            r'(^\W*\s*)',   # Preceding non-word characters
             r'(\s*\([^()]*\))',    # Parentheses
             r'(\s*\[.*\])',    # Parentheses
-            r'(\b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))))',   # urls
+            r'(\b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))))',   # URLs
             r'(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)',  # emails
             r'([A-Za-z0-9]\))',   # List item markers with just one parenthesis
             # r'((Fig\.?u?r?e?\s\d{1,3}\.?))',  # Figure caption
             # r'(Table\.?\s\d{1,3}\.?)',    # Table caption
-            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\d{4}[a-z]?[;|,]*)',   # Citations
-            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\(\d{4}[a-z]?\)[;|,]*)',   # Citations
+            # r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\d{4}[a-z]?[;|,]*)',   # Citations
+            # r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\(\d{4}[a-z]?\)[;|,]*)',   # Citations
         ]
         replacement_pattern = re.compile('|'.join(replacement), re.UNICODE | re.IGNORECASE)
         text = re.sub(replacement_pattern, '', text)
