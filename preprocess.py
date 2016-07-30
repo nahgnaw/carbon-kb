@@ -3,11 +3,9 @@
 import os
 import re
 import codecs
-import logging
 import logging.config
 import yaml
-import nltk.data
-from segtok.segmenter import split_single, split_multi
+from segtok.segmenter import split_multi
 
 
 class Sentences(object):
@@ -16,10 +14,7 @@ class Sentences(object):
         self.logger = logger
         self._dataset = dataset
         self._raw_text_dir = 'data/{}/raw'.format(self._dataset)
-        self._processed_text_dir = 'data/{}/processed'.format(self._dataset)
-        # self.sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
-        # extra_abbr = ['dr', 'vs', 'mr', 'mrs', 'prof', 'inc', 'i.e', 'fig', 'figs', 'p', 'et al', 'e.g', 'etc', 'eq']
-        # self.sent_detector._params.abbrev_types.update(extra_abbr)
+        self._preprocessed_text_dir = 'data/{}/preprocessed'.format(self._dataset)
 
     def __iter__(self):
         for root, _, files in os.walk(self._raw_text_dir):
@@ -36,21 +31,23 @@ class Sentences(object):
                                 sent = sent.strip()
                                 yield filename, sent
                     f.close()
-                    done_filename = filename.replace('/raw/', '/raw_done/')
+                    # Move the preprocessed files to a temp directory, so we know which files are done.
+                    done_filename = filename.replace('/raw/', '/raw_preprocessed/')
                     if not os.path.exists(os.path.dirname(done_filename)):
                         os.makedirs(os.path.dirname(done_filename))
                     os.rename(filename, done_filename)
 
     def save(self):
-        # # First empty the processed dir
-        # file_list = [os.path.join(self._processed_text_dir, d) for d in os.listdir(self._processed_text_dir)
-        #              if os.path.isdir(os.path.join(self._processed_text_dir, d))]
+
+        # # First empty the preprocessed dir
+        # file_list = [os.path.join(self._preprocessed_text_dir, d) for d in os.listdir(self._preprocessed_text_dir)
+        #              if os.path.isdir(os.path.join(self._preprocessed_text_dir, d))]
         # for d in file_list:
         #     for f in os.listdir(d):
         #         os.remove(os.path.join(d, f))
 
         for filename, sent in self.__iter__():
-            filename = filename.replace('/raw/', '/processed/')
+            filename = filename.replace('/raw/', '/preprocessed/')
             if not os.path.exists(os.path.dirname(filename)):
                 os.makedirs(os.path.dirname(filename))
             self.logger.debug(u'{} {}'.format(filename, sent))
@@ -58,7 +55,8 @@ class Sentences(object):
             f.write(u'{}\n'.format(sent))
             f.close()
 
-    def process_text(self, text):
+    @staticmethod
+    def process_text(text):
         replacement = [
             r'(\s*\([^()]*\))',    # Parentheses
             r'(\s*\[.*\])',    # Parentheses
@@ -67,17 +65,17 @@ class Sentences(object):
             r'([A-Za-z0-9]\))',   # List item markers with just one parenthesis
             # r'((Fig\.?u?r?e?\s\d{1,3}\.?))',  # Figure caption
             # r'(Table\.?\s\d{1,3}\.?)',    # Table caption
-            # r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\d{4}[a-z]?[;|,]*)',   # Citations
-            # r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\(\d{4}[a-z]?\)[;|,]*)',   # Citations
+            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\d{4}[a-z]?[;|,]*)',   # Citations
+            r'(([A-Z]\S+)+(\sand\s)?([A-Z]\S+)?\s(et al.)?,?\s*\(\d{4}[a-z]?\)[;|,]*)',   # Citations
         ]
         replacement_pattern = re.compile('|'.join(replacement), re.UNICODE | re.IGNORECASE)
         text = re.sub(replacement_pattern, '', text)
 
-        # Replace " ." with "." for the sake of sentence segmentation.
+        # Replace " ." with "." for sentence segmentation.
         text = text.replace(' .', '.')
 
-        if self._dataset == 'pmc_c-h':
-            text = text.replace('.-', '.').replace('.,', '.')
+        # Some uncommon replacement.
+        text = text.replace('.-', '.').replace('.,', '.')
 
         return text
 
@@ -88,9 +86,8 @@ if __name__ == '__main__':
     logger = logging.getLogger('preprocess')
 
     # dataset = 'test'
-    # dataset = 'genes-cancer'
-    dataset = 'pmc_c-h'
-    # dataset = 'RiMG75'
+    # dataset = 'pmc_c-h'
+    dataset = 'RiMG75'
 
     sents = Sentences(dataset, logger)
     sents.save()
