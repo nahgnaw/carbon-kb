@@ -478,7 +478,8 @@ def batch_extraction(parser_port, dataset, dataset_no, mysql_db):
         'host': mysql_config.get('MySQL', 'host'),
         'user': mysql_config.get('MySQL', 'user'),
         'passwd': mysql_config.get('MySQL', 'passwd'),
-        'db': mysql_db
+        'db': mysql_db,
+        'charset': mysql_config.get('MySQL', 'charset')
     }
     conn = MySQLdb.connect(**mysql_config)
     cur = conn.cursor()
