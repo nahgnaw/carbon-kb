@@ -27,7 +27,7 @@ def evaluate_extraction(input_file, output_file):
         if line:
             logger.debug(line)
             try:
-                extractor = RelationExtractor(line, parser_server, logger, entity_linking=False)
+                extractor = RelationExtractor(line, parser_server, logger, entity_linking_flag=False)
             except:
                 logger.error(u'Failed to parse the sentence', exc_info=True)
             else:
@@ -88,11 +88,11 @@ def evaluate_similarity(method_name, embedding_file):
     plt.plot(x, y1, x, y2)
     plt.xlim([0, np.max(x)])
     plt.xticks([])
-    plt.legend(['scikb', 'benchmark'])
+    plt.legend([method_name, 'benchmark'])
     plt.subplot(122)
     plt.scatter(y1, y2, s=40, c='#E87F4D', edgecolors='face')
-    plt.xlabel('scikb')
-    plt.ylabel('benchmark')
+    plt.xlabel(method_name, fontsize=32)
+    plt.ylabel('benchmark', fontsize=32)
     plt.xticks([])
     plt.yticks([])
     plt.show()
@@ -106,9 +106,9 @@ if __name__ == '__main__':
     # extraction_outupt_file = 'data/evaluation/extraction/output.csv'
     # evaluate_extraction(extraction_input_file, extraction_outupt_file)
 
-    # dataset = 'pmc_c-h'
-    # method_name = 'scikb'
-    # embedding_file = 'data/pmc_c-h/embeddings/scikb_directed'
+    dataset = 'pmc_c-h'
+    method_name = 'scikb'
+    embedding_file = 'data/pmc_c-h/embeddings/pmc_w2v'
     # method_name = 'word2vec'
-    # embedding_file = 'data/{}/embeddings/word2vec_trigrams'.format(dataset)
-    # evaluate_similarity(method_name, embedding_file)
+    # embedding_file = 'data/{}/embeddings/word2vec'.format(dataset)
+    evaluate_similarity(method_name, embedding_file)

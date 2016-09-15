@@ -110,7 +110,7 @@ class EntityLinker(object):
 if __name__ == '__main__':
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
-    logger = logging.getLogger('entity_linking')
+    logger = logging.getLogger('entity_linking_flag')
 
     el = EntityLinker(logger)
     el.write_to_db('bio-kb', 7917)

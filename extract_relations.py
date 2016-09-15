@@ -7,6 +7,7 @@ import logging.config
 import MySQLdb
 import yaml
 import multiprocessing
+import begin
 
 from relation import Relation
 from copy import deepcopy
@@ -92,11 +93,11 @@ class RelationExtractor(object):
         _pos_tags['jjr']
     ]
 
-    def __init__(self, sentence, parser_server, logger=None, entity_linking=False):
+    def __init__(self, sentence, parser_server, logger=None, entity_linking_flag=False):
         self._sentence = sentence
         self._parser_server = parser_server
         self.logger = logger if logger else logging.getLogger()
-        self.entity_linking = entity_linking
+        self.entity_linking_flag = entity_linking_flag
         self._dep_triple_dict = {}
         self._make_dep_triple_dict()
         self._relations = set()
@@ -406,12 +407,12 @@ class RelationExtractor(object):
                 query_arr.append(w)
             return linker.link(query_arr)
 
-        linker = EntityLinker(self.logger) if self.entity_linking else None
+        linker = EntityLinker(self.logger) if self.entity_linking_flag else None
         dependencies = [self._dependencies['nsubj'], self._dependencies['nsubjpass']]
         for dep in dependencies:
             if dep in self._dep_triple_dict:
                 self._extract_spo(dep)
-                if self.entity_linking:
+                if self.entity_linking_flag:
                     for relation in self._relations:
                         subj_head = relation.subject.head
                         if subj_head:
@@ -463,115 +464,87 @@ class RelationExtractor(object):
                                         self.relations.add(Relation(subject, predicate, object))
 
 
-@timeit
-def batch_extraction(dataset, mysql_db=None):
-
-    def single_file_extraction(filename, parser_server):
-        f_in = codecs.open(filename, encoding='utf-8')
-        output_filename = os.path.join(root, fn).replace('/processed/', '/extractions/')
-        f_out = codecs.open(output_filename, 'w', encoding='utf-8')
-        for line in f_in:
-            sent = line.strip()
-            if sent:
-                logger.info(u'{}: {}'.format(filename, sent))
-                f_out.write(u'{}\n'.format(sent))
-                try:
-                    extractor = RelationExtractor(sent, parser_server, logger, entity_linking=False)
-                except:
-                    logger.error(u'Failed to extract relations.', exc_info=True)
-                else:
-                    extractor.extract_spo()
-                    for relation in extractor.relations:
-                        logger.info(u'RELATION: {}'.format(relation))
-                        f_out.write(u'{} [{}]\n'.format(relation, relation.canonical_form))
-                        if mysql_db:
-                            try:
-                                cur.execute(extractor.insert_relation_sql(relation))
-                                conn.commit()
-                            except MySQLdb.Error, e:
-                                try:
-                                    logger.error(u'MySQL Error [{}]: {}'.format(e.args[0], e.args[1]),
-                                                 exc_info=True)
-                                except IndexError:
-                                    logger.error(u'MySQL Error: {}'.format(str(e)), exc_info=True)
-                    f_out.write('\n')
-
-        f_in.close()
-        f_out.close()
-
-        done_filename = filename.replace('/processed/', '/processed_done/')
-        if not os.path.exists(os.path.dirname(done_filename)):
-            os.makedirs(os.path.dirname(done_filename))
-        os.rename(filename, done_filename)
-
+@begin.subcommand
+def batch_extraction(parser_port, dataset, dataset_no, mysql_db):
+    with open('config/logging_config.yaml') as f:
+        logging.config.dictConfig(yaml.load(f))
     logger = logging.getLogger('batch_relation_extraction')
 
-    parser_servers = [
-        'http://localhost:8084',
-        # 'http://localhost:8085',
-        # 'http://localhost:8086',
-        # 'http://localhost:8087',
-        # 'http://localhost:8088',
-        # 'http://localhost:8089',
-        # 'http://localhost:8090',
-        # 'http://localhost:8091'
-    ]
+    parser_server = 'http://127.0.0.1:{}'.format(str(parser_port))
 
-    data_dir = 'data/{}/processed/'.format(dataset)
+    mysql_config = SafeConfigParser()
+    mysql_config.read('config/mysql_config.ini')
+    mysql_config = {
+        'host': mysql_config.get('MySQL', 'host'),
+        'user': mysql_config.get('MySQL', 'user'),
+        'passwd': mysql_config.get('MySQL', 'passwd'),
+        'db': mysql_db
+    }
+    conn = MySQLdb.connect(**mysql_config)
+    cur = conn.cursor()
 
-    if mysql_db:
-        parser = SafeConfigParser()
-        parser.read('config/mysql_config.ini')
-        mysql_config = {
-            'host': parser.get('MySQL', 'host'),
-            'user': parser.get('MySQL', 'user'),
-            'passwd': parser.get('MySQL', 'passwd'),
-            'db': mysql_db
-        }
-        conn = MySQLdb.connect(**mysql_config)
-        cur = conn.cursor()
-
-    processes = []
-    file_count = 0
+    data_subdir = 'preprocessed_organized'
+    data_dir = 'data/{}/{}/{}'.format(dataset, data_subdir, dataset_no)
     for root, _, files in os.walk(data_dir):
         for fn in files:
             if fn.endswith('.txt'):
-                filename = os.path.join(root, fn)
-                parser = parser_servers[file_count % len(parser_servers)]
-                processes.append(multiprocessing.Process(target=single_file_extraction, args=(filename, parser)))
-                file_count += 1
+                data_file = os.path.join(root, fn)
+                f_in = codecs.open(data_file, encoding='utf-8')
+                # output_filename = os.path.join(root, fn).replace('/preprocessed/', '/extractions/')
+                # f_out = codecs.open(output_filename, 'w', encoding='utf-8')
+                for line in f_in:
+                    sent = line.strip()
+                    if sent:
+                        logger.info(u'{}: {}'.format(data_file, sent))
+                        # f_out.write(u'{}\n'.format(sent))
+                        try:
+                            extractor = RelationExtractor(sent, parser_server, logger, entity_linking_flag=False)
+                            extractor.extract_spo()
+                        except:
+                            logger.error(u'Failed to extract relations from: {}.'.format(sent), exc_info=True)
+                        else:
+                            for relation in extractor.relations:
+                                logger.info(u'RELATION: {}'.format(relation))
+                                # f_out.write(u'{} [{}]\n'.format(relation, relation.canonical_form))
+                                if mysql_db:
+                                    try:
+                                        cur.execute(extractor.insert_relation_sql(relation))
+                                        conn.commit()
+                                    except MySQLdb.Error, e:
+                                        try:
+                                            logger.error(u'MySQL Error [{}]: {}'.format(e.args[0], e.args[1]),
+                                                         exc_info=True)
+                                        except IndexError:
+                                            logger.error(u'MySQL Error: {}'.format(str(e)), exc_info=True)
+                            # f_out.write('\n')
 
-    # Run processes
-    for p in processes:
-        p.start()
+                f_in.close()
+                # f_out.close()
 
-    # Exit the completed processes
-    try:
-        for p in processes:
-            p.join()
-    except KeyboardInterrupt:
-        for p in processes:
-            p.terminate()
-            p.join()
-    finally:
-        if mysql_db:
-            cur.close()
-            conn.close()
+                done_subdir = 'extraction_done'
+                done_filename = data_file.replace('/{}/', '/{}/'.format(data_subdir, done_subdir))
+                if not os.path.exists(os.path.dirname(done_filename)):
+                    os.makedirs(os.path.dirname(done_filename))
+                os.rename(data_file, done_filename)
+
+    cur.close()
+    conn.close()
 
 
-@timeit
-def single_extraction():
+@begin.subcommand
+def single_extraction(sentences):
+    with open('config/logging_config.yaml') as f:
+        logging.config.dictConfig(yaml.load(f))
     logger = logging.getLogger('single_relation_extraction')
-    parser_server = 'http://localhost:8084'
-    sentences = u"""
-       Typhimurium selectively infects and preferentially colonizes solid tumors of cancer patients, making it potentially useful as a vehicle to target human tumors in vivo.
-    """
+
+    parser_server = 'http://127.0.0.1:8084'
+
     for sent in split_multi(sentences):
         sent = sent.strip()
         if sent:
             logger.debug(u'SENTENCE: {}'.format(sent))
             try:
-                extractor = RelationExtractor(sent, parser_server, logger, entity_linking=False)
+                extractor = RelationExtractor(sent, parser_server, logger, entity_linking_flag=False)
             except:
                 logger.error(u'Failed to parse the sentence', exc_info=True)
             else:
@@ -579,25 +552,40 @@ def single_extraction():
                 for relation in extractor.relations:
                     logger.debug(u'SUBJECT HEAD: {}'.format(relation.subject.head))
                     logger.debug(u'SUBJECT NN HEAD: {}'.format(relation.subject.nn_head))
-                    if extractor.entity_linking:
+                    if extractor.entity_linking_flag:
                         logger.debug(u'SUBJECT EL: {}'.format(relation.subject_el))
                     logger.debug(u'OBJECT HEAD: {}'.format(relation.object.head))
                     logger.debug(u'OBJECT NN HEAD: {}'.format(relation.object.nn_head))
-                    if extractor.entity_linking:
+                    if extractor.entity_linking_flag:
                         logger.debug(u'OBJECT EL: {}'.format(relation.object_el))
                     logger.debug(u'RELATION LEMMA: {}'.format(relation.lemma))
                     logger.debug(u'RELATION CANONICAL: {}'.format(relation.canonical_form))
 
 
-if __name__ == '__main__':
+@begin.subcommand
+def organize_data_folder(dataset, sub_folder_no):
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
+    logger = logging.getLogger('single_relation_extraction')
 
-    # dataset = 'test'
-    # dataset = 'genes-cancer'
-    # dataset = 'pmc_c-h'
-    # dataset = 'RiMG75'
-    dataset = 'gates'
+    data_dir = 'data/{}/preprocessed'.format(dataset)
+    file_no = 0
+    for root, _, files in os.walk(data_dir):
+        for fn in files:
+            if fn.endswith('.txt'):
+                filename = os.path.join(root, fn)
+                new_filename = filename.replace(
+                    '/preprocessed/', '/preprocessed_organized/{}/'.format(str(file_no % int(sub_folder_no))))
+                logger.info('{} -> {}'.format(filename, new_filename))
+                if not os.path.exists(os.path.dirname(new_filename)):
+                    os.makedirs(os.path.dirname(new_filename))
+                os.rename(filename, new_filename)
+                file_no += 1
 
-    single_extraction()
-    # batch_extraction(dataset)
+
+@begin.start
+def main():
+    pass
+
+if begin.start():
+    pass
