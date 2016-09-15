@@ -511,7 +511,7 @@ def batch_extraction(parser_port, dataset, dataset_no, mysql_db):
                                     try:
                                         cur.execute(extractor.insert_relation_sql(relation))
                                         conn.commit()
-                                    except MySQLdb.Error, e:
+                                    except MySQLdb.Error as e:
                                         try:
                                             logger.error(u'MySQL Error [{}]: {}'.format(e.args[0], e.args[1]),
                                                          exc_info=True)
