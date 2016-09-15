@@ -522,7 +522,7 @@ def batch_extraction(parser_port, dataset, dataset_no, mysql_db):
                 # f_out.close()
 
                 done_subdir = 'extraction_done'
-                done_filename = data_file.replace('/{}/', '/{}/'.format(data_subdir, done_subdir))
+                done_filename = data_file.replace('/{}/'.format(data_subdir), '/{}/'.format(done_subdir))
                 if not os.path.exists(os.path.dirname(done_filename)):
                     os.makedirs(os.path.dirname(done_filename))
                 os.rename(data_file, done_filename)
