@@ -5,6 +5,7 @@ import yaml
 import logging
 import logging.config
 import MySQLdb
+import begin
 
 from ConfigParser import SafeConfigParser
 from collections import Counter
@@ -43,7 +44,7 @@ def save_graph_to_file(graph, output_file, logger):
 # Every subject_head, predicate, and object_head is considered as a vertex.
 # An edge connect a pair of {subject_head, predicate} or {object_head, predicate}.
 # The edge weight is the count of the cooccurence of the two connected vertexes.
-def construct_simple_kb_graph(mysql_db, logger):
+def build_directed_graph_from_db(mysql_db, logger):
     sql_query = u"""
         SELECT subject_head, predicate_canonical, object_head
         FROM svo
@@ -61,16 +62,22 @@ def construct_simple_kb_graph(mysql_db, logger):
     return graph
 
 
-if __name__ == '__main__':
+@begin.subcommand
+def construct_graph(dataset, mysql_db):
     with open('config/logging_config.yaml') as f:
         logging.config.dictConfig(yaml.load(f))
     logger = logging.getLogger('construct_kb_graph')
 
-    dataset = 'pmc_c-h'
-    # dataset = 'genes-cancer'
     graph_file = 'data/{}/kb_directed_graph.txt'.format(dataset)
-    mysql_db = 'bio-kb'
     logger.info('Start reading triples from db ...')
-    graph = construct_simple_kb_graph(mysql_db, logger)
+    graph = build_directed_graph_from_db(mysql_db, logger)
     logger.info('Start constructing kb graph ...')
     save_graph_to_file(graph, graph_file, logger)
+
+
+@begin.start
+def main():
+    pass
+
+if begin.start():
+    pass
