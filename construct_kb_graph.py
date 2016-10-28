@@ -36,8 +36,9 @@ def save_graph_to_file(graph, output_file, min_edge_count, logger):
         counts = Counter(graph[vertex])
         for neighbor in counts:
             weight = counts[neighbor]
-            if weight > int(min_edge_count):
+            if weight >= int(min_edge_count):
                 f.write(u'{}\t{}\t{}\n'.format(vertex, neighbor, str(weight)))
+                f.write(u'{}\t{}\t{}\n'.format(neighbor, vertex, str(weight)))  # Have this line for undirected graph
                 logger.debug(u'{}\t{}\t{}'.format(vertex, neighbor, str(weight)))
     f.close()
 
